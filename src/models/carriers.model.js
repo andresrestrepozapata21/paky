@@ -2,7 +2,6 @@
 // I imported the Sequelize module and my custom sequelize module with the configuration and connection to the DB
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-import { Vehicle } from "./vehicles.model.js";
 import { Type_carrier } from "./types_carrier.model.js";
 // I define the model for the carriers table in a variable and export him
 export const Carrier = sequelize.define('carriers', {
@@ -41,9 +40,6 @@ export const Carrier = sequelize.define('carriers', {
     token_device_carrier: {
         type: DataTypes.STRING
     },
-    active_carrier:{
-        type: DataTypes.INTEGER
-    },
     trust_carrier:{
         type: DataTypes.INTEGER
     },
@@ -78,19 +74,9 @@ export const Carrier = sequelize.define('carriers', {
     TimesTamps: true
 });
 //=================== I define the relationship between the tables =================
-//Relation with vehicle
-Vehicle.hasOne(Carrier, {
-    foreignKey: 'fk_id_vehicle_carrier',
-    targetId: 'id_vehicule'
-});
-
-Carrier.belongsTo(Vehicle, {
-    foreignKey: 'fk_id_vehicle_carrier',
-    targetId: 'id_vehicule'
-});
 
 //Relation with type carrier
-Type_carrier.hasOne(Carrier, {
+Type_carrier.hasMany(Carrier, {
     foreignKey: 'fk_id_tc_carrier',
     targetId: 'id_tc'
 });

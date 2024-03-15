@@ -476,3 +476,270 @@
 [2024-03-13T19:06:41.619Z] info server running on port 3000
 [2024-03-13T21:47:14.831Z] info server running on port 3000
 [2024-03-13T22:06:22.299Z] info server running on port 3000
+[2024-03-14T13:16:56.032Z] info server running on port 3000
+[2024-03-14T13:16:58.780Z] info enter the endpoint login
+[2024-03-14T13:16:58.810Z] info Incorrect credentials
+[2024-03-14T13:17:58.236Z] info server running on port 3000
+[2024-03-14T13:18:02.585Z] info enter the endpoint login
+[2024-03-14T13:18:02.613Z] info Incorrect credentials or non-existent credenciales
+[2024-03-14T13:18:05.517Z] info enter the endpoint login
+[2024-03-14T13:18:05.519Z] info Incorrect credentials or non-existent credenciales
+[2024-03-14T13:18:21.691Z] info server running on port 3000
+[2024-03-14T13:18:23.794Z] info server running on port 3000
+[2024-03-14T13:18:25.288Z] info enter the endpoint login
+[2024-03-14T13:18:25.317Z] info Incorrect credentials or non-existent credenciales
+[2024-03-14T13:18:31.823Z] info server running on port 3000
+[2024-03-14T13:19:44.796Z] info server running on port 3000
+[2024-03-14T13:19:48.746Z] info server running on port 3000
+[2024-03-14T13:19:53.026Z] info server running on port 3000
+[2024-03-14T13:22:07.125Z] info server running on port 3000
+[2024-03-14T13:22:22.021Z] info enter the endpoint registerProduct
+[2024-03-14T13:22:22.056Z] info Carrier registed successfully
+[2024-03-14T13:23:22.867Z] info server running on port 3000
+[2024-03-14T13:23:29.778Z] info enter the endpoint registerProduct
+[2024-03-14T13:23:29.810Z] info Carrier registed successfully
+[2024-03-14T13:23:38.649Z] info server running on port 3000
+[2024-03-14T13:23:39.391Z] info enter the endpoint registerProduct
+[2024-03-14T13:23:39.423Z] info Carrier registed successfully
+[2024-03-14T13:24:55.083Z] info enter the endpoint login
+[2024-03-14T13:24:55.090Z] info User Disabled
+[2024-03-14T13:25:10.597Z] info enter the endpoint registerProduct
+[2024-03-14T13:26:17.596Z] info enter the endpoint registerProduct
+[2024-03-14T13:26:22.812Z] info enter the endpoint registerProduct
+[2024-03-14T13:26:22.819Z] info Carrier registed successfully
+[2024-03-14T13:26:59.454Z] info enter the endpoint login
+[2024-03-14T13:26:59.457Z] info User Disabled
+[2024-03-14T13:28:14.389Z] info server running on port 3000
+[2024-03-14T13:28:16.427Z] info server running on port 3000
+[2024-03-14T13:28:18.949Z] info enter the endpoint login
+[2024-03-14T13:28:18.979Z] info User Disabled
+[2024-03-14T13:28:24.558Z] info server running on port 3000
+[2024-03-14T13:28:26.919Z] info enter the endpoint login
+[2024-03-14T13:28:26.948Z] info User Disabled
+[2024-03-14T13:28:35.784Z] info server running on port 3000
+[2024-03-14T13:28:37.595Z] info server running on port 3000
+[2024-03-14T13:28:38.367Z] info enter the endpoint login
+[2024-03-14T13:28:38.395Z] info User Disabled
+[2024-03-14T13:28:50.738Z] info server running on port 3000
+[2024-03-14T13:28:54.319Z] info enter the endpoint login
+[2024-03-14T13:28:54.351Z] info User Disabled
+[2024-03-14T13:28:59.505Z] info server running on port 3000
+[2024-03-14T13:29:21.981Z] info enter the endpoint login
+[2024-03-14T13:29:22.015Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-03-14T13:29:33.142Z] info enter the endpoint login
+[2024-03-14T13:29:33.145Z] info Incorrect credentials or non-existent credenciales
+[2024-03-14T14:04:31.479Z] info server running on port 3000
+[2024-03-14T14:07:54.297Z] info Carrier documents load successfully
+[2024-03-14T14:07:54.297Z] info enter the endpoint registerDocuments carrier
+[2024-03-14T14:07:54.299Z] info Carrier documents registed successfully
+[2024-03-14T19:19:44.341Z] info server running on port 3000
+[2024-03-14T19:30:08.010Z] info enter the endpoint registerProduct
+[2024-03-14T19:30:08.048Z] info Carrier registed successfully
+[2024-03-14T19:49:31.328Z] info server running on port 3000
+[2024-03-14T19:51:43.752Z] info server running on port 3000
+[2024-03-14T19:51:57.864Z] info server running on port 3000
+[2024-03-14T19:52:14.464Z] info server running on port 3000
+[2024-03-14T19:52:17.020Z] info server running on port 3000
+[2024-03-14T19:52:30.954Z] info enter the endpoint registerProduct
+[2024-03-14T19:53:24.550Z] info enter the endpoint registerProduct
+[2024-03-14T19:54:35.006Z] info enter the endpoint registerProduct
+[2024-03-14T19:54:45.202Z] info enter the endpoint registerProduct
+[2024-03-14T19:55:28.126Z] info enter the endpoint registerProduct
+[2024-03-14T19:55:28.157Z] info Carrier registed successfully
+[2024-03-14T20:15:03.259Z] info server running on port 3000
+[2024-03-14T20:27:34.518Z] info server running on port 3000
+[2024-03-14T20:29:53.958Z] info server running on port 3000
+[2024-03-14T20:30:07.447Z] info server running on port 3000
+[2024-03-14T20:31:29.343Z] info server running on port 3000
+[2024-03-14T20:31:52.894Z] info server running on port 3000
+[2024-03-14T20:31:54.781Z] info server running on port 3000
+[2024-03-14T20:32:03.778Z] info server running on port 3000
+[2024-03-14T20:32:26.354Z] info server running on port 3000
+[2024-03-14T20:37:42.926Z] info Carrier documents load successfully
+[2024-03-14T20:37:42.926Z] info enter the endpoint registerDocuments carrier
+[2024-03-14T20:37:42.929Z] info Carrier documents registed successfully
+[2024-03-14T20:41:26.512Z] info Carrier documents load successfully
+[2024-03-14T20:41:26.513Z] info enter the endpoint registerDocuments carrier
+[2024-03-14T20:41:26.513Z] info Carrier documents registed successfully
+[2024-03-14T20:44:21.615Z] info server running on port 3000
+[2024-03-14T20:52:32.526Z] info Carrier documents load successfully
+[2024-03-14T20:52:32.527Z] info enter the endpoint registerDocuments carrier
+[2024-03-14T20:52:32.563Z] info Error registerCarrierDocument: ReferenceError: task is not defined
+[2024-03-14T20:52:57.821Z] info server running on port 3000
+[2024-03-14T20:53:00.526Z] info Carrier documents load successfully
+[2024-03-14T20:53:00.526Z] info enter the endpoint registerDocuments carrier
+[2024-03-14T20:53:00.572Z] info Carrier documents registed successfully
+[2024-03-14T20:53:32.382Z] info Carrier documents load successfully
+[2024-03-14T20:53:32.383Z] info enter the endpoint registerDocuments carrier
+[2024-03-14T20:53:32.403Z] info Carrier documents registed successfully
+[2024-03-15T14:25:05.096Z] info server running on port 3000
+[2024-03-15T14:25:19.595Z] info Carrier documents load successfully
+[2024-03-15T14:25:19.596Z] info enter the endpoint registerDocuments carrier
+[2024-03-15T14:25:19.618Z] info Error registerCarrierDocument: SequelizeConnectionRefusedError
+[2024-03-15T14:26:19.530Z] info server running on port 3000
+[2024-03-15T14:26:22.637Z] info Carrier documents load successfully
+[2024-03-15T14:26:22.637Z] info enter the endpoint registerDocuments carrier
+[2024-03-15T14:26:22.675Z] info Carrier documents registed successfully
+[2024-03-15T14:32:26.706Z] info server running on port 3000
+[2024-03-15T14:35:57.023Z] info server running on port 3000
+[2024-03-15T14:37:31.520Z] info server running on port 3000
+[2024-03-15T14:38:04.021Z] info server running on port 3000
+[2024-03-15T14:40:41.017Z] info server running on port 3000
+[2024-03-15T14:42:10.273Z] info server running on port 3000
+[2024-03-15T14:43:00.080Z] info server running on port 3000
+[2024-03-15T14:43:45.796Z] info server running on port 3000
+[2024-03-15T14:43:52.272Z] info server running on port 3000
+[2024-03-15T14:44:11.301Z] info server running on port 3000
+[2024-03-15T14:45:28.343Z] info vehicle photo load successfully
+[2024-03-15T14:45:28.344Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T14:45:28.389Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T14:46:51.392Z] info server running on port 3000
+[2024-03-15T14:47:07.763Z] info server running on port 3000
+[2024-03-15T14:47:13.417Z] info server running on port 3000
+[2024-03-15T14:47:33.653Z] info vehicle photo load successfully
+[2024-03-15T14:47:33.653Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T14:47:33.712Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T14:48:06.987Z] info server running on port 3000
+[2024-03-15T14:48:39.141Z] info server running on port 3000
+[2024-03-15T14:48:45.636Z] info server running on port 3000
+[2024-03-15T14:49:04.587Z] info server running on port 3000
+[2024-03-15T14:49:28.501Z] info server running on port 3000
+[2024-03-15T14:50:15.733Z] info server running on port 3000
+[2024-03-15T14:50:23.231Z] info server running on port 3000
+[2024-03-15T14:50:29.144Z] info vehicle photo load successfully
+[2024-03-15T14:50:29.145Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T14:50:29.229Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T14:52:09.781Z] info server running on port 3000
+[2024-03-15T14:52:13.811Z] info vehicle photo load successfully
+[2024-03-15T14:52:13.812Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T14:52:13.855Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T14:52:20.295Z] info server running on port 3000
+[2024-03-15T14:52:21.472Z] info vehicle photo load successfully
+[2024-03-15T14:52:21.472Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T14:52:21.520Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T14:52:57.057Z] info server running on port 3000
+[2024-03-15T14:53:16.629Z] info vehicle photo load successfully
+[2024-03-15T14:53:16.630Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T14:53:16.678Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T14:54:14.123Z] info server running on port 3000
+[2024-03-15T14:54:25.882Z] info Carrier documents load successfully
+[2024-03-15T14:54:25.882Z] info enter the endpoint registerDocuments carrier
+[2024-03-15T14:54:25.919Z] info Carrier documents registed successfully
+[2024-03-15T14:58:30.065Z] info vehicle photo load successfully
+[2024-03-15T14:58:30.066Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T14:58:30.079Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T15:40:29.175Z] info server running on port 3000
+[2024-03-15T15:40:53.082Z] info server running on port 3000
+[2024-03-15T15:40:56.314Z] info Carrier documents load successfully
+[2024-03-15T15:40:56.314Z] info Enter the endpoint registerDocuments vehicle
+[2024-03-15T15:40:56.317Z] info vehicle documents registed successfully
+[2024-03-15T15:42:12.715Z] info Carrier documents load successfully
+[2024-03-15T15:42:12.716Z] info Enter the endpoint registerDocuments vehicle
+[2024-03-15T15:42:12.717Z] info vehicle documents registed successfully
+[2024-03-15T15:43:52.649Z] info Carrier documents load successfully
+[2024-03-15T15:43:52.649Z] info enter the endpoint registerDocuments carrier
+[2024-03-15T15:43:52.662Z] info Carrier documents registed successfully
+[2024-03-15T15:45:03.557Z] info server running on port 3000
+[2024-03-15T15:45:41.536Z] info vehicle documents load successfully
+[2024-03-15T15:45:41.537Z] info Enter the endpoint registerDocuments vehicle
+[2024-03-15T15:45:41.539Z] info vehicle documents registed successfully
+[2024-03-15T15:54:07.857Z] info enter the endpoint registerProduct
+[2024-03-15T15:54:07.866Z] info Carrier registed successfully
+[2024-03-15T15:54:29.228Z] info enter the endpoint registerProduct
+[2024-03-15T15:54:29.236Z] info Carrier registed successfully
+[2024-03-15T15:58:46.429Z] info enter the endpoint registerProduct
+[2024-03-15T15:58:46.436Z] info Carrier registed successfully
+[2024-03-15T15:59:00.803Z] info enter the endpoint registerProduct
+[2024-03-15T15:59:00.810Z] info Carrier registed successfully
+[2024-03-15T16:00:02.259Z] info enter the endpoint registerProduct
+[2024-03-15T16:00:02.267Z] info Carrier registed successfully
+[2024-03-15T16:01:02.364Z] info Carrier documents load successfully
+[2024-03-15T16:01:02.364Z] info enter the endpoint registerDocuments carrier
+[2024-03-15T16:01:02.390Z] info Carrier documents registed successfully
+[2024-03-15T16:01:51.045Z] info vehicle photo load successfully
+[2024-03-15T16:01:51.045Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T16:01:51.062Z] info Error registerVehiculeCarrier: SequelizeForeignKeyConstraintError: (conn=202, no: 1452, SQLState: 23000) Cannot add or update a child row: a foreign key constraint fails (`paky`.`carriers`, CONSTRAINT `carriers_ibfk_1` FOREIGN KEY (`fk_id_vehicle_carrier`) REFERENCES `vehicles` (`id_vehicle`) ON DELETE SET NULL ON UPDATE CASCADE)
+sql: UPDATE `carriers` SET `fk_id_vehicle_carrier`=?,`updatedAt`=? WHERE `id_carrier` = ? - parameters:['11','2024-03-15 16:01:51.055',11]
+[2024-03-15T16:02:14.145Z] info vehicle photo load successfully
+[2024-03-15T16:02:14.145Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T16:02:14.203Z] info Error registerVehiculeCarrier: SequelizeForeignKeyConstraintError: (conn=219, no: 1452, SQLState: 23000) Cannot add or update a child row: a foreign key constraint fails (`paky`.`carriers`, CONSTRAINT `carriers_ibfk_1` FOREIGN KEY (`fk_id_vehicle_carrier`) REFERENCES `vehicles` (`id_vehicle`) ON DELETE SET NULL ON UPDATE CASCADE)
+sql: UPDATE `carriers` SET `fk_id_vehicle_carrier`=?,`updatedAt`=? WHERE `id_carrier` = ? - parameters:['11','2024-03-15 16:02:14.199',11]
+[2024-03-15T16:08:02.245Z] info server running on port 3000
+[2024-03-15T16:08:06.801Z] info server running on port 3000
+[2024-03-15T16:08:15.779Z] info vehicle photo load successfully
+[2024-03-15T16:08:15.780Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T16:08:15.827Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T16:09:00.334Z] info server running on port 3000
+[2024-03-15T16:09:15.688Z] info vehicle photo load successfully
+[2024-03-15T16:09:15.688Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T16:09:15.737Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T16:09:40.541Z] info vehicle documents load successfully
+[2024-03-15T16:09:40.541Z] info Enter the endpoint registerDocuments vehicle
+[2024-03-15T16:09:40.542Z] info vehicle documents registed successfully
+[2024-03-15T16:21:20.551Z] info server running on port 3000
+[2024-03-15T16:21:29.645Z] info server running on port 3000
+[2024-03-15T16:22:14.412Z] info server running on port 3000
+[2024-03-15T16:22:47.467Z] info server running on port 3000
+[2024-03-15T16:23:10.523Z] info server running on port 3000
+[2024-03-15T16:24:22.633Z] info server running on port 3000
+[2024-03-15T16:24:28.338Z] info server running on port 3000
+[2024-03-15T16:25:21.942Z] info enter the endpoint registerProduct
+[2024-03-15T16:25:22.016Z] info Carrier registed successfully
+[2024-03-15T16:25:51.593Z] info Carrier documents load successfully
+[2024-03-15T16:25:51.594Z] info enter the endpoint registerDocuments carrier
+[2024-03-15T16:25:51.647Z] info Carrier documents registed successfully
+[2024-03-15T16:26:13.143Z] info vehicle photo load successfully
+[2024-03-15T16:26:13.144Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T16:26:13.161Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T16:26:39.843Z] info vehicle documents load successfully
+[2024-03-15T16:26:39.844Z] info Enter the endpoint registerDocuments vehicle
+[2024-03-15T16:26:39.865Z] info vehicle documents registed successfully
+[2024-03-15T16:34:55.336Z] info server running on port 3000
+[2024-03-15T16:34:57.323Z] info server running on port 3000
+[2024-03-15T16:35:57.029Z] info server running on port 3000
+[2024-03-15T16:36:33.867Z] info server running on port 3000
+[2024-03-15T16:36:41.310Z] info server running on port 3000
+[2024-03-15T16:37:01.617Z] info server running on port 3000
+[2024-03-15T16:38:36.880Z] info server running on port 3000
+[2024-03-15T16:38:51.645Z] info server running on port 3000
+[2024-03-15T16:39:16.430Z] info server running on port 3000
+[2024-03-15T16:39:18.402Z] info server running on port 3000
+[2024-03-15T16:40:00.977Z] info server running on port 3000
+[2024-03-15T16:40:41.705Z] info server running on port 3000
+[2024-03-15T16:40:51.797Z] info server running on port 3000
+[2024-03-15T16:42:47.629Z] info server running on port 3000
+[2024-03-15T16:44:19.048Z] info server running on port 3000
+[2024-03-15T16:46:36.170Z] info server running on port 3000
+[2024-03-15T16:46:47.388Z] info enter the endpoint registerProduct
+[2024-03-15T16:46:47.420Z] info Carrier registed successfully
+[2024-03-15T16:47:58.432Z] info Carrier documents load successfully
+[2024-03-15T16:47:58.433Z] info enter the endpoint registerDocuments carrier
+[2024-03-15T16:47:58.453Z] info Carrier documents registed successfully
+[2024-03-15T16:48:57.492Z] info enter the endpoint registerProduct
+[2024-03-15T16:48:57.499Z] info Carrier registed successfully
+[2024-03-15T16:49:02.497Z] info Carrier documents load successfully
+[2024-03-15T16:49:02.497Z] info enter the endpoint registerDocuments carrier
+[2024-03-15T16:49:02.519Z] info Carrier documents registed successfully
+[2024-03-15T16:49:09.778Z] info vehicle photo load successfully
+[2024-03-15T16:49:09.778Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T16:49:09.784Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T16:49:56.876Z] info vehicle documents load successfully
+[2024-03-15T16:49:56.876Z] info Enter the endpoint registerDocuments vehicle
+[2024-03-15T16:49:56.927Z] info vehicle documents registed successfully
+[2024-03-15T16:50:43.213Z] info vehicle photo load successfully
+[2024-03-15T16:50:43.213Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T16:50:43.251Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T16:51:50.031Z] info server running on port 3000
+[2024-03-15T16:52:09.368Z] info vehicle photo load successfully
+[2024-03-15T16:52:09.368Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-03-15T16:52:09.416Z] info Vehicle registed and carrier asosiation successfully
+[2024-03-15T16:52:36.590Z] info vehicle documents load successfully
+[2024-03-15T16:52:36.591Z] info Enter the endpoint registerDocuments vehicle
+[2024-03-15T16:52:36.612Z] info vehicle documents registed successfully
+[2024-03-15T16:52:52.193Z] info vehicle documents load successfully
+[2024-03-15T16:52:52.193Z] info Enter the endpoint registerDocuments vehicle
+[2024-03-15T16:52:52.202Z] info vehicle documents registed successfully
+[2024-03-15T16:56:05.036Z] info server running on port 3000
+[2024-03-15T16:56:07.571Z] info vehicle documents load successfully
+[2024-03-15T16:56:07.571Z] info Enter the endpoint registerDocuments vehicle
+[2024-03-15T16:56:07.621Z] info vehicle documents registed successfully

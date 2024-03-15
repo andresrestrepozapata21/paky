@@ -33,7 +33,7 @@ import './models/portfolio_history_dropshipper.model.js';
 async function main() {
     try {
         // Command for to create tables in database
-        await sequelize.sync({force: true});
+        //await sequelize.sync({force: true});
         // Command listening port 3000
         app.listen(3000);
         // Write log

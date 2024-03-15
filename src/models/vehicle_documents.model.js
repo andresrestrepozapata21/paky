@@ -9,9 +9,6 @@ export const Vehicle_document = sequelize.define('vehicle_documents', {
         primaryKey: true,
         autoIncrement: true
     },
-    description_vd: {
-        type: DataTypes.STRING
-    },
     url_document_vd: {
         type:DataTypes.STRING
     },
