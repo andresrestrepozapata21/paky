@@ -1,5 +1,5 @@
 node_modules
-documents_carrier/*
-!documents_carrier/.gitkeep
-documents_vehicle_carrier/*
-!documents_vehicle_carrier/.gitkeep
+documents_carrier/**
+!.gitkeep
+documents_vehicle_carrier/**
+!.gitkeep
