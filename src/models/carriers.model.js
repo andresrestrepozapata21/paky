@@ -3,6 +3,8 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
 import { Type_carrier } from "./types_carrier.model.js";
+import { City } from "./cities.model.js";
+import { Type_document } from "./type_document.model copy.js";
 // I define the model for the carriers table in a variable and export him
 export const Carrier = sequelize.define('carriers', {
     id_carrier: {
@@ -12,6 +14,9 @@ export const Carrier = sequelize.define('carriers', {
     },
     status_carrier: {
         type: DataTypes.INTEGER
+    },
+    number_document_carrier: {
+        type: DataTypes.STRING
     },
     name_carrier: {
         type: DataTypes.STRING
@@ -66,9 +71,6 @@ export const Carrier = sequelize.define('carriers', {
     },
     recovery_code_carrier: {
         type: DataTypes.INTEGER
-    },
-    date_created_carrier: {
-        type: DataTypes.DATE
     }
 },{
     TimesTamps: true
@@ -84,4 +86,26 @@ Type_carrier.hasMany(Carrier, {
 Carrier.belongsTo(Type_carrier, {
     foreignKey: 'fk_id_tc_carrier',
     targetId: 'id_tc'
+});
+
+//Relation with city
+City.hasMany(Carrier, {
+    foreignKey: 'fk_id_city_carrier',
+    targetId: 'id_city'
+});
+
+Carrier.belongsTo(City, {
+    foreignKey: 'fk_id_city_carrier',
+    targetId: 'id_city'
+});
+
+//Relation with type carrier
+Type_document.hasMany(Carrier, {
+    foreignKey: 'fk_id_td_carrier',
+    targetId: 'id_td'
+});
+
+Carrier.belongsTo(Type_document, {
+    foreignKey: 'fk_id_td_carrier',
+    targetId: 'id_td'
 });

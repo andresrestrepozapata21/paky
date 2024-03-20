@@ -2,13 +2,15 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
 // I define the model for the users table in a variable and export him
-export const Department = sequelize.define('departments', {
-    id_d: {
+export const Type_document = sequelize.define('types_document', {
+    id_td: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
-    name_d: {
+    description_td: {
         type:DataTypes.STRING
     }
+},{
+    TimesTamps: true
 });

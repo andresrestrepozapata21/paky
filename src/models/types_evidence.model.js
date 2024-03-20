@@ -10,9 +10,6 @@ export const Type_evidence = sequelize.define('types_evidence', {
     },
     description_te: {
         type:DataTypes.STRING
-    },
-    date_created_te: {
-        type: DataTypes.DATE
     }
 },{
     TimesTamps: true

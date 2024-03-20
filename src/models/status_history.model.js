@@ -16,9 +16,6 @@ export const Status_history = sequelize.define('status_history', {
     },
     comentary_sh: {
         type:DataTypes.STRING
-    },
-    date_created_city: {
-        type: DataTypes.DATE
     }
 },{
     TimesTamps: true

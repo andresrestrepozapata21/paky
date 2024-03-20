@@ -1,25 +1,17 @@
 // I import my Express Router and modules need it
 import { Router } from 'express';
 import multer from 'multer';
-// I import logger js
+import jwt from "jsonwebtoken";
 import logger from '../utils/logger.js';
-// I import my controller with the methods I need
-import { loadDocumentsCarrier, loadDocumentsVehicle, login, register, registerVehicle } from '../controllers/carriers.controller.js';
-//I import multer middleware controller
 import multerUpload from "../middlewares/multer_carrier_documents.js";
 import multerUploadVehicle from "../middlewares/multer_vehicle_documents.js";
-
+import multerUploadEvidence from "../middlewares/multer_evidence_packages.js";
+// I import my controller with the methods I need
+import { asignatedPackages, confirmatePackage, deliverPackage, detailPackage, loadDocumentsCarrier, loadDocumentsVehicle, login, master, onTheWayPackages, register, registerVehicle } from '../controllers/carriers.controller.js';
+// Firme private secret jwt
+const secret = process.env.SECRET;
 // I declare the constant that the Router() method returns and upload multer directory
 const router = Router();
-/**
- * @api {POST} /carrier/login
- * @apiName paky
- * @apiGroup carrier
- * @apiDescription Login carrier
- *
- * @apiSuccess message and data login
- */
-router.post('/carrier/login', login);
 /**
  * @api {POST} /carrier/register
  * @apiName paky
@@ -100,7 +92,7 @@ router.post('/carrier/vehicle/register', async (req, res, next) => {
     }
 }, registerVehicle);
 /**
- * @api {POST} /carrierDocuments/register
+ * @api {POST} /carrier/vehicle/loadDocuments
  * @apiName paky
  * @apiGroup carrierDocuments
  * @apiDescription register carrier documents and multer load document with validations
@@ -134,5 +126,201 @@ router.post('/carrier/vehicle/loadDocuments', async (req, res, next) => {
         return res.status(500).json({ message: 'Something went wrong', result: 0 });
     }
 }, loadDocumentsVehicle);
+/**
+ * @api {POST} /carrier/login
+ * @apiName paky
+ * @apiGroup carrier
+ * @apiDescription Login carrier
+ *
+ * @apiSuccess message and data login
+ */
+router.post('/carrier/login', login);
+/**
+ * @api {POST} /carrier/master
+ * @apiName paky
+ * @apiGroup master
+ * @apiDescription carrier master
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/carrier/master', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        // logger control proccess
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: error.message, result: 0 });
+    }
+}, master);
+/**
+ * @api {POST} /carrier/asignatedPackage
+ * @apiName paky
+ * @apiGroup asignatedPackage
+ * @apiDescription carrier asignated Package
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/carrier/asignatedPackage', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        // logger control proccess
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: error.message, result: 0 });
+    }
+}, asignatedPackages);
+/**
+ * @api {POST} /carrier/confirmatePackage
+ * @apiName paky
+ * @apiGroup confirmatePackage
+ * @apiDescription carrier confirmatePackage
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/carrier/confirmatePackage', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        // logger control proccess
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: error.message, result: 0 });
+    }
+}, confirmatePackage);
+/**
+ * @api {POST} /carrier/onTheWayPackage
+ * @apiName paky
+ * @apiGroup onTheWayPackage
+ * @apiDescription carrier onTheWayPackage
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/carrier/onTheWayPackage', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        // logger control proccess
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: error.message, result: 0 });
+    }
+}, onTheWayPackages);
+/**
+ * @api {POST} /carrier/detailsPackage
+ * @apiName paky
+ * @apiGroup detailsPackage
+ * @apiDescription carrier detailsPackage
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/carrier/detailsPackage', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        // logger control proccess
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: error.message, result: 0 });
+    }
+}, detailPackage);
+/**
+ * @api {POST} /carrier/deliverPackage
+ * @apiName paky
+ * @apiGroup deliverPackage
+ * @apiDescription carrier deliverPackage
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/carrier/deliverPackage', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        // logger control proccess
+        logger.info('Token validated successfuly');
+        // I call the method of my multer middleware
+        multerUploadEvidence.array('evidence', 1)(req, res, (err) => {
+            // check empty documents
+            if (!req.files || req.files.length === 0) {
+                return res.status(400).json({ message: 'No documents provided', result: 0 });
+            } else {
+                // Validate errors multer personalized
+                if (err instanceof multer.MulterError) {
+                    // Multer error (e.g. file size exceeds limit)
+                    return res.status(400).json({ message: 'Multer Error: Invalide number of files, invalide file size or extension type of any file', result: 0 });
+                } else if (err) {
+                    // Capture any unexpected errors and return a JSON with the error message
+                    return res.status(500).json({ message: 'Something went wrong', result: 0 });
+                }
+            }
+            // logger control proccess
+            logger.info('vehicle documents load successfully');
+            // If there is no error, move to the next middleware or controller
+            next();
+        });
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: error.message, result: 0 });
+    }
+}, deliverPackage);
 // I export the router
 export default router;

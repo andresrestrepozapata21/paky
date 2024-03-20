@@ -10,9 +10,6 @@ export const Type_package = sequelize.define('types_package', {
     },
     description_tp: {
         type:DataTypes.STRING
-    },
-    date_created_tp: {
-        type: DataTypes.DATE
     }
 },{
     TimesTamps: true

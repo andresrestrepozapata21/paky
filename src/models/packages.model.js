@@ -42,6 +42,9 @@ export const Package = sequelize.define('packages', {
     profit_dropshipper_p: {
         type: DataTypes.INTEGER
     },
+    with_collection_p:{
+        type: DataTypes.INTEGER
+    },
     total_price_p:{
         type: DataTypes.INTEGER
     },

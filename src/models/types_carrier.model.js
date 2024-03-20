@@ -10,9 +10,6 @@ export const Type_carrier = sequelize.define('types_carrier', {
     },
     description_tc: {
         type:DataTypes.STRING
-    },
-    date_created_tc: {
-        type: DataTypes.DATE
     }
 },{
     TimesTamps: true

@@ -14,12 +14,7 @@ export const City = sequelize.define('cities', {
     },
     status_city: {
         type:DataTypes.INTEGER
-    },
-    date_created_city: {
-        type: DataTypes.DATE
     }
-},{
-    TimesTamps: true
 });
 //=================== I define the relationship between the tables =================
 
