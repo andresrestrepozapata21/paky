@@ -4,7 +4,7 @@ import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
 import { Type_carrier } from "./types_carrier.model.js";
 import { City } from "./cities.model.js";
-import { Type_document } from "./type_document.model copy.js";
+import { Type_document } from "./type_document.model.js";
 // I define the model for the carriers table in a variable and export him
 export const Carrier = sequelize.define('carriers', {
     id_carrier: {

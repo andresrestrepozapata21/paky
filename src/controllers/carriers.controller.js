@@ -389,7 +389,7 @@ export async function master(req, res) {
                         ]
                     }
                 ],
-                attributes: ['id_p', 'type_send_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
+                attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
                 order: [
                     ['createdAt', 'ASC'] // Sort by column 'column_name' in ascending order
                 ]
@@ -397,11 +397,11 @@ export async function master(req, res) {
             // Process data for JSON response
             const formattedDataPackages = carrier_packages.map(p => {
                 // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
-                if (p.type_send_p == 1) {
+                if (p.fk_id_tp_p == 1) {
                     // Definate response orden fine JSON
                     return {
                         id_p: p.id_p,
-                        type_send_p: p.type_send_p,
+                        type_send: p.fk_id_tp_p,
                         status_p: p.status_p,
                         order_number: p.orden_p,
                         date_created_p: p.createdAt,
@@ -417,11 +417,11 @@ export async function master(req, res) {
                         name_city_destiny: p.city.name_city,
                         direction_client_p: p.direction_client_p,
                     };
-                } else if (p.type_send_p == 2) {
+                } else if (p.fk_id_tp_p == 2) {
                     //Definate response orden fine JSON
                     return {
                         id_p: p.id_p,
-                        type_send_p: p.type_send_p,
+                        type_send: p.fk_id_tp_p,
                         status_p: p.status_p,
                         order_number: p.orden_p,
                         date_created_p: p.createdAt,
@@ -521,7 +521,7 @@ export async function asignatedPackages(req, res) {
                     ]
                 }
             ],
-            attributes: ['id_p', 'type_send_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'status_p', 'direction_client_p', 'createdAt', 'total_price_p', 'with_collection_p'],
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'status_p', 'direction_client_p', 'createdAt', 'total_price_p', 'with_collection_p'],
             order: [
                 ['createdAt', 'ASC'] // Sort by column 'column_name' in ascending order
             ]
@@ -529,11 +529,11 @@ export async function asignatedPackages(req, res) {
         // Process data for JSON response
         const formattedDataPackages = carrier_packages.map(p => {
             // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
-            if (p.type_send_p == 1) {
+            if (p.fk_id_tp_p == 1) {
                 // Definate response orden fine JSON
                 return {
                     id_p: p.id_p,
-                    type_send_p: p.type_send_p,
+                    type_send: p.fk_id_tp_p,
                     status_p: p.status_p,
                     order_number: p.orden_p,
                     date_created_p: p.createdAt,
@@ -549,11 +549,11 @@ export async function asignatedPackages(req, res) {
                     name_city_destiny: p.city.name_city,
                     direction_client_p: p.direction_client_p
                 };
-            } else if (p.type_send_p == 2) {
+            } else if (p.fk_id_tp_p == 2) {
                 //Definate response orden fine JSON
                 return {
                     id_p: p.id_p,
-                    type_send_p: p.type_send_p,
+                    type_send: p.fk_id_tp_p,
                     status_p: p.status_p,
                     order_number: p.orden_p,
                     date_created_p: p.createdAt,
@@ -606,10 +606,10 @@ export async function confirmatePackage(req, res) {
             where: {
                 id_p
             },
-            attributes: ['id_p', 'status_p', 'type_send_p', 'confirmation_carrier_p', 'fk_id_carrier_p']
+            attributes: ['id_p', 'status_p', 'fk_id_tp_p', 'confirmation_carrier_p', 'fk_id_carrier_p']
         });
         let data_p, newHistory; // Declare data_p at a higher scope
-        const type_send = data_package.type_send_p; // Declare type_send at a higher scoper and simple writing in validations
+        const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
         const id_carrier_asignate = data_package.fk_id_carrier_p;
         // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal 
         //1.Bodega inicial 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destinal a bodego 5.En camino a entrega final 6. Entregado 7. En camino de bodega inicia central 
@@ -762,7 +762,7 @@ export async function onTheWayPackages(req, res) {
                     ]
                 }
             ],
-            attributes: ['id_p', 'type_send_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'status_p', 'direction_client_p', 'createdAt', 'total_price_p', 'with_collection_p'],
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'status_p', 'direction_client_p', 'createdAt', 'total_price_p', 'with_collection_p'],
             order: [
                 ['createdAt', 'ASC'] // Sort by column 'column_name' in ascending order
             ]
@@ -770,11 +770,11 @@ export async function onTheWayPackages(req, res) {
         // Process data for JSON response
         const formattedDataPackages = onTheWayPackage.map(p => {
             // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
-            if (p.type_send_p == 1) {
+            if (p.fk_id_tp_p == 1) {
                 // Definate response orden fine JSON
                 return {
                     id_p: p.id_p,
-                    type_send_p: p.type_send_p,
+                    type_send: p.fk_id_tp_p,
                     status_p: p.status_p,
                     order_number: p.orden_p,
                     date_created_p: p.createdAt,
@@ -790,11 +790,11 @@ export async function onTheWayPackages(req, res) {
                     name_city_destiny: p.city.name_city,
                     direction_client_p: p.direction_client_p
                 };
-            } else if (p.type_send_p == 2) {
+            } else if (p.fk_id_tp_p == 2) {
                 //Definate response orden fine JSON
                 return {
                     id_p: p.id_p,
-                    type_send_p: p.type_send_p,
+                    type_send: p.fk_id_tp_p,
                     status_p: p.status_p,
                     order_number: p.orden_p,
                     date_created_p: p.createdAt,
@@ -883,16 +883,16 @@ export async function detailPackage(req, res) {
                     ]
                 }
             ],
-            attributes: ['id_p', 'type_send_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'guide_number_p', 'profit_carrier_p', 'status_p', 'direction_client_p', 'createdAt', 'total_price_p', 'with_collection_p']
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'guide_number_p', 'profit_carrier_p', 'status_p', 'direction_client_p', 'createdAt', 'total_price_p', 'with_collection_p']
         });
         // Process data for JSON response
         const formattedDataPackages = detailPackage.map(p => {
             // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
-            if (p.type_send_p == 1) {
+            if (p.fk_id_tp_p == 1) {
                 // Definate response orden fine JSON
                 return {
                     id_p: p.id_p,
-                    type_send_p: p.type_send_p,
+                    type_send: p.fk_id_tp_p,
                     status_p: p.status_p,
                     order_number: p.orden_p,
                     date_created_p: p.createdAt,
@@ -912,11 +912,11 @@ export async function detailPackage(req, res) {
                     guide_number_p: p.guide_number_p,
                     direction_client_p: p.direction_client_p
                 };
-            } else if (p.type_send_p == 2) {
+            } else if (p.fk_id_tp_p == 2) {
                 //Definate response orden fine JSON
                 return {
                     id_p: p.id_p,
-                    type_send_p: p.type_send_p,
+                    type_send: p.fk_id_tp_p,
                     status_p: p.status_p,
                     order_number: p.orden_p,
                     date_created_p: p.createdAt,
@@ -975,10 +975,10 @@ export async function deliverPackage(req, res) {
             where: {
                 id_p
             },
-            attributes: ['id_p', 'status_p', 'type_send_p', 'confirmation_carrier_p', 'fk_id_carrier_p']
+            attributes: ['id_p', 'status_p', 'fk_id_tp_p', 'confirmation_carrier_p', 'fk_id_carrier_p']
         });
         let data_p, data_e, newHistory; // Declare data_p at a higher scope
-        const type_send = data_package.type_send_p; // Declare type_send at a higher scoper and simple writing in validations
+        const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
         const id_carrier_asignate = data_package.fk_id_carrier_p;
         // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal 
         // 1.Bodega inicial 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega inicial a bodega central
@@ -1068,10 +1068,10 @@ export async function deliverPackage(req, res) {
             }
         }
         // logger control proccess
-        logger.info('Confirmate packages successfuly');
+        logger.info('Deliver packages successfuly');
         // The credentials are incorrect
         res.json({
-            message: 'Confirmate packages successfuly',
+            message: 'Deliver packages successfuly',
             result: 1,
             data_e,
             data_p

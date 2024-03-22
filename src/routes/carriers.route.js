@@ -155,12 +155,11 @@ router.post('/carrier/master', async (req, res, next) => {
                 result: 2
             });
         }
-        // logger control proccess
         logger.info('Token validated successfuly');
         next();
     } catch (error) {
         // Capture any unexpected errors and return a JSON with the error message
-        return res.status(401).json({ message: error.message, result: 0 });
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, master);
 /**
@@ -188,7 +187,7 @@ router.post('/carrier/asignatedPackage', async (req, res, next) => {
         next();
     } catch (error) {
         // Capture any unexpected errors and return a JSON with the error message
-        return res.status(401).json({ message: error.message, result: 0 });
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, asignatedPackages);
 /**
@@ -216,7 +215,7 @@ router.post('/carrier/confirmatePackage', async (req, res, next) => {
         next();
     } catch (error) {
         // Capture any unexpected errors and return a JSON with the error message
-        return res.status(401).json({ message: error.message, result: 0 });
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, confirmatePackage);
 /**
@@ -244,7 +243,7 @@ router.post('/carrier/onTheWayPackage', async (req, res, next) => {
         next();
     } catch (error) {
         // Capture any unexpected errors and return a JSON with the error message
-        return res.status(401).json({ message: error.message, result: 0 });
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, onTheWayPackages);
 /**
@@ -272,7 +271,7 @@ router.post('/carrier/detailsPackage', async (req, res, next) => {
         next();
     } catch (error) {
         // Capture any unexpected errors and return a JSON with the error message
-        return res.status(401).json({ message: error.message, result: 0 });
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, detailPackage);
 /**
@@ -313,13 +312,13 @@ router.post('/carrier/deliverPackage', async (req, res, next) => {
                 }
             }
             // logger control proccess
-            logger.info('vehicle documents load successfully');
+            logger.info('Evidence load successfully');
             // If there is no error, move to the next middleware or controller
             next();
         });
     } catch (error) {
         // Capture any unexpected errors and return a JSON with the error message
-        return res.status(401).json({ message: error.message, result: 0 });
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, deliverPackage);
 // I export the router

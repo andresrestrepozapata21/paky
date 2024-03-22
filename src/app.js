@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import cors from "cors";
 // importing routes
 import carriers from "./routes/carriers.route.js";
+import utils from "./routes/utils.route.js";
 /**
  * 
  * @apiDescription inicialization around variables
@@ -40,5 +41,7 @@ app.use('/documents_vehicle_carrier', express.static(join(CURRENT_DIR, '../docum
  *
  */
 app.use(carriers);
+app.use(utils);
+
 // I export my app variable
 export default app;
