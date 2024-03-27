@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 // import personaly models
 import { Carrier } from '../models/carriers.model.js';
 import { Carrier_document } from '../models/carrier_documents.model.js';
+import { Carrier_bank_account } from '../models/carrier_bank_accounts.model.js';
 import { Vehicle } from "../models/vehicles.model.js";
 import { Vehicle_document } from "../models/vehicle_documents.model.js";
 import { Evidence } from "../models/evidences.model.js";
@@ -13,9 +14,10 @@ import { Package } from "../models/packages.model.js";
 import { Store } from "../models/stores.model.js";
 import { City } from "../models/cities.model.js";
 import { Central_warehouse } from "../models/central_warehouses.model.js";
-import { Sequelize } from 'sequelize';
+import { Sequelize, json } from 'sequelize';
 import { Department } from "../models/departments.model.js";
 import { Status_history } from "../models/status_history.model.js";
+import { Carrier_payment_request } from "../models/carrier_payment_requests.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -27,7 +29,7 @@ const formattedTime = bogotaTime.format('YYYY-MM-DD HH:mm:ss');
 // method to register Carriers
 export async function register(req, res) {
     // logger control proccess
-    logger.info('enter the endpoint registerProduct');
+    logger.info('enter the endpoint register carrier');
     // I save the variables that come to me in the request in variables.
     const { number_document_carrier, name_carrier, last_name_carrier, phone_number_carrier, email_carrier, password_carrier, fk_id_city_carrier, fk_id_tc_carrier, fk_id_td_carrier } = req.body;
     // I validate req correct json
@@ -42,7 +44,7 @@ export async function register(req, res) {
             phone_number_carrier,
             email_carrier,
             password_carrier,
-            status_carrier: 5,
+            status_carrier: 6,
             revenue_carrier: 0,
             debt_carrier: 0,
             fk_id_td_carrier,
@@ -70,6 +72,7 @@ export async function register(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -110,7 +113,7 @@ export async function loadDocumentsCarrier(req, res) {
             }
         });
         carrier.set({
-            status_carrier: 4
+            status_carrier: 5
         });
         await carrier.save();
         // logger control proccess
@@ -130,6 +133,62 @@ export async function loadDocumentsCarrier(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// method to register Carriers
+export async function registerBankAccountCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint register carrier bank account');
+    // I save the variables that come to me in the request in variables.
+    const { number_cba, type_cba, bank_cba, description_cba, fk_id_carrier_cba } = req.body;
+    // I validate req correct json
+    if (!number_cba || !type_cba || !bank_cba || !description_cba || !fk_id_carrier_cba) return res.sendStatus(400);
+    // I enclose everything in a try catch to control errors
+    try {
+        // I declare the create method with its respective definition of the object and my Carrier model in a variable taking into account the await
+        let newBankAccount = await Carrier_bank_account.create({
+            number_cba,
+            type_cba,
+            bank_cba,
+            description_cba,
+            fk_id_carrier_cba,
+        },
+            {
+                // I define the variables that I am going to insert into the database so that there are no conflicts with the definition of the id or the number of columns
+                fields: ['number_cba', 'type_cba', 'bank_cba', 'description_cba', 'fk_id_carrier_cba']
+            });
+        // valid if everything went well in the INSERT
+        if (newBankAccount) {
+            // update status carrier
+            const carrier = await Carrier.findOne({
+                where: {
+                    id_carrier: fk_id_carrier_cba
+                }
+            });
+            carrier.set({
+                status_carrier: 4
+            });
+            await carrier.save();
+            // logger control proccess
+            logger.info('Carrier bank account registed successfully');
+            // I return the json with the message I want
+            return res.json({
+                message: 'Carrier bank account registed successfully',
+                result: 1,
+                data: newBankAccount
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error register carrier bank account: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -193,6 +252,7 @@ export async function registerVehicle(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -253,6 +313,7 @@ export async function loadDocumentsVehicle(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -324,6 +385,7 @@ export async function login(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -343,7 +405,18 @@ export async function master(req, res) {
             where: {
                 id_carrier
             },
-            attributes: ['id_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier']
+            attributes: ['id_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            include: [
+                {
+                    model: Carrier_bank_account,
+                    attributes: ['id_cba', 'bank_cba'],
+                    include: [
+                        {
+                            model: Carrier_payment_request
+                        }
+                    ]
+                }
+            ]
         });
         // I validate login exist
         if (carrier_master.length > 0) {
@@ -462,6 +535,7 @@ export async function master(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -587,6 +661,7 @@ export async function asignatedPackages(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -612,7 +687,7 @@ export async function confirmatePackage(req, res) {
         const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
         const id_carrier_asignate = data_package.fk_id_carrier_p;
         // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal 
-        //1.Bodega inicial 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destinal a bodego 5.En camino a entrega final 6. Entregado 7. En camino de bodega inicia central 
+        //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destinal a bodego 5.En camino a entrega final 6. Entregado 7. En camino de bodega inicia central 
         if (type_send == 1) {
             switch (data_package.status_p) {
                 case 1:
@@ -620,7 +695,7 @@ export async function confirmatePackage(req, res) {
                     // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
                     newHistory = await Status_history.create({
                         status_sh: 7,
-                        comentary_sh: "En camino de bodega inicial a bodega central",
+                        comentary_sh: "En camino de bodega dropshipper a bodega central",
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
@@ -650,7 +725,7 @@ export async function confirmatePackage(req, res) {
                     data_p = confirmAndStatus(id_p, 7);
                     newHistory = await Status_history.create({
                         status_sh: 7,
-                        comentary_sh: "En camino de bodega inicial a central de origen",
+                        comentary_sh: "En camino de bodega dropshipper a central de origen",
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
@@ -702,6 +777,7 @@ export async function confirmatePackage(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -717,7 +793,7 @@ export async function onTheWayPackages(req, res) {
         // I validate req correct json
         if (!id_carrier) return res.sendStatus(400);
         // I call and save the result of the findAll method, which is d sequelize
-        // 1.Bodega inicial 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega inicial a bodega central 
+        // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega dropshipper a bodega central 
         const onTheWayPackage = await Package.findAll({
             where: {
                 fk_id_carrier_p: id_carrier,
@@ -828,6 +904,7 @@ export async function onTheWayPackages(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -954,6 +1031,7 @@ export async function detailPackage(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
+            result: 0,
             data: {}
         });
     }
@@ -981,7 +1059,7 @@ export async function deliverPackage(req, res) {
         const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
         const id_carrier_asignate = data_package.fk_id_carrier_p;
         // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal 
-        // 1.Bodega inicial 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega inicial a bodega central
+        // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a bodega central
         if (type_send == 1) {
             switch (data_package.status_p) {
                 case 7:
@@ -991,11 +1069,12 @@ export async function deliverPackage(req, res) {
                     newHistory = await Status_history.create({
                         status_sh: 4,
                         comentary_sh: "Entregado a bodega central ciudad destino",
+                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
                     // logger control proccess
-                    logger.info('History status registed successfully');
+                    logger.info('Entregado a bodega central ciudad destino');
 
                     break;
 
@@ -1006,11 +1085,12 @@ export async function deliverPackage(req, res) {
                     newHistory = await Status_history.create({
                         status_sh: 6,
                         comentary_sh: "Entregado al cliente",
+                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
                     // logger control proccess
-                    logger.info('History status registed successfully');
+                    logger.info('Entregado al cliente');
 
                     break;
 
@@ -1026,11 +1106,12 @@ export async function deliverPackage(req, res) {
                     newHistory = await Status_history.create({
                         status_sh: 2,
                         comentary_sh: "Entregado a bodega central ciudad origen",
+                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
                     // logger control proccess
-                    logger.info('History status registed successfully');
+                    logger.info('Entregado a bodega central ciudad origen');
 
                     break;
 
@@ -1041,11 +1122,12 @@ export async function deliverPackage(req, res) {
                     newHistory = await Status_history.create({
                         status_sh: 4,
                         comentary_sh: "Entregado a bodega central ciudad destino",
+                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
                     // logger control proccess
-                    logger.info('History status registed successfully');
+                    logger.info('Entregado a bodega central ciudad destino');
 
                     break;
 
@@ -1056,11 +1138,12 @@ export async function deliverPackage(req, res) {
                     newHistory = await Status_history.create({
                         status_sh: 6,
                         comentary_sh: "Entregado al cliente",
+                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
                     // logger control proccess
-                    logger.info('History status registed successfully');
+                    logger.info('Entregado al cliente');
                     break;
 
                 default:
@@ -1078,7 +1161,209 @@ export async function deliverPackage(req, res) {
         });
     } catch (e) {
         // logger control proccess
-        logger.info('Error asignated packages: ' + e);
+        logger.info('Error deliver packages: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method to report problem packages Carriers
+export async function reportProblemPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint report problem packages');
+    try {
+        // I validate error file empty
+        if (!req.files) return res.status(400).json({ error: 'No file provided' });
+        // capture the id that comes in the parameters of the req
+        const { id_p, type_evidence, comentary_sh, details_sh } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+        // I call and save the result of the findOne method, which is d sequelize
+        const data_package = await Package.findOne({
+            where: {
+                id_p
+            },
+            attributes: ['id_p', 'status_p', 'fk_id_tp_p', 'confirmation_carrier_p', 'fk_id_carrier_p']
+        });
+        let data_p, data_e, newHistory; // Declare data_p at a higher scope
+        const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
+        const id_carrier_asignate = data_package.fk_id_carrier_p;
+        // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal 
+        // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega dropshipper a bodega central 0.cancelado
+        if (type_send == 1) {
+            data_e = loadEvidenceDataBase(req, id_p, type_evidence);
+            data_p = deliverPackageCarrierDataBase(id_p, 0);
+            // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
+            // same status package, added 0. canceled
+            newHistory = await Status_history.create({
+                status_sh: 0,
+                comentary_sh,
+                details_sh,
+                fk_id_carrier_asignated_sh: id_carrier_asignate,
+                fk_id_p_sh: id_p,
+            });
+            // logger control proccess
+            logger.info('History status registed successfully');
+
+        } else if (type_send == 2) {
+            data_e = loadEvidenceDataBase(req, id_p, type_evidence)
+            data_p = deliverPackageCarrierDataBase(id_p, 0)
+            // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
+            newHistory = await Status_history.create({
+                status_sh: 0,
+                comentary_sh,
+                details_sh,
+                fk_id_carrier_asignated_sh: id_carrier_asignate,
+                fk_id_p_sh: id_p,
+            });
+            // logger control proccess
+            logger.info('History status registed successfully');
+        }
+        // logger control proccess
+        logger.info('report problem registed successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'report problem registed successfuly',
+            result: 1,
+            data_e,
+            data_p
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error report problem packages: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// method to payments request Carriers
+export async function registerCarrierPaymentsRequest(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint register carrier payments request');
+    // I save the variables that come to me in the request in variables.
+    const { quantity_requested_cpr, fk_id_cba_cpr } = req.body;
+    // I validate req correct json
+    if (!quantity_requested_cpr || !fk_id_cba_cpr) return res.sendStatus(400);
+    // I enclose everything in a try catch to control errors
+    try {
+        // I call and save the result of the findAll method, which is d sequelize
+        const getCarrier = await Carrier_bank_account.findAll({
+            where: {
+                id_cba: fk_id_cba_cpr
+            },
+            include: [
+                {
+                    model: Carrier,
+                    attributes: ['id_carrier', 'revenue_carrier', 'debt_carrier'],
+                }
+            ],
+            attributes: ['id_cba', 'fk_id_carrier_cba']
+        });
+        // I validate login exist
+        if (getCarrier.length > 0) {
+            if (getCarrier[0].carrier.debt_carrier == 0) {
+                if (getCarrier[0].carrier.revenue_carrier >= quantity_requested_cpr && quantity_requested_cpr > 0) {
+                    // I declare the create method with its respective definition of the object and my Carrier model in a variable taking into account the await
+                    // 1. Pagada 2. pendiente 3. rechazada
+                    let newRequest = await Carrier_payment_request.create({
+                        quantity_requested_cpr,
+                        status_cpr: 2,
+                        date_created_cba: formattedTime,
+                        fk_id_cba_cpr
+                    },
+                        {
+                            // I define the variables that I am going to insert into the database so that there are no conflicts with the definition of the id or the number of columns
+                            fields: ['quantity_requested_cpr', 'status_cpr', 'date_created_cba', 'fk_id_cba_cpr']
+                        });
+                    // valid if everything went well in the INSERT
+                    if (newRequest) {
+                        // logger control proccess
+                        logger.info('Carrier payments request registed successfully');
+                        // I return the json with the message I want
+                        return res.json({
+                            message: 'Carrier payments request registed successfully',
+                            result: 1,
+                            data: newRequest
+                        });
+                    }
+                } else {
+                    // logger control proccess
+                    logger.info('Requesting a value greater than what it has or Requesting a value negative.');
+                    // I return the status 500 and the message I want
+                    res.status(500).json({
+                        message: 'Requesting a value greater than what it has or Requesting a value negative.',
+                        result: 0
+                    });
+                }
+            } else {
+                // I return the status 500 and the message I want
+                res.status(500).json({
+                    message: 'The carrier has debt',
+                    result: 0,
+                    data: {}
+                });
+            }
+        } else {
+            // I return the status 500 and the message I want
+            res.status(500).json({
+                message: 'The carrier non-existing',
+                result: 0,
+                data: {}
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error registerCarrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get history Carriers
+export async function getHistory(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint carrier history');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.body;
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        // I call and save the result of the findAll method, which is d sequelize
+        const getHistory = await Status_history.findAll({
+            where: {
+                fk_id_carrier_asignated_sh: id_carrier
+            },
+            attributes: ['id_sh', 'status_sh', 'comentary_sh', 'details_sh'],
+            include: [
+                {
+                    model: Package,
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'with_collection_p', 'total_price_p'],
+                }
+            ]
+        });
+        // logger control proccess
+        logger.info('Get carrier history successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'Get carrier history successfuly',
+            result: 1,
+            data: getHistory
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error Master: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
@@ -1086,6 +1371,78 @@ export async function deliverPackage(req, res) {
         });
     }
 }
+
+// Method put Account Carriers
+export async function putAccounts(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint carrier history');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.params;
+        const { bancolombia_number_account_carrier, nequi_carrier, daviplata_carrier } = req.body;
+        // I validate error file empty
+        if (!req.files) return res.status(400).json({ error: 'No file provided' });
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        let error = false;
+        // Run files array and insert in database the documents
+        req.files.forEach(async document => {
+            // update status carrier
+            const updateQR = await Carrier.findOne({
+                where: {
+                    id_carrier
+                }
+            });
+            updateQR.set({
+                url_QR_carrier: "documents_carrier/" + document.filename,
+            });
+            await updateQR.save();
+            if (!updateQR) error = true;
+        });
+        // valid if everything went well in the INSERT
+        if (error) {
+            // Devolver un JSON con un mensaje de error
+            return res.status(400).json({
+                message: 'Error load accounts carrier qr, nequi, daviplata',
+                result: 0
+            });
+        }
+        // update status carrier
+        const updateAnotherAccount = await Carrier.findOne({
+            where: {
+                id_carrier
+            }
+        });
+        updateAnotherAccount.set({
+            bancolombia_number_account_carrier,
+            nequi_carrier,
+            daviplata_carrier,
+        });
+        await updateAnotherAccount.save();
+        // logger control proccess
+        logger.info('Carrier accounts nequi, daviplata, etc... registed successfully');
+        // I return the json with the message I want
+        return res.json({
+            message: 'Carrier accounts nequi, daviplata, etc... registered successfully',
+            result: 1,
+            data: updateAnotherAccount,
+            data_qr: req.files.map(file => ({
+                filename: file.filename,
+                mimetype: file.mimetype
+            }))
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error accounts Nequi; etc...: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
 /*===========================================================================================
                                     Assistent Methods
 ===========================================================================================*/

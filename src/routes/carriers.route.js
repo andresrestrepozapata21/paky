@@ -7,7 +7,7 @@ import multerUpload from "../middlewares/multer_carrier_documents.js";
 import multerUploadVehicle from "../middlewares/multer_vehicle_documents.js";
 import multerUploadEvidence from "../middlewares/multer_evidence_packages.js";
 // I import my controller with the methods I need
-import { asignatedPackages, confirmatePackage, deliverPackage, detailPackage, loadDocumentsCarrier, loadDocumentsVehicle, login, master, onTheWayPackages, register, registerVehicle } from '../controllers/carriers.controller.js';
+import { asignatedPackages, confirmatePackage, deliverPackage, detailPackage, getHistory, loadDocumentsCarrier, loadDocumentsVehicle, login, master, onTheWayPackages, putAccounts, register, registerBankAccountCarrier, registerCarrierPaymentsRequest, registerVehicle, reportProblemPackage } from '../controllers/carriers.controller.js';
 // Firme private secret jwt
 const secret = process.env.SECRET;
 // I declare the constant that the Router() method returns and upload multer directory
@@ -22,9 +22,9 @@ const router = Router();
  */
 router.post('/carrier/register', register);
 /**
- * @api {POST} /carrierDocuments/register
+ * @api {POST} /carrier/loadDocuments
  * @apiName paky
- * @apiGroup carrierDocuments
+ * @apiGroup loadDocuments
  * @apiDescription register carrier documents and multer load document with validations
  *
  * @apiSuccess message and data register
@@ -56,6 +56,15 @@ router.post('/carrier/loadDocuments', async (req, res, next) => {
         return res.status(500).json({ message: 'Something went wrong', result: 0 });
     }
 }, loadDocumentsCarrier);
+/**
+ * @api {POST} /carrier/registerCarrierBankAccount
+ * @apiName paky
+ * @apiGroup registerCarrierBankAccount
+ * @apiDescription register registerCarrierBankAccount
+ *
+ * @apiSuccess message and data register
+ */
+router.post('/carrier/registerCarrierBankAccount', registerBankAccountCarrier);
 /**
  * @api {POST} /carrier/vehicle/register
  * @apiName paky
@@ -321,5 +330,153 @@ router.post('/carrier/deliverPackage', async (req, res, next) => {
         return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, deliverPackage);
+/**
+ * @api {POST} /carrier/reportProblemPackage
+ * @apiName paky
+ * @apiGroup reportProblemPackage
+ * @apiDescription carrier reportProblemPackage
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/carrier/reportProblemPackage', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        // logger control proccess
+        logger.info('Token validated successfuly');
+        // I call the method of my multer middleware
+        multerUploadEvidence.array('evidence', 1)(req, res, (err) => {
+            // check empty documents
+            if (!req.files || req.files.length === 0) {
+                return res.status(400).json({ message: 'No documents provided', result: 0 });
+            } else {
+                // Validate errors multer personalized
+                if (err instanceof multer.MulterError) {
+                    // Multer error (e.g. file size exceeds limit)
+                    return res.status(400).json({ message: 'Multer Error: Invalide number of files, invalide file size or extension type of any file', result: 0 });
+                } else if (err) {
+                    // Capture any unexpected errors and return a JSON with the error message
+                    return res.status(500).json({ message: 'Something went wrong', result: 0 });
+                }
+            }
+            // logger control proccess
+            logger.info('Evidence problem load successfully');
+            // If there is no error, move to the next middleware or controller
+            next();
+        });
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, reportProblemPackage);
+/**
+ * @api {POST} /carrier/carrierPaymentsRequest
+ * @apiName paky
+ * @apiGroup carrierPaymentsRequest
+ * @apiDescription carrier carrierPaymentsRequest
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/carrier/carrierPaymentsRequest', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, registerCarrierPaymentsRequest);
+/**
+ * @api {POST} /carrier/history
+ * @apiName paky
+ * @apiGroup history
+ * @apiDescription carrier history
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/carrier/history', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, getHistory);
+/**
+ * @api {POST} /carrier/account
+ * @apiName paky
+ * @apiGroup account
+ * @apiDescription carrier account
+ *
+ * @apiSuccess message and get data needed
+ */
+router.put('/carrier/accounts/:id_carrier', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        // logger control proccess
+        logger.info('Token validated successfuly');
+        // I call the method of my multer middleware
+        multerUpload.array('qr', 1)(req, res, (err) => {
+            // check empty documents
+            if (!req.files || req.files.length === 0) {
+                return res.status(400).json({ message: 'No documents provided', result: 0 });
+            } else {
+                // Validate errors multer personalized
+                if (err instanceof multer.MulterError) {
+                    // Multer error (e.g. file size exceeds limit)
+                    return res.status(400).json({ message: 'Multer Error: Invalide number of files, invalide file size or extension type of any file', result: 0 });
+                } else if (err) {
+                    // Capture any unexpected errors and return a JSON with the error message
+                    return res.status(500).json({ message: 'Something went wrong', result: 0 });
+                }
+            }
+            // logger control proccess
+            logger.info('Carrier QR load successfully');
+            // If there is no error, move to the next middleware or controller
+            next();
+        });
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, putAccounts);
 // I export the router
 export default router;

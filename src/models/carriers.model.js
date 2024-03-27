@@ -36,12 +36,6 @@ export const Carrier = sequelize.define('carriers', {
     url_perfil_image_carrier: {
         type: DataTypes.STRING
     },
-    token_login_carrier: {
-        type: DataTypes.STRING
-    },
-    exp_token_login_carrier: {
-        type: DataTypes.STRING
-    },
     token_device_carrier: {
         type: DataTypes.STRING
     },

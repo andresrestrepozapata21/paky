@@ -12,12 +12,18 @@ export const Status_history = sequelize.define('status_history', {
         autoIncrement: true
     },
     status_sh: {
-        type:DataTypes.INTEGER
+        type: DataTypes.INTEGER
     },
     comentary_sh: {
-        type:DataTypes.STRING
+        type: DataTypes.STRING
+    },
+    evidence_sh: {
+        type: DataTypes.STRING
+    },
+    details_sh: {
+        type: DataTypes.STRING
     }
-},{
+}, {
     TimesTamps: true
 });
 

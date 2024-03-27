@@ -2,43 +2,50 @@
 // I imported the Sequelize module and my custom sequelize module with the configuration and connection to the DB
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
+import { City } from "./cities.model.js";
 // I define the model for the users table in a variable and export him
-export const Manager = sequelize.define('managers', {
-    id_manager: {
+export const Router_user = sequelize.define('Router_users', {
+    id_ru: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
-    name_manager: {
-        type: DataTypes.STRING
-    },
-    last_name_manager: {
-        type: DataTypes.STRING
-    },
-    phone_number_manager: {
-        type: DataTypes.STRING
-    },
-    email_manager: {
-        type: DataTypes.STRING
-    },
-    password_manager: {
-        type: DataTypes.STRING
-    },
-    token_device_manager: {
-        type: DataTypes.STRING
-    },
-    debt_dropshipper_manager: {
+    status_ru: {
         type: DataTypes.INTEGER
     },
-    debt_carrier_manager: {
-        type: DataTypes.INTEGER
+    name_ru: {
+        type: DataTypes.STRING
     },
-    last_login_manager: {
-        type: DataTypes.DATE
+    last_name_ru: {
+        type: DataTypes.STRING
     },
-    date_created_manager: {
+    phone_number_ru: {
+        type: DataTypes.STRING
+    },
+    email_ru: {
+        type: DataTypes.STRING
+    },
+    password_ru: {
+        type: DataTypes.STRING
+    },
+    token_device_ru: {
+        type: DataTypes.STRING
+    },
+    last_login_ru: {
         type: DataTypes.DATE
     }
 }, {
     TimesTamps: true
+});
+//=================== I define the relationship between the tables =================
+
+//Relation with type carrier
+City.hasMany(Router_user, {
+    foreignKey: 'fk_id_city_ru',
+    targetId: 'id_city'
+});
+
+Router_user.belongsTo(City, {
+    foreignKey: 'fk_id_city_ru',
+    targetId: 'id_city'
 });
