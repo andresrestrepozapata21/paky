@@ -33,6 +33,9 @@ export const Package = sequelize.define('packages', {
     status_p: {
         type: DataTypes.INTEGER
     },
+    profit_carrier_inter_city_p: {
+        type: DataTypes.INTEGER
+    },
     profit_carrier_p: {
         type: DataTypes.INTEGER
     },

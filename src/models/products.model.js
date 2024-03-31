@@ -17,15 +17,12 @@ export const Product = sequelize.define('products', {
     },
     price_sale_product: {
         type: DataTypes.INTEGER
-    }, 
+    },
     price_cost_product: {
         type: DataTypes.INTEGER
-    }, 
+    },
     size_product: {
         type: DataTypes.STRING
-    }, 
-    date_created_product: {
-        type: DataTypes.DATE
     }
 }, {
     TimesTamps: true

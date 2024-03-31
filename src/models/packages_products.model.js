@@ -10,9 +10,6 @@ export const PackageProduct = sequelize.define('package_products', {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
-    },
-    date_created_pp: {
-        type: DataTypes.DATE
     }
 }, {
     TimesTamps: true

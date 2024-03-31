@@ -24,16 +24,13 @@ export const Dropshipper = sequelize.define('dropshippers', {
     password_dropshipper: {
         type: DataTypes.STRING
     },
-    token_login_dropshipper: {
-        type: DataTypes.STRING
-    },
-    exp_token_login_dropshipper: {
-        type: DataTypes.STRING
-    },
     token_device_dropshipper: {
         type: DataTypes.STRING
     },
     wallet_dropshipper: {
+        type: DataTypes.INTEGER
+    },
+    total_sales_dropshipper: {
         type: DataTypes.INTEGER
     },
     verification_PIN_bank_withdrawal_dropshipper: {

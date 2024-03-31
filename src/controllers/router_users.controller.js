@@ -3,8 +3,14 @@ import jwt from "jsonwebtoken";
 import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
+import { Sequelize } from "sequelize";
 // import personaly models
 import { Router_user } from '../models/router_users.model.js';
+import { Package } from '../models/packages.model.js';
+import { Store } from "../models/stores.model.js";
+import { City } from "../models/cities.model.js";
+import { PackageProduct } from "../models/packages_products.model.js";
+import { Product } from "../models/products.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -82,6 +88,89 @@ export async function login(req, res) {
             message: 'Something goes wrong',
             result: 0,
             data: {}
+        });
+    }
+}
+
+// Method get city packages
+export async function getCityPackages(req, res) {
+    // logger control proccess
+    logger.info('Enter the endpoint get city packages');
+    try {
+        // I call and save the result of the findAll method, which is d sequelize
+        const getCityPackages = await Package.findAll({
+            where: {
+                status_p: {
+                    [Sequelize.Op.notIn]: [6]
+                },
+                fk_id_tp_p: {
+                    [Sequelize.Op.notIn]: [2]
+                }
+            },
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt']
+        });
+        // logger control proccess
+        logger.info('Get city packages successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'Get city packages successfuly',
+            result: 1,
+            data: getCityPackages
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error city packages: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0
+        });
+    }
+}
+
+// Method get products packages
+export async function getProductsPackage(req, res) {
+    // logger control proccess
+    logger.info('Enter the endpoint get products package');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_p } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+        // I call and save the result of the findAll method, which is d sequelize
+        const getProductsPackage = await Package.findAll({
+            where: {
+                id_p
+            },
+            attributes: ['id_p'],
+            include: [
+                {
+                    model: PackageProduct,
+                    attributes: ['id_pp', 'createdAt'],
+                    include: [
+                        {
+                            model: Product,
+                            attributes: ['id_product', 'name_product', 'description_product', 'price_sale_product', 'price_cost_product', 'size_product']
+                        }
+                    ]
+                }
+            ],
+        });
+        // logger control proccess
+        logger.info('Get products package successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'Get products package successfuly',
+            result: 1,
+            data: getProductsPackage
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error product package: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0
         });
     }
 }

@@ -18,6 +18,7 @@ import { Sequelize, json } from 'sequelize';
 import { Department } from "../models/departments.model.js";
 import { Status_history } from "../models/status_history.model.js";
 import { Carrier_payment_request } from "../models/carrier_payment_requests.model.js";
+import { Dropshipper } from "../models/dropshippers.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -764,12 +765,11 @@ export async function confirmatePackage(req, res) {
             }
         }
         // logger control proccess
-        logger.info('Confirmate packages successfuly');
+        logger.info(`Confirmate packages successfuly, results> ${data_p}`);
         // The credentials are incorrect
         res.json({
             message: 'Confirmate packages successfuly',
-            result: 1,
-            data: data_p
+            result: 1
         });
     } catch (e) {
         // logger control proccess
@@ -777,8 +777,7 @@ export async function confirmatePackage(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
-            result: 0,
-            data: {}
+            result: 0
         });
     }
 }
@@ -1040,7 +1039,7 @@ export async function detailPackage(req, res) {
 // Method to deliver packages Carriers
 export async function deliverPackage(req, res) {
     // logger control proccess
-    logger.info('enter the endpoint deliver packages');
+    logger.info('Enter the endpoint deliver packages');
     try {
         // I validate error file empty
         if (!req.files) return res.status(400).json({ error: 'No file provided' });
@@ -1053,11 +1052,18 @@ export async function deliverPackage(req, res) {
             where: {
                 id_p
             },
-            attributes: ['id_p', 'status_p', 'fk_id_tp_p', 'confirmation_carrier_p', 'fk_id_carrier_p']
+            attributes: ['id_p', 'status_p', 'fk_id_tp_p', 'confirmation_carrier_p', 'fk_id_carrier_p', 'profit_carrier_p', 'profit_carrier_inter_city_p', 'profit_dropshipper_p', 'with_collection_p', 'fk_id_store_p', 'total_price_p']
         });
-        let data_p, data_e, newHistory; // Declare data_p at a higher scope
+        let data_p, data_e, data_g, newHistory; // Declare data_p at a higher scope
         const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
         const id_carrier_asignate = data_package.fk_id_carrier_p;
+        // I capture the variables i need.
+        let profit_carrier_p = data_package.profit_carrier_p;
+        let profit_carrier_inter_city_p = data_package.profit_carrier_inter_city_p;
+        let profit_dropshipper_p = data_package.profit_dropshipper_p;
+        let with_collection_p = data_package.with_collection_p;
+        let fk_id_store_p = data_package.fk_id_store_p;
+        let total_price_p = data_package.total_price_p;
         // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal 
         // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a bodega central
         if (type_send == 1) {
@@ -1065,11 +1071,12 @@ export async function deliverPackage(req, res) {
                 case 7:
                     data_e = loadEvidenceDataBase(req, id_p, type_evidence);
                     data_p = deliverPackageCarrierDataBase(id_p, 4);
+                    data_g = accounting(id_carrier_asignate, 4, profit_carrier_p, profit_dropshipper_p, with_collection_p, fk_id_store_p, total_price_p);
                     // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
                     newHistory = await Status_history.create({
                         status_sh: 4,
                         comentary_sh: "Entregado a bodega central ciudad destino",
-                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
+                        evidence_sh: "evidences_packages/" + req.files[0].filename,
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
@@ -1079,13 +1086,14 @@ export async function deliverPackage(req, res) {
                     break;
 
                 case 5:
-                    data_e = loadEvidenceDataBase(req, id_p, type_evidence)
-                    data_p = deliverPackageCarrierDataBase(id_p, 6)
+                    data_e = loadEvidenceDataBase(req, id_p, type_evidence);
+                    data_p = deliverPackageCarrierDataBase(id_p, 6);
+                    data_g = accounting(id_carrier_asignate, 6, profit_carrier_p, profit_dropshipper_p, with_collection_p, fk_id_store_p, total_price_p);
                     // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
                     newHistory = await Status_history.create({
                         status_sh: 6,
                         comentary_sh: "Entregado al cliente",
-                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
+                        evidence_sh: "evidences_packages/" + req.files[0].filename,
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
@@ -1100,13 +1108,14 @@ export async function deliverPackage(req, res) {
         } else if (type_send == 2) {
             switch (data_package.status_p) {
                 case 7:
-                    data_e = loadEvidenceDataBase(req, id_p, type_evidence)
-                    data_p = deliverPackageCarrierDataBase(id_p, 2)
+                    data_e = loadEvidenceDataBase(req, id_p, type_evidence);
+                    data_p = deliverPackageCarrierDataBase(id_p, 2);
+                    data_g = accounting(id_carrier_asignate, 2, profit_carrier_p, profit_dropshipper_p, with_collection_p, fk_id_store_p, total_price_p);
                     // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
                     newHistory = await Status_history.create({
                         status_sh: 2,
                         comentary_sh: "Entregado a bodega central ciudad origen",
-                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
+                        evidence_sh: "evidences_packages/" + req.files[0].filename,
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
@@ -1116,13 +1125,14 @@ export async function deliverPackage(req, res) {
                     break;
 
                 case 3:
-                    data_e = loadEvidenceDataBase(req, id_p, type_evidence)
-                    data_p = deliverPackageCarrierDataBase(id_p, 4)
+                    data_e = loadEvidenceDataBase(req, id_p, type_evidence);
+                    data_p = deliverPackageCarrierDataBase(id_p, 4);
+                    data_g = accounting(id_carrier_asignate, 4, profit_carrier_inter_city_p, profit_dropshipper_p, with_collection_p, fk_id_store_p, total_price_p);
                     // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
                     newHistory = await Status_history.create({
                         status_sh: 4,
                         comentary_sh: "Entregado a bodega central ciudad destino",
-                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
+                        evidence_sh: "evidences_packages/" + req.files[0].filename,
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
@@ -1132,13 +1142,14 @@ export async function deliverPackage(req, res) {
                     break;
 
                 case 5:
-                    data_e = loadEvidenceDataBase(req, id_p, type_evidence)
-                    data_p = deliverPackageCarrierDataBase(id_p, 6)
+                    data_e = loadEvidenceDataBase(req, id_p, type_evidence);
+                    data_p = deliverPackageCarrierDataBase(id_p, 6);
+                    data_g = accounting(id_carrier_asignate, 6, profit_carrier_p, profit_dropshipper_p, with_collection_p, fk_id_store_p, total_price_p);
                     // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
                     newHistory = await Status_history.create({
                         status_sh: 6,
                         comentary_sh: "Entregado al cliente",
-                        evidence_sh: "evidences_packages/" +  req.files[0].filename, 
+                        evidence_sh: "evidences_packages/" + req.files[0].filename,
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
                     });
@@ -1151,13 +1162,11 @@ export async function deliverPackage(req, res) {
             }
         }
         // logger control proccess
-        logger.info('Deliver packages successfuly');
+        logger.info(`Deliver packages successfuly, Results: ${data_e}, ${data_p}, ${data_g}`);
         // The credentials are incorrect
         res.json({
             message: 'Deliver packages successfuly',
-            result: 1,
-            data_e,
-            data_p
+            result: 1
         });
     } catch (e) {
         // logger control proccess
@@ -1165,8 +1174,7 @@ export async function deliverPackage(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
-            result: 0,
-            data: {}
+            result: 0
         });
     }
 }
@@ -1307,16 +1315,14 @@ export async function registerCarrierPaymentsRequest(req, res) {
                 // I return the status 500 and the message I want
                 res.status(500).json({
                     message: 'The carrier has debt',
-                    result: 0,
-                    data: {}
+                    result: 0
                 });
             }
         } else {
             // I return the status 500 and the message I want
             res.status(500).json({
                 message: 'The carrier non-existing',
-                result: 0,
-                data: {}
+                result: 0
             });
         }
     } catch (e) {
@@ -1325,8 +1331,7 @@ export async function registerCarrierPaymentsRequest(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
-            result: 0,
-            data: {}
+            result: 0
         });
     }
 }
@@ -1367,7 +1372,7 @@ export async function getHistory(req, res) {
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
-            data: {}
+            result: 0
         });
     }
 }
@@ -1462,7 +1467,7 @@ async function confirmAndStatus(id_p, status) {
     });
     await data_package.save();
     //return result
-    return data_package
+    return "all OK"
 }
 
 // Method that helps me change the carrier confirmation flags and the status of the package
@@ -1482,7 +1487,7 @@ async function deliverPackageCarrierDataBase(id_p, status) {
     });
     await data_package.save();
     //return result
-    return data_package;
+    return "All OK";
 }
 
 // Method that helps me change the carrier confirmation flags and the status of the package
@@ -1510,4 +1515,100 @@ async function loadEvidenceDataBase(req, id_p, type_evidence) {
     }
     //return result
     return newEvidence;
+}
+
+// Method that helps accounting the flow delivering.
+async function accounting(id_carrier_asignate, status, profit_carrier_p, profit_dropshipper_p, with_collection_p, fk_id_store_p, total_price_p) {
+    // I validate status = 6, it is mean the package delivered to the client
+    if (status == 6) {
+        // I make all earnings updates with their respective validations.
+        // if with_collection_p = 1 means package with collection
+        if (with_collection_p == 1) {
+            // I find the carrier and atributtes him
+            const getCarrier = await Carrier.findOne({
+                where: {
+                    id_carrier: id_carrier_asignate
+                },
+                attributes: ['id_carrier', 'revenue_carrier', 'debt_carrier']
+            });
+            let revenue = getCarrier.revenue_carrier;
+            let debt = getCarrier.debt_carrier;
+            let result_renueve = revenue + profit_carrier_p;
+            let result_debt = debt + total_price_p;
+            // Setting and update Carrier
+            getCarrier.set({
+                revenue_carrier: result_renueve,
+                debt_carrier: result_debt
+            });
+            // UPDATE CARRIER
+            await getCarrier.save();
+            // i find store that i give id_dropshipper
+            const getStore = await Store.findOne({
+                where: {
+                    id_store: fk_id_store_p
+                },
+                attributes: ['id_store', 'fk_id_dropshipper_store']
+            });
+            // I capture the id_dopshipper
+            let id_dropshipper = getStore.fk_id_dropshipper_store;
+            // i find Dropshipper update wallet
+            const getDropshipper = await Dropshipper.findOne({
+                where: {
+                    id_dropshipper
+                },
+                attributes: ['id_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
+            });
+            let wallet = getDropshipper.wallet_dropshipper;
+            let total_sales = getDropshipper.total_sales_dropshipper;
+            let result_wallet = wallet + profit_dropshipper_p;
+            let result_total_sales = total_sales + total_price_p;
+            // Setting and update Dropshipper
+            getDropshipper.set({
+                wallet_dropshipper: result_wallet,
+                total_sales_dropshipper: result_total_sales
+            });
+            // UPDATE dropshipper
+            await getDropshipper.save();
+        } else if (with_collection_p == 0) {
+            // if with_collection_p = 0 means package without collection
+            const getCarrier = await Carrier.findOne({
+                where: {
+                    id_carrier: id_carrier_asignate
+                },
+                attributes: ['id_carrier', 'revenue_carrier']
+            });
+            let revenue = getCarrier.revenue_carrier;
+            let result_renueve = revenue + profit_carrier_p;
+            // Setting and update Carrier
+            getCarrier.set({
+                revenue_carrier: result_renueve,
+            });
+            // UPDATE CARRIER
+            await getCarrier.save();
+        }
+        // logger control proccess
+        logger.info('Carrier transports package to Client, all accounting ok.');
+        //return result
+        return "All ok";
+    } else {
+        // I find carrier and update revenue_carrier
+        const getCarrier = await Carrier.findOne({
+            where: {
+                id_carrier: id_carrier_asignate
+            },
+            attributes: ['id_carrier', 'revenue_carrier']
+        });
+        let revenue = getCarrier.revenue_carrier;
+        let result_renueve = revenue + profit_carrier_p;
+        // Setting and update Carrier
+        getCarrier.set({
+            revenue_carrier: result_renueve
+        });
+        // UPDATE CARRIER
+        await getCarrier.save();
+        // logger control proccess
+        logger.info('Carrier transports package to central warehouse of origin or destination, all accounting ok');
+        //return result
+        return "All ok";
+    }
 }
