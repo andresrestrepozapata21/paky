@@ -10,6 +10,9 @@ export const Vehicle = sequelize.define('vehicles', {
         primaryKey: true,
         autoIncrement: true
     },
+    capacity_vehicle: {
+        type: DataTypes.INTEGER
+    },
     description_vehicle: {
         type: DataTypes.STRING
     },
