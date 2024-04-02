@@ -23,7 +23,7 @@ const formattedTime = bogotaTime.format('YYYY-MM-DD HH:mm:ss');
 // Method login user router
 export async function login(req, res) {
     // logger control proccess
-    logger.info('enter the endpoint login');
+    logger.info('enter the endpoint login user router');
     try {
         // capture the id that comes in the parameters of the req
         const { email_ru, password_ru } = req.body;

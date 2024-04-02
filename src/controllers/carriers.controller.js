@@ -1354,7 +1354,7 @@ export async function getHistory(req, res) {
             include: [
                 {
                     model: Package,
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'with_collection_p', 'total_price_p'],
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'with_collection_p', 'total_price_p', "createdAt"],
                 }
             ]
         });

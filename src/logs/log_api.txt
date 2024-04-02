@@ -1,1435 +1,564 @@
-[2024-03-26T14:51:22.086Z] info enter the endpoint register carrier bank account
-[2024-03-26T14:52:09.149Z] info server running on port 3000
-[2024-03-26T14:52:36.941Z] info server running on port 3000
-[2024-03-26T14:52:39.813Z] info enter the endpoint register carrier bank account
-[2024-03-26T14:53:21.779Z] info server running on port 3000
-[2024-03-26T14:53:34.855Z] info server running on port 3000
-[2024-03-26T14:53:43.927Z] info enter the endpoint register carrier bank account
-[2024-03-26T14:53:59.872Z] info enter the endpoint register carrier bank account
-[2024-03-26T14:54:31.709Z] info enter the endpoint register carrier bank account
-[2024-03-26T14:54:37.957Z] info server running on port 3000
-[2024-03-26T14:54:38.862Z] info enter the endpoint register carrier bank account
-[2024-03-26T14:54:38.896Z] info Carrier bank account registed successfully
-[2024-03-26T14:58:40.101Z] info server running on port 3000
-[2024-03-26T14:58:46.551Z] info server running on port 3000
-[2024-03-26T14:59:23.011Z] info server running on port 3000
-[2024-03-26T14:59:30.950Z] info server running on port 3000
-[2024-03-26T14:59:33.731Z] info server running on port 3000
-[2024-03-26T15:01:15.776Z] info enter the endpoint register carrier
-[2024-03-26T15:01:15.813Z] info Carrier registed successfully
-[2024-03-26T15:02:17.805Z] info Carrier documents load successfully
-[2024-03-26T15:02:17.806Z] info enter the endpoint registerDocuments carrier
-[2024-03-26T15:02:17.838Z] info Carrier documents registed successfully
-[2024-03-26T15:02:54.310Z] info enter the endpoint register carrier bank account
-[2024-03-26T15:02:54.368Z] info Carrier bank account registed successfully
-[2024-03-26T15:04:20.429Z] info vehicle photo load successfully
-[2024-03-26T15:04:20.429Z] info Enter the endpoint registerVehicle carrier with photo
-[2024-03-26T15:04:20.447Z] info Vehicle registed and carrier asosiation successfully
-[2024-03-26T15:05:18.743Z] info vehicle documents load successfully
-[2024-03-26T15:05:18.744Z] info Enter the endpoint registerDocuments vehicle
-[2024-03-26T15:05:18.758Z] info vehicle documents registed successfully
-[2024-03-26T15:13:10.084Z] info server running on port 3000
-[2024-03-26T15:13:15.473Z] info enter the endpoint get departments
-[2024-03-26T15:13:15.488Z] info enter the endpoint get types Carrier
-[2024-03-26T15:13:15.489Z] info enter the endpoint get types document
-[2024-03-26T15:13:15.511Z] info Get departments successfully
-[2024-03-26T15:13:15.516Z] info Get typesCarrier successfully
-[2024-03-26T15:13:15.519Z] info Get typeDocuments successfully
-[2024-03-26T15:13:52.990Z] info enter the endpoint get cities
-[2024-03-26T15:13:52.998Z] info Get cities successfully
-[2024-03-26T15:13:54.355Z] info enter the endpoint get cities
-[2024-03-26T15:13:54.358Z] info Get cities successfully
-[2024-03-26T15:13:57.561Z] info enter the endpoint register carrier
-[2024-03-26T15:13:57.570Z] info Carrier registed successfully
-[2024-03-26T15:14:08.293Z] info Carrier documents load successfully
-[2024-03-26T15:14:08.294Z] info enter the endpoint registerDocuments carrier
-[2024-03-26T15:14:08.311Z] info Carrier documents registed successfully
-[2024-03-26T15:15:16.603Z] info enter the endpoint register carrier bank account
-[2024-03-26T15:15:16.617Z] info Carrier bank account registed successfully
-[2024-03-26T15:17:32.708Z] info enter the endpoint register carrier bank account
-[2024-03-26T15:17:32.726Z] info Carrier bank account registed successfully
-[2024-03-26T15:18:06.998Z] info vehicle photo load successfully
-[2024-03-26T15:18:06.998Z] info Enter the endpoint registerVehicle carrier with photo
-[2024-03-26T15:18:07.016Z] info Vehicle registed and carrier asosiation successfully
-[2024-03-26T15:18:30.578Z] info vehicle documents load successfully
-[2024-03-26T15:18:30.578Z] info Enter the endpoint registerDocuments vehicle
-[2024-03-26T15:18:30.599Z] info vehicle documents registed successfully
-[2024-03-26T19:23:03.801Z] info server running on port 3000
-[2024-03-26T19:26:48.977Z] info server running on port 3000
-[2024-03-26T19:26:58.653Z] info server running on port 3000
-[2024-03-26T19:27:10.500Z] info enter the endpoint login
-[2024-03-26T19:27:10.533Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-26T19:27:21.167Z] info Token validated successfuly
-[2024-03-26T19:27:21.168Z] info enter the endpoint master
-[2024-03-26T19:27:21.174Z] info Error Master: SequelizeEagerLoadingError: Carrier_bank_accounts is not associated to packages!
-[2024-03-26T19:29:00.452Z] info server running on port 3000
-[2024-03-26T19:29:02.523Z] info Token validated successfuly
-[2024-03-26T19:29:02.523Z] info enter the endpoint master
-[2024-03-26T19:29:02.570Z] info Master successfuly
-[2024-03-26T19:29:11.392Z] info Token validated successfuly
-[2024-03-26T19:29:11.392Z] info enter the endpoint master
-[2024-03-26T19:29:11.399Z] info Master successfuly
-[2024-03-26T19:33:51.836Z] info server running on port 3000
-[2024-03-26T19:34:02.027Z] info server running on port 3000
-[2024-03-26T19:34:53.548Z] info server running on port 3000
-[2024-03-26T19:35:01.413Z] info server running on port 3000
-[2024-03-26T19:35:21.629Z] info server running on port 3000
-[2024-03-26T19:35:56.622Z] info server running on port 3000
-[2024-03-26T19:37:49.667Z] info server running on port 3000
-[2024-03-26T19:38:19.347Z] info server running on port 3000
-[2024-03-26T19:39:04.693Z] info server running on port 3000
-[2024-03-26T19:39:24.213Z] info server running on port 3000
-[2024-03-26T19:39:41.754Z] info server running on port 3000
-[2024-03-26T19:40:07.316Z] info server running on port 3000
-[2024-03-26T19:41:20.561Z] info server running on port 3000
-[2024-03-26T19:44:30.370Z] info server running on port 3000
-[2024-03-26T19:44:38.267Z] info server running on port 3000
-[2024-03-26T19:44:44.711Z] info server running on port 3000
-[2024-03-26T19:45:53.175Z] info server running on port 3000
-[2024-03-26T19:46:03.428Z] info Token validated successfuly
-[2024-03-26T19:46:03.429Z] info enter the endpoint master
-[2024-03-26T19:46:03.468Z] info Master successfuly
-[2024-03-26T19:46:09.761Z] info Token validated successfuly
-[2024-03-26T19:46:28.890Z] info server running on port 3000
-[2024-03-26T19:46:35.679Z] info Token validated successfuly
-[2024-03-26T19:46:35.679Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:47:38.100Z] info server running on port 3000
-[2024-03-26T19:47:39.383Z] info Token validated successfuly
-[2024-03-26T19:47:39.383Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:47:45.827Z] info Token validated successfuly
-[2024-03-26T19:47:45.828Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:47:50.769Z] info server running on port 3000
-[2024-03-26T19:47:51.679Z] info Token validated successfuly
-[2024-03-26T19:47:51.680Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:50:09.220Z] info server running on port 3000
-[2024-03-26T19:50:32.670Z] info server running on port 3000
-[2024-03-26T19:50:55.132Z] info server running on port 3000
-[2024-03-26T19:51:32.987Z] info server running on port 3000
-[2024-03-26T19:51:37.192Z] info Token validated successfuly
-[2024-03-26T19:51:37.193Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:51:37.225Z] info Error registerCarrier: SequelizeDatabaseError: (conn=76, no: 1054, SQLState: 42S22) Unknown column 'Carrier_bank_accounts.fk_id_carrier_cba ' in 'field list'
-sql: SELECT `Carrier_bank_accounts`.`id_cba`, `Carrier_bank_accounts`.`fk_id_carrier_cba `, `carrier`.`id_carrier` AS `carrier.id_carrier`, `carrier`.`revenue_carrier` AS `carrier.revenue_carrier`, `carrier`.`debt_carrier` AS `carrier.debt_carrier` FROM `Carrie... - parameters:[]
-[2024-03-26T19:52:33.262Z] info server running on port 3000
-[2024-03-26T19:52:35.069Z] info Token validated successfuly
-[2024-03-26T19:52:35.069Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:53:32.029Z] info server running on port 3000
-[2024-03-26T19:53:34.517Z] info Token validated successfuly
-[2024-03-26T19:53:34.518Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:53:34.570Z] info Carrier payments request registed successfully
-[2024-03-26T19:54:24.899Z] info Token validated successfuly
-[2024-03-26T19:54:24.900Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:54:24.906Z] info Error register payments request: Carruer debted
-[2024-03-26T19:54:38.564Z] info server running on port 3000
-[2024-03-26T19:55:13.597Z] info server running on port 3000
-[2024-03-26T19:55:27.231Z] info server running on port 3000
-[2024-03-26T19:55:55.583Z] info server running on port 3000
-[2024-03-26T19:56:11.934Z] info server running on port 3000
-[2024-03-26T19:56:20.122Z] info server running on port 3000
-[2024-03-26T19:56:22.143Z] info Token validated successfuly
-[2024-03-26T19:56:22.143Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:57:07.458Z] info server running on port 3000
-[2024-03-26T19:57:13.814Z] info server running on port 3000
-[2024-03-26T19:57:15.350Z] info Token validated successfuly
-[2024-03-26T19:57:15.350Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:58:17.455Z] info server running on port 3000
-[2024-03-26T19:58:20.875Z] info Token validated successfuly
-[2024-03-26T19:58:20.875Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:58:38.150Z] info server running on port 3000
-[2024-03-26T19:58:59.381Z] info Token validated successfuly
-[2024-03-26T19:58:59.382Z] info enter the endpoint register carrier payments request
-[2024-03-26T19:59:51.180Z] info server running on port 3000
-[2024-03-26T20:00:02.879Z] info server running on port 3000
-[2024-03-26T20:00:43.605Z] info server running on port 3000
-[2024-03-26T20:00:45.192Z] info Token validated successfuly
-[2024-03-26T20:00:45.192Z] info enter the endpoint register carrier payments request
-[2024-03-26T20:01:04.504Z] info server running on port 3000
-[2024-03-26T20:01:10.310Z] info server running on port 3000
-[2024-03-26T20:01:41.681Z] info server running on port 3000
-[2024-03-26T20:01:53.916Z] info server running on port 3000
-[2024-03-26T20:01:57.303Z] info server running on port 3000
-[2024-03-26T20:01:58.619Z] info server running on port 3000
-[2024-03-26T20:02:13.857Z] info server running on port 3000
-[2024-03-26T20:02:17.456Z] info server running on port 3000
-[2024-03-26T20:02:23.638Z] info server running on port 3000
-[2024-03-26T20:02:27.711Z] info Token validated successfuly
-[2024-03-26T20:02:27.711Z] info enter the endpoint register carrier payments request
-[2024-03-26T20:03:01.167Z] info Token validated successfuly
-[2024-03-26T20:03:01.168Z] info enter the endpoint register carrier payments request
-[2024-03-26T20:03:01.180Z] info Carrier payments request registed successfully
-[2024-03-26T20:03:13.225Z] info Token validated successfuly
-[2024-03-26T20:03:13.225Z] info enter the endpoint register carrier payments request
-[2024-03-26T20:03:13.230Z] info Requesting a value greater than what it has
-[2024-03-26T20:03:51.009Z] info Token validated successfuly
-[2024-03-26T20:03:51.009Z] info enter the endpoint master
-[2024-03-26T20:03:51.018Z] info Master successfuly
-[2024-03-26T20:06:30.689Z] info server running on port 3000
-[2024-03-26T20:06:31.519Z] info Token validated successfuly
-[2024-03-26T20:06:31.520Z] info enter the endpoint master
-[2024-03-26T20:06:31.560Z] info Master successfuly
-[2024-03-26T20:06:44.747Z] info Token validated successfuly
-[2024-03-26T20:06:44.748Z] info enter the endpoint master
-[2024-03-26T20:06:44.763Z] info Master successfuly
-[2024-03-26T20:07:54.898Z] info Token validated successfuly
-[2024-03-26T20:07:54.898Z] info enter the endpoint master
-[2024-03-26T20:07:54.905Z] info Master successfuly
-[2024-03-26T20:07:56.893Z] info Token validated successfuly
-[2024-03-26T20:07:56.893Z] info enter the endpoint master
-[2024-03-26T20:07:56.901Z] info Master successfuly
-[2024-03-26T20:09:05.732Z] info Token validated successfuly
-[2024-03-26T20:09:05.733Z] info enter the endpoint register carrier payments request
-[2024-03-26T20:09:05.737Z] info Requesting a value greater than what it has
-[2024-03-26T20:09:10.000Z] info Token validated successfuly
-[2024-03-26T20:09:10.001Z] info enter the endpoint register carrier payments request
-[2024-03-26T20:09:10.064Z] info Carrier payments request registed successfully
-[2024-03-26T20:19:17.301Z] info server running on port 3000
-[2024-03-26T20:19:18.341Z] info Token validated successfuly
-[2024-03-26T20:19:18.342Z] info enter the endpoint register carrier payments request
-[2024-03-26T20:19:18.412Z] info Carrier payments request registed successfully
-[2024-03-26T20:19:57.426Z] info server running on port 3000
-[2024-03-26T20:19:59.668Z] info Token validated successfuly
-[2024-03-26T20:19:59.669Z] info enter the endpoint register carrier payments request
-[2024-03-26T20:19:59.703Z] info Requesting a value greater than what it has or Requesting a value negative.
-[2024-03-26T20:20:06.139Z] info Token validated successfuly
-[2024-03-26T20:20:06.139Z] info enter the endpoint register carrier payments request
-[2024-03-26T20:20:06.149Z] info Carrier payments request registed successfully
-[2024-03-26T21:09:30.665Z] info server running on port 3000
-[2024-03-26T21:09:42.499Z] info enter the endpoint login
-[2024-03-26T21:09:42.553Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-26T21:09:53.973Z] info Token validated successfuly
-[2024-03-26T21:09:53.974Z] info enter the endpoint register carrier payments request
-[2024-03-26T21:10:25.748Z] info Token validated successfuly
-[2024-03-26T21:10:25.748Z] info enter the endpoint register carrier payments request
-[2024-03-26T21:11:03.137Z] info server running on port 3000
-[2024-03-26T21:11:44.873Z] info server running on port 3000
-[2024-03-26T21:11:54.594Z] info server running on port 3000
-[2024-03-26T21:11:55.333Z] info Token validated successfuly
-[2024-03-26T21:11:55.333Z] info enter the endpoint carrier history
-[2024-03-26T21:11:55.365Z] info Error Master: SequelizeDatabaseError: (conn=11, no: 1054, SQLState: 42S22) Unknown column 'status_history.fk_id_carrier_asignated_shL' in 'where clause'
-sql: SELECT `status_history`.`id_sh`, `status_history`.`status_sh`, `status_history`.`comentary_sh`, `status_history`.`details_sh`, `package`.`id_p` AS `package.id_p`, `package`.`orden_p` AS `package.orden_p`, `package`.`name_client_p` AS `package.name_client_p... - parameters:[]
-[2024-03-26T21:12:30.364Z] info server running on port 3000
-[2024-03-26T21:12:32.197Z] info Token validated successfuly
-[2024-03-26T21:12:32.198Z] info enter the endpoint carrier history
-[2024-03-26T21:12:32.272Z] info Get carrier history successfuly
-[2024-03-26T21:14:00.576Z] info Token validated successfuly
-[2024-03-26T21:14:00.601Z] info Evidence problem load successfully
-[2024-03-26T21:14:00.601Z] info enter the endpoint report problem packages
-[2024-03-26T21:14:00.626Z] info History status registed successfully
-[2024-03-26T21:14:00.626Z] info report problem registed successfuly
-[2024-03-26T21:14:09.763Z] info Token validated successfuly
-[2024-03-26T21:14:09.764Z] info enter the endpoint carrier history
-[2024-03-26T21:14:09.768Z] info Get carrier history successfuly
-[2024-03-26T21:14:27.776Z] info Token validated successfuly
-[2024-03-26T21:14:27.776Z] info enter the endpoint carrier history
-[2024-03-26T21:14:27.782Z] info Get carrier history successfuly
-[2024-03-26T21:18:00.359Z] info Token validated successfuly
-[2024-03-26T21:18:00.359Z] info enter the endpoint master
-[2024-03-26T21:18:00.373Z] info Master successfuly
-[2024-03-26T21:18:48.804Z] info server running on port 3000
-[2024-03-26T21:21:24.962Z] info Token validated successfuly
-[2024-03-26T21:21:24.963Z] info enter the endpoint master
-[2024-03-26T21:21:25.008Z] info Master successfuly
-[2024-03-26T21:21:42.135Z] info Token validated successfuly
-[2024-03-26T21:21:42.135Z] info enter the endpoint master
-[2024-03-26T21:21:42.144Z] info Master successfuly
-[2024-03-27T14:36:47.039Z] info server running on port 3000
-[2024-03-27T14:37:11.276Z] info server running on port 3000
-[2024-03-27T14:37:18.354Z] info enter the endpoint login
-[2024-03-27T14:37:18.387Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-27T14:37:31.136Z] info Token validated successfuly
-[2024-03-27T14:37:31.142Z] info Carrier QR load successfully
-[2024-03-27T14:37:31.143Z] info enter the endpoint carrier history
-[2024-03-27T14:37:31.201Z] info Carrier accounts nequi, daviplata, etc... registed successfully
-[2024-03-27T14:39:04.917Z] info server running on port 3000
-[2024-03-27T14:39:16.718Z] info Token validated successfuly
-[2024-03-27T14:39:29.394Z] info Token validated successfuly
-[2024-03-27T14:39:29.399Z] info Carrier QR load successfully
-[2024-03-27T14:39:29.399Z] info enter the endpoint carrier history
-[2024-03-27T14:39:29.440Z] info Carrier accounts nequi, daviplata, etc... registed successfully
-[2024-03-27T14:45:05.130Z] info server running on port 3000
-[2024-03-27T14:45:21.171Z] info Token validated successfuly
-[2024-03-27T14:45:21.171Z] info enter the endpoint master
-[2024-03-27T14:45:21.222Z] info Master successfuly
-[2024-03-27T14:45:31.548Z] info Token validated successfuly
-[2024-03-27T14:45:31.548Z] info enter the endpoint master
-[2024-03-27T14:45:31.556Z] info Master successfuly
-[2024-03-27T19:39:58.908Z] info server running on port 3000
-[2024-03-27T19:40:16.169Z] info server running on port 3000
-[2024-03-27T19:41:02.123Z] info server running on port 3000
-[2024-03-27T19:41:12.319Z] info server running on port 3000
-[2024-03-27T19:41:13.706Z] info server running on port 3000
-[2024-03-27T19:41:32.482Z] info server running on port 3000
-[2024-03-27T19:41:37.094Z] info server running on port 3000
-[2024-03-27T19:48:03.163Z] info enter the endpoint login
-[2024-03-27T19:48:03.193Z] info Incorrect credentials or non-existent credenciales
-[2024-03-27T19:54:31.155Z] info enter the endpoint register carrier
-[2024-03-27T19:54:31.170Z] info Carrier registed successfully
-[2024-03-27T19:55:05.023Z] info enter the endpoint get types Carrier
-[2024-03-27T19:55:05.025Z] info enter the endpoint get types document
-[2024-03-27T19:55:05.028Z] info enter the endpoint get departments
-[2024-03-27T19:55:05.041Z] info Get typesCarrier successfully
-[2024-03-27T19:55:05.045Z] info Get typeDocuments successfully
-[2024-03-27T19:55:05.048Z] info Get departments successfully
-[2024-03-27T19:55:54.396Z] info enter the endpoint login
-[2024-03-27T19:55:54.401Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-27T19:56:01.717Z] info Token validated successfuly
-[2024-03-27T19:56:01.718Z] info enter the endpoint master
-[2024-03-27T19:56:01.740Z] info Master successfuly
-[2024-03-27T19:56:44.077Z] info Token validated successfuly
-[2024-03-27T19:56:44.079Z] info enter the endpoint master
-[2024-03-27T19:56:44.096Z] info Master successfuly
-[2024-03-27T19:57:18.927Z] info Token validated successfuly
-[2024-03-27T19:57:18.927Z] info enter the endpoint master
-[2024-03-27T19:57:18.936Z] info Master successfuly
-[2024-03-27T20:05:39.811Z] info Token validated successfuly
-[2024-03-27T20:05:39.811Z] info enter the endpoint asignated packages
-[2024-03-27T20:05:39.819Z] info Asignated packages successfuly
-[2024-03-27T20:08:12.292Z] info Token validated successfuly
-[2024-03-27T20:08:12.293Z] info enter the endpoint confirmate packages
-[2024-03-27T20:08:12.304Z] info History status registed successfully
-[2024-03-27T20:08:12.304Z] info Confirmate packages successfuly
-[2024-03-27T20:08:15.022Z] info Token validated successfuly
-[2024-03-27T20:08:15.022Z] info enter the endpoint asignated packages
-[2024-03-27T20:08:15.026Z] info Asignated packages successfuly
-[2024-03-27T20:08:57.922Z] info Token validated successfuly
-[2024-03-27T20:08:57.922Z] info enter the endpoint on the way packages
-[2024-03-27T20:08:57.930Z] info On the way packages successfuly
-[2024-03-27T20:10:48.757Z] info Token validated successfuly
-[2024-03-27T20:10:48.758Z] info enter the endpoint details packages
-[2024-03-27T20:10:48.769Z] info Details package successfuly
-[2024-03-27T20:11:54.757Z] info Token validated successfuly
-[2024-03-27T20:11:54.762Z] info Evidence load successfully
-[2024-03-27T20:11:54.763Z] info enter the endpoint deliver packages
-[2024-03-27T20:11:54.781Z] info Entregado a bodega central ciudad destino
-[2024-03-27T20:11:54.781Z] info Deliver packages successfuly
-[2024-03-27T20:11:54.811Z] info Token validated successfuly
-[2024-03-27T20:11:54.811Z] info enter the endpoint details packages
-[2024-03-27T20:11:54.816Z] info Details package successfuly
-[2024-03-27T20:14:06.491Z] info Token validated successfuly
-[2024-03-27T20:14:06.491Z] info enter the endpoint on the way packages
-[2024-03-27T20:14:06.497Z] info On the way packages successfuly
-[2024-03-27T20:15:42.919Z] info Token validated successfuly
-[2024-03-27T20:15:42.922Z] info Carrier QR load successfully
-[2024-03-27T20:15:42.923Z] info enter the endpoint carrier history
-[2024-03-27T20:15:42.936Z] info Carrier accounts nequi, daviplata, etc... registed successfully
-[2024-03-27T20:27:10.122Z] info server running on port 3000
-[2024-03-27T20:27:38.374Z] info server running on port 3000
-[2024-03-27T20:28:49.960Z] info enter the endpoint login
-[2024-03-27T20:28:49.991Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-27T20:28:51.083Z] info Token validated successfuly
-[2024-03-27T20:28:51.083Z] info enter the endpoint master
-[2024-03-27T20:28:51.097Z] info Master successfuly
-[2024-03-27T20:29:10.445Z] info Token validated successfuly
-[2024-03-27T20:29:10.445Z] info enter the endpoint master
-[2024-03-27T20:29:10.457Z] info Master successfuly
-[2024-03-27T20:29:11.435Z] info Token validated successfuly
-[2024-03-27T20:29:11.435Z] info enter the endpoint asignated packages
-[2024-03-27T20:29:11.441Z] info Asignated packages successfuly
-[2024-03-27T20:29:12.308Z] info Token validated successfuly
-[2024-03-27T20:29:12.308Z] info enter the endpoint confirmate packages
-[2024-03-27T20:29:12.317Z] info History status registed successfully
-[2024-03-27T20:29:12.317Z] info Confirmate packages successfuly
-[2024-03-27T20:29:13.373Z] info Token validated successfuly
-[2024-03-27T20:29:13.374Z] info enter the endpoint asignated packages
-[2024-03-27T20:29:13.378Z] info Asignated packages successfuly
-[2024-03-27T20:29:14.097Z] info Token validated successfuly
-[2024-03-27T20:29:14.098Z] info enter the endpoint on the way packages
-[2024-03-27T20:29:14.102Z] info On the way packages successfuly
-[2024-03-27T20:29:15.402Z] info Token validated successfuly
-[2024-03-27T20:29:15.402Z] info enter the endpoint details packages
-[2024-03-27T20:29:15.408Z] info Details package successfuly
-[2024-03-27T20:29:42.109Z] info Token validated successfuly
-[2024-03-27T20:29:42.114Z] info Evidence load successfully
-[2024-03-27T20:29:42.114Z] info enter the endpoint deliver packages
-[2024-03-27T20:29:42.133Z] info Entregado a bodega central ciudad destino
-[2024-03-27T20:29:42.133Z] info Deliver packages successfuly
-[2024-03-27T20:29:42.176Z] info Token validated successfuly
-[2024-03-27T20:29:42.176Z] info enter the endpoint details packages
-[2024-03-27T20:29:42.181Z] info Details package successfuly
-[2024-03-27T20:30:46.118Z] info server running on port 3000
-[2024-03-27T20:30:52.197Z] info Token validated successfuly
-[2024-03-27T20:30:52.198Z] info enter the endpoint on the way packages
-[2024-03-27T20:30:52.232Z] info On the way packages successfuly
-[2024-03-27T20:31:23.641Z] info server running on port 3000
-[2024-03-27T20:31:25.722Z] info server running on port 3000
-[2024-03-27T20:31:31.804Z] info server running on port 3000
-[2024-03-27T20:31:43.276Z] info Token validated successfuly
-[2024-03-27T20:31:43.277Z] info enter the endpoint on the way packages
-[2024-03-27T20:31:43.311Z] info On the way packages successfuly
-[2024-03-27T20:31:48.605Z] info Token validated successfuly
-[2024-03-27T20:31:48.606Z] info enter the endpoint details packages
-[2024-03-27T20:31:48.615Z] info Details package successfuly
-[2024-03-27T20:31:49.987Z] info Token validated successfuly
-[2024-03-27T20:31:49.988Z] info enter the endpoint on the way packages
-[2024-03-27T20:31:49.992Z] info On the way packages successfuly
-[2024-03-27T20:32:18.851Z] info enter the endpoint login
-[2024-03-27T20:32:18.857Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-27T20:32:20.334Z] info Token validated successfuly
-[2024-03-27T20:32:20.334Z] info enter the endpoint master
-[2024-03-27T20:32:20.349Z] info Master successfuly
-[2024-03-27T20:32:23.429Z] info Token validated successfuly
-[2024-03-27T20:32:23.429Z] info enter the endpoint asignated packages
-[2024-03-27T20:32:23.435Z] info Asignated packages successfuly
-[2024-03-27T20:32:25.899Z] info Token validated successfuly
-[2024-03-27T20:32:25.900Z] info enter the endpoint confirmate packages
-[2024-03-27T20:32:25.909Z] info History status registed successfully
-[2024-03-27T20:32:25.909Z] info Confirmate packages successfuly
-[2024-03-27T20:32:27.507Z] info Token validated successfuly
-[2024-03-27T20:32:27.507Z] info enter the endpoint asignated packages
-[2024-03-27T20:32:27.511Z] info Asignated packages successfuly
-[2024-03-27T20:32:29.051Z] info Token validated successfuly
-[2024-03-27T20:32:29.051Z] info enter the endpoint on the way packages
-[2024-03-27T20:32:29.059Z] info On the way packages successfuly
-[2024-03-27T20:32:30.429Z] info Token validated successfuly
-[2024-03-27T20:32:30.429Z] info enter the endpoint details packages
-[2024-03-27T20:32:30.434Z] info Details package successfuly
-[2024-03-27T20:32:36.332Z] info Token validated successfuly
-[2024-03-27T20:32:36.383Z] info Evidence load successfully
-[2024-03-27T20:32:36.384Z] info enter the endpoint deliver packages
-[2024-03-27T20:32:36.399Z] info Entregado a bodega central ciudad origen
-[2024-03-27T20:32:36.399Z] info Deliver packages successfuly
-[2024-03-27T20:32:36.441Z] info Token validated successfuly
-[2024-03-27T20:32:36.442Z] info enter the endpoint details packages
-[2024-03-27T20:32:36.446Z] info Details package successfuly
-[2024-03-27T20:40:12.459Z] info Token validated successfuly
-[2024-03-27T20:40:12.471Z] info Evidence load successfully
-[2024-03-27T20:40:12.471Z] info enter the endpoint deliver packages
-[2024-03-27T20:40:12.475Z] info Deliver packages successfuly
-[2024-03-27T20:40:12.517Z] info Token validated successfuly
-[2024-03-27T20:40:12.517Z] info enter the endpoint details packages
-[2024-03-27T20:40:12.521Z] info Details package successfuly
-[2024-03-27T20:40:30.133Z] info Token validated successfuly
-[2024-03-27T20:40:30.133Z] info enter the endpoint on the way packages
-[2024-03-27T20:40:30.139Z] info On the way packages successfuly
-[2024-03-27T20:41:15.146Z] info Token validated successfuly
-[2024-03-27T20:41:15.146Z] info enter the endpoint on the way packages
-[2024-03-27T20:41:15.152Z] info On the way packages successfuly
-[2024-03-27T20:41:18.577Z] info Token validated successfuly
-[2024-03-27T20:41:18.577Z] info enter the endpoint master
-[2024-03-27T20:41:18.584Z] info Master successfuly
-[2024-03-27T20:41:45.029Z] info Token validated successfuly
-[2024-03-27T20:41:45.029Z] info enter the endpoint master
-[2024-03-27T20:41:45.038Z] info Master successfuly
-[2024-03-27T20:41:46.069Z] info Token validated successfuly
-[2024-03-27T20:41:46.069Z] info enter the endpoint asignated packages
-[2024-03-27T20:41:46.073Z] info Asignated packages successfuly
-[2024-03-27T20:41:47.370Z] info Token validated successfuly
-[2024-03-27T20:41:47.370Z] info enter the endpoint confirmate packages
-[2024-03-27T20:41:47.377Z] info History status registed successfully
-[2024-03-27T20:41:47.377Z] info Confirmate packages successfuly
-[2024-03-27T20:41:48.801Z] info Token validated successfuly
-[2024-03-27T20:41:48.802Z] info enter the endpoint asignated packages
-[2024-03-27T20:41:48.805Z] info Asignated packages successfuly
-[2024-03-27T20:41:49.963Z] info Token validated successfuly
-[2024-03-27T20:41:49.964Z] info enter the endpoint on the way packages
-[2024-03-27T20:41:49.968Z] info On the way packages successfuly
-[2024-03-27T20:41:53.422Z] info Token validated successfuly
-[2024-03-27T20:41:53.423Z] info enter the endpoint details packages
-[2024-03-27T20:41:53.427Z] info Details package successfuly
-[2024-03-27T20:41:59.675Z] info Token validated successfuly
-[2024-03-27T20:41:59.678Z] info Evidence load successfully
-[2024-03-27T20:41:59.679Z] info enter the endpoint deliver packages
-[2024-03-27T20:41:59.690Z] info Entregado a bodega central ciudad destino
-[2024-03-27T20:41:59.690Z] info Deliver packages successfuly
-[2024-03-27T20:41:59.732Z] info Token validated successfuly
-[2024-03-27T20:41:59.732Z] info enter the endpoint details packages
-[2024-03-27T20:41:59.737Z] info Details package successfuly
-[2024-03-27T20:42:27.756Z] info Token validated successfuly
-[2024-03-27T20:42:27.756Z] info enter the endpoint on the way packages
-[2024-03-27T20:42:27.761Z] info On the way packages successfuly
-[2024-03-27T20:42:31.569Z] info Token validated successfuly
-[2024-03-27T20:42:31.569Z] info enter the endpoint master
-[2024-03-27T20:42:31.576Z] info Master successfuly
-[2024-03-27T20:42:39.418Z] info Token validated successfuly
-[2024-03-27T20:42:39.418Z] info enter the endpoint master
-[2024-03-27T20:42:39.426Z] info Master successfuly
-[2024-03-27T20:42:40.517Z] info Token validated successfuly
-[2024-03-27T20:42:40.517Z] info enter the endpoint asignated packages
-[2024-03-27T20:42:40.521Z] info Asignated packages successfuly
-[2024-03-27T20:42:41.299Z] info Token validated successfuly
-[2024-03-27T20:42:41.299Z] info enter the endpoint confirmate packages
-[2024-03-27T20:42:41.305Z] info History status registed successfully
-[2024-03-27T20:42:41.305Z] info Confirmate packages successfuly
-[2024-03-27T20:42:42.442Z] info Token validated successfuly
-[2024-03-27T20:42:42.443Z] info enter the endpoint asignated packages
-[2024-03-27T20:42:42.446Z] info Asignated packages successfuly
-[2024-03-27T20:42:43.378Z] info Token validated successfuly
-[2024-03-27T20:42:43.379Z] info enter the endpoint on the way packages
-[2024-03-27T20:42:43.383Z] info On the way packages successfuly
-[2024-03-27T20:42:45.219Z] info Token validated successfuly
-[2024-03-27T20:42:45.219Z] info enter the endpoint details packages
-[2024-03-27T20:42:45.225Z] info Details package successfuly
-[2024-03-27T20:42:48.610Z] info Token validated successfuly
-[2024-03-27T20:42:48.629Z] info Evidence load successfully
-[2024-03-27T20:42:48.629Z] info enter the endpoint deliver packages
-[2024-03-27T20:42:48.650Z] info Entregado al cliente
-[2024-03-27T20:42:48.650Z] info Deliver packages successfuly
-[2024-03-27T20:42:48.687Z] info Token validated successfuly
-[2024-03-27T20:42:48.688Z] info enter the endpoint details packages
-[2024-03-27T20:42:48.692Z] info Details package successfuly
-[2024-03-27T20:43:46.647Z] info Token validated successfuly
-[2024-03-27T20:43:46.647Z] info enter the endpoint details packages
-[2024-03-27T20:43:46.653Z] info Details package successfuly
-[2024-03-27T20:43:57.996Z] info Token validated successfuly
-[2024-03-27T20:43:57.997Z] info enter the endpoint details packages
-[2024-03-27T20:43:58.002Z] info Details package successfuly
-[2024-03-27T20:44:12.451Z] info Token validated successfuly
-[2024-03-27T20:44:12.452Z] info enter the endpoint details packages
-[2024-03-27T20:44:12.458Z] info Details package successfuly
-[2024-03-27T20:44:17.526Z] info Token validated successfuly
-[2024-03-27T20:44:17.527Z] info enter the endpoint on the way packages
-[2024-03-27T20:44:17.531Z] info On the way packages successfuly
-[2024-03-27T20:44:50.308Z] info Token validated successfuly
-[2024-03-27T20:44:50.308Z] info enter the endpoint on the way packages
-[2024-03-27T20:44:50.312Z] info On the way packages successfuly
-[2024-03-27T20:44:53.530Z] info Token validated successfuly
-[2024-03-27T20:44:53.530Z] info enter the endpoint master
-[2024-03-27T20:44:53.537Z] info Master successfuly
-[2024-03-27T20:44:55.509Z] info Token validated successfuly
-[2024-03-27T20:44:55.510Z] info enter the endpoint asignated packages
-[2024-03-27T20:44:55.513Z] info Asignated packages successfuly
-[2024-03-27T20:44:57.250Z] info Token validated successfuly
-[2024-03-27T20:44:57.250Z] info enter the endpoint confirmate packages
-[2024-03-27T20:44:57.257Z] info History status registed successfully
-[2024-03-27T20:44:57.257Z] info Confirmate packages successfuly
-[2024-03-27T20:44:58.554Z] info Token validated successfuly
-[2024-03-27T20:44:58.555Z] info enter the endpoint asignated packages
-[2024-03-27T20:44:58.558Z] info Asignated packages successfuly
-[2024-03-27T20:45:08.564Z] info Token validated successfuly
-[2024-03-27T20:45:08.564Z] info enter the endpoint on the way packages
-[2024-03-27T20:45:08.571Z] info On the way packages successfuly
-[2024-03-27T20:45:09.638Z] info Token validated successfuly
-[2024-03-27T20:45:09.638Z] info enter the endpoint details packages
-[2024-03-27T20:45:09.642Z] info Details package successfuly
-[2024-03-27T20:45:14.306Z] info Token validated successfuly
-[2024-03-27T20:45:14.307Z] info Evidence load successfully
-[2024-03-27T20:45:14.308Z] info enter the endpoint deliver packages
-[2024-03-27T20:45:14.320Z] info Entregado a bodega central ciudad origen
-[2024-03-27T20:45:14.320Z] info Deliver packages successfuly
-[2024-03-27T20:45:14.361Z] info Token validated successfuly
-[2024-03-27T20:45:14.361Z] info enter the endpoint details packages
-[2024-03-27T20:45:14.365Z] info Details package successfuly
-[2024-03-27T20:45:35.581Z] info Token validated successfuly
-[2024-03-27T20:45:35.581Z] info enter the endpoint on the way packages
-[2024-03-27T20:45:35.586Z] info On the way packages successfuly
-[2024-03-27T20:45:38.322Z] info Token validated successfuly
-[2024-03-27T20:45:38.322Z] info enter the endpoint master
-[2024-03-27T20:45:38.331Z] info Master successfuly
-[2024-03-27T20:45:45.172Z] info Token validated successfuly
-[2024-03-27T20:45:45.172Z] info enter the endpoint master
-[2024-03-27T20:45:45.180Z] info Master successfuly
-[2024-03-27T20:45:46.276Z] info Token validated successfuly
-[2024-03-27T20:45:46.276Z] info enter the endpoint asignated packages
-[2024-03-27T20:45:46.280Z] info Asignated packages successfuly
-[2024-03-27T20:45:47.010Z] info Token validated successfuly
-[2024-03-27T20:45:47.010Z] info enter the endpoint confirmate packages
-[2024-03-27T20:45:47.017Z] info History status registed successfully
-[2024-03-27T20:45:47.017Z] info Confirmate packages successfuly
-[2024-03-27T20:45:48.157Z] info Token validated successfuly
-[2024-03-27T20:45:48.157Z] info enter the endpoint asignated packages
-[2024-03-27T20:45:48.161Z] info Asignated packages successfuly
-[2024-03-27T20:46:03.899Z] info Token validated successfuly
-[2024-03-27T20:46:03.899Z] info enter the endpoint on the way packages
-[2024-03-27T20:46:03.905Z] info On the way packages successfuly
-[2024-03-27T20:46:05.069Z] info Token validated successfuly
-[2024-03-27T20:46:05.069Z] info enter the endpoint details packages
-[2024-03-27T20:46:05.074Z] info Details package successfuly
-[2024-03-27T20:46:08.459Z] info Token validated successfuly
-[2024-03-27T20:46:08.460Z] info Evidence load successfully
-[2024-03-27T20:46:08.461Z] info enter the endpoint deliver packages
-[2024-03-27T20:46:08.475Z] info Entregado a bodega central ciudad destino
-[2024-03-27T20:46:08.475Z] info Deliver packages successfuly
-[2024-03-27T20:46:08.513Z] info Token validated successfuly
-[2024-03-27T20:46:08.513Z] info enter the endpoint details packages
-[2024-03-27T20:46:08.521Z] info Details package successfuly
-[2024-03-27T20:46:33.035Z] info server running on port 3000
-[2024-03-27T20:46:51.659Z] info server running on port 3000
-[2024-03-27T20:48:10.109Z] info server running on port 3000
-[2024-03-27T20:48:19.960Z] info server running on port 3000
-[2024-03-27T21:42:04.781Z] info server running on port 3000
-[2024-03-27T21:42:18.194Z] info server running on port 3000
-[2024-03-27T21:42:24.486Z] info enter the endpoint login
-[2024-03-27T21:42:24.558Z] info Incorrect credentials or non-existent credenciales
-[2024-03-27T21:42:52.157Z] info enter the endpoint login
-[2024-03-27T21:42:52.169Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-30T14:01:34.324Z] info server running on port 3000
-[2024-03-30T14:02:12.218Z] info server running on port 3000
-[2024-03-30T14:02:19.224Z] info server running on port 3000
-[2024-03-30T14:02:36.752Z] info server running on port 3000
-[2024-03-30T14:03:08.343Z] info server running on port 3000
-[2024-03-30T14:04:09.506Z] info server running on port 3000
-[2024-03-30T14:04:42.027Z] info server running on port 3000
-[2024-03-30T14:05:16.596Z] info server running on port 3000
-[2024-03-30T14:05:27.543Z] info server running on port 3000
-[2024-03-30T14:06:36.725Z] info server running on port 3000
-[2024-03-30T14:06:49.561Z] info server running on port 3000
-[2024-03-30T14:06:54.480Z] info server running on port 3000
-[2024-03-30T14:07:40.688Z] info server running on port 3000
-[2024-03-30T14:08:41.676Z] info server running on port 3000
-[2024-03-30T14:08:44.360Z] info server running on port 3000
-[2024-03-30T14:09:33.072Z] info server running on port 3000
-[2024-03-30T14:09:37.263Z] info server running on port 3000
-[2024-03-30T14:10:12.094Z] info server running on port 3000
-[2024-03-30T14:10:33.565Z] info server running on port 3000
-[2024-03-30T14:10:50.500Z] info server running on port 3000
-[2024-03-30T14:10:52.134Z] info server running on port 3000
-[2024-03-30T14:10:57.332Z] info server running on port 3000
-[2024-03-30T14:11:09.365Z] info server running on port 3000
-[2024-03-30T14:11:12.128Z] info server running on port 3000
-[2024-03-30T14:11:19.600Z] info server running on port 3000
-[2024-03-30T14:11:24.056Z] info server running on port 3000
-[2024-03-30T14:12:08.076Z] info server running on port 3000
-[2024-03-30T14:12:42.348Z] info server running on port 3000
-[2024-03-30T14:13:17.433Z] info server running on port 3000
-[2024-03-30T14:13:32.853Z] info server running on port 3000
-[2024-03-30T14:14:04.824Z] info server running on port 3000
-[2024-03-30T14:14:15.074Z] info enter the endpoint login
-[2024-03-30T14:14:15.105Z] info Incorrect credentials or non-existent credenciales
-[2024-03-30T14:14:29.420Z] info enter the endpoint login
-[2024-03-30T14:14:29.431Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-30T14:14:44.953Z] info Token validated successfuly
-[2024-03-30T14:14:44.954Z] info enter the endpoint asignated packages
-[2024-03-30T14:14:44.967Z] info Asignated packages successfuly
-[2024-03-30T14:15:21.478Z] info Token validated successfuly
-[2024-03-30T14:15:21.478Z] info enter the endpoint asignated packages
-[2024-03-30T14:15:21.490Z] info Asignated packages successfuly
-[2024-03-30T14:15:33.024Z] info Token validated successfuly
-[2024-03-30T14:15:33.025Z] info enter the endpoint confirmate packages
-[2024-03-30T14:15:33.036Z] info History status registed successfully
-[2024-03-30T14:15:33.036Z] info Confirmate packages successfuly
-[2024-03-30T14:15:50.909Z] info Token validated successfuly
-[2024-03-30T14:15:50.909Z] info enter the endpoint asignated packages
-[2024-03-30T14:15:50.916Z] info Asignated packages successfuly
-[2024-03-30T14:16:03.645Z] info server running on port 3000
-[2024-03-30T14:16:17.377Z] info server running on port 3000
-[2024-03-30T14:16:20.470Z] info Token validated successfuly
-[2024-03-30T14:16:20.471Z] info enter the endpoint confirmate packages
-[2024-03-30T14:16:20.511Z] info History status registed successfully
-[2024-03-30T14:16:20.512Z] info Confirmate packages successfuly
-[2024-03-30T14:17:08.491Z] info Token validated successfuly
-[2024-03-30T14:17:08.491Z] info enter the endpoint on the way packages
-[2024-03-30T14:17:08.504Z] info On the way packages successfuly
-[2024-03-30T14:17:19.347Z] info Token validated successfuly
-[2024-03-30T14:17:19.348Z] info enter the endpoint details packages
-[2024-03-30T14:17:19.355Z] info Details package successfuly
-[2024-03-30T14:17:41.920Z] info Token validated successfuly
-[2024-03-30T14:17:41.926Z] info Evidence load successfully
-[2024-03-30T14:17:41.926Z] info enter the endpoint deliver packages
-[2024-03-30T14:17:41.931Z] info Error deliver packages: ReferenceError: data_g is not defined
-[2024-03-30T14:19:45.238Z] info server running on port 3000
-[2024-03-30T14:19:55.309Z] info server running on port 3000
-[2024-03-30T14:19:57.354Z] info server running on port 3000
-[2024-03-30T14:20:02.801Z] info server running on port 3000
-[2024-03-30T14:20:14.675Z] info server running on port 3000
-[2024-03-30T14:21:21.900Z] info server running on port 3000
-[2024-03-30T14:21:34.663Z] info server running on port 3000
-[2024-03-30T14:21:40.990Z] info server running on port 3000
-[2024-03-30T14:22:14.116Z] info server running on port 3000
-[2024-03-30T14:22:41.329Z] info server running on port 3000
-[2024-03-30T14:22:48.371Z] info server running on port 3000
-[2024-03-30T14:22:51.251Z] info server running on port 3000
-[2024-03-30T14:23:02.298Z] info server running on port 3000
-[2024-03-30T14:23:41.338Z] info server running on port 3000
-[2024-03-30T14:23:58.470Z] info server running on port 3000
-[2024-03-30T14:24:25.841Z] info Token validated successfuly
-[2024-03-30T14:24:25.847Z] info Evidence load successfully
-[2024-03-30T14:24:25.848Z] info enter the endpoint deliver packages
-[2024-03-30T14:24:25.882Z] info Deliver packages successfuly, Results: undefined, undefined, undefined
-[2024-03-30T14:25:32.476Z] info server running on port 3000
-[2024-03-30T14:26:07.019Z] info server running on port 3000
-[2024-03-30T14:27:05.213Z] info server running on port 3000
-[2024-03-30T14:27:13.306Z] info server running on port 3000
-[2024-03-30T14:27:16.253Z] info server running on port 3000
-[2024-03-30T14:27:46.702Z] info server running on port 3000
-[2024-03-30T14:28:06.939Z] info server running on port 3000
-[2024-03-30T14:28:44.987Z] info server running on port 3000
-[2024-03-30T14:28:46.148Z] info Token validated successfuly
-[2024-03-30T14:28:46.154Z] info Evidence load successfully
-[2024-03-30T14:28:46.154Z] info Enter the endpoint deliver packages
-[2024-03-30T14:28:49.559Z] info server running on port 3000
-[2024-03-30T14:29:08.940Z] info Token validated successfuly
-[2024-03-30T14:29:08.946Z] info Evidence load successfully
-[2024-03-30T14:29:08.947Z] info Enter the endpoint deliver packages
-[2024-03-30T14:30:02.378Z] info server running on port 3000
-[2024-03-30T14:30:04.850Z] info server running on port 3000
-[2024-03-30T14:30:06.101Z] info Token validated successfuly
-[2024-03-30T14:30:06.107Z] info Evidence load successfully
-[2024-03-30T14:30:06.108Z] info Enter the endpoint deliver packages
-[2024-03-30T14:30:15.582Z] info server running on port 3000
-[2024-03-30T14:31:18.543Z] info server running on port 3000
-[2024-03-30T14:31:38.310Z] info server running on port 3000
-[2024-03-30T14:32:03.670Z] info server running on port 3000
-[2024-03-30T14:32:13.253Z] info server running on port 3000
-[2024-03-30T14:32:25.872Z] info server running on port 3000
-[2024-03-30T14:34:33.104Z] info server running on port 3000
-[2024-03-30T14:39:27.704Z] info server running on port 3000
-[2024-03-30T14:41:31.285Z] info Token validated successfuly
-[2024-03-30T14:41:31.291Z] info Evidence load successfully
-[2024-03-30T14:41:31.292Z] info Enter the endpoint deliver packages
-[2024-03-30T14:41:31.346Z] info Entregado a bodega central ciudad destino
-[2024-03-30T14:41:31.346Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T14:41:31.354Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
-[2024-03-30T14:42:22.938Z] info Token validated successfuly
-[2024-03-30T14:42:22.938Z] info enter the endpoint confirmate packages
-[2024-03-30T14:42:22.948Z] info History status registed successfully
-[2024-03-30T14:42:22.948Z] info Confirmate packages successfuly, results> [object Promise]
-[2024-03-30T14:42:31.460Z] info Token validated successfuly
-[2024-03-30T14:42:31.462Z] info Evidence load successfully
-[2024-03-30T14:42:31.463Z] info Enter the endpoint deliver packages
-[2024-03-30T14:43:40.043Z] info server running on port 3000
-[2024-03-30T14:43:44.265Z] info Token validated successfuly
-[2024-03-30T14:43:44.271Z] info Evidence load successfully
-[2024-03-30T14:43:44.272Z] info Enter the endpoint deliver packages
-[2024-03-30T14:43:44.321Z] info Carrier transports package to Client, all accounting ok.
-[2024-03-30T14:43:44.360Z] info Entregado al cliente
-[2024-03-30T14:43:44.360Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T14:45:48.605Z] info server running on port 3000
-[2024-03-30T14:47:20.403Z] info server running on port 3000
-[2024-03-30T14:47:23.402Z] info Token validated successfuly
-[2024-03-30T14:47:23.409Z] info Evidence load successfully
-[2024-03-30T14:47:23.410Z] info Enter the endpoint deliver packages
-[2024-03-30T14:47:23.465Z] info Entregado al cliente
-[2024-03-30T14:47:23.466Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T14:48:21.019Z] info server running on port 3000
-[2024-03-30T14:48:24.061Z] info server running on port 3000
-[2024-03-30T14:48:51.670Z] info Token validated successfuly
-[2024-03-30T14:48:51.676Z] info Evidence load successfully
-[2024-03-30T14:48:51.677Z] info Enter the endpoint deliver packages
-[2024-03-30T14:48:51.728Z] info Entregado al cliente
-[2024-03-30T14:48:51.728Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T14:48:51.734Z] info id_drop 1
-[2024-03-30T14:48:51.736Z] info Carrier transports package to Client, all accounting ok.
-[2024-03-30T14:49:57.232Z] info server running on port 3000
-[2024-03-30T14:52:27.540Z] info server running on port 3000
-[2024-03-30T14:53:00.692Z] info server running on port 3000
-[2024-03-30T14:53:06.275Z] info server running on port 3000
-[2024-03-30T14:53:08.121Z] info server running on port 3000
-[2024-03-30T14:53:11.829Z] info server running on port 3000
-[2024-03-30T14:53:38.083Z] info server running on port 3000
-[2024-03-30T14:53:42.928Z] info server running on port 3000
-[2024-03-30T14:55:12.541Z] info server running on port 3000
-[2024-03-30T14:55:23.749Z] info server running on port 3000
-[2024-03-30T14:55:47.466Z] info server running on port 3000
-[2024-03-30T14:56:02.006Z] info server running on port 3000
-[2024-03-30T14:56:28.825Z] info server running on port 3000
-[2024-03-30T14:56:37.666Z] info server running on port 3000
-[2024-03-30T14:57:20.615Z] info Token validated successfuly
-[2024-03-30T14:57:20.621Z] info Evidence load successfully
-[2024-03-30T14:57:20.621Z] info Enter the endpoint deliver packages
-[2024-03-30T14:57:20.672Z] info Entregado al cliente
-[2024-03-30T14:57:20.672Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T14:57:20.687Z] info Carrier transports package to Client, all accounting ok.
-[2024-03-30T15:24:36.953Z] info server running on port 3000
-[2024-03-30T15:24:46.907Z] info server running on port 3000
-[2024-03-30T15:24:49.549Z] info server running on port 3000
-[2024-03-30T15:26:30.774Z] info enter the endpoint login
-[2024-03-30T15:26:30.808Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-30T15:27:09.946Z] info Token validated successfuly
-[2024-03-30T15:27:09.946Z] info enter the endpoint asignated packages
-[2024-03-30T15:27:09.962Z] info Asignated packages successfuly
-[2024-03-30T15:27:22.484Z] info Token validated successfuly
-[2024-03-30T15:27:22.485Z] info enter the endpoint confirmate packages
-[2024-03-30T15:27:22.499Z] info History status registed successfully
-[2024-03-30T15:27:22.499Z] info Confirmate packages successfuly, results> [object Promise]
-[2024-03-30T15:28:27.913Z] info server running on port 3000
-[2024-03-30T15:29:06.128Z] info server running on port 3000
-[2024-03-30T15:31:28.745Z] info Token validated successfuly
-[2024-03-30T15:31:28.746Z] info enter the endpoint on the way packages
-[2024-03-30T15:31:28.787Z] info On the way packages successfuly
-[2024-03-30T15:31:36.186Z] info Token validated successfuly
-[2024-03-30T15:31:36.187Z] info enter the endpoint details packages
-[2024-03-30T15:31:36.194Z] info Details package successfuly
-[2024-03-30T15:31:43.941Z] info Token validated successfuly
-[2024-03-30T15:31:43.946Z] info Evidence load successfully
-[2024-03-30T15:31:43.947Z] info Enter the endpoint deliver packages
-[2024-03-30T15:31:43.976Z] info Entregado a bodega central ciudad destino
-[2024-03-30T15:31:43.977Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T15:31:43.981Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
-[2024-03-30T15:32:25.219Z] info server running on port 3000
-[2024-03-30T15:33:01.859Z] info Token validated successfuly
-[2024-03-30T15:33:01.859Z] info enter the endpoint confirmate packages
-[2024-03-30T15:33:01.900Z] info History status registed successfully
-[2024-03-30T15:33:01.901Z] info Confirmate packages successfuly, results> [object Promise]
-[2024-03-30T15:33:14.349Z] info Token validated successfuly
-[2024-03-30T15:33:14.355Z] info Evidence load successfully
-[2024-03-30T15:33:14.356Z] info Enter the endpoint deliver packages
-[2024-03-30T15:33:14.375Z] info Entregado al cliente
-[2024-03-30T15:33:14.375Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T15:33:14.396Z] info Carrier transports package to Client, all accounting ok.
-[2024-03-30T15:34:56.189Z] info server running on port 3000
-[2024-03-30T15:35:36.418Z] info server running on port 3000
-[2024-03-30T15:36:02.492Z] info server running on port 3000
-[2024-03-30T15:36:22.657Z] info server running on port 3000
-[2024-03-30T15:36:25.774Z] info server running on port 3000
-[2024-03-30T15:37:42.810Z] info Token validated successfuly
-[2024-03-30T15:37:42.815Z] info Evidence load successfully
-[2024-03-30T15:37:42.816Z] info Enter the endpoint deliver packages
-[2024-03-30T15:37:42.871Z] info Entregado al cliente
-[2024-03-30T15:37:42.871Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T15:37:42.884Z] info Carrier transports package to Client, all accounting ok.
-[2024-03-30T15:38:22.618Z] info Token validated successfuly
-[2024-03-30T15:38:22.618Z] info enter the endpoint asignated packages
-[2024-03-30T15:38:22.633Z] info Asignated packages successfuly
-[2024-03-30T15:38:27.649Z] info Token validated successfuly
-[2024-03-30T15:38:27.650Z] info enter the endpoint confirmate packages
-[2024-03-30T15:38:27.659Z] info History status registed successfully
-[2024-03-30T15:38:27.659Z] info Confirmate packages successfuly, results> [object Promise]
-[2024-03-30T15:38:46.203Z] info Token validated successfuly
-[2024-03-30T15:38:46.203Z] info enter the endpoint details packages
-[2024-03-30T15:38:46.214Z] info Details package successfuly
-[2024-03-30T15:38:54.539Z] info Token validated successfuly
-[2024-03-30T15:38:54.542Z] info Evidence load successfully
-[2024-03-30T15:38:54.542Z] info Enter the endpoint deliver packages
-[2024-03-30T15:38:54.569Z] info Entregado a bodega central ciudad origen
-[2024-03-30T15:38:54.569Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T15:38:54.571Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
-[2024-03-30T15:39:28.332Z] info Token validated successfuly
-[2024-03-30T15:39:28.332Z] info enter the endpoint asignated packages
-[2024-03-30T15:39:28.340Z] info Asignated packages successfuly
-[2024-03-30T15:39:32.263Z] info Token validated successfuly
-[2024-03-30T15:39:32.263Z] info enter the endpoint confirmate packages
-[2024-03-30T15:39:32.270Z] info History status registed successfully
-[2024-03-30T15:39:32.270Z] info Confirmate packages successfuly, results> [object Promise]
-[2024-03-30T15:39:44.457Z] info Token validated successfuly
-[2024-03-30T15:39:44.459Z] info Evidence load successfully
-[2024-03-30T15:39:44.460Z] info Enter the endpoint deliver packages
-[2024-03-30T15:39:44.474Z] info Entregado a bodega central ciudad destino
-[2024-03-30T15:39:44.475Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T15:39:44.477Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
-[2024-03-30T15:40:11.201Z] info Token validated successfuly
-[2024-03-30T15:40:11.201Z] info enter the endpoint asignated packages
-[2024-03-30T15:40:11.205Z] info Asignated packages successfuly
-[2024-03-30T15:40:13.879Z] info Token validated successfuly
-[2024-03-30T15:40:13.879Z] info enter the endpoint asignated packages
-[2024-03-30T15:40:13.884Z] info Asignated packages successfuly
-[2024-03-30T15:40:18.517Z] info Token validated successfuly
-[2024-03-30T15:40:18.517Z] info enter the endpoint confirmate packages
-[2024-03-30T15:40:18.524Z] info History status registed successfully
-[2024-03-30T15:40:18.524Z] info Confirmate packages successfuly, results> [object Promise]
-[2024-03-30T15:40:29.464Z] info Token validated successfuly
-[2024-03-30T15:40:29.466Z] info Evidence load successfully
-[2024-03-30T15:40:29.466Z] info Enter the endpoint deliver packages
-[2024-03-30T15:40:29.484Z] info Entregado al cliente
-[2024-03-30T15:40:29.484Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
-[2024-03-30T15:40:29.498Z] info Carrier transports package to Client, all accounting ok.
-[2024-03-30T15:41:27.071Z] info server running on port 3000
-[2024-03-30T19:18:22.845Z] info server running on port 3000
-[2024-03-30T19:18:43.996Z] info enter the endpoint login
-[2024-03-30T19:18:44.059Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-03-30T19:19:37.004Z] info server running on port 3000
-[2024-03-30T19:21:44.411Z] info server running on port 3000
-[2024-03-30T19:22:47.625Z] info server running on port 3000
-[2024-03-30T19:23:26.270Z] info server running on port 3000
-[2024-03-30T19:23:41.855Z] info server running on port 3000
-[2024-03-30T19:25:14.647Z] info server running on port 3000
-[2024-03-30T19:25:39.260Z] info server running on port 3000
-[2024-03-30T19:25:52.909Z] info server running on port 3000
-[2024-03-30T19:26:02.333Z] info server running on port 3000
-[2024-03-30T19:28:12.868Z] info server running on port 3000
-[2024-03-30T19:28:42.035Z] info server running on port 3000
-[2024-03-30T19:28:51.977Z] info server running on port 3000
-[2024-03-30T19:29:15.001Z] info Token validated successfuly
-[2024-03-30T19:29:15.002Z] info Enter the endpoint get city packages
-[2024-03-30T19:29:15.002Z] info Error city packages: ReferenceError: City is not defined
-[2024-03-30T19:29:31.213Z] info server running on port 3000
-[2024-03-30T19:29:33.193Z] info Token validated successfuly
-[2024-03-30T19:29:33.193Z] info Enter the endpoint get city packages
-[2024-03-30T19:29:33.257Z] info Get city packages successfuly
-[2024-03-30T19:32:21.804Z] info server running on port 3000
-[2024-03-30T19:32:47.850Z] info server running on port 3000
-[2024-03-30T19:33:04.888Z] info Token validated successfuly
-[2024-03-30T19:33:04.888Z] info Enter the endpoint get city packages
-[2024-03-30T19:33:04.889Z] info Error city packages: ReferenceError: Op is not defined
-[2024-03-30T19:33:43.596Z] info server running on port 3000
-[2024-03-30T19:33:44.919Z] info Token validated successfuly
-[2024-03-30T19:33:44.919Z] info Enter the endpoint get city packages
-[2024-03-30T19:33:44.951Z] info Get city packages successfuly
-[2024-03-30T19:34:19.020Z] info Token validated successfuly
-[2024-03-30T19:34:19.021Z] info Enter the endpoint get city packages
-[2024-03-30T19:34:19.026Z] info Get city packages successfuly
-[2024-03-30T19:35:13.228Z] info Token validated successfuly
-[2024-03-30T19:35:13.228Z] info Enter the endpoint get city packages
-[2024-03-30T19:35:13.232Z] info Get city packages successfuly
-[2024-03-30T19:35:22.198Z] info server running on port 3000
-[2024-03-30T19:35:28.794Z] info Token validated successfuly
-[2024-03-30T19:35:28.794Z] info Enter the endpoint get city packages
-[2024-03-30T19:35:28.826Z] info Get city packages successfuly
-[2024-03-30T19:37:23.731Z] info server running on port 3000
-[2024-03-30T19:37:29.207Z] info Token validated successfuly
-[2024-03-30T19:37:29.207Z] info Enter the endpoint get city packages
-[2024-03-30T19:37:29.246Z] info Get city packages successfuly
-[2024-03-30T19:38:56.512Z] info server running on port 3000
-[2024-03-30T19:39:00.064Z] info Token validated successfuly
-[2024-03-30T19:39:00.065Z] info Enter the endpoint get city packages
-[2024-03-30T19:39:00.101Z] info Get city packages successfuly
-[2024-03-30T19:42:50.351Z] info server running on port 3000
-[2024-03-30T19:43:53.622Z] info server running on port 3000
-[2024-03-30T19:44:22.589Z] info server running on port 3000
-[2024-03-30T19:44:59.505Z] info server running on port 3000
-[2024-03-30T19:45:59.394Z] info Token validated successfuly
-[2024-03-30T19:45:59.394Z] info Enter the endpoint get city packages
-[2024-03-30T19:45:59.431Z] info Get city packages successfuly
-[2024-03-30T19:46:25.076Z] info server running on port 3000
-[2024-03-30T19:46:25.628Z] info Token validated successfuly
-[2024-03-30T19:46:25.629Z] info Enter the endpoint get city packages
-[2024-03-30T19:46:25.665Z] info Get city packages successfuly
-[2024-03-30T19:46:39.349Z] info server running on port 3000
-[2024-03-30T19:46:42.148Z] info Token validated successfuly
-[2024-03-30T19:46:42.149Z] info Enter the endpoint get city packages
-[2024-03-30T19:46:42.185Z] info Get city packages successfuly
-[2024-03-30T19:46:51.025Z] info server running on port 3000
-[2024-03-30T19:46:51.231Z] info Token validated successfuly
-[2024-03-30T19:46:51.231Z] info Enter the endpoint get city packages
-[2024-03-30T19:46:51.270Z] info Get city packages successfuly
-[2024-03-30T19:47:21.094Z] info Token validated successfuly
-[2024-03-30T19:47:21.094Z] info Enter the endpoint get city packages
-[2024-03-30T19:47:21.102Z] info Get city packages successfuly
-[2024-03-30T19:51:19.604Z] info server running on port 3000
-[2024-03-30T19:51:20.499Z] info Token validated successfuly
-[2024-03-30T19:51:20.499Z] info Enter the endpoint get city packages
-[2024-03-30T19:51:20.536Z] info Get city packages successfuly
-[2024-03-30T19:51:26.722Z] info server running on port 3000
-[2024-03-30T19:51:26.944Z] info Token validated successfuly
-[2024-03-30T19:51:26.945Z] info Enter the endpoint get city packages
-[2024-03-30T19:51:26.981Z] info Get city packages successfuly
-[2024-03-30T19:51:39.675Z] info server running on port 3000
-[2024-03-30T19:51:49.866Z] info server running on port 3000
-[2024-03-30T19:51:54.719Z] info server running on port 3000
-[2024-03-30T19:52:22.899Z] info server running on port 3000
-[2024-03-30T19:55:03.795Z] info Token validated successfuly
-[2024-03-30T19:55:03.796Z] info Enter the endpoint get city packages
-[2024-03-30T19:55:03.834Z] info Get city packages successfuly
-[2024-03-30T19:56:33.298Z] info server running on port 3000
-[2024-03-30T19:57:20.582Z] info server running on port 3000
-[2024-03-30T19:57:29.103Z] info server running on port 3000
-[2024-03-30T19:57:38.917Z] info server running on port 3000
-[2024-03-30T19:58:00.393Z] info server running on port 3000
-[2024-03-30T19:58:15.952Z] info server running on port 3000
-[2024-03-30T19:58:26.052Z] info server running on port 3000
-[2024-03-30T19:59:00.869Z] info server running on port 3000
-[2024-03-30T19:59:16.232Z] info server running on port 3000
-[2024-03-30T19:59:50.346Z] info server running on port 3000
-[2024-03-30T20:00:06.681Z] info server running on port 3000
-[2024-03-30T20:00:50.280Z] info server running on port 3000
-[2024-03-30T20:01:22.737Z] info server running on port 3000
-[2024-03-30T20:06:14.801Z] info server running on port 3000
-[2024-03-30T20:06:17.841Z] info server running on port 3000
-[2024-03-30T20:08:48.636Z] info server running on port 3000
-[2024-03-30T20:08:49.160Z] info Token validated successfuly
-[2024-03-30T20:08:49.160Z] info Enter the endpoint get products package
-[2024-03-30T20:08:49.191Z] info Get products package successfuly
-[2024-03-30T20:09:26.594Z] info Token validated successfuly
-[2024-03-30T20:09:26.594Z] info Enter the endpoint get products package
-[2024-03-30T20:09:26.602Z] info Get products package successfuly
-[2024-04-01T14:42:23.196Z] info server running on port 3000
-[2024-04-01T14:42:25.588Z] info enter the endpoint login
-[2024-04-01T14:42:25.621Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-04-01T14:42:35.544Z] info Token validated successfuly
-[2024-04-01T14:42:35.545Z] info Enter the endpoint get city packages
-[2024-04-01T14:42:35.548Z] info Get city packages successfuly
-[2024-04-01T14:43:02.456Z] info Token validated successfuly
-[2024-04-01T14:43:02.456Z] info Enter the endpoint get city packages
-[2024-04-01T14:43:02.460Z] info Get city packages successfuly
-[2024-04-01T14:43:18.372Z] info Token validated successfuly
-[2024-04-01T14:43:18.373Z] info Enter the endpoint get products package
-[2024-04-01T14:43:18.382Z] info Get products package successfuly
-[2024-04-01T15:00:59.287Z] info server running on port 3000
-[2024-04-01T15:01:46.429Z] info server running on port 3000
-[2024-04-01T15:01:57.150Z] info server running on port 3000
-[2024-04-01T15:07:53.456Z] info server running on port 3000
-[2024-04-01T15:08:08.978Z] info server running on port 3000
-[2024-04-01T15:08:11.151Z] info Token validated successfuly
-[2024-04-01T15:08:11.152Z] info Enter the endpoint get carriers
-[2024-04-01T15:08:11.152Z] info Error city packages: ReferenceError: Carrier is not defined
-[2024-04-01T15:09:14.397Z] info server running on port 3000
-[2024-04-01T15:09:16.646Z] info Token validated successfuly
-[2024-04-01T15:09:16.646Z] info Enter the endpoint get carriers
-[2024-04-01T15:09:16.678Z] info Get carriers successfuly
-[2024-04-01T15:15:58.238Z] info server running on port 3000
-[2024-04-01T15:16:00.033Z] info Token validated successfuly
-[2024-04-01T15:16:00.033Z] info Enter the endpoint get carriers
-[2024-04-01T15:16:00.062Z] info Get carriers successfuly
-[2024-04-01T15:17:48.144Z] info server running on port 3000
-[2024-04-01T15:18:03.660Z] info server running on port 3000
-[2024-04-01T15:18:12.277Z] info server running on port 3000
-[2024-04-01T15:18:35.928Z] info server running on port 3000
-[2024-04-01T15:19:16.144Z] info server running on port 3000
-[2024-04-01T15:19:54.994Z] info server running on port 3000
-[2024-04-01T15:20:10.062Z] info server running on port 3000
-[2024-04-01T15:20:11.356Z] info Token validated successfuly
-[2024-04-01T15:20:11.356Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:20:11.384Z] info Error city packages: SequelizeDatabaseError: (conn=51, no: 1054, SQLState: 42S22) Unknown column 'carriers.fk_id_carrier_p' in 'where clause'
-sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_carrier`, `last_name_carrier`, `phone_number_carrier`, `email_carrier` FROM `carriers` AS `carriers` WHERE `carriers`.`fk_id_carrier_p` = 1; - parameters:[]
-[2024-04-01T15:20:30.619Z] info server running on port 3000
-[2024-04-01T15:20:34.832Z] info server running on port 3000
-[2024-04-01T15:20:36.170Z] info Token validated successfuly
-[2024-04-01T15:20:36.170Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:20:36.198Z] info Error city packages: SequelizeDatabaseError: (conn=53, no: 1054, SQLState: 42S22) Unknown column 'id_carrier' in 'field list'
-sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_carrier`, `last_name_carrier`, `phone_number_carrier`, `email_carrier` FROM `packages` AS `packages` WHERE `packages`.`fk_id_carrier_p` = 1; - parameters:[]
-[2024-04-01T15:21:51.535Z] info server running on port 3000
-[2024-04-01T15:21:51.935Z] info Token validated successfuly
-[2024-04-01T15:21:51.935Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:21:51.963Z] info Error city packages: SequelizeDatabaseError: (conn=55, no: 1054, SQLState: 42S22) Unknown column 'id_carrier' in 'field list'
-sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_carrier`, `last_name_carrier`, `phone_number_carrier`, `email_carrier` FROM `packages` AS `packages` WHERE `packages`.`fk_id_carrier_p` = 1; - parameters:[]
-[2024-04-01T15:23:13.026Z] info server running on port 3000
-[2024-04-01T15:23:14.906Z] info Token validated successfuly
-[2024-04-01T15:23:14.906Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:23:43.494Z] info server running on port 3000
-[2024-04-01T15:23:53.349Z] info server running on port 3000
-[2024-04-01T15:23:59.542Z] info server running on port 3000
-[2024-04-01T15:24:00.601Z] info Token validated successfuly
-[2024-04-01T15:24:00.601Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:24:00.629Z] info Error packages carrier: SequelizeDatabaseError: (conn=57, no: 1054, SQLState: 42S22) Unknown column 'id_carrier' in 'field list'
-sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_carrier`, `last_name_carrier`, `phone_number_carrier`, `email_carrier` FROM `packages` AS `packages` WHERE `packages`.`fk_id_carrier_p` = 1; - parameters:[]
-[2024-04-01T15:24:16.440Z] info server running on port 3000
-[2024-04-01T15:24:17.427Z] info Token validated successfuly
-[2024-04-01T15:24:17.428Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:24:17.456Z] info Error city packages: SequelizeDatabaseError: (conn=59, no: 1054, SQLState: 42S22) Unknown column 'id_carrier' in 'field list'
-sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_carrier`, `last_name_carrier`, `phone_number_carrier`, `email_carrier` FROM `packages` AS `packages` WHERE `packages`.`fk_id_carrier_p` = 1; - parameters:[]
-[2024-04-01T15:24:32.168Z] info server running on port 3000
-[2024-04-01T15:24:32.989Z] info Token validated successfuly
-[2024-04-01T15:24:32.989Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:24:33.020Z] info Error packages carrier: SequelizeDatabaseError: (conn=61, no: 1054, SQLState: 42S22) Unknown column 'id_carrier' in 'field list'
-sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_carrier`, `last_name_carrier`, `phone_number_carrier`, `email_carrier` FROM `packages` AS `packages` WHERE `packages`.`fk_id_carrier_p` = 1; - parameters:[]
-[2024-04-01T15:24:54.330Z] info server running on port 3000
-[2024-04-01T15:24:55.274Z] info Token validated successfuly
-[2024-04-01T15:24:55.274Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:24:55.301Z] info Error packages carrier: SequelizeDatabaseError: (conn=63, no: 1054, SQLState: 42S22) Unknown column 'id_carrier' in 'field list'
-sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_carrier`, `last_name_carrier`, `phone_number_carrier`, `email_carrier` FROM `packages` AS `packages`; - parameters:[]
-[2024-04-01T15:26:09.023Z] info server running on port 3000
-[2024-04-01T15:26:16.285Z] info server running on port 3000
-[2024-04-01T15:26:23.792Z] info Token validated successfuly
-[2024-04-01T15:26:23.793Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:26:23.822Z] info Error packages carrier: SequelizeDatabaseError: (conn=65, no: 1054, SQLState: 42S22) Unknown column 'id_carrier' in 'field list'
-sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_carrier`, `last_name_carrier`, `phone_number_carrier`, `email_carrier` FROM `packages` AS `packages` WHERE `packages`.`fk_id_carrier_p` = 1 LIMIT 1; - parameters:[]
-[2024-04-01T15:26:47.872Z] info server running on port 3000
-[2024-04-01T15:28:05.454Z] info server running on port 3000
-[2024-04-01T15:28:10.703Z] info server running on port 3000
-[2024-04-01T15:28:12.359Z] info Token validated successfuly
-[2024-04-01T15:28:12.360Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:28:12.389Z] info Get packages carrier successfuly
-[2024-04-01T15:28:23.864Z] info Token validated successfuly
-[2024-04-01T15:28:23.864Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:28:23.869Z] info Get packages carrier successfuly
-[2024-04-01T15:28:36.499Z] info Token validated successfuly
-[2024-04-01T15:28:36.500Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:28:36.503Z] info Get packages carrier successfuly
-[2024-04-01T15:28:48.053Z] info Token validated successfuly
-[2024-04-01T15:28:48.054Z] info Enter the endpoint get packages carrier
-[2024-04-01T15:28:48.057Z] info Get packages carrier successfuly
-[2024-04-01T15:36:35.248Z] info Token validated successfuly
-[2024-04-01T15:36:35.248Z] info Enter the endpoint get products package
-[2024-04-01T15:36:35.257Z] info Get products package successfuly
-[2024-04-01T15:38:01.239Z] info Token validated successfuly
-[2024-04-01T15:38:01.239Z] info Enter the endpoint get carriers
-[2024-04-01T15:38:01.243Z] info Get carriers successfuly
-[2024-04-01T15:40:03.579Z] info server running on port 3000
-[2024-04-01T15:40:21.872Z] info server running on port 3000
-[2024-04-01T15:40:25.679Z] info server running on port 3000
-[2024-04-01T15:40:47.338Z] info server running on port 3000
-[2024-04-01T15:41:00.955Z] info server running on port 3000
-[2024-04-01T15:43:40.078Z] info server running on port 3000
-[2024-04-01T16:03:39.161Z] info vehicle photo load successfully
-[2024-04-01T16:03:39.162Z] info Enter the endpoint registerVehicle carrier with photo
-[2024-04-01T16:03:39.214Z] info Vehicle registed and carrier asosiation successfully
-[2024-04-01T16:07:09.384Z] info server running on port 3000
-[2024-04-01T16:11:54.795Z] info server running on port 3000
-[2024-04-01T16:11:56.388Z] info server running on port 3000
-[2024-04-01T16:12:03.024Z] info server running on port 3000
-[2024-04-01T16:13:17.916Z] info server running on port 3000
-[2024-04-01T16:13:33.866Z] info server running on port 3000
-[2024-04-01T16:14:36.238Z] info server running on port 3000
-[2024-04-01T16:15:04.853Z] info server running on port 3000
-[2024-04-01T16:15:37.779Z] info enter the endpoint login
-[2024-04-01T16:15:37.812Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-04-01T16:15:47.272Z] info Token validated successfuly
-[2024-04-01T16:15:47.273Z] info Enter the endpoint get detail asignate
-[2024-04-01T16:15:47.273Z] info Error detail asignate: ReferenceError: Vehicule is not defined
-[2024-04-01T16:16:09.882Z] info server running on port 3000
-[2024-04-01T16:16:10.256Z] info Token validated successfuly
-[2024-04-01T16:16:10.257Z] info Enter the endpoint get detail asignate
-[2024-04-01T16:16:10.294Z] info Get detail asignate successfuly
-[2024-04-01T16:16:26.349Z] info Token validated successfuly
-[2024-04-01T16:16:26.349Z] info Enter the endpoint get detail asignate
-[2024-04-01T16:16:26.355Z] info Get detail asignate successfuly
-[2024-04-01T16:16:31.372Z] info Token validated successfuly
-[2024-04-01T16:16:31.373Z] info Enter the endpoint get detail asignate
-[2024-04-01T16:16:31.377Z] info Get detail asignate successfuly
-[2024-04-01T16:16:48.971Z] info Token validated successfuly
-[2024-04-01T16:16:48.971Z] info Enter the endpoint get detail asignate
-[2024-04-01T16:16:48.976Z] info Get detail asignate successfuly
-[2024-04-01T16:16:52.134Z] info Token validated successfuly
-[2024-04-01T16:16:52.135Z] info Enter the endpoint get detail asignate
-[2024-04-01T16:16:52.139Z] info Get detail asignate successfuly
-[2024-04-01T16:17:31.389Z] info Token validated successfuly
-[2024-04-01T16:17:31.389Z] info Enter the endpoint get detail asignate
-[2024-04-01T16:17:31.395Z] info Get detail asignate successfuly
-[2024-04-01T16:17:48.691Z] info server running on port 3000
-[2024-04-01T16:17:49.308Z] info Token validated successfuly
-[2024-04-01T16:17:49.309Z] info Enter the endpoint get detail asignate
-[2024-04-01T16:17:49.345Z] info Get detail asignate successfuly
-[2024-04-01T16:21:51.360Z] info server running on port 3000
-[2024-04-01T16:22:24.016Z] info server running on port 3000
-[2024-04-01T16:29:19.129Z] info Token validated successfuly
-[2024-04-01T16:29:46.634Z] info server running on port 3000
-[2024-04-01T16:30:01.772Z] info server running on port 3000
-[2024-04-01T16:30:02.232Z] info Token validated successfuly
-[2024-04-01T16:30:02.233Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:31:04.273Z] info server running on port 3000
-[2024-04-01T16:31:11.328Z] info server running on port 3000
-[2024-04-01T16:31:12.170Z] info Token validated successfuly
-[2024-04-01T16:31:12.170Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:31:56.783Z] info server running on port 3000
-[2024-04-01T16:31:57.751Z] info Token validated successfuly
-[2024-04-01T16:31:57.752Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:32:15.305Z] info server running on port 3000
-[2024-04-01T16:32:23.580Z] info server running on port 3000
-[2024-04-01T16:32:25.090Z] info Token validated successfuly
-[2024-04-01T16:32:25.090Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:32:30.585Z] info Token validated successfuly
-[2024-04-01T16:32:30.586Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:33:38.945Z] info Token validated successfuly
-[2024-04-01T16:33:38.946Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:34:12.173Z] info Token validated successfuly
-[2024-04-01T16:34:12.174Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:34:22.025Z] info Token validated successfuly
-[2024-04-01T16:34:22.025Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:35:15.312Z] info server running on port 3000
-[2024-04-01T16:35:15.532Z] info Token validated successfuly
-[2024-04-01T16:35:15.532Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:35:18.522Z] info server running on port 3000
-[2024-04-01T16:35:18.622Z] info Token validated successfuly
-[2024-04-01T16:35:18.622Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:38:00.500Z] info Token validated successfuly
-[2024-04-01T16:38:00.501Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:39:32.221Z] info server running on port 3000
-[2024-04-01T16:39:37.143Z] info Token validated successfuly
-[2024-04-01T16:39:57.727Z] info server running on port 3000
-[2024-04-01T16:40:25.715Z] info server running on port 3000
-[2024-04-01T16:40:29.405Z] info server running on port 3000
-[2024-04-01T16:41:19.830Z] info server running on port 3000
-[2024-04-01T16:41:36.353Z] info server running on port 3000
-[2024-04-01T16:41:42.514Z] info server running on port 3000
-[2024-04-01T16:41:44.597Z] info Token validated successfuly
-[2024-04-01T16:41:44.598Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:47:04.541Z] info server running on port 3000
-[2024-04-01T16:47:10.257Z] info server running on port 3000
-[2024-04-01T16:47:19.903Z] info server running on port 3000
-[2024-04-01T16:47:35.139Z] info Token validated successfuly
-[2024-04-01T16:47:35.140Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:48:59.259Z] info server running on port 3000
-[2024-04-01T16:49:14.484Z] info server running on port 3000
-[2024-04-01T16:49:17.368Z] info server running on port 3000
-[2024-04-01T16:49:21.916Z] info server running on port 3000
-[2024-04-01T16:49:36.082Z] info server running on port 3000
-[2024-04-01T16:50:21.169Z] info server running on port 3000
-[2024-04-01T16:50:35.275Z] info server running on port 3000
-[2024-04-01T16:50:46.502Z] info server running on port 3000
-[2024-04-01T16:50:57.116Z] info server running on port 3000
-[2024-04-01T16:51:02.734Z] info server running on port 3000
-[2024-04-01T16:51:08.319Z] info server running on port 3000
-[2024-04-01T16:51:25.025Z] info server running on port 3000
-[2024-04-01T16:52:01.891Z] info server running on port 3000
-[2024-04-01T16:52:26.363Z] info server running on port 3000
-[2024-04-01T16:52:44.894Z] info server running on port 3000
-[2024-04-01T16:52:49.856Z] info server running on port 3000
-[2024-04-01T16:52:54.104Z] info Token validated successfuly
-[2024-04-01T16:52:54.105Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:52:54.107Z] info Packages asignated successfuly
-[2024-04-01T16:53:30.209Z] info Token validated successfuly
-[2024-04-01T16:53:30.209Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:53:30.210Z] info Packages asignated successfuly
-[2024-04-01T16:53:59.978Z] info server running on port 3000
-[2024-04-01T16:54:01.734Z] info server running on port 3000
-[2024-04-01T16:54:03.996Z] info Token validated successfuly
-[2024-04-01T16:54:03.996Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:54:03.999Z] info Packages asignated successfuly
-[2024-04-01T16:54:13.559Z] info server running on port 3000
-[2024-04-01T16:54:26.905Z] info server running on port 3000
-[2024-04-01T16:54:27.757Z] info Token validated successfuly
-[2024-04-01T16:54:27.757Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:54:27.760Z] info Packages asignated successfuly
-[2024-04-01T16:55:08.828Z] info server running on port 3000
-[2024-04-01T16:55:23.111Z] info server running on port 3000
-[2024-04-01T16:55:24.684Z] info server running on port 3000
-[2024-04-01T16:55:33.765Z] info Token validated successfuly
-[2024-04-01T16:55:33.765Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:55:33.767Z] info Packages asignated successfuly
-[2024-04-01T16:55:48.190Z] info server running on port 3000
-[2024-04-01T16:55:50.534Z] info server running on port 3000
-[2024-04-01T16:56:00.475Z] info server running on port 3000
-[2024-04-01T16:57:49.771Z] info Token validated successfuly
-[2024-04-01T16:57:49.771Z] info Enter the endpoint get carriers
-[2024-04-01T16:57:49.800Z] info Get carriers successfuly
-[2024-04-01T16:58:10.438Z] info Token validated successfuly
-[2024-04-01T16:58:10.439Z] info Enter the endpoint get carriers
-[2024-04-01T16:58:10.443Z] info Get carriers successfuly
-[2024-04-01T16:58:24.212Z] info Token validated successfuly
-[2024-04-01T16:58:24.213Z] info Enter the endpoint to asignate packages
-[2024-04-01T16:58:24.214Z] info Packages asignated successfuly
-[2024-04-01T16:58:43.239Z] info Token validated successfuly
-[2024-04-01T16:58:43.239Z] info Enter the endpoint get carriers
-[2024-04-01T16:58:43.242Z] info Get carriers successfuly
-[2024-04-01T17:01:47.013Z] info server running on port 3000
-[2024-04-01T17:01:53.973Z] info server running on port 3000
-[2024-04-01T17:02:35.162Z] info server running on port 3000
-[2024-04-01T17:02:40.274Z] info server running on port 3000
-[2024-04-01T17:03:32.764Z] info server running on port 3000
-[2024-04-01T17:03:54.886Z] info server running on port 3000
-[2024-04-01T17:04:05.629Z] info server running on port 3000
-[2024-04-01T17:05:01.165Z] info server running on port 3000
-[2024-04-01T17:05:06.119Z] info server running on port 3000
-[2024-04-01T17:05:07.718Z] info Token validated successfuly
-[2024-04-01T17:05:07.718Z] info Enter the endpoint get carriers
-[2024-04-01T17:05:07.750Z] info Error carriers: Error: WHERE parameter "fk_id_carrier_p" has invalid "undefined" value
-[2024-04-01T17:07:21.081Z] info server running on port 3000
-[2024-04-01T17:07:22.337Z] info Token validated successfuly
-[2024-04-01T17:07:22.338Z] info Enter the endpoint get carriers
-[2024-04-01T17:07:22.371Z] info Get carriers successfuly
-[2024-04-01T17:11:57.784Z] info server running on port 3000
-[2024-04-01T17:12:26.139Z] info server running on port 3000
-[2024-04-01T17:12:32.114Z] info server running on port 3000
-[2024-04-01T17:12:36.775Z] info server running on port 3000
-[2024-04-01T17:13:36.264Z] info server running on port 3000
-[2024-04-01T17:14:08.238Z] info server running on port 3000
-[2024-04-01T17:15:37.886Z] info server running on port 3000
-[2024-04-01T17:15:58.774Z] info server running on port 3000
-[2024-04-01T18:45:23.242Z] info server running on port 3000
-[2024-04-01T18:46:16.311Z] info server running on port 3000
-[2024-04-01T18:46:33.566Z] info server running on port 3000
-[2024-04-01T18:46:39.730Z] info server running on port 3000
-[2024-04-01T18:46:45.308Z] info server running on port 3000
-[2024-04-01T18:48:09.318Z] info server running on port 3000
-[2024-04-01T18:48:15.869Z] info enter the endpoint login
-[2024-04-01T18:48:15.931Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-04-01T18:48:23.282Z] info Token validated successfuly
-[2024-04-01T18:48:23.282Z] info Enter the endpoint get carriers
-[2024-04-01T18:48:23.306Z] info Get carriers successfuly
-[2024-04-01T18:49:33.859Z] info server running on port 3000
-[2024-04-01T18:49:37.283Z] info Token validated successfuly
-[2024-04-01T18:49:37.283Z] info Enter the endpoint get carriers
-[2024-04-01T18:49:37.311Z] info Get carriers successfuly
-[2024-04-01T18:52:16.701Z] info server running on port 3000
-[2024-04-01T18:52:49.200Z] info server running on port 3000
-[2024-04-01T18:52:56.633Z] info server running on port 3000
-[2024-04-01T18:54:08.857Z] info Token validated successfuly
-[2024-04-01T18:54:08.857Z] info Enter the endpoint get carriers
-[2024-04-01T18:54:08.886Z] info Get carriers successfuly
-[2024-04-01T18:54:40.589Z] info server running on port 3000
-[2024-04-01T18:54:41.364Z] info Token validated successfuly
-[2024-04-01T18:54:41.364Z] info Enter the endpoint get carriers
-[2024-04-01T18:54:41.393Z] info Get carriers successfuly
-[2024-04-01T18:55:17.097Z] info server running on port 3000
-[2024-04-01T18:55:17.756Z] info Token validated successfuly
-[2024-04-01T18:55:17.756Z] info Enter the endpoint get carriers
-[2024-04-01T18:56:01.790Z] info server running on port 3000
-[2024-04-01T18:56:15.260Z] info Token validated successfuly
-[2024-04-01T18:56:15.261Z] info Enter the endpoint get carriers
-[2024-04-01T18:56:33.200Z] info server running on port 3000
-[2024-04-01T18:56:33.452Z] info Token validated successfuly
-[2024-04-01T18:56:33.452Z] info Enter the endpoint get carriers
-[2024-04-01T18:56:33.483Z] info Get carriers successfuly
-[2024-04-01T18:56:40.390Z] info server running on port 3000
-[2024-04-01T18:56:40.529Z] info Token validated successfuly
-[2024-04-01T18:56:40.530Z] info Enter the endpoint get carriers
-[2024-04-01T18:56:40.559Z] info Get carriers successfuly
-[2024-04-01T18:57:34.082Z] info server running on port 3000
-[2024-04-01T18:57:48.042Z] info server running on port 3000
-[2024-04-01T18:58:35.097Z] info server running on port 3000
-[2024-04-01T18:58:36.196Z] info server running on port 3000
-[2024-04-01T18:58:42.796Z] info Token validated successfuly
-[2024-04-01T18:58:42.796Z] info Enter the endpoint get carriers
-[2024-04-01T18:58:42.825Z] info Get carriers successfuly
-[2024-04-01T19:00:13.529Z] info server running on port 3000
-[2024-04-01T19:00:16.159Z] info Token validated successfuly
-[2024-04-01T19:00:16.160Z] info Enter the endpoint get carriers
-[2024-04-01T19:00:16.189Z] info Get carriers successfuly
-[2024-04-01T19:00:58.143Z] info server running on port 3000
-[2024-04-01T19:00:59.551Z] info Token validated successfuly
-[2024-04-01T19:00:59.552Z] info Enter the endpoint get carriers
-[2024-04-01T19:00:59.580Z] info Get carriers successfuly
-[2024-04-01T19:03:03.011Z] info server running on port 3000
-[2024-04-01T19:03:06.161Z] info Token validated successfuly
-[2024-04-01T19:03:06.161Z] info Enter the endpoint get carriers
-[2024-04-01T19:03:06.189Z] info Get carriers successfuly
-[2024-04-01T19:03:42.301Z] info server running on port 3000
-[2024-04-01T19:04:33.762Z] info server running on port 3000
-[2024-04-01T19:04:47.753Z] info server running on port 3000
-[2024-04-01T19:04:49.334Z] info Token validated successfuly
-[2024-04-01T19:04:49.335Z] info Enter the endpoint get carriers
-[2024-04-01T19:04:49.369Z] info Get carriers successfuly
-[2024-04-01T19:08:10.765Z] info server running on port 3000
-[2024-04-01T19:08:17.625Z] info server running on port 3000
-[2024-04-01T19:08:23.379Z] info Token validated successfuly
-[2024-04-01T19:08:23.379Z] info Enter the endpoint get carriers
-[2024-04-01T19:08:23.420Z] info Error carriers: TypeError: Cannot read properties of undefined (reading 'description_td')
-[2024-04-01T19:08:42.393Z] info server running on port 3000
-[2024-04-01T19:08:46.423Z] info Token validated successfuly
-[2024-04-01T19:08:46.424Z] info Enter the endpoint get carriers
-[2024-04-01T19:09:28.149Z] info server running on port 3000
-[2024-04-01T19:09:28.784Z] info Token validated successfuly
-[2024-04-01T19:09:28.785Z] info Enter the endpoint get carriers
-[2024-04-01T19:09:28.816Z] info Get carriers successfuly
-[2024-04-01T19:09:38.931Z] info server running on port 3000
-[2024-04-01T19:09:41.164Z] info Token validated successfuly
-[2024-04-01T19:09:41.165Z] info Enter the endpoint get carriers
-[2024-04-01T19:09:41.204Z] info Get carriers successfuly
-[2024-04-01T19:10:04.342Z] info server running on port 3000
-[2024-04-01T19:10:05.752Z] info Token validated successfuly
-[2024-04-01T19:10:05.752Z] info Enter the endpoint get carriers
-[2024-04-01T19:10:05.792Z] info Get carriers successfuly
-[2024-04-01T19:10:18.018Z] info server running on port 3000
-[2024-04-01T19:10:22.101Z] info server running on port 3000
-[2024-04-01T19:10:22.376Z] info Token validated successfuly
-[2024-04-01T19:10:22.377Z] info Enter the endpoint get carriers
-[2024-04-01T19:10:22.415Z] info Get carriers successfuly
-[2024-04-01T19:21:28.877Z] info server running on port 3000
-[2024-04-01T19:26:59.656Z] info server running on port 3000
-[2024-04-01T19:27:11.187Z] info server running on port 3000
-[2024-04-01T19:28:06.176Z] info server running on port 3000
-[2024-04-01T19:36:15.940Z] info server running on port 3000
-[2024-04-01T19:36:19.469Z] info Token validated successfuly
-[2024-04-01T19:36:19.469Z] info Enter the endpoint get carriers
-[2024-04-01T19:36:19.509Z] info Get carriers successfuly
-[2024-04-01T19:38:13.385Z] info Token validated successfuly
-[2024-04-01T19:38:13.385Z] info Enter the endpoint get packages carrier
-[2024-04-01T19:38:13.389Z] info Get packages carrier successfuly
-[2024-04-01T19:38:22.502Z] info Token validated successfuly
-[2024-04-01T19:38:22.503Z] info Enter the endpoint get packages carrier
-[2024-04-01T19:38:22.504Z] info Get packages carrier successfuly
-[2024-04-01T19:38:25.884Z] info Token validated successfuly
-[2024-04-01T19:38:25.884Z] info Enter the endpoint get packages carrier
-[2024-04-01T19:38:25.887Z] info Get packages carrier successfuly
-[2024-04-01T19:42:42.826Z] info Token validated successfuly
-[2024-04-01T19:42:42.826Z] info Enter the endpoint get city packages
-[2024-04-01T19:42:42.831Z] info Get city packages successfuly
-[2024-04-01T19:44:03.084Z] info Token validated successfuly
-[2024-04-01T19:44:03.085Z] info Enter the endpoint get city packages
-[2024-04-01T19:44:03.088Z] info Get city packages successfuly
-[2024-04-01T19:44:25.148Z] info Token validated successfuly
-[2024-04-01T19:44:25.148Z] info Enter the endpoint get city packages
-[2024-04-01T19:44:25.152Z] info Get city packages successfuly
-[2024-04-01T19:45:13.492Z] info Token validated successfuly
-[2024-04-01T19:45:13.493Z] info Enter the endpoint get city packages
-[2024-04-01T19:45:13.496Z] info Get city packages successfuly
-[2024-04-01T19:45:43.086Z] info Token validated successfuly
-[2024-04-01T19:45:43.087Z] info Enter the endpoint get products package
-[2024-04-01T19:45:43.105Z] info Get products package successfuly
-[2024-04-01T19:45:52.422Z] info Token validated successfuly
-[2024-04-01T19:45:52.422Z] info Enter the endpoint get products package
-[2024-04-01T19:45:52.425Z] info Get products package successfuly
-[2024-04-01T19:45:56.032Z] info Token validated successfuly
-[2024-04-01T19:45:56.032Z] info Enter the endpoint get products package
-[2024-04-01T19:45:56.035Z] info Get products package successfuly
-[2024-04-01T19:46:08.215Z] info Token validated successfuly
-[2024-04-01T19:46:08.215Z] info Enter the endpoint get carriers
-[2024-04-01T19:46:08.227Z] info Get carriers successfuly
-[2024-04-01T19:51:44.370Z] info enter the endpoint login
-[2024-04-01T19:51:44.376Z] info correct credentials, Started Sesion, token returned in response body data.
-[2024-04-01T19:51:55.195Z] info Token validated successfuly
-[2024-04-01T19:51:55.195Z] info Enter the endpoint get packages carrier
-[2024-04-01T19:51:55.199Z] info Get packages carrier successfuly
-[2024-04-01T19:53:36.434Z] info Token validated successfuly
-[2024-04-01T19:53:36.434Z] info Enter the endpoint get detail asignate
-[2024-04-01T19:53:36.439Z] info Get detail asignate successfuly
-[2024-04-01T19:54:17.423Z] info Token validated successfuly
-[2024-04-01T19:54:17.423Z] info Enter the endpoint get detail asignate
-[2024-04-01T19:54:17.428Z] info Get detail asignate successfuly
-[2024-04-01T19:55:36.325Z] info server running on port 3000
-[2024-04-01T19:55:39.324Z] info Token validated successfuly
-[2024-04-01T19:55:39.325Z] info Enter the endpoint get detail asignate
-[2024-04-01T19:55:39.362Z] info Get detail asignate successfuly
-[2024-04-01T19:55:53.977Z] info server running on port 3000
-[2024-04-01T19:55:57.703Z] info server running on port 3000
-[2024-04-01T19:56:01.114Z] info Token validated successfuly
-[2024-04-01T19:56:01.114Z] info Enter the endpoint get detail asignate
-[2024-04-01T19:56:01.150Z] info Get detail asignate successfuly
-[2024-04-01T20:02:14.633Z] info Token validated successfuly
-[2024-04-01T20:02:14.634Z] info Enter the endpoint to asignate packages
-[2024-04-01T20:02:14.635Z] info Packages asignated successfuly
-[2024-04-01T20:03:53.846Z] info server running on port 3000
-[2024-04-01T20:04:05.995Z] info server running on port 3000
-[2024-04-01T20:04:08.146Z] info Token validated successfuly
-[2024-04-01T20:04:08.146Z] info Enter the endpoint get inter_city packages
-[2024-04-01T20:04:08.175Z] info Get inter_city packages successfuly
-[2024-04-01T20:05:35.933Z] info server running on port 3000
-[2024-04-01T20:05:40.129Z] info Token validated successfuly
-[2024-04-01T20:05:40.129Z] info Enter the endpoint get inter_city packages
-[2024-04-01T20:05:40.160Z] info Get inter_city packages successfuly
-[2024-04-01T20:08:44.362Z] info Token validated successfuly
-[2024-04-01T20:08:44.363Z] info Enter the endpoint get carriers
-[2024-04-01T20:08:44.377Z] info Get carriers successfuly
-[2024-04-01T20:13:14.593Z] info server running on port 3000
-[2024-04-01T20:13:35.645Z] info server running on port 3000
-[2024-04-01T20:13:59.921Z] info server running on port 3000
-[2024-04-01T20:17:20.967Z] info server running on port 3000
-[2024-04-01T20:17:46.997Z] info server running on port 3000
-[2024-04-01T20:18:26.656Z] info Token validated successfuly
-[2024-04-01T20:18:26.656Z] info Enter the endpoint get carriers
-[2024-04-01T20:18:26.700Z] info Get carriers successfuly
-[2024-04-01T20:19:33.076Z] info server running on port 3000
-[2024-04-01T20:19:34.774Z] info server running on port 3000
-[2024-04-01T20:19:35.975Z] info server running on port 3000
-[2024-04-01T20:19:39.393Z] info Token validated successfuly
-[2024-04-01T20:19:39.393Z] info Enter the endpoint get carriers
-[2024-04-01T20:19:39.431Z] info Get carriers successfuly
-[2024-04-01T20:20:22.796Z] info Token validated successfuly
-[2024-04-01T20:20:22.797Z] info Enter the endpoint get carriers Inter_city
-[2024-04-01T20:20:22.809Z] info Get carriers successfuly
-[2024-04-01T20:21:13.213Z] info server running on port 3000
-[2024-04-01T20:21:48.438Z] info server running on port 3000
-[2024-04-01T20:21:50.869Z] info server running on port 3000
-[2024-04-01T20:21:54.574Z] info server running on port 3000
-[2024-04-01T20:21:58.978Z] info server running on port 3000
-[2024-04-01T20:22:00.174Z] info Token validated successfuly
-[2024-04-01T20:22:00.175Z] info Enter the endpoint get carriers Inter_city
-[2024-04-01T20:22:00.220Z] info Get carriers successfuly
-[2024-04-01T20:22:40.288Z] info Token validated successfuly
-[2024-04-01T20:22:40.288Z] info Enter the endpoint get detail asignate
-[2024-04-01T20:22:40.296Z] info Get detail asignate successfuly
-[2024-04-01T20:22:53.254Z] info Token validated successfuly
-[2024-04-01T20:22:53.255Z] info Enter the endpoint get detail asignate
-[2024-04-01T20:22:53.261Z] info Get detail asignate successfuly
-[2024-04-01T20:23:12.515Z] info Token validated successfuly
-[2024-04-01T20:23:12.516Z] info Enter the endpoint get detail asignate
-[2024-04-01T20:23:12.522Z] info Get detail asignate successfuly
-[2024-04-01T20:23:14.749Z] info Token validated successfuly
-[2024-04-01T20:23:14.749Z] info Enter the endpoint get detail asignate
-[2024-04-01T20:23:14.754Z] info Get detail asignate successfuly
-[2024-04-01T20:23:37.061Z] info Token validated successfuly
-[2024-04-01T20:23:37.061Z] info Enter the endpoint get detail asignate
-[2024-04-01T20:23:37.067Z] info Get detail asignate successfuly
-[2024-04-01T20:25:30.656Z] info server running on port 3000
-[2024-04-01T20:28:23.977Z] info Token validated successfuly
-[2024-04-01T20:28:23.977Z] info Enter the endpoint get carriers Inter_city
-[2024-04-01T20:28:24.021Z] info Get carriers successfuly
-[2024-04-01T20:29:07.048Z] info server running on port 3000
-[2024-04-01T20:30:00.650Z] info server running on port 3000
-[2024-04-01T20:30:08.349Z] info server running on port 3000
-[2024-04-01T20:30:42.191Z] info server running on port 3000
-[2024-04-01T20:31:17.915Z] info server running on port 3000
-[2024-04-01T20:32:33.703Z] info server running on port 3000
-[2024-04-01T20:32:55.162Z] info server running on port 3000
-[2024-04-01T20:32:57.915Z] info server running on port 3000
-[2024-04-01T20:33:04.722Z] info server running on port 3000
-[2024-04-01T20:33:05.712Z] info Token validated successfuly
-[2024-04-01T20:33:05.712Z] info Enter the endpoint get detail asignate inter_city
-[2024-04-01T20:33:05.749Z] info Get detail asignate inter_city successfuly
-[2024-04-01T20:33:12.832Z] info Token validated successfuly
-[2024-04-01T20:33:12.832Z] info Enter the endpoint get detail asignate inter_city
-[2024-04-01T20:33:12.837Z] info Get detail asignate inter_city successfuly
-[2024-04-01T20:33:16.249Z] info Token validated successfuly
-[2024-04-01T20:33:16.250Z] info Enter the endpoint get detail asignate inter_city
-[2024-04-01T20:33:16.255Z] info Get detail asignate inter_city successfuly
-[2024-04-01T20:33:44.136Z] info Token validated successfuly
-[2024-04-01T20:33:44.137Z] info Enter the endpoint get detail asignate
-[2024-04-01T20:33:44.143Z] info Get detail asignate successfuly
-[2024-04-01T20:33:47.855Z] info Token validated successfuly
-[2024-04-01T20:33:47.855Z] info Enter the endpoint get detail asignate inter_city
-[2024-04-01T20:33:47.859Z] info Get detail asignate inter_city successfuly
-[2024-04-01T20:35:46.986Z] info server running on port 3000
-[2024-04-01T20:36:02.433Z] info server running on port 3000
-[2024-04-01T20:36:04.411Z] info server running on port 3000
-[2024-04-01T20:36:40.420Z] info server running on port 3000
-[2024-04-01T20:36:50.763Z] info Token validated successfuly
-[2024-04-01T20:36:50.764Z] info Enter the endpoint to asignate packages
-[2024-04-01T20:36:50.765Z] info Packages asignated successfuly
+[2024-04-02T14:14:03.172Z] info server running on port 3000
+[2024-04-02T14:14:28.372Z] info server running on port 3000
+[2024-04-02T14:14:35.822Z] info server running on port 3000
+[2024-04-02T14:15:17.709Z] info server running on port 3000
+[2024-04-02T14:15:20.132Z] info server running on port 3000
+[2024-04-02T14:19:46.831Z] info server running on port 3000
+[2024-04-02T14:19:58.675Z] info Token validated successfuly
+[2024-04-02T14:19:58.676Z] info enter the endpoint master
+[2024-04-02T14:19:58.717Z] info Master successfuly
+[2024-04-02T14:21:18.983Z] info Carrier documents load successfully
+[2024-04-02T14:21:18.984Z] info enter the endpoint registerDocuments carrier
+[2024-04-02T14:21:19.001Z] info Carrier documents registed successfully
+[2024-04-02T14:23:26.609Z] info server running on port 3000
+[2024-04-02T14:23:32.994Z] info server running on port 3000
+[2024-04-02T14:24:10.122Z] info server running on port 3000
+[2024-04-02T14:24:11.275Z] info server running on port 3000
+[2024-04-02T14:24:13.025Z] info server running on port 3000
+[2024-04-02T14:24:18.419Z] info server running on port 3000
+[2024-04-02T14:24:22.247Z] info server running on port 3000
+[2024-04-02T14:25:04.010Z] info server running on port 3000
+[2024-04-02T14:25:05.658Z] info server running on port 3000
+[2024-04-02T14:25:12.331Z] info Token validated successfuly
+[2024-04-02T14:25:12.337Z] info Carrier QR load successfully
+[2024-04-02T14:25:12.338Z] info enter the endpoint carrier history
+[2024-04-02T14:25:12.418Z] info Carrier accounts nequi, daviplata, etc... registed successfully
+[2024-04-02T14:30:39.329Z] info Token validated successfuly
+[2024-04-02T14:30:39.332Z] info Carrier QR load successfully
+[2024-04-02T14:30:39.332Z] info enter the endpoint carrier history
+[2024-04-02T14:30:39.342Z] info Carrier accounts nequi, daviplata, etc... registed successfully
+[2024-04-02T14:31:29.345Z] info Token validated successfuly
+[2024-04-02T14:31:29.347Z] info Carrier QR load successfully
+[2024-04-02T14:31:29.347Z] info enter the endpoint carrier history
+[2024-04-02T14:31:29.359Z] info Carrier accounts nequi, daviplata, etc... registed successfully
+[2024-04-02T14:32:54.986Z] info Token validated successfuly
+[2024-04-02T14:32:54.987Z] info enter the endpoint master
+[2024-04-02T14:32:55.003Z] info Master successfuly
+[2024-04-02T14:33:13.067Z] info Token validated successfuly
+[2024-04-02T14:33:13.068Z] info enter the endpoint master
+[2024-04-02T14:33:13.076Z] info Master successfuly
+[2024-04-02T14:34:04.296Z] info Token validated successfuly
+[2024-04-02T14:34:04.298Z] info Carrier QR load successfully
+[2024-04-02T14:34:04.298Z] info enter the endpoint carrier history
+[2024-04-02T14:34:04.306Z] info Carrier accounts nequi, daviplata, etc... registed successfully
+[2024-04-02T14:34:22.003Z] info Token validated successfuly
+[2024-04-02T14:34:22.009Z] info Carrier QR load successfully
+[2024-04-02T14:34:22.009Z] info enter the endpoint carrier history
+[2024-04-02T14:34:22.018Z] info Carrier accounts nequi, daviplata, etc... registed successfully
+[2024-04-02T14:34:52.936Z] info Token validated successfuly
+[2024-04-02T14:34:52.938Z] info Carrier QR load successfully
+[2024-04-02T14:34:52.939Z] info enter the endpoint carrier history
+[2024-04-02T14:34:52.987Z] info Carrier accounts nequi, daviplata, etc... registed successfully
+[2024-04-02T14:35:33.328Z] info Token validated successfuly
+[2024-04-02T14:35:33.330Z] info Carrier QR load successfully
+[2024-04-02T14:35:33.330Z] info enter the endpoint carrier history
+[2024-04-02T14:35:33.341Z] info Carrier accounts nequi, daviplata, etc... registed successfully
+[2024-04-02T14:35:49.665Z] info Token validated successfuly
+[2024-04-02T14:35:49.665Z] info enter the endpoint master
+[2024-04-02T14:35:49.673Z] info Master successfuly
+[2024-04-02T14:36:51.990Z] info enter the endpoint login
+[2024-04-02T14:36:51.993Z] info User Disabled
+[2024-04-02T14:37:14.006Z] info enter the endpoint login
+[2024-04-02T14:37:14.010Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-02T14:37:15.008Z] info Token validated successfuly
+[2024-04-02T14:37:15.009Z] info enter the endpoint master
+[2024-04-02T14:37:15.017Z] info Master successfuly
+[2024-04-02T14:42:16.134Z] info enter the endpoint login
+[2024-04-02T14:42:26.249Z] info enter the endpoint login
+[2024-04-02T14:42:26.254Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-02T14:42:59.373Z] info enter the endpoint login
+[2024-04-02T14:43:31.169Z] info server running on port 3000
+[2024-04-02T14:43:48.788Z] info enter the endpoint login user router
+[2024-04-02T14:43:48.819Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-02T15:12:20.548Z] info Token validated successfuly
+[2024-04-02T15:12:20.548Z] info Enter the endpoint get city packages
+[2024-04-02T15:12:20.554Z] info Get city packages successfuly
+[2024-04-02T15:16:06.261Z] info enter the endpoint login user router
+[2024-04-02T15:16:06.265Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-02T15:18:29.254Z] info Token validated successfuly
+[2024-04-02T15:18:29.255Z] info Enter the endpoint get city packages
+[2024-04-02T15:18:29.259Z] info Get city packages successfuly
+[2024-04-02T15:19:44.163Z] info Token validated successfuly
+[2024-04-02T15:19:44.163Z] info Enter the endpoint get city packages
+[2024-04-02T15:19:44.168Z] info Get city packages successfuly
+[2024-04-02T15:20:09.872Z] info Token validated successfuly
+[2024-04-02T15:20:09.872Z] info Enter the endpoint get city packages
+[2024-04-02T15:20:09.877Z] info Get city packages successfuly
+[2024-04-02T15:20:11.604Z] info Token validated successfuly
+[2024-04-02T15:20:11.604Z] info Enter the endpoint get city packages
+[2024-04-02T15:20:11.606Z] info Get city packages successfuly
+[2024-04-02T15:20:24.094Z] info Token validated successfuly
+[2024-04-02T15:20:24.095Z] info Enter the endpoint get city packages
+[2024-04-02T15:20:24.099Z] info Get city packages successfuly
+[2024-04-02T15:20:43.000Z] info Token validated successfuly
+[2024-04-02T15:20:43.000Z] info Enter the endpoint get city packages
+[2024-04-02T15:20:43.004Z] info Get city packages successfuly
+[2024-04-02T15:20:50.029Z] info Token validated successfuly
+[2024-04-02T15:20:50.029Z] info Enter the endpoint get city packages
+[2024-04-02T15:20:50.031Z] info Get city packages successfuly
+[2024-04-02T15:21:16.851Z] info Token validated successfuly
+[2024-04-02T15:21:16.852Z] info Enter the endpoint get city packages
+[2024-04-02T15:21:16.856Z] info Get city packages successfuly
+[2024-04-02T15:22:20.163Z] info Token validated successfuly
+[2024-04-02T15:22:20.163Z] info Enter the endpoint get city packages
+[2024-04-02T15:22:20.168Z] info Get city packages successfuly
+[2024-04-02T15:25:39.524Z] info Token validated successfuly
+[2024-04-02T15:25:39.525Z] info Enter the endpoint get products package
+[2024-04-02T15:25:39.534Z] info Get products package successfuly
+[2024-04-02T15:26:16.456Z] info Token validated successfuly
+[2024-04-02T15:26:16.457Z] info Enter the endpoint get city packages
+[2024-04-02T15:26:16.460Z] info Get city packages successfuly
+[2024-04-02T15:28:46.352Z] info Token validated successfuly
+[2024-04-02T15:28:46.352Z] info Enter the endpoint get city packages
+[2024-04-02T15:28:46.357Z] info Get city packages successfuly
+[2024-04-02T15:29:00.047Z] info Token validated successfuly
+[2024-04-02T15:29:00.048Z] info Enter the endpoint get city packages
+[2024-04-02T15:29:00.052Z] info Get city packages successfuly
+[2024-04-02T15:29:04.435Z] info Token validated successfuly
+[2024-04-02T15:29:04.436Z] info Enter the endpoint get city packages
+[2024-04-02T15:29:04.438Z] info Get city packages successfuly
+[2024-04-02T15:29:34.912Z] info Token validated successfuly
+[2024-04-02T15:29:34.912Z] info Enter the endpoint get city packages
+[2024-04-02T15:29:34.917Z] info Get city packages successfuly
+[2024-04-02T15:29:46.466Z] info Token validated successfuly
+[2024-04-02T15:29:46.466Z] info Enter the endpoint get city packages
+[2024-04-02T15:29:46.471Z] info Get city packages successfuly
+[2024-04-02T15:29:49.811Z] info Token validated successfuly
+[2024-04-02T15:29:49.811Z] info Enter the endpoint get city packages
+[2024-04-02T15:29:49.813Z] info Get city packages successfuly
+[2024-04-02T15:29:59.893Z] info Token validated successfuly
+[2024-04-02T15:29:59.893Z] info Enter the endpoint get products package
+[2024-04-02T15:29:59.896Z] info Get products package successfuly
+[2024-04-02T15:30:04.123Z] info Token validated successfuly
+[2024-04-02T15:30:04.124Z] info Enter the endpoint get products package
+[2024-04-02T15:30:04.126Z] info Get products package successfuly
+[2024-04-02T15:30:06.756Z] info Token validated successfuly
+[2024-04-02T15:30:06.756Z] info Enter the endpoint get products package
+[2024-04-02T15:30:06.758Z] info Get products package successfuly
+[2024-04-02T15:30:13.076Z] info Token validated successfuly
+[2024-04-02T15:30:13.077Z] info Enter the endpoint get products package
+[2024-04-02T15:30:13.079Z] info Get products package successfuly
+[2024-04-02T15:32:39.821Z] info Token validated successfuly
+[2024-04-02T15:32:39.821Z] info Enter the endpoint get products package
+[2024-04-02T15:32:39.825Z] info Get products package successfuly
+[2024-04-02T15:32:42.916Z] info Token validated successfuly
+[2024-04-02T15:32:42.916Z] info Enter the endpoint get products package
+[2024-04-02T15:32:42.918Z] info Get products package successfuly
+[2024-04-02T15:32:45.508Z] info Token validated successfuly
+[2024-04-02T15:32:45.508Z] info Enter the endpoint get products package
+[2024-04-02T15:32:45.511Z] info Get products package successfuly
+[2024-04-02T15:33:02.250Z] info Token validated successfuly
+[2024-04-02T15:33:02.251Z] info Enter the endpoint get city packages
+[2024-04-02T15:33:02.254Z] info Get city packages successfuly
+[2024-04-02T15:33:03.144Z] info Token validated successfuly
+[2024-04-02T15:33:03.145Z] info Enter the endpoint get city packages
+[2024-04-02T15:33:03.147Z] info Get city packages successfuly
+[2024-04-02T15:33:08.599Z] info Token validated successfuly
+[2024-04-02T15:33:08.599Z] info Enter the endpoint get city packages
+[2024-04-02T15:33:08.601Z] info Get city packages successfuly
+[2024-04-02T15:33:12.837Z] info Token validated successfuly
+[2024-04-02T15:33:12.837Z] info Enter the endpoint get products package
+[2024-04-02T15:33:12.839Z] info Get products package successfuly
+[2024-04-02T15:33:19.635Z] info Token validated successfuly
+[2024-04-02T15:33:19.635Z] info Enter the endpoint get city packages
+[2024-04-02T15:33:19.637Z] info Get city packages successfuly
+[2024-04-02T15:33:29.695Z] info Token validated successfuly
+[2024-04-02T15:33:29.696Z] info Enter the endpoint get city packages
+[2024-04-02T15:33:29.697Z] info Get city packages successfuly
+[2024-04-02T15:33:34.322Z] info Token validated successfuly
+[2024-04-02T15:33:34.322Z] info Enter the endpoint get city packages
+[2024-04-02T15:33:34.324Z] info Get city packages successfuly
+[2024-04-02T15:33:53.218Z] info Token validated successfuly
+[2024-04-02T15:33:53.219Z] info Enter the endpoint get city packages
+[2024-04-02T15:33:53.222Z] info Get city packages successfuly
+[2024-04-02T15:33:57.525Z] info Token validated successfuly
+[2024-04-02T15:33:57.526Z] info Enter the endpoint get city packages
+[2024-04-02T15:33:57.528Z] info Get city packages successfuly
+[2024-04-02T15:34:09.836Z] info Token validated successfuly
+[2024-04-02T15:34:09.837Z] info Enter the endpoint get city packages
+[2024-04-02T15:34:09.840Z] info Get city packages successfuly
+[2024-04-02T15:34:11.543Z] info Token validated successfuly
+[2024-04-02T15:34:11.543Z] info Enter the endpoint get city packages
+[2024-04-02T15:34:11.545Z] info Get city packages successfuly
+[2024-04-02T15:34:16.196Z] info Token validated successfuly
+[2024-04-02T15:34:16.196Z] info Enter the endpoint get city packages
+[2024-04-02T15:34:16.198Z] info Get city packages successfuly
+[2024-04-02T15:34:18.801Z] info Token validated successfuly
+[2024-04-02T15:34:18.801Z] info Enter the endpoint get city packages
+[2024-04-02T15:34:18.804Z] info Get city packages successfuly
+[2024-04-02T15:34:20.268Z] info Token validated successfuly
+[2024-04-02T15:34:20.269Z] info Enter the endpoint get products package
+[2024-04-02T15:34:20.271Z] info Get products package successfuly
+[2024-04-02T15:38:13.842Z] info Token validated successfuly
+[2024-04-02T15:38:13.842Z] info Enter the endpoint get carriers
+[2024-04-02T15:38:13.849Z] info Get carriers successfuly
+[2024-04-02T15:41:22.676Z] info Token validated successfuly
+[2024-04-02T15:41:22.676Z] info Enter the endpoint get carriers
+[2024-04-02T15:41:22.682Z] info Get carriers successfuly
+[2024-04-02T15:41:42.158Z] info Token validated successfuly
+[2024-04-02T15:41:42.159Z] info Enter the endpoint get carriers
+[2024-04-02T15:41:42.166Z] info Get carriers successfuly
+[2024-04-02T15:41:51.964Z] info Token validated successfuly
+[2024-04-02T15:41:51.964Z] info Enter the endpoint get carriers
+[2024-04-02T15:41:51.968Z] info Get carriers successfuly
+[2024-04-02T15:41:59.848Z] info Token validated successfuly
+[2024-04-02T15:41:59.849Z] info Enter the endpoint get carriers
+[2024-04-02T15:41:59.852Z] info Get carriers successfuly
+[2024-04-02T15:42:04.936Z] info Token validated successfuly
+[2024-04-02T15:42:04.936Z] info Enter the endpoint get carriers
+[2024-04-02T15:42:04.940Z] info Get carriers successfuly
+[2024-04-02T15:42:22.144Z] info Token validated successfuly
+[2024-04-02T15:42:22.144Z] info Enter the endpoint get carriers
+[2024-04-02T15:42:22.150Z] info Get carriers successfuly
+[2024-04-02T15:42:24.383Z] info Token validated successfuly
+[2024-04-02T15:42:24.383Z] info Enter the endpoint get carriers
+[2024-04-02T15:42:24.387Z] info Get carriers successfuly
+[2024-04-02T15:42:27.621Z] info Token validated successfuly
+[2024-04-02T15:42:27.622Z] info Enter the endpoint get carriers
+[2024-04-02T15:42:27.627Z] info Get carriers successfuly
+[2024-04-02T15:43:09.478Z] info Token validated successfuly
+[2024-04-02T15:43:09.478Z] info Enter the endpoint get carriers
+[2024-04-02T15:43:09.484Z] info Get carriers successfuly
+[2024-04-02T15:43:10.714Z] info Token validated successfuly
+[2024-04-02T15:43:10.715Z] info Enter the endpoint get carriers
+[2024-04-02T15:43:10.721Z] info Get carriers successfuly
+[2024-04-02T15:43:55.185Z] info Token validated successfuly
+[2024-04-02T15:43:55.186Z] info Enter the endpoint get carriers
+[2024-04-02T15:43:55.191Z] info Get carriers successfuly
+[2024-04-02T15:46:58.922Z] info enter the endpoint login user router
+[2024-04-02T15:46:58.925Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-02T15:47:15.477Z] info Token validated successfuly
+[2024-04-02T15:47:15.477Z] info Enter the endpoint get packages carrier
+[2024-04-02T15:47:15.480Z] info Get packages carrier successfuly
+[2024-04-02T15:49:00.093Z] info Token validated successfuly
+[2024-04-02T15:49:00.093Z] info Enter the endpoint get carriers
+[2024-04-02T15:49:00.102Z] info Get carriers successfuly
+[2024-04-02T15:49:10.399Z] info Token validated successfuly
+[2024-04-02T15:49:10.400Z] info Enter the endpoint get carriers
+[2024-04-02T15:49:10.407Z] info Get carriers successfuly
+[2024-04-02T15:52:45.558Z] info Token validated successfuly
+[2024-04-02T15:52:45.559Z] info Enter the endpoint get carriers
+[2024-04-02T15:52:45.564Z] info Get carriers successfuly
+[2024-04-02T15:52:45.567Z] info Token validated successfuly
+[2024-04-02T15:52:45.567Z] info Enter the endpoint get carriers
+[2024-04-02T15:52:45.571Z] info Get carriers successfuly
+[2024-04-02T15:52:57.857Z] info Token validated successfuly
+[2024-04-02T15:52:57.857Z] info Enter the endpoint get carriers
+[2024-04-02T15:52:57.863Z] info Get carriers successfuly
+[2024-04-02T15:53:15.326Z] info Token validated successfuly
+[2024-04-02T15:53:15.327Z] info Enter the endpoint get carriers
+[2024-04-02T15:53:15.333Z] info Get carriers successfuly
+[2024-04-02T15:53:46.190Z] info Token validated successfuly
+[2024-04-02T15:53:46.191Z] info Enter the endpoint get carriers
+[2024-04-02T15:53:46.197Z] info Get carriers successfuly
+[2024-04-02T15:53:55.991Z] info Token validated successfuly
+[2024-04-02T15:53:55.992Z] info Enter the endpoint get carriers
+[2024-04-02T15:53:55.995Z] info Get carriers successfuly
+[2024-04-02T15:53:56.835Z] info Token validated successfuly
+[2024-04-02T15:53:56.835Z] info Enter the endpoint get carriers
+[2024-04-02T15:53:56.839Z] info Get carriers successfuly
+[2024-04-02T15:53:59.035Z] info Token validated successfuly
+[2024-04-02T15:53:59.035Z] info Enter the endpoint get carriers
+[2024-04-02T15:53:59.039Z] info Get carriers successfuly
+[2024-04-02T15:54:07.959Z] info Token validated successfuly
+[2024-04-02T15:54:07.959Z] info Enter the endpoint get carriers
+[2024-04-02T15:54:07.963Z] info Get carriers successfuly
+[2024-04-02T15:54:21.738Z] info Token validated successfuly
+[2024-04-02T15:54:21.738Z] info Enter the endpoint get carriers
+[2024-04-02T15:54:21.744Z] info Get carriers successfuly
+[2024-04-02T15:54:24.972Z] info Token validated successfuly
+[2024-04-02T15:54:24.972Z] info Enter the endpoint get carriers
+[2024-04-02T15:54:24.976Z] info Get carriers successfuly
+[2024-04-02T15:54:25.881Z] info Token validated successfuly
+[2024-04-02T15:54:25.881Z] info Enter the endpoint get carriers
+[2024-04-02T15:54:25.885Z] info Get carriers successfuly
+[2024-04-02T15:54:28.063Z] info Token validated successfuly
+[2024-04-02T15:54:28.063Z] info Enter the endpoint get carriers
+[2024-04-02T15:54:28.067Z] info Get carriers successfuly
+[2024-04-02T15:54:28.911Z] info Token validated successfuly
+[2024-04-02T15:54:28.911Z] info Enter the endpoint get carriers
+[2024-04-02T15:54:28.915Z] info Get carriers successfuly
+[2024-04-02T15:54:46.669Z] info Token validated successfuly
+[2024-04-02T15:54:46.669Z] info Enter the endpoint get carriers
+[2024-04-02T15:54:46.676Z] info Get carriers successfuly
+[2024-04-02T15:54:52.356Z] info Token validated successfuly
+[2024-04-02T15:54:52.357Z] info Enter the endpoint get carriers
+[2024-04-02T15:54:52.360Z] info Get carriers successfuly
+[2024-04-02T15:55:05.685Z] info Token validated successfuly
+[2024-04-02T15:55:05.686Z] info Enter the endpoint get carriers
+[2024-04-02T15:55:05.692Z] info Get carriers successfuly
+[2024-04-02T15:55:20.065Z] info Token validated successfuly
+[2024-04-02T15:55:20.065Z] info Enter the endpoint get carriers
+[2024-04-02T15:55:20.072Z] info Get carriers successfuly
+[2024-04-02T15:55:25.155Z] info Token validated successfuly
+[2024-04-02T15:55:25.156Z] info Enter the endpoint get carriers
+[2024-04-02T15:55:25.160Z] info Get carriers successfuly
+[2024-04-02T15:55:26.978Z] info Token validated successfuly
+[2024-04-02T15:55:26.978Z] info Enter the endpoint get carriers
+[2024-04-02T15:55:26.983Z] info Get carriers successfuly
+[2024-04-02T15:55:31.228Z] info Token validated successfuly
+[2024-04-02T15:55:31.228Z] info Enter the endpoint get packages carrier
+[2024-04-02T15:55:31.229Z] info Get packages carrier successfuly
+[2024-04-02T15:55:58.396Z] info Token validated successfuly
+[2024-04-02T15:55:58.396Z] info Enter the endpoint get carriers
+[2024-04-02T15:55:58.401Z] info Get carriers successfuly
+[2024-04-02T15:56:13.160Z] info Token validated successfuly
+[2024-04-02T15:56:13.160Z] info Enter the endpoint get carriers
+[2024-04-02T15:56:13.166Z] info Get carriers successfuly
+[2024-04-02T15:56:21.917Z] info Token validated successfuly
+[2024-04-02T15:56:21.917Z] info Enter the endpoint get carriers
+[2024-04-02T15:56:21.921Z] info Get carriers successfuly
+[2024-04-02T15:56:44.726Z] info Token validated successfuly
+[2024-04-02T15:56:44.726Z] info Enter the endpoint get carriers
+[2024-04-02T15:56:44.732Z] info Get carriers successfuly
+[2024-04-02T15:56:48.483Z] info Token validated successfuly
+[2024-04-02T15:56:48.483Z] info Enter the endpoint get packages carrier
+[2024-04-02T15:56:48.484Z] info Get packages carrier successfuly
+[2024-04-02T15:56:52.690Z] info Token validated successfuly
+[2024-04-02T15:56:52.691Z] info Enter the endpoint get packages carrier
+[2024-04-02T15:56:52.692Z] info Get packages carrier successfuly
+[2024-04-02T15:56:56.196Z] info Token validated successfuly
+[2024-04-02T15:56:56.196Z] info Enter the endpoint get packages carrier
+[2024-04-02T15:56:56.197Z] info Get packages carrier successfuly
+[2024-04-02T15:57:12.495Z] info Token validated successfuly
+[2024-04-02T15:57:12.495Z] info Enter the endpoint get carriers
+[2024-04-02T15:57:12.501Z] info Get carriers successfuly
+[2024-04-02T15:57:18.268Z] info Token validated successfuly
+[2024-04-02T15:57:18.268Z] info Enter the endpoint get packages carrier
+[2024-04-02T15:57:18.270Z] info Get packages carrier successfuly
+[2024-04-02T16:02:54.111Z] info Token validated successfuly
+[2024-04-02T16:02:54.111Z] info Enter the endpoint get carriers
+[2024-04-02T16:02:54.116Z] info Get carriers successfuly
+[2024-04-02T16:03:06.508Z] info Token validated successfuly
+[2024-04-02T16:03:06.509Z] info Enter the endpoint get carriers
+[2024-04-02T16:03:06.515Z] info Get carriers successfuly
+[2024-04-02T16:03:07.683Z] info Token validated successfuly
+[2024-04-02T16:03:07.683Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:03:07.684Z] info Get packages carrier successfuly
+[2024-04-02T16:03:08.954Z] info Token validated successfuly
+[2024-04-02T16:03:08.954Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:03:08.955Z] info Get packages carrier successfuly
+[2024-04-02T16:03:09.330Z] info Token validated successfuly
+[2024-04-02T16:03:09.330Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:03:09.331Z] info Get packages carrier successfuly
+[2024-04-02T16:03:10.618Z] info Token validated successfuly
+[2024-04-02T16:03:10.618Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:03:10.619Z] info Get packages carrier successfuly
+[2024-04-02T16:03:12.194Z] info Token validated successfuly
+[2024-04-02T16:03:12.194Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:03:12.195Z] info Get packages carrier successfuly
+[2024-04-02T16:03:51.586Z] info Token validated successfuly
+[2024-04-02T16:03:51.586Z] info Enter the endpoint get carriers
+[2024-04-02T16:03:51.593Z] info Get carriers successfuly
+[2024-04-02T16:04:09.158Z] info Token validated successfuly
+[2024-04-02T16:04:09.158Z] info Enter the endpoint get carriers
+[2024-04-02T16:04:09.165Z] info Get carriers successfuly
+[2024-04-02T16:04:13.082Z] info Token validated successfuly
+[2024-04-02T16:04:13.082Z] info Enter the endpoint get carriers
+[2024-04-02T16:04:13.087Z] info Get carriers successfuly
+[2024-04-02T16:04:13.651Z] info Token validated successfuly
+[2024-04-02T16:04:13.651Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:04:13.652Z] info Get packages carrier successfuly
+[2024-04-02T16:04:15.539Z] info Token validated successfuly
+[2024-04-02T16:04:15.539Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:04:15.540Z] info Get packages carrier successfuly
+[2024-04-02T16:04:35.560Z] info Token validated successfuly
+[2024-04-02T16:04:35.560Z] info Enter the endpoint get carriers
+[2024-04-02T16:04:35.566Z] info Get carriers successfuly
+[2024-04-02T16:04:38.357Z] info Token validated successfuly
+[2024-04-02T16:04:38.358Z] info Enter the endpoint get carriers
+[2024-04-02T16:04:38.361Z] info Get carriers successfuly
+[2024-04-02T16:04:39.195Z] info Token validated successfuly
+[2024-04-02T16:04:39.195Z] info Enter the endpoint get carriers
+[2024-04-02T16:04:39.200Z] info Get carriers successfuly
+[2024-04-02T16:04:41.450Z] info Token validated successfuly
+[2024-04-02T16:04:41.451Z] info Enter the endpoint get city packages
+[2024-04-02T16:04:41.453Z] info Get city packages successfuly
+[2024-04-02T16:04:44.900Z] info Token validated successfuly
+[2024-04-02T16:04:44.900Z] info Enter the endpoint get products package
+[2024-04-02T16:04:44.902Z] info Get products package successfuly
+[2024-04-02T16:04:47.234Z] info Token validated successfuly
+[2024-04-02T16:04:47.235Z] info Enter the endpoint get products package
+[2024-04-02T16:04:47.237Z] info Get products package successfuly
+[2024-04-02T16:05:06.305Z] info Token validated successfuly
+[2024-04-02T16:05:06.305Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:06.309Z] info Get city packages successfuly
+[2024-04-02T16:05:07.303Z] info Token validated successfuly
+[2024-04-02T16:05:07.303Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:07.305Z] info Get city packages successfuly
+[2024-04-02T16:05:08.820Z] info Token validated successfuly
+[2024-04-02T16:05:08.820Z] info Enter the endpoint get products package
+[2024-04-02T16:05:08.821Z] info Get products package successfuly
+[2024-04-02T16:05:11.602Z] info Token validated successfuly
+[2024-04-02T16:05:11.603Z] info Enter the endpoint get products package
+[2024-04-02T16:05:11.604Z] info Get products package successfuly
+[2024-04-02T16:05:13.707Z] info Token validated successfuly
+[2024-04-02T16:05:13.707Z] info Enter the endpoint get products package
+[2024-04-02T16:05:13.710Z] info Get products package successfuly
+[2024-04-02T16:05:29.380Z] info Token validated successfuly
+[2024-04-02T16:05:29.380Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:29.384Z] info Get city packages successfuly
+[2024-04-02T16:05:30.212Z] info Token validated successfuly
+[2024-04-02T16:05:30.212Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:30.214Z] info Get city packages successfuly
+[2024-04-02T16:05:30.907Z] info Token validated successfuly
+[2024-04-02T16:05:30.908Z] info Enter the endpoint get carriers
+[2024-04-02T16:05:30.912Z] info Get carriers successfuly
+[2024-04-02T16:05:31.927Z] info Token validated successfuly
+[2024-04-02T16:05:31.927Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:31.929Z] info Get city packages successfuly
+[2024-04-02T16:05:33.704Z] info Token validated successfuly
+[2024-04-02T16:05:33.705Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:33.706Z] info Get city packages successfuly
+[2024-04-02T16:05:35.160Z] info Token validated successfuly
+[2024-04-02T16:05:35.160Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:35.162Z] info Get city packages successfuly
+[2024-04-02T16:05:37.127Z] info Token validated successfuly
+[2024-04-02T16:05:37.127Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:37.129Z] info Get city packages successfuly
+[2024-04-02T16:05:37.988Z] info Token validated successfuly
+[2024-04-02T16:05:37.989Z] info Enter the endpoint get carriers
+[2024-04-02T16:05:37.992Z] info Get carriers successfuly
+[2024-04-02T16:05:38.860Z] info Token validated successfuly
+[2024-04-02T16:05:38.860Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:38.862Z] info Get city packages successfuly
+[2024-04-02T16:05:59.904Z] info Token validated successfuly
+[2024-04-02T16:05:59.904Z] info Enter the endpoint get city packages
+[2024-04-02T16:05:59.909Z] info Get city packages successfuly
+[2024-04-02T16:06:02.168Z] info Token validated successfuly
+[2024-04-02T16:06:02.168Z] info Enter the endpoint get city packages
+[2024-04-02T16:06:02.170Z] info Get city packages successfuly
+[2024-04-02T16:06:03.448Z] info Token validated successfuly
+[2024-04-02T16:06:03.448Z] info Enter the endpoint get carriers
+[2024-04-02T16:06:03.452Z] info Get carriers successfuly
+[2024-04-02T16:09:29.423Z] info Token validated successfuly
+[2024-04-02T16:09:29.424Z] info Enter the endpoint get city packages
+[2024-04-02T16:09:29.427Z] info Get city packages successfuly
+[2024-04-02T16:09:30.910Z] info Token validated successfuly
+[2024-04-02T16:09:30.910Z] info Enter the endpoint get carriers
+[2024-04-02T16:09:30.914Z] info Get carriers successfuly
+[2024-04-02T16:09:32.072Z] info Token validated successfuly
+[2024-04-02T16:09:32.072Z] info Enter the endpoint get city packages
+[2024-04-02T16:09:32.074Z] info Get city packages successfuly
+[2024-04-02T16:09:47.210Z] info Token validated successfuly
+[2024-04-02T16:09:47.210Z] info Enter the endpoint get city packages
+[2024-04-02T16:09:47.213Z] info Get city packages successfuly
+[2024-04-02T16:09:58.434Z] info Token validated successfuly
+[2024-04-02T16:09:58.434Z] info Enter the endpoint get city packages
+[2024-04-02T16:09:58.438Z] info Get city packages successfuly
+[2024-04-02T16:10:09.707Z] info Token validated successfuly
+[2024-04-02T16:10:09.708Z] info Enter the endpoint get city packages
+[2024-04-02T16:10:09.712Z] info Get city packages successfuly
+[2024-04-02T16:10:17.058Z] info Token validated successfuly
+[2024-04-02T16:10:17.058Z] info Enter the endpoint get city packages
+[2024-04-02T16:10:17.060Z] info Get city packages successfuly
+[2024-04-02T16:10:22.307Z] info Token validated successfuly
+[2024-04-02T16:10:22.307Z] info Enter the endpoint get city packages
+[2024-04-02T16:10:22.309Z] info Get city packages successfuly
+[2024-04-02T16:10:24.744Z] info Token validated successfuly
+[2024-04-02T16:10:24.745Z] info Enter the endpoint get city packages
+[2024-04-02T16:10:24.746Z] info Get city packages successfuly
+[2024-04-02T16:10:30.204Z] info Token validated successfuly
+[2024-04-02T16:10:30.205Z] info Enter the endpoint get carriers
+[2024-04-02T16:10:30.211Z] info Get carriers successfuly
+[2024-04-02T16:10:31.913Z] info Token validated successfuly
+[2024-04-02T16:10:31.914Z] info Enter the endpoint get city packages
+[2024-04-02T16:10:31.915Z] info Get city packages successfuly
+[2024-04-02T16:15:15.218Z] info Token validated successfuly
+[2024-04-02T16:15:15.218Z] info Enter the endpoint get inter_city packages
+[2024-04-02T16:15:15.222Z] info Get inter_city packages successfuly
+[2024-04-02T16:15:51.774Z] info Token validated successfuly
+[2024-04-02T16:15:51.775Z] info Enter the endpoint get inter_city packages
+[2024-04-02T16:15:51.778Z] info Get inter_city packages successfuly
+[2024-04-02T16:15:56.027Z] info Token validated successfuly
+[2024-04-02T16:15:56.027Z] info Enter the endpoint get products package
+[2024-04-02T16:15:56.029Z] info Get products package successfuly
+[2024-04-02T16:15:57.641Z] info Token validated successfuly
+[2024-04-02T16:15:57.642Z] info Enter the endpoint get products package
+[2024-04-02T16:15:57.644Z] info Get products package successfuly
+[2024-04-02T16:18:30.218Z] info enter the endpoint login user router
+[2024-04-02T16:18:30.221Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-02T16:18:34.162Z] info Token validated successfuly
+[2024-04-02T16:18:34.162Z] info Enter the endpoint get city packages
+[2024-04-02T16:18:34.164Z] info Get city packages successfuly
+[2024-04-02T16:18:35.044Z] info Token validated successfuly
+[2024-04-02T16:18:35.045Z] info Enter the endpoint get carriers
+[2024-04-02T16:18:35.049Z] info Get carriers successfuly
+[2024-04-02T16:18:36.177Z] info Token validated successfuly
+[2024-04-02T16:18:36.178Z] info Enter the endpoint get inter_city packages
+[2024-04-02T16:18:36.179Z] info Get inter_city packages successfuly
+[2024-04-02T16:18:37.626Z] info Token validated successfuly
+[2024-04-02T16:18:37.627Z] info Enter the endpoint get products package
+[2024-04-02T16:18:37.628Z] info Get products package successfuly
+[2024-04-02T16:18:52.419Z] info Token validated successfuly
+[2024-04-02T16:18:52.419Z] info Enter the endpoint get products package
+[2024-04-02T16:18:52.422Z] info Get products package successfuly
+[2024-04-02T16:18:54.146Z] info Token validated successfuly
+[2024-04-02T16:18:54.146Z] info Enter the endpoint get products package
+[2024-04-02T16:18:54.148Z] info Get products package successfuly
+[2024-04-02T16:26:56.090Z] info Token validated successfuly
+[2024-04-02T16:26:56.091Z] info Enter the endpoint get inter_city packages
+[2024-04-02T16:26:56.094Z] info Get inter_city packages successfuly
+[2024-04-02T16:27:10.177Z] info Token validated successfuly
+[2024-04-02T16:27:10.177Z] info Enter the endpoint get inter_city packages
+[2024-04-02T16:27:10.180Z] info Get inter_city packages successfuly
+[2024-04-02T16:27:34.025Z] info Token validated successfuly
+[2024-04-02T16:27:34.026Z] info Enter the endpoint get inter_city packages
+[2024-04-02T16:27:34.029Z] info Get inter_city packages successfuly
+[2024-04-02T16:28:12.424Z] info Token validated successfuly
+[2024-04-02T16:28:12.424Z] info Enter the endpoint get carriers Inter_city
+[2024-04-02T16:28:12.433Z] info Get carriers Inter_city successfuly
+[2024-04-02T16:28:14.448Z] info Token validated successfuly
+[2024-04-02T16:28:14.449Z] info Enter the endpoint get inter_city packages
+[2024-04-02T16:28:14.451Z] info Get inter_city packages successfuly
+[2024-04-02T16:28:16.032Z] info Token validated successfuly
+[2024-04-02T16:28:16.032Z] info Enter the endpoint get carriers Inter_city
+[2024-04-02T16:28:16.037Z] info Get carriers Inter_city successfuly
+[2024-04-02T16:28:16.750Z] info Token validated successfuly
+[2024-04-02T16:28:16.750Z] info Enter the endpoint get inter_city packages
+[2024-04-02T16:28:16.752Z] info Get inter_city packages successfuly
+[2024-04-02T16:28:17.246Z] info Token validated successfuly
+[2024-04-02T16:28:17.246Z] info Enter the endpoint get carriers Inter_city
+[2024-04-02T16:28:17.251Z] info Get carriers Inter_city successfuly
+[2024-04-02T16:28:19.794Z] info Token validated successfuly
+[2024-04-02T16:28:19.794Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:28:19.795Z] info Get packages carrier successfuly
+[2024-04-02T16:28:24.986Z] info Token validated successfuly
+[2024-04-02T16:28:24.986Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:28:24.988Z] info Get packages carrier successfuly
+[2024-04-02T16:28:47.330Z] info Token validated successfuly
+[2024-04-02T16:28:47.330Z] info Enter the endpoint get carriers Inter_city
+[2024-04-02T16:28:47.336Z] info Get carriers Inter_city successfuly
+[2024-04-02T16:29:12.879Z] info Token validated successfuly
+[2024-04-02T16:29:12.879Z] info Enter the endpoint get carriers Inter_city
+[2024-04-02T16:29:12.887Z] info Get carriers Inter_city successfuly
+[2024-04-02T16:29:34.167Z] info Token validated successfuly
+[2024-04-02T16:29:34.167Z] info Enter the endpoint get carriers Inter_city
+[2024-04-02T16:29:34.176Z] info Get carriers Inter_city successfuly
+[2024-04-02T16:29:39.748Z] info Token validated successfuly
+[2024-04-02T16:29:39.748Z] info Enter the endpoint get inter_city packages
+[2024-04-02T16:29:39.750Z] info Get inter_city packages successfuly
+[2024-04-02T16:29:46.512Z] info Token validated successfuly
+[2024-04-02T16:29:46.512Z] info Enter the endpoint get carriers
+[2024-04-02T16:29:46.516Z] info Get carriers successfuly
+[2024-04-02T16:29:49.544Z] info Token validated successfuly
+[2024-04-02T16:29:49.544Z] info Enter the endpoint get carriers Inter_city
+[2024-04-02T16:29:49.553Z] info Get carriers Inter_city successfuly
+[2024-04-02T16:29:58.171Z] info Token validated successfuly
+[2024-04-02T16:29:58.171Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:29:58.172Z] info Get packages carrier successfuly
+[2024-04-02T16:30:00.066Z] info Token validated successfuly
+[2024-04-02T16:30:00.066Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:30:00.067Z] info Get packages carrier successfuly
+[2024-04-02T16:30:05.403Z] info Token validated successfuly
+[2024-04-02T16:30:05.403Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:30:05.404Z] info Get packages carrier successfuly
+[2024-04-02T16:30:06.761Z] info Token validated successfuly
+[2024-04-02T16:30:06.761Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:30:06.762Z] info Get packages carrier successfuly
+[2024-04-02T16:30:08.457Z] info Token validated successfuly
+[2024-04-02T16:30:08.457Z] info Enter the endpoint get carriers
+[2024-04-02T16:30:08.461Z] info Get carriers successfuly
+[2024-04-02T16:30:09.305Z] info Token validated successfuly
+[2024-04-02T16:30:09.306Z] info Enter the endpoint get packages carrier
+[2024-04-02T16:30:09.307Z] info Get packages carrier successfuly
