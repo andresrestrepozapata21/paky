@@ -309,6 +309,17 @@ export async function getDetailAsignate(req, res) {
             ]
         });
         // I call and save the result of the findAll method, which is d sequelize
+        const getAsignatedPackage = await Package.findAll({
+            where: {
+                fk_id_carrier_p: id_carrier,
+                status_p: {
+                    [Sequelize.Op.notIn]: [6]
+                },
+                fk_id_tp_p: 1
+            },
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p']
+        });
+        // I call and save the result of the findAll method, which is d sequelize
         const getPackage = await Package.findAll({
             where: {
                 fk_id_carrier_p: null,
@@ -326,7 +337,8 @@ export async function getDetailAsignate(req, res) {
             message: 'Get detail asignate successfuly',
             result: 1,
             data_carrier: getDetailAsignate,
-            data_packages: getPackage
+            data_asignated_packages: getAsignatedPackage,
+            data_free_packages: getPackage
         });
     } catch (e) {
         // logger control proccess
@@ -527,6 +539,17 @@ export async function getDetailAsignateInter(req, res) {
             ]
         });
         // I call and save the result of the findAll method, which is d sequelize
+        const getAsignatedPackage = await Package.findAll({
+            where: {
+                fk_id_carrier_p: id_carrier,
+                status_p: {
+                    [Sequelize.Op.notIn]: [6]
+                },
+                fk_id_tp_p: 2
+            },
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p']
+        });
+        // I call and save the result of the findAll method, which is d sequelize
         const getPackage = await Package.findAll({
             where: {
                 fk_id_carrier_p: null,
@@ -544,7 +567,8 @@ export async function getDetailAsignateInter(req, res) {
             message: 'Get detail asignate inter_city successfuly',
             result: 1,
             data_carrier: getDetailAsignate,
-            data_packages: getPackage
+            data_asignated_packages: getAsignatedPackage,
+            data_free_packages: getPackage
         });
     } catch (e) {
         // logger control proccess
