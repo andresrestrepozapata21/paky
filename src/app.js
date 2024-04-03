@@ -8,6 +8,7 @@ import cors from "cors";
 import carriers from "./routes/carriers.route.js";
 import utils from "./routes/utils.route.js";
 import router_user from "./routes/router_users.route.js";
+import dropshipper from "./routes/dropshipper.router.js";
 /**
  * 
  * @apiDescription inicialization around variables
@@ -44,6 +45,7 @@ app.use('/documents_vehicle_carrier', express.static(join(CURRENT_DIR, '../docum
 app.use(carriers);
 app.use(utils);
 app.use(router_user);
+app.use(dropshipper);
 
 // I export my app variable
 export default app;

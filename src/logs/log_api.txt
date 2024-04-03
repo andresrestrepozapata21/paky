@@ -1556,3 +1556,439 @@
 [2024-04-02T22:23:02.700Z] info Token validated successfuly
 [2024-04-02T22:23:02.701Z] info Enter the endpoint get products package
 [2024-04-02T22:23:02.704Z] info Get products package successfuly
+[2024-04-03T14:19:07.790Z] info server running on port 3000
+[2024-04-03T14:19:10.729Z] info enter the endpoint login dropshipper
+[2024-04-03T14:19:32.841Z] info enter the endpoint login dropshipper
+[2024-04-03T14:19:32.842Z] info Error Login: ReferenceError: Router_user is not defined
+[2024-04-03T14:20:00.445Z] info server running on port 3000
+[2024-04-03T14:21:11.040Z] info server running on port 3000
+[2024-04-03T14:21:28.743Z] info server running on port 3000
+[2024-04-03T14:21:45.357Z] info server running on port 3000
+[2024-04-03T14:21:47.736Z] info server running on port 3000
+[2024-04-03T14:21:51.143Z] info enter the endpoint login dropshipper
+[2024-04-03T14:21:51.212Z] info Incorrect credentials or non-existent credenciales
+[2024-04-03T14:21:56.848Z] info enter the endpoint login dropshipper
+[2024-04-03T14:21:56.851Z] info User Disabled
+[2024-04-03T14:22:05.124Z] info enter the endpoint login dropshipper
+[2024-04-03T14:22:05.132Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-03T14:56:41.573Z] info server running on port 3000
+[2024-04-03T14:56:44.391Z] info enter the endpoint master
+[2024-04-03T14:57:30.682Z] info server running on port 3000
+[2024-04-03T14:57:38.084Z] info server running on port 3000
+[2024-04-03T14:58:16.199Z] info server running on port 3000
+[2024-04-03T15:05:41.990Z] info server running on port 3000
+[2024-04-03T15:06:06.261Z] info server running on port 3000
+[2024-04-03T15:07:18.255Z] info server running on port 3000
+[2024-04-03T15:07:21.280Z] info server running on port 3000
+[2024-04-03T15:07:32.018Z] info server running on port 3000
+[2024-04-03T15:07:38.428Z] info server running on port 3000
+[2024-04-03T15:07:45.300Z] info server running on port 3000
+[2024-04-03T15:07:48.823Z] info server running on port 3000
+[2024-04-03T15:07:58.408Z] info server running on port 3000
+[2024-04-03T15:08:01.170Z] info server running on port 3000
+[2024-04-03T15:08:22.302Z] info server running on port 3000
+[2024-04-03T15:08:27.312Z] info server running on port 3000
+[2024-04-03T15:08:39.636Z] info server running on port 3000
+[2024-04-03T15:08:55.775Z] info server running on port 3000
+[2024-04-03T15:09:09.235Z] info server running on port 3000
+[2024-04-03T15:09:10.881Z] info server running on port 3000
+[2024-04-03T15:09:41.836Z] info server running on port 3000
+[2024-04-03T15:10:00.184Z] info server running on port 3000
+[2024-04-03T15:10:38.261Z] info server running on port 3000
+[2024-04-03T15:10:57.070Z] info server running on port 3000
+[2024-04-03T15:10:58.679Z] info server running on port 3000
+[2024-04-03T15:11:00.325Z] info server running on port 3000
+[2024-04-03T15:11:04.704Z] info server running on port 3000
+[2024-04-03T15:11:06.813Z] info server running on port 3000
+[2024-04-03T15:11:07.985Z] info server running on port 3000
+[2024-04-03T15:11:11.032Z] info enter the endpoint master
+[2024-04-03T15:12:16.916Z] info server running on port 3000
+[2024-04-03T15:12:32.079Z] info server running on port 3000
+[2024-04-03T15:12:49.592Z] info server running on port 3000
+[2024-04-03T15:13:01.240Z] info Token validated successfuly
+[2024-04-03T15:13:01.241Z] info enter the endpoint master
+[2024-04-03T15:13:50.675Z] info server running on port 3000
+[2024-04-03T15:13:54.062Z] info Token validated successfuly
+[2024-04-03T15:13:54.062Z] info enter the endpoint master dropshipper
+[2024-04-03T15:13:54.098Z] info Master successfuly
+[2024-04-03T15:18:32.032Z] info server running on port 3000
+[2024-04-03T15:19:54.792Z] info server running on port 3000
+[2024-04-03T15:20:11.264Z] info server running on port 3000
+[2024-04-03T15:20:39.720Z] info server running on port 3000
+[2024-04-03T15:20:40.853Z] info server running on port 3000
+[2024-04-03T15:20:47.662Z] info server running on port 3000
+[2024-04-03T15:20:58.843Z] info server running on port 3000
+[2024-04-03T15:21:03.463Z] info Token validated successfuly
+[2024-04-03T15:21:03.463Z] info enter the endpoint master dropshipper
+[2024-04-03T15:21:03.502Z] info Error Master: ReferenceError: fk_id_dropshipper_store is not defined
+[2024-04-03T15:21:28.327Z] info server running on port 3000
+[2024-04-03T15:21:30.233Z] info Token validated successfuly
+[2024-04-03T15:21:30.234Z] info enter the endpoint master dropshipper
+[2024-04-03T15:21:30.270Z] info Master Dropshipper successfuly
+[2024-04-03T15:26:03.650Z] info server running on port 3000
+[2024-04-03T15:27:02.537Z] info server running on port 3000
+[2024-04-03T15:27:04.526Z] info server running on port 3000
+[2024-04-03T15:27:09.430Z] info enter the endpoint login dropshipper
+[2024-04-03T15:27:09.467Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-03T15:27:17.607Z] info Token validated successfuly
+[2024-04-03T15:27:17.608Z] info enter the endpoint master dropshipper
+[2024-04-03T15:27:17.617Z] info Master Dropshipper successfuly
+[2024-04-03T15:31:20.421Z] info server running on port 3000
+[2024-04-03T15:31:22.732Z] info server running on port 3000
+[2024-04-03T15:31:26.379Z] info server running on port 3000
+[2024-04-03T15:31:30.699Z] info server running on port 3000
+[2024-04-03T15:31:49.556Z] info server running on port 3000
+[2024-04-03T15:32:59.372Z] info server running on port 3000
+[2024-04-03T15:33:00.957Z] info server running on port 3000
+[2024-04-03T15:33:06.764Z] info server running on port 3000
+[2024-04-03T15:33:08.687Z] info server running on port 3000
+[2024-04-03T15:33:12.112Z] info server running on port 3000
+[2024-04-03T15:33:13.711Z] info Token validated successfuly
+[2024-04-03T15:33:13.711Z] info enter the endpoint master dropshipper
+[2024-04-03T15:33:13.748Z] info Master Dropshipper successfuly
+[2024-04-03T15:33:46.149Z] info server running on port 3000
+[2024-04-03T15:33:46.273Z] info Token validated successfuly
+[2024-04-03T15:33:46.273Z] info enter the endpoint master dropshipper
+[2024-04-03T15:33:46.319Z] info Master Dropshipper successfuly
+[2024-04-03T15:34:04.662Z] info server running on port 3000
+[2024-04-03T15:34:20.719Z] info server running on port 3000
+[2024-04-03T15:34:21.344Z] info Token validated successfuly
+[2024-04-03T15:34:21.344Z] info enter the endpoint master dropshipper
+[2024-04-03T15:34:21.385Z] info Master Dropshipper successfuly
+[2024-04-03T15:34:38.074Z] info server running on port 3000
+[2024-04-03T15:34:38.637Z] info Token validated successfuly
+[2024-04-03T15:34:38.638Z] info enter the endpoint master dropshipper
+[2024-04-03T15:34:38.676Z] info Master Dropshipper successfuly
+[2024-04-03T15:38:05.864Z] info server running on port 3000
+[2024-04-03T15:38:10.693Z] info Token validated successfuly
+[2024-04-03T15:38:10.693Z] info enter the endpoint master dropshipper
+[2024-04-03T15:38:10.731Z] info Master Dropshipper successfuly
+[2024-04-03T15:39:05.226Z] info server running on port 3000
+[2024-04-03T15:39:19.962Z] info server running on port 3000
+[2024-04-03T15:41:18.915Z] info server running on port 3000
+[2024-04-03T15:42:58.704Z] info server running on port 3000
+[2024-04-03T15:43:32.344Z] info server running on port 3000
+[2024-04-03T15:44:16.148Z] info server running on port 3000
+[2024-04-03T15:44:27.070Z] info server running on port 3000
+[2024-04-03T15:45:16.404Z] info server running on port 3000
+[2024-04-03T15:45:20.717Z] info server running on port 3000
+[2024-04-03T15:45:21.238Z] info Token validated successfuly
+[2024-04-03T15:45:21.239Z] info enter the endpoint master dropshipper
+[2024-04-03T15:45:21.277Z] info Error Master: ReferenceError: cantity_stores is not defined
+[2024-04-03T15:45:33.141Z] info server running on port 3000
+[2024-04-03T15:45:34.748Z] info server running on port 3000
+[2024-04-03T15:45:58.300Z] info server running on port 3000
+[2024-04-03T15:45:58.491Z] info Token validated successfuly
+[2024-04-03T15:45:58.491Z] info enter the endpoint master dropshipper
+[2024-04-03T15:45:58.525Z] info Error Master: ReferenceError: cantity_stores is not defined
+[2024-04-03T15:46:12.503Z] info server running on port 3000
+[2024-04-03T15:46:12.692Z] info Token validated successfuly
+[2024-04-03T15:46:12.692Z] info enter the endpoint master dropshipper
+[2024-04-03T15:46:12.729Z] info Master Dropshipper successfuly
+[2024-04-03T15:49:49.528Z] info server running on port 3000
+[2024-04-03T15:50:14.985Z] info server running on port 3000
+[2024-04-03T15:52:12.146Z] info server running on port 3000
+[2024-04-03T15:52:37.459Z] info server running on port 3000
+[2024-04-03T15:53:01.634Z] info server running on port 3000
+[2024-04-03T15:53:04.637Z] info server running on port 3000
+[2024-04-03T15:53:09.522Z] info server running on port 3000
+[2024-04-03T15:53:12.357Z] info Token validated successfuly
+[2024-04-03T15:53:12.357Z] info enter the endpoint master dropshipper
+[2024-04-03T15:53:12.394Z] info Error Master: ReferenceError: cityPackage is not defined
+[2024-04-03T15:53:24.609Z] info server running on port 3000
+[2024-04-03T15:53:25.035Z] info Token validated successfuly
+[2024-04-03T15:53:25.035Z] info enter the endpoint master dropshipper
+[2024-04-03T15:53:25.071Z] info Master Dropshipper successfuly
+[2024-04-03T15:54:28.739Z] info server running on port 3000
+[2024-04-03T15:54:57.034Z] info server running on port 3000
+[2024-04-03T15:55:52.239Z] info server running on port 3000
+[2024-04-03T15:56:26.485Z] info server running on port 3000
+[2024-04-03T15:56:46.861Z] info server running on port 3000
+[2024-04-03T15:56:49.063Z] info server running on port 3000
+[2024-04-03T15:57:09.552Z] info server running on port 3000
+[2024-04-03T15:57:55.681Z] info server running on port 3000
+[2024-04-03T15:58:02.998Z] info server running on port 3000
+[2024-04-03T15:58:09.344Z] info server running on port 3000
+[2024-04-03T15:58:28.001Z] info server running on port 3000
+[2024-04-03T15:59:33.672Z] info server running on port 3000
+[2024-04-03T15:59:44.854Z] info server running on port 3000
+[2024-04-03T15:59:51.989Z] info server running on port 3000
+[2024-04-03T16:00:18.483Z] info server running on port 3000
+[2024-04-03T16:00:20.942Z] info Token validated successfuly
+[2024-04-03T16:00:20.942Z] info enter the endpoint master dropshipper
+[2024-04-03T16:00:20.979Z] info Master Dropshipper successfuly
+[2024-04-03T16:00:52.775Z] info server running on port 3000
+[2024-04-03T16:00:57.768Z] info server running on port 3000
+[2024-04-03T16:00:58.335Z] info Token validated successfuly
+[2024-04-03T16:00:58.336Z] info enter the endpoint master dropshipper
+[2024-04-03T16:00:58.374Z] info Master Dropshipper successfuly
+[2024-04-03T16:01:19.114Z] info server running on port 3000
+[2024-04-03T16:01:52.180Z] info server running on port 3000
+[2024-04-03T16:02:01.123Z] info server running on port 3000
+[2024-04-03T16:02:12.865Z] info server running on port 3000
+[2024-04-03T16:02:35.526Z] info server running on port 3000
+[2024-04-03T16:02:36.150Z] info Token validated successfuly
+[2024-04-03T16:02:36.151Z] info enter the endpoint master dropshipper
+[2024-04-03T16:02:36.186Z] info Master Dropshipper successfuly
+[2024-04-03T16:02:53.291Z] info server running on port 3000
+[2024-04-03T16:02:53.426Z] info Token validated successfuly
+[2024-04-03T16:02:53.426Z] info enter the endpoint master dropshipper
+[2024-04-03T16:02:53.461Z] info Master Dropshipper successfuly
+[2024-04-03T16:03:08.086Z] info server running on port 3000
+[2024-04-03T16:03:42.670Z] info server running on port 3000
+[2024-04-03T16:03:44.403Z] info Token validated successfuly
+[2024-04-03T16:03:44.403Z] info enter the endpoint master dropshipper
+[2024-04-03T16:03:44.439Z] info Master Dropshipper successfuly
+[2024-04-03T16:04:37.616Z] info server running on port 3000
+[2024-04-03T16:04:56.709Z] info server running on port 3000
+[2024-04-03T16:04:58.056Z] info server running on port 3000
+[2024-04-03T16:05:16.165Z] info server running on port 3000
+[2024-04-03T16:05:21.981Z] info Token validated successfuly
+[2024-04-03T16:05:21.982Z] info enter the endpoint master dropshipper
+[2024-04-03T16:05:22.020Z] info Master Dropshipper successfuly
+[2024-04-03T16:06:00.707Z] info server running on port 3000
+[2024-04-03T16:06:46.721Z] info server running on port 3000
+[2024-04-03T16:06:47.909Z] info server running on port 3000
+[2024-04-03T16:07:38.157Z] info server running on port 3000
+[2024-04-03T16:07:55.505Z] info server running on port 3000
+[2024-04-03T16:07:56.396Z] info Token validated successfuly
+[2024-04-03T16:07:56.397Z] info enter the endpoint master dropshipper
+[2024-04-03T16:07:56.434Z] info Master Dropshipper successfuly
+[2024-04-03T16:08:06.104Z] info server running on port 3000
+[2024-04-03T16:08:11.940Z] info server running on port 3000
+[2024-04-03T16:08:24.533Z] info server running on port 3000
+[2024-04-03T16:08:27.580Z] info server running on port 3000
+[2024-04-03T16:08:27.859Z] info Token validated successfuly
+[2024-04-03T16:08:27.860Z] info enter the endpoint master dropshipper
+[2024-04-03T16:08:27.896Z] info Master Dropshipper successfuly
+[2024-04-03T16:08:52.821Z] info server running on port 3000
+[2024-04-03T16:08:53.230Z] info Token validated successfuly
+[2024-04-03T16:08:53.231Z] info enter the endpoint master dropshipper
+[2024-04-03T16:08:53.268Z] info Master Dropshipper successfuly
+[2024-04-03T16:09:32.899Z] info server running on port 3000
+[2024-04-03T16:09:34.067Z] info Token validated successfuly
+[2024-04-03T16:09:34.068Z] info enter the endpoint master dropshipper
+[2024-04-03T16:09:34.105Z] info Master Dropshipper successfuly
+[2024-04-03T16:10:01.673Z] info server running on port 3000
+[2024-04-03T16:11:01.980Z] info server running on port 3000
+[2024-04-03T16:11:16.510Z] info server running on port 3000
+[2024-04-03T16:11:39.716Z] info server running on port 3000
+[2024-04-03T16:12:03.497Z] info server running on port 3000
+[2024-04-03T16:13:03.232Z] info server running on port 3000
+[2024-04-03T16:13:50.990Z] info server running on port 3000
+[2024-04-03T16:14:04.922Z] info server running on port 3000
+[2024-04-03T16:14:39.727Z] info server running on port 3000
+[2024-04-03T16:14:53.129Z] info server running on port 3000
+[2024-04-03T16:15:17.263Z] info server running on port 3000
+[2024-04-03T16:15:23.324Z] info server running on port 3000
+[2024-04-03T16:15:38.649Z] info server running on port 3000
+[2024-04-03T16:15:49.142Z] info server running on port 3000
+[2024-04-03T16:16:09.380Z] info server running on port 3000
+[2024-04-03T16:16:37.032Z] info server running on port 3000
+[2024-04-03T16:16:55.818Z] info server running on port 3000
+[2024-04-03T16:16:57.785Z] info Token validated successfuly
+[2024-04-03T16:16:57.785Z] info enter the endpoint master dropshipper
+[2024-04-03T16:16:57.823Z] info Master Dropshipper successfuly
+[2024-04-03T19:28:27.633Z] info server running on port 3000
+[2024-04-03T19:28:35.145Z] info enter the endpoint login dropshipper
+[2024-04-03T19:28:35.192Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-03T19:28:43.643Z] info Token validated successfuly
+[2024-04-03T19:28:43.643Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:28:43.657Z] info Master Dropshipper successfuly
+[2024-04-03T19:28:57.807Z] info server running on port 3000
+[2024-04-03T19:28:58.165Z] info Token validated successfuly
+[2024-04-03T19:28:58.165Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:28:58.201Z] info Master Dropshipper successfuly
+[2024-04-03T19:29:15.402Z] info server running on port 3000
+[2024-04-03T19:29:18.341Z] info Token validated successfuly
+[2024-04-03T19:29:18.341Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:29:18.381Z] info Master Dropshipper successfuly
+[2024-04-03T19:30:15.260Z] info server running on port 3000
+[2024-04-03T19:30:15.440Z] info Token validated successfuly
+[2024-04-03T19:30:15.441Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:30:15.481Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:30:59.371Z] info server running on port 3000
+[2024-04-03T19:31:14.611Z] info server running on port 3000
+[2024-04-03T19:31:26.364Z] info server running on port 3000
+[2024-04-03T19:31:26.475Z] info Token validated successfuly
+[2024-04-03T19:31:26.475Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:31:26.508Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:31:52.949Z] info server running on port 3000
+[2024-04-03T19:38:14.542Z] info Token validated successfuly
+[2024-04-03T19:38:14.543Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:38:14.580Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:38:18.054Z] info server running on port 3000
+[2024-04-03T19:38:18.487Z] info Token validated successfuly
+[2024-04-03T19:38:18.487Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:38:18.523Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:40:40.907Z] info server running on port 3000
+[2024-04-03T19:40:42.384Z] info server running on port 3000
+[2024-04-03T19:41:09.324Z] info server running on port 3000
+[2024-04-03T19:41:17.108Z] info Token validated successfuly
+[2024-04-03T19:41:17.108Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:41:17.146Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:41:39.625Z] info Token validated successfuly
+[2024-04-03T19:41:39.626Z] info enter the endpoint master dropshipper
+[2024-04-03T19:41:39.633Z] info Master Dropshipper successfuly
+[2024-04-03T19:48:21.539Z] info server running on port 3000
+[2024-04-03T19:48:47.711Z] info server running on port 3000
+[2024-04-03T19:49:00.456Z] info server running on port 3000
+[2024-04-03T19:49:03.651Z] info server running on port 3000
+[2024-04-03T19:49:07.070Z] info Token validated successfuly
+[2024-04-03T19:49:07.070Z] info enter the endpoint master dropshipper
+[2024-04-03T19:49:07.108Z] info Master Dropshipper successfuly
+[2024-04-03T19:49:10.705Z] info Token validated successfuly
+[2024-04-03T19:49:10.705Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:49:10.709Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:49:35.072Z] info server running on port 3000
+[2024-04-03T19:49:36.813Z] info server running on port 3000
+[2024-04-03T19:49:38.092Z] info Token validated successfuly
+[2024-04-03T19:49:38.092Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:49:38.129Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:50:56.876Z] info server running on port 3000
+[2024-04-03T19:50:59.808Z] info Token validated successfuly
+[2024-04-03T19:50:59.808Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:50:59.843Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:51:38.633Z] info server running on port 3000
+[2024-04-03T19:51:38.897Z] info Token validated successfuly
+[2024-04-03T19:51:38.897Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:51:38.931Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:51:41.672Z] info server running on port 3000
+[2024-04-03T19:51:43.408Z] info Token validated successfuly
+[2024-04-03T19:51:43.409Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:51:43.446Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:52:10.380Z] info server running on port 3000
+[2024-04-03T19:52:11.590Z] info Token validated successfuly
+[2024-04-03T19:52:11.591Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:52:11.625Z] info Getpackages Dropshipper successfuly
+[2024-04-03T19:54:37.017Z] info server running on port 3000
+[2024-04-03T19:54:41.411Z] info server running on port 3000
+[2024-04-03T19:54:43.191Z] info Token validated successfuly
+[2024-04-03T19:54:43.191Z] info enter the endpoint getpackages dropshipper
+[2024-04-03T19:54:43.226Z] info Getpackages Dropshipper successfuly
+[2024-04-03T20:15:10.655Z] info server running on port 3000
+[2024-04-03T20:16:04.576Z] info server running on port 3000
+[2024-04-03T20:16:21.720Z] info server running on port 3000
+[2024-04-03T20:16:29.127Z] info server running on port 3000
+[2024-04-03T20:18:03.428Z] info server running on port 3000
+[2024-04-03T20:18:33.521Z] info server running on port 3000
+[2024-04-03T20:20:32.528Z] info server running on port 3000
+[2024-04-03T20:21:29.901Z] info server running on port 3000
+[2024-04-03T20:21:44.267Z] info Token validated successfuly
+[2024-04-03T20:21:44.268Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:21:44.319Z] info Non-existent dropshipper
+[2024-04-03T20:22:33.052Z] info server running on port 3000
+[2024-04-03T20:22:49.075Z] info server running on port 3000
+[2024-04-03T20:23:06.615Z] info server running on port 3000
+[2024-04-03T20:23:07.119Z] info Token validated successfuly
+[2024-04-03T20:23:07.120Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:23:07.154Z] info filterByDate Dropshipper successfuly
+[2024-04-03T20:23:14.934Z] info server running on port 3000
+[2024-04-03T20:23:14.974Z] info Token validated successfuly
+[2024-04-03T20:23:14.975Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:23:15.009Z] info Non-existent dropshipper
+[2024-04-03T20:23:50.963Z] info server running on port 3000
+[2024-04-03T20:24:05.115Z] info server running on port 3000
+[2024-04-03T20:24:20.011Z] info server running on port 3000
+[2024-04-03T20:24:20.500Z] info Token validated successfuly
+[2024-04-03T20:24:20.500Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:24:20.532Z] info Not found packages
+[2024-04-03T20:24:24.262Z] info server running on port 3000
+[2024-04-03T20:24:24.471Z] info Token validated successfuly
+[2024-04-03T20:24:24.471Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:24:24.506Z] info filterByDate Dropshipper successfuly
+[2024-04-03T20:24:44.412Z] info Token validated successfuly
+[2024-04-03T20:24:44.412Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:24:44.419Z] info filterByDate Dropshipper successfuly
+[2024-04-03T20:24:54.128Z] info server running on port 3000
+[2024-04-03T20:24:54.363Z] info Token validated successfuly
+[2024-04-03T20:24:54.364Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:24:54.402Z] info filterByDate Dropshipper successfuly
+[2024-04-03T20:24:59.682Z] info server running on port 3000
+[2024-04-03T20:25:18.871Z] info server running on port 3000
+[2024-04-03T20:25:31.925Z] info Token validated successfuly
+[2024-04-03T20:25:31.926Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:25:31.961Z] info Not found packages
+[2024-04-03T20:25:55.688Z] info server running on port 3000
+[2024-04-03T20:25:56.488Z] info Token validated successfuly
+[2024-04-03T20:25:56.488Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:25:56.523Z] info Not found packages
+[2024-04-03T20:26:12.744Z] info server running on port 3000
+[2024-04-03T20:27:03.241Z] info server running on port 3000
+[2024-04-03T20:27:39.258Z] info Token validated successfuly
+[2024-04-03T20:27:39.258Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:27:39.296Z] info filterByDate Dropshipper successfuly
+[2024-04-03T20:27:59.231Z] info server running on port 3000
+[2024-04-03T20:28:01.011Z] info Token validated successfuly
+[2024-04-03T20:28:01.011Z] info enter the endpoint filterByDate dropshipper
+[2024-04-03T20:28:01.047Z] info filterByDate Dropshipper successfuly
+[2024-04-03T20:55:43.490Z] info server running on port 3000
+[2024-04-03T20:55:49.795Z] info enter the endpoint login dropshipper
+[2024-04-03T20:55:49.842Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-03T20:56:01.362Z] info Token validated successfuly
+[2024-04-03T20:56:01.363Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T20:56:01.363Z] info Error downloadExcelpackagesDate: ReferenceError: ExcelJS is not defined
+[2024-04-03T20:56:35.491Z] info server running on port 3000
+[2024-04-03T20:56:45.026Z] info server running on port 3000
+[2024-04-03T20:56:48.877Z] info Token validated successfuly
+[2024-04-03T20:56:48.878Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T20:58:20.662Z] info Token validated successfuly
+[2024-04-03T20:58:20.663Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T21:02:09.611Z] info server running on port 3000
+[2024-04-03T21:02:32.438Z] info server running on port 3000
+[2024-04-03T21:05:18.271Z] info server running on port 3000
+[2024-04-03T21:05:50.526Z] info server running on port 3000
+[2024-04-03T21:05:52.394Z] info Token validated successfuly
+[2024-04-03T21:05:52.394Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T21:05:52.466Z] info filterByDate Dropshipper successfuly
+[2024-04-03T21:06:28.704Z] info Token validated successfuly
+[2024-04-03T21:06:28.704Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T21:06:28.727Z] info filterByDate Dropshipper successfuly
+[2024-04-03T21:07:09.063Z] info server running on port 3000
+[2024-04-03T21:08:42.116Z] info server running on port 3000
+[2024-04-03T21:08:44.368Z] info Token validated successfuly
+[2024-04-03T21:08:44.369Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T21:08:44.449Z] info filterByDate Dropshipper successfuly
+[2024-04-03T21:09:32.030Z] info server running on port 3000
+[2024-04-03T21:09:33.877Z] info Token validated successfuly
+[2024-04-03T21:09:33.878Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T21:11:43.727Z] info server running on port 3000
+[2024-04-03T21:11:46.089Z] info Token validated successfuly
+[2024-04-03T21:11:46.089Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T21:11:52.760Z] info server running on port 3000
+[2024-04-03T21:11:53.424Z] info Token validated successfuly
+[2024-04-03T21:11:53.424Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T21:11:53.515Z] info filterByDate Dropshipper successfuly
+[2024-04-03T21:12:06.620Z] info Token validated successfuly
+[2024-04-03T21:12:06.621Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T21:12:06.654Z] info filterByDate Dropshipper successfuly
+[2024-04-03T21:12:40.937Z] info server running on port 3000
+[2024-04-03T21:12:46.461Z] info Token validated successfuly
+[2024-04-03T21:12:46.462Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T21:12:46.542Z] info filterByDate Dropshipper successfuly
+[2024-04-03T21:14:13.442Z] info server running on port 3000
+[2024-04-03T21:16:31.668Z] info server running on port 3000
+[2024-04-03T21:17:32.773Z] info server running on port 3000
+[2024-04-03T21:17:47.334Z] info server running on port 3000
+[2024-04-03T21:18:06.655Z] info server running on port 3000
+[2024-04-03T21:18:08.291Z] info server running on port 3000
+[2024-04-03T21:18:10.230Z] info server running on port 3000
+[2024-04-03T22:04:02.815Z] info server running on port 3000
+[2024-04-03T22:04:29.657Z] info enter the endpoint login dropshipper
+[2024-04-03T22:04:29.676Z] info Error Login: SequelizeConnectionRefusedError
+[2024-04-03T22:04:40.420Z] info enter the endpoint login dropshipper
+[2024-04-03T22:04:40.422Z] info Error Login: SequelizeConnectionRefusedError
+[2024-04-03T22:07:51.255Z] info enter the endpoint login dropshipper
+[2024-04-03T22:07:51.283Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-03T22:08:00.201Z] info Token validated successfuly
+[2024-04-03T22:08:00.201Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T22:08:00.253Z] info filterByDate Dropshipper successfuly
+[2024-04-03T22:09:24.865Z] info server running on port 3000
+[2024-04-03T22:09:37.161Z] info server running on port 3000
+[2024-04-03T22:09:49.372Z] info server running on port 3000
+[2024-04-03T22:09:50.660Z] info Token validated successfuly
+[2024-04-03T22:09:50.660Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T22:09:50.734Z] info filterByDate Dropshipper successfuly
+[2024-04-03T22:10:09.920Z] info Token validated successfuly
+[2024-04-03T22:10:09.920Z] info enter the endpoint downloadExcelpackagesDate dropshipper
+[2024-04-03T22:10:09.947Z] info filterByDate Dropshipper successfuly
