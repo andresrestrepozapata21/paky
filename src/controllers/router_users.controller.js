@@ -145,7 +145,7 @@ export async function getProductsPackage(req, res) {
             include: [
                 {
                     model: PackageProduct,
-                    attributes: ['id_pp', 'createdAt'],
+                    attributes: ['id_pp', 'cuantity_pp', 'createdAt'],
                     include: [
                         {
                             model: Product,

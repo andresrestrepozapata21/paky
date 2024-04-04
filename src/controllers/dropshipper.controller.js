@@ -609,7 +609,7 @@ export async function detailPackage(req, res) {
                 },
                 {
                     model: PackageProduct,
-                    attributes: ['id_pp', 'createdAt'],
+                    attributes: ['id_pp', 'cuantity_pp', 'createdAt'],
                     include: [
                         {
                             model: Product,
@@ -656,6 +656,89 @@ export async function detailPackage(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error detailPackage: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method getpackages dropshipper
+export async function editPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint edit package dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_p } = req.params;
+        //const { orden_p, name_client_p, phone_number_client_p, email_client_p, direction_client_p, guide_number_p, status_p, with_collection_p, createdAt, fk_id_store_p, fk_id_carrier_p, fk_id_tp_p, fk_id_destiny_city_p } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+        // I find if exist package by dropshipper
+        const getPackage = await Package.findOne({
+            where: {
+                id_p
+            }
+        });
+        // I validate exist  infoDropshipper and infoStorePackage
+        if (getPackage) {
+            getPackage.set(req.body);
+            getPackage.save()
+            // logger control proccess
+            logger.info('edit package Dropshipper successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'edit package Dropshipper successfuly',
+                result: 1,
+                getPackage
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found packages');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found packages',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error edit package: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method getpackages dropshipper
+export async function deletePackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint detailPackage dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_p } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+        // I find if exist package by dropshipper
+        const getPackage = await Package.destroy({
+            where: {
+                id_p
+            }
+        });
+        // logger control proccess
+        logger.info('delete package Dropshipper successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'delete package Dropshipper successfuly',
+            result: 1,
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error delete package: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',

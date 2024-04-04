@@ -10,6 +10,9 @@ export const PackageProduct = sequelize.define('package_products', {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
+    },
+    cuantity_pp: {
+        type: DataTypes.INTEGER,
     }
 }, {
     TimesTamps: true

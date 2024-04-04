@@ -14,7 +14,7 @@ import { Package } from "../models/packages.model.js";
 import { Store } from "../models/stores.model.js";
 import { City } from "../models/cities.model.js";
 import { Central_warehouse } from "../models/central_warehouses.model.js";
-import { Sequelize, json } from 'sequelize';
+import { Sequelize } from 'sequelize';
 import { Department } from "../models/departments.model.js";
 import { Status_history } from "../models/status_history.model.js";
 import { Carrier_payment_request } from "../models/carrier_payment_requests.model.js";
