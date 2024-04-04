@@ -52,7 +52,7 @@ export const Package = sequelize.define('packages', {
         type: DataTypes.INTEGER
     },
     confirmation_dropshipper_p:{
-        type: DataTypes.STRING
+        type: DataTypes.INTEGER
     },
     date_created_package: {
         type: DataTypes.DATE

@@ -8,7 +8,15 @@ import { Sequelize } from "sequelize";
 // import personaly models
 import { Dropshipper } from '../models/dropshippers.model.js';
 import { Package } from "../models/packages.model.js";
+import { PackageProduct } from "../models/packages_products.model.js";
+import { Product } from "../models/products.model.js";
 import { Store } from "../models/stores.model.js";
+import { Status_history } from "../models/status_history.model.js";
+import { Carrier } from "../models/carriers.model.js";
+import { Type_package } from "../models/types_package.model.js";
+import { City } from "../models/cities.model.js";
+import { Central_warehouse } from "../models/central_warehouses.model.js";
+import { Department } from "../models/departments.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -472,6 +480,182 @@ export async function downloadExcelpackagesDate(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error downloadExcelpackagesDate: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method getpackages dropshipper
+export async function corfirmatePackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint confirmate packages dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_p, confirmation_dropshipper_p } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+        // I find if exist package by dropshipper
+        const getPackage = await Package.findOne({
+            where: {
+                id_p
+            },
+            attributes: ['id_p', 'confirmation_dropshipper_p']
+        });
+        // I validate exist  infoDropshipper and infoStorePackage
+        if (getPackage) {
+            // Set the flag confirmation flag dropshipper pakcges
+            getPackage.set({
+                confirmation_dropshipper_p
+            });
+            // .save() for update confirmation dropshipper from package
+            await getPackage.save();
+            // I validate all ok
+            if (!getPackage) {
+                // I return the status 500 and the message I want
+                res.status(500).json({
+                    message: 'Something goes wrong',
+                    result: 0
+                });
+            }
+            // logger control proccess
+            logger.info('Confirmate packages Dropshipper successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'Confirmate packages Dropshipper successfuly',
+                result: 1,
+                data: getPackage
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found packages');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found packages',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error confirmate packages Dropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0
+        });
+    }
+}
+
+// Method getpackages dropshipper
+export async function detailPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint detailPackage dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_p } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+        // I find if exist package by dropshipper
+        const getPackage = await Package.findOne({
+            where: {
+                id_p
+            },
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'createdAt'],
+            include: [
+                {
+                    model: Carrier,
+                    attributes: ['id_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier']
+                },
+                {
+                    model: Type_package,
+                    attributes: ['id_tp', 'description_tp']
+                },
+                {
+                    model: Store,
+                    attributes: ['id_store', 'direction_store'],
+                    include: [
+                        {
+                            model: City,
+                            attributes: ['id_city', 'name_city'],
+                            include: [
+                                {
+                                    model: Central_warehouse,
+                                    attributes: ['id_cw', 'name_cw', 'direction_cw'],
+                                },
+                                {
+                                    model: Department,
+                                    attributes: ['id_d', 'name_d'],
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    model: City,
+                    attributes: ['id_city', 'name_city'],
+                    include: [
+                        {
+                            model: Central_warehouse,
+                            attributes: ['id_cw', 'name_cw', 'direction_cw'],
+                        },
+                        {
+                            model: Department,
+                            attributes: ['id_d', 'name_d'],
+                        }
+                    ]
+                },
+                {
+                    model: PackageProduct,
+                    attributes: ['id_pp', 'createdAt'],
+                    include: [
+                        {
+                            model: Product,
+                            attributes: ['id_product', 'name_product', 'description_product', 'price_sale_product', 'price_cost_product', 'size_product']
+                        }
+                    ]
+                }
+            ],
+        });
+        // I validate exist  infoDropshipper and infoStorePackage
+        if (getPackage) {
+            // I find if exist package by dropshipper
+            const getHistory = await Status_history.findAll({
+                where: {
+                    fk_id_p_sh: id_p
+                },
+                attributes: ['id_sh', 'status_sh', 'comentary_sh', 'evidence_sh', 'createdAt'],
+                include: [
+                    {
+                        model: Carrier,
+                        attributes: ['id_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier']
+                    },
+                ],
+                order: [['createdAt', 'ASC']]
+            });
+            // logger control proccess
+            logger.info('detailPackage Dropshipper successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'detailPackage Dropshipper successfuly',
+                result: 1,
+                data: getPackage,
+                data_history: getHistory
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found packages');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found packages',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error detailPackage: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',

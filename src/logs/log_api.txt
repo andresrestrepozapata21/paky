@@ -1992,3 +1992,249 @@
 [2024-04-03T22:10:09.920Z] info Token validated successfuly
 [2024-04-03T22:10:09.920Z] info enter the endpoint downloadExcelpackagesDate dropshipper
 [2024-04-03T22:10:09.947Z] info filterByDate Dropshipper successfuly
+[2024-04-04T13:43:42.733Z] info server running on port 3000
+[2024-04-04T13:44:22.057Z] info enter the endpoint login dropshipper
+[2024-04-04T13:44:22.091Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-04T13:44:30.170Z] info Token validated successfuly
+[2024-04-04T13:44:30.171Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:44:30.173Z] info Error filterByDate: TypeError: getPackage.set is not a function
+[2024-04-04T13:45:08.063Z] info server running on port 3000
+[2024-04-04T13:45:10.644Z] info Token validated successfuly
+[2024-04-04T13:45:10.645Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:45:10.673Z] info Error Confirmate packages Dropshipper successfuly
+[2024-04-04T13:45:38.527Z] info server running on port 3000
+[2024-04-04T13:45:41.086Z] info Token validated successfuly
+[2024-04-04T13:45:41.087Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:45:41.116Z] info Error confirmate packages Dropshipper: TypeError: getPackage.set is not a function
+[2024-04-04T13:46:26.788Z] info server running on port 3000
+[2024-04-04T13:46:33.573Z] info server running on port 3000
+[2024-04-04T13:46:37.437Z] info Token validated successfuly
+[2024-04-04T13:46:37.438Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:46:37.467Z] info Not found packages
+[2024-04-04T13:46:54.973Z] info server running on port 3000
+[2024-04-04T13:47:26.681Z] info server running on port 3000
+[2024-04-04T13:47:30.241Z] info server running on port 3000
+[2024-04-04T13:47:30.814Z] info Token validated successfuly
+[2024-04-04T13:47:30.815Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:47:44.924Z] info Token validated successfuly
+[2024-04-04T13:47:44.924Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:48:17.814Z] info Token validated successfuly
+[2024-04-04T13:48:17.814Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:48:33.671Z] info server running on port 3000
+[2024-04-04T13:48:56.934Z] info server running on port 3000
+[2024-04-04T13:48:58.494Z] info Token validated successfuly
+[2024-04-04T13:48:58.494Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:48:58.524Z] info Not found packages
+[2024-04-04T13:49:12.244Z] info server running on port 3000
+[2024-04-04T13:49:24.173Z] info server running on port 3000
+[2024-04-04T13:49:24.450Z] info Token validated successfuly
+[2024-04-04T13:49:24.451Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:49:24.480Z] info Not found packages
+[2024-04-04T13:49:52.124Z] info server running on port 3000
+[2024-04-04T13:49:57.403Z] info Token validated successfuly
+[2024-04-04T13:49:57.403Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:50:09.371Z] info server running on port 3000
+[2024-04-04T13:50:09.759Z] info Token validated successfuly
+[2024-04-04T13:50:09.760Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:50:09.799Z] info Confirmate packages Dropshipper successfuly
+[2024-04-04T13:50:09.800Z] info Error confirmate packages Dropshipper: ReferenceError: getPackages is not defined
+[2024-04-04T13:50:29.413Z] info server running on port 3000
+[2024-04-04T13:50:31.093Z] info Token validated successfuly
+[2024-04-04T13:50:31.093Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:50:31.124Z] info Confirmate packages Dropshipper successfuly
+[2024-04-04T13:51:00.485Z] info server running on port 3000
+[2024-04-04T13:51:02.203Z] info Token validated successfuly
+[2024-04-04T13:51:02.203Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:51:02.234Z] info Confirmate packages Dropshipper successfuly
+[2024-04-04T13:51:14.370Z] info Token validated successfuly
+[2024-04-04T13:51:14.370Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:51:14.381Z] info Confirmate packages Dropshipper successfuly
+[2024-04-04T13:51:22.906Z] info Token validated successfuly
+[2024-04-04T13:51:22.906Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-04T13:51:22.913Z] info Confirmate packages Dropshipper successfuly
+[2024-04-04T14:16:09.712Z] info server running on port 3000
+[2024-04-04T14:16:43.769Z] info server running on port 3000
+[2024-04-04T14:16:45.801Z] info server running on port 3000
+[2024-04-04T14:17:54.742Z] info server running on port 3000
+[2024-04-04T14:18:12.058Z] info server running on port 3000
+[2024-04-04T14:18:34.476Z] info server running on port 3000
+[2024-04-04T14:18:34.575Z] info Token validated successfuly
+[2024-04-04T14:18:34.575Z] info enter the endpoint filterByDate dropshipper
+[2024-04-04T14:18:34.611Z] info Not found packages
+[2024-04-04T14:18:42.941Z] info server running on port 3000
+[2024-04-04T14:18:43.020Z] info Token validated successfuly
+[2024-04-04T14:18:43.021Z] info enter the endpoint filterByDate dropshipper
+[2024-04-04T14:18:43.057Z] info filterByDate Dropshipper successfuly
+[2024-04-04T14:50:39.419Z] info server running on port 3000
+[2024-04-04T14:50:44.214Z] info enter the endpoint login dropshipper
+[2024-04-04T14:50:44.312Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-04T14:50:52.830Z] info Token validated successfuly
+[2024-04-04T14:50:52.830Z] info enter the endpoint filterByDate dropshipper
+[2024-04-04T14:50:52.843Z] info filterByDate Dropshipper successfuly
+[2024-04-04T14:51:11.750Z] info Token validated successfuly
+[2024-04-04T14:51:11.751Z] info enter the endpoint filterByDate dropshipper
+[2024-04-04T14:51:11.760Z] info filterByDate Dropshipper successfuly
+[2024-04-04T14:51:16.091Z] info Token validated successfuly
+[2024-04-04T14:51:16.092Z] info enter the endpoint filterByDate dropshipper
+[2024-04-04T14:51:16.097Z] info filterByDate Dropshipper successfuly
+[2024-04-04T14:51:33.090Z] info server running on port 3000
+[2024-04-04T14:54:08.612Z] info server running on port 3000
+[2024-04-04T14:54:09.605Z] info Token validated successfuly
+[2024-04-04T14:54:09.605Z] info enter the endpoint filterByDate dropshipper
+[2024-04-04T14:54:09.652Z] info filterByDate Dropshipper successfuly
+[2024-04-04T14:54:34.992Z] info Token validated successfuly
+[2024-04-04T14:54:34.992Z] info enter the endpoint filterByDate dropshipper
+[2024-04-04T14:54:35.002Z] info filterByDate Dropshipper successfuly
+[2024-04-04T14:56:36.009Z] info server running on port 3000
+[2024-04-04T14:56:38.486Z] info Token validated successfuly
+[2024-04-04T14:56:38.486Z] info enter the endpoint filterByDate dropshipper
+[2024-04-04T14:56:38.524Z] info Error filterByDate: SequelizeDatabaseError: (conn=19, no: 1054, SQLState: 42S22) Unknown column 'carrier.number_phone_carrier' in 'field list'
+sql: SELECT `packages`.`id_p`, `packages`.`orden_p`, `packages`.`name_client_p`, `packages`.`phone_number_client_p`, `packages`.`email_client_p`, `packages`.`direction_client_p`, `packages`.`guide_number_p`, `packages`.`status_p`, `packages`.`profit_dropshipper... - parameters:[]
+[2024-04-04T14:57:06.254Z] info server running on port 3000
+[2024-04-04T14:57:07.997Z] info Token validated successfuly
+[2024-04-04T14:57:07.997Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T14:57:08.036Z] info Error filterByDate: SequelizeDatabaseError: (conn=21, no: 1054, SQLState: 42S22) Unknown column 'carrier.number_phone_carrier' in 'field list'
+sql: SELECT `packages`.`id_p`, `packages`.`orden_p`, `packages`.`name_client_p`, `packages`.`phone_number_client_p`, `packages`.`email_client_p`, `packages`.`direction_client_p`, `packages`.`guide_number_p`, `packages`.`status_p`, `packages`.`profit_dropshipper... - parameters:[]
+[2024-04-04T14:57:16.418Z] info server running on port 3000
+[2024-04-04T14:57:34.289Z] info server running on port 3000
+[2024-04-04T14:57:34.461Z] info Token validated successfuly
+[2024-04-04T14:57:34.462Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T14:57:34.508Z] info detailPackage Dropshipper successfuly
+[2024-04-04T14:57:55.569Z] info server running on port 3000
+[2024-04-04T14:58:03.250Z] info server running on port 3000
+[2024-04-04T14:58:03.662Z] info Token validated successfuly
+[2024-04-04T14:58:03.663Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T14:58:03.707Z] info detailPackage Dropshipper successfuly
+[2024-04-04T14:59:13.239Z] info server running on port 3000
+[2024-04-04T14:59:15.463Z] info Token validated successfuly
+[2024-04-04T14:59:15.464Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T14:59:15.504Z] info detailPackage Dropshipper successfuly
+[2024-04-04T14:59:30.623Z] info server running on port 3000
+[2024-04-04T14:59:33.082Z] info Token validated successfuly
+[2024-04-04T14:59:33.082Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T14:59:33.126Z] info detailPackage Dropshipper successfuly
+[2024-04-04T14:59:42.447Z] info Token validated successfuly
+[2024-04-04T14:59:42.447Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T14:59:42.455Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:31:19.118Z] info server running on port 3000
+[2024-04-04T15:31:24.194Z] info Token validated successfuly
+[2024-04-04T15:31:24.194Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:31:24.282Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:32:45.129Z] info server running on port 3000
+[2024-04-04T15:33:21.793Z] info server running on port 3000
+[2024-04-04T15:33:26.357Z] info server running on port 3000
+[2024-04-04T15:33:26.882Z] info Token validated successfuly
+[2024-04-04T15:33:26.883Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:33:26.928Z] info Error detailPackage: SequelizeDatabaseError: (conn=11, no: 1054, SQLState: 42S22) Unknown column 'status_history.attributes' in 'where clause'
+sql: SELECT `status_history`.`id_sh`, `status_history`.`status_sh`, `status_history`.`comentary_sh`, `status_history`.`evidence_sh`, `status_history`.`details_sh`, `status_history`.`createdAt`, `status_history`.`updatedAt`, `status_history`.`fk_id_carrier_asign... - parameters:[]
+[2024-04-04T15:33:41.492Z] info server running on port 3000
+[2024-04-04T15:33:41.818Z] info Token validated successfuly
+[2024-04-04T15:33:41.819Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:33:41.859Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:33:59.757Z] info server running on port 3000
+[2024-04-04T15:36:15.796Z] info server running on port 3000
+[2024-04-04T15:36:17.614Z] info Token validated successfuly
+[2024-04-04T15:36:17.615Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:36:17.615Z] info Error detailPackage: ReferenceError: City is not defined
+[2024-04-04T15:36:20.572Z] info Token validated successfuly
+[2024-04-04T15:36:20.573Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:36:20.573Z] info Error detailPackage: ReferenceError: City is not defined
+[2024-04-04T15:36:31.767Z] info server running on port 3000
+[2024-04-04T15:36:32.482Z] info Token validated successfuly
+[2024-04-04T15:36:32.483Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:36:32.484Z] info Error detailPackage: ReferenceError: Central_warehouse is not defined
+[2024-04-04T15:36:44.709Z] info server running on port 3000
+[2024-04-04T15:36:47.058Z] info Token validated successfuly
+[2024-04-04T15:36:47.058Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:36:47.134Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:37:28.588Z] info server running on port 3000
+[2024-04-04T15:37:28.614Z] info Token validated successfuly
+[2024-04-04T15:37:28.615Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:37:28.704Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:39:59.475Z] info server running on port 3000
+[2024-04-04T15:40:10.999Z] info server running on port 3000
+[2024-04-04T15:40:26.103Z] info server running on port 3000
+[2024-04-04T15:40:28.342Z] info server running on port 3000
+[2024-04-04T15:40:30.654Z] info Token validated successfuly
+[2024-04-04T15:40:30.655Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:40:30.658Z] info Error detailPackage: SequelizeEagerLoadingError: stores is associated to packages using an alias. You've included an alias (information_origin), but it does not match the alias(es) defined in your association (store).
+[2024-04-04T15:40:52.987Z] info server running on port 3000
+[2024-04-04T15:40:53.370Z] info Token validated successfuly
+[2024-04-04T15:40:53.371Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:40:53.375Z] info Error detailPackage: SequelizeEagerLoadingError: cities is associated to packages using an alias. You've included an alias (information_destiny), but it does not match the alias(es) defined in your association (city).
+[2024-04-04T15:41:51.350Z] info server running on port 3000
+[2024-04-04T15:41:52.659Z] info Token validated successfuly
+[2024-04-04T15:41:52.659Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:41:52.664Z] info Error detailPackage: SequelizeEagerLoadingError: cities is associated to packages using an alias. You've included an alias (CityDestiny), but it does not match the alias(es) defined in your association (city).
+[2024-04-04T15:42:06.815Z] info server running on port 3000
+[2024-04-04T15:42:09.949Z] info Token validated successfuly
+[2024-04-04T15:42:09.950Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:42:09.954Z] info Error detailPackage: SequelizeEagerLoadingError: cities is associated to packages using an alias. You've included an alias (fk_id_city_destiny_p), but it does not match the alias(es) defined in your association (city).
+[2024-04-04T15:42:22.623Z] info server running on port 3000
+[2024-04-04T15:42:41.448Z] info Token validated successfuly
+[2024-04-04T15:42:41.449Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:42:41.494Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:42:59.200Z] info server running on port 3000
+[2024-04-04T15:42:59.729Z] info Token validated successfuly
+[2024-04-04T15:42:59.730Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:42:59.733Z] info Error detailPackage: SequelizeEagerLoadingError: carriers is associated to packages using an alias. You've included an alias (carrierInfo), but it does not match the alias(es) defined in your association (carrier).
+[2024-04-04T15:43:34.225Z] info server running on port 3000
+[2024-04-04T15:44:41.232Z] info server running on port 3000
+[2024-04-04T15:44:54.588Z] info server running on port 3000
+[2024-04-04T15:44:56.303Z] info Token validated successfuly
+[2024-04-04T15:44:56.304Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:44:56.352Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:45:23.636Z] info enter the endpoint login
+[2024-04-04T15:45:23.644Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-04T15:45:32.370Z] info Token validated successfuly
+[2024-04-04T15:45:32.370Z] info enter the endpoint master
+[2024-04-04T15:45:32.377Z] info Error Master: SequelizeEagerLoadingError: cities is associated to packages using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+[2024-04-04T15:45:44.979Z] info Token validated successfuly
+[2024-04-04T15:45:44.979Z] info enter the endpoint master
+[2024-04-04T15:45:44.984Z] info Error Master: SequelizeEagerLoadingError: cities is associated to packages using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+[2024-04-04T15:46:23.816Z] info server running on port 3000
+[2024-04-04T15:46:25.258Z] info Token validated successfuly
+[2024-04-04T15:46:25.258Z] info enter the endpoint master
+[2024-04-04T15:46:25.308Z] info Error Master: TypeError: Cannot read properties of undefined (reading 'department')
+[2024-04-04T15:46:46.252Z] info server running on port 3000
+[2024-04-04T15:46:46.276Z] info Token validated successfuly
+[2024-04-04T15:46:46.277Z] info enter the endpoint master
+[2024-04-04T15:46:46.322Z] info Error Master: TypeError: Cannot read properties of undefined (reading 'department')
+[2024-04-04T15:46:51.296Z] info server running on port 3000
+[2024-04-04T15:46:54.462Z] info server running on port 3000
+[2024-04-04T15:46:56.690Z] info server running on port 3000
+[2024-04-04T15:46:57.011Z] info Token validated successfuly
+[2024-04-04T15:46:57.011Z] info enter the endpoint master
+[2024-04-04T15:46:57.058Z] info Master successfuly
+[2024-04-04T15:47:01.663Z] info Token validated successfuly
+[2024-04-04T15:47:01.663Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:47:01.673Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:47:37.577Z] info server running on port 3000
+[2024-04-04T15:47:38.049Z] info Token validated successfuly
+[2024-04-04T15:47:38.050Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:47:38.096Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:47:44.635Z] info Token validated successfuly
+[2024-04-04T15:47:44.636Z] info enter the endpoint master
+[2024-04-04T15:47:44.645Z] info Master successfuly
+[2024-04-04T15:48:33.724Z] info Token validated successfuly
+[2024-04-04T15:48:33.724Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:48:33.737Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:49:13.901Z] info Token validated successfuly
+[2024-04-04T15:49:13.902Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:49:13.911Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:49:23.499Z] info Token validated successfuly
+[2024-04-04T15:49:23.500Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:49:23.510Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:50:38.077Z] info Token validated successfuly
+[2024-04-04T15:50:38.078Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:50:38.088Z] info detailPackage Dropshipper successfuly
+[2024-04-04T15:51:48.941Z] info server running on port 3000
+[2024-04-04T15:51:56.805Z] info enter the endpoint login dropshipper
+[2024-04-04T15:51:56.829Z] info Error Login: SequelizeConnectionRefusedError
+[2024-04-04T15:52:00.426Z] info enter the endpoint login dropshipper
+[2024-04-04T15:52:00.429Z] info Error Login: SequelizeConnectionRefusedError
+[2024-04-04T15:52:09.367Z] info enter the endpoint login dropshipper
+[2024-04-04T15:52:09.438Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-04T15:52:20.627Z] info Token validated successfuly
+[2024-04-04T15:52:20.628Z] info enter the endpoint detailPackage dropshipper
+[2024-04-04T15:52:20.723Z] info detailPackage Dropshipper successfuly
