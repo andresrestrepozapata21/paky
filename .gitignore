@@ -5,3 +5,5 @@ documents_vehicle_carrier/**
 !.gitkeep
 evidences_packages/**
 !.gitkeep
+database/**
+!.gitkeep
