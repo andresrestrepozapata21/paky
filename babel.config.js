@@ -1,6 +1,6 @@
-// Defined const presets babel preset-env
-const presets = [
-    ['@babel/preset-env']
-];
-
-export default presets;
+// babel.config.js
+module.exports = {
+    presets: [
+      ['@babel/preset-env']
+    ],
+  };

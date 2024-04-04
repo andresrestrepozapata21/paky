@@ -1,57 +1,46 @@
-import { DataTypes } from "sequelize";
-import { sequelize } from "../database/database.js";
-// I define the model for the users table in a variable
-export const Product = sequelize.define('product', {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Product = void 0;
+var _sequelize = require("sequelize");
+var _database = require("../database/database.js");
+var _dropshippersModel = require("./dropshippers.model.js");
+// I imported the Sequelize module and my custom sequelize module with the configuration and connection to the DB
+
+// I define the model for the users table in a variable and export him
+var Product = exports.Product = _database.sequelize.define('products', {
   id_product: {
-    type: DataTypes.INTEGER,
+    type: _sequelize.DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true
   },
-  name_producto: {
-    type: DataTypes.STRING
+  name_product: {
+    type: _sequelize.DataTypes.STRING
   },
-  description_producto: {
-    type: DataTypes.STRING
+  description_product: {
+    type: _sequelize.DataTypes.STRING
   },
-  importance_producto: {
-    type: DataTypes.INTEGER
+  price_sale_product: {
+    type: _sequelize.DataTypes.INTEGER
   },
-  price_producto: {
-    type: DataTypes.INTEGER
+  price_cost_product: {
+    type: _sequelize.DataTypes.INTEGER
   },
-  high_producto: {
-    type: DataTypes.INTEGER
-  },
-  broad_number_producto: {
-    type: DataTypes.INTEGER
-  },
-  long_number_producto: {
-    type: DataTypes.INTEGER
-  },
-  date_created_producto: {
-    type: DataTypes.DATE
-  },
-  fk_id_dropshipper_producto: {
-    type: DataTypes.INTEGER
-  },
-  fk_id_store_producto: {
-    type: DataTypes.INTEGER
-  },
-  fk_id_package_order_producto: {
-    type: DataTypes.INTEGER
+  size_product: {
+    type: _sequelize.DataTypes.STRING
   }
 }, {
   TimesTamps: true
 });
 
-/*
-Project.hasMany(Task, {
-    foreignKey: 'projectId',
-    sourceKey: 'id'
+//=================== I define the relationship between the tables =================
+_dropshippersModel.Dropshipper.hasMany(Product, {
+  foreignKey: 'fk_id_dropshipper_product',
+  sourceKey: 'id_dropshipper'
 });
-
-Task.belongsTo(Project, {
-    foreignKey: 'projectId',
-    targetId: 'id'
+Product.belongsTo(_dropshippersModel.Dropshipper, {
+  foreignKey: 'fk_id_dropshipper_product',
+  targetId: 'id_dropshipper'
 });
-*/
