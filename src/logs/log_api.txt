@@ -2241,3 +2241,12 @@ sql: SELECT `status_history`.`id_sh`, `status_history`.`status_sh`, `status_hist
 [2024-04-04T18:51:38.507Z] info server running on port 3000
 [2024-04-04T19:13:42.536Z] info server running on port 3000
 [2024-04-04T19:44:24.983Z] info server running on port 3000
+[2024-04-04T20:06:05.590Z] info server running on port 3000
+[2024-04-04T20:06:10.160Z] info enter the endpoint get departments
+[2024-04-04T20:06:10.191Z] info Get departments successfully
+[2024-04-04T20:29:36.997Z] info server running on port 3000
+[2024-04-04T20:29:38.913Z] info enter the endpoint get departments
+[2024-04-04T20:29:38.943Z] info Get departments successfully
+[2024-04-04T20:29:50.148Z] info server running on port 3000
+[2024-04-04T20:29:51.839Z] info enter the endpoint get departments
+[2024-04-04T20:29:51.868Z] info Get departments successfully
