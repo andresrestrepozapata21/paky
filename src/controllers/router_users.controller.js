@@ -104,7 +104,8 @@ export async function getCityPackages(req, res) {
                 status_p: {
                     [Sequelize.Op.notIn]: [6]
                 },
-                fk_id_tp_p: 1
+                fk_id_tp_p: 1,
+                confirmation_dropshipper_p: 1
             },
             attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt']
         });
@@ -326,7 +327,8 @@ export async function getDetailAsignate(req, res) {
                 status_p: {
                     [Sequelize.Op.notIn]: [3, 5, 6, 7]
                 },
-                fk_id_tp_p: 1
+                fk_id_tp_p: 1,
+                confirmation_dropshipper_p: 1
             },
             attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p']
         });
@@ -412,7 +414,8 @@ export async function getInterCityPackages(req, res) {
                 status_p: {
                     [Sequelize.Op.notIn]: [6]
                 },
-                fk_id_tp_p: 2
+                fk_id_tp_p: 2,
+                confirmation_dropshipper_p: 1
             },
             attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt']
         });
@@ -556,7 +559,8 @@ export async function getDetailAsignateInter(req, res) {
                 status_p: {
                     [Sequelize.Op.notIn]: [3, 5, 6, 7]
                 },
-                fk_id_tp_p: 2
+                fk_id_tp_p: 2,
+                confirmation_dropshipper_p: 1
             },
             attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p']
         });

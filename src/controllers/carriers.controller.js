@@ -379,7 +379,7 @@ export async function login(req, res) {
             // logger control proccess
             logger.info('Incorrect credentials or non-existent credenciales');
             // The credentials are incorrect
-            res.status(401).json({ message: 'Incorrect credentials or non-existent credenciales' });
+            res.status(401).json({ message: 'Incorrect credentials or non-existent credenciales', result: 0 });
         }
     } catch (e) {
         // logger control proccess
@@ -1067,7 +1067,7 @@ export async function deliverPackage(req, res) {
                 }
             ]
         });
-        let data_p, data_e, data_g, newHistory, newPortfolioDropshipper ; // Declare data_p at a higher scope
+        let data_p, data_e, data_g, newHistory, newPortfolioDropshipper; // Declare data_p at a higher scope
         const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
         const id_carrier_asignate = data_package.fk_id_carrier_p;
         // I capture the variables i need.
