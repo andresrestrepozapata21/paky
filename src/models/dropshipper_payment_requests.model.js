@@ -12,13 +12,13 @@ export const Dropshipper_payment_request = sequelize.define('dropshipper_payment
     quantity_requested_dpr: {
         type: DataTypes.INTEGER
     },
-    status_cpr: {
-        type:DataTypes.STRING
+    status_dpr: {
+        type: DataTypes.STRING
     },
-    date_created_cba: {
-        type: DataTypes.DATE
+    verification_pin_request: {
+        type: DataTypes.INTEGER
     }
-},{
+}, {
     TimesTamps: true
 });
 //=================== I define the relationship between the tables =================

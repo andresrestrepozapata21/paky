@@ -20,9 +20,6 @@ export const Dropshipper_bank_account = sequelize.define('Dropshipper_bank_accou
     },
     description_dba: {
         type:DataTypes.STRING
-    },
-    date_created_dba: {
-        type: DataTypes.DATE
     }
 },{
     TimesTamps: true

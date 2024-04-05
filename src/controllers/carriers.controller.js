@@ -19,6 +19,7 @@ import { Department } from "../models/departments.model.js";
 import { Status_history } from "../models/status_history.model.js";
 import { Carrier_payment_request } from "../models/carrier_payment_requests.model.js";
 import { Dropshipper } from "../models/dropshippers.model.js";
+import { Portfolios_history_dropshipper } from "../models/portfolio_history_dropshipper.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -1052,9 +1053,21 @@ export async function deliverPackage(req, res) {
             where: {
                 id_p
             },
-            attributes: ['id_p', 'status_p', 'fk_id_tp_p', 'confirmation_carrier_p', 'fk_id_carrier_p', 'profit_carrier_p', 'profit_carrier_inter_city_p', 'profit_dropshipper_p', 'with_collection_p', 'fk_id_store_p', 'total_price_p']
+            attributes: ['id_p', 'status_p', 'fk_id_tp_p', 'confirmation_carrier_p', 'fk_id_carrier_p', 'profit_carrier_p', 'profit_carrier_inter_city_p', 'profit_dropshipper_p', 'with_collection_p', 'fk_id_store_p', 'total_price_p'],
+            include: [
+                {
+                    model: Store,
+                    attributes: ['id_store', 'direction_store'],
+                    include: [
+                        {
+                            model: Dropshipper,
+                            attributes: ['id_dropshipper']
+                        }
+                    ]
+                }
+            ]
         });
-        let data_p, data_e, data_g, newHistory; // Declare data_p at a higher scope
+        let data_p, data_e, data_g, newHistory, newPortfolioDropshipper ; // Declare data_p at a higher scope
         const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
         const id_carrier_asignate = data_package.fk_id_carrier_p;
         // I capture the variables i need.
@@ -1064,6 +1077,7 @@ export async function deliverPackage(req, res) {
         let with_collection_p = data_package.with_collection_p;
         let fk_id_store_p = data_package.fk_id_store_p;
         let total_price_p = data_package.total_price_p;
+        let id_dropshipper = data_package.store.dropshipper.id_dropshipper;
         // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal 
         // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a bodega central
         if (type_send == 1) {
@@ -1096,6 +1110,13 @@ export async function deliverPackage(req, res) {
                         evidence_sh: "evidences_packages/" + req.files[0].filename,
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
+                    });
+                    // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
+                    newPortfolioDropshipper = await Portfolios_history_dropshipper.create({
+                        type_phd: "ENTRADA",
+                        monto_phd: total_price_p,
+                        description_phd: "Venta producto se entrega precio total",
+                        fk_id_dropshipper_phd: id_dropshipper,
                     });
                     // logger control proccess
                     logger.info('Entregado al cliente');
@@ -1152,6 +1173,13 @@ export async function deliverPackage(req, res) {
                         evidence_sh: "evidences_packages/" + req.files[0].filename,
                         fk_id_carrier_asignated_sh: id_carrier_asignate,
                         fk_id_p_sh: id_p,
+                    });
+                    // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
+                    newPortfolioDropshipper = await Portfolios_history_dropshipper.create({
+                        type_phd: "ENTRADA",
+                        monto_phd: total_price_p,
+                        description_phd: "Venta producto se entrega precio total",
+                        fk_id_dropshipper_phd: id_dropshipper,
                     });
                     // logger control proccess
                     logger.info('Entregado al cliente');

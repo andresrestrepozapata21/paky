@@ -3,7 +3,7 @@ import { Router } from 'express';
 import jwt from "jsonwebtoken";
 import logger from '../utils/logger.js';
 // I import my controller with the methods I need
-import { getpackages, login, master, filterByDate, downloadExcelpackagesDate, corfirmatePackage, detailPackage, deletePackage, editPackage } from '../controllers/dropshipper.controller.js';
+import { getpackages, login, master, filterByDate, downloadExcelpackagesDate, corfirmatePackage, detailPackage, deletePackage, editPackage, addBankAccount, getBankAccount, deleteBankAccount, addPaymentRequest, validateVerificationPin, getPortfolio, downloadExcelPortfolio } from '../controllers/dropshipper.controller.js';
 // Firme private secret jwt
 const secret = process.env.SECRET;
 // I declare the constant that the Router() method returns and upload multer directory
@@ -233,5 +233,194 @@ router.delete('/dropshipper/deletePackage', async (req, res, next) => {
         return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, deletePackage);
+/**
+ * @api {POST} /dropshipper/addBankAccount
+ * @apiName paky
+ * @apiGroup addBankAccount
+ * @apiDescription dropshipper addBankAccount
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/dropshipper/addBankAccount', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, addBankAccount);
+/**
+ * @api {POST} /dropshipper/getBankAccount
+ * @apiName paky
+ * @apiGroup getBankAccount
+ * @apiDescription dropshipper getBankAccount
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/dropshipper/getBankAccount', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, getBankAccount);
+/**
+ * @api {POST} /dropshipper/deleteBankAccount
+ * @apiName paky
+ * @apiGroup deleteBankAccount
+ * @apiDescription dropshipper deleteBankAccount
+ *
+ * @apiSuccess message and get data needed
+ */
+router.delete('/dropshipper/deleteBankAccount', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, deleteBankAccount);
+/**
+ * @api {POST} /dropshipper/addPaymentRequest
+ * @apiName paky
+ * @apiGroup addPaymentRequest
+ * @apiDescription dropshipper addPaymentRequest
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/dropshipper/addPaymentRequest', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, addPaymentRequest);
+/**
+ * @api {POST} /dropshipper/validateVerificationPin
+ * @apiName paky
+ * @apiGroup validateVerificationPin
+ * @apiDescription dropshipper validateVerificationPin
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/dropshipper/validateVerificationPin', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, validateVerificationPin);
+/**
+ * @api {POST} /dropshipper/getPortfolio
+ * @apiName paky
+ * @apiGroup getPortfolio
+ * @apiDescription dropshipper getPortfolio
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/dropshipper/getPortfolio', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, getPortfolio);
+/**
+ * @api {POST} /dropshipper/downloadExcelPortfolio
+ * @apiName paky
+ * @apiGroup downloadExcelPortfolio
+ * @apiDescription dropshipper downloadExcelPortfolio
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/dropshipper/downloadExcelPortfolio', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, downloadExcelPortfolio);
 // I export the router
 export default router;

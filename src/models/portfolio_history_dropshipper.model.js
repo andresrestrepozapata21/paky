@@ -17,9 +17,6 @@ export const Portfolios_history_dropshipper = sequelize.define('portfolios_histo
     },
     description_phd: {
         type:DataTypes.STRING
-    },
-    date_created_phd: {
-        type: DataTypes.DATE
     }
 },{
     TimesTamps: true
