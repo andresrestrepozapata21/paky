@@ -3453,3 +3453,26 @@ sql: SELECT `id_phd`, `type_phd`, `monto_phd`, `description_phd`, `date_created_
 [2024-04-05T22:17:59.412Z] info Token validated successfuly
 [2024-04-05T22:17:59.412Z] info Enter the endpoint get carriers
 [2024-04-05T22:17:59.416Z] info Get carriers successfuly
+[2024-04-06T13:21:36.669Z] info server running on port 3000
+[2024-04-06T13:21:43.740Z] info enter the endpoint login
+[2024-04-06T13:21:43.774Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-06T13:22:56.858Z] info Token validated successfuly
+[2024-04-06T13:22:56.859Z] info enter the endpoint master
+[2024-04-06T13:22:56.874Z] info Master successfuly
+[2024-04-06T13:35:26.295Z] info Token validated successfuly
+[2024-04-06T13:35:26.296Z] info enter the endpoint master
+[2024-04-06T13:35:26.304Z] info Master successfuly
+[2024-04-06T13:37:20.765Z] info server running on port 3000
+[2024-04-06T13:37:23.578Z] info Token validated successfuly
+[2024-04-06T13:37:23.579Z] info enter the endpoint master
+[2024-04-06T13:37:23.618Z] info Master successfuly
+[2024-04-06T13:37:29.380Z] info enter the endpoint login
+[2024-04-06T13:37:29.385Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-06T13:37:37.439Z] info Token validated successfuly
+[2024-04-06T13:37:37.439Z] info enter the endpoint master
+[2024-04-06T13:37:37.447Z] info Master successfuly
+[2024-04-06T13:39:47.496Z] info enter the endpoint register carrier bank account
+[2024-04-06T13:39:47.511Z] info Carrier bank account registed successfully
+[2024-04-06T13:45:56.780Z] info Token validated successfuly
+[2024-04-06T13:45:56.780Z] info enter the endpoint master
+[2024-04-06T13:45:56.789Z] info Master successfuly
