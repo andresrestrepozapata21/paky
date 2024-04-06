@@ -1,10 +1,10 @@
 node_modules
-dist
+src/databse
+src/database/**
+!.gitkeep
 documents_carrier/**
 !.gitkeep
 documents_vehicle_carrier/**
 !.gitkeep
 evidences_packages/**
-!.gitkeep
-database/**
 !.gitkeep
