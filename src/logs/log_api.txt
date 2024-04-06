@@ -3476,3 +3476,67 @@ sql: SELECT `id_phd`, `type_phd`, `monto_phd`, `description_phd`, `date_created_
 [2024-04-06T13:45:56.780Z] info Token validated successfuly
 [2024-04-06T13:45:56.780Z] info enter the endpoint master
 [2024-04-06T13:45:56.789Z] info Master successfuly
+[2024-04-06T14:29:28.059Z] info server running on port 3000
+[2024-04-06T14:30:58.303Z] info server running on port 3000
+[2024-04-06T14:31:00.953Z] info enter the endpoint login admin
+[2024-04-06T14:31:00.954Z] info Error Login: ReferenceError: Carrier is not defined
+[2024-04-06T14:31:18.913Z] info server running on port 3000
+[2024-04-06T14:31:24.936Z] info server running on port 3000
+[2024-04-06T14:31:25.771Z] info enter the endpoint login manager
+[2024-04-06T14:31:25.797Z] info Error Login: SequelizeDatabaseError: (conn=107, no: 1054, SQLState: 42S22) Unknown column 'status_manager' in 'field list'
+sql: SELECT `id_manager`, `name_manager`, `email_manager`, `status_manager`, `last_login_manager` FROM `managers` AS `managers` WHERE `managers`.`email_manager` = 'correo1@gmail.com' AND `managers`.`password_manager` = '12345'; - parameters:[]
+[2024-04-06T14:31:38.631Z] info server running on port 3000
+[2024-04-06T14:31:39.736Z] info enter the endpoint login manager
+[2024-04-06T14:31:39.763Z] info Incorrect credentials or non-existent credenciales
+[2024-04-06T14:31:49.899Z] info enter the endpoint login manager
+[2024-04-06T14:31:49.904Z] info User Disabled
+[2024-04-06T14:31:58.679Z] info server running on port 3000
+[2024-04-06T14:32:43.507Z] info server running on port 3000
+[2024-04-06T14:32:47.354Z] info server running on port 3000
+[2024-04-06T14:32:49.001Z] info enter the endpoint login manager
+[2024-04-06T14:32:49.034Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-06T21:12:58.721Z] info server running on port 3000
+[2024-04-06T21:13:31.350Z] info enter the endpoint login manager
+[2024-04-06T21:13:31.416Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-06T21:13:38.850Z] info enter the endpoint login manager
+[2024-04-06T21:13:56.626Z] info server running on port 3000
+[2024-04-06T21:18:54.892Z] info server running on port 3000
+[2024-04-06T21:19:03.800Z] info server running on port 3000
+[2024-04-06T21:19:49.179Z] info server running on port 3000
+[2024-04-06T21:20:40.235Z] info server running on port 3000
+[2024-04-06T21:21:20.729Z] info server running on port 3000
+[2024-04-06T21:21:58.506Z] info server running on port 3000
+[2024-04-06T21:23:45.288Z] info server running on port 3000
+[2024-04-06T21:25:14.618Z] info server running on port 3000
+[2024-04-06T21:25:24.880Z] info server running on port 3000
+[2024-04-06T21:26:09.355Z] info server running on port 3000
+[2024-04-06T21:26:28.231Z] info server running on port 3000
+[2024-04-06T21:27:03.427Z] info enter the endpoint login
+[2024-04-06T21:27:03.457Z] info User Disabled
+[2024-04-06T21:27:16.344Z] info enter the endpoint login
+[2024-04-06T21:27:16.351Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-06T21:27:34.123Z] info Token validated successfuly
+[2024-04-06T21:27:34.124Z] info enter the endpoint master
+[2024-04-06T21:27:34.143Z] info Master successfuly
+[2024-04-06T21:30:16.299Z] info server running on port 3000
+[2024-04-06T21:31:35.639Z] info server running on port 3000
+[2024-04-06T21:32:54.250Z] info server running on port 3000
+[2024-04-06T21:33:03.788Z] info server running on port 3000
+[2024-04-06T21:33:37.437Z] info server running on port 3000
+[2024-04-06T21:33:38.993Z] info enter the endpoint login manager
+[2024-04-06T21:34:16.469Z] info server running on port 3000
+[2024-04-06T21:34:17.242Z] info enter the endpoint login manager
+[2024-04-06T21:34:46.630Z] info server running on port 3000
+[2024-04-06T21:34:50.327Z] info enter the endpoint master manager
+[2024-04-06T21:34:50.356Z] info Error Master: ReferenceError: City is not defined
+[2024-04-06T21:35:33.481Z] info server running on port 3000
+[2024-04-06T21:35:36.483Z] info enter the endpoint master manager
+[2024-04-06T21:35:36.517Z] info Error Master: SequelizeDatabaseError: (conn=53, no: 1054, SQLState: 42S22) Unknown column 'stores->packages.order_p' in 'field list'
+sql: SELECT `cities`.`id_city`, `cities`.`name_city`, `stores`.`id_store` AS `stores.id_store`, `stores`.`direction_store` AS `stores.direction_store`, `stores->packages`.`id_p` AS `stores.packages.id_p`, `stores->packages`.`order_p` AS `stores.packages.order_p... - parameters:[]
+[2024-04-06T21:36:06.189Z] info server running on port 3000
+[2024-04-06T21:36:06.228Z] info enter the endpoint master manager
+[2024-04-06T21:38:16.133Z] info server running on port 3000
+[2024-04-06T21:38:25.764Z] info server running on port 3000
+[2024-04-06T21:38:30.645Z] info enter the endpoint master manager
+[2024-04-06T21:38:30.707Z] info Master manager successfuly
+[2024-04-06T21:38:55.555Z] info server running on port 3000

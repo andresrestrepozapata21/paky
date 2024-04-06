@@ -9,6 +9,7 @@ import carriers from "./routes/carriers.route.js";
 import utils from "./routes/utils.route.js";
 import router_user from "./routes/router_users.route.js";
 import dropshipper from "./routes/dropshipper.router.js";
+import manager from "./routes/manager.route.js";
 /**
  * 
  * @apiDescription inicialization around variables
@@ -46,6 +47,6 @@ app.use(carriers);
 app.use(utils);
 app.use(router_user);
 app.use(dropshipper);
-
+app.use(manager);
 // I export my app variable
 export default app;

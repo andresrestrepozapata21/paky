@@ -9,6 +9,9 @@ export const Manager = sequelize.define('managers', {
         primaryKey: true,
         autoIncrement: true
     },
+    status_manager: {
+        type: DataTypes.INTEGER
+    },
     name_manager: {
         type: DataTypes.STRING
     },

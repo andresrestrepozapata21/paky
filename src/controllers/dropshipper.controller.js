@@ -131,7 +131,7 @@ export async function master(req, res) {
             ]
         });
         // I validate exist  infoDropshipper and infoStorePackage
-        if (infoDropshipper.length > 0 || infoStorePackage.length > 0) {
+        if (infoDropshipper.length > 0 && infoStorePackage.length > 0) {
             const total_stores_drop = infoStorePackage.length;
             let total_packages_drop = 0;
             // Process data for JSON response
