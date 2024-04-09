@@ -4,7 +4,7 @@ import multer from 'multer';
 import jwt from "jsonwebtoken";
 import logger from '../utils/logger.js';
 // I import my controller with the methods I need
-import { login, master, getCityPackages, getInterCityPackages, detailPackage, editPackage, deletePackage, getCarrierPeticions, getDetailCarrier, agreeCarrier, rejectCarrier, getCarriers, detailCarrierAndHistory, editCarrier, deleteCarrier, deleteHistory } from "../controllers/manager.controller.js";
+import { login, master, getCityPackages, getInterCityPackages, detailPackage, editPackage, deletePackage, getCarrierPeticions, getDetailCarrier, agreeCarrier, rejectCarrier, getCarriers, detailCarrierAndHistory, editCarrier, deleteCarrier, deleteHistory, getTypeCarrier, getTypePackage, getPaymentsRequestCarrier, detailPaymentRequestCarrier, toPayCarrier } from "../controllers/manager.controller.js";
 // Firme private secret jwt
 const secret = process.env.SECRET;
 // I declare the constant that the Router() method returns and upload multer directory
@@ -423,5 +423,140 @@ router.delete('/manager/deleteHistory', async (req, res, next) => {
         return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, deleteHistory);
+/**
+ * @api {POST} /manager/getTypeCarrier
+ * @apiName paky
+ * @apiGroup manager
+ * @apiDescription getTypeCarrier manager
+ *
+ * @apiSuccess message and data getTypeCarrier
+ */
+router.get('/manager/getTypeCarrier', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, getTypeCarrier);
+/**
+ * @api {POST} /manager/getTypePackage
+ * @apiName paky
+ * @apiGroup manager
+ * @apiDescription getTypePackage manager
+ *
+ * @apiSuccess message and data getTypePackage
+ */
+router.get('/manager/getTypePackage', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, getTypePackage);
+/**
+ * @api {POST} /manager/getPaymentsRequestCarrier
+ * @apiName paky
+ * @apiGroup manager
+ * @apiDescription getPaymentsRequestCarrier manager
+ *
+ * @apiSuccess message and data getPaymentsRequestCarrier
+ */
+router.get('/manager/getPaymentsRequestCarrier', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, getPaymentsRequestCarrier);
+/**
+ * @api {POST} /manager/detailPaymentRequestCarrier
+ * @apiName paky
+ * @apiGroup manager
+ * @apiDescription detailPaymentRequestCarrier manager
+ *
+ * @apiSuccess message and data detailPaymentRequestCarrier
+ */
+router.post('/manager/detailPaymentRequestCarrier', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, detailPaymentRequestCarrier);
+/**
+ * @api {POST} /manager/toPayCarrier
+ * @apiName paky
+ * @apiGroup toPayCarrier
+ * @apiDescription manager toPayCarrier
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/manager/toPayCarrier', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, toPayCarrier);
 // I export the router
 export default router;

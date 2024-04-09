@@ -28,6 +28,7 @@ import './models/dropshippers.model.js';
 import './models/dropshipper_bank_accounts.model.js';
 import './models/dropshipper_payment_requests.model.js';
 import './models/portfolio_history_dropshipper.model.js';
+import './models/portfolio_history_carrier.model.js'
 import './models/router_users.model.js'
 
 // Function main api rest

@@ -35,6 +35,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/documents_carrier', express.static(join(CURRENT_DIR, '../documents_carrier')));
 app.use('/documents_vehicle_carrier', express.static(join(CURRENT_DIR, '../documents_vehicle_carrier')));
+app.use('/evidences_packages', express.static(join(CURRENT_DIR, '../evidences_packages')));
 
 /**
  * @api /api

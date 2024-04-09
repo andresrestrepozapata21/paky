@@ -1,34 +1,34 @@
 // I imported the Sequelize module and my custom sequelize module with the configuration and connection to the DB
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-import { Carrier_bank_account } from "./carrier_bank_accounts.model.js";
+import { Carrier } from "./carriers.model.js";
 // I define the model for the users table in a variable and export him
-export const Carrier_payment_request = sequelize.define('carrier_payment_requests', {
-    id_cpr: {
+export const Portfolio_history_carrier = sequelize.define('portfolios_history_carriers', {
+    id_phc: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
-    quantity_requested_cpr: {
-        type: DataTypes.INTEGER
-    },
-    status_cpr: {
+    type_phc: {
         type:DataTypes.STRING
     },
-    date_created_cba: {
-        type: DataTypes.DATE
+    Quantity_pay_phc: {
+        type: DataTypes.INTEGER
+    },
+    description_phc: {
+        type:DataTypes.STRING
     }
 },{
     TimesTamps: true
 });
 //=================== I define the relationship between the tables =================
 
-Carrier_bank_account.hasMany(Carrier_payment_request, {
-    foreignKey: 'fk_id_cba_cpr',
-    sourceKey: 'id_cba'
+//relation with evidence
+Carrier.hasMany(Portfolio_history_carrier, {
+    foreignKey: 'fk_id_carrier_phc',
+    sourceKey: 'id_carrier'
 });
-
-Carrier_payment_request.belongsTo(Carrier_bank_account, {
-    foreignKey: 'fk_id_cba_cpr',
-    targetId: 'id_cba'
+Portfolio_history_carrier.belongsTo(Carrier, {
+    foreignKey: 'fk_id_carrier_phc',
+    targetId: 'id_carrier'
 });

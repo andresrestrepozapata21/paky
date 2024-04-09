@@ -19,7 +19,10 @@ import { Status_history } from "../models/status_history.model.js";
 import { Type_carrier } from "../models/types_carrier.model.js";
 import { Carrier_document } from "../models/carrier_documents.model.js";
 import { Vehicle } from "../models/vehicles.model.js";
-import { Vehicle_document } from "../models/vehicle_documents.model.js"
+import { Vehicle_document } from "../models/vehicle_documents.model.js";
+import { Carrier_payment_request } from "../models/carrier_payment_requests.model.js";
+import { Carrier_bank_account } from "../models/carrier_bank_accounts.model.js";
+import { Portfolio_history_carrier } from '../models/portfolio_history_carrier.model.js'
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -194,26 +197,14 @@ export async function getCityPackages(req, res) {
                 }
             ]
         });
-        // I validate exist getCityPackages
-        if (getCityPackages.length > 0) {
-
-            // logger control proccess
-            logger.info('GetCitypackages successfuly');
-            // Json reponse setting
-            res.json({
-                message: 'GetCitypackages successfuly',
-                result: 1,
-                data: getCityPackages
-            });
-        } else {
-            // logger control proccess
-            logger.info('Not found GetCitypackages');
-            // Json reponse setting non existing packages
-            res.status(401).json({
-                message: 'Not found GetCitypackages',
-                result: 1
-            });
-        }
+        // logger control proccess
+        logger.info('GetCitypackages successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'GetCitypackages successfuly',
+            result: 1,
+            data: getCityPackages
+        });
     } catch (e) {
         // logger control proccess
         logger.info('Error GetCitypackages: ' + e);
@@ -244,26 +235,14 @@ export async function getInterCityPackages(req, res) {
                 }
             ]
         });
-        // I validate exist getCityPackages
-        if (getCityPackages.length > 0) {
-
-            // logger control proccess
-            logger.info('GetCitypackages successfuly');
-            // Json reponse setting
-            res.json({
-                message: 'GetCitypackages successfuly',
-                result: 1,
-                data: getCityPackages
-            });
-        } else {
-            // logger control proccess
-            logger.info('Not found GetCitypackages');
-            // Json reponse setting non existing packages
-            res.status(401).json({
-                message: 'Not found GetCitypackages',
-                result: 1
-            });
-        }
+        // logger control proccess
+        logger.info('GetCitypackages successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'GetCitypackages successfuly',
+            result: 1,
+            data: getCityPackages
+        });
     } catch (e) {
         // logger control proccess
         logger.info('Error GetCitypackages: ' + e);
@@ -505,26 +484,14 @@ export async function getCarrierPeticions(req, res) {
                 }
             ]
         });
-        // I validate exist getCarrierPeticions
-        if (getCarrierPeticions.length > 0) {
-
-            // logger control proccess
-            logger.info('getCarrierPeticions successfuly');
-            // Json reponse setting
-            res.json({
-                message: 'getCarrierPeticions successfuly',
-                result: 1,
-                data: getCarrierPeticions
-            });
-        } else {
-            // logger control proccess
-            logger.info('Not found getCarrierPeticions');
-            // Json reponse setting non existing packages
-            res.status(401).json({
-                message: 'Not found getCarrierPeticions',
-                result: 1
-            });
-        }
+        // logger control proccess
+        logger.info('getCarrierPeticions successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'getCarrierPeticions successfuly',
+            result: 1,
+            data: getCarrierPeticions
+        });
     } catch (e) {
         // logger control proccess
         logger.info('Error getCarrierPeticions: ' + e);
@@ -959,6 +926,281 @@ export async function deleteHistory(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error delete history: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get type Carriers
+export async function getTypeCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getTypeCarrier');
+    try {
+        // I find if exist package
+        const getTypeCarrier = await Type_carrier.findAll({
+            attributes: ['id_tc', 'description_tc']
+        });
+        // I validate exist getTypeCarrier
+        if (getTypeCarrier.length > 0) {
+            // logger control proccess
+            logger.info('getTypeCarrier successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getTypeCarrier successfuly',
+                result: 1,
+                data: getTypeCarrier
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getTypeCarrier');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found getTypeCarrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getTypeCarrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get typer package
+export async function getTypePackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getTypePackage');
+    try {
+        // I find if exist package
+        const getTypePackage = await Type_package.findAll({
+            attributes: ['id_tp', 'description_tp']
+        });
+        // I validate exist getTypePackage
+        if (getTypePackage.length > 0) {
+            // logger control proccess
+            logger.info('getTypePackage successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getTypePackage successfuly',
+                result: 1,
+                data: getTypePackage
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getTypePackage');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found getTypePackage',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getTypePackage: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get payments request carrier
+export async function getPaymentsRequestCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getPaymentsRequestCarrier');
+    try {
+        // I find if exist package
+        // 1. payment made 2. Pending
+        const getPaymentsRequestCarrier = await Carrier_payment_request.findAll({
+            where: {
+                status_cpr: 2
+            },
+            attributes: ['id_cpr', 'quantity_requested_cpr', 'status_cpr', 'createdAt', 'fk_id_cba_cpr'],
+            include: [
+                {
+                    model: Carrier_bank_account,
+                    include: [
+                        {
+                            model: Carrier,
+                            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier']
+                        }
+                    ]
+                }
+            ]
+        });
+        // logger control proccess
+        logger.info('getPaymentsRequestCarrier successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'getPaymentsRequestCarrier successfuly',
+            result: 1,
+            data: getPaymentsRequestCarrier
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getPaymentsRequestCarrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get payments request carrier
+export async function detailPaymentRequestCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getPaymentsRequestCarrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_cpr } = req.body;
+        // I validate req correct json
+        if (!id_cpr) return res.sendStatus(400);
+        // I find if exist package
+        const getPaymentsRequestCarrier = await Carrier_payment_request.findAll({
+            where: {
+                id_cpr
+            },
+            attributes: ['id_cpr', 'quantity_requested_cpr', 'status_cpr', 'createdAt', 'fk_id_cba_cpr'],
+            include: [
+                {
+                    model: Carrier_bank_account,
+                    include: [
+                        {
+                            model: Carrier,
+                            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier']
+                        }
+                    ]
+                }
+            ]
+        });
+        const id_carrier = getPaymentsRequestCarrier[0].carrier_bank_account.carrier.id_carrier;
+        // I find carrier
+        const getHistory = await Status_history.findAll({
+            where: {
+                fk_id_carrier_asignated_sh: id_carrier
+            },
+            attributes: ['id_sh', 'status_sh', 'comentary_sh', 'evidence_sh', 'details_sh', 'fk_id_carrier_asignated_sh', 'fk_id_p_sh'],
+            include: [
+                {
+                    model: Package,
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p']
+                },
+            ]
+        });
+        // logger control proccess
+        logger.info('getPaymentsRequestCarrier successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'getPaymentsRequestCarrier successfuly',
+            result: 1,
+            data: getPaymentsRequestCarrier,
+            data_history: getHistory
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getPaymentsRequestCarrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method to pay carrier
+export async function toPayCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint to pay carrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_cpr } = req.body;
+        // I validate req correct json
+        if (!id_cpr) return res.sendStatus(400);
+        // I find if exist package by 
+        const getPaymentsRequestCarrier = await Carrier_payment_request.findOne({
+            where: {
+                id_cpr
+            },
+            attributes: ['id_cpr', 'quantity_requested_cpr', 'status_cpr', 'fk_id_cba_cpr'],
+            include: [
+                {
+                    model: Carrier_bank_account,
+                    attributes: ['fk_id_carrier_cba']
+                }
+            ]
+        });
+        // I validate exist getPaymentsRequestCarrier
+        if (getPaymentsRequestCarrier) {
+            // Capture id carrier
+            const id_carrier = getPaymentsRequestCarrier.carrier_bank_account.fk_id_carrier_cba;
+            const quantity_requested_cpr = getPaymentsRequestCarrier.quantity_requested_cpr;
+            // I find carrier
+            const getCarrier = await Carrier.findOne({
+                where: {
+                    id_carrier
+                },
+                attributes: ['id_carrier', 'revenue_carrier']
+            });
+            if (getCarrier.revenue_carrier >= quantity_requested_cpr) {
+                // Setting and save new revenue carrier
+                getCarrier.set({
+                    revenue_carrier: getCarrier.revenue_carrier - quantity_requested_cpr
+                });
+                getCarrier.save();
+                // Setting and save status cpr
+                // 1. payment made 2. Pending
+                getPaymentsRequestCarrier.set({
+                    status_cpr: 1
+                });
+                getPaymentsRequestCarrier.save();
+                const postPortfolioCarrier = Portfolio_history_carrier.create({
+                    type_phc: "Pago al transportista",
+                    Quantity_pay_phc: quantity_requested_cpr,
+                    description_phc: "Pago al transportista",
+                    fk_id_carrier_phc: id_carrier
+                })
+                // logger control proccess
+                logger.info('To pay carrier successfuly');
+                // The credentials are incorrect
+                res.json({
+                    message: 'To pay carrier successfuly',
+                    result: 1
+                });
+            } else {
+                // logger control proccess
+                logger.info('Quantity requested invalidated');
+                // The credentials are incorrect
+                res.status(401).json({
+                    message: 'Quantity requested invalidated',
+                    result: 0
+                });
+            }
+        } else {
+            // logger control proccess
+            logger.info('Not found carrier');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found carrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error To pay package: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',

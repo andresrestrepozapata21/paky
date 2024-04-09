@@ -3830,3 +3830,276 @@ sql: SELECT `status_history`.`id_sh`, `status_history`.`status_sh`, `status_hist
 [2024-04-09T15:13:01.579Z] info Token validated successfuly
 [2024-04-09T15:13:01.579Z] info enter the endpoint delete history
 [2024-04-09T15:13:01.615Z] info Not found history
+[2024-04-09T15:17:33.834Z] info server running on port 3000
+[2024-04-09T15:18:14.516Z] info Token validated successfuly
+[2024-04-09T15:18:14.517Z] info enter the endpoint getTypeCarrier
+[2024-04-09T15:18:14.552Z] info getTypeCarrier successfuly
+[2024-04-09T15:18:35.610Z] info server running on port 3000
+[2024-04-09T15:18:36.110Z] info Token validated successfuly
+[2024-04-09T15:18:36.110Z] info enter the endpoint getTypeCarrier
+[2024-04-09T15:18:36.138Z] info getTypeCarrier successfuly
+[2024-04-09T15:18:38.965Z] info server running on port 3000
+[2024-04-09T15:19:53.203Z] info server running on port 3000
+[2024-04-09T15:20:18.579Z] info server running on port 3000
+[2024-04-09T15:20:24.373Z] info server running on port 3000
+[2024-04-09T15:20:46.051Z] info Token validated successfuly
+[2024-04-09T15:20:46.051Z] info enter the endpoint getTypePackage
+[2024-04-09T15:20:46.079Z] info getTypePackage successfuly
+[2024-04-09T19:37:13.512Z] info server running on port 3000
+[2024-04-09T19:38:41.784Z] info server running on port 3000
+[2024-04-09T19:39:13.524Z] info server running on port 3000
+[2024-04-09T19:39:37.382Z] info server running on port 3000
+[2024-04-09T19:39:51.812Z] info server running on port 3000
+[2024-04-09T19:40:08.950Z] info server running on port 3000
+[2024-04-09T19:40:34.213Z] info server running on port 3000
+[2024-04-09T19:40:54.012Z] info server running on port 3000
+[2024-04-09T19:40:57.569Z] info server running on port 3000
+[2024-04-09T19:41:40.855Z] info server running on port 3000
+[2024-04-09T19:42:25.863Z] info enter the endpoint login manager
+[2024-04-09T19:42:25.936Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-09T19:42:35.182Z] info Token validated successfuly
+[2024-04-09T19:42:35.183Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T19:42:35.185Z] info Not found getPaymentsRequestCarrier
+[2024-04-09T19:43:16.596Z] info server running on port 3000
+[2024-04-09T19:43:16.787Z] info Token validated successfuly
+[2024-04-09T19:43:16.788Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T19:43:22.393Z] info server running on port 3000
+[2024-04-09T19:43:44.962Z] info server running on port 3000
+[2024-04-09T19:44:37.122Z] info Token validated successfuly
+[2024-04-09T19:44:37.123Z] info enter the endpoint register carrier payments request
+[2024-04-09T19:44:54.728Z] info Token validated successfuly
+[2024-04-09T19:44:54.728Z] info enter the endpoint register carrier payments request
+[2024-04-09T19:44:54.739Z] info Carrier payments request registed successfully
+[2024-04-09T19:45:05.228Z] info Token validated successfuly
+[2024-04-09T19:45:05.228Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T19:45:05.232Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T19:45:31.269Z] info Token validated successfuly
+[2024-04-09T19:45:31.269Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T19:45:31.273Z] info Not found getPaymentsRequestCarrier
+[2024-04-09T19:47:44.732Z] info enter the endpoint get types document
+[2024-04-09T19:47:44.737Z] info Get typeDocuments successfully
+[2024-04-09T19:48:02.486Z] info enter the endpoint get cities
+[2024-04-09T19:48:02.498Z] info Get cities successfully
+[2024-04-09T19:48:55.037Z] info Token validated successfuly
+[2024-04-09T19:48:55.037Z] info enter the endpoint on the way packages
+[2024-04-09T19:48:55.054Z] info On the way packages successfuly
+[2024-04-09T19:49:22.011Z] info Token validated successfuly
+[2024-04-09T19:49:22.012Z] info enter the endpoint asignated packages
+[2024-04-09T19:49:22.020Z] info Asignated packages successfuly
+[2024-04-09T19:49:44.503Z] info Token validated successfuly
+[2024-04-09T19:49:44.504Z] info enter the endpoint asignated packages
+[2024-04-09T19:49:44.510Z] info Asignated packages successfuly
+[2024-04-09T19:50:12.080Z] info Token validated successfuly
+[2024-04-09T19:50:12.080Z] info Enter the endpoint get products package
+[2024-04-09T19:50:12.094Z] info Get products package successfuly
+[2024-04-09T19:50:24.031Z] info Token validated successfuly
+[2024-04-09T19:50:24.032Z] info Enter the endpoint get carriers
+[2024-04-09T19:50:24.043Z] info Get carriers successfuly
+[2024-04-09T19:50:57.863Z] info Token validated successfuly
+[2024-04-09T19:50:57.863Z] info Enter the endpoint get carriers
+[2024-04-09T19:50:57.867Z] info Get carriers successfuly
+[2024-04-09T19:51:13.567Z] info Token validated successfuly
+[2024-04-09T19:51:13.567Z] info Enter the endpoint get packages carrier
+[2024-04-09T19:51:13.571Z] info Get packages carrier successfuly
+[2024-04-09T19:51:27.551Z] info Token validated successfuly
+[2024-04-09T19:51:27.552Z] info Enter the endpoint get inter_city packages
+[2024-04-09T19:51:27.557Z] info Get inter_city packages successfuly
+[2024-04-09T19:53:08.529Z] info Token validated successfuly
+[2024-04-09T19:53:08.530Z] info enter the endpoint register carrier payments request
+[2024-04-09T19:53:08.538Z] info Carrier payments request registed successfully
+[2024-04-09T19:54:07.367Z] info server running on port 3000
+[2024-04-09T19:58:04.112Z] info server running on port 3000
+[2024-04-09T19:58:23.993Z] info server running on port 3000
+[2024-04-09T19:58:25.666Z] info server running on port 3000
+[2024-04-09T19:58:27.284Z] info Token validated successfuly
+[2024-04-09T19:58:27.285Z] info enter the endpoint register carrier payments request
+[2024-04-09T19:58:27.327Z] info Carrier payments request registed successfully
+[2024-04-09T19:58:32.998Z] info Token validated successfuly
+[2024-04-09T19:58:32.999Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T19:58:33.004Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T19:58:54.377Z] info server running on port 3000
+[2024-04-09T19:58:54.561Z] info Token validated successfuly
+[2024-04-09T19:58:54.561Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T19:58:54.596Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T19:59:23.970Z] info Token validated successfuly
+[2024-04-09T19:59:23.970Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T19:59:23.976Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T20:00:11.065Z] info server running on port 3000
+[2024-04-09T20:00:15.468Z] info server running on port 3000
+[2024-04-09T20:00:55.559Z] info Token validated successfuly
+[2024-04-09T20:00:55.559Z] info enter the endpoint get city packages
+[2024-04-09T20:00:55.595Z] info getCarrierPeticions successfuly
+[2024-04-09T20:01:16.376Z] info server running on port 3000
+[2024-04-09T20:01:28.958Z] info server running on port 3000
+[2024-04-09T20:01:34.872Z] info server running on port 3000
+[2024-04-09T20:02:07.068Z] info server running on port 3000
+[2024-04-09T20:02:47.300Z] info server running on port 3000
+[2024-04-09T20:05:53.595Z] info Token validated successfuly
+[2024-04-09T20:05:53.595Z] info enter the endpoint get city packages
+[2024-04-09T20:05:53.629Z] info getCarrierPeticions successfuly
+[2024-04-09T20:06:14.992Z] info Token validated successfuly
+[2024-04-09T20:06:14.992Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T20:06:15.000Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T20:06:23.208Z] info Token validated successfuly
+[2024-04-09T20:06:23.208Z] info enter the endpoint get city packages
+[2024-04-09T20:06:23.211Z] info getCarrierPeticions successfuly
+[2024-04-09T20:07:56.007Z] info server running on port 3000
+[2024-04-09T20:09:22.930Z] info server running on port 3000
+[2024-04-09T20:11:04.941Z] info server running on port 3000
+[2024-04-09T20:11:08.969Z] info Token validated successfuly
+[2024-04-09T20:11:08.969Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T20:11:09.006Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T20:12:13.019Z] info Token validated successfuly
+[2024-04-09T20:12:13.020Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T20:12:13.026Z] info Error getPaymentsRequestCarrier: SequelizeDatabaseError: (conn=230, no: 1054, SQLState: 42S22) Unknown column 'carrier_payment_requests.id_cba' in 'field list'
+sql: SELECT `carrier_payment_requests`.`id_cba`, `carrier_payment_requests`.`quantity_requested_cpr`, `carrier_payment_requests`.`status_cpr`, `carrier_payment_requests`.`createdAt`, `carrier_payment_requests`.`fk_id_cba_cpr`, `carrier_bank_account`.`id_cba` AS... - parameters:[]
+[2024-04-09T20:12:24.431Z] info server running on port 3000
+[2024-04-09T20:12:26.730Z] info Token validated successfuly
+[2024-04-09T20:12:26.730Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T20:12:26.763Z] info Error getPaymentsRequestCarrier: SequelizeDatabaseError: (conn=232, no: 1054, SQLState: 42S22) Unknown column 'carrier_payment_requests.id_cba' in 'field list'
+sql: SELECT `carrier_payment_requests`.`id_cba`, `carrier_payment_requests`.`quantity_requested_cpr`, `carrier_payment_requests`.`status_cpr`, `carrier_payment_requests`.`createdAt`, `carrier_payment_requests`.`fk_id_cba_cpr`, `carrier_bank_account`.`id_cba` AS... - parameters:[]
+[2024-04-09T20:12:51.968Z] info Token validated successfuly
+[2024-04-09T20:12:51.969Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T20:12:56.046Z] info server running on port 3000
+[2024-04-09T20:12:57.327Z] info Token validated successfuly
+[2024-04-09T20:12:57.327Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T20:12:57.361Z] info Error getPaymentsRequestCarrier: SequelizeDatabaseError: (conn=234, no: 1054, SQLState: 42S22) Unknown column 'carrier_payment_requests.id_cba' in 'field list'
+sql: SELECT `carrier_payment_requests`.`id_cba`, `carrier_payment_requests`.`id_cpr`, `carrier_payment_requests`.`quantity_requested_cpr`, `carrier_payment_requests`.`status_cpr`, `carrier_payment_requests`.`createdAt`, `carrier_payment_requests`.`fk_id_cba_cpr... - parameters:[]
+[2024-04-09T20:13:08.521Z] info server running on port 3000
+[2024-04-09T20:13:10.905Z] info Token validated successfuly
+[2024-04-09T20:13:10.906Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T20:13:10.942Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T20:14:03.717Z] info server running on port 3000
+[2024-04-09T20:14:07.985Z] info server running on port 3000
+[2024-04-09T20:14:10.084Z] info Token validated successfuly
+[2024-04-09T20:14:10.084Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T20:14:10.120Z] info Error getPaymentsRequestCarrier: ReferenceError: id_carrier is not defined
+[2024-04-09T20:16:06.056Z] info server running on port 3000
+[2024-04-09T20:16:07.991Z] info Token validated successfuly
+[2024-04-09T20:16:07.991Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T20:16:08.035Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T21:23:05.547Z] info server running on port 3000
+[2024-04-09T21:23:14.944Z] info enter the endpoint login manager
+[2024-04-09T21:23:14.981Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-09T21:23:24.195Z] info Token validated successfuly
+[2024-04-09T21:23:24.196Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T21:23:24.234Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T21:24:25.898Z] info server running on port 3000
+[2024-04-09T21:24:57.807Z] info server running on port 3000
+[2024-04-09T21:24:59.438Z] info Token validated successfuly
+[2024-04-09T21:24:59.439Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T21:24:59.486Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T21:25:29.063Z] info server running on port 3000
+[2024-04-09T21:25:33.578Z] info server running on port 3000
+[2024-04-09T21:25:33.909Z] info Token validated successfuly
+[2024-04-09T21:25:33.909Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T21:25:33.956Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T21:26:15.822Z] info server running on port 3000
+[2024-04-09T21:26:16.847Z] info Token validated successfuly
+[2024-04-09T21:26:16.847Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T21:26:16.888Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T21:31:06.880Z] info server running on port 3000
+[2024-04-09T21:33:13.162Z] info server running on port 3000
+[2024-04-09T21:33:17.708Z] info server running on port 3000
+[2024-04-09T21:34:52.807Z] info server running on port 3000
+[2024-04-09T21:35:15.138Z] info server running on port 3000
+[2024-04-09T21:38:27.383Z] info server running on port 3000
+[2024-04-09T21:39:23.471Z] info server running on port 3000
+[2024-04-09T21:40:11.547Z] info server running on port 3000
+[2024-04-09T21:40:34.432Z] info server running on port 3000
+[2024-04-09T21:40:49.217Z] info server running on port 3000
+[2024-04-09T21:41:25.158Z] info server running on port 3000
+[2024-04-09T21:42:45.748Z] info server running on port 3000
+[2024-04-09T21:43:28.357Z] info server running on port 3000
+[2024-04-09T21:43:38.970Z] info server running on port 3000
+[2024-04-09T21:47:50.950Z] info server running on port 3000
+[2024-04-09T21:48:07.563Z] info server running on port 3000
+[2024-04-09T21:48:37.653Z] info server running on port 3000
+[2024-04-09T21:49:08.715Z] info server running on port 3000
+[2024-04-09T21:49:33.630Z] info server running on port 3000
+[2024-04-09T21:49:44.358Z] info server running on port 3000
+[2024-04-09T21:50:34.369Z] info server running on port 3000
+[2024-04-09T21:50:44.282Z] info server running on port 3000
+[2024-04-09T21:51:04.560Z] info Token validated successfuly
+[2024-04-09T21:51:04.561Z] info enter the endpoint to pay carrier
+[2024-04-09T21:51:04.594Z] info Error To pay package: SequelizeDatabaseError: (conn=51, no: 1054, SQLState: 42S22) Unknown column 'carrier_bank_account.fk_id_carrier_cba ' in 'field list'
+sql: SELECT `carrier_payment_requests`.`id_cpr`, `carrier_payment_requests`.`quantity_requested_cpr`, `carrier_payment_requests`.`status_cpr`, `carrier_payment_requests`.`fk_id_cba_cpr`, `carrier_bank_account`.`id_cba` AS `carrier_bank_account.id_cba`, `carrier... - parameters:[]
+[2024-04-09T21:51:21.980Z] info server running on port 3000
+[2024-04-09T21:51:22.457Z] info Token validated successfuly
+[2024-04-09T21:51:22.458Z] info enter the endpoint to pay carrier
+[2024-04-09T21:51:22.494Z] info To pay carrier successfuly
+[2024-04-09T21:51:36.292Z] info server running on port 3000
+[2024-04-09T21:54:34.292Z] info server running on port 3000
+[2024-04-09T21:57:32.964Z] info server running on port 3000
+[2024-04-09T21:58:02.540Z] info server running on port 3000
+[2024-04-09T21:58:09.939Z] info server running on port 3000
+[2024-04-09T22:01:08.390Z] info server running on port 3000
+[2024-04-09T22:02:01.981Z] info server running on port 3000
+[2024-04-09T22:02:14.247Z] info server running on port 3000
+[2024-04-09T22:04:37.611Z] info server running on port 3000
+[2024-04-09T22:06:58.592Z] info server running on port 3000
+[2024-04-09T22:09:59.539Z] info server running on port 3000
+[2024-04-09T22:10:20.779Z] info Token validated successfuly
+[2024-04-09T22:10:20.780Z] info enter the endpoint to pay carrier
+[2024-04-09T22:10:20.817Z] info To pay carrier successfuly
+[2024-04-09T22:14:53.679Z] info server running on port 3000
+[2024-04-09T22:14:55.149Z] info Token validated successfuly
+[2024-04-09T22:14:55.150Z] info enter the endpoint to pay carrier
+[2024-04-09T22:14:55.184Z] info Quantity requested invalidated
+[2024-04-09T22:15:04.414Z] info Token validated successfuly
+[2024-04-09T22:15:04.414Z] info enter the endpoint to pay carrier
+[2024-04-09T22:15:04.420Z] info To pay carrier successfuly
+[2024-04-09T22:15:43.784Z] info server running on port 3000
+[2024-04-09T22:16:37.236Z] info server running on port 3000
+[2024-04-09T22:16:46.851Z] info Token validated successfuly
+[2024-04-09T22:16:46.851Z] info enter the endpoint to pay carrier
+[2024-04-09T22:16:46.889Z] info To pay carrier successfuly
+[2024-04-09T22:17:40.787Z] info server running on port 3000
+[2024-04-09T22:17:48.671Z] info enter the endpoint login manager
+[2024-04-09T22:17:48.704Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-09T22:17:55.367Z] info Token validated successfuly
+[2024-04-09T22:17:55.368Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T22:17:55.374Z] info Error getPaymentsRequestCarrier: SequelizeDatabaseError: (conn=264, no: 1054, SQLState: 42S22) Unknown column 'carrier_payment_requests.id_cba' in 'field list'
+sql: SELECT `carrier_payment_requests`.`id_cpr`, `carrier_payment_requests`.`id_cba`, `carrier_payment_requests`.`quantity_requested_cpr`, `carrier_payment_requests`.`status_cpr`, `carrier_payment_requests`.`createdAt`, `carrier_payment_requests`.`fk_id_cba_cpr... - parameters:[]
+[2024-04-09T22:18:10.374Z] info server running on port 3000
+[2024-04-09T22:18:11.688Z] info Token validated successfuly
+[2024-04-09T22:18:11.689Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T22:18:11.722Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T22:18:21.217Z] info Token validated successfuly
+[2024-04-09T22:18:21.217Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T22:18:21.223Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T22:19:02.167Z] info server running on port 3000
+[2024-04-09T22:19:20.349Z] info Token validated successfuly
+[2024-04-09T22:19:20.349Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-09T22:19:20.385Z] info getPaymentsRequestCarrier successfuly
+[2024-04-09T22:19:22.726Z] info Token validated successfuly
+[2024-04-09T22:19:22.727Z] info enter the endpoint to pay carrier
+[2024-04-09T22:19:22.732Z] info To pay carrier successfuly
+[2024-04-09T22:19:48.788Z] info server running on port 3000
+[2024-04-09T22:20:05.951Z] info Token validated successfuly
+[2024-04-09T22:20:05.952Z] info enter the endpoint to pay carrier
+[2024-04-09T22:20:05.989Z] info To pay carrier successfuly
+[2024-04-09T22:20:19.003Z] info server running on port 3000
+[2024-04-09T22:20:26.330Z] info Token validated successfuly
+[2024-04-09T22:20:26.330Z] info enter the endpoint to pay carrier
+[2024-04-09T22:20:26.377Z] info To pay carrier successfuly
+[2024-04-09T22:20:40.669Z] info server running on port 3000
+[2024-04-09T22:20:57.555Z] info Token validated successfuly
+[2024-04-09T22:20:57.556Z] info enter the endpoint to pay carrier
+[2024-04-09T22:20:57.594Z] info To pay carrier successfuly
+[2024-04-09T22:21:27.508Z] info server running on port 3000
+[2024-04-09T22:23:15.111Z] info server running on port 3000
+[2024-04-09T22:23:49.088Z] info server running on port 3000
+[2024-04-09T22:24:09.680Z] info Token validated successfuly
+[2024-04-09T22:24:09.681Z] info enter the endpoint to pay carrier
+[2024-04-09T22:24:09.718Z] info To pay carrier successfuly
+[2024-04-09T22:24:42.528Z] info server running on port 3000
+[2024-04-09T22:27:43.424Z] info server running on port 3000
+[2024-04-09T22:28:49.361Z] info enter the endpoint login manager
+[2024-04-09T22:28:49.393Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-09T22:28:53.801Z] info Token validated successfuly
+[2024-04-09T22:28:53.802Z] info enter the endpoint to pay carrier
+[2024-04-09T22:28:53.811Z] info To pay carrier successfuly
+[2024-04-09T22:29:10.304Z] info server running on port 3000
+[2024-04-09T22:29:17.785Z] info enter the endpoint login manager
+[2024-04-09T22:29:17.818Z] info correct credentials, Started Sesion, token returned in response body data.

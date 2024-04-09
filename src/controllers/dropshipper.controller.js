@@ -281,27 +281,16 @@ export async function getpackages(req, res) {
                 }
             ]
         });
-        // I validate exist  infoDropshipper and infoStorePackage
-        if (infoStorePackage.length > 0) {
-            // Process data for JSON response
-            const getPackages = infoStorePackage.flatMap(p => p.packages);
-            // logger control proccess
-            logger.info('Getpackages Dropshipper successfuly');
-            // Json setting response
-            res.json({
-                message: 'Getpackages Dropshipper successfuly',
-                result: 1,
-                data: getPackages
-            });
-        } else {
-            // logger control proccess
-            logger.info('Not found packages');
-            // Json response non existing packages
-            res.status(401).json({
-                message: 'Not found packages',
-                result: 1
-            });
-        }
+        // Process data for JSON response
+        const getPackages = infoStorePackage.flatMap(p => p.packages);
+        // logger control proccess
+        logger.info('Getpackages Dropshipper successfuly');
+        // Json setting response
+        res.json({
+            message: 'Getpackages Dropshipper successfuly',
+            result: 1,
+            data: getPackages
+        });
     } catch (e) {
         // logger control proccess
         logger.info('Error getPackages: ' + e);
@@ -985,25 +974,14 @@ export async function getPortfolio(req, res) {
                 fk_id_dropshipper_phd: id_dropshipper
             }
         });
-        // I validate exist  infoDropshipper and infoStorePackage
-        if (getPortfolio.length > 0) {
-            // logger control proccess
-            logger.info('getPortfolio Dropshipper successfuly');
-            // The credentials are incorrect
-            res.json({
-                message: 'getPortfolio Dropshipper successfuly',
-                result: 1,
-                data: getPortfolio
-            });
-        } else {
-            // logger control proccess
-            logger.info('Not found getPortfolio');
-            // The credentials are incorrect
-            res.status(401).json({
-                message: 'Not found getPortfolio',
-                result: 1
-            });
-        }
+        // logger control proccess
+        logger.info('getPortfolio Dropshipper successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'getPortfolio Dropshipper successfuly',
+            result: 1,
+            data: getPortfolio
+        });
     } catch (e) {
         // logger control proccess
         logger.info('Error getPackages: ' + e);
