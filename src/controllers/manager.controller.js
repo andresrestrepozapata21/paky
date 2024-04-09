@@ -7,8 +7,19 @@ import { Sequelize } from "sequelize";
 // import personaly models
 import { Manager } from '../models/managers.model.js';
 import { City } from '../models/cities.model.js';
+import { Department } from '../models/departments.model.js';
 import { Store } from '../models/stores.model.js';
 import { Package } from '../models/packages.model.js';
+import { Carrier } from '../models/carriers.model.js';
+import { Type_package } from "../models/types_package.model.js";
+import { Central_warehouse } from "../models/central_warehouses.model.js";
+import { PackageProduct } from "../models/packages_products.model.js";
+import { Product } from "../models/products.model.js";
+import { Status_history } from "../models/status_history.model.js";
+import { Type_carrier } from "../models/types_carrier.model.js";
+import { Carrier_document } from "../models/carrier_documents.model.js";
+import { Vehicle } from "../models/vehicles.model.js";
+import { Vehicle_document } from "../models/vehicle_documents.model.js"
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -156,6 +167,798 @@ export async function master(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error Master: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get city packages
+export async function getCityPackages(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint get city packages');
+    try {
+        // I find if exist package
+        const getCityPackages = await Package.findAll({
+            where: {
+                fk_id_tp_p: 1
+            },
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p'],
+            include: [
+                {
+                    model: Carrier,
+                    attributes: ['id_carrier', 'name_carrier', 'last_name_carrier']
+                }
+            ]
+        });
+        // I validate exist getCityPackages
+        if (getCityPackages.length > 0) {
+
+            // logger control proccess
+            logger.info('GetCitypackages successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'GetCitypackages successfuly',
+                result: 1,
+                data: getCityPackages
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found GetCitypackages');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found GetCitypackages',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error GetCitypackages: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get inter city packages
+export async function getInterCityPackages(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint get city packages');
+    try {
+        // I find if exist package
+        const getCityPackages = await Package.findAll({
+            where: {
+                fk_id_tp_p: 2
+            },
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p'],
+            include: [
+                {
+                    model: Carrier,
+                    attributes: ['id_carrier', 'name_carrier', 'last_name_carrier']
+                }
+            ]
+        });
+        // I validate exist getCityPackages
+        if (getCityPackages.length > 0) {
+
+            // logger control proccess
+            logger.info('GetCitypackages successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'GetCitypackages successfuly',
+                result: 1,
+                data: getCityPackages
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found GetCitypackages');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found GetCitypackages',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error GetCitypackages: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method detailPackage
+export async function detailPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint detailPackage manager');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_p } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+        // I find if exist package by dropshipper
+        const getPackage = await Package.findOne({
+            where: {
+                id_p
+            },
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'createdAt'],
+            include: [
+                {
+                    model: Carrier,
+                    attributes: ['id_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier']
+                },
+                {
+                    model: Type_package,
+                    attributes: ['id_tp', 'description_tp']
+                },
+                {
+                    model: Store,
+                    attributes: ['id_store', 'direction_store'],
+                    include: [
+                        {
+                            model: City,
+                            attributes: ['id_city', 'name_city'],
+                            include: [
+                                {
+                                    model: Central_warehouse,
+                                    attributes: ['id_cw', 'name_cw', 'direction_cw'],
+                                },
+                                {
+                                    model: Department,
+                                    attributes: ['id_d', 'name_d'],
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    model: City,
+                    attributes: ['id_city', 'name_city'],
+                    include: [
+                        {
+                            model: Central_warehouse,
+                            attributes: ['id_cw', 'name_cw', 'direction_cw'],
+                        },
+                        {
+                            model: Department,
+                            attributes: ['id_d', 'name_d'],
+                        }
+                    ]
+                },
+                {
+                    model: PackageProduct,
+                    attributes: ['id_pp', 'cuantity_pp', 'createdAt'],
+                    include: [
+                        {
+                            model: Product,
+                            attributes: ['id_product', 'name_product', 'description_product', 'price_sale_product', 'price_cost_product', 'size_product']
+                        }
+                    ]
+                }
+            ],
+        });
+        // I validate exist  infoDropshipper and infoStorePackage
+        if (getPackage) {
+            // I find if exist package by dropshipper
+            const getHistory = await Status_history.findAll({
+                where: {
+                    fk_id_p_sh: id_p
+                },
+                attributes: ['id_sh', 'status_sh', 'comentary_sh', 'evidence_sh', 'createdAt'],
+                include: [
+                    {
+                        model: Carrier,
+                        attributes: ['id_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier']
+                    },
+                ],
+                order: [['createdAt', 'ASC']]
+            });
+            // logger control proccess
+            logger.info('detailPackage successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'detailPackage successfuly',
+                result: 1,
+                data: getPackage,
+                data_history: getHistory
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found packages');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found packages',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error detailPackage: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method editPackage
+export async function editPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint edit package');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_p } = req.params;
+        //const { orden_p, name_client_p, phone_number_client_p, email_client_p, direction_client_p, guide_number_p, status_p, with_collection_p, createdAt, fk_id_store_p, fk_id_carrier_p, fk_id_tp_p, fk_id_destiny_city_p } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+        // I find if exist package by
+        const getPackage = await Package.findOne({
+            where: {
+                id_p
+            }
+        });
+        // I validate exist  inf and infoStorePackage
+        if (getPackage) {
+            getPackage.set(req.body);
+            getPackage.save()
+            // logger control proccess
+            logger.info('edit package successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'edit package successfuly',
+                result: 1,
+                getPackage
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found packages');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found packages',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error edit package: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method deletePackage
+export async function deletePackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint delete package');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_p } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+        // I find if exist package
+        const getPackage = await Package.destroy({
+            where: {
+                id_p
+            }
+        });
+        if (getPackage) {
+            // logger control proccess
+            logger.info('delete package successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'delete package successfuly',
+                result: 1,
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found carrier');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found carrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error delete package: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get request carrier
+export async function getCarrierPeticions(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint get city packages');
+    try {
+        // I find if exist package
+        const getCarrierPeticions = await Carrier.findAll({
+            where: {
+                status_carrier: {
+                    [Sequelize.Op.in]: [2]
+                }
+            },
+            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            include: [
+                {
+                    model: Type_carrier,
+                    attributes: ['id_tc', 'description_tc']
+                }
+            ]
+        });
+        // I validate exist getCarrierPeticions
+        if (getCarrierPeticions.length > 0) {
+
+            // logger control proccess
+            logger.info('getCarrierPeticions successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getCarrierPeticions successfuly',
+                result: 1,
+                data: getCarrierPeticions
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getCarrierPeticions');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found getCarrierPeticions',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getCarrierPeticions: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get details carrier
+export async function getDetailCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getDetailCarrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.body;
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        // I find if exist package
+        const getDetailCarrier = await Carrier.findAll({
+            where: {
+                id_carrier
+            },
+            attributes: ['id_carrier', 'status_carrier', 'rejected_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            include: [
+                {
+                    model: Type_carrier,
+                    attributes: ['id_tc', 'description_tc']
+                },
+                {
+                    model: Carrier_document
+                },
+                {
+                    model: Vehicle,
+                    include: [
+                        {
+                            model: Vehicle_document
+                        }
+                    ]
+                }
+            ]
+        });
+        // I validate exist getDetailCarrier
+        if (getDetailCarrier.length > 0) {
+
+            // logger control proccess
+            logger.info('getDetailCarrier successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getDetailCarrier successfuly',
+                result: 1,
+                data: getDetailCarrier
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getDetailCarrier');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found getDetailCarrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getDetailCarrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method to agree carriers
+export async function agreeCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint to agree carrier packages');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.body;
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        // I find if exist package
+        const getDetailCarrier = await Carrier.findOne({
+            where: {
+                id_carrier
+            },
+            attributes: ['id_carrier', 'name_carrier', 'last_name_carrier']
+        });
+        // I validate exist getDetailCarrier
+        if (getDetailCarrier) {
+            getDetailCarrier.set({
+                status_carrier: 1
+            });
+            getDetailCarrier.save();
+            // logger control proccess
+            logger.info('To agree carrier successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'To agree carrier successfuly',
+                result: 1,
+                data: getDetailCarrier
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found to agree carrier');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found to agree carrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error to agree carrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method to reject carriers
+export async function rejectCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint to reject carrier packages');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.body;
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        // I find if exist package
+        const getDetailCarrier = await Carrier.findOne({
+            where: {
+                id_carrier
+            },
+            attributes: ['id_carrier', 'name_carrier', 'last_name_carrier']
+        });
+        // I validate exist getDetailCarrier
+        if (getDetailCarrier) {
+            getDetailCarrier.set({
+                rejected_carrier: 1
+            });
+            getDetailCarrier.save();
+            // logger control proccess
+            logger.info('To reject carrier successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'To reject carrier successfuly',
+                result: 1,
+                data: getDetailCarrier
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found to reject carrier');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found to reject carrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error to reject carrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get Carriers
+export async function getCarriers(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint get getCarriers');
+    try {
+        // I find if exist package
+        const getCarriers = await Carrier.findAll({
+            where: {
+                status_carrier: 1,
+            },
+            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            include: [
+                {
+                    model: Type_carrier,
+                    attributes: ['id_tc', 'description_tc']
+                }
+            ]
+        });
+        // I validate exist getCarriers
+        if (getCarriers.length > 0) {
+            // logger control proccess
+            logger.info('getCarriers successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getCarriers successfuly',
+                result: 1,
+                data: getCarriers
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getCarriers');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found getCarriers',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getCarriers: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get details carrier
+export async function detailCarrierAndHistory(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint detailCarrierAndHistory');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.body;
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        // I find carrier
+        const getDetailCarrier = await Carrier.findAll({
+            where: {
+                id_carrier
+            },
+            attributes: ['id_carrier', 'status_carrier', 'rejected_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            include: [
+                {
+                    model: Type_carrier,
+                    attributes: ['id_tc', 'description_tc']
+                },
+                {
+                    model: Carrier_document
+                },
+                {
+                    model: Vehicle,
+                    include: [
+                        {
+                            model: Vehicle_document
+                        }
+                    ]
+                }
+            ]
+        });
+        // I validate exist getDetailCarrier
+        if (getDetailCarrier.length > 0) {
+            // I find carrier
+            const getHistory = await Status_history.findAll({
+                where: {
+                    fk_id_carrier_asignated_sh: id_carrier
+                },
+                attributes: ['id_sh', 'status_sh', 'comentary_sh', 'evidence_sh', 'details_sh', 'fk_id_carrier_asignated_sh', 'fk_id_p_sh'],
+                include: [
+                    {
+                        model: Package,
+                        attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p']
+                    },
+                ]
+            });
+            // logger control proccess
+            logger.info('getDetailCarrier successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getDetailCarrier successfuly',
+                result: 1,
+                data: getDetailCarrier,
+                data_history: getHistory
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getDetailCarrier');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found getDetailCarrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getDetailCarrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method edit carrier
+export async function editCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint edit carrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.params;
+        //const { orden_p, name_client_p, phone_number_client_p, email_client_p, direction_client_p, guide_number_p, status_p, with_collection_p, createdAt, fk_id_store_p, fk_id_carrier_p, fk_id_tp_p, fk_id_destiny_city_p } = req.body;
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        // I find if exist package by 
+        const getCarrier = await Carrier.findOne({
+            where: {
+                id_carrier
+            }
+        });
+        // I validate exist info and infoStorePackage
+        if (getCarrier) {
+            getCarrier.set(req.body);
+            getCarrier.save()
+            // logger control proccess
+            logger.info('edit carrier successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'edit carrier successfuly',
+                result: 1,
+                getCarrier
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found carrier');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found carrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error edit package: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method deleteCarrier
+export async function deleteCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint delete carrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.body;
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        // I find if exist package
+        const deleteCarrier = await Carrier.destroy({
+            where: {
+                id_carrier
+            }
+        });
+        if (deleteCarrier) {
+            // logger control proccess
+            logger.info('Delete carrier successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'Delete carrier successfuly',
+                result: 1,
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found carrier');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found carrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error delete carrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method deleteCarrier
+export async function deleteHistory(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint delete history');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_sh } = req.body;
+        // I validate req correct json
+        if (!id_sh) return res.sendStatus(400);
+        // I find if exist package
+        const deleteHistory = await Status_history.destroy({
+            where: {
+                id_sh
+            }
+        });
+        if (deleteHistory) {
+            // logger control proccess
+            logger.info('Delete history successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'Delete history successfuly',
+                result: 1,
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found history');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found history',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error delete history: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',

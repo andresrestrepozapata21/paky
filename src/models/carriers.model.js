@@ -15,6 +15,9 @@ export const Carrier = sequelize.define('carriers', {
     status_carrier: {
         type: DataTypes.INTEGER
     },
+    rejected_carrier: {
+        type: DataTypes.INTEGER
+    },
     number_document_carrier: {
         type: DataTypes.STRING
     },

@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
-import { Sequelize } from "sequelize";
+import { Sequelize, where } from "sequelize";
 // import personaly models
 import { Router_user } from '../models/router_users.model.js';
 import { Package } from '../models/packages.model.js';
@@ -184,6 +184,7 @@ export async function getCarriers(req, res) {
         const getCarriers = await Carrier.findAll({
             attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier'],
             where: {
+                status_carrier: 1,
                 fk_id_tc_carrier: 1
             },
             include: [
@@ -445,6 +446,9 @@ export async function getCarriersInter(req, res) {
     try {
         // I call and save the result of the findAll method, which is d sequelize
         const getCarriers = await Carrier.findAll({
+            where: {
+                status_carrier: 1
+            },
             attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier'],
             include: [
                 {

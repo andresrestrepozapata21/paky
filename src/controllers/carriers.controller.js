@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken";
 import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
+import { Sequelize } from 'sequelize';
 // import personaly models
 import { Carrier } from '../models/carriers.model.js';
 import { Carrier_document } from '../models/carrier_documents.model.js';
@@ -14,7 +15,6 @@ import { Package } from "../models/packages.model.js";
 import { Store } from "../models/stores.model.js";
 import { City } from "../models/cities.model.js";
 import { Central_warehouse } from "../models/central_warehouses.model.js";
-import { Sequelize } from 'sequelize';
 import { Department } from "../models/departments.model.js";
 import { Status_history } from "../models/status_history.model.js";
 import { Carrier_payment_request } from "../models/carrier_payment_requests.model.js";

@@ -3540,3 +3540,293 @@ sql: SELECT `cities`.`id_city`, `cities`.`name_city`, `stores`.`id_store` AS `st
 [2024-04-06T21:38:30.645Z] info enter the endpoint master manager
 [2024-04-06T21:38:30.707Z] info Master manager successfuly
 [2024-04-06T21:38:55.555Z] info server running on port 3000
+[2024-04-08T14:51:25.432Z] info server running on port 3000
+[2024-04-08T14:53:13.761Z] info server running on port 3000
+[2024-04-08T14:53:14.393Z] info enter the endpoint get city packages
+[2024-04-08T14:53:14.425Z] info GetCitypackages successfuly
+[2024-04-08T14:53:14.426Z] info Error GetCitypackages: ReferenceError: getPackages is not defined
+[2024-04-08T14:53:28.935Z] info server running on port 3000
+[2024-04-08T14:53:30.533Z] info enter the endpoint get city packages
+[2024-04-08T14:53:30.564Z] info GetCitypackages successfuly
+[2024-04-08T14:54:49.467Z] info server running on port 3000
+[2024-04-08T14:54:50.835Z] info enter the endpoint get city packages
+[2024-04-08T14:54:50.835Z] info Error GetCitypackages: ReferenceError: Carrier is not defined
+[2024-04-08T14:55:26.579Z] info server running on port 3000
+[2024-04-08T14:55:27.114Z] info enter the endpoint get city packages
+[2024-04-08T14:55:27.151Z] info GetCitypackages successfuly
+[2024-04-08T14:55:48.858Z] info enter the endpoint get city packages
+[2024-04-08T14:55:48.863Z] info GetCitypackages successfuly
+[2024-04-08T14:56:56.872Z] info enter the endpoint master manager
+[2024-04-08T14:56:56.910Z] info Master manager successfuly
+[2024-04-08T14:57:33.127Z] info server running on port 3000
+[2024-04-08T14:57:39.904Z] info enter the endpoint login manager
+[2024-04-08T14:57:39.936Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-08T14:57:49.089Z] info Token validated successfuly
+[2024-04-08T14:57:49.089Z] info enter the endpoint master manager
+[2024-04-08T14:57:49.130Z] info Master manager successfuly
+[2024-04-08T14:57:54.276Z] info Token validated successfuly
+[2024-04-08T14:57:54.276Z] info enter the endpoint get city packages
+[2024-04-08T14:57:54.279Z] info GetCitypackages successfuly
+[2024-04-08T14:58:57.637Z] info server running on port 3000
+[2024-04-08T14:59:06.816Z] info server running on port 3000
+[2024-04-08T14:59:08.902Z] info Token validated successfuly
+[2024-04-08T14:59:08.903Z] info enter the endpoint get city packages
+[2024-04-08T14:59:08.936Z] info GetCitypackages successfuly
+[2024-04-08T15:35:10.087Z] info server running on port 3000
+[2024-04-08T15:35:30.175Z] info server running on port 3000
+[2024-04-08T15:35:50.775Z] info server running on port 3000
+[2024-04-08T15:35:59.082Z] info server running on port 3000
+[2024-04-08T15:36:04.218Z] info server running on port 3000
+[2024-04-08T15:36:44.377Z] info server running on port 3000
+[2024-04-08T15:36:57.270Z] info server running on port 3000
+[2024-04-08T15:37:48.875Z] info Token validated successfuly
+[2024-04-08T15:37:48.876Z] info enter the endpoint detailPackage manager
+[2024-04-08T15:37:48.876Z] info Error detailPackage: ReferenceError: Type_package is not defined
+[2024-04-08T15:40:41.916Z] info server running on port 3000
+[2024-04-08T15:40:42.230Z] info Token validated successfuly
+[2024-04-08T15:40:42.230Z] info enter the endpoint detailPackage manager
+[2024-04-08T15:40:42.271Z] info Error detailPackage: ReferenceError: Status_history is not defined
+[2024-04-08T15:41:21.366Z] info server running on port 3000
+[2024-04-08T15:41:22.903Z] info Token validated successfuly
+[2024-04-08T15:41:22.903Z] info enter the endpoint detailPackage manager
+[2024-04-08T15:41:22.950Z] info detailPackage successfuly
+[2024-04-08T15:43:29.495Z] info server running on port 3000
+[2024-04-08T15:44:46.013Z] info Token validated successfuly
+[2024-04-08T15:44:46.014Z] info enter the endpoint edit package dropshipper
+[2024-04-08T15:44:46.047Z] info edit package Dropshipper successfuly
+[2024-04-08T15:44:56.605Z] info Token validated successfuly
+[2024-04-08T15:44:56.606Z] info enter the endpoint edit package dropshipper
+[2024-04-08T15:44:56.610Z] info edit package Dropshipper successfuly
+[2024-04-08T15:45:04.440Z] info Token validated successfuly
+[2024-04-08T15:45:04.441Z] info enter the endpoint edit package dropshipper
+[2024-04-08T15:45:04.443Z] info edit package Dropshipper successfuly
+[2024-04-08T15:47:17.961Z] info server running on port 3000
+[2024-04-08T15:47:32.291Z] info Token validated successfuly
+[2024-04-08T15:47:32.292Z] info enter the endpoint detailPackage dropshipper
+[2024-04-08T15:47:32.322Z] info delete package Dropshipper successfuly
+[2024-04-08T15:47:51.525Z] info server running on port 3000
+[2024-04-08T19:49:40.774Z] info server running on port 3000
+[2024-04-08T19:49:50.320Z] info enter the endpoint login manager
+[2024-04-08T19:49:50.400Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-08T19:50:04.635Z] info Token validated successfuly
+[2024-04-08T19:50:04.636Z] info enter the endpoint detailPackage dropshipper
+[2024-04-08T19:50:04.654Z] info delete package Dropshipper successfuly
+[2024-04-08T19:52:33.511Z] info server running on port 3000
+[2024-04-08T19:54:49.273Z] info server running on port 3000
+[2024-04-08T19:54:52.919Z] info Token validated successfuly
+[2024-04-08T19:54:52.920Z] info enter the endpoint get city packages
+[2024-04-08T19:54:52.920Z] info Error getCarrierPeticions: ReferenceError: Carirer is not defined
+[2024-04-08T19:55:10.133Z] info server running on port 3000
+[2024-04-08T19:55:51.649Z] info server running on port 3000
+[2024-04-08T19:55:57.403Z] info server running on port 3000
+[2024-04-08T19:55:59.765Z] info Token validated successfuly
+[2024-04-08T19:55:59.766Z] info enter the endpoint get city packages
+[2024-04-08T19:55:59.799Z] info Not found getCarrierPeticions
+[2024-04-08T20:17:49.245Z] info server running on port 3000
+[2024-04-08T20:18:10.456Z] info Token validated successfuly
+[2024-04-08T20:18:10.456Z] info enter the endpoint get city packages
+[2024-04-08T20:18:10.520Z] info Not found getCarrierPeticions
+[2024-04-08T20:18:29.180Z] info Token validated successfuly
+[2024-04-08T20:18:29.181Z] info enter the endpoint get city packages
+[2024-04-08T20:18:29.185Z] info Not found getCarrierPeticions
+[2024-04-08T20:22:09.484Z] info Token validated successfuly
+[2024-04-08T20:22:09.484Z] info enter the endpoint get city packages
+[2024-04-08T20:22:09.490Z] info getCarrierPeticions successfuly
+[2024-04-08T20:33:11.158Z] info server running on port 3000
+[2024-04-08T20:33:13.126Z] info Token validated successfuly
+[2024-04-08T20:33:13.126Z] info enter the endpoint get city packages
+[2024-04-08T20:33:13.161Z] info getCarrierPeticions successfuly
+[2024-04-08T20:33:26.257Z] info server running on port 3000
+[2024-04-08T20:33:27.820Z] info server running on port 3000
+[2024-04-08T20:33:32.933Z] info Token validated successfuly
+[2024-04-08T20:33:32.934Z] info enter the endpoint get city packages
+[2024-04-08T20:33:32.968Z] info getCarrierPeticions successfuly
+[2024-04-08T20:34:30.523Z] info server running on port 3000
+[2024-04-08T20:34:33.054Z] info Token validated successfuly
+[2024-04-08T20:34:33.054Z] info enter the endpoint get city packages
+[2024-04-08T20:34:33.096Z] info Error getCarrierPeticions: SequelizeDatabaseError: (conn=13, no: 1054, SQLState: 42S22) Unknown column 'types_carrier.id_tp' in 'field list'
+sql: SELECT `carriers`.`id_carrier`, `carriers`.`status_carrier`, `carriers`.`name_carrier`, `carriers`.`revenue_carrier`, `carriers`.`debt_carrier`, `carriers`.`url_QR_carrier`, `carriers`.`bancolombia_number_account_carrier`, `carriers`.`nequi_carrier`, `carr... - parameters:[]
+[2024-04-08T20:34:45.909Z] info server running on port 3000
+[2024-04-08T20:34:52.057Z] info Token validated successfuly
+[2024-04-08T20:34:52.057Z] info enter the endpoint get city packages
+[2024-04-08T20:34:52.093Z] info getCarrierPeticions successfuly
+[2024-04-08T20:35:01.478Z] info server running on port 3000
+[2024-04-09T13:13:26.700Z] info server running on port 3000
+[2024-04-09T13:14:39.121Z] info enter the endpoint login manager
+[2024-04-09T13:14:39.192Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-09T13:14:46.391Z] info Token validated successfuly
+[2024-04-09T13:14:46.391Z] info enter the endpoint get city packages
+[2024-04-09T13:14:46.407Z] info getCarrierPeticions successfuly
+[2024-04-09T13:16:34.181Z] info server running on port 3000
+[2024-04-09T13:17:02.681Z] info server running on port 3000
+[2024-04-09T13:17:32.407Z] info server running on port 3000
+[2024-04-09T13:18:26.231Z] info server running on port 3000
+[2024-04-09T13:19:27.732Z] info server running on port 3000
+[2024-04-09T13:20:02.504Z] info server running on port 3000
+[2024-04-09T13:20:04.857Z] info server running on port 3000
+[2024-04-09T13:20:28.415Z] info server running on port 3000
+[2024-04-09T13:20:28.995Z] info Token validated successfuly
+[2024-04-09T13:20:28.995Z] info enter the endpoint get city packages
+[2024-04-09T13:20:29.045Z] info getDetailCarrier successfuly
+[2024-04-09T13:20:42.806Z] info Token validated successfuly
+[2024-04-09T13:20:42.807Z] info enter the endpoint get city packages
+[2024-04-09T13:20:42.817Z] info getDetailCarrier successfuly
+[2024-04-09T13:21:38.494Z] info Token validated successfuly
+[2024-04-09T13:21:38.495Z] info enter the endpoint get city packages
+[2024-04-09T13:21:38.502Z] info getDetailCarrier successfuly
+[2024-04-09T13:36:31.038Z] info server running on port 3000
+[2024-04-09T13:36:36.261Z] info server running on port 3000
+[2024-04-09T13:36:55.911Z] info server running on port 3000
+[2024-04-09T13:37:01.612Z] info server running on port 3000
+[2024-04-09T13:37:47.622Z] info server running on port 3000
+[2024-04-09T13:38:12.317Z] info server running on port 3000
+[2024-04-09T13:38:26.459Z] info Token validated successfuly
+[2024-04-09T13:38:26.460Z] info enter the endpoint to agree carrier packages
+[2024-04-09T13:38:26.494Z] info To agree carrier successfuly
+[2024-04-09T13:38:46.083Z] info server running on port 3000
+[2024-04-09T13:39:13.377Z] info server running on port 3000
+[2024-04-09T13:39:15.815Z] info Token validated successfuly
+[2024-04-09T13:39:15.815Z] info enter the endpoint to agree carrier packages
+[2024-04-09T13:39:15.846Z] info To agree carrier successfuly
+[2024-04-09T13:39:30.600Z] info server running on port 3000
+[2024-04-09T13:43:01.621Z] info enter the endpoint login user router
+[2024-04-09T13:43:01.652Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-09T13:43:06.424Z] info Token validated successfuly
+[2024-04-09T13:43:06.425Z] info Enter the endpoint get carriers
+[2024-04-09T13:43:06.435Z] info Get carriers successfuly
+[2024-04-09T13:43:10.674Z] info Token validated successfuly
+[2024-04-09T13:43:10.674Z] info Enter the endpoint get inter_city packages
+[2024-04-09T13:43:10.678Z] info Get inter_city packages successfuly
+[2024-04-09T13:43:15.627Z] info Token validated successfuly
+[2024-04-09T13:43:15.628Z] info Enter the endpoint get carriers Inter_city
+[2024-04-09T13:43:15.639Z] info Get carriers Inter_city successfuly
+[2024-04-09T13:43:32.559Z] info Token validated successfuly
+[2024-04-09T13:43:32.560Z] info Enter the endpoint get carriers
+[2024-04-09T13:43:32.568Z] info Get carriers successfuly
+[2024-04-09T13:43:59.737Z] info server running on port 3000
+[2024-04-09T13:44:22.726Z] info server running on port 3000
+[2024-04-09T13:44:24.274Z] info Token validated successfuly
+[2024-04-09T13:44:24.275Z] info Enter the endpoint get carriers
+[2024-04-09T13:44:24.306Z] info Get carriers successfuly
+[2024-04-09T13:44:25.701Z] info Token validated successfuly
+[2024-04-09T13:44:25.702Z] info Enter the endpoint get carriers Inter_city
+[2024-04-09T13:44:25.705Z] info Get carriers Inter_city successfuly
+[2024-04-09T13:44:31.615Z] info Token validated successfuly
+[2024-04-09T13:44:31.616Z] info Enter the endpoint get carriers Inter_city
+[2024-04-09T13:44:31.628Z] info Get carriers Inter_city successfuly
+[2024-04-09T13:44:32.862Z] info Token validated successfuly
+[2024-04-09T13:44:32.862Z] info Enter the endpoint get carriers
+[2024-04-09T13:44:32.869Z] info Get carriers successfuly
+[2024-04-09T13:44:33.971Z] info Token validated successfuly
+[2024-04-09T13:44:33.972Z] info Enter the endpoint get carriers Inter_city
+[2024-04-09T13:44:33.980Z] info Get carriers Inter_city successfuly
+[2024-04-09T13:44:54.056Z] info server running on port 3000
+[2024-04-09T13:45:50.919Z] info server running on port 3000
+[2024-04-09T13:46:01.899Z] info server running on port 3000
+[2024-04-09T13:46:11.457Z] info server running on port 3000
+[2024-04-09T13:46:38.433Z] info server running on port 3000
+[2024-04-09T13:47:33.000Z] info server running on port 3000
+[2024-04-09T13:47:38.319Z] info server running on port 3000
+[2024-04-09T13:47:39.508Z] info Token validated successfuly
+[2024-04-09T13:47:39.509Z] info enter the endpoint to reject carrier packages
+[2024-04-09T13:47:39.539Z] info To reject carrier successfuly
+[2024-04-09T13:47:51.927Z] info Token validated successfuly
+[2024-04-09T13:47:51.927Z] info enter the endpoint to reject carrier packages
+[2024-04-09T13:47:51.931Z] info To reject carrier successfuly
+[2024-04-09T13:48:05.912Z] info Token validated successfuly
+[2024-04-09T13:48:05.913Z] info enter the endpoint to agree carrier packages
+[2024-04-09T13:48:05.917Z] info To agree carrier successfuly
+[2024-04-09T13:48:28.714Z] info Token validated successfuly
+[2024-04-09T13:48:28.714Z] info enter the endpoint to agree carrier packages
+[2024-04-09T13:48:28.718Z] info To agree carrier successfuly
+[2024-04-09T13:49:14.741Z] info server running on port 3000
+[2024-04-09T13:49:17.262Z] info server running on port 3000
+[2024-04-09T13:54:23.006Z] info Token validated successfuly
+[2024-04-09T13:54:23.007Z] info enter the endpoint get city packages
+[2024-04-09T13:54:23.045Z] info getDetailCarrier successfuly
+[2024-04-09T13:56:59.367Z] info server running on port 3000
+[2024-04-09T13:57:50.482Z] info server running on port 3000
+[2024-04-09T13:58:44.593Z] info server running on port 3000
+[2024-04-09T13:59:13.022Z] info server running on port 3000
+[2024-04-09T13:59:15.717Z] info server running on port 3000
+[2024-04-09T13:59:21.649Z] info Token validated successfuly
+[2024-04-09T13:59:21.649Z] info enter the endpoint get getCarriers
+[2024-04-09T13:59:21.685Z] info getCarriers successfuly
+[2024-04-09T13:59:37.858Z] info Token validated successfuly
+[2024-04-09T13:59:37.859Z] info enter the endpoint get getCarriers
+[2024-04-09T13:59:37.864Z] info getCarriers successfuly
+[2024-04-09T14:04:49.447Z] info server running on port 3000
+[2024-04-09T14:05:07.435Z] info server running on port 3000
+[2024-04-09T14:05:15.515Z] info server running on port 3000
+[2024-04-09T14:05:43.816Z] info server running on port 3000
+[2024-04-09T14:05:56.226Z] info server running on port 3000
+[2024-04-09T14:07:06.148Z] info server running on port 3000
+[2024-04-09T14:07:51.567Z] info server running on port 3000
+[2024-04-09T14:08:06.761Z] info server running on port 3000
+[2024-04-09T14:08:14.164Z] info Token validated successfuly
+[2024-04-09T14:08:14.164Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-09T14:08:14.203Z] info Error getDetailCarrier: SequelizeEagerLoadingError: types_carrier is not associated to status_history!
+[2024-04-09T14:09:39.057Z] info server running on port 3000
+[2024-04-09T14:09:40.202Z] info Token validated successfuly
+[2024-04-09T14:09:40.203Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-09T14:09:40.243Z] info Error getDetailCarrier: SequelizeDatabaseError: (conn=246, no: 1054, SQLState: 42S22) Unknown column 'status_history.id_carrier' in 'where clause'
+sql: SELECT `status_history`.`id_sh`, `status_history`.`status_sh`, `status_history`.`comentary_sh`, `status_history`.`evidence_sh`, `status_history`.`details_sh`, `status_history`.`fk_id_carrier_asignated_sh`, `status_history`.`fk_id_p_sh`, `package`.`id_p` AS... - parameters:[]
+[2024-04-09T14:10:04.532Z] info server running on port 3000
+[2024-04-09T14:10:06.372Z] info server running on port 3000
+[2024-04-09T14:10:08.115Z] info Token validated successfuly
+[2024-04-09T14:10:08.115Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-09T14:10:08.158Z] info getDetailCarrier successfuly
+[2024-04-09T14:55:30.708Z] info server running on port 3000
+[2024-04-09T14:56:18.254Z] info server running on port 3000
+[2024-04-09T14:56:36.711Z] info server running on port 3000
+[2024-04-09T14:56:40.267Z] info server running on port 3000
+[2024-04-09T14:56:49.755Z] info server running on port 3000
+[2024-04-09T14:56:55.233Z] info server running on port 3000
+[2024-04-09T14:57:06.152Z] info server running on port 3000
+[2024-04-09T14:57:10.467Z] info server running on port 3000
+[2024-04-09T14:57:21.384Z] info server running on port 3000
+[2024-04-09T14:57:31.485Z] info server running on port 3000
+[2024-04-09T14:58:19.438Z] info server running on port 3000
+[2024-04-09T14:58:26.763Z] info server running on port 3000
+[2024-04-09T15:00:25.312Z] info enter the endpoint login manager
+[2024-04-09T15:00:25.376Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-09T15:00:32.879Z] info Token validated successfuly
+[2024-04-09T15:00:32.879Z] info enter the endpoint edit carrier
+[2024-04-09T15:00:32.884Z] info edit carrier successfuly
+[2024-04-09T15:01:46.358Z] info Token validated successfuly
+[2024-04-09T15:01:46.359Z] info enter the endpoint edit carrier
+[2024-04-09T15:01:46.364Z] info edit carrier successfuly
+[2024-04-09T15:03:29.830Z] info server running on port 3000
+[2024-04-09T15:03:37.225Z] info server running on port 3000
+[2024-04-09T15:03:49.847Z] info server running on port 3000
+[2024-04-09T15:04:01.619Z] info server running on port 3000
+[2024-04-09T15:04:20.705Z] info server running on port 3000
+[2024-04-09T15:04:40.957Z] info server running on port 3000
+[2024-04-09T15:04:57.589Z] info Token validated successfuly
+[2024-04-09T15:04:57.590Z] info enter the endpoint delete carrier
+[2024-04-09T15:04:57.629Z] info Delete carrier successfuly
+[2024-04-09T15:05:01.985Z] info Token validated successfuly
+[2024-04-09T15:05:01.985Z] info enter the endpoint delete carrier
+[2024-04-09T15:05:01.987Z] info Delete carrier successfuly
+[2024-04-09T15:05:05.283Z] info Token validated successfuly
+[2024-04-09T15:05:05.284Z] info enter the endpoint delete carrier
+[2024-04-09T15:05:05.285Z] info Delete carrier successfuly
+[2024-04-09T15:05:47.310Z] info server running on port 3000
+[2024-04-09T15:06:10.085Z] info server running on port 3000
+[2024-04-09T15:06:11.211Z] info Token validated successfuly
+[2024-04-09T15:06:11.211Z] info enter the endpoint delete carrier
+[2024-04-09T15:06:11.238Z] info Not found carrier
+[2024-04-09T15:06:17.902Z] info server running on port 3000
+[2024-04-09T15:06:54.771Z] info server running on port 3000
+[2024-04-09T15:09:41.161Z] info server running on port 3000
+[2024-04-09T15:10:07.397Z] info server running on port 3000
+[2024-04-09T15:10:49.836Z] info Token validated successfuly
+[2024-04-09T15:10:49.836Z] info enter the endpoint delete history
+[2024-04-09T15:10:49.872Z] info Delete carrier successfuly
+[2024-04-09T15:10:56.897Z] info Token validated successfuly
+[2024-04-09T15:10:56.897Z] info enter the endpoint delete history
+[2024-04-09T15:10:56.899Z] info Not found carrier
+[2024-04-09T15:12:57.200Z] info server running on port 3000
+[2024-04-09T15:13:01.579Z] info Token validated successfuly
+[2024-04-09T15:13:01.579Z] info enter the endpoint delete history
+[2024-04-09T15:13:01.615Z] info Not found history

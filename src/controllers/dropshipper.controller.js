@@ -287,7 +287,7 @@ export async function getpackages(req, res) {
             const getPackages = infoStorePackage.flatMap(p => p.packages);
             // logger control proccess
             logger.info('Getpackages Dropshipper successfuly');
-            // The credentials are incorrect
+            // Json setting response
             res.json({
                 message: 'Getpackages Dropshipper successfuly',
                 result: 1,
@@ -296,7 +296,7 @@ export async function getpackages(req, res) {
         } else {
             // logger control proccess
             logger.info('Not found packages');
-            // The credentials are incorrect
+            // Json response non existing packages
             res.status(401).json({
                 message: 'Not found packages',
                 result: 1
