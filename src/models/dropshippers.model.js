@@ -9,6 +9,12 @@ export const Dropshipper = sequelize.define('dropshippers', {
         primaryKey: true,
         autoIncrement: true
     },
+    tipo_documento: {
+        type: DataTypes.STRING
+    },
+    numero_documento: {
+        type: DataTypes.STRING
+    },
     status_dropshipper: {
         type: DataTypes.INTEGER
     },

@@ -4103,3 +4103,459 @@ sql: SELECT `carrier_payment_requests`.`id_cpr`, `carrier_payment_requests`.`id_
 [2024-04-09T22:29:10.304Z] info server running on port 3000
 [2024-04-09T22:29:17.785Z] info enter the endpoint login manager
 [2024-04-09T22:29:17.818Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-10T14:00:28.968Z] info server running on port 3000
+[2024-04-10T14:00:38.692Z] info enter the endpoint login manager
+[2024-04-10T14:00:38.725Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-10T14:00:49.191Z] info Token validated successfuly
+[2024-04-10T14:00:49.191Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-10T14:00:49.197Z] info getPortfolio Dropshipper successfuly
+[2024-04-10T14:00:56.638Z] info Token validated successfuly
+[2024-04-10T14:00:56.638Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-10T14:00:56.640Z] info getPortfolio Dropshipper successfuly
+[2024-04-10T14:03:54.170Z] info Token validated successfuly
+[2024-04-10T14:03:54.171Z] info enter the endpoint getPortfolio carrier
+[2024-04-10T14:04:02.549Z] info Token validated successfuly
+[2024-04-10T14:04:02.550Z] info enter the endpoint getPortfolio carrier
+[2024-04-10T14:04:02.550Z] info Error getPortfolio: ReferenceError: Portfolios_history_carrier is not defined
+[2024-04-10T14:04:35.712Z] info server running on port 3000
+[2024-04-10T14:04:38.416Z] info Token validated successfuly
+[2024-04-10T14:04:38.417Z] info enter the endpoint getPortfolio carrier
+[2024-04-10T14:04:38.447Z] info getPortfolio carrier successfuly
+[2024-04-10T14:05:36.237Z] info server running on port 3000
+[2024-04-10T14:05:48.608Z] info server running on port 3000
+[2024-04-10T14:05:50.103Z] info Token validated successfuly
+[2024-04-10T14:05:50.104Z] info enter the endpoint getPortfolio carrier
+[2024-04-10T14:05:50.138Z] info getPortfolio carrier successfuly
+[2024-04-10T14:06:04.114Z] info Token validated successfuly
+[2024-04-10T14:06:04.115Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-10T14:06:04.119Z] info getPortfolio Dropshipper successfuly
+[2024-04-10T14:06:52.408Z] info server running on port 3000
+[2024-04-10T14:06:56.333Z] info Token validated successfuly
+[2024-04-10T14:06:56.333Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-10T14:06:56.366Z] info getPortfolio Dropshipper successfuly
+[2024-04-10T14:07:09.624Z] info server running on port 3000
+[2024-04-10T14:07:50.265Z] info server running on port 3000
+[2024-04-10T14:07:51.541Z] info Token validated successfuly
+[2024-04-10T14:07:51.541Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-10T14:07:51.575Z] info getPortfolio Dropshipper successfuly
+[2024-04-10T14:07:57.052Z] info Token validated successfuly
+[2024-04-10T14:07:57.052Z] info enter the endpoint getPortfolio carrier
+[2024-04-10T14:07:57.055Z] info getPortfolio carrier successfuly
+[2024-04-10T14:18:21.182Z] info server running on port 3000
+[2024-04-10T14:18:38.922Z] info server running on port 3000
+[2024-04-10T14:20:35.987Z] info server running on port 3000
+[2024-04-10T14:20:41.787Z] info Token validated successfuly
+[2024-04-10T14:20:41.788Z] info enter the endpoint getPortfolio carrier
+[2024-04-10T14:20:41.834Z] info getPortfolio carrier successfuly
+[2024-04-10T14:21:33.492Z] info server running on port 3000
+[2024-04-10T14:21:49.717Z] info server running on port 3000
+[2024-04-10T14:21:53.905Z] info server running on port 3000
+[2024-04-10T14:22:41.946Z] info server running on port 3000
+[2024-04-10T14:23:33.238Z] info Token validated successfuly
+[2024-04-10T14:23:33.238Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:23:33.266Z] info Error downloadExcelPortfolio: SequelizeDatabaseError: (conn=63, no: 1054, SQLState: 42S22) Unknown column 'portfolios_history_carriers.fk_id_carrier_phd' in 'where clause'
+sql: SELECT `id_phc`, `type_phc`, `Quantity_pay_phc`, `description_phc`, `createdAt`, `updatedAt`, `fk_id_carrier_phc` FROM `portfolios_history_carriers` AS `portfolios_history_carriers` WHERE `portfolios_history_carriers`.`fk_id_carrier_phd` = 1; - parameters:[]
+[2024-04-10T14:23:58.811Z] info server running on port 3000
+[2024-04-10T14:23:59.206Z] info Token validated successfuly
+[2024-04-10T14:23:59.206Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:23:59.237Z] info Error downloadExcelPortfolio: ReferenceError: ExcelJS is not defined
+[2024-04-10T14:24:18.736Z] info server running on port 3000
+[2024-04-10T14:24:32.454Z] info server running on port 3000
+[2024-04-10T14:24:33.475Z] info Token validated successfuly
+[2024-04-10T14:24:33.475Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:24:33.538Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:26:16.529Z] info server running on port 3000
+[2024-04-10T14:26:27.399Z] info server running on port 3000
+[2024-04-10T14:26:30.368Z] info server running on port 3000
+[2024-04-10T14:27:08.892Z] info Token validated successfuly
+[2024-04-10T14:27:08.892Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:27:08.893Z] info Error downloadExcelPortfolio: ReferenceError: Op is not defined
+[2024-04-10T14:27:26.789Z] info server running on port 3000
+[2024-04-10T14:28:03.065Z] info Token validated successfuly
+[2024-04-10T14:28:03.065Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:28:03.066Z] info Error downloadExcelPortfolio: ReferenceError: Op is not defined
+[2024-04-10T14:28:08.255Z] info Token validated successfuly
+[2024-04-10T14:28:08.256Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:28:08.256Z] info Error downloadExcelPortfolio: ReferenceError: Op is not defined
+[2024-04-10T14:28:57.326Z] info server running on port 3000
+[2024-04-10T14:29:01.881Z] info Token validated successfuly
+[2024-04-10T14:29:01.882Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:29:01.882Z] info Error downloadExcelPortfolio: ReferenceError: Op is not defined
+[2024-04-10T14:29:22.136Z] info server running on port 3000
+[2024-04-10T14:29:31.207Z] info enter the endpoint login manager
+[2024-04-10T14:29:31.242Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-10T14:29:39.738Z] info Token validated successfuly
+[2024-04-10T14:29:39.738Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:29:39.778Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:29:42.975Z] info Token validated successfuly
+[2024-04-10T14:29:42.976Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:29:42.989Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:29:50.714Z] info Token validated successfuly
+[2024-04-10T14:29:50.714Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:29:50.714Z] info Error downloadExcelPortfolio: ReferenceError: Op is not defined
+[2024-04-10T14:30:02.783Z] info server running on port 3000
+[2024-04-10T14:30:06.080Z] info Token validated successfuly
+[2024-04-10T14:30:06.080Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:30:06.153Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:30:08.643Z] info Token validated successfuly
+[2024-04-10T14:30:08.644Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:30:08.656Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:34:09.333Z] info server running on port 3000
+[2024-04-10T14:34:59.386Z] info server running on port 3000
+[2024-04-10T14:36:43.065Z] info server running on port 3000
+[2024-04-10T14:38:30.566Z] info server running on port 3000
+[2024-04-10T14:38:36.151Z] info Token validated successfuly
+[2024-04-10T14:38:36.152Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:38:36.222Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:38:38.715Z] info Token validated successfuly
+[2024-04-10T14:38:38.715Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:38:38.730Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:39:44.164Z] info server running on port 3000
+[2024-04-10T14:40:11.170Z] info server running on port 3000
+[2024-04-10T14:40:25.598Z] info server running on port 3000
+[2024-04-10T14:40:41.425Z] info server running on port 3000
+[2024-04-10T14:40:45.441Z] info Token validated successfuly
+[2024-04-10T14:40:45.441Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:40:45.475Z] info Error downloadExcelPortfolio: SequelizeDatabaseError: (conn=97, no: 1054, SQLState: 42S22) Unknown column 'dropshipper.number_document_dropshipper' in 'field list'
+sql: SELECT `portfolios_history_dropshipper`.`id_phd`, `portfolios_history_dropshipper`.`type_phd`, `portfolios_history_dropshipper`.`monto_phd`, `portfolios_history_dropshipper`.`description_phd`, `portfolios_history_dropshipper`.`createdAt`, `portfolios_histo... - parameters:[]
+[2024-04-10T14:41:03.394Z] info server running on port 3000
+[2024-04-10T14:41:05.977Z] info Token validated successfuly
+[2024-04-10T14:41:05.977Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:41:06.058Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:41:08.292Z] info Token validated successfuly
+[2024-04-10T14:41:08.293Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:41:08.307Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:43:58.430Z] info server running on port 3000
+[2024-04-10T14:44:20.041Z] info server running on port 3000
+[2024-04-10T14:45:34.804Z] info server running on port 3000
+[2024-04-10T14:45:40.365Z] info server running on port 3000
+[2024-04-10T14:45:52.072Z] info server running on port 3000
+[2024-04-10T14:45:55.986Z] info server running on port 3000
+[2024-04-10T14:46:03.370Z] info server running on port 3000
+[2024-04-10T14:46:09.831Z] info server running on port 3000
+[2024-04-10T14:46:12.455Z] info Token validated successfuly
+[2024-04-10T14:46:12.456Z] info enter the endpoint get Dropshippers
+[2024-04-10T14:46:12.456Z] info Error getDropshippers: ReferenceError: Dropshipper is not defined
+[2024-04-10T14:46:35.352Z] info server running on port 3000
+[2024-04-10T14:46:38.242Z] info Token validated successfuly
+[2024-04-10T14:46:38.243Z] info enter the endpoint get Dropshippers
+[2024-04-10T14:46:38.274Z] info Get dropshippers successfuly
+[2024-04-10T14:51:30.061Z] info server running on port 3000
+[2024-04-10T14:51:50.484Z] info server running on port 3000
+[2024-04-10T14:52:12.377Z] info server running on port 3000
+[2024-04-10T14:53:17.883Z] info server running on port 3000
+[2024-04-10T14:53:21.168Z] info server running on port 3000
+[2024-04-10T14:53:29.674Z] info Token validated successfuly
+[2024-04-10T14:53:29.675Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T14:53:29.751Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T14:53:45.171Z] info Token validated successfuly
+[2024-04-10T14:53:45.172Z] info enter the endpoint get Dropshippers
+[2024-04-10T14:53:45.177Z] info Get dropshippers successfuly
+[2024-04-10T14:55:07.534Z] info server running on port 3000
+[2024-04-10T14:57:09.154Z] info server running on port 3000
+[2024-04-10T14:57:27.439Z] info server running on port 3000
+[2024-04-10T14:58:13.472Z] info server running on port 3000
+[2024-04-10T14:59:25.874Z] info server running on port 3000
+[2024-04-10T15:00:23.581Z] info server running on port 3000
+[2024-04-10T15:00:46.880Z] info server running on port 3000
+[2024-04-10T15:01:07.614Z] info Token validated successfuly
+[2024-04-10T15:01:07.614Z] info enter the endpoint add Dropshippers
+[2024-04-10T15:01:07.647Z] info Add dropshippers successfuly
+[2024-04-10T15:03:02.402Z] info server running on port 3000
+[2024-04-10T15:03:05.762Z] info Token validated successfuly
+[2024-04-10T15:03:05.763Z] info enter the endpoint add Dropshippers
+[2024-04-10T15:03:05.838Z] info Add dropshippers successfuly
+[2024-04-10T16:12:00.511Z] info server running on port 3000
+[2024-04-10T16:12:03.804Z] info enter the endpoint login manager
+[2024-04-10T16:12:03.838Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-10T16:12:12.092Z] info Token validated successfuly
+[2024-04-10T16:12:12.093Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:12:12.096Z] info getDetailDropshipper successfuly
+[2024-04-10T16:12:16.655Z] info Token validated successfuly
+[2024-04-10T16:12:16.656Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:12:16.658Z] info getDetailDropshipper successfuly
+[2024-04-10T16:12:20.818Z] info Token validated successfuly
+[2024-04-10T16:12:20.819Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:12:20.821Z] info Not found getDetailDropshipper
+[2024-04-10T16:12:26.066Z] info Token validated successfuly
+[2024-04-10T16:12:26.067Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:12:26.069Z] info getDetailDropshipper successfuly
+[2024-04-10T16:13:43.099Z] info server running on port 3000
+[2024-04-10T16:13:45.666Z] info Token validated successfuly
+[2024-04-10T16:13:45.667Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:13:45.707Z] info getDetailDropshipper successfuly
+[2024-04-10T16:15:30.426Z] info server running on port 3000
+[2024-04-10T16:16:18.975Z] info server running on port 3000
+[2024-04-10T16:16:19.859Z] info Token validated successfuly
+[2024-04-10T16:16:19.860Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:16:19.916Z] info Error getDetailDropshipper: SequelizeDatabaseError: (conn=17, no: 1054, SQLState: 42S22) Unknown column 'stores->packages.' in 'field list'
+sql: SELECT `dropshippers`.`id_dropshipper`, `dropshippers`.`tipo_documento`, `dropshippers`.`numero_documento`, `dropshippers`.`status_dropshipper`, `dropshippers`.`name_dropshipper`, `dropshippers`.`last_name_dropshipper`, `dropshippers`.`phone_number_dropshi... - parameters:[]
+[2024-04-10T16:17:05.970Z] info server running on port 3000
+[2024-04-10T16:17:07.772Z] info Token validated successfuly
+[2024-04-10T16:17:07.772Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:17:07.808Z] info getDetailDropshipper successfuly
+[2024-04-10T16:17:16.466Z] info server running on port 3000
+[2024-04-10T16:17:16.629Z] info Token validated successfuly
+[2024-04-10T16:17:16.629Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:17:16.662Z] info Error getDetailDropshipper: SequelizeDatabaseError: (conn=21, no: 1054, SQLState: 42S22) Unknown column 'stores->packages.' in 'field list'
+sql: SELECT `dropshippers`.`id_dropshipper`, `dropshippers`.`tipo_documento`, `dropshippers`.`numero_documento`, `dropshippers`.`status_dropshipper`, `dropshippers`.`name_dropshipper`, `dropshippers`.`last_name_dropshipper`, `dropshippers`.`phone_number_dropshi... - parameters:[]
+[2024-04-10T16:17:32.102Z] info server running on port 3000
+[2024-04-10T16:17:47.783Z] info Token validated successfuly
+[2024-04-10T16:17:47.783Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:17:47.817Z] info Error getDetailDropshipper: SequelizeDatabaseError: (conn=23, no: 1054, SQLState: 42S22) Unknown column 'stores->packages.' in 'field list'
+sql: SELECT `dropshippers`.`id_dropshipper`, `dropshippers`.`tipo_documento`, `dropshippers`.`numero_documento`, `dropshippers`.`status_dropshipper`, `dropshippers`.`name_dropshipper`, `dropshippers`.`last_name_dropshipper`, `dropshippers`.`phone_number_dropshi... - parameters:[]
+[2024-04-10T16:18:51.438Z] info server running on port 3000
+[2024-04-10T16:18:52.079Z] info Token validated successfuly
+[2024-04-10T16:18:52.080Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:18:52.115Z] info getDetailDropshipper successfuly
+[2024-04-10T16:22:11.454Z] info server running on port 3000
+[2024-04-10T16:22:13.615Z] info Token validated successfuly
+[2024-04-10T16:22:13.616Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:22:13.649Z] info getDetailDropshipper successfuly
+[2024-04-10T16:22:49.498Z] info server running on port 3000
+[2024-04-10T16:22:51.680Z] info Token validated successfuly
+[2024-04-10T16:22:51.681Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:22:51.717Z] info getDetailDropshipper successfuly
+[2024-04-10T16:24:58.997Z] info server running on port 3000
+[2024-04-10T16:25:02.394Z] info Token validated successfuly
+[2024-04-10T16:25:02.395Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:25:02.434Z] info getDetailDropshipper successfuly
+[2024-04-10T16:25:40.545Z] info server running on port 3000
+[2024-04-10T16:25:41.388Z] info Token validated successfuly
+[2024-04-10T16:25:41.389Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:25:41.429Z] info getDetailDropshipper successfuly
+[2024-04-10T16:26:25.459Z] info server running on port 3000
+[2024-04-10T16:26:28.334Z] info server running on port 3000
+[2024-04-10T16:26:32.391Z] info server running on port 3000
+[2024-04-10T16:26:32.458Z] info Token validated successfuly
+[2024-04-10T16:26:32.459Z] info enter the endpoint getDetailCarrier
+[2024-04-10T16:26:32.499Z] info getDetailDropshipper successfuly
+[2024-04-10T19:10:47.280Z] info server running on port 3000
+[2024-04-10T19:20:30.608Z] info server running on port 3000
+[2024-04-10T19:28:10.879Z] info server running on port 3000
+[2024-04-10T19:29:39.731Z] info server running on port 3000
+[2024-04-10T19:29:44.332Z] info server running on port 3000
+[2024-04-10T19:30:29.506Z] info enter the endpoint login manager
+[2024-04-10T19:30:29.538Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-10T19:30:54.383Z] info Token validated successfuly
+[2024-04-10T19:30:54.384Z] info enter the endpoint edit dropshipper
+[2024-04-10T19:30:54.388Z] info Edit dropshipper successfuly
+[2024-04-10T19:34:12.297Z] info Token validated successfuly
+[2024-04-10T19:34:12.297Z] info enter the endpoint edit carrier
+[2024-04-10T19:34:12.329Z] info edit carrier successfuly
+[2024-04-10T19:37:33.187Z] info server running on port 3000
+[2024-04-10T19:38:02.906Z] info server running on port 3000
+[2024-04-10T19:38:07.081Z] info server running on port 3000
+[2024-04-10T19:38:11.605Z] info Token validated successfuly
+[2024-04-10T19:38:11.605Z] info enter the endpoint delete dropshipper
+[2024-04-10T19:38:11.633Z] info Not found dropshipper
+[2024-04-10T19:38:24.983Z] info Token validated successfuly
+[2024-04-10T19:38:24.983Z] info enter the endpoint delete dropshipper
+[2024-04-10T19:38:25.001Z] info Delete dropshipper successfuly
+[2024-04-10T19:40:18.328Z] info server running on port 3000
+[2024-04-10T19:41:02.669Z] info server running on port 3000
+[2024-04-10T19:41:40.632Z] info server running on port 3000
+[2024-04-10T19:43:18.585Z] info server running on port 3000
+[2024-04-10T19:44:41.221Z] info server running on port 3000
+[2024-04-10T19:45:53.988Z] info Token validated successfuly
+[2024-04-10T19:45:53.988Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:45:53.989Z] info Error Dropshipper_payment_request: ReferenceError: Dropshipper_bank_account is not defined
+[2024-04-10T19:46:16.854Z] info server running on port 3000
+[2024-04-10T19:46:19.930Z] info Token validated successfuly
+[2024-04-10T19:46:19.930Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:46:19.962Z] info Error Dropshipper_payment_request: SequelizeDatabaseError: (conn=74, no: 1054, SQLState: 42S22) Unknown column 'dropshipper_payment_requests.fk_id_cba_dpr' in 'field list'
+sql: SELECT `dropshipper_payment_requests`.`id_dpr`, `dropshipper_payment_requests`.`quantity_requested_dpr`, `dropshipper_payment_requests`.`status_dpr`, `dropshipper_payment_requests`.`createdAt`, `dropshipper_payment_requests`.`fk_id_cba_dpr`, `Dropshipper_b... - parameters:[]
+[2024-04-10T19:46:47.327Z] info server running on port 3000
+[2024-04-10T19:46:47.649Z] info Token validated successfuly
+[2024-04-10T19:46:47.649Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:46:47.681Z] info Error Dropshipper_payment_request: SequelizeDatabaseError: (conn=76, no: 1054, SQLState: 42S22) Unknown column 'dropshipper_payment_requests.fk_id_cba_dpr' in 'field list'
+sql: SELECT `dropshipper_payment_requests`.`id_dpr`, `dropshipper_payment_requests`.`quantity_requested_dpr`, `dropshipper_payment_requests`.`status_dpr`, `dropshipper_payment_requests`.`createdAt`, `dropshipper_payment_requests`.`fk_id_cba_dpr`, `Dropshipper_b... - parameters:[]
+[2024-04-10T19:47:03.073Z] info server running on port 3000
+[2024-04-10T19:47:04.054Z] info Token validated successfuly
+[2024-04-10T19:47:04.055Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:47:04.087Z] info Error Dropshipper_payment_request: SequelizeDatabaseError: (conn=78, no: 1054, SQLState: 42S22) Unknown column 'dropshipper_payment_requests.fk_id_dba_dpr' in 'field list'
+sql: SELECT `dropshipper_payment_requests`.`id_dpr`, `dropshipper_payment_requests`.`quantity_requested_dpr`, `dropshipper_payment_requests`.`status_dpr`, `dropshipper_payment_requests`.`createdAt`, `dropshipper_payment_requests`.`fk_id_dba_dpr`, `Dropshipper_b... - parameters:[]
+[2024-04-10T19:47:27.948Z] info server running on port 3000
+[2024-04-10T19:47:28.859Z] info Token validated successfuly
+[2024-04-10T19:47:28.859Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:47:28.891Z] info Error Dropshipper_payment_request: SequelizeDatabaseError: (conn=84, no: 1054, SQLState: 42S22) Unknown column 'Dropshipper_bank_account->dropshipper.url_QR_dropshipper' in 'field list'
+sql: SELECT `dropshipper_payment_requests`.`id_dpr`, `dropshipper_payment_requests`.`quantity_requested_dpr`, `dropshipper_payment_requests`.`status_dpr`, `dropshipper_payment_requests`.`createdAt`, `dropshipper_payment_requests`.`fk_id_dba_drp`, `Dropshipper_b... - parameters:[]
+[2024-04-10T19:47:44.276Z] info server running on port 3000
+[2024-04-10T19:47:44.384Z] info Token validated successfuly
+[2024-04-10T19:47:44.384Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:47:44.419Z] info Dropshipper_payment_request successfuly
+[2024-04-10T19:48:44.585Z] info server running on port 3000
+[2024-04-10T19:48:44.601Z] info Token validated successfuly
+[2024-04-10T19:48:44.601Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:48:44.638Z] info Dropshipper_payment_request successfuly
+[2024-04-10T19:49:07.275Z] info Token validated successfuly
+[2024-04-10T19:49:07.275Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-10T19:49:07.281Z] info getPaymentsRequestCarrier successfuly
+[2024-04-10T19:51:13.142Z] info server running on port 3000
+[2024-04-10T19:52:15.174Z] info server running on port 3000
+[2024-04-10T19:52:27.569Z] info server running on port 3000
+[2024-04-10T19:52:34.243Z] info server running on port 3000
+[2024-04-10T19:52:41.738Z] info server running on port 3000
+[2024-04-10T19:53:52.829Z] info server running on port 3000
+[2024-04-10T19:53:55.703Z] info Token validated successfuly
+[2024-04-10T19:53:55.703Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:53:55.738Z] info Dropshipper_payment_request successfuly
+[2024-04-10T19:55:14.724Z] info Token validated successfuly
+[2024-04-10T19:55:14.724Z] info enter the endpoint addPaymentRequest dropshipper
+[2024-04-10T19:55:14.737Z] info AddPaymentRequest dropshipper successfuly
+[2024-04-10T19:56:10.752Z] info server running on port 3000
+[2024-04-10T19:56:16.895Z] info Token validated successfuly
+[2024-04-10T19:56:16.895Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:56:16.930Z] info Error getPaymentsRequestDropshipper: TypeError: Cannot read properties of undefined (reading 'dropshipper')
+[2024-04-10T19:57:02.974Z] info server running on port 3000
+[2024-04-10T19:57:05.356Z] info Token validated successfuly
+[2024-04-10T19:57:05.356Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:57:05.390Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-10T19:57:30.608Z] info server running on port 3000
+[2024-04-10T19:57:30.757Z] info Token validated successfuly
+[2024-04-10T19:57:30.757Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:57:30.792Z] info Error getPaymentsRequestDropshipper: TypeError: Cannot read properties of undefined (reading 'dropshipper')
+[2024-04-10T19:57:43.963Z] info server running on port 3000
+[2024-04-10T19:57:44.382Z] info Token validated successfuly
+[2024-04-10T19:57:44.382Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:57:44.418Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-10T19:57:46.983Z] info server running on port 3000
+[2024-04-10T19:58:12.256Z] info server running on port 3000
+[2024-04-10T19:58:12.668Z] info Token validated successfuly
+[2024-04-10T19:58:12.668Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:58:12.704Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-10T19:58:24.382Z] info server running on port 3000
+[2024-04-10T19:58:24.759Z] info Token validated successfuly
+[2024-04-10T19:58:24.759Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:58:24.796Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-10T19:58:33.162Z] info server running on port 3000
+[2024-04-10T19:58:35.885Z] info Token validated successfuly
+[2024-04-10T19:58:35.886Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T19:58:35.920Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-10T19:59:12.039Z] info Token validated successfuly
+[2024-04-10T19:59:12.040Z] info enter the endpoint addPaymentRequest dropshipper
+[2024-04-10T19:59:12.052Z] info AddPaymentRequest dropshipper successfuly
+[2024-04-10T20:00:05.758Z] info Token validated successfuly
+[2024-04-10T20:00:05.758Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T20:00:05.766Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-10T20:00:19.006Z] info Token validated successfuly
+[2024-04-10T20:00:19.007Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-10T20:00:19.011Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-10T20:00:28.693Z] info Token validated successfuly
+[2024-04-10T20:00:28.693Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-10T20:00:28.695Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-10T20:00:33.053Z] info Token validated successfuly
+[2024-04-10T20:00:33.054Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T20:00:33.057Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-10T20:00:47.423Z] info server running on port 3000
+[2024-04-10T20:01:10.340Z] info server running on port 3000
+[2024-04-10T20:01:17.613Z] info server running on port 3000
+[2024-04-10T20:03:32.425Z] info server running on port 3000
+[2024-04-10T20:03:40.861Z] info Token validated successfuly
+[2024-04-10T20:03:40.862Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-10T20:03:40.899Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-10T20:07:51.361Z] info server running on port 3000
+[2024-04-10T20:08:39.565Z] info server running on port 3000
+[2024-04-10T20:08:46.550Z] info server running on port 3000
+[2024-04-10T20:08:54.210Z] info server running on port 3000
+[2024-04-10T20:08:59.131Z] info server running on port 3000
+[2024-04-10T20:09:12.591Z] info server running on port 3000
+[2024-04-10T20:10:45.940Z] info server running on port 3000
+[2024-04-10T20:11:56.172Z] info server running on port 3000
+[2024-04-10T20:11:59.085Z] info server running on port 3000
+[2024-04-10T20:14:22.938Z] info server running on port 3000
+[2024-04-10T20:14:23.481Z] info Token validated successfuly
+[2024-04-10T20:14:23.482Z] info enter the endpoint to pay dropshipper
+[2024-04-10T20:14:23.515Z] info Error To pay dropshipper: TypeError: Cannot read properties of undefined (reading 'fk_id_dropshipper_dba')
+[2024-04-10T20:15:21.470Z] info server running on port 3000
+[2024-04-10T20:15:22.411Z] info Token validated successfuly
+[2024-04-10T20:15:22.412Z] info enter the endpoint to pay dropshipper
+[2024-04-10T20:15:42.043Z] info server running on port 3000
+[2024-04-10T20:15:44.938Z] info server running on port 3000
+[2024-04-10T20:15:45.888Z] info Token validated successfuly
+[2024-04-10T20:15:45.889Z] info enter the endpoint to pay dropshipper
+[2024-04-10T20:15:45.925Z] info Error To pay dropshipper: ReferenceError: Portfolio_history_Dropshipper is not defined
+[2024-04-10T20:16:48.836Z] info server running on port 3000
+[2024-04-10T20:16:54.829Z] info Token validated successfuly
+[2024-04-10T20:16:54.829Z] info enter the endpoint to pay dropshipper
+[2024-04-10T20:16:54.866Z] info To pay dropshipper successfuly
+[2024-04-10T20:17:50.605Z] info Token validated successfuly
+[2024-04-10T20:17:50.606Z] info enter the endpoint to pay dropshipper
+[2024-04-10T20:17:50.613Z] info To pay dropshipper successfuly
+[2024-04-10T20:36:24.061Z] info server running on port 3000
+[2024-04-10T20:37:32.016Z] info server running on port 3000
+[2024-04-10T20:37:52.035Z] info server running on port 3000
+[2024-04-10T20:38:29.678Z] info server running on port 3000
+[2024-04-10T20:38:31.766Z] info server running on port 3000
+[2024-04-10T20:39:20.916Z] info enter the endpoint login manager
+[2024-04-10T20:39:20.950Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-10T20:39:29.876Z] info Token validated successfuly
+[2024-04-10T20:39:29.876Z] info enter the endpoint getPortfolio carrier
+[2024-04-10T20:39:39.646Z] info Token validated successfuly
+[2024-04-10T20:39:39.646Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-10T20:39:39.647Z] info Error getPortfolio: ReferenceError: Portfolio_history_dropshipper is not defined
+[2024-04-10T20:39:53.739Z] info server running on port 3000
+[2024-04-10T20:39:55.844Z] info server running on port 3000
+[2024-04-10T20:39:57.662Z] info Token validated successfuly
+[2024-04-10T20:39:57.662Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-10T20:39:57.692Z] info Error getPortfolio: SequelizeDatabaseError: (conn=333, no: 1054, SQLState: 42S22) Unknown column 'portfolios_history_dropshipper.fk_id_dropshipper_phc' in 'where clause'
+sql: SELECT `portfolios_history_dropshipper`.`id_phd`, `portfolios_history_dropshipper`.`type_phd`, `portfolios_history_dropshipper`.`monto_phd`, `portfolios_history_dropshipper`.`description_phd`, `portfolios_history_dropshipper`.`createdAt`, `portfolios_histo... - parameters:[]
+[2024-04-10T20:40:10.930Z] info server running on port 3000
+[2024-04-10T20:40:17.726Z] info server running on port 3000
+[2024-04-10T20:40:19.128Z] info Token validated successfuly
+[2024-04-10T20:40:19.129Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-10T20:40:19.165Z] info getPortfolio dropshipper successfuly
+[2024-04-10T20:42:37.484Z] info server running on port 3000
+[2024-04-10T20:42:46.345Z] info server running on port 3000
+[2024-04-10T20:43:37.387Z] info server running on port 3000
+[2024-04-10T20:44:06.407Z] info server running on port 3000
+[2024-04-10T20:44:36.951Z] info server running on port 3000
+[2024-04-10T20:45:54.188Z] info server running on port 3000
+[2024-04-10T20:48:04.994Z] info server running on port 3000
+[2024-04-10T20:48:53.351Z] info server running on port 3000
+[2024-04-10T20:49:37.499Z] info server running on port 3000
+[2024-04-10T20:49:49.454Z] info server running on port 3000
+[2024-04-10T20:49:56.270Z] info server running on port 3000
+[2024-04-10T20:52:01.785Z] info server running on port 3000
+[2024-04-10T20:52:06.930Z] info Token validated successfuly
+[2024-04-10T20:52:06.931Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T20:52:06.931Z] info Error downloadExcelPortfolio: ReferenceError: Portfolio_history_dropshipper is not defined
+[2024-04-10T20:52:22.142Z] info server running on port 3000
+[2024-04-10T20:52:22.724Z] info Token validated successfuly
+[2024-04-10T20:52:22.724Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T20:52:22.757Z] info Error downloadExcelPortfolio: SequelizeDatabaseError: (conn=361, no: 1054, SQLState: 42S22) Unknown column 'portfolios_history_dropshipper.fk_id_dropshipper_phc' in 'where clause'
+sql: SELECT `portfolios_history_dropshipper`.`id_phd`, `portfolios_history_dropshipper`.`type_phd`, `portfolios_history_dropshipper`.`monto_phd`, `portfolios_history_dropshipper`.`description_phd`, `portfolios_history_dropshipper`.`createdAt`, `portfolios_histo... - parameters:[]
+[2024-04-10T20:52:33.240Z] info server running on port 3000
+[2024-04-10T20:52:33.909Z] info Token validated successfuly
+[2024-04-10T20:52:33.910Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T20:52:33.989Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T20:52:36.856Z] info Token validated successfuly
+[2024-04-10T20:52:36.856Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T20:52:36.874Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T20:53:30.682Z] info server running on port 3000
+[2024-04-10T20:53:56.361Z] info server running on port 3000
+[2024-04-10T20:54:10.456Z] info server running on port 3000
+[2024-04-10T20:54:16.076Z] info Token validated successfuly
+[2024-04-10T20:54:16.077Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T20:54:16.159Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T20:55:03.334Z] info server running on port 3000
+[2024-04-10T20:55:04.426Z] info Token validated successfuly
+[2024-04-10T20:55:04.426Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T20:55:22.074Z] info server running on port 3000
+[2024-04-10T20:55:23.517Z] info Token validated successfuly
+[2024-04-10T20:55:23.518Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-10T20:55:23.590Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T20:55:57.153Z] info Token validated successfuly
+[2024-04-10T20:55:57.153Z] info enter the endpoint downloadExcelPortfolio carrier
+[2024-04-10T20:55:57.165Z] info Error downloadExcelPortfolio: TypeError: Cannot read properties of undefined (reading 'description_td')
+[2024-04-10T20:56:48.031Z] info server running on port 3000
+[2024-04-10T20:56:48.369Z] info Token validated successfuly
+[2024-04-10T20:56:48.370Z] info enter the endpoint downloadExcelPortfolio carrier
+[2024-04-10T20:56:59.344Z] info server running on port 3000
+[2024-04-10T20:57:03.464Z] info server running on port 3000
+[2024-04-10T20:57:03.828Z] info Token validated successfuly
+[2024-04-10T20:57:03.828Z] info enter the endpoint downloadExcelPortfolio carrier
+[2024-04-10T20:57:03.899Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T20:57:05.905Z] info Token validated successfuly
+[2024-04-10T20:57:05.906Z] info enter the endpoint downloadExcelPortfolio carrier
+[2024-04-10T20:57:05.925Z] info downloadExcelPortfolio Dropshipper successfuly

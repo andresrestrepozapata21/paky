@@ -3,7 +3,7 @@ import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
 import { Dropshipper } from "./dropshippers.model.js";
 // I define the model for the users table in a variable and export him
-export const Dropshipper_bank_account = sequelize.define('Dropshipper_bank_accounts', {
+export const Dropshipper_bank_account = sequelize.define('dropshipper_bank_accounts', {
     id_dba: {
         type: DataTypes.INTEGER,
         primaryKey: true,

@@ -4,7 +4,7 @@ import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
 import ExcelJS from 'exceljs';
-import { Sequelize } from "sequelize";
+import { Sequelize, Op } from "sequelize";
 // import personaly models
 import { Dropshipper } from '../models/dropshippers.model.js';
 import { Package } from "../models/packages.model.js";
@@ -972,7 +972,13 @@ export async function getPortfolio(req, res) {
         const getPortfolio = await Portfolios_history_dropshipper.findAll({
             where: {
                 fk_id_dropshipper_phd: id_dropshipper
-            }
+            },
+            include: [
+                {
+                    model: Dropshipper,
+                    attributes: ['id_dropshipper', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'phone_number_dropshipper', 'email_dropshipper']
+                }
+            ]
         });
         // logger control proccess
         logger.info('getPortfolio Dropshipper successfuly');
@@ -984,7 +990,7 @@ export async function getPortfolio(req, res) {
         });
     } catch (e) {
         // logger control proccess
-        logger.info('Error getPackages: ' + e);
+        logger.info('Error getPorfolio: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
@@ -1006,15 +1012,24 @@ export async function downloadExcelPortfolio(req, res) {
         // I find if exist package by dropshipper
         const infoPortfolio = await Portfolios_history_dropshipper.findAll({
             where: {
-                fk_id_dropshipper_phd: id_dropshipper
-            }
+                fk_id_dropshipper_phd: id_dropshipper,
+                createdAt: {
+                    [Op.between]: [startDate, endDate]
+                }
+            },
+            include: [
+                {
+                    model: Dropshipper,
+                    attributes: ['tipo_documento', 'numero_documento', 'name_dropshipper', 'last_name_dropshipper', 'phone_number_dropshipper', 'email_dropshipper']
+                }
+            ]
         });
         // I validate exist  infoDropshipper and infoPortfolio
         if (infoPortfolio.length > 0) {
             let dataForExcel = [];
             // Process data for JSON response
             const getPortfolios = infoPortfolio.map(p => {
-                dataForExcel.push({ id_phd: p.id_phd, type_phd: p.type_phd, monto_phd: p.monto_phd, description_phd: p.description_phd, createdAt: p.createdAt, fk_id_dropshipper_phd: p.fk_id_dropshipper_phd });
+                dataForExcel.push({ id_phd: p.id_phd, type_phd: p.type_phd, monto_phd: p.monto_phd, description_phd: p.description_phd, createdAt: p.createdAt, tipo_documento: p.dropshipper.tipo_documento, numero_documento: p.dropshipper.numero_documento,  name_dropshipper: p.dropshipper.name_dropshipper, last_name_dropshipper: p.dropshipper.last_name_dropshipper, phone_number_dropshipper: p.dropshipper.phone_number_dropshipper, email_dropshipper: p.dropshipper.email_dropshipper });
             });
             // Creación de un libro y una hoja de Excel
             const workbook = new ExcelJS.Workbook();
@@ -1027,7 +1042,12 @@ export async function downloadExcelPortfolio(req, res) {
                 { header: 'Monto', key: 'monto_phd', width: 30 },
                 { header: 'Descripción', key: 'description_phd', width: 30 },
                 { header: 'Fecha', key: 'createdAt', width: 30 },
-                { header: 'Dropshipper', key: 'fk_id_dropshipper_phd', width: 30 }
+                { header: 'Tipo Documento Dropshipper', key: 'tipo_documento', width: 30 },
+                { header: 'Número Documento Dropshipper', key: 'numero_documento', width: 30 },
+                { header: 'Nombres Dropshipper', key: 'name_dropshipper', width: 30 },
+                { header: 'Apellidos Dropshipper', key: 'last_name_dropshipper', width: 30 },
+                { header: 'Teléfono Dropshipper', key: 'phone_number_dropshipper', width: 30 },
+                { header: 'Email Dropshipper', key: 'email_dropshipper', width: 30 }
             ];
 
             // Agregando los datos a la hoja
@@ -1037,7 +1057,7 @@ export async function downloadExcelPortfolio(req, res) {
 
             // Configuración de los headers para descargar el archivo
             res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-            res.setHeader('Content-Disposition', 'attachment; filename="reporte_historial_cartera.xlsx"');
+            res.setHeader('Content-Disposition', 'attachment; filename="reporte_historial_cartera_dropshipper.xlsx"');
 
             // Escribir y enviar el archivo
             await workbook.xlsx.write(res);

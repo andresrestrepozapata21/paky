@@ -3,7 +3,8 @@ import jwt from "jsonwebtoken";
 import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
-import { Sequelize } from "sequelize";
+import ExcelJS from 'exceljs';
+import { Sequelize, Op } from "sequelize";
 // import personaly models
 import { Manager } from '../models/managers.model.js';
 import { City } from '../models/cities.model.js';
@@ -22,7 +23,13 @@ import { Vehicle } from "../models/vehicles.model.js";
 import { Vehicle_document } from "../models/vehicle_documents.model.js";
 import { Carrier_payment_request } from "../models/carrier_payment_requests.model.js";
 import { Carrier_bank_account } from "../models/carrier_bank_accounts.model.js";
-import { Portfolio_history_carrier } from '../models/portfolio_history_carrier.model.js'
+import { Portfolio_history_carrier } from '../models/portfolio_history_carrier.model.js';
+import { Portfolios_history_dropshipper } from '../models/portfolio_history_dropshipper.model.js';
+import { Dropshipper } from "../models/dropshippers.model.js";
+import { Dropshipper_payment_request } from "../models/dropshipper_payment_requests.model.js";
+import { Dropshipper_bank_account } from "../models/dropshipper_bank_accounts.model.js";
+import { Evidence } from "../models/evidences.model.js"
+import { Type_document } from "../models/type_document.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -1059,7 +1066,7 @@ export async function getPaymentsRequestCarrier(req, res) {
     }
 }
 
-// Method get payments request carrier
+// Method get details payments request carrier
 export async function detailPaymentRequestCarrier(req, res) {
     // logger control proccess
     logger.info('enter the endpoint getPaymentsRequestCarrier');
@@ -1201,6 +1208,690 @@ export async function toPayCarrier(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error To pay package: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method getPortfolio carrier
+export async function getPortfolioCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getPortfolio carrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.body;
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        // I find if exist package by carrier
+        const getPortfolio = await Portfolio_history_carrier.findAll({
+            where: {
+                fk_id_carrier_phc: id_carrier
+            },
+            include: [
+                {
+                    model: Carrier,
+                    attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier']
+                }
+            ]
+        });
+        // logger control proccess
+        logger.info('getPortfolio carrier successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'getPortfolio carrier successfuly',
+            result: 1,
+            data: getPortfolio
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getPortfolio: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method downloadExcelPortfolio carrier
+export async function downloadExcelPortfolioCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint downloadExcelPortfolio carrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier, startDate, endDate } = req.body;
+        // I validate req correct json
+        if (!id_carrier) return res.sendStatus(400);
+        // I find if exist package by carrier
+        const infoPortfolio = await Portfolio_history_carrier.findAll({
+            where: {
+                fk_id_carrier_phc: id_carrier,
+                createdAt: {
+                    [Op.between]: [startDate, endDate]
+                }
+            },
+            include: [
+                {
+                    model: Carrier,
+                    attributes: ['number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier'],
+                    include: [
+                        {
+                            model: Type_document,
+                            attributes: ['description_td']
+                        }
+                    ]
+                }
+            ]
+        });
+        // I validate exist  infoPortfolio and infoPortfolio
+        if (infoPortfolio.length > 0) {
+            let dataForExcel = [];
+            // Process data for JSON response
+            const getPortfolios = infoPortfolio.map(p => {
+                dataForExcel.push({ id_phc: p.id_phc, type_phc: p.type_phc, Quantity_pay_phc: p.Quantity_pay_phc, description_phc: p.description_phc, createdAt: p.createdAt, types_document: p.carrier.types_document.description_td ,number_document_carrier: p.carrier.number_document_carrier, name_carrier: p.carrier.name_carrier, last_name_carrier: p.carrier.last_name_carrier, phone_number_carrier: p.carrier.phone_number_carrier, email_carrier: p.carrier.email_carrier });
+            });
+            // Creación de un libro y una hoja de Excel
+            const workbook = new ExcelJS.Workbook();
+            const worksheet = workbook.addWorksheet('Mis Datos');
+
+            // Definición de las columnas
+            worksheet.columns = [
+                { header: 'ID', key: 'id_phc', width: 10 },
+                { header: 'tipo', key: 'type_phc', width: 20 },
+                { header: 'Monto', key: 'Quantity_pay_phc', width: 30 },
+                { header: 'Descripción', key: 'description_phc', width: 30 },
+                { header: 'Fecha', key: 'createdAt', width: 30 },
+                { header: 'Tipo Documento Transportista', key: 'types_document', width: 30 },
+                { header: '# Documento Transportista', key: 'number_document_carrier', width: 30 },
+                { header: 'Nombres Transportista', key: 'name_carrier', width: 30 },
+                { header: 'Apellidos Transportistas', key: 'last_name_carrier', width: 30 },
+                { header: 'Teléfono Transportista', key: 'phone_number_carrier', width: 30 },
+                { header: 'Email Transportista', key: 'email_carrier', width: 30 }
+            ];
+
+            // Agregando los datos a la hoja
+            dataForExcel.forEach(item => {
+                worksheet.addRow(item);
+            });
+
+            // Configuración de los headers para descargar el archivo
+            res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+            res.setHeader('Content-Disposition', 'attachment; filename="reporte_historial_cartera_carrier.xlsx"');
+
+            // Escribir y enviar el archivo
+            await workbook.xlsx.write(res);
+            // logger control proccess
+            logger.info('downloadExcelPortfolio Dropshipper successfuly');
+            res.end();
+        } else {
+            // logger control proccess
+            logger.info('Not found portfolio');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found portfolio',
+                result: 1,
+                data: infoPortfolio
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error downloadExcelPortfolio: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get Carriers
+export async function getDropshippers(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint get Dropshippers');
+    try {
+        // I find if exist package
+        const getDropshippers = await Dropshipper.findAll({
+            where: {
+                status_dropshipper: 1,
+            },
+            attributes: ['id_dropshipper', 'tipo_documento', 'numero_documento', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'phone_number_dropshipper', 'email_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
+        });
+        // I validate exist getDropshippers
+        if (getDropshippers.length > 0) {
+            // logger control proccess
+            logger.info('Get dropshippers successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'Get dropshippers successfuly',
+                result: 1,
+                data: getDropshippers
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getDropshippers');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found getDropshippers',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getDropshippers: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get Carriers
+export async function addDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint add Dropshippers');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { tipo_documento, numero_documento, name_dropshipper, last_name_dropshipper, phone_number_dropshipper, email_dropshipper, password_dropshipper } = req.body;
+        // I validate req correct json
+        if (!tipo_documento || !numero_documento || !name_dropshipper || !last_name_dropshipper || !phone_number_dropshipper || !email_dropshipper || !password_dropshipper) return res.sendStatus(400);
+        // I find if exist package
+        const newDropshippers = await Dropshipper.create({
+            tipo_documento,
+            numero_documento,
+            name_dropshipper,
+            last_name_dropshipper,
+            phone_number_dropshipper,
+            email_dropshipper,
+            password_dropshipper,
+            status_dropshipper: 1,
+            wallet_dropshipper: 0,
+            total_sales_dropshipper: 0
+        });
+        // logger control proccess
+        logger.info('Add dropshippers successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'Add dropshippers successfuly',
+            result: 1,
+            data: newDropshippers
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error add Dropshippers: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method getDetailDropshipper
+export async function getDetailDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getDetailCarrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dropshipper } = req.body;
+        // I validate req correct json
+        if (!id_dropshipper) return res.sendStatus(400);
+        // I find if exist package
+        const getDetailDropshipper = await Dropshipper.findOne({
+            where: {
+                id_dropshipper
+            },
+            attributes: ['id_dropshipper', 'tipo_documento', 'numero_documento', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'phone_number_dropshipper', 'email_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper'],
+            include: [
+                {
+                    model: Store,
+                    attributes: ['id_store', 'direction_store', 'phone_number_store', 'capacity_store'],
+                    include: [
+                        {
+                            model: Package,
+                            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p'],
+                            include: [
+                                {
+                                    model: Evidence,
+                                    attributes: ['id_evidence', 'url_image_evidence']
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        });
+        // I validate exist getDetailDropshipper
+        if (getDetailDropshipper) {
+            // logger control proccess
+            logger.info('getDetailDropshipper successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getDetailDropshipper successfuly',
+                result: 1,
+                data: getDetailDropshipper
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getDetailDropshipper');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found getDetailDropshipper',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getDetailDropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method edit dropshipper
+export async function editDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint edit dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dropshipper } = req.params;
+        // I validate req correct json
+        if (!id_dropshipper) return res.sendStatus(400);
+        // I find if exist package by 
+        const updateDropshipper = await Dropshipper.findOne({
+            where: {
+                id_dropshipper
+            }
+        });
+        // I validate exist info and infoStorePackage
+        if (updateDropshipper) {
+            updateDropshipper.set(req.body);
+            updateDropshipper.save()
+            // logger control proccess
+            logger.info('Edit dropshipper successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'Edit dropshipper successfuly',
+                result: 1,
+                updateDropshipper
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found dropshipper');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found dropshipper',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error edit dropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method deleteCarrier
+export async function deleteDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint delete dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dropshipper } = req.body;
+        // I validate req correct json
+        if (!id_dropshipper) return res.sendStatus(400);
+        // I find if exist package
+        const deleteDropshipper = await Dropshipper.destroy({
+            where: {
+                id_dropshipper
+            }
+        });
+        if (deleteDropshipper) {
+            // logger control proccess
+            logger.info('Delete dropshipper successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'Delete dropshipper successfuly',
+                result: 1,
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found dropshipper');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found dropshipper',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error delete dropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get payments request dropshipper
+export async function getPaymentsRequestDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getPaymentsRequestDropshipper');
+    try {
+        // I find if exist package
+        // 1. payment made 2. Pending
+        const getPaymentsRequestDropshipper = await Dropshipper_payment_request.findAll({
+            where: {
+                status_dpr: 2
+            },
+            attributes: ['id_dpr', 'quantity_requested_dpr', 'status_dpr', 'createdAt'],
+            include: [
+                {
+                    model: Dropshipper_bank_account,
+                    attributes: ['id_dba', 'number_dba', 'type_dba', 'bank_dba', 'description_dba'],
+                    include: [
+                        {
+                            model: Dropshipper,
+                            attributes: ['id_dropshipper', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
+                        }
+                    ]
+                }
+            ]
+        });
+        // logger control proccess
+        logger.info('Dropshipper_payment_request successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'Dropshipper_payment_request successfuly',
+            result: 1,
+            data: getPaymentsRequestDropshipper
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error Dropshipper_payment_request: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get details payments request dropshipper
+export async function detailPaymentRequestDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getPaymentsRequestDropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dpr } = req.body;
+        // I validate req correct json
+        if (!id_dpr) return res.sendStatus(400);
+        // I find if exist package
+        const getPaymentsRequestDropshipper = await Dropshipper_payment_request.findAll({
+            where: {
+                id_dpr
+            },
+            attributes: ['id_dpr', 'quantity_requested_dpr', 'status_dpr', 'createdAt'],
+            include: [
+                {
+                    model: Dropshipper_bank_account,
+                    attributes: ['id_dba', 'number_dba', 'type_dba', 'bank_dba', 'description_dba'],
+                    include: [
+                        {
+                            model: Dropshipper,
+                            attributes: ['id_dropshipper', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
+                        }
+                    ]
+                }
+            ]
+        });
+        // logger control proccess
+        logger.info('getPaymentsRequestDropshipper successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'getPaymentsRequestDropshipper successfuly',
+            result: 1,
+            data: getPaymentsRequestDropshipper
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getPaymentsRequestDropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method to pay dopshipper
+export async function toPayDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint to pay dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dpr } = req.body;
+        // I validate req correct json
+        if (!id_dpr) return res.sendStatus(400);
+        // I find if exist package by 
+        const getPaymentsRequestDropshipper = await Dropshipper_payment_request.findOne({
+            where: {
+                id_dpr
+            },
+            attributes: ['id_dpr', 'quantity_requested_dpr', 'status_dpr', 'createdAt'],
+            include: [
+                {
+                    model: Dropshipper_bank_account,
+                    attributes: ['fk_id_dropshipper_dba']
+                }
+            ]
+        });
+        // I validate exist getPaymentsRequestDropshipper
+        if (getPaymentsRequestDropshipper) {
+            // Capture id carrier
+            const id_dropshipper = getPaymentsRequestDropshipper.dropshipper_bank_account.fk_id_dropshipper_dba;
+            const quantity_requested_dpr = getPaymentsRequestDropshipper.quantity_requested_dpr;
+            // I find carrier
+            const getDropshipper = await Dropshipper.findOne({
+                where: {
+                    id_dropshipper
+                },
+                attributes: ['id_dropshipper', 'wallet_dropshipper']
+            });
+            if (getDropshipper.wallet_dropshipper >= quantity_requested_dpr) {
+                // Setting and save new revenue carrier
+                getDropshipper.set({
+                    wallet_dropshipper: getDropshipper.wallet_dropshipper - quantity_requested_dpr
+                });
+                getDropshipper.save();
+                // Setting and save status cpr
+                // 1. payment made 2. Pending
+                getPaymentsRequestDropshipper.set({
+                    status_dpr: 1
+                });
+                getPaymentsRequestDropshipper.save();
+                const postPortfolioDropshipper = Portfolios_history_dropshipper.create({
+                    type_phd: "Pago al dropshipper",
+                    monto_phd: quantity_requested_dpr,
+                    description_phd: "Pago al dropshipper",
+                    fk_id_dropshipper_phd: id_dropshipper
+                })
+                // logger control proccess
+                logger.info('To pay dropshipper successfuly');
+                // The credentials are incorrect
+                res.json({
+                    message: 'To pay dropshipper successfuly',
+                    result: 1
+                });
+            } else {
+                // logger control proccess
+                logger.info('Quantity requested invalidated');
+                // The credentials are incorrect
+                res.status(401).json({
+                    message: 'Quantity requested invalidated',
+                    result: 0
+                });
+            }
+        } else {
+            // logger control proccess
+            logger.info('Not found dropshipper');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found dropshipper',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error To pay dropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method getPortfolio dropshipper
+export async function getPortfolioDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getPortfolio dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dropshipper } = req.body;
+        // I validate req correct json
+        if (!id_dropshipper) return res.sendStatus(400);
+        // I find if exist package by dropshipper
+        const getPortfolio = await Portfolios_history_dropshipper.findAll({
+            where: {
+                fk_id_dropshipper_phd: id_dropshipper
+            },
+            include: [
+                {
+                    model: Dropshipper,
+                    attributes: ['id_dropshipper', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
+                }
+            ]
+        });
+        // logger control proccess
+        logger.info('getPortfolio dropshipper successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'getPortfolio dropshipper successfuly',
+            result: 1,
+            data: getPortfolio
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getPortfolio: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method downloadExcelPortfolio dropshipper
+export async function downloadExcelPortfolioDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint downloadExcelPortfolio dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dropshipper, startDate, endDate } = req.body;
+        // I validate req correct json
+        if (!id_dropshipper) return res.sendStatus(400);
+        // I find if exist package by dropshipper
+        const infoPortfolio = await Portfolios_history_dropshipper.findAll({
+            where: {
+                fk_id_dropshipper_phd: id_dropshipper,
+                createdAt: {
+                    [Op.between]: [startDate, endDate]
+                }
+            },
+            include: [
+                {
+                    model: Dropshipper,
+                    attributes: ['id_dropshipper', 'tipo_documento', 'numero_documento', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper', 'phone_number_dropshipper', 'email_dropshipper']
+                }
+            ]
+        });
+        // I validate exist  infoDropshipper and infoPortfolio
+        if (infoPortfolio.length > 0) {
+            let dataForExcel = [];
+            // Process data for JSON response
+            const getPortfolios = infoPortfolio.map(p => {
+                dataForExcel.push({ id_phd: p.id_phd, type_phd: p.type_phd, monto_phd: p.monto_phd, description_phd: p.description_phd, createdAt: p.createdAt, tipo_documento: p.dropshipper.tipo_documento, numero_documento: p.dropshipper.numero_documento, name_dropshipper: p.dropshipper.name_dropshipper, last_name_dropshipper: p.dropshipper.last_name_dropshipper, phone_number_dropshipper: p.dropshipper.phone_number_dropshipper, email_dropshipper: p.dropshipper.email_dropshipper });
+            });
+            // Creación de un libro y una hoja de Excel
+            const workbook = new ExcelJS.Workbook();
+            const worksheet = workbook.addWorksheet('Mis Datos');
+
+            // Definición de las columnas
+            worksheet.columns = [
+                { header: 'ID', key: 'id_phd', width: 10 },
+                { header: 'tipo', key: 'type_phd', width: 20 },
+                { header: 'Monto', key: 'monto_phd', width: 30 },
+                { header: 'Descripción', key: 'description_phd', width: 30 },
+                { header: 'Fecha', key: 'createdAt', width: 30 },
+                { header: 'Tipo Documento Dropshipper', key: 'tipo_documento', width: 30 },
+                { header: '# Documento Dropshipper', key: 'numero_documento', width: 30 },
+                { header: 'Nombres Dropshipper', key: 'name_dropshipper', width: 30 },
+                { header: 'Apellidos Dropshippers', key: 'last_name_dropshipper', width: 30 },
+                { header: 'Teléfono Dropshipper', key: 'phone_number_dropshipper', width: 30 },
+                { header: 'Email Dropshipper', key: 'email_dropshipper', width: 30 }
+            ];
+
+            // Agregando los datos a la hoja
+            dataForExcel.forEach(item => {
+                worksheet.addRow(item);
+            });
+
+            // Configuración de los headers para descargar el archivo
+            res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+            res.setHeader('Content-Disposition', 'attachment; filename="reporte_historial_cartera_dropshipper.xlsx"');
+
+            // Escribir y enviar el archivo
+            await workbook.xlsx.write(res);
+            // logger control proccess
+            logger.info('downloadExcelPortfolio Dropshipper successfuly');
+            res.end();
+        } else {
+            // logger control proccess
+            logger.info('Not found portfolio');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found portfolio',
+                result: 1,
+                data: infoPortfolio
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error downloadExcelPortfolio: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
