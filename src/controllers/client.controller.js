@@ -84,10 +84,10 @@ export async function getPackageGuide(req, res) {
             });
         } else {
             // logger control proccess
-            logger.info('Non-existent manager or not found packages');
+            logger.info('Not found packages');
             // The credentials are incorrect
             res.status(401).json({
-                message: 'Non-existent manager or not found packages',
+                message: 'Not found packages',
                 result: 1
             });
         }
