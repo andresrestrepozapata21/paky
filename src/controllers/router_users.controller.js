@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
-import { Sequelize, where } from "sequelize";
+import { Sequelize, Op } from "sequelize";
 // import personaly models
 import { Router_user } from '../models/router_users.model.js';
 import { Package } from '../models/packages.model.js';

@@ -4559,3 +4559,14 @@ sql: SELECT `portfolios_history_dropshipper`.`id_phd`, `portfolios_history_drops
 [2024-04-10T20:57:05.905Z] info Token validated successfuly
 [2024-04-10T20:57:05.906Z] info enter the endpoint downloadExcelPortfolio carrier
 [2024-04-10T20:57:05.925Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-10T21:14:17.655Z] info server running on port 3000
+[2024-04-10T21:14:18.809Z] info Enter the endpoint getPackageGuide
+[2024-04-10T21:14:18.810Z] info Error city packages: ReferenceError: Store is not defined
+[2024-04-10T21:14:45.727Z] info server running on port 3000
+[2024-04-10T21:14:45.808Z] info Enter the endpoint getPackageGuide
+[2024-04-10T21:14:45.841Z] info Get package successfuly
+[2024-04-10T21:15:03.667Z] info Enter the endpoint getPackageGuide
+[2024-04-10T21:15:03.678Z] info Get package successfuly
+[2024-04-10T21:15:21.334Z] info server running on port 3000
+[2024-04-10T21:15:38.710Z] info Enter the endpoint getPackageGuide
+[2024-04-10T21:15:38.748Z] info Get package successfuly
