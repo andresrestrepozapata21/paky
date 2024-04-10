@@ -1,5 +1,4 @@
 // I import the modules that need to be customized like the models or installed with npm
-import jwt from "jsonwebtoken";
 import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';

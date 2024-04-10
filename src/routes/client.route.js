@@ -1,7 +1,5 @@
 // I import my Express Router and modules need it
 import { Router } from 'express';
-import jwt from "jsonwebtoken";
-import logger from '../utils/logger.js';
 // I import my controller with the methods I need
 import { getPackageGuide } from "../controllers/client.controller.js"
 // Firme private secret jwt
