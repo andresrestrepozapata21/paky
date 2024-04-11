@@ -4,7 +4,7 @@ import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
 import { City } from "./cities.model.js";
 // I define the model for the users table in a variable and export him
-export const Router_user = sequelize.define('Router_users', {
+export const Router_user = sequelize.define('router_users', {
     id_ru: {
         type: DataTypes.INTEGER,
         primaryKey: true,

@@ -4570,3 +4570,205 @@ sql: SELECT `portfolios_history_dropshipper`.`id_phd`, `portfolios_history_drops
 [2024-04-10T21:15:21.334Z] info server running on port 3000
 [2024-04-10T21:15:38.710Z] info Enter the endpoint getPackageGuide
 [2024-04-10T21:15:38.748Z] info Get package successfuly
+[2024-04-11T14:48:48.467Z] info server running on port 3000
+[2024-04-11T14:48:56.276Z] info enter the endpoint login user router
+[2024-04-11T14:48:56.345Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T14:49:46.080Z] info enter the endpoint login user router
+[2024-04-11T14:49:46.085Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T14:49:51.661Z] info enter the endpoint login user router
+[2024-04-11T14:49:51.664Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T15:22:17.616Z] info enter the endpoint login user router
+[2024-04-11T15:23:06.446Z] info enter the endpoint login user router
+[2024-04-11T15:23:06.450Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:23:42.840Z] info enter the endpoint login user router
+[2024-04-11T15:23:42.844Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:25:01.174Z] info enter the endpoint login user router
+[2024-04-11T15:25:01.177Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:30:07.823Z] info enter the endpoint login user router
+[2024-04-11T15:30:07.826Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:30:52.863Z] info enter the endpoint login user router
+[2024-04-11T15:30:52.866Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:31:00.966Z] info enter the endpoint login user router
+[2024-04-11T15:31:00.968Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:31:52.566Z] info enter the endpoint login user router
+[2024-04-11T15:31:52.570Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:32:11.830Z] info enter the endpoint login user router
+[2024-04-11T15:32:11.834Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:32:24.894Z] info enter the endpoint login user router
+[2024-04-11T15:32:24.897Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:32:59.526Z] info enter the endpoint login user router
+[2024-04-11T15:32:59.529Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:33:38.982Z] info enter the endpoint login user router
+[2024-04-11T15:33:38.985Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:35:24.982Z] info enter the endpoint login user router
+[2024-04-11T15:35:24.985Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:35:40.798Z] info enter the endpoint login user router
+[2024-04-11T15:35:40.801Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:35:58.294Z] info enter the endpoint login user router
+[2024-04-11T15:35:58.297Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:39:25.823Z] info enter the endpoint login user router
+[2024-04-11T15:39:25.826Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:39:32.038Z] info enter the endpoint login user router
+[2024-04-11T15:39:32.039Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:39:40.437Z] info enter the endpoint login user router
+[2024-04-11T15:39:40.440Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T15:41:58.334Z] info enter the endpoint login user router
+[2024-04-11T15:41:58.338Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T15:43:02.989Z] info enter the endpoint login user router
+[2024-04-11T15:43:02.992Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:43:08.614Z] info enter the endpoint login user router
+[2024-04-11T15:43:08.616Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T15:43:27.558Z] info enter the endpoint login user router
+[2024-04-11T15:43:27.561Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T15:43:48.213Z] info enter the endpoint login user router
+[2024-04-11T15:43:48.217Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T15:44:04.629Z] info enter the endpoint login user router
+[2024-04-11T15:44:04.633Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T15:44:36.206Z] info enter the endpoint login user router
+[2024-04-11T15:44:36.209Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T15:48:04.158Z] info enter the endpoint login user router
+[2024-04-11T15:48:04.161Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T15:48:14.558Z] info enter the endpoint login user router
+[2024-04-11T15:48:14.561Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T20:53:44.980Z] info server running on port 3000
+[2024-04-11T20:53:48.365Z] info enter the endpoint login user router
+[2024-04-11T20:53:48.395Z] info Incorrect credentials or non-existent credenciales
+[2024-04-11T20:53:56.129Z] info enter the endpoint login user router
+[2024-04-11T20:53:56.135Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T20:54:04.176Z] info enter the endpoint login user router
+[2024-04-11T20:54:04.179Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T21:21:50.046Z] info server running on port 3000
+[2024-04-11T21:22:49.943Z] info Token validated successfuly
+[2024-04-11T21:22:49.944Z] info Enter the endpoint get city packages
+[2024-04-11T21:22:49.982Z] info Get city packages successfuly
+[2024-04-11T21:22:52.868Z] info Token validated successfuly
+[2024-04-11T21:22:52.868Z] info Enter the endpoint get city packages
+[2024-04-11T21:22:52.871Z] info Get city packages successfuly
+[2024-04-11T21:22:56.257Z] info Token validated successfuly
+[2024-04-11T21:22:56.257Z] info Enter the endpoint get city packages
+[2024-04-11T21:22:56.260Z] info Get city packages successfuly
+[2024-04-11T21:23:31.425Z] info Token validated successfuly
+[2024-04-11T21:23:31.426Z] info Enter the endpoint get city packages
+[2024-04-11T21:23:31.431Z] info Get city packages successfuly
+[2024-04-11T21:23:54.411Z] info Token validated successfuly
+[2024-04-11T21:23:54.412Z] info Enter the endpoint get city packages
+[2024-04-11T21:23:54.416Z] info Get city packages successfuly
+[2024-04-11T21:24:04.801Z] info Token validated successfuly
+[2024-04-11T21:24:04.802Z] info Enter the endpoint get city packages
+[2024-04-11T21:24:04.806Z] info Get city packages successfuly
+[2024-04-11T21:24:23.996Z] info Token validated successfuly
+[2024-04-11T21:24:23.997Z] info Enter the endpoint get city packages
+[2024-04-11T21:24:24.000Z] info Get city packages successfuly
+[2024-04-11T21:25:09.432Z] info Token validated successfuly
+[2024-04-11T21:25:09.433Z] info Enter the endpoint get city packages
+[2024-04-11T21:25:09.436Z] info Get city packages successfuly
+[2024-04-11T21:25:22.254Z] info Token validated successfuly
+[2024-04-11T21:25:22.254Z] info Enter the endpoint get city packages
+[2024-04-11T21:25:22.258Z] info Get city packages successfuly
+[2024-04-11T21:27:29.102Z] info Token validated successfuly
+[2024-04-11T21:27:29.102Z] info Enter the endpoint get city packages
+[2024-04-11T21:27:29.107Z] info Get city packages successfuly
+[2024-04-11T21:27:30.076Z] info Token validated successfuly
+[2024-04-11T21:27:30.077Z] info Enter the endpoint get city packages
+[2024-04-11T21:27:30.079Z] info Get city packages successfuly
+[2024-04-11T21:27:33.338Z] info Token validated successfuly
+[2024-04-11T21:27:33.338Z] info Enter the endpoint get city packages
+[2024-04-11T21:27:33.341Z] info Get city packages successfuly
+[2024-04-11T21:28:17.108Z] info Token validated successfuly
+[2024-04-11T21:28:17.108Z] info Enter the endpoint get city packages
+[2024-04-11T21:28:17.112Z] info Get city packages successfuly
+[2024-04-11T21:28:19.562Z] info Token validated successfuly
+[2024-04-11T21:28:19.562Z] info Enter the endpoint get city packages
+[2024-04-11T21:28:19.564Z] info Get city packages successfuly
+[2024-04-11T21:28:20.990Z] info Token validated successfuly
+[2024-04-11T21:28:20.990Z] info Enter the endpoint get products package
+[2024-04-11T21:28:21.006Z] info Get products package successfuly
+[2024-04-11T21:28:32.967Z] info Token validated successfuly
+[2024-04-11T21:28:32.967Z] info Enter the endpoint get products package
+[2024-04-11T21:28:32.971Z] info Get products package successfuly
+[2024-04-11T21:40:04.250Z] info Token validated successfuly
+[2024-04-11T21:40:04.250Z] info Enter the endpoint get city packages
+[2024-04-11T21:40:04.254Z] info Get city packages successfuly
+[2024-04-11T21:41:17.833Z] info Token validated successfuly
+[2024-04-11T21:41:17.834Z] info Enter the endpoint get city packages
+[2024-04-11T21:41:17.837Z] info Get city packages successfuly
+[2024-04-11T21:42:17.459Z] info Token validated successfuly
+[2024-04-11T21:42:17.459Z] info Enter the endpoint get city packages
+[2024-04-11T21:42:17.463Z] info Get city packages successfuly
+[2024-04-11T21:43:23.357Z] info Token validated successfuly
+[2024-04-11T21:43:23.358Z] info Enter the endpoint get city packages
+[2024-04-11T21:43:23.363Z] info Get city packages successfuly
+[2024-04-11T21:43:48.817Z] info Token validated successfuly
+[2024-04-11T21:43:48.818Z] info Enter the endpoint get city packages
+[2024-04-11T21:43:48.821Z] info Get city packages successfuly
+[2024-04-11T21:43:56.088Z] info Token validated successfuly
+[2024-04-11T21:43:56.089Z] info Enter the endpoint get city packages
+[2024-04-11T21:43:56.091Z] info Get city packages successfuly
+[2024-04-11T21:44:07.911Z] info Token validated successfuly
+[2024-04-11T21:44:07.911Z] info Enter the endpoint get products package
+[2024-04-11T21:44:07.916Z] info Get products package successfuly
+[2024-04-11T21:45:45.909Z] info Token validated successfuly
+[2024-04-11T21:45:45.909Z] info Enter the endpoint get city packages
+[2024-04-11T21:45:45.913Z] info Get city packages successfuly
+[2024-04-11T21:46:24.370Z] info Token validated successfuly
+[2024-04-11T21:46:24.370Z] info Enter the endpoint get city packages
+[2024-04-11T21:46:24.373Z] info Get city packages successfuly
+[2024-04-11T21:46:39.336Z] info Token validated successfuly
+[2024-04-11T21:46:39.336Z] info Enter the endpoint get city packages
+[2024-04-11T21:46:39.340Z] info Get city packages successfuly
+[2024-04-11T21:47:12.101Z] info Token validated successfuly
+[2024-04-11T21:47:12.101Z] info Enter the endpoint get city packages
+[2024-04-11T21:47:12.104Z] info Get city packages successfuly
+[2024-04-11T21:47:15.760Z] info Token validated successfuly
+[2024-04-11T21:47:15.760Z] info Enter the endpoint get city packages
+[2024-04-11T21:47:15.761Z] info Get city packages successfuly
+[2024-04-11T21:47:57.107Z] info Token validated successfuly
+[2024-04-11T21:47:57.107Z] info Enter the endpoint get city packages
+[2024-04-11T21:47:57.110Z] info Get city packages successfuly
+[2024-04-11T21:48:02.768Z] info Token validated successfuly
+[2024-04-11T21:48:02.768Z] info Enter the endpoint get city packages
+[2024-04-11T21:48:02.770Z] info Get city packages successfuly
+[2024-04-11T21:48:11.257Z] info Token validated successfuly
+[2024-04-11T21:48:11.257Z] info Enter the endpoint get city packages
+[2024-04-11T21:48:11.259Z] info Get city packages successfuly
+[2024-04-11T21:48:17.973Z] info Token validated successfuly
+[2024-04-11T21:48:17.973Z] info Enter the endpoint get city packages
+[2024-04-11T21:48:17.975Z] info Get city packages successfuly
+[2024-04-11T21:48:18.887Z] info Token validated successfuly
+[2024-04-11T21:48:18.887Z] info Enter the endpoint get city packages
+[2024-04-11T21:48:18.890Z] info Get city packages successfuly
+[2024-04-11T21:48:24.355Z] info Token validated successfuly
+[2024-04-11T21:48:24.355Z] info Enter the endpoint get city packages
+[2024-04-11T21:48:24.359Z] info Get city packages successfuly
+[2024-04-11T21:48:35.866Z] info Token validated successfuly
+[2024-04-11T21:48:35.866Z] info Enter the endpoint get city packages
+[2024-04-11T21:48:35.869Z] info Get city packages successfuly
+[2024-04-11T21:48:38.012Z] info Token validated successfuly
+[2024-04-11T21:48:38.012Z] info Enter the endpoint get products package
+[2024-04-11T21:48:38.015Z] info Get products package successfuly
+[2024-04-11T21:51:42.679Z] info Token validated successfuly
+[2024-04-11T21:51:42.680Z] info Enter the endpoint get city packages
+[2024-04-11T21:51:42.683Z] info Get city packages successfuly
+[2024-04-11T22:03:24.380Z] info enter the endpoint login user router
+[2024-04-11T22:03:24.386Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-11T22:03:26.854Z] info Token validated successfuly
+[2024-04-11T22:03:26.854Z] info Enter the endpoint get city packages
+[2024-04-11T22:03:26.856Z] info Get city packages successfuly
+[2024-04-11T22:03:29.420Z] info Token validated successfuly
+[2024-04-11T22:03:29.420Z] info Enter the endpoint get products package
+[2024-04-11T22:03:29.423Z] info Get products package successfuly
+[2024-04-11T22:03:39.712Z] info Token validated successfuly
+[2024-04-11T22:03:39.713Z] info Enter the endpoint get city packages
+[2024-04-11T22:03:39.716Z] info Get city packages successfuly
+[2024-04-11T22:03:41.344Z] info Token validated successfuly
+[2024-04-11T22:03:41.344Z] info Enter the endpoint get city packages
+[2024-04-11T22:03:41.345Z] info Get city packages successfuly
+[2024-04-11T22:04:30.788Z] info Token validated successfuly
+[2024-04-11T22:04:30.788Z] info Enter the endpoint get city packages
+[2024-04-11T22:04:30.791Z] info Get city packages successfuly
+[2024-04-11T22:04:40.068Z] info Token validated successfuly
+[2024-04-11T22:04:40.069Z] info Enter the endpoint get city packages
+[2024-04-11T22:04:40.070Z] info Get city packages successfuly
+[2024-04-11T22:07:30.189Z] info Token validated successfuly
+[2024-04-11T22:07:30.189Z] info Enter the endpoint get products package
+[2024-04-11T22:07:30.193Z] info Get products package successfuly
