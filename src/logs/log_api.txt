@@ -4772,3 +4772,573 @@ sql: SELECT `portfolios_history_dropshipper`.`id_phd`, `portfolios_history_drops
 [2024-04-11T22:07:30.189Z] info Token validated successfuly
 [2024-04-11T22:07:30.189Z] info Enter the endpoint get products package
 [2024-04-11T22:07:30.193Z] info Get products package successfuly
+[2024-04-13T14:35:09.018Z] info server running on port 3000
+[2024-04-13T14:35:13.732Z] info enter the endpoint login user router
+[2024-04-13T14:35:13.801Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-13T14:35:19.914Z] info Token validated successfuly
+[2024-04-13T14:35:19.914Z] info Enter the endpoint get carriers
+[2024-04-13T14:35:19.964Z] info Get carriers successfuly
+[2024-04-13T19:00:03.049Z] info server running on port 3000
+[2024-04-13T19:00:59.263Z] info enter the endpoint login
+[2024-04-13T19:00:59.323Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-13T19:03:48.534Z] info server running on port 3000
+[2024-04-13T19:04:13.107Z] info server running on port 3000
+[2024-04-13T19:21:15.812Z] info server running on port 3000
+[2024-04-13T19:21:56.703Z] info server running on port 3000
+[2024-04-13T19:22:15.886Z] info server running on port 3000
+[2024-04-13T19:23:59.673Z] info server running on port 3000
+[2024-04-13T19:26:30.096Z] info server running on port 3000
+[2024-04-13T19:27:03.416Z] info server running on port 3000
+[2024-04-13T19:27:20.816Z] info server running on port 3000
+[2024-04-13T19:27:44.679Z] info server running on port 3000
+[2024-04-13T19:28:28.178Z] info server running on port 3000
+[2024-04-13T19:28:39.867Z] info server running on port 3000
+[2024-04-13T19:28:59.921Z] info server running on port 3000
+[2024-04-13T19:31:05.519Z] info server running on port 3000
+[2024-04-13T19:31:35.219Z] info server running on port 3000
+[2024-04-13T19:32:01.258Z] info server running on port 3000
+[2024-04-13T19:32:41.281Z] info server running on port 3000
+[2024-04-13T19:32:48.535Z] info server running on port 3000
+[2024-04-13T19:32:59.259Z] info Token validated successfuly
+[2024-04-13T19:32:59.260Z] info enter the endpoint asignated packages
+[2024-04-13T19:32:59.307Z] info Asignated packages successfuly
+[2024-04-13T19:33:10.351Z] info Token validated successfuly
+[2024-04-13T19:33:10.351Z] info enter the endpoint asignated packages
+[2024-04-13T19:33:10.359Z] info Asignated packages successfuly
+[2024-04-13T19:33:47.393Z] info Token validated successfuly
+[2024-04-13T19:33:47.393Z] info enter the endpoint asignated packages
+[2024-04-13T19:33:47.403Z] info Error asignated packages: TypeError: p.createdAt.slice is not a function
+[2024-04-13T19:35:20.802Z] info server running on port 3000
+[2024-04-13T19:35:23.478Z] info server running on port 3000
+[2024-04-13T19:35:35.316Z] info server running on port 3000
+[2024-04-13T19:35:36.549Z] info Token validated successfuly
+[2024-04-13T19:35:36.549Z] info enter the endpoint asignated packages
+[2024-04-13T19:35:36.589Z] info Asignated packages successfuly
+[2024-04-13T19:36:00.387Z] info Token validated successfuly
+[2024-04-13T19:36:00.387Z] info enter the endpoint asignated packages
+[2024-04-13T19:36:00.396Z] info Asignated packages successfuly
+[2024-04-13T19:36:18.043Z] info server running on port 3000
+[2024-04-13T19:36:20.690Z] info Token validated successfuly
+[2024-04-13T19:36:20.691Z] info enter the endpoint asignated packages
+[2024-04-13T19:36:20.731Z] info Asignated packages successfuly
+[2024-04-13T19:37:25.377Z] info Token validated successfuly
+[2024-04-13T19:37:25.377Z] info enter the endpoint asignated packages
+[2024-04-13T19:37:25.387Z] info Asignated packages successfuly
+[2024-04-13T19:38:21.662Z] info Token validated successfuly
+[2024-04-13T19:38:21.662Z] info enter the endpoint asignated packages
+[2024-04-13T19:38:21.669Z] info Asignated packages successfuly
+[2024-04-13T19:38:50.715Z] info server running on port 3000
+[2024-04-13T19:38:52.457Z] info Token validated successfuly
+[2024-04-13T19:38:52.457Z] info enter the endpoint asignated packages
+[2024-04-13T19:38:52.496Z] info Asignated packages successfuly
+[2024-04-13T19:39:23.955Z] info Token validated successfuly
+[2024-04-13T19:39:23.955Z] info enter the endpoint asignated packages
+[2024-04-13T19:39:23.964Z] info Error asignated packages: TypeError: p.createdAt.slice is not a function
+[2024-04-13T19:40:01.357Z] info server running on port 3000
+[2024-04-13T19:40:07.233Z] info server running on port 3000
+[2024-04-13T19:40:08.401Z] info Token validated successfuly
+[2024-04-13T19:40:08.402Z] info enter the endpoint asignated packages
+[2024-04-13T19:40:08.441Z] info Asignated packages successfuly
+[2024-04-13T19:40:16.587Z] info Token validated successfuly
+[2024-04-13T19:40:16.588Z] info enter the endpoint asignated packages
+[2024-04-13T19:40:16.596Z] info Asignated packages successfuly
+[2024-04-13T19:40:30.151Z] info Token validated successfuly
+[2024-04-13T19:40:30.152Z] info enter the endpoint asignated packages
+[2024-04-13T19:40:30.160Z] info Asignated packages successfuly
+[2024-04-13T19:40:42.144Z] info Token validated successfuly
+[2024-04-13T19:40:42.144Z] info enter the endpoint asignated packages
+[2024-04-13T19:40:42.151Z] info Asignated packages successfuly
+[2024-04-13T19:42:00.916Z] info Token validated successfuly
+[2024-04-13T19:42:00.917Z] info enter the endpoint asignated packages
+[2024-04-13T19:42:00.923Z] info Asignated packages successfuly
+[2024-04-13T19:42:57.768Z] info server running on port 3000
+[2024-04-13T19:43:01.393Z] info Token validated successfuly
+[2024-04-13T19:43:01.393Z] info enter the endpoint asignated packages
+[2024-04-13T19:43:01.433Z] info Asignated packages successfuly
+[2024-04-13T19:43:16.846Z] info Token validated successfuly
+[2024-04-13T19:43:16.847Z] info enter the endpoint asignated packages
+[2024-04-13T19:43:16.858Z] info Asignated packages successfuly
+[2024-04-13T19:43:45.239Z] info server running on port 3000
+[2024-04-13T19:43:45.767Z] info Token validated successfuly
+[2024-04-13T19:43:45.768Z] info enter the endpoint asignated packages
+[2024-04-13T19:43:45.807Z] info Asignated packages successfuly
+[2024-04-13T19:44:14.073Z] info server running on port 3000
+[2024-04-13T19:44:14.298Z] info Token validated successfuly
+[2024-04-13T19:44:14.299Z] info enter the endpoint asignated packages
+[2024-04-13T19:44:14.338Z] info Asignated packages successfuly
+[2024-04-13T19:44:27.664Z] info Token validated successfuly
+[2024-04-13T19:44:27.664Z] info enter the endpoint asignated packages
+[2024-04-13T19:44:27.674Z] info Asignated packages successfuly
+[2024-04-13T19:45:09.554Z] info server running on port 3000
+[2024-04-13T19:45:18.221Z] info server running on port 3000
+[2024-04-13T19:45:20.327Z] info server running on port 3000
+[2024-04-13T19:45:22.771Z] info Token validated successfuly
+[2024-04-13T19:45:22.771Z] info enter the endpoint asignated packages
+[2024-04-13T19:45:22.811Z] info Asignated packages successfuly
+[2024-04-13T19:45:49.118Z] info Token validated successfuly
+[2024-04-13T19:45:49.118Z] info enter the endpoint asignated packages
+[2024-04-13T19:45:49.128Z] info Asignated packages successfuly
+[2024-04-13T19:46:15.069Z] info Token validated successfuly
+[2024-04-13T19:46:15.069Z] info enter the endpoint master
+[2024-04-13T19:46:15.081Z] info Master successfuly
+[2024-04-13T19:47:10.431Z] info server running on port 3000
+[2024-04-13T19:47:20.933Z] info server running on port 3000
+[2024-04-13T19:47:24.360Z] info Token validated successfuly
+[2024-04-13T19:47:24.360Z] info enter the endpoint master
+[2024-04-13T19:47:24.402Z] info Master successfuly
+[2024-04-13T19:47:53.271Z] info Token validated successfuly
+[2024-04-13T19:47:53.271Z] info enter the endpoint asignated packages
+[2024-04-13T19:47:53.280Z] info Asignated packages successfuly
+[2024-04-13T19:49:00.305Z] info Token validated successfuly
+[2024-04-13T19:49:00.306Z] info enter the endpoint confirmate packages
+[2024-04-13T19:49:00.322Z] info History status registed successfully
+[2024-04-13T19:49:00.322Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-04-13T19:49:10.117Z] info Token validated successfuly
+[2024-04-13T19:49:10.118Z] info enter the endpoint master
+[2024-04-13T19:49:10.127Z] info Master successfuly
+[2024-04-13T19:49:12.861Z] info Token validated successfuly
+[2024-04-13T19:49:12.861Z] info enter the endpoint asignated packages
+[2024-04-13T19:49:12.865Z] info Asignated packages successfuly
+[2024-04-13T19:49:53.252Z] info Token validated successfuly
+[2024-04-13T19:49:53.252Z] info enter the endpoint master
+[2024-04-13T19:49:53.260Z] info Master successfuly
+[2024-04-13T19:50:03.255Z] info Token validated successfuly
+[2024-04-13T19:50:03.256Z] info enter the endpoint asignated packages
+[2024-04-13T19:50:03.260Z] info Asignated packages successfuly
+[2024-04-13T19:50:22.768Z] info Token validated successfuly
+[2024-04-13T19:50:22.768Z] info enter the endpoint asignated packages
+[2024-04-13T19:50:22.775Z] info Asignated packages successfuly
+[2024-04-13T19:50:33.128Z] info Token validated successfuly
+[2024-04-13T19:50:33.128Z] info enter the endpoint confirmate packages
+[2024-04-13T19:50:33.138Z] info History status registed successfully
+[2024-04-13T19:50:33.138Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-04-13T19:52:52.081Z] info server running on port 3000
+[2024-04-13T19:53:01.909Z] info Token validated successfuly
+[2024-04-13T19:53:01.910Z] info enter the endpoint on the way packages
+[2024-04-13T19:53:01.950Z] info Error on the way  packages: ReferenceError: carrier_packages is not defined
+[2024-04-13T19:53:12.721Z] info server running on port 3000
+[2024-04-13T19:53:14.280Z] info Token validated successfuly
+[2024-04-13T19:53:14.281Z] info enter the endpoint on the way packages
+[2024-04-13T19:53:14.319Z] info On the way packages successfuly
+[2024-04-13T19:53:48.780Z] info server running on port 3000
+[2024-04-13T19:53:51.641Z] info Token validated successfuly
+[2024-04-13T19:53:51.642Z] info enter the endpoint on the way packages
+[2024-04-13T19:53:51.681Z] info On the way packages successfuly
+[2024-04-13T19:54:27.101Z] info server running on port 3000
+[2024-04-13T19:55:01.446Z] info server running on port 3000
+[2024-04-13T19:56:01.920Z] info server running on port 3000
+[2024-04-13T19:56:03.602Z] info Token validated successfuly
+[2024-04-13T19:56:03.603Z] info enter the endpoint on the way packages
+[2024-04-13T19:56:03.640Z] info On the way packages successfuly
+[2024-04-13T19:57:14.264Z] info Token validated successfuly
+[2024-04-13T19:57:14.266Z] info enter the endpoint details packages
+[2024-04-13T19:57:14.277Z] info Details package successfuly
+[2024-04-13T19:57:20.784Z] info Token validated successfuly
+[2024-04-13T19:57:20.784Z] info enter the endpoint on the way packages
+[2024-04-13T19:57:20.792Z] info On the way packages successfuly
+[2024-04-13T19:57:26.813Z] info Token validated successfuly
+[2024-04-13T19:57:26.814Z] info enter the endpoint on the way packages
+[2024-04-13T19:57:26.818Z] info On the way packages successfuly
+[2024-04-13T19:57:30.555Z] info Token validated successfuly
+[2024-04-13T19:57:30.555Z] info enter the endpoint on the way packages
+[2024-04-13T19:57:30.559Z] info On the way packages successfuly
+[2024-04-13T19:57:43.590Z] info Token validated successfuly
+[2024-04-13T19:57:43.591Z] info enter the endpoint details packages
+[2024-04-13T19:57:43.596Z] info Details package successfuly
+[2024-04-13T20:00:24.493Z] info server running on port 3000
+[2024-04-13T20:01:42.026Z] info server running on port 3000
+[2024-04-13T20:03:08.246Z] info server running on port 3000
+[2024-04-13T20:03:14.488Z] info Token validated successfuly
+[2024-04-13T20:03:14.488Z] info enter the endpoint details packages
+[2024-04-13T20:03:14.526Z] info Details package successfuly
+[2024-04-13T20:04:36.074Z] info server running on port 3000
+[2024-04-13T20:04:37.617Z] info Token validated successfuly
+[2024-04-13T20:04:37.618Z] info enter the endpoint details packages
+[2024-04-13T20:04:37.655Z] info Details package successfuly
+[2024-04-13T20:04:41.674Z] info Token validated successfuly
+[2024-04-13T20:04:41.674Z] info enter the endpoint details packages
+[2024-04-13T20:04:41.678Z] info Details package successfuly
+[2024-04-13T20:04:46.133Z] info Token validated successfuly
+[2024-04-13T20:04:46.133Z] info enter the endpoint details packages
+[2024-04-13T20:04:46.139Z] info Details package successfuly
+[2024-04-13T20:04:52.161Z] info Token validated successfuly
+[2024-04-13T20:04:52.162Z] info enter the endpoint details packages
+[2024-04-13T20:04:52.167Z] info Details package successfuly
+[2024-04-13T20:06:09.026Z] info server running on port 3000
+[2024-04-13T20:06:24.179Z] info server running on port 3000
+[2024-04-13T20:06:45.904Z] info server running on port 3000
+[2024-04-13T20:07:27.990Z] info Token validated successfuly
+[2024-04-13T20:07:27.990Z] info enter the endpoint details packages
+[2024-04-13T20:07:28.029Z] info Details package successfuly
+[2024-04-13T20:07:30.460Z] info Token validated successfuly
+[2024-04-13T20:07:30.461Z] info enter the endpoint details packages
+[2024-04-13T20:07:30.466Z] info Details package successfuly
+[2024-04-13T20:07:45.454Z] info Token validated successfuly
+[2024-04-13T20:07:45.454Z] info enter the endpoint details packages
+[2024-04-13T20:07:45.461Z] info Details package successfuly
+[2024-04-13T20:08:09.721Z] info Token validated successfuly
+[2024-04-13T20:08:21.027Z] info Token validated successfuly
+[2024-04-13T20:08:21.069Z] info Evidence load successfully
+[2024-04-13T20:08:21.069Z] info Enter the endpoint deliver packages
+[2024-04-13T20:08:21.104Z] info Entregado al cliente
+[2024-04-13T20:08:21.104Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-04-13T20:08:21.113Z] info Carrier transports package to Client, all accounting ok.
+[2024-04-13T20:08:28.325Z] info Token validated successfuly
+[2024-04-13T20:08:28.325Z] info enter the endpoint asignated packages
+[2024-04-13T20:08:28.331Z] info Asignated packages successfuly
+[2024-04-13T20:08:30.784Z] info Token validated successfuly
+[2024-04-13T20:08:30.785Z] info enter the endpoint asignated packages
+[2024-04-13T20:08:30.788Z] info Asignated packages successfuly
+[2024-04-13T20:08:37.559Z] info Token validated successfuly
+[2024-04-13T20:08:37.560Z] info enter the endpoint confirmate packages
+[2024-04-13T20:08:37.562Z] info Confirmate packages successfuly, results> undefined
+[2024-04-13T20:08:52.265Z] info Token validated successfuly
+[2024-04-13T20:08:52.266Z] info enter the endpoint on the way packages
+[2024-04-13T20:08:52.272Z] info On the way packages successfuly
+[2024-04-13T20:08:54.550Z] info Token validated successfuly
+[2024-04-13T20:08:54.550Z] info enter the endpoint on the way packages
+[2024-04-13T20:08:54.554Z] info On the way packages successfuly
+[2024-04-13T20:09:00.906Z] info Token validated successfuly
+[2024-04-13T20:09:00.907Z] info enter the endpoint details packages
+[2024-04-13T20:09:00.910Z] info Details package successfuly
+[2024-04-13T20:09:19.948Z] info Token validated successfuly
+[2024-04-13T20:09:19.949Z] info enter the endpoint details packages
+[2024-04-13T20:09:19.954Z] info Details package successfuly
+[2024-04-13T20:11:35.647Z] info enter the endpoint login user router
+[2024-04-13T20:11:35.654Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-13T20:15:49.013Z] info server running on port 3000
+[2024-04-13T20:15:57.774Z] info Token validated successfuly
+[2024-04-13T20:15:57.774Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:15:57.859Z] info Get detail asignate successfuly
+[2024-04-13T20:19:15.691Z] info Token validated successfuly
+[2024-04-13T20:19:15.692Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:19:15.698Z] info Get detail asignate successfuly
+[2024-04-13T20:19:41.812Z] info server running on port 3000
+[2024-04-13T20:20:10.844Z] info Token validated successfuly
+[2024-04-13T20:20:10.845Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:20:10.886Z] info Get detail asignate successfuly
+[2024-04-13T20:20:43.665Z] info Token validated successfuly
+[2024-04-13T20:20:43.665Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:20:43.672Z] info Get detail asignate successfuly
+[2024-04-13T20:20:54.514Z] info server running on port 3000
+[2024-04-13T20:20:54.654Z] info Token validated successfuly
+[2024-04-13T20:20:54.654Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:20:54.694Z] info Get detail asignate successfuly
+[2024-04-13T20:20:57.671Z] info server running on port 3000
+[2024-04-13T20:20:59.655Z] info server running on port 3000
+[2024-04-13T20:20:59.728Z] info Token validated successfuly
+[2024-04-13T20:20:59.728Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:20:59.767Z] info Get detail asignate successfuly
+[2024-04-13T20:21:23.274Z] info Token validated successfuly
+[2024-04-13T20:21:23.274Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:21:23.283Z] info Get detail asignate successfuly
+[2024-04-13T20:22:15.036Z] info Token validated successfuly
+[2024-04-13T20:22:15.037Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:22:15.045Z] info Get detail asignate successfuly
+[2024-04-13T20:22:34.370Z] info Token validated successfuly
+[2024-04-13T20:22:34.371Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:22:34.377Z] info Get detail asignate successfuly
+[2024-04-13T20:22:46.956Z] info server running on port 3000
+[2024-04-13T20:22:48.131Z] info Token validated successfuly
+[2024-04-13T20:22:48.132Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:22:48.170Z] info Get detail asignate successfuly
+[2024-04-13T20:22:57.961Z] info Token validated successfuly
+[2024-04-13T20:22:57.962Z] info enter the endpoint asignated packages
+[2024-04-13T20:22:57.973Z] info Asignated packages successfuly
+[2024-04-13T20:23:45.839Z] info Token validated successfuly
+[2024-04-13T20:23:45.840Z] info enter the endpoint asignated packages
+[2024-04-13T20:23:45.847Z] info Asignated packages successfuly
+[2024-04-13T20:24:53.954Z] info server running on port 3000
+[2024-04-13T20:24:57.696Z] info Token validated successfuly
+[2024-04-13T20:24:57.697Z] info enter the endpoint asignated packages
+[2024-04-13T20:24:57.736Z] info Asignated packages successfuly
+[2024-04-13T20:25:32.076Z] info server running on port 3000
+[2024-04-13T20:25:34.214Z] info Token validated successfuly
+[2024-04-13T20:25:34.215Z] info enter the endpoint asignated packages
+[2024-04-13T20:25:34.256Z] info Asignated packages successfuly
+[2024-04-13T20:25:48.770Z] info server running on port 3000
+[2024-04-13T20:25:48.881Z] info Token validated successfuly
+[2024-04-13T20:25:48.881Z] info enter the endpoint asignated packages
+[2024-04-13T20:25:48.922Z] info Asignated packages successfuly
+[2024-04-13T20:25:57.048Z] info server running on port 3000
+[2024-04-13T20:25:59.016Z] info Token validated successfuly
+[2024-04-13T20:25:59.016Z] info enter the endpoint asignated packages
+[2024-04-13T20:25:59.057Z] info Asignated packages successfuly
+[2024-04-13T20:26:13.060Z] info server running on port 3000
+[2024-04-13T20:26:15.679Z] info Token validated successfuly
+[2024-04-13T20:26:15.679Z] info enter the endpoint asignated packages
+[2024-04-13T20:26:15.719Z] info Asignated packages successfuly
+[2024-04-13T20:27:23.717Z] info server running on port 3000
+[2024-04-13T20:27:24.982Z] info Token validated successfuly
+[2024-04-13T20:27:24.983Z] info enter the endpoint asignated packages
+[2024-04-13T20:27:25.025Z] info Asignated packages successfuly
+[2024-04-13T20:27:37.117Z] info server running on port 3000
+[2024-04-13T20:27:37.591Z] info Token validated successfuly
+[2024-04-13T20:27:37.591Z] info enter the endpoint asignated packages
+[2024-04-13T20:27:37.632Z] info Asignated packages successfuly
+[2024-04-13T20:27:41.502Z] info Token validated successfuly
+[2024-04-13T20:27:41.502Z] info enter the endpoint asignated packages
+[2024-04-13T20:27:41.508Z] info Asignated packages successfuly
+[2024-04-13T20:27:52.384Z] info server running on port 3000
+[2024-04-13T20:27:53.200Z] info Token validated successfuly
+[2024-04-13T20:27:53.200Z] info enter the endpoint asignated packages
+[2024-04-13T20:27:53.240Z] info Asignated packages successfuly
+[2024-04-13T20:28:30.294Z] info server running on port 3000
+[2024-04-13T20:28:32.798Z] info server running on port 3000
+[2024-04-13T20:28:40.722Z] info Token validated successfuly
+[2024-04-13T20:28:40.723Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:28:40.774Z] info Get detail asignate successfuly
+[2024-04-13T20:29:47.704Z] info Token validated successfuly
+[2024-04-13T20:29:47.704Z] info enter the endpoint confirmate packages
+[2024-04-13T20:29:47.718Z] info History status registed successfully
+[2024-04-13T20:29:47.718Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-04-13T20:29:52.145Z] info Token validated successfuly
+[2024-04-13T20:29:52.145Z] info enter the endpoint confirmate packages
+[2024-04-13T20:29:52.156Z] info History status registed successfully
+[2024-04-13T20:29:52.156Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-04-13T20:29:54.668Z] info Token validated successfuly
+[2024-04-13T20:29:54.668Z] info enter the endpoint confirmate packages
+[2024-04-13T20:29:54.674Z] info History status registed successfully
+[2024-04-13T20:29:54.675Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-04-13T20:29:57.449Z] info Token validated successfuly
+[2024-04-13T20:29:57.450Z] info enter the endpoint confirmate packages
+[2024-04-13T20:29:57.474Z] info History status registed successfully
+[2024-04-13T20:29:57.474Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-04-13T20:30:07.075Z] info Token validated successfuly
+[2024-04-13T20:30:07.075Z] info enter the endpoint confirmate packages
+[2024-04-13T20:30:07.081Z] info History status registed successfully
+[2024-04-13T20:30:07.082Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-04-13T20:30:24.455Z] info Token validated successfuly
+[2024-04-13T20:30:24.461Z] info Evidence load successfully
+[2024-04-13T20:30:24.461Z] info Enter the endpoint deliver packages
+[2024-04-13T20:30:24.484Z] info Entregado a bodega central ciudad destino
+[2024-04-13T20:30:24.484Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-04-13T20:30:24.495Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
+[2024-04-13T20:30:28.630Z] info Token validated successfuly
+[2024-04-13T20:30:28.632Z] info Evidence load successfully
+[2024-04-13T20:30:28.632Z] info Enter the endpoint deliver packages
+[2024-04-13T20:30:28.644Z] info Entregado a bodega central ciudad origen
+[2024-04-13T20:30:28.644Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-04-13T20:30:28.646Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
+[2024-04-13T20:30:31.167Z] info Token validated successfuly
+[2024-04-13T20:30:31.169Z] info Evidence load successfully
+[2024-04-13T20:30:31.169Z] info Enter the endpoint deliver packages
+[2024-04-13T20:30:31.181Z] info Entregado a bodega central ciudad origen
+[2024-04-13T20:30:31.181Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-04-13T20:30:31.185Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
+[2024-04-13T20:30:33.501Z] info Token validated successfuly
+[2024-04-13T20:30:33.503Z] info Evidence load successfully
+[2024-04-13T20:30:33.503Z] info Enter the endpoint deliver packages
+[2024-04-13T20:30:33.523Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
+[2024-04-13T20:30:33.524Z] info Entregado a bodega central ciudad destino
+[2024-04-13T20:30:33.524Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-04-13T20:30:35.932Z] info Token validated successfuly
+[2024-04-13T20:30:35.934Z] info Evidence load successfully
+[2024-04-13T20:30:35.934Z] info Enter the endpoint deliver packages
+[2024-04-13T20:30:35.946Z] info Entregado a bodega central ciudad destino
+[2024-04-13T20:30:35.946Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-04-13T20:30:35.950Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
+[2024-04-13T20:31:51.986Z] info Token validated successfuly
+[2024-04-13T20:31:51.986Z] info Enter the endpoint get city packages
+[2024-04-13T20:31:51.990Z] info Get city packages successfuly
+[2024-04-13T20:32:08.047Z] info Token validated successfuly
+[2024-04-13T20:32:08.048Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:32:08.053Z] info Get detail asignate successfuly
+[2024-04-13T20:44:47.316Z] info server running on port 3000
+[2024-04-13T20:44:47.982Z] info Token validated successfuly
+[2024-04-13T20:44:47.983Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:44:48.021Z] info Get detail asignate successfuly
+[2024-04-13T20:45:06.528Z] info Token validated successfuly
+[2024-04-13T20:45:06.528Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:45:06.536Z] info Get detail asignate successfuly
+[2024-04-13T20:45:22.185Z] info Token validated successfuly
+[2024-04-13T20:45:22.185Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:45:22.192Z] info Get detail asignate successfuly
+[2024-04-13T20:52:12.574Z] info server running on port 3000
+[2024-04-13T20:52:14.428Z] info Token validated successfuly
+[2024-04-13T20:52:14.428Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:52:14.468Z] info Get detail asignate successfuly
+[2024-04-13T20:52:58.420Z] info server running on port 3000
+[2024-04-13T20:53:05.482Z] info server running on port 3000
+[2024-04-13T20:53:07.188Z] info Token validated successfuly
+[2024-04-13T20:53:07.189Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:53:07.224Z] info Error detail asignate: ReferenceError: Cannot access 'getAsignatedPackage' before initialization
+[2024-04-13T20:53:23.166Z] info server running on port 3000
+[2024-04-13T20:53:24.475Z] info Token validated successfuly
+[2024-04-13T20:53:24.476Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:53:24.515Z] info Get detail asignate successfuly
+[2024-04-13T20:53:33.308Z] info server running on port 3000
+[2024-04-13T20:53:38.887Z] info server running on port 3000
+[2024-04-13T20:53:39.016Z] info Token validated successfuly
+[2024-04-13T20:53:39.016Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:53:39.056Z] info Get detail asignate successfuly
+[2024-04-13T20:54:18.696Z] info server running on port 3000
+[2024-04-13T20:54:19.839Z] info Token validated successfuly
+[2024-04-13T20:54:19.839Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:54:19.878Z] info Get detail asignate successfuly
+[2024-04-13T20:54:40.050Z] info server running on port 3000
+[2024-04-13T20:54:41.669Z] info Token validated successfuly
+[2024-04-13T20:54:41.670Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:54:41.710Z] info Get detail asignate successfuly
+[2024-04-13T20:54:46.525Z] info server running on port 3000
+[2024-04-13T20:54:58.568Z] info server running on port 3000
+[2024-04-13T20:55:19.513Z] info server running on port 3000
+[2024-04-13T20:56:05.857Z] info server running on port 3000
+[2024-04-13T20:56:11.101Z] info server running on port 3000
+[2024-04-13T20:56:24.420Z] info server running on port 3000
+[2024-04-13T20:57:38.736Z] info server running on port 3000
+[2024-04-13T20:58:43.569Z] info server running on port 3000
+[2024-04-13T20:58:50.968Z] info server running on port 3000
+[2024-04-13T20:58:52.804Z] info Token validated successfuly
+[2024-04-13T20:58:52.804Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:58:52.842Z] info Get detail asignate successfuly
+[2024-04-13T20:58:52.842Z] info Error detail asignate: ReferenceError: getPackage is not defined
+[2024-04-13T20:59:18.281Z] info server running on port 3000
+[2024-04-13T20:59:19.756Z] info Token validated successfuly
+[2024-04-13T20:59:19.756Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:59:19.795Z] info Get detail asignate successfuly
+[2024-04-13T20:59:41.776Z] info server running on port 3000
+[2024-04-13T20:59:43.273Z] info Token validated successfuly
+[2024-04-13T20:59:43.273Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:59:43.313Z] info Get detail asignate successfuly
+[2024-04-13T20:59:53.743Z] info server running on port 3000
+[2024-04-13T20:59:53.772Z] info Token validated successfuly
+[2024-04-13T20:59:53.772Z] info Enter the endpoint get detail asignate
+[2024-04-13T20:59:53.812Z] info Get detail asignate successfuly
+[2024-04-13T21:00:02.141Z] info Token validated successfuly
+[2024-04-13T21:00:02.142Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:00:02.147Z] info Get detail asignate successfuly
+[2024-04-13T21:00:15.706Z] info Token validated successfuly
+[2024-04-13T21:00:15.707Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:00:15.719Z] info Get detail asignate successfuly
+[2024-04-13T21:01:22.863Z] info Token validated successfuly
+[2024-04-13T21:01:22.864Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:01:22.870Z] info Get detail asignate successfuly
+[2024-04-13T21:01:36.778Z] info server running on port 3000
+[2024-04-13T21:01:38.392Z] info Token validated successfuly
+[2024-04-13T21:01:38.392Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:01:38.432Z] info Get detail asignate successfuly
+[2024-04-13T21:01:57.290Z] info Token validated successfuly
+[2024-04-13T21:01:57.290Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:01:57.297Z] info Get detail asignate successfuly
+[2024-04-13T21:02:13.533Z] info server running on port 3000
+[2024-04-13T21:02:14.628Z] info Token validated successfuly
+[2024-04-13T21:02:14.628Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:02:14.666Z] info Get detail asignate successfuly
+[2024-04-13T21:04:18.176Z] info Token validated successfuly
+[2024-04-13T21:04:18.176Z] info Enter the endpoint to asignate packages
+[2024-04-13T21:04:18.177Z] info Packages asignated successfuly
+[2024-04-13T21:04:43.067Z] info Token validated successfuly
+[2024-04-13T21:04:43.068Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:04:43.074Z] info Get detail asignate successfuly
+[2024-04-13T21:05:32.484Z] info Token validated successfuly
+[2024-04-13T21:05:32.484Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:05:32.490Z] info Get detail asignate successfuly
+[2024-04-13T21:05:36.746Z] info Token validated successfuly
+[2024-04-13T21:05:36.746Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:05:36.752Z] info Get detail asignate successfuly
+[2024-04-13T21:05:41.098Z] info Token validated successfuly
+[2024-04-13T21:05:41.099Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:05:41.103Z] info Get detail asignate successfuly
+[2024-04-13T21:05:50.155Z] info Token validated successfuly
+[2024-04-13T21:05:50.155Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:05:50.161Z] info Get detail asignate successfuly
+[2024-04-13T21:06:26.920Z] info Token validated successfuly
+[2024-04-13T21:06:26.920Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:06:26.926Z] info Get detail asignate successfuly
+[2024-04-13T21:06:35.243Z] info Token validated successfuly
+[2024-04-13T21:06:35.243Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:06:35.247Z] info Get detail asignate successfuly
+[2024-04-13T21:06:45.945Z] info Token validated successfuly
+[2024-04-13T21:06:45.945Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:06:45.956Z] info Get detail asignate successfuly
+[2024-04-13T21:07:05.629Z] info Token validated successfuly
+[2024-04-13T21:07:05.630Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:07:05.636Z] info Get detail asignate successfuly
+[2024-04-13T21:07:21.709Z] info server running on port 3000
+[2024-04-13T21:07:23.027Z] info Token validated successfuly
+[2024-04-13T21:07:23.028Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:07:23.069Z] info Get detail asignate successfuly
+[2024-04-13T21:07:32.161Z] info Token validated successfuly
+[2024-04-13T21:07:32.161Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:07:32.167Z] info Get detail asignate successfuly
+[2024-04-13T21:10:01.440Z] info server running on port 3000
+[2024-04-13T21:10:19.268Z] info server running on port 3000
+[2024-04-13T21:12:09.920Z] info server running on port 3000
+[2024-04-13T21:12:54.175Z] info server running on port 3000
+[2024-04-13T21:14:39.042Z] info server running on port 3000
+[2024-04-13T21:15:03.092Z] info Token validated successfuly
+[2024-04-13T21:15:03.093Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:15:03.132Z] info Get detail asignate successfuly
+[2024-04-13T21:15:20.442Z] info Token validated successfuly
+[2024-04-13T21:15:20.443Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:15:20.448Z] info Get detail asignate successfuly
+[2024-04-13T21:15:26.684Z] info server running on port 3000
+[2024-04-13T21:15:28.306Z] info Token validated successfuly
+[2024-04-13T21:15:28.307Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:15:28.343Z] info Get detail asignate successfuly
+[2024-04-13T21:15:40.674Z] info Token validated successfuly
+[2024-04-13T21:15:40.674Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:15:40.683Z] info Get detail asignate successfuly
+[2024-04-13T21:16:01.764Z] info Token validated successfuly
+[2024-04-13T21:16:01.765Z] info Enter the endpoint get detail asignate inter_city
+[2024-04-13T21:16:01.773Z] info Get detail asignate inter_city successfuly
+[2024-04-13T21:16:16.240Z] info Token validated successfuly
+[2024-04-13T21:16:16.241Z] info Enter the endpoint get detail asignate inter_city
+[2024-04-13T21:16:16.248Z] info Get detail asignate inter_city successfuly
+[2024-04-13T21:16:22.957Z] info server running on port 3000
+[2024-04-13T21:16:24.737Z] info Token validated successfuly
+[2024-04-13T21:16:24.738Z] info Enter the endpoint get detail asignate inter_city
+[2024-04-13T21:16:24.775Z] info Get detail asignate inter_city successfuly
+[2024-04-13T21:16:44.621Z] info server running on port 3000
+[2024-04-13T21:17:28.712Z] info server running on port 3000
+[2024-04-13T21:17:31.227Z] info server running on port 3000
+[2024-04-13T21:17:38.911Z] info server running on port 3000
+[2024-04-13T21:17:38.995Z] info Token validated successfuly
+[2024-04-13T21:17:38.996Z] info Enter the endpoint get detail asignate inter_city
+[2024-04-13T21:17:39.034Z] info Get detail asignate inter_city successfuly
+[2024-04-13T21:17:41.890Z] info Token validated successfuly
+[2024-04-13T21:17:41.891Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:17:41.896Z] info Get detail asignate successfuly
+[2024-04-13T21:18:33.837Z] info server running on port 3000
+[2024-04-13T21:19:50.249Z] info server running on port 3000
+[2024-04-13T21:21:02.185Z] info server running on port 3000
+[2024-04-13T21:23:45.222Z] info server running on port 3000
+[2024-04-13T21:27:30.988Z] info server running on port 3000
+[2024-04-13T21:27:33.842Z] info server running on port 3000
+[2024-04-13T21:30:16.439Z] info server running on port 3000
+[2024-04-13T21:31:58.817Z] info server running on port 3000
+[2024-04-13T21:35:01.275Z] info server running on port 3000
+[2024-04-13T21:35:08.611Z] info Token validated successfuly
+[2024-04-13T21:35:08.611Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:35:08.651Z] info Error detail asignate: SequelizeDatabaseError: (conn=517, no: 1054, SQLState: 42S22) Unknown column 'fk_destiny_city_p' in 'field list'
+sql: SELECT `id_p`, `orden_p`, `name_client_p`, `phone_number_client_p`, `guide_number_p`, `status_p`, `with_collection_p`, `total_price_p`, `fk_destiny_city_p`, `fk_id_tp_p` FROM `packages` AS `packages` WHERE `packages`.`fk_id_carrier_p` IS NULL AND `packages... - parameters:[]
+[2024-04-13T21:35:37.163Z] info server running on port 3000
+[2024-04-13T21:35:37.778Z] info Token validated successfuly
+[2024-04-13T21:35:37.778Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:35:37.819Z] info Get detail asignate successfuly
+[2024-04-13T21:36:09.533Z] info Token validated successfuly
+[2024-04-13T21:36:09.533Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:36:09.544Z] info Get detail asignate successfuly
+[2024-04-13T21:36:15.904Z] info Token validated successfuly
+[2024-04-13T21:36:15.905Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:36:15.910Z] info Get detail asignate successfuly
+[2024-04-13T21:36:39.806Z] info Token validated successfuly
+[2024-04-13T21:36:39.806Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:36:39.813Z] info Get detail asignate successfuly
+[2024-04-13T21:36:49.238Z] info Token validated successfuly
+[2024-04-13T21:36:49.239Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:36:49.243Z] info Get detail asignate successfuly
+[2024-04-13T21:37:57.919Z] info server running on port 3000
+[2024-04-13T21:37:59.366Z] info Token validated successfuly
+[2024-04-13T21:37:59.367Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:37:59.421Z] info Get detail asignate successfuly
+[2024-04-13T21:39:48.834Z] info server running on port 3000
+[2024-04-13T21:39:50.524Z] info server running on port 3000
+[2024-04-13T21:39:53.385Z] info server running on port 3000
+[2024-04-13T21:39:54.420Z] info Token validated successfuly
+[2024-04-13T21:39:54.421Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:39:54.460Z] info Get detail asignate successfuly
+[2024-04-13T21:40:27.877Z] info Token validated successfuly
+[2024-04-13T21:40:27.877Z] info Enter the endpoint get detail asignate
+[2024-04-13T21:40:27.886Z] info Get detail asignate successfuly

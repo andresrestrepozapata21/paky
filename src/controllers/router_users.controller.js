@@ -298,11 +298,11 @@ export async function getDetailAsignate(req, res) {
         // I validate req correct json
         if (!id_carrier) return res.sendStatus(400);
         // I call and save the result of the findAll method, which is d sequelize
-        const getDetailAsignate = await Carrier.findAll({
+        const getDetailAsignate = await Carrier.findOne({
             where: {
                 id_carrier
             },
-            attributes: ['id_Carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier'],
+            attributes: ['id_Carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_city_carrier'],
             include: [
                 {
                     model: Vehicle,
@@ -310,29 +310,60 @@ export async function getDetailAsignate(req, res) {
                 }
             ]
         });
+        // I capture city by conditions later
+        let city_carrier = getDetailAsignate.fk_id_city_carrier;
         // I call and save the result of the findAll method, which is d sequelize
         const getAsignatedPackage = await Package.findAll({
             where: {
                 fk_id_carrier_p: id_carrier,
                 status_p: {
                     [Sequelize.Op.notIn]: [6]
-                },
-                fk_id_tp_p: 1
+                }
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p']
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'createdAt'],
         });
         // I call and save the result of the findAll method, which is d sequelize
         const getPackage = await Package.findAll({
             where: {
                 fk_id_carrier_p: null,
                 status_p: {
-                    [Sequelize.Op.notIn]: [3, 5, 6, 7]
+                    [Sequelize.Op.notIn]: [2, 3, 5, 6, 7]
                 },
-                fk_id_tp_p: 1,
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p']
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'fk_id_destiny_city_p', 'fk_id_tp_p']
         });
+        // Validate the case status 4 packages nacionals and carrier city not access asignate
+        const formattedDataPackages = getPackage.map(p => {
+            let type_package = p.fk_id_tp_p;
+            // Validate city carrier with city destiny package for status = 4
+            if (type_package == 1) {
+                return {
+                    id_p: p.id_p,
+                    orden_p: p.orden_p,
+                    name_client_p: p.name_client_p,
+                    phone_number_client_p: p.phone_number_client_p,
+                    guide_number_p: p.guide_number_p,
+                    status_p: p.status_p,
+                    with_collection_p: p.with_collection_p,
+                    total_price_p: p.total_price_p
+                }
+            } else if (type_package == 2) {
+                if (p.status_p == 1 || (p.status_p == 4 && city_carrier == p.fk_id_destiny_city_p)) {
+                    return {
+                        id_p: p.id_p,
+                        orden_p: p.orden_p,
+                        name_client_p: p.name_client_p,
+                        phone_number_client_p: p.phone_number_client_p,
+                        guide_number_p: p.guide_number_p,
+                        status_p: p.status_p,
+                        with_collection_p: p.with_collection_p,
+                        total_price_p: p.total_price_p
+                    }
+                }
+            }
+            return null;
+        }).filter(item => item !== null);
         // logger control proccess
         logger.info('Get detail asignate successfuly');
         // The credentials are incorrect
@@ -341,7 +372,7 @@ export async function getDetailAsignate(req, res) {
             result: 1,
             data_carrier: getDetailAsignate,
             data_asignated_packages: getAsignatedPackage,
-            data_free_packages: getPackage
+            data_free_packages: formattedDataPackages
         });
     } catch (e) {
         // logger control proccess
@@ -561,7 +592,7 @@ export async function getDetailAsignateInter(req, res) {
             where: {
                 fk_id_carrier_p: null,
                 status_p: {
-                    [Sequelize.Op.notIn]: [3, 5, 6, 7]
+                    [Sequelize.Op.notIn]: [1, 3, 4, 5, 6, 7]
                 },
                 fk_id_tp_p: 2,
                 confirmation_dropshipper_p: 1
