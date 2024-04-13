@@ -346,7 +346,7 @@ export async function login(req, res) {
                 const payload = {
                     id_carrier: loginCarrier[0].id_carrier,
                     name_carrier: loginCarrier[0].name_carrier,
-                    exp: Date.now() + 60 * 1000 * 60
+                    exp: Date.now() + 60 * 1000 * 60 * 4
                 };
                 // I Create json web token for return him in json response
                 const token = jwt.sign(payload, secret);
