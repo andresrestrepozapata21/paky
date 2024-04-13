@@ -378,7 +378,7 @@ export async function getDetailAsignate(req, res) {
                     store: p.store
                 }
             } else if (type_package == 2) {
-                if (p.status_p == 1 || (p.status_p == 4 && city_carrier == p.fk_id_destiny_city_p)) {
+                if (p.status_p == 1 || (p.status_p == 2 && city_carrier == p.fk_id_destiny_city_p)) {
                     return {
                         id_p: p.id_p,
                         orden_p: p.orden_p,
