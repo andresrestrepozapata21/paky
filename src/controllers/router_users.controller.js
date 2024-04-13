@@ -12,6 +12,7 @@ import { Product } from "../models/products.model.js";
 import { Carrier } from "../models/carriers.model.js";
 import { Vehicle } from "../models/vehicles.model.js";
 import { Type_document } from "../models/type_document.model.js";
+import { Store } from "../models/stores.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -35,7 +36,7 @@ export async function login(req, res) {
                 email_ru,
                 password_ru
             },
-            attributes: ['id_ru', 'name_ru', 'email_ru', 'status_ru', 'last_login_ru']
+            attributes: ['id_ru', 'name_ru', 'email_ru', 'status_ru', 'last_login_ru', 'fk_id_city_ru']
         });
         // I validate login exist
         if (loginRU.length > 0) {
@@ -98,6 +99,10 @@ export async function getCityPackages(req, res) {
     // logger control proccess
     logger.info('Enter the endpoint get city packages');
     try {
+        // capture the id that comes in the parameters of the req
+        const { city } = req.body;
+        // I validate req correct json
+        if (!city) return res.sendStatus(400);
         // I call and save the result of the findAll method, which is d sequelize
         const getCityPackages = await Package.findAll({
             where: {
@@ -107,7 +112,16 @@ export async function getCityPackages(req, res) {
                 fk_id_tp_p: 1,
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt']
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
+            include: [
+                {
+                    model: Store,
+                    where: {
+                        fk_id_city_store: city
+                    },
+                    attributes: ['fk_id_city_store']
+                }
+            ]
         });
         // logger control proccess
         logger.info('Get city packages successfuly');
@@ -180,12 +194,17 @@ export async function getCarriers(req, res) {
     // logger control proccess
     logger.info('Enter the endpoint get carriers');
     try {
+        // capture the id that comes in the parameters of the req
+        const { city } = req.body;
+        // I validate req correct json
+        if (!city) return res.sendStatus(400);
         // I call and save the result of the findAll method, which is d sequelize
         const getCarriers = await Carrier.findAll({
-            attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier'],
+            attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier', 'fk_id_city_carrier'],
             where: {
                 status_carrier: 1,
-                fk_id_tc_carrier: 1
+                fk_id_tc_carrier: 1,
+                fk_id_city_carrier: city
             },
             include: [
                 {
@@ -331,7 +350,16 @@ export async function getDetailAsignate(req, res) {
                 },
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'fk_id_destiny_city_p', 'fk_id_tp_p']
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'fk_id_destiny_city_p', 'fk_id_tp_p'],
+            include: [
+                {
+                    model: Store,
+                    where: {
+                        fk_id_city_store: city_carrier
+                    },
+                    attributes: ['fk_id_city_store']
+                }
+            ]
         });
         // Validate the case status 4 packages nacionals and carrier city not access asignate
         const formattedDataPackages = getPackage.map(p => {
@@ -346,7 +374,8 @@ export async function getDetailAsignate(req, res) {
                     guide_number_p: p.guide_number_p,
                     status_p: p.status_p,
                     with_collection_p: p.with_collection_p,
-                    total_price_p: p.total_price_p
+                    total_price_p: p.total_price_p,
+                    store: p.store
                 }
             } else if (type_package == 2) {
                 if (p.status_p == 1 || (p.status_p == 4 && city_carrier == p.fk_id_destiny_city_p)) {
@@ -358,7 +387,8 @@ export async function getDetailAsignate(req, res) {
                         guide_number_p: p.guide_number_p,
                         status_p: p.status_p,
                         with_collection_p: p.with_collection_p,
-                        total_price_p: p.total_price_p
+                        total_price_p: p.total_price_p,
+                        store: p.store
                     }
                 }
             }
@@ -440,6 +470,10 @@ export async function getInterCityPackages(req, res) {
     // logger control proccess
     logger.info('Enter the endpoint get inter_city packages');
     try {
+        // capture the id that comes in the parameters of the req
+        const { city } = req.body;
+        // I validate req correct json
+        if (!city) return res.sendStatus(400);
         // I call and save the result of the findAll method, which is d sequelize
         const getCityPackages = await Package.findAll({
             where: {
@@ -449,7 +483,16 @@ export async function getInterCityPackages(req, res) {
                 fk_id_tp_p: 2,
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt']
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
+            include: [
+                {
+                    model: Store,
+                    where: {
+                        fk_id_city_store: city
+                    },
+                    attributes: ['fk_id_city_store']
+                }
+            ]
         });
         // logger control proccess
         logger.info('Get inter_city packages successfuly');
@@ -475,12 +518,18 @@ export async function getCarriersInter(req, res) {
     // logger control proccess
     logger.info('Enter the endpoint get carriers Inter_city');
     try {
+        // capture the id that comes in the parameters of the req
+        const { city } = req.body;
+        // I validate req correct json
+        if (!city) return res.sendStatus(400);
         // I call and save the result of the findAll method, which is d sequelize
         const getCarriers = await Carrier.findAll({
             where: {
-                status_carrier: 1
+                status_carrier: 1,
+                fk_id_tc_carrier: 2,
+                fk_id_city_carrier: city
             },
-            attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier'],
+            attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier', 'fk_id_city_carrier'],
             include: [
                 {
                     model: Type_document,
@@ -564,11 +613,11 @@ export async function getDetailAsignateInter(req, res) {
         // I validate req correct json
         if (!id_carrier) return res.sendStatus(400);
         // I call and save the result of the findAll method, which is d sequelize
-        const getDetailAsignate = await Carrier.findAll({
+        const getDetailAsignate = await Carrier.findOne({
             where: {
                 id_carrier
             },
-            attributes: ['id_Carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier'],
+            attributes: ['id_Carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_city_carrier'],
             include: [
                 {
                     model: Vehicle,
@@ -576,6 +625,9 @@ export async function getDetailAsignateInter(req, res) {
                 }
             ]
         });
+        // I capture city by conditions later
+        let city_carrier = getDetailAsignate.fk_id_city_carrier;
+        console.log(city_carrier)
         // I call and save the result of the findAll method, which is d sequelize
         const getAsignatedPackage = await Package.findAll({
             where: {
@@ -597,7 +649,16 @@ export async function getDetailAsignateInter(req, res) {
                 fk_id_tp_p: 2,
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p']
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p'],
+            include: [
+                {
+                    model: Store,
+                    where: {
+                        fk_id_city_store: city_carrier
+                    },
+                    attributes: ['fk_id_city_store']
+                }
+            ]
         });
         // logger control proccess
         logger.info('Get detail asignate inter_city successfuly');

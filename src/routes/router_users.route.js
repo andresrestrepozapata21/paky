@@ -25,7 +25,7 @@ router.post('/routerUser/login', login);
  *
  * @apiSuccess message and data getCityPackages
  */
-router.get('/routerUser/getCityPackages', async (req, res, next) => {
+router.post('/routerUser/getCityPackages', async (req, res, next) => {
     try {
         //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
         const token = req.headers.authorization.split(" ")[1];
@@ -79,7 +79,7 @@ router.post('/routerUser/getProductsPackage', async (req, res, next) => {
  *
  * @apiSuccess message and data getCarriers
  */
-router.get('/routerUser/getCarriers', async (req, res, next) => {
+router.post('/routerUser/getCarriers', async (req, res, next) => {
     try {
         //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
         const token = req.headers.authorization.split(" ")[1];
@@ -187,7 +187,7 @@ router.post('/routerUser/toAsignatePackages', async (req, res, next) => {
  *
  * @apiSuccess message and data getInterCityPackages
  */
-router.get('/routerUser/getInterCityPackages', async (req, res, next) => {
+router.post ('/routerUser/getInterCityPackages', async (req, res, next) => {
     try {
         //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
         const token = req.headers.authorization.split(" ")[1];
@@ -214,7 +214,7 @@ router.get('/routerUser/getInterCityPackages', async (req, res, next) => {
  *
  * @apiSuccess message and data getCarriersInter
  */
-router.get('/routerUser/getCarriersInter', async (req, res, next) => {
+router.post('/routerUser/getCarriersInter', async (req, res, next) => {
     try {
         //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
         const token = req.headers.authorization.split(" ")[1];
