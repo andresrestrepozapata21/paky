@@ -414,7 +414,10 @@ export async function master(req, res) {
                     attributes: ['id_cba', 'bank_cba'],
                     include: [
                         {
-                            model: Carrier_payment_request
+                            model: Carrier_payment_request,
+                            where:{
+                                status_cpr: 2
+                            }
                         }
                     ]
                 }
