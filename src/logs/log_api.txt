@@ -1,0 +1,36 @@
+[2024-04-15T20:00:08.409Z] info server running on port 3000
+[2024-04-15T20:02:13.219Z] info enter the endpoint login
+[2024-04-15T20:02:13.273Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-15T20:02:23.563Z] info Token validated successfuly
+[2024-04-15T20:02:23.563Z] info enter the endpoint master
+[2024-04-15T20:02:23.582Z] info Master successfuly
+[2024-04-15T20:04:11.736Z] info Token validated successfuly
+[2024-04-15T20:04:11.747Z] info Evidence load successfully
+[2024-04-15T20:04:11.748Z] info Enter the endpoint deliver packages
+[2024-04-15T20:04:11.756Z] info Deliver packages successfuly, Results: undefined, undefined, undefined
+[2024-04-15T20:04:23.671Z] info Token validated successfuly
+[2024-04-15T20:04:23.672Z] info enter the endpoint master
+[2024-04-15T20:04:23.685Z] info Master successfuly
+[2024-04-15T20:04:28.173Z] info Token validated successfuly
+[2024-04-15T20:04:28.173Z] info enter the endpoint master
+[2024-04-15T20:04:28.191Z] info Master successfuly
+[2024-04-15T20:05:01.269Z] info Token validated successfuly
+[2024-04-15T20:05:01.270Z] info enter the endpoint asignated packages
+[2024-04-15T20:05:01.279Z] info Asignated packages successfuly
+[2024-04-15T20:09:05.727Z] info Token validated successfuly
+[2024-04-15T20:09:05.727Z] info enter the endpoint confirmate packages
+[2024-04-15T20:09:05.743Z] info History status registed successfully
+[2024-04-15T20:09:05.743Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-04-15T20:09:15.767Z] info Token validated successfuly
+[2024-04-15T20:09:15.767Z] info enter the endpoint confirmate packages
+[2024-04-15T20:09:15.775Z] info History status registed successfully
+[2024-04-15T20:09:15.775Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-04-16T13:04:47.742Z] info server running on port 3000
+[2024-04-16T13:04:48.314Z] info enter the endpoint login dropshipper
+[2024-04-16T13:04:48.396Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-16T13:07:22.835Z] info enter the endpoint login dropshipper
+[2024-04-16T13:07:22.840Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-16T13:08:08.985Z] info enter the endpoint login dropshipper
+[2024-04-16T13:08:08.990Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-16T14:00:47.716Z] info server running on port 3000
+[2024-04-16T14:00:49.654Z] info server running on port 3000
