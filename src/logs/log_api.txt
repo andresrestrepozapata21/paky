@@ -34,3 +34,6 @@
 [2024-04-16T13:08:08.990Z] info correct credentials, Started Sesion, token returned in response body data.
 [2024-04-16T14:00:47.716Z] info server running on port 3000
 [2024-04-16T14:00:49.654Z] info server running on port 3000
+[2024-04-16T14:01:31.078Z] info server running on port 3000
+[2024-04-16T14:08:26.754Z] info server running on port 3000
+[2024-04-16T14:08:30.208Z] info server running on port 3000

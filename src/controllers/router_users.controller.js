@@ -238,7 +238,7 @@ export async function getCarriers(req, res) {
                 status_capacity = "Libre";
             } else if (numberOfRecords < capacityVehicle) {
                 status_capacity = "Parcial";
-            } else if (numberOfRecords == capacityVehicle) {
+            } else if (numberOfRecords >= capacityVehicle) {
                 status_capacity = "Ocupado";
             }
             return {
@@ -562,7 +562,7 @@ export async function getCarriersInter(req, res) {
                 status_capacity = "Libre";
             } else if (numberOfRecords < capacityVehicle) {
                 status_capacity = "Parcial";
-            } else if (numberOfRecords == capacityVehicle) {
+            } else if (numberOfRecords >= capacityVehicle) {
                 status_capacity = "Ocupado";
             }
             // Structure condition type carrier
