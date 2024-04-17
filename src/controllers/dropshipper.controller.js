@@ -276,20 +276,77 @@ export async function getpackages(req, res) {
             attributes: ['id_store'],
             include: [
                 {
+                    model: City,
+                    attributes: ['name_city'],
+                    include: [
+                        {
+                            model: Department,
+                            attributes: ['name_d']
+                        }
+                    ]
+                },
+                {
                     model: Package,
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p'],
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
+                    include: [
+                        {
+                            model: Type_package,
+                            attributes: ['id_tp', 'description_tp']
+                        },
+                        {
+                            model: Carrier,
+                            attributes: ['name_carrier', 'last_name_carrier']
+                        },
+                        {
+                            model: Store,
+                            attributes: ['direction_store'],
+                            include: [
+                                {
+                                    model: City,
+                                    attributes: ['name_city'],
+                                    include: [
+                                        {
+                                            model: Department,
+                                            attributes: ['name_d']
+                                        }
+                                    ]
+                                },
+                            ]
+                        }
+                    ]
                 }
             ]
         });
         // Process data for JSON response
         const getPackages = infoStorePackage.flatMap(p => p.packages);
+        // I run packages for build my accept JSON
+        const packages = getPackages.map(p => {
+            let warehouse = p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d;
+            let carrier;
+            if (p.carrier) {
+                carrier = p.carrier.name_carrier + " " + p.carrier.last_name_carrier;
+            } else {
+                carrier = 'N/A'
+            }
+            return {
+                id_p: p.id_p,
+                orden_p: p.orden_p,
+                createdAt: p.createdAt,
+                client_p: p.name_client_p + " - " + p.direction_client_p,
+                warehouse,
+                type_send: p.types_package.description_tp,
+                status_p: p.status_p,
+                carrier,
+                confirmation_dropshipper_p: p.confirmation_dropshipper_p
+            }
+        })
         // logger control proccess
         logger.info('Getpackages Dropshipper successfuly');
         // Json setting response
         res.json({
             message: 'Getpackages Dropshipper successfuly',
             result: 1,
-            data: getPackages
+            data: packages
         });
     } catch (e) {
         // logger control proccess
@@ -327,6 +384,32 @@ export async function filterByDate(req, res) {
                         }
                     },
                     attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p', 'fk_id_carrier_p'],
+                    include: [
+                        {
+                            model: Type_package,
+                            attributes: ['id_tp', 'description_tp']
+                        },
+                        {
+                            model: Carrier,
+                            attributes: ['name_carrier', 'last_name_carrier']
+                        },
+                        {
+                            model: Store,
+                            attributes: ['direction_store'],
+                            include: [
+                                {
+                                    model: City,
+                                    attributes: ['name_city'],
+                                    include: [
+                                        {
+                                            model: Department,
+                                            attributes: ['name_d']
+                                        }
+                                    ]
+                                },
+                            ]
+                        }
+                    ]
                 }
             ]
         });
@@ -334,13 +417,34 @@ export async function filterByDate(req, res) {
         if (infoStorePackage.length > 0) {
             // Process data for JSON response
             const getPackages = infoStorePackage.flatMap(p => p.packages);
+            // I run packages for build my accept JSON
+            const packages = getPackages.map(p => {
+                let warehouse = p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d;
+                let carrier;
+                if (p.carrier) {
+                    carrier = p.carrier.name_carrier + " " + p.carrier.last_name_carrier;
+                } else {
+                    carrier = 'N/A'
+                }
+                return {
+                    id_p: p.id_p,
+                    orden_p: p.orden_p,
+                    createdAt: p.createdAt,
+                    client_p: p.name_client_p + " - " + p.direction_client_p,
+                    warehouse,
+                    type_send: p.types_package.description_tp,
+                    status_p: p.status_p,
+                    carrier,
+                    confirmation_dropshipper_p: p.confirmation_dropshipper_p
+                }
+            })
             // logger control proccess
             logger.info('filterByDate Dropshipper successfuly');
             // The credentials are incorrect
             res.json({
                 message: 'filterByDate Dropshipper successfuly',
                 result: 1,
-                data: getPackages
+                data: packages
             });
         } else {
             // logger control proccess
@@ -487,7 +591,7 @@ export async function corfirmatePackage(req, res) {
     logger.info('enter the endpoint confirmate packages dropshipper');
     try {
         // capture the id that comes in the parameters of the req
-        const { id_p, confirmation_dropshipper_p } = req.body;
+        const { id_p } = req.body;
         // I validate req correct json
         if (!id_p) return res.sendStatus(400);
         // I find if exist package by dropshipper
@@ -501,7 +605,7 @@ export async function corfirmatePackage(req, res) {
         if (getPackage) {
             // Set the flag confirmation flag dropshipper pakcges
             getPackage.set({
-                confirmation_dropshipper_p
+                confirmation_dropshipper_p: 1
             });
             // .save() for update confirmation dropshipper from package
             await getPackage.save();
@@ -1029,7 +1133,7 @@ export async function downloadExcelPortfolio(req, res) {
             let dataForExcel = [];
             // Process data for JSON response
             const getPortfolios = infoPortfolio.map(p => {
-                dataForExcel.push({ id_phd: p.id_phd, type_phd: p.type_phd, monto_phd: p.monto_phd, description_phd: p.description_phd, createdAt: p.createdAt, tipo_documento: p.dropshipper.tipo_documento, numero_documento: p.dropshipper.numero_documento,  name_dropshipper: p.dropshipper.name_dropshipper, last_name_dropshipper: p.dropshipper.last_name_dropshipper, phone_number_dropshipper: p.dropshipper.phone_number_dropshipper, email_dropshipper: p.dropshipper.email_dropshipper });
+                dataForExcel.push({ id_phd: p.id_phd, type_phd: p.type_phd, monto_phd: p.monto_phd, description_phd: p.description_phd, createdAt: p.createdAt, tipo_documento: p.dropshipper.tipo_documento, numero_documento: p.dropshipper.numero_documento, name_dropshipper: p.dropshipper.name_dropshipper, last_name_dropshipper: p.dropshipper.last_name_dropshipper, phone_number_dropshipper: p.dropshipper.phone_number_dropshipper, email_dropshipper: p.dropshipper.email_dropshipper });
             });
             // Creación de un libro y una hoja de Excel
             const workbook = new ExcelJS.Workbook();
