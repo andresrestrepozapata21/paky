@@ -1176,7 +1176,7 @@ export async function detailPackage(req, res) {
                     ]
                 }
             ],
-            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'guide_number_p', 'profit_carrier_p', 'status_p', 'direction_client_p', 'createdAt', 'total_price_p', 'with_collection_p']
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'guide_number_p', 'profit_carrier_p', 'status_p', 'direction_client_p', 'createdAt', 'total_price_p', 'with_collection_p', 'comments_p']
         });
         // Process data for JSON response
         const formattedDataPackages = detailPackage.map(p => {
@@ -1205,6 +1205,7 @@ export async function detailPackage(req, res) {
                             name_client_p: p.name_client_p,
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
+                            comments: p.comments_p,
                             address_origin: p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1228,6 +1229,7 @@ export async function detailPackage(req, res) {
                             name_client_p: p.name_client_p,
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
+                            comments: p.comments_p,
                             address_origin: p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1251,6 +1253,7 @@ export async function detailPackage(req, res) {
                             name_client_p: p.name_client_p,
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
+                            comments: p.comments_p,
                             address_origin: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d,
                             address_destiny: p.direction_client_p + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1274,6 +1277,7 @@ export async function detailPackage(req, res) {
                             name_client_p: p.name_client_p,
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
+                            comments: p.comments_p,
                             address_origin: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d,
                             address_destiny: p.direction_client_p + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1303,6 +1307,7 @@ export async function detailPackage(req, res) {
                             name_client_p: p.name_client_p,
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
+                            comments: p.comments_p,
                             address_origin: p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.store.city.central_warehouses[0].direction_cw + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d
                         };
@@ -1326,6 +1331,7 @@ export async function detailPackage(req, res) {
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
                             with_collection_p: p.with_collection_p,
+                            comments: p.comments_p,
                             address_origin: p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.store.city.central_warehouses[0].direction_cw + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d
                         };
@@ -1349,6 +1355,7 @@ export async function detailPackage(req, res) {
                             name_client_p: p.name_client_p,
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
+                            comments: p.comments_p,
                             address_origin: p.store.city.central_warehouses[0].direction_cw + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1372,6 +1379,7 @@ export async function detailPackage(req, res) {
                             name_client_p: p.name_client_p,
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
+                            comments: p.comments_p,
                             address_origin: p.store.city.central_warehouses[0].direction_cw + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1395,6 +1403,7 @@ export async function detailPackage(req, res) {
                             name_client_p: p.name_client_p,
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
+                            comments: p.comments_p,
                             address_origin: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d,
                             address_destiny: p.direction_client_p + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1418,6 +1427,7 @@ export async function detailPackage(req, res) {
                             name_client_p: p.name_client_p,
                             phone_number_client_p: p.phone_number_client_p,
                             email_client_p: p.email_client_p,
+                            comments: p.comments_p,
                             address_origin: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d,
                             address_destiny: p.direction_client_p + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };

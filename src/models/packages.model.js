@@ -27,6 +27,9 @@ export const Package = sequelize.define('packages', {
     direction_client_p: {
         type: DataTypes.STRING
     },
+    comments_p: {
+        type: DataTypes.STRING
+    },
     guide_number_p: {
         type: DataTypes.STRING
     },

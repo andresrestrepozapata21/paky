@@ -2705,3 +2705,115 @@ sql: SELECT `stores`.`id_store`, `packages`.`id_p` AS `packages.id_p`, `packages
 [2024-04-18T16:58:04.201Z] info Token validated successfuly
 [2024-04-18T16:58:04.201Z] info enter the endpoint getpackages dropshipper
 [2024-04-18T16:58:04.206Z] info Getpackages Dropshipper successfuly
+[2024-04-18T17:03:47.132Z] info server running on port 3000
+[2024-04-18T17:06:42.961Z] info enter the endpoint login user router
+[2024-04-18T17:06:42.997Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-18T17:06:48.188Z] info Token validated successfuly
+[2024-04-18T17:06:48.188Z] info Enter the endpoint get city packages
+[2024-04-18T17:06:48.212Z] info Get city packages successfuly
+[2024-04-18T17:06:49.675Z] info Token validated successfuly
+[2024-04-18T17:06:49.676Z] info Enter the endpoint get carriers
+[2024-04-18T17:06:49.706Z] info Get carriers successfuly
+[2024-04-18T17:06:52.514Z] info Token validated successfuly
+[2024-04-18T17:06:52.515Z] info Enter the endpoint get detail asignate
+[2024-04-18T17:06:52.524Z] info Get detail asignate successfuly
+[2024-04-18T17:06:56.297Z] info Token validated successfuly
+[2024-04-18T17:06:56.297Z] info Enter the endpoint get city packages
+[2024-04-18T17:06:56.300Z] info Get city packages successfuly
+[2024-04-18T17:06:59.028Z] info Token validated successfuly
+[2024-04-18T17:06:59.029Z] info Enter the endpoint get inter_city packages
+[2024-04-18T17:06:59.033Z] info Get inter_city packages successfuly
+[2024-04-18T17:07:01.283Z] info Token validated successfuly
+[2024-04-18T17:07:01.283Z] info Enter the endpoint get carriers Inter_city
+[2024-04-18T17:07:01.289Z] info Get carriers Inter_city successfuly
+[2024-04-18T17:07:03.544Z] info Token validated successfuly
+[2024-04-18T17:07:03.545Z] info Enter the endpoint get detail asignate inter_city
+[2024-04-18T17:07:03.553Z] info Get detail asignate inter_city successfuly
+[2024-04-18T17:07:07.622Z] info Token validated successfuly
+[2024-04-18T17:07:07.623Z] info Enter the endpoint get city packages
+[2024-04-18T17:07:07.626Z] info Get city packages successfuly
+[2024-04-18T17:07:19.260Z] info enter the endpoint login dropshipper
+[2024-04-18T17:07:19.275Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-18T17:07:19.342Z] info Token validated successfuly
+[2024-04-18T17:07:19.343Z] info enter the endpoint master dropshipper
+[2024-04-18T17:07:19.348Z] info Master Dropshipper successfuly
+[2024-04-18T17:07:23.295Z] info Token validated successfuly
+[2024-04-18T17:07:23.295Z] info enter the endpoint getpackages dropshipper
+[2024-04-18T17:07:23.318Z] info Getpackages Dropshipper successfuly
+[2024-04-18T17:07:46.431Z] info Token validated successfuly
+[2024-04-18T17:07:46.431Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-18T17:07:46.439Z] info Confirmate packages Dropshipper successfuly
+[2024-04-18T17:07:46.503Z] info Token validated successfuly
+[2024-04-18T17:07:46.503Z] info enter the endpoint getpackages dropshipper
+[2024-04-18T17:07:46.510Z] info Getpackages Dropshipper successfuly
+[2024-04-18T17:07:54.046Z] info Token validated successfuly
+[2024-04-18T17:07:54.046Z] info enter the endpoint confirmate packages dropshipper
+[2024-04-18T17:07:54.052Z] info Confirmate packages Dropshipper successfuly
+[2024-04-18T17:07:54.115Z] info Token validated successfuly
+[2024-04-18T17:07:54.115Z] info enter the endpoint getpackages dropshipper
+[2024-04-18T17:07:54.121Z] info Getpackages Dropshipper successfuly
+[2024-04-18T17:08:07.924Z] info enter the endpoint login user router
+[2024-04-18T17:08:07.928Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-18T17:08:10.031Z] info Token validated successfuly
+[2024-04-18T17:08:10.031Z] info Enter the endpoint get city packages
+[2024-04-18T17:08:10.035Z] info Get city packages successfuly
+[2024-04-18T17:08:18.987Z] info Token validated successfuly
+[2024-04-18T17:08:18.990Z] info Enter the endpoint get inter_city packages
+[2024-04-18T17:08:18.995Z] info Get inter_city packages successfuly
+[2024-04-18T17:08:21.067Z] info Token validated successfuly
+[2024-04-18T17:08:21.067Z] info Enter the endpoint get city packages
+[2024-04-18T17:08:21.070Z] info Get city packages successfuly
+[2024-04-18T17:08:37.732Z] info enter the endpoint login user router
+[2024-04-18T17:08:37.735Z] info Incorrect credentials or non-existent credenciales
+[2024-04-18T17:08:43.492Z] info enter the endpoint login user router
+[2024-04-18T17:08:43.493Z] info Incorrect credentials or non-existent credenciales
+[2024-04-18T17:08:47.652Z] info enter the endpoint login user router
+[2024-04-18T17:08:47.654Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-18T17:09:03.493Z] info enter the endpoint login dropshipper
+[2024-04-18T17:09:03.496Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-18T17:09:03.565Z] info Token validated successfuly
+[2024-04-18T17:09:03.565Z] info enter the endpoint master dropshipper
+[2024-04-18T17:09:03.568Z] info Master Dropshipper successfuly
+[2024-04-18T17:09:06.226Z] info Token validated successfuly
+[2024-04-18T17:09:06.226Z] info enter the endpoint getpackages dropshipper
+[2024-04-18T17:09:06.233Z] info Getpackages Dropshipper successfuly
+[2024-04-18T17:09:15.954Z] info Token validated successfuly
+[2024-04-18T17:09:15.955Z] info enter the endpoint detailPackage dropshipper
+[2024-04-18T17:09:15.968Z] info detailPackage Dropshipper successfuly
+[2024-04-18T17:09:31.468Z] info Token validated successfuly
+[2024-04-18T17:09:31.468Z] info enter the endpoint getpackages dropshipper
+[2024-04-18T17:09:31.476Z] info Getpackages Dropshipper successfuly
+[2024-04-18T17:09:35.425Z] info Token validated successfuly
+[2024-04-18T17:09:35.426Z] info enter the endpoint detailPackage dropshipper
+[2024-04-18T17:09:35.436Z] info detailPackage Dropshipper successfuly
+[2024-04-18T17:09:40.513Z] info Token validated successfuly
+[2024-04-18T17:09:40.513Z] info enter the endpoint getpackages dropshipper
+[2024-04-18T17:09:40.520Z] info Getpackages Dropshipper successfuly
+[2024-04-18T17:09:42.463Z] info Token validated successfuly
+[2024-04-18T17:09:42.464Z] info enter the endpoint detailPackage dropshipper
+[2024-04-18T17:09:42.472Z] info detailPackage Dropshipper successfuly
+[2024-04-18T17:09:46.619Z] info Token validated successfuly
+[2024-04-18T17:09:46.619Z] info enter the endpoint getpackages dropshipper
+[2024-04-18T17:09:46.624Z] info Getpackages Dropshipper successfuly
+[2024-04-18T17:09:48.832Z] info Token validated successfuly
+[2024-04-18T17:09:48.833Z] info enter the endpoint detailPackage dropshipper
+[2024-04-18T17:09:48.841Z] info detailPackage Dropshipper successfuly
+[2024-04-18T17:09:58.824Z] info Token validated successfuly
+[2024-04-18T17:09:58.825Z] info enter the endpoint getpackages dropshipper
+[2024-04-18T17:09:58.829Z] info Getpackages Dropshipper successfuly
+[2024-04-18T17:10:01.654Z] info Token validated successfuly
+[2024-04-18T17:10:01.655Z] info enter the endpoint detailPackage dropshipper
+[2024-04-18T17:10:01.661Z] info detailPackage Dropshipper successfuly
+[2024-04-18T17:10:09.456Z] info Token validated successfuly
+[2024-04-18T17:10:09.457Z] info enter the endpoint getpackages dropshipper
+[2024-04-18T17:10:09.462Z] info Getpackages Dropshipper successfuly
+[2024-04-18T19:17:47.650Z] info server running on port 3000
+[2024-04-18T19:23:07.791Z] info server running on port 3000
+[2024-04-18T19:23:38.352Z] info server running on port 3000
+[2024-04-18T19:24:03.759Z] info server running on port 3000
+[2024-04-18T19:24:23.022Z] info server running on port 3000
+[2024-04-18T19:24:53.607Z] info enter the endpoint login
+[2024-04-18T19:24:53.640Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-18T19:25:02.116Z] info Token validated successfuly
+[2024-04-18T19:25:02.117Z] info enter the endpoint details packages
+[2024-04-18T19:25:02.130Z] info Details package successfuly
