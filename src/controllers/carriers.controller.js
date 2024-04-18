@@ -1202,6 +1202,9 @@ export async function detailPackage(req, res) {
                             profit_for_carrier: p.profit_carrier_p,
                             total_price_p: p.total_price_p,
                             with_collection_p: p.with_collection_p,
+                            name_client_p: p.name_client_p,
+                            phone_number_client_p: p.phone_number_client_p,
+                            email_client_p: p.email_client_p,
                             address_origin: p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1222,6 +1225,9 @@ export async function detailPackage(req, res) {
                             profit_for_carrier: p.profit_carrier_p,
                             total_price_p: p.total_price_p,
                             with_collection_p: p.with_collection_p,
+                            name_client_p: p.name_client_p,
+                            phone_number_client_p: p.phone_number_client_p,
+                            email_client_p: p.email_client_p,
                             address_origin: p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1242,6 +1248,9 @@ export async function detailPackage(req, res) {
                             profit_for_carrier: p.profit_carrier_p,
                             total_price_p: p.total_price_p,
                             with_collection_p: p.with_collection_p,
+                            name_client_p: p.name_client_p,
+                            phone_number_client_p: p.phone_number_client_p,
+                            email_client_p: p.email_client_p,
                             address_origin: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d,
                             address_destiny: p.direction_client_p + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1291,6 +1300,9 @@ export async function detailPackage(req, res) {
                             profit_for_carrier: p.profit_carrier_p,
                             total_price_p: p.total_price_p,
                             with_collection_p: p.with_collection_p,
+                            name_client_p: p.name_client_p,
+                            phone_number_client_p: p.phone_number_client_p,
+                            email_client_p: p.email_client_p,
                             address_origin: p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.store.city.central_warehouses[0].direction_cw + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d
                         };
@@ -1310,6 +1322,9 @@ export async function detailPackage(req, res) {
                             date_created_p,
                             profit_for_carrier: p.profit_carrier_p,
                             total_price_p: p.total_price_p,
+                            name_client_p: p.name_client_p,
+                            phone_number_client_p: p.phone_number_client_p,
+                            email_client_p: p.email_client_p,
                             with_collection_p: p.with_collection_p,
                             address_origin: p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.store.city.central_warehouses[0].direction_cw + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d
@@ -1331,6 +1346,9 @@ export async function detailPackage(req, res) {
                             profit_for_carrier: p.profit_carrier_p,
                             total_price_p: p.total_price_p,
                             with_collection_p: p.with_collection_p,
+                            name_client_p: p.name_client_p,
+                            phone_number_client_p: p.phone_number_client_p,
+                            email_client_p: p.email_client_p,
                             address_origin: p.store.city.central_warehouses[0].direction_cw + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1351,6 +1369,9 @@ export async function detailPackage(req, res) {
                             profit_for_carrier: p.profit_carrier_p,
                             total_price_p: p.total_price_p,
                             with_collection_p: p.with_collection_p,
+                            name_client_p: p.name_client_p,
+                            phone_number_client_p: p.phone_number_client_p,
+                            email_client_p: p.email_client_p,
                             address_origin: p.store.city.central_warehouses[0].direction_cw + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d,
                             address_destiny: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };
@@ -1371,6 +1392,9 @@ export async function detailPackage(req, res) {
                             profit_for_carrier: p.profit_carrier_p,
                             total_price_p: p.total_price_p,
                             with_collection_p: p.with_collection_p,
+                            name_client_p: p.name_client_p,
+                            phone_number_client_p: p.phone_number_client_p,
+                            email_client_p: p.email_client_p,
                             address_origin: p.city.central_warehouses[0].direction_cw + " - " + p.city.name_city + " - " + p.city.department.name_d,
                             address_destiny: p.direction_client_p + " - " + p.city.name_city + " - " + p.city.department.name_d
                         };

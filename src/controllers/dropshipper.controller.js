@@ -813,7 +813,7 @@ export async function editPackage(req, res) {
 // Method deletePackage dropshipper
 export async function deletePackage(req, res) {
     // logger control proccess
-    logger.info('enter the endpoint detailPackage dropshipper');
+    logger.info('enter the endpoint delete package');
     try {
         // capture the id that comes in the parameters of the req
         const { id_p } = req.body;
