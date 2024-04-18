@@ -107,7 +107,7 @@ export async function getCityPackages(req, res) {
         const getCityPackages = await Package.findAll({
             where: {
                 status_p: {
-                    [Sequelize.Op.notIn]: [6]
+                    [Sequelize.Op.notIn]: [0, 6]
                 },
                 fk_id_tp_p: 1,
                 confirmation_dropshipper_p: 1
@@ -336,7 +336,7 @@ export async function getDetailAsignate(req, res) {
             where: {
                 fk_id_carrier_p: id_carrier,
                 status_p: {
-                    [Sequelize.Op.notIn]: [6]
+                    [Sequelize.Op.notIn]: [0, 6]
                 }
             },
             attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'createdAt'],
@@ -346,7 +346,7 @@ export async function getDetailAsignate(req, res) {
             where: {
                 fk_id_carrier_p: null,
                 status_p: {
-                    [Sequelize.Op.notIn]: [2, 3, 5, 6, 7]
+                    [Sequelize.Op.notIn]: [0, 2, 3, 5, 6, 7]
                 },
                 confirmation_dropshipper_p: 1
             },
@@ -478,7 +478,7 @@ export async function getInterCityPackages(req, res) {
         const getCityPackages = await Package.findAll({
             where: {
                 status_p: {
-                    [Sequelize.Op.notIn]: [6]
+                    [Sequelize.Op.notIn]: [0, 6]
                 },
                 fk_id_tp_p: 2,
                 confirmation_dropshipper_p: 1
@@ -633,7 +633,7 @@ export async function getDetailAsignateInter(req, res) {
             where: {
                 fk_id_carrier_p: id_carrier,
                 status_p: {
-                    [Sequelize.Op.notIn]: [6]
+                    [Sequelize.Op.notIn]: [0, 6]
                 },
                 fk_id_tp_p: 2
             },
@@ -644,7 +644,7 @@ export async function getDetailAsignateInter(req, res) {
             where: {
                 fk_id_carrier_p: null,
                 status_p: {
-                    [Sequelize.Op.notIn]: [1, 3, 4, 5, 6, 7]
+                    [Sequelize.Op.notIn]: [0, 1, 3, 4, 5, 6, 7]
                 },
                 fk_id_tp_p: 2,
                 confirmation_dropshipper_p: 1
