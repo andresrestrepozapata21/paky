@@ -1188,3 +1188,89 @@ export async function downloadExcelPortfolio(req, res) {
         });
     }
 }
+
+// Method get carriers city
+export async function getCarriers(req, res) {
+    // logger control proccess
+    logger.info('Enter the endpoint get carriers');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { city } = req.body;
+        // I validate req correct json
+        if (!city) return res.sendStatus(400);
+        // I call and save the result of the findAll method, which is d sequelize
+        const getCarriers = await Carrier.findAll({
+            attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier', 'fk_id_city_carrier'],
+            where: {
+                status_carrier: 1,
+                fk_id_tc_carrier: 1,
+                fk_id_city_carrier: city
+            }
+        });
+        // logger control proccess
+        logger.info('Get carriers successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'Get carriers successfuly',
+            result: 1,
+            data: getCarriers
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error carriers: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0
+        });
+    }
+}
+
+// Method editProductPackage dropshipper
+export async function editProductPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint edit product package cuantity dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_pp } = req.params;
+        //const { orden_p, name_client_p, phone_number_client_p, email_client_p, direction_client_p, guide_number_p, status_p, with_collection_p, createdAt, fk_id_store_p, fk_id_carrier_p, fk_id_tp_p, fk_id_destiny_city_p } = req.body;
+        // I validate req correct json
+        if (!id_pp) return res.sendStatus(400);
+        // I find if exist package by dropshipper
+        const getPackage = await PackageProduct.findOne({
+            where: {
+                id_pp
+            }
+        });
+        // I validate exist  infoDropshipper and infoStorePackage
+        if (getPackage) {
+            getPackage.set(req.body);
+            getPackage.save()
+            // logger control proccess
+            logger.info('edit product package cuantity dropshipper successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'edit product package cuantity dropshipper successfuly',
+                result: 1,
+                getPackage
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found edit product package cuantity dropshipper');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found edit product package cuantity dropshipper',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error edit product package cuantity dropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
