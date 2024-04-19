@@ -890,7 +890,7 @@ export async function getBankAccount(req, res) {
             where: {
                 fk_id_dropshipper_dba: id_dropshipper
             },
-            attributes: ['number_dba', 'type_dba', 'bank_dba', 'description_dba', 'fk_id_dropshipper_dba'],
+            attributes: ['id_dba', 'number_dba', 'type_dba', 'bank_dba', 'description_dba', 'fk_id_dropshipper_dba'],
         });
         // I validate exist  infoDropshipper and getBankAccount
         if (getBankAccount.length > 0) {
@@ -978,7 +978,7 @@ export async function addPaymentRequest(req, res) {
         // To update flag payment request verification pin request
         // 0. rejected 1. accepted 2. pending 3. pin verification
         newPaymentRequest.set({
-            status_cpr: 3,
+            status_dpr: 3,
             verification_pin_request: randomNumber
         })
         newPaymentRequest.save();
@@ -1039,7 +1039,6 @@ export async function validateVerificationPin(req, res) {
                 res.json({
                     message: 'Verification PIN incorrect!',
                     result: 0,
-                    getPayment
                 });
             }
         } else {
@@ -1058,7 +1057,6 @@ export async function validateVerificationPin(req, res) {
         res.status(500).json({
             message: 'Something goes wrong',
             result: 0,
-            data: {}
         });
     }
 }
