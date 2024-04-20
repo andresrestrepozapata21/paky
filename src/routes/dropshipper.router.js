@@ -3,7 +3,7 @@ import { Router } from 'express';
 import jwt from "jsonwebtoken";
 import logger from '../utils/logger.js';
 // I import my controller with the methods I need
-import { getpackages, login, master, filterByDate, downloadExcelpackagesDate, corfirmatePackage, detailPackage, deletePackage, editPackage, addBankAccount, getBankAccount, deleteBankAccount, addPaymentRequest, validateVerificationPin, getPortfolio, downloadExcelPortfolio, getCarriers, editProductPackage } from '../controllers/dropshipper.controller.js';
+import { getpackages, login, master, filterByDate, downloadExcelpackagesDate, corfirmatePackage, detailPackage, deletePackage, editPackage, addBankAccount, getBankAccount, deleteBankAccount, addPaymentRequest, validateVerificationPin, getPortfolio, downloadExcelPortfolio, getCarriers, editProductPackage, getPayments, deletePaymentRequest } from '../controllers/dropshipper.controller.js';
 // Firme private secret jwt
 const secret = process.env.SECRET;
 // I declare the constant that the Router() method returns and upload multer directory
@@ -476,5 +476,59 @@ router.put('/dropshipper/editProductPackageCuantity/:id_pp', async (req, res, ne
         return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, editProductPackage);
+/**
+ * @api {POST} /dropshipper/editProductPackageCuantity
+ * @apiName paky
+ * @apiGroup editProductPackageCuantity
+ * @apiDescription dropshipper editProductPackageCuantity
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/dropshipper/getPayments', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, getPayments);
+/**
+ * @api {POST} /dropshipper/deletePaymentRequest
+ * @apiName paky
+ * @apiGroup deletePaymentRequest
+ * @apiDescription dropshipper deletePaymentRequest
+ *
+ * @apiSuccess message and get data needed
+ */
+router.delete('/dropshipper/deletePaymentRequest', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, deletePaymentRequest);
 // I export the router
 export default router;

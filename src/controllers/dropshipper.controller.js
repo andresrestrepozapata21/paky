@@ -1272,3 +1272,95 @@ export async function editProductPackage(req, res) {
         });
     }
 }
+
+// Method get carriers city
+export async function getPayments(req, res) {
+    // logger control proccess
+    logger.info('Enter the endpoint get payments');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dropshipper } = req.body;
+        // I validate req correct json
+        if (!id_dropshipper) return res.sendStatus(400);
+        // I call and save the result of the findAll method, which is d sequelize
+        const getPayments = await Dropshipper_payment_request.findAll({
+            attributes: ['id_dpr', 'quantity_requested_dpr', 'status_dpr', 'verification_pin_request', 'createdAt'],
+            include:[
+                {
+                    model: Dropshipper_bank_account,
+                    where:{
+                        fk_id_dropshipper_dba: id_dropshipper
+                    }
+                }
+            ]
+        });
+        // I run payments for build my accept JSON
+        const payments = getPayments.map(p => {
+            let status = p.status_dpr;
+            let statusReal;
+            if (status == 1) {
+                statusReal = "PAGADA";
+            } else if(status == 2) {
+                statusReal = "PENDIENTE";
+            } else if(status == 3){
+                statusReal = "EN VERIFICACION DE PIN";
+            }
+            return {
+                id_dpr: p.id_dpr,
+                quantity_requested_dpr: p.quantity_requested_dpr,
+                statusReal,
+                createdAt: p.createdAt,
+            }
+        })
+        // logger control proccess
+        logger.info('Get payments request successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'Get payments request successfuly',
+            result: 1,
+            data: payments
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error payments request: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0
+        });
+    }
+}
+
+// Method deletePaymentRequest dropshipper
+export async function deletePaymentRequest(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint deletePaymentRequest dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dpr } = req.body;
+        // I validate req correct json
+        if (!id_dpr) return res.sendStatus(400);
+        // I find if exist package by dropshipper
+        const deletePaymentRequest = await Dropshipper_payment_request.destroy({
+            where: {
+                id_dpr
+            }
+        });
+        // logger control proccess
+        logger.info('Delete deletePaymentRequest Dropshipper successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'Delete deletePaymentRequest Dropshipper successfuly',
+            result: 1,
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error Delete deletePaymentRequest: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
