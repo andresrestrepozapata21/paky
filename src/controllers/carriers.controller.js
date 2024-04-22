@@ -1752,21 +1752,21 @@ export async function registerCarrierPaymentsRequest(req, res) {
                     // logger control proccess
                     logger.info('Requesting a value greater than what it has or Requesting a value negative.');
                     // I return the status 500 and the message I want
-                    res.status(500).json({
+                    res.status(200).json({
                         message: 'Requesting a value greater than what it has or Requesting a value negative.',
                         result: 0
                     });
                 }
             } else {
                 // I return the status 500 and the message I want
-                res.status(500).json({
+                res.status(200).json({
                     message: 'The carrier has debt',
                     result: 0
                 });
             }
         } else {
             // I return the status 500 and the message I want
-            res.status(500).json({
+            res.status(404).json({
                 message: 'The carrier non-existing',
                 result: 0
             });

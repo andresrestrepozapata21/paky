@@ -9221,3 +9221,11 @@ sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_car
 [2024-04-20T15:17:31.273Z] info Token validated successfuly
 [2024-04-20T15:17:31.273Z] info Enter the endpoint get city packages
 [2024-04-20T15:17:31.275Z] info Get city packages successfuly
+[2024-04-22T13:35:33.477Z] info server running on port 3000
+[2024-04-22T13:36:28.300Z] info enter the endpoint login
+[2024-04-22T13:36:28.335Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-22T13:36:53.600Z] info Token validated successfuly
+[2024-04-22T13:36:53.600Z] info enter the endpoint register carrier payments request
+[2024-04-22T13:37:42.925Z] info server running on port 3000
+[2024-04-22T13:37:44.111Z] info Token validated successfuly
+[2024-04-22T13:37:44.112Z] info enter the endpoint register carrier payments request
