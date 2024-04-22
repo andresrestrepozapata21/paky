@@ -9379,3 +9379,43 @@ sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_car
 [2024-04-22T14:23:15.178Z] info Token validated successfuly
 [2024-04-22T14:23:15.178Z] info enter the endpoint carrier history
 [2024-04-22T14:23:15.189Z] info Get carrier history successfuly
+[2024-04-22T18:42:50.444Z] info server running on port 3000
+[2024-04-22T18:42:51.859Z] info enter the endpoint login
+[2024-04-22T18:42:51.949Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-22T18:43:02.835Z] info Token validated successfuly
+[2024-04-22T18:43:02.836Z] info enter the endpoint master
+[2024-04-22T18:43:02.888Z] info Master successfuly
+[2024-04-22T18:43:53.739Z] info server running on port 3000
+[2024-04-22T18:43:54.612Z] info Token validated successfuly
+[2024-04-22T18:43:54.613Z] info enter the endpoint master
+[2024-04-22T18:43:54.662Z] info Master successfuly
+[2024-04-22T18:43:58.287Z] info server running on port 3000
+[2024-04-22T18:43:59.539Z] info Token validated successfuly
+[2024-04-22T18:43:59.540Z] info enter the endpoint master
+[2024-04-22T18:43:59.588Z] info Master successfuly
+[2024-04-22T18:44:27.682Z] info server running on port 3000
+[2024-04-22T18:44:29.391Z] info Token validated successfuly
+[2024-04-22T18:44:29.392Z] info enter the endpoint master
+[2024-04-22T18:44:29.437Z] info Master successfuly
+[2024-04-22T18:44:35.011Z] info server running on port 3000
+[2024-04-22T18:44:38.961Z] info server running on port 3000
+[2024-04-22T18:44:41.316Z] info server running on port 3000
+[2024-04-22T18:44:42.851Z] info Token validated successfuly
+[2024-04-22T18:44:42.851Z] info enter the endpoint master
+[2024-04-22T18:44:42.898Z] info Master successfuly
+[2024-04-22T18:44:58.775Z] info server running on port 3000
+[2024-04-22T18:45:00.181Z] info Token validated successfuly
+[2024-04-22T18:45:00.181Z] info enter the endpoint master
+[2024-04-22T18:45:00.226Z] info Master successfuly
+[2024-04-22T18:45:28.088Z] info server running on port 3000
+[2024-04-22T18:45:29.755Z] info server running on port 3000
+[2024-04-22T18:45:30.723Z] info Token validated successfuly
+[2024-04-22T18:45:30.723Z] info enter the endpoint master
+[2024-04-22T18:45:30.760Z] info Non-existent carrier
+[2024-04-22T18:45:32.964Z] info Token validated successfuly
+[2024-04-22T18:45:32.965Z] info enter the endpoint master
+[2024-04-22T18:45:32.968Z] info Non-existent carrier
+[2024-04-22T18:45:37.675Z] info server running on port 3000
+[2024-04-22T18:45:38.018Z] info Token validated successfuly
+[2024-04-22T18:45:38.019Z] info enter the endpoint master
+[2024-04-22T18:45:38.065Z] info Master successfuly

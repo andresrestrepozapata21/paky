@@ -411,15 +411,7 @@ export async function master(req, res) {
             include: [
                 {
                     model: Carrier_bank_account,
-                    attributes: ['id_cba', 'bank_cba'],
-                    include: [
-                        {
-                            model: Carrier_payment_request,
-                            where: {
-                                status_cpr: 2
-                            }
-                        }
-                    ]
+                    attributes: ['id_cba', 'bank_cba']
                 }
             ]
         });
