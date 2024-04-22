@@ -1796,13 +1796,333 @@ export async function getHistory(req, res) {
             where: {
                 fk_id_carrier_asignated_sh: id_carrier
             },
-            attributes: ['id_sh', 'status_sh', 'comentary_sh', 'details_sh'],
+            attributes: ['id_sh', 'status_sh', 'comentary_sh'],
             include: [
                 {
                     model: Package,
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'with_collection_p', 'total_price_p', "createdAt"],
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'with_collection_p', 'total_price_p', "createdAt", 'fk_id_tp_p'],
+                    include: [
+                        {
+                            model: Store,
+                            attributes: ['id_store', 'direction_store'],
+                            include: [
+                                {
+                                    model: City,
+                                    attributes: ['id_city', 'name_city'],
+                                    include: [
+                                        {
+                                            model: Central_warehouse,
+                                            attributes: ['id_cw', 'name_cw', 'direction_cw'],
+                                        },
+                                        {
+                                            model: Department,
+                                            attributes: ['id_d', 'name_d'],
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            model: City,
+                            attributes: ['id_city', 'name_city'],
+                            include: [
+                                {
+                                    model: Central_warehouse,
+                                    attributes: ['id_cw', 'name_cw', 'direction_cw'],
+                                },
+                                {
+                                    model: Department,
+                                    attributes: ['id_d', 'name_d'],
+                                }
+                            ]
+                        }
+                    ],
                 }
+            ],
+            order: [
+                ['createdAt', 'ASC'] // Sort by column 'column_name' in ascending order
             ]
+        });
+        // Process data for JSON response
+        const formattedData = getHistory.map(p => {
+            // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
+            if (p.package.fk_id_tp_p == 1) {
+                let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional"
+                let statusText;
+                //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central 
+                switch (p.status_sh) {
+                    case 1:
+                        statusText = "Bodega dropshipper";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.store.direction_store + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d,
+                            address_destiny: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                    case 7:
+                        statusText = "En camino a bodega central";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.store.direction_store + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d,
+                            address_destiny: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                    case 4:
+                        statusText = "En bodega central destino";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d,
+                            address_destiny: p.package.direction_client_p + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                    case 5:
+                        statusText = "En camino a entrega final";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d,
+                            address_destiny: p.package.direction_client_p + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                    case 6:
+                        statusText = "Entregado";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d,
+                            address_destiny: p.package.direction_client_p + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                }
+            } else if (p.package.fk_id_tp_p == 2) {
+                let type_send = p.package.fk_id_tp_p == 1 ? "Municipal" : "Nacional"
+                let statusText;
+                //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central 
+                switch (p.status_sh) {
+                    case 1:
+                        statusText = "En bodega dropshipper";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.store.direction_store + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d,
+                            address_destiny: p.package.store.city.central_warehouses[0].direction_cw + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d
+                        };
+                        break;
+                    case 7:
+                        statusText = "En camino a bodega central ciudad origen";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.store.direction_store + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d,
+                            address_destiny: p.package.store.city.central_warehouses[0].direction_cw + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d
+                        };
+                        break;
+                    case 2:
+                        statusText = "En bodega central origen";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.store.city.central_warehouses[0].direction_cw + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d,
+                            address_destiny: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                    case 3:
+                        statusText = "En camino entre bodegas centrales";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.store.city.central_warehouses[0].direction_cw + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d,
+                            address_destiny: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                    case 4:
+                        statusText = "En bodega central destino";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d,
+                            address_destiny: p.package.direction_client_p + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                    case 5:
+                        statusText = "En camino entrega final";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d,
+                            address_destiny: p.package.direction_client_p + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                    case 6:
+                        statusText = "Entregado";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d,
+                            address_destiny: p.package.direction_client_p + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
+                }
+            }
         });
         // logger control proccess
         logger.info('Get carrier history successfuly');
@@ -1810,11 +2130,11 @@ export async function getHistory(req, res) {
         res.json({
             message: 'Get carrier history successfuly',
             result: 1,
-            data: getHistory
+            data: formattedData
         });
     } catch (e) {
         // logger control proccess
-        logger.info('Error Master: ' + e);
+        logger.info('Error Get carrier history: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
