@@ -275,21 +275,62 @@ export async function getInterCityPackages(req, res) {
             where: {
                 fk_id_tp_p: 2
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
             include: [
                 {
+                    model: Type_package,
+                    attributes: ['id_tp', 'description_tp']
+                },
+                {
                     model: Carrier,
-                    attributes: ['id_carrier', 'name_carrier', 'last_name_carrier']
+                    attributes: ['name_carrier', 'last_name_carrier']
+                },
+                {
+                    model: Store,
+                    attributes: ['direction_store'],
+                    include: [
+                        {
+                            model: City,
+                            attributes: ['name_city'],
+                            include: [
+                                {
+                                    model: Department,
+                                    attributes: ['name_d']
+                                }
+                            ]
+                        },
+                    ]
                 }
             ]
         });
+        // I run packages for build my accept JSON
+        const packages = getCityPackages.map(p => {
+            let warehouse = p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d;
+            let carrier;
+            if (p.carrier) {
+                carrier = p.carrier.name_carrier + " " + p.carrier.last_name_carrier;
+            } else {
+                carrier = 'N/A'
+            }
+            return {
+                id_p: p.id_p,
+                orden_p: p.orden_p,
+                createdAt: p.createdAt,
+                client_p: p.name_client_p + " - " + p.direction_client_p,
+                warehouse,
+                type_send: p.types_package.description_tp,
+                status_p: p.status_p,
+                carrier,
+                confirmation_dropshipper_p: p.confirmation_dropshipper_p
+            }
+        })
         // logger control proccess
         logger.info('GetCitypackages successfuly');
         // Json reponse setting
         res.json({
             message: 'GetCitypackages successfuly',
             result: 1,
-            data: getCityPackages
+            data: packages
         });
     } catch (e) {
         // logger control proccess
@@ -524,11 +565,10 @@ export async function getCarrierPeticions(req, res) {
         // I find if exist package
         const getCarrierPeticions = await Carrier.findAll({
             where: {
-                status_carrier: {
-                    [Sequelize.Op.in]: [2]
-                }
+                status_carrier: 2,
+                rejected_carrier: 0
             },
-            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            attributes: ['id_carrier', 'number_document_carrier', 'status_carrier', 'name_carrier', 'last_name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
             include: [
                 {
                     model: Type_carrier,
@@ -570,8 +610,12 @@ export async function getDetailCarrier(req, res) {
             where: {
                 id_carrier
             },
-            attributes: ['id_carrier', 'status_carrier', 'rejected_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            attributes: ['id_carrier', 'status_carrier', 'rejected_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier'],
             include: [
+                {
+                    model: Type_document,
+                    attributes: ['id_td', 'description_td']
+                },
                 {
                     model: Type_carrier,
                     attributes: ['id_tc', 'description_tc']
@@ -733,7 +777,7 @@ export async function getCarriers(req, res) {
             where: {
                 status_carrier: 1,
             },
-            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'last_name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
             include: [
                 {
                     model: Type_carrier,
