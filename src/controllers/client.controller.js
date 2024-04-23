@@ -8,6 +8,10 @@ import { Store } from "../models/stores.model.js";
 import { City } from "../models/cities.model.js";
 import { Central_warehouse } from "../models/central_warehouses.model.js";
 import { Department } from "../models/departments.model.js";
+import { PackageProduct } from '../models/packages_products.model.js';
+import { Product } from '../models/products.model.js';
+import { Carrier } from '../models/carriers.model.js';
+import { Type_package } from '../models/types_package.model.js';
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -31,6 +35,14 @@ export async function getPackageGuide(req, res) {
                 guide_number_p
             },
             include: [
+                {
+                    model: Carrier,
+                    attributes: ['id_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier']
+                },
+                {
+                    model: Type_package,
+                    attributes: ['id_tp', 'description_tp']
+                },
                 {
                     model: Store,
                     attributes: ['id_store', 'direction_store'],
@@ -64,9 +76,19 @@ export async function getPackageGuide(req, res) {
                             attributes: ['id_d', 'name_d'],
                         }
                     ]
+                },
+                {
+                    model: PackageProduct,
+                    attributes: ['id_pp', 'cuantity_pp', 'createdAt'],
+                    include: [
+                        {
+                            model: Product,
+                            attributes: ['id_product', 'name_product', 'description_product', 'price_sale_product', 'price_cost_product', 'size_product']
+                        }
+                    ]
                 }
             ],
-            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt', 'phone_number_client_p', 'name_client_p'],
             order: [
                 ['createdAt', 'ASC'] // Sort by column 'column_name' in ascending order
             ]
@@ -85,9 +107,9 @@ export async function getPackageGuide(req, res) {
             // logger control proccess
             logger.info('Not found packages');
             // The credentials are incorrect
-            res.status(401).json({
+            res.status(404).json({
                 message: 'Not found packages',
-                result: 1
+                result: 404
             });
         }
     } catch (e) {

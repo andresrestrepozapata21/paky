@@ -196,21 +196,62 @@ export async function getCityPackages(req, res) {
             where: {
                 fk_id_tp_p: 1
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
             include: [
                 {
+                    model: Type_package,
+                    attributes: ['id_tp', 'description_tp']
+                },
+                {
                     model: Carrier,
-                    attributes: ['id_carrier', 'name_carrier', 'last_name_carrier']
+                    attributes: ['name_carrier', 'last_name_carrier']
+                },
+                {
+                    model: Store,
+                    attributes: ['direction_store'],
+                    include: [
+                        {
+                            model: City,
+                            attributes: ['name_city'],
+                            include: [
+                                {
+                                    model: Department,
+                                    attributes: ['name_d']
+                                }
+                            ]
+                        },
+                    ]
                 }
             ]
         });
+        // I run packages for build my accept JSON
+        const packages = getCityPackages.map(p => {
+            let warehouse = p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d;
+            let carrier;
+            if (p.carrier) {
+                carrier = p.carrier.name_carrier + " " + p.carrier.last_name_carrier;
+            } else {
+                carrier = 'N/A'
+            }
+            return {
+                id_p: p.id_p,
+                orden_p: p.orden_p,
+                createdAt: p.createdAt,
+                client_p: p.name_client_p + " - " + p.direction_client_p,
+                warehouse,
+                type_send: p.types_package.description_tp,
+                status_p: p.status_p,
+                carrier,
+                confirmation_dropshipper_p: p.confirmation_dropshipper_p
+            }
+        })
         // logger control proccess
         logger.info('GetCitypackages successfuly');
         // Json reponse setting
         res.json({
             message: 'GetCitypackages successfuly',
             result: 1,
-            data: getCityPackages
+            data: packages
         });
     } catch (e) {
         // logger control proccess
@@ -271,12 +312,12 @@ export async function detailPackage(req, res) {
         const { id_p } = req.body;
         // I validate req correct json
         if (!id_p) return res.sendStatus(400);
-        // I find if exist package by dropshipper
+        // I find if exist package by manager
         const getPackage = await Package.findOne({
             where: {
                 id_p
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'createdAt'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'profit_carrier_inter_city_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p'],
             include: [
                 {
                     model: Carrier,
@@ -349,10 +390,10 @@ export async function detailPackage(req, res) {
                 order: [['createdAt', 'ASC']]
             });
             // logger control proccess
-            logger.info('detailPackage successfuly');
+            logger.info('detailPackage manager successfuly');
             // The credentials are incorrect
             res.json({
-                message: 'detailPackage successfuly',
+                message: 'detailPackage manager successfuly',
                 result: 1,
                 data: getPackage,
                 data_history: getHistory
@@ -437,11 +478,15 @@ export async function deletePackage(req, res) {
         // I validate req correct json
         if (!id_p) return res.sendStatus(400);
         // I find if exist package
-        const getPackage = await Package.destroy({
+        const getPackage = await Package.findOne({
             where: {
                 id_p
             }
         });
+        getPackage.set({
+            status_p: 0
+        });
+        getPackage.save();
         if (getPackage) {
             // logger control proccess
             logger.info('delete package successfuly');
@@ -1293,7 +1338,7 @@ export async function downloadExcelPortfolioCarrier(req, res) {
             let dataForExcel = [];
             // Process data for JSON response
             const getPortfolios = infoPortfolio.map(p => {
-                dataForExcel.push({ id_phc: p.id_phc, type_phc: p.type_phc, Quantity_pay_phc: p.Quantity_pay_phc, description_phc: p.description_phc, createdAt: p.createdAt, types_document: p.carrier.types_document.description_td ,number_document_carrier: p.carrier.number_document_carrier, name_carrier: p.carrier.name_carrier, last_name_carrier: p.carrier.last_name_carrier, phone_number_carrier: p.carrier.phone_number_carrier, email_carrier: p.carrier.email_carrier });
+                dataForExcel.push({ id_phc: p.id_phc, type_phc: p.type_phc, Quantity_pay_phc: p.Quantity_pay_phc, description_phc: p.description_phc, createdAt: p.createdAt, types_document: p.carrier.types_document.description_td, number_document_carrier: p.carrier.number_document_carrier, name_carrier: p.carrier.name_carrier, last_name_carrier: p.carrier.last_name_carrier, phone_number_carrier: p.carrier.phone_number_carrier, email_carrier: p.carrier.email_carrier });
             });
             // Creación de un libro y una hoja de Excel
             const workbook = new ExcelJS.Workbook();
@@ -1897,6 +1942,92 @@ export async function downloadExcelPortfolioDropshipper(req, res) {
             message: 'Something goes wrong',
             result: 0,
             data: {}
+        });
+    }
+}
+
+// Method editProductPackage dropshipper
+export async function editProductPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint edit product package cuantity manager');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_pp } = req.params;
+        //const { orden_p, name_client_p, phone_number_client_p, email_client_p, direction_client_p, guide_number_p, status_p, with_collection_p, createdAt, fk_id_store_p, fk_id_carrier_p, fk_id_tp_p, fk_id_destiny_city_p } = req.body;
+        // I validate req correct json
+        if (!id_pp) return res.sendStatus(400);
+        // I find if exist package by manager
+        const getPackage = await PackageProduct.findOne({
+            where: {
+                id_pp
+            }
+        });
+        // I validate exist  infomanager and infoStorePackage
+        if (getPackage) {
+            getPackage.set(req.body);
+            getPackage.save()
+            // logger control proccess
+            logger.info('edit product package cuantity manager successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'edit product package cuantity manager successfuly',
+                result: 1,
+                getPackage
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found edit product package cuantity manager');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found edit product package cuantity manager',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error edit product package cuantity manager: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get carriers city
+export async function getCarriersCity(req, res) {
+    // logger control proccess
+    logger.info('Enter the endpoint get carriers city');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { city } = req.body;
+        // I validate req correct json
+        if (!city) return res.sendStatus(400);
+        // I call and save the result of the findAll method, which is d sequelize
+        const getCarriers = await Carrier.findAll({
+            attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier', 'fk_id_city_carrier'],
+            where: {
+                status_carrier: 1,
+                fk_id_tc_carrier: 1,
+                fk_id_city_carrier: city
+            }
+        });
+        // logger control proccess
+        logger.info('Get carriers city successfuly');
+        // The credentials are incorrect
+        res.json({
+            message: 'Get carriers city successfuly',
+            result: 1,
+            data: getCarriers
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error carriers city: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0
         });
     }
 }

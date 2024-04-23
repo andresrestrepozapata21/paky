@@ -820,11 +820,15 @@ export async function deletePackage(req, res) {
         // I validate req correct json
         if (!id_p) return res.sendStatus(400);
         // I find if exist package by dropshipper
-        const getPackage = await Package.destroy({
+        const getPackage = await Package.findOne({
             where: {
                 id_p
             }
         });
+        getPackage.set({
+            status_p: 0
+        });
+        getPackage.save();
         // logger control proccess
         logger.info('delete package Dropshipper successfuly');
         // The credentials are incorrect
