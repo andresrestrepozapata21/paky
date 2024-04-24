@@ -777,23 +777,68 @@ export async function getCarriers(req, res) {
             where: {
                 status_carrier: 1,
             },
-            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'last_name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier', 'fk_id_city_carrier'],
             include: [
                 {
                     model: Type_carrier,
                     attributes: ['id_tc', 'description_tc']
+                },
+                {
+                    model: Type_document,
+                    attributes: ['description_td']
                 }
             ]
         });
         // I validate exist getCarriers
         if (getCarriers.length > 0) {
+            let numberOfRecords, capacityVehicle, status_capacity;
+            // Process data for JSON response and promise.all for await all promise it is executing
+            const formattedData = await Promise.all(getCarriers.map(async c => {
+                // I call and save the result of the findAll method, which is d sequelize
+                const getPackages = await Package.findAll({
+                    where: {
+                        fk_id_carrier_p: c.id_carrier
+                    },
+                    attributes: ['id_p']
+                });
+                // I call and save the result of the findAll method, which is d sequelize
+                const getVehicle = await Vehicle.findOne({
+                    where: {
+                        fk_id_carrier_vehicle: c.id_carrier
+                    },
+                    attributes: ['id_vehicle', 'capacity_vehicle']
+                });
+                // To capture variables needed
+                numberOfRecords = getPackages.length;
+                capacityVehicle = getVehicle.capacity_vehicle;
+                // Structure condition status ocupation
+                if (numberOfRecords == 0) {
+                    status_capacity = "Libre";
+                } else if (numberOfRecords < capacityVehicle) {
+                    status_capacity = "Parcial";
+                } else if (numberOfRecords >= capacityVehicle) {
+                    status_capacity = "Ocupado";
+                }
+                return {
+                    id_carrier: c.id_carrier,
+                    status_carrier: c.status_carrier,
+                    type_document: c.types_document.description_td,
+                    number_document_carrier: c.number_document_carrier,
+                    name_carrier: c.name_carrier,
+                    last_name_carrier: c.last_name_carrier,
+                    phone_number_carrier: c.phone_number_carrier,
+                    email_carrier: c.email_carrier,
+                    description_tc: c.types_carrier.description_tc,
+                    status_capacity
+                }
+            }));
             // logger control proccess
             logger.info('getCarriers successfuly');
             // Json reponse setting
             res.json({
                 message: 'getCarriers successfuly',
                 result: 1,
-                data: getCarriers
+                data: formattedData
             });
         } else {
             // logger control proccess
@@ -830,8 +875,22 @@ export async function detailCarrierAndHistory(req, res) {
             where: {
                 id_carrier
             },
-            attributes: ['id_carrier', 'status_carrier', 'rejected_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            attributes: ['id_carrier', 'status_carrier', 'rejected_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier'],
             include: [
+                {
+                    model: City,
+                    attributes: ['id_city', 'name_city'],
+                    include: [
+                        {
+                            model: Department,
+                            attributes: ['id_d', 'name_d']
+                        }
+                    ]
+                },
+                {
+                    model: Type_document,
+                    attributes: ['id_td', 'description_td']
+                },
                 {
                     model: Type_carrier,
                     attributes: ['id_tc', 'description_tc']
@@ -953,12 +1012,16 @@ export async function deleteCarrier(req, res) {
         // I validate req correct json
         if (!id_carrier) return res.sendStatus(400);
         // I find if exist package
-        const deleteCarrier = await Carrier.destroy({
+        const deleteCarrier = await Carrier.findOne({
             where: {
                 id_carrier
             }
         });
         if (deleteCarrier) {
+            deleteCarrier.set({
+                status_carrier: 0
+            });
+            deleteCarrier.save()
             // logger control proccess
             logger.info('Delete carrier successfuly');
             // The credentials are incorrect
@@ -1129,7 +1192,13 @@ export async function getPaymentsRequestCarrier(req, res) {
                     include: [
                         {
                             model: Carrier,
-                            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier']
+                            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'last_name_carrier', 'number_document_carrier'],
+                            include:[
+                                {
+                                    model: Type_carrier,
+                                    attributes: ['id_tc', 'description_tc']
+                                }
+                            ]
                         }
                     ]
                 }
@@ -1176,7 +1245,17 @@ export async function detailPaymentRequestCarrier(req, res) {
                     include: [
                         {
                             model: Carrier,
-                            attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier']
+                            attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier', 'fk_id_city_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+                            include: [
+                                {
+                                    model: Type_carrier,
+                                    attributes: ['id_tc', 'description_tc']
+                                },
+                                {
+                                    model: Type_document,
+                                    attributes: ['description_td']
+                                }
+                            ]
                         }
                     ]
                 }
@@ -2072,6 +2151,131 @@ export async function getCarriersCity(req, res) {
         res.status(500).json({
             message: 'Something goes wrong',
             result: 0
+        });
+    }
+}
+
+// Method get type Carriers
+export async function getTypeDocumentsCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getTypeDocumentsCarrier');
+    try {
+        // I find if exist package
+        const getTypeDocumentsCarrier = await Type_document.findAll({
+            attributes: ['id_td', 'description_td']
+        });
+        // I validate exist getTypeDocumentsCarrier
+        if (getTypeDocumentsCarrier.length > 0) {
+            // logger control proccess
+            logger.info('getTypeDocumentsCarrier successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getTypeDocumentsCarrier successfuly',
+                result: 1,
+                data: getTypeDocumentsCarrier
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getTypeDocumentsCarrier');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found getTypeDocumentsCarrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getTypeDocumentsCarrier: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method edit carrier
+export async function editVehicle(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint edit vehicule');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_vehicle } = req.params;
+        //const { orden_p, name_client_p, phone_number_client_p, email_client_p, direction_client_p, guide_number_p, status_p, with_collection_p, createdAt, fk_id_store_p, fk_id_vehicle_p, fk_id_tp_p, fk_id_destiny_city_p } = req.body;
+        // I validate req correct json
+        if (!id_vehicle) return res.sendStatus(400);
+        // I find if exist package by 
+        const getVehicle = await Vehicle.findOne({
+            where: {
+                id_vehicle
+            }
+        });
+        // I validate exist info and infoStorePackage
+        if (getVehicle) {
+            getVehicle.set(req.body);
+            getVehicle.save()
+            // logger control proccess
+            logger.info('edit carrier successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'edit carrier successfuly',
+                result: 1
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found carrier');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found carrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error edit package: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get payments request carrier
+export async function getEvidenceHistory(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getEvidenceHistory');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_sh } = req.body;
+        // I validate req correct json
+        if (!id_sh) return res.sendStatus(400);
+        // I find if exist package
+        // 1. payment made 2. Pending
+        const getEvidenceHistory = await Status_history.findOne({
+            where: {
+                id_sh
+            },
+            attributes: ['id_sh', 'evidence_sh'],
+        });
+        // logger control proccess
+        logger.info('getEvidenceHistory successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'getEvidenceHistory successfuly',
+            result: 1,
+            data: getEvidenceHistory
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getEvidenceHistory: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
         });
     }
 }
