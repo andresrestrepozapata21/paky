@@ -1852,7 +1852,7 @@ export async function getHistory(req, res) {
                 }
             ],
             order: [
-                ['createdAt', 'ASC'] // Sort by column 'column_name' in ascending order
+                ['createdAt', 'DESC'] // Sort by column 'column_name' in ascending order
             ]
         });
         // Process data for JSON response

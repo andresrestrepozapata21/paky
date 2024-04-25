@@ -15396,3 +15396,23 @@ sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_car
 [2024-04-25T13:06:54.180Z] info server running on port 3000
 [2024-04-25T13:07:14.182Z] info server running on port 3000
 [2024-04-25T13:07:15.863Z] info server running on port 3000
+[2024-04-25T13:16:18.377Z] info server running on port 3000
+[2024-04-25T13:16:40.294Z] info Token validated successfuly
+[2024-04-25T13:16:40.295Z] info enter the endpoint carrier history
+[2024-04-25T13:16:40.345Z] info Get carrier history successfuly
+[2024-04-25T13:16:47.739Z] info Token validated successfuly
+[2024-04-25T13:16:47.739Z] info enter the endpoint carrier history
+[2024-04-25T13:16:47.747Z] info Get carrier history successfuly
+[2024-04-25T13:17:30.822Z] info Token validated successfuly
+[2024-04-25T13:17:30.822Z] info enter the endpoint carrier history
+[2024-04-25T13:17:30.831Z] info Get carrier history successfuly
+[2024-04-25T13:20:45.361Z] info server running on port 3000
+[2024-04-25T13:20:49.509Z] info Token validated successfuly
+[2024-04-25T13:20:49.509Z] info enter the endpoint carrier history
+[2024-04-25T13:25:00.596Z] info server running on port 3000
+[2024-04-25T13:25:03.936Z] info Token validated successfuly
+[2024-04-25T13:25:03.937Z] info enter the endpoint carrier history
+[2024-04-25T13:25:03.982Z] info Get carrier history successfuly
+[2024-04-25T13:25:55.284Z] info Token validated successfuly
+[2024-04-25T13:25:55.285Z] info enter the endpoint carrier history
+[2024-04-25T13:25:55.294Z] info Get carrier history successfuly
