@@ -15416,3 +15416,1792 @@ sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_car
 [2024-04-25T13:25:55.284Z] info Token validated successfuly
 [2024-04-25T13:25:55.285Z] info enter the endpoint carrier history
 [2024-04-25T13:25:55.294Z] info Get carrier history successfuly
+[2024-04-25T15:15:02.517Z] info server running on port 3000
+[2024-04-25T15:15:09.759Z] info enter the endpoint login manager
+[2024-04-25T15:15:09.803Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T15:15:10.021Z] info Token validated successfuly
+[2024-04-25T15:15:10.022Z] info enter the endpoint master manager
+[2024-04-25T15:15:10.138Z] info Master manager successfuly
+[2024-04-25T15:15:13.535Z] info Token validated successfuly
+[2024-04-25T15:15:13.535Z] info enter the endpoint get city packages
+[2024-04-25T15:15:13.546Z] info getCarrierPeticions successfuly
+[2024-04-25T15:15:14.367Z] info Token validated successfuly
+[2024-04-25T15:15:14.368Z] info enter the endpoint get getCarriers
+[2024-04-25T15:15:14.394Z] info getCarriers successfuly
+[2024-04-25T15:15:16.113Z] info Token validated successfuly
+[2024-04-25T15:15:16.113Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:15:16.120Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:15:16.830Z] info Token validated successfuly
+[2024-04-25T15:15:16.830Z] info enter the endpoint get getCarriers
+[2024-04-25T15:15:16.839Z] info getCarriers successfuly
+[2024-04-25T15:15:17.871Z] info Token validated successfuly
+[2024-04-25T15:15:17.871Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:15:17.891Z] info getDetailCarrier successfuly
+[2024-04-25T15:15:20.895Z] info Token validated successfuly
+[2024-04-25T15:15:20.895Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:15:20.899Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:15:24.416Z] info Token validated successfuly
+[2024-04-25T15:15:24.417Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:15:24.424Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:15:30.937Z] info Token validated successfuly
+[2024-04-25T15:15:30.937Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:15:30.945Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:15:36.822Z] info Token validated successfuly
+[2024-04-25T15:15:36.822Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:15:36.831Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:16:01.920Z] info enter the endpoint login manager
+[2024-04-25T15:16:01.925Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T15:17:11.314Z] info Token validated successfuly
+[2024-04-25T15:17:11.314Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:17:11.324Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:17:28.474Z] info Token validated successfuly
+[2024-04-25T15:17:28.474Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:17:28.486Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:33:50.538Z] info Token validated successfuly
+[2024-04-25T15:33:50.538Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:33:50.541Z] info getEvidenceHistory successfuly
+[2024-04-25T15:34:34.954Z] info Token validated successfuly
+[2024-04-25T15:34:34.955Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:34:34.964Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:34:54.472Z] info Token validated successfuly
+[2024-04-25T15:34:54.472Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:34:54.482Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:34:59.722Z] info Token validated successfuly
+[2024-04-25T15:34:59.722Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:34:59.726Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:35:15.337Z] info Token validated successfuly
+[2024-04-25T15:35:15.337Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:35:15.342Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:35:19.819Z] info Token validated successfuly
+[2024-04-25T15:35:19.819Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:35:19.822Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:35:23.536Z] info Token validated successfuly
+[2024-04-25T15:35:23.536Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:35:23.543Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:35:24.326Z] info Token validated successfuly
+[2024-04-25T15:35:24.326Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:35:24.330Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:35:25.841Z] info Token validated successfuly
+[2024-04-25T15:35:25.841Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:35:25.848Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:35:35.225Z] info Token validated successfuly
+[2024-04-25T15:35:35.226Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:35:35.232Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:35:41.541Z] info Token validated successfuly
+[2024-04-25T15:35:41.541Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:35:41.548Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:35:48.674Z] info Token validated successfuly
+[2024-04-25T15:35:48.674Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:35:48.682Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:36:16.432Z] info Token validated successfuly
+[2024-04-25T15:36:16.432Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:36:16.441Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:36:22.668Z] info Token validated successfuly
+[2024-04-25T15:36:22.668Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:36:22.674Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:36:28.179Z] info Token validated successfuly
+[2024-04-25T15:36:28.179Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:36:28.186Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:37:39.214Z] info Token validated successfuly
+[2024-04-25T15:37:39.214Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:37:39.219Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:37:42.921Z] info Token validated successfuly
+[2024-04-25T15:37:42.922Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:37:42.930Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:37:54.498Z] info Token validated successfuly
+[2024-04-25T15:37:54.498Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:37:54.507Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:37:55.139Z] info Token validated successfuly
+[2024-04-25T15:37:55.139Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:37:55.146Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:38:04.978Z] info Token validated successfuly
+[2024-04-25T15:38:04.978Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:38:04.984Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:38:09.159Z] info Token validated successfuly
+[2024-04-25T15:38:09.159Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:38:09.166Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:38:50.354Z] info Token validated successfuly
+[2024-04-25T15:38:50.354Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:38:50.363Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:39:02.273Z] info Token validated successfuly
+[2024-04-25T15:39:02.273Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:39:02.280Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:39:15.992Z] info Token validated successfuly
+[2024-04-25T15:39:15.992Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:39:15.999Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:39:16.446Z] info Token validated successfuly
+[2024-04-25T15:39:16.446Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:39:16.452Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:39:26.720Z] info Token validated successfuly
+[2024-04-25T15:39:26.720Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:39:26.723Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:40:08.736Z] info Token validated successfuly
+[2024-04-25T15:40:08.737Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:40:08.746Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:40:11.233Z] info Token validated successfuly
+[2024-04-25T15:40:11.233Z] info enter the endpoint to pay carrier
+[2024-04-25T15:40:11.237Z] info To pay carrier successfuly
+[2024-04-25T15:40:11.319Z] info Token validated successfuly
+[2024-04-25T15:40:11.320Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:40:11.323Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:40:39.318Z] info Token validated successfuly
+[2024-04-25T15:40:39.319Z] info enter the endpoint get city packages
+[2024-04-25T15:40:39.340Z] info GetCitypackages successfuly
+[2024-04-25T15:40:40.356Z] info Token validated successfuly
+[2024-04-25T15:40:40.356Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:40:40.382Z] info detailPackage manager successfuly
+[2024-04-25T15:40:42.239Z] info Token validated successfuly
+[2024-04-25T15:40:42.239Z] info enter the endpoint get city packages
+[2024-04-25T15:40:42.243Z] info GetCitypackages successfuly
+[2024-04-25T15:40:42.850Z] info Token validated successfuly
+[2024-04-25T15:40:42.850Z] info enter the endpoint get city packages
+[2024-04-25T15:40:42.853Z] info GetCitypackages successfuly
+[2024-04-25T15:40:45.072Z] info Token validated successfuly
+[2024-04-25T15:40:45.073Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:40:45.080Z] info detailPackage manager successfuly
+[2024-04-25T15:40:47.391Z] info Token validated successfuly
+[2024-04-25T15:40:47.391Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:40:47.399Z] info detailPackage manager successfuly
+[2024-04-25T15:40:47.405Z] info Token validated successfuly
+[2024-04-25T15:40:47.405Z] info enter the endpoint get getCarriers
+[2024-04-25T15:40:47.418Z] info getCarriers successfuly
+[2024-04-25T15:40:49.383Z] info Token validated successfuly
+[2024-04-25T15:40:49.384Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:40:49.392Z] info detailPackage manager successfuly
+[2024-04-25T15:40:50.761Z] info Token validated successfuly
+[2024-04-25T15:40:50.761Z] info enter the endpoint get city packages
+[2024-04-25T15:40:50.765Z] info GetCitypackages successfuly
+[2024-04-25T15:40:51.809Z] info Token validated successfuly
+[2024-04-25T15:40:51.810Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:40:51.817Z] info detailPackage manager successfuly
+[2024-04-25T15:40:53.464Z] info Token validated successfuly
+[2024-04-25T15:40:53.464Z] info enter the endpoint get city packages
+[2024-04-25T15:40:53.466Z] info getCarrierPeticions successfuly
+[2024-04-25T15:40:54.347Z] info Token validated successfuly
+[2024-04-25T15:40:54.347Z] info enter the endpoint getDetailCarrier
+[2024-04-25T15:40:54.352Z] info getDetailCarrier successfuly
+[2024-04-25T15:40:55.455Z] info Token validated successfuly
+[2024-04-25T15:40:55.455Z] info enter the endpoint get getCarriers
+[2024-04-25T15:40:55.463Z] info getCarriers successfuly
+[2024-04-25T15:40:56.287Z] info Token validated successfuly
+[2024-04-25T15:40:56.287Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:40:56.294Z] info getDetailCarrier successfuly
+[2024-04-25T15:40:58.949Z] info Token validated successfuly
+[2024-04-25T15:40:58.950Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:40:58.953Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:41:00.230Z] info Token validated successfuly
+[2024-04-25T15:41:00.230Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:41:00.237Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:41:02.799Z] info Token validated successfuly
+[2024-04-25T15:41:02.800Z] info enter the endpoint get city packages
+[2024-04-25T15:41:02.803Z] info GetCitypackages successfuly
+[2024-04-25T15:43:15.940Z] info Token validated successfuly
+[2024-04-25T15:43:15.940Z] info enter the endpoint get city packages
+[2024-04-25T15:43:15.945Z] info GetCitypackages successfuly
+[2024-04-25T15:43:41.134Z] info Token validated successfuly
+[2024-04-25T15:43:41.134Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:43:41.144Z] info detailPackage manager successfuly
+[2024-04-25T15:44:26.684Z] info Token validated successfuly
+[2024-04-25T15:44:26.684Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:44:26.692Z] info detailPackage manager successfuly
+[2024-04-25T15:45:06.299Z] info Token validated successfuly
+[2024-04-25T15:45:06.300Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:45:06.309Z] info detailPackage manager successfuly
+[2024-04-25T15:45:09.053Z] info Token validated successfuly
+[2024-04-25T15:45:09.053Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:45:09.060Z] info detailPackage manager successfuly
+[2024-04-25T15:45:09.760Z] info Token validated successfuly
+[2024-04-25T15:45:09.761Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:45:09.767Z] info detailPackage manager successfuly
+[2024-04-25T15:45:15.924Z] info Token validated successfuly
+[2024-04-25T15:45:15.924Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:45:15.931Z] info detailPackage manager successfuly
+[2024-04-25T15:45:26.239Z] info Token validated successfuly
+[2024-04-25T15:45:26.239Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:45:26.246Z] info detailPackage manager successfuly
+[2024-04-25T15:46:24.981Z] info Token validated successfuly
+[2024-04-25T15:46:24.981Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:46:24.992Z] info detailPackage manager successfuly
+[2024-04-25T15:46:25.601Z] info Token validated successfuly
+[2024-04-25T15:46:25.601Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:46:25.608Z] info detailPackage manager successfuly
+[2024-04-25T15:47:17.166Z] info Token validated successfuly
+[2024-04-25T15:47:17.167Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:47:17.176Z] info detailPackage manager successfuly
+[2024-04-25T15:47:17.853Z] info Token validated successfuly
+[2024-04-25T15:47:17.853Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:47:17.860Z] info detailPackage manager successfuly
+[2024-04-25T15:47:29.281Z] info Token validated successfuly
+[2024-04-25T15:47:29.282Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:47:29.290Z] info detailPackage manager successfuly
+[2024-04-25T15:47:30.896Z] info Token validated successfuly
+[2024-04-25T15:47:30.896Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:47:30.904Z] info detailPackage manager successfuly
+[2024-04-25T15:47:32.338Z] info Token validated successfuly
+[2024-04-25T15:47:32.338Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:47:32.340Z] info getEvidenceHistory successfuly
+[2024-04-25T15:48:01.898Z] info Token validated successfuly
+[2024-04-25T15:48:01.898Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:48:01.907Z] info detailPackage manager successfuly
+[2024-04-25T15:48:03.264Z] info Token validated successfuly
+[2024-04-25T15:48:03.264Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:48:03.270Z] info detailPackage manager successfuly
+[2024-04-25T15:48:03.977Z] info Token validated successfuly
+[2024-04-25T15:48:03.978Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:48:03.979Z] info getEvidenceHistory successfuly
+[2024-04-25T15:48:05.552Z] info Token validated successfuly
+[2024-04-25T15:48:05.552Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:48:05.553Z] info getEvidenceHistory successfuly
+[2024-04-25T15:48:06.016Z] info Token validated successfuly
+[2024-04-25T15:48:06.016Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:48:06.017Z] info getEvidenceHistory successfuly
+[2024-04-25T15:48:41.673Z] info Token validated successfuly
+[2024-04-25T15:48:41.674Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:48:41.676Z] info getEvidenceHistory successfuly
+[2024-04-25T15:50:56.357Z] info Token validated successfuly
+[2024-04-25T15:50:56.357Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:50:56.365Z] info detailPackage manager successfuly
+[2024-04-25T15:51:00.606Z] info Token validated successfuly
+[2024-04-25T15:51:00.607Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:51:00.613Z] info detailPackage manager successfuly
+[2024-04-25T15:51:38.995Z] info Token validated successfuly
+[2024-04-25T15:51:38.995Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:51:39.004Z] info detailPackage manager successfuly
+[2024-04-25T15:51:46.975Z] info Token validated successfuly
+[2024-04-25T15:51:46.975Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:51:46.982Z] info detailPackage manager successfuly
+[2024-04-25T15:51:47.712Z] info Token validated successfuly
+[2024-04-25T15:51:47.712Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:51:47.718Z] info detailPackage manager successfuly
+[2024-04-25T15:52:25.505Z] info Token validated successfuly
+[2024-04-25T15:52:25.505Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:52:25.513Z] info detailPackage manager successfuly
+[2024-04-25T15:52:26.514Z] info Token validated successfuly
+[2024-04-25T15:52:26.514Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:52:26.522Z] info detailPackage manager successfuly
+[2024-04-25T15:52:42.853Z] info Token validated successfuly
+[2024-04-25T15:52:42.853Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:52:42.861Z] info detailPackage manager successfuly
+[2024-04-25T15:52:45.942Z] info Token validated successfuly
+[2024-04-25T15:52:45.942Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:52:45.948Z] info detailPackage manager successfuly
+[2024-04-25T15:52:48.393Z] info Token validated successfuly
+[2024-04-25T15:52:48.394Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:52:48.401Z] info detailPackage manager successfuly
+[2024-04-25T15:52:49.344Z] info Token validated successfuly
+[2024-04-25T15:52:49.344Z] info enter the endpoint get city packages
+[2024-04-25T15:52:49.347Z] info GetCitypackages successfuly
+[2024-04-25T15:52:50.796Z] info Token validated successfuly
+[2024-04-25T15:52:50.797Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:52:50.804Z] info detailPackage manager successfuly
+[2024-04-25T15:52:52.178Z] info Token validated successfuly
+[2024-04-25T15:52:52.178Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:52:52.179Z] info getEvidenceHistory successfuly
+[2024-04-25T15:52:54.527Z] info Token validated successfuly
+[2024-04-25T15:52:54.527Z] info enter the endpoint get city packages
+[2024-04-25T15:52:54.531Z] info GetCitypackages successfuly
+[2024-04-25T15:52:56.135Z] info Token validated successfuly
+[2024-04-25T15:52:56.135Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:52:56.141Z] info detailPackage manager successfuly
+[2024-04-25T15:53:11.801Z] info Token validated successfuly
+[2024-04-25T15:53:11.801Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:53:11.810Z] info detailPackage manager successfuly
+[2024-04-25T15:53:13.852Z] info Token validated successfuly
+[2024-04-25T15:53:13.853Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:53:13.860Z] info detailPackage manager successfuly
+[2024-04-25T15:53:15.562Z] info Token validated successfuly
+[2024-04-25T15:53:15.562Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:53:15.563Z] info getEvidenceHistory successfuly
+[2024-04-25T15:53:17.884Z] info Token validated successfuly
+[2024-04-25T15:53:17.884Z] info enter the endpoint get city packages
+[2024-04-25T15:53:17.888Z] info GetCitypackages successfuly
+[2024-04-25T15:53:19.262Z] info Token validated successfuly
+[2024-04-25T15:53:19.263Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:53:19.270Z] info detailPackage manager successfuly
+[2024-04-25T15:53:20.529Z] info Token validated successfuly
+[2024-04-25T15:53:20.529Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:53:20.530Z] info getEvidenceHistory successfuly
+[2024-04-25T15:53:24.085Z] info Token validated successfuly
+[2024-04-25T15:53:24.085Z] info enter the endpoint get city packages
+[2024-04-25T15:53:24.088Z] info getCarrierPeticions successfuly
+[2024-04-25T15:53:25.313Z] info Token validated successfuly
+[2024-04-25T15:53:25.313Z] info enter the endpoint getDetailCarrier
+[2024-04-25T15:53:25.318Z] info getDetailCarrier successfuly
+[2024-04-25T15:53:26.350Z] info Token validated successfuly
+[2024-04-25T15:53:26.350Z] info enter the endpoint get getCarriers
+[2024-04-25T15:53:26.362Z] info getCarriers successfuly
+[2024-04-25T15:53:27.799Z] info Token validated successfuly
+[2024-04-25T15:53:27.799Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:53:27.806Z] info getDetailCarrier successfuly
+[2024-04-25T15:53:35.311Z] info Token validated successfuly
+[2024-04-25T15:53:35.311Z] info enter the endpoint get city packages
+[2024-04-25T15:53:35.315Z] info GetCitypackages successfuly
+[2024-04-25T15:53:35.792Z] info Token validated successfuly
+[2024-04-25T15:53:35.792Z] info enter the endpoint get city packages
+[2024-04-25T15:53:35.795Z] info GetCitypackages successfuly
+[2024-04-25T15:53:37.555Z] info Token validated successfuly
+[2024-04-25T15:53:37.555Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:53:37.562Z] info detailPackage manager successfuly
+[2024-04-25T15:53:54.476Z] info Token validated successfuly
+[2024-04-25T15:53:54.476Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:53:54.486Z] info detailPackage manager successfuly
+[2024-04-25T15:54:00.660Z] info Token validated successfuly
+[2024-04-25T15:54:00.660Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:54:00.666Z] info detailPackage manager successfuly
+[2024-04-25T15:54:02.833Z] info Token validated successfuly
+[2024-04-25T15:54:02.833Z] info enter the endpoint get city packages
+[2024-04-25T15:54:02.837Z] info GetCitypackages successfuly
+[2024-04-25T15:54:03.904Z] info Token validated successfuly
+[2024-04-25T15:54:03.904Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:54:03.911Z] info detailPackage manager successfuly
+[2024-04-25T15:54:05.899Z] info Token validated successfuly
+[2024-04-25T15:54:05.899Z] info enter the endpoint get city packages
+[2024-04-25T15:54:05.902Z] info GetCitypackages successfuly
+[2024-04-25T15:54:07.260Z] info Token validated successfuly
+[2024-04-25T15:54:07.261Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:54:07.267Z] info detailPackage manager successfuly
+[2024-04-25T15:54:09.809Z] info Token validated successfuly
+[2024-04-25T15:54:09.809Z] info enter the endpoint get getCarriers
+[2024-04-25T15:54:09.820Z] info getCarriers successfuly
+[2024-04-25T15:54:12.740Z] info Token validated successfuly
+[2024-04-25T15:54:12.741Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:54:12.747Z] info getDetailCarrier successfuly
+[2024-04-25T15:54:36.974Z] info Token validated successfuly
+[2024-04-25T15:54:36.974Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:54:36.983Z] info getDetailCarrier successfuly
+[2024-04-25T15:55:03.720Z] info Token validated successfuly
+[2024-04-25T15:55:03.720Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:55:03.730Z] info getDetailCarrier successfuly
+[2024-04-25T15:56:13.115Z] info Token validated successfuly
+[2024-04-25T15:56:13.115Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:56:13.124Z] info getDetailCarrier successfuly
+[2024-04-25T15:57:23.581Z] info Token validated successfuly
+[2024-04-25T15:57:23.581Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:57:23.591Z] info getDetailCarrier successfuly
+[2024-04-25T15:57:33.638Z] info Token validated successfuly
+[2024-04-25T15:57:33.638Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:57:33.644Z] info getDetailCarrier successfuly
+[2024-04-25T15:57:36.906Z] info Token validated successfuly
+[2024-04-25T15:57:36.907Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:57:36.908Z] info getEvidenceHistory successfuly
+[2024-04-25T15:57:38.586Z] info Token validated successfuly
+[2024-04-25T15:57:38.586Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:57:38.587Z] info getEvidenceHistory successfuly
+[2024-04-25T15:57:40.298Z] info Token validated successfuly
+[2024-04-25T15:57:40.298Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:57:40.299Z] info getEvidenceHistory successfuly
+[2024-04-25T15:57:42.674Z] info Token validated successfuly
+[2024-04-25T15:57:42.674Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:57:42.676Z] info getEvidenceHistory successfuly
+[2024-04-25T15:57:44.450Z] info Token validated successfuly
+[2024-04-25T15:57:44.450Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:57:44.452Z] info getEvidenceHistory successfuly
+[2024-04-25T15:57:46.033Z] info Token validated successfuly
+[2024-04-25T15:57:46.034Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:57:46.035Z] info getEvidenceHistory successfuly
+[2024-04-25T15:57:52.546Z] info Token validated successfuly
+[2024-04-25T15:57:52.546Z] info enter the endpoint get city packages
+[2024-04-25T15:57:52.550Z] info GetCitypackages successfuly
+[2024-04-25T15:57:53.378Z] info Token validated successfuly
+[2024-04-25T15:57:53.379Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:57:53.386Z] info detailPackage manager successfuly
+[2024-04-25T15:57:54.834Z] info Token validated successfuly
+[2024-04-25T15:57:54.835Z] info enter the endpoint get city packages
+[2024-04-25T15:57:54.837Z] info GetCitypackages successfuly
+[2024-04-25T15:57:55.685Z] info Token validated successfuly
+[2024-04-25T15:57:55.685Z] info enter the endpoint detailPackage manager
+[2024-04-25T15:57:55.693Z] info detailPackage manager successfuly
+[2024-04-25T15:57:56.835Z] info Token validated successfuly
+[2024-04-25T15:57:56.835Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:57:56.836Z] info getEvidenceHistory successfuly
+[2024-04-25T15:57:59.068Z] info Token validated successfuly
+[2024-04-25T15:57:59.068Z] info enter the endpoint get city packages
+[2024-04-25T15:57:59.071Z] info GetCitypackages successfuly
+[2024-04-25T15:58:00.112Z] info Token validated successfuly
+[2024-04-25T15:58:00.112Z] info enter the endpoint get getCarriers
+[2024-04-25T15:58:00.122Z] info getCarriers successfuly
+[2024-04-25T15:58:00.818Z] info Token validated successfuly
+[2024-04-25T15:58:00.818Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:58:00.827Z] info getDetailCarrier successfuly
+[2024-04-25T15:58:02.459Z] info Token validated successfuly
+[2024-04-25T15:58:02.459Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:58:02.460Z] info getEvidenceHistory successfuly
+[2024-04-25T15:58:20.161Z] info Token validated successfuly
+[2024-04-25T15:58:20.161Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T15:58:20.172Z] info getDetailCarrier successfuly
+[2024-04-25T15:58:21.962Z] info Token validated successfuly
+[2024-04-25T15:58:21.963Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:58:21.964Z] info getEvidenceHistory successfuly
+[2024-04-25T15:58:24.281Z] info Token validated successfuly
+[2024-04-25T15:58:24.282Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:58:24.283Z] info getEvidenceHistory successfuly
+[2024-04-25T15:58:26.785Z] info Token validated successfuly
+[2024-04-25T15:58:26.786Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:58:26.787Z] info getEvidenceHistory successfuly
+[2024-04-25T15:58:30.528Z] info Token validated successfuly
+[2024-04-25T15:58:30.529Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:58:30.531Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:58:31.463Z] info Token validated successfuly
+[2024-04-25T15:58:31.464Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:58:31.472Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:58:32.699Z] info Token validated successfuly
+[2024-04-25T15:58:32.699Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T15:58:32.700Z] info getEvidenceHistory successfuly
+[2024-04-25T15:58:37.439Z] info Token validated successfuly
+[2024-04-25T15:58:37.439Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:58:37.442Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:58:39.850Z] info Token validated successfuly
+[2024-04-25T15:58:39.851Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:58:39.857Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T15:58:40.627Z] info Token validated successfuly
+[2024-04-25T15:58:40.627Z] info enter the endpoint to pay carrier
+[2024-04-25T15:58:40.630Z] info To pay carrier successfuly
+[2024-04-25T15:58:40.692Z] info Token validated successfuly
+[2024-04-25T15:58:40.692Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T15:58:40.695Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:01:01.782Z] info Token validated successfuly
+[2024-04-25T16:01:01.783Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:01:01.790Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:01:22.545Z] info Token validated successfuly
+[2024-04-25T16:01:22.545Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:01:22.550Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:01:24.038Z] info Token validated successfuly
+[2024-04-25T16:01:24.039Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:01:24.045Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:02:09.836Z] info Token validated successfuly
+[2024-04-25T16:02:09.836Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:02:09.843Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:02:12.260Z] info Token validated successfuly
+[2024-04-25T16:02:12.260Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:02:12.268Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:02:15.188Z] info Token validated successfuly
+[2024-04-25T16:02:15.189Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:02:15.197Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:02:57.775Z] info Token validated successfuly
+[2024-04-25T16:02:57.776Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:02:57.781Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:02:58.955Z] info Token validated successfuly
+[2024-04-25T16:02:58.955Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:02:58.962Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:05:21.401Z] info Token validated successfuly
+[2024-04-25T16:05:21.402Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:05:21.409Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:05:27.115Z] info Token validated successfuly
+[2024-04-25T16:05:27.115Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:05:27.120Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:05:36.376Z] info Token validated successfuly
+[2024-04-25T16:05:36.376Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:05:36.378Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:05:44.211Z] info Token validated successfuly
+[2024-04-25T16:05:44.211Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:05:44.216Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:07:26.289Z] info Token validated successfuly
+[2024-04-25T16:07:26.289Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:07:26.297Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:07:55.724Z] info Token validated successfuly
+[2024-04-25T16:07:55.724Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:07:55.731Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:08:04.082Z] info Token validated successfuly
+[2024-04-25T16:08:04.082Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:08:04.087Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:08:06.483Z] info Token validated successfuly
+[2024-04-25T16:08:06.484Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:08:06.489Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:08:17.035Z] info Token validated successfuly
+[2024-04-25T16:08:17.035Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:08:17.042Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:09:03.506Z] info Token validated successfuly
+[2024-04-25T16:09:03.506Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:09:03.514Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:09:05.957Z] info Token validated successfuly
+[2024-04-25T16:09:05.957Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:09:05.963Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:10:15.108Z] info Token validated successfuly
+[2024-04-25T16:10:15.108Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:10:15.116Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:10:53.960Z] info server running on port 3000
+[2024-04-25T16:11:30.523Z] info server running on port 3000
+[2024-04-25T16:11:45.910Z] info server running on port 3000
+[2024-04-25T16:12:23.605Z] info server running on port 3000
+[2024-04-25T16:12:36.008Z] info server running on port 3000
+[2024-04-25T16:12:59.445Z] info server running on port 3000
+[2024-04-25T16:13:29.274Z] info server running on port 3000
+[2024-04-25T16:13:58.587Z] info server running on port 3000
+[2024-04-25T16:14:08.773Z] info Token validated successfuly
+[2024-04-25T16:14:08.773Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:14:08.819Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:14:11.741Z] info Token validated successfuly
+[2024-04-25T16:14:11.741Z] info enter the endpoint to pay carrier
+[2024-04-25T16:14:11.747Z] info To pay carrier successfuly
+[2024-04-25T16:14:11.848Z] info Token validated successfuly
+[2024-04-25T16:14:11.849Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:14:11.854Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:14:51.510Z] info Token validated successfuly
+[2024-04-25T16:14:51.511Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:14:51.517Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:14:52.373Z] info Token validated successfuly
+[2024-04-25T16:14:52.374Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:14:52.383Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:14:56.526Z] info Token validated successfuly
+[2024-04-25T16:14:56.526Z] info enter the endpoint to pay carrier
+[2024-04-25T16:14:56.530Z] info To pay carrier successfuly
+[2024-04-25T16:14:56.601Z] info Token validated successfuly
+[2024-04-25T16:14:56.601Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:14:56.605Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:15:10.275Z] info Token validated successfuly
+[2024-04-25T16:15:10.276Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:15:10.281Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:15:11.335Z] info Token validated successfuly
+[2024-04-25T16:15:11.335Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:15:11.346Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:15:13.253Z] info Token validated successfuly
+[2024-04-25T16:15:13.253Z] info enter the endpoint to pay carrier
+[2024-04-25T16:15:13.257Z] info To pay carrier successfuly
+[2024-04-25T16:15:13.327Z] info Token validated successfuly
+[2024-04-25T16:15:13.327Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:15:13.332Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:15:23.390Z] info Token validated successfuly
+[2024-04-25T16:15:23.390Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:15:23.401Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T16:15:26.197Z] info Token validated successfuly
+[2024-04-25T16:15:26.197Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T16:15:26.198Z] info getEvidenceHistory successfuly
+[2024-04-25T16:15:27.627Z] info Token validated successfuly
+[2024-04-25T16:15:27.627Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T16:15:27.631Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:15:00.848Z] info server running on port 3000
+[2024-04-25T19:16:24.869Z] info enter the endpoint login manager
+[2024-04-25T19:16:24.951Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T19:16:25.154Z] info Token validated successfuly
+[2024-04-25T19:16:25.155Z] info enter the endpoint master manager
+[2024-04-25T19:16:25.275Z] info Master manager successfuly
+[2024-04-25T19:16:27.900Z] info Token validated successfuly
+[2024-04-25T19:16:27.900Z] info enter the endpoint get city packages
+[2024-04-25T19:16:27.922Z] info GetCitypackages successfuly
+[2024-04-25T19:16:28.711Z] info Token validated successfuly
+[2024-04-25T19:16:28.712Z] info enter the endpoint get city packages
+[2024-04-25T19:16:28.717Z] info GetCitypackages successfuly
+[2024-04-25T19:16:29.318Z] info Token validated successfuly
+[2024-04-25T19:16:29.319Z] info enter the endpoint get city packages
+[2024-04-25T19:16:29.328Z] info getCarrierPeticions successfuly
+[2024-04-25T19:16:29.647Z] info Token validated successfuly
+[2024-04-25T19:16:29.647Z] info enter the endpoint get getCarriers
+[2024-04-25T19:16:29.673Z] info getCarriers successfuly
+[2024-04-25T19:16:29.976Z] info Token validated successfuly
+[2024-04-25T19:16:29.977Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:16:29.983Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:16:32.595Z] info Token validated successfuly
+[2024-04-25T19:16:32.596Z] info enter the endpoint get city packages
+[2024-04-25T19:16:32.598Z] info getCarrierPeticions successfuly
+[2024-04-25T19:16:33.011Z] info Token validated successfuly
+[2024-04-25T19:16:33.012Z] info enter the endpoint get city packages
+[2024-04-25T19:16:33.016Z] info GetCitypackages successfuly
+[2024-04-25T19:16:33.320Z] info Token validated successfuly
+[2024-04-25T19:16:33.320Z] info enter the endpoint get city packages
+[2024-04-25T19:16:33.324Z] info GetCitypackages successfuly
+[2024-04-25T19:16:56.273Z] info Token validated successfuly
+[2024-04-25T19:16:56.273Z] info enter the endpoint get city packages
+[2024-04-25T19:16:56.280Z] info GetCitypackages successfuly
+[2024-04-25T19:16:56.686Z] info Token validated successfuly
+[2024-04-25T19:16:56.687Z] info enter the endpoint get city packages
+[2024-04-25T19:16:56.691Z] info GetCitypackages successfuly
+[2024-04-25T19:20:01.354Z] info enter the endpoint login manager
+[2024-04-25T19:20:01.358Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T19:20:01.541Z] info Token validated successfuly
+[2024-04-25T19:20:01.541Z] info enter the endpoint master manager
+[2024-04-25T19:20:01.570Z] info Master manager successfuly
+[2024-04-25T19:20:04.696Z] info Token validated successfuly
+[2024-04-25T19:20:04.696Z] info enter the endpoint get city packages
+[2024-04-25T19:20:04.701Z] info GetCitypackages successfuly
+[2024-04-25T19:20:05.457Z] info Token validated successfuly
+[2024-04-25T19:20:05.457Z] info enter the endpoint get city packages
+[2024-04-25T19:20:05.460Z] info GetCitypackages successfuly
+[2024-04-25T19:20:06.109Z] info Token validated successfuly
+[2024-04-25T19:20:06.109Z] info enter the endpoint get city packages
+[2024-04-25T19:20:06.113Z] info GetCitypackages successfuly
+[2024-04-25T19:20:07.529Z] info Token validated successfuly
+[2024-04-25T19:20:07.529Z] info enter the endpoint master manager
+[2024-04-25T19:20:07.553Z] info Master manager successfuly
+[2024-04-25T19:20:10.608Z] info Token validated successfuly
+[2024-04-25T19:20:10.608Z] info enter the endpoint get city packages
+[2024-04-25T19:20:10.612Z] info GetCitypackages successfuly
+[2024-04-25T19:20:12.225Z] info Token validated successfuly
+[2024-04-25T19:20:12.225Z] info enter the endpoint master manager
+[2024-04-25T19:20:12.242Z] info Master manager successfuly
+[2024-04-25T19:20:14.672Z] info Token validated successfuly
+[2024-04-25T19:20:14.672Z] info enter the endpoint get city packages
+[2024-04-25T19:20:14.675Z] info GetCitypackages successfuly
+[2024-04-25T19:20:16.068Z] info Token validated successfuly
+[2024-04-25T19:20:16.068Z] info enter the endpoint master manager
+[2024-04-25T19:20:16.085Z] info Master manager successfuly
+[2024-04-25T19:20:18.015Z] info Token validated successfuly
+[2024-04-25T19:20:18.016Z] info enter the endpoint get city packages
+[2024-04-25T19:20:18.018Z] info GetCitypackages successfuly
+[2024-04-25T19:20:25.611Z] info Token validated successfuly
+[2024-04-25T19:20:25.612Z] info enter the endpoint get city packages
+[2024-04-25T19:20:25.615Z] info GetCitypackages successfuly
+[2024-04-25T19:20:33.954Z] info Token validated successfuly
+[2024-04-25T19:20:33.955Z] info enter the endpoint detailPackage manager
+[2024-04-25T19:20:33.993Z] info detailPackage manager successfuly
+[2024-04-25T19:20:34.002Z] info Token validated successfuly
+[2024-04-25T19:20:34.003Z] info Enter the endpoint get carriers city
+[2024-04-25T19:20:34.009Z] info Get carriers city successfuly
+[2024-04-25T19:20:59.815Z] info Token validated successfuly
+[2024-04-25T19:20:59.816Z] info enter the endpoint get city packages
+[2024-04-25T19:20:59.821Z] info GetCitypackages successfuly
+[2024-04-25T19:21:00.493Z] info Token validated successfuly
+[2024-04-25T19:21:00.493Z] info enter the endpoint get city packages
+[2024-04-25T19:21:00.496Z] info getCarrierPeticions successfuly
+[2024-04-25T19:21:03.190Z] info Token validated successfuly
+[2024-04-25T19:21:03.191Z] info enter the endpoint get getCarriers
+[2024-04-25T19:21:03.204Z] info getCarriers successfuly
+[2024-04-25T19:21:07.360Z] info Token validated successfuly
+[2024-04-25T19:21:07.360Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:21:07.363Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:21:09.001Z] info Token validated successfuly
+[2024-04-25T19:21:09.002Z] info enter the endpoint get city packages
+[2024-04-25T19:21:09.005Z] info GetCitypackages successfuly
+[2024-04-25T19:21:10.988Z] info Token validated successfuly
+[2024-04-25T19:21:10.988Z] info enter the endpoint detailPackage manager
+[2024-04-25T19:21:10.996Z] info detailPackage manager successfuly
+[2024-04-25T19:21:16.868Z] info Token validated successfuly
+[2024-04-25T19:21:16.869Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T19:21:16.870Z] info getEvidenceHistory successfuly
+[2024-04-25T19:21:38.403Z] info enter the endpoint login dropshipper
+[2024-04-25T19:21:38.420Z] info Incorrect credentials or non-existent credenciales
+[2024-04-25T19:21:43.169Z] info enter the endpoint login dropshipper
+[2024-04-25T19:21:43.170Z] info Incorrect credentials or non-existent credenciales
+[2024-04-25T19:21:48.387Z] info enter the endpoint login dropshipper
+[2024-04-25T19:21:48.389Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T19:21:48.583Z] info Token validated successfuly
+[2024-04-25T19:21:48.583Z] info enter the endpoint master dropshipper
+[2024-04-25T19:21:48.589Z] info Master Dropshipper successfuly
+[2024-04-25T19:21:50.379Z] info Token validated successfuly
+[2024-04-25T19:21:50.380Z] info enter the endpoint getpackages dropshipper
+[2024-04-25T19:21:50.385Z] info Getpackages Dropshipper successfuly
+[2024-04-25T19:21:54.609Z] info Token validated successfuly
+[2024-04-25T19:21:54.610Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:21:54.616Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:34:04.646Z] info Token validated successfuly
+[2024-04-25T19:34:04.647Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:34:04.659Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:34:12.607Z] info Token validated successfuly
+[2024-04-25T19:34:12.608Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:34:12.615Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:35:02.227Z] info Token validated successfuly
+[2024-04-25T19:35:02.228Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:35:02.238Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:35:06.937Z] info Token validated successfuly
+[2024-04-25T19:35:06.938Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:35:06.947Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:35:31.686Z] info Token validated successfuly
+[2024-04-25T19:35:31.686Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:35:31.697Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:35:32.368Z] info Token validated successfuly
+[2024-04-25T19:35:32.369Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:35:32.379Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:35:48.722Z] info Token validated successfuly
+[2024-04-25T19:35:48.722Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:35:48.732Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:35:52.260Z] info Token validated successfuly
+[2024-04-25T19:35:52.261Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T19:35:52.262Z] info getEvidenceHistory successfuly
+[2024-04-25T19:35:56.955Z] info Token validated successfuly
+[2024-04-25T19:35:56.956Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:35:56.962Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:36:08.921Z] info Token validated successfuly
+[2024-04-25T19:36:08.921Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:36:08.934Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:36:10.868Z] info Token validated successfuly
+[2024-04-25T19:36:10.869Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T19:36:10.870Z] info getEvidenceHistory successfuly
+[2024-04-25T19:37:49.134Z] info Token validated successfuly
+[2024-04-25T19:37:49.134Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-25T19:37:49.140Z] info getBankAccount Dropshipper successfuly
+[2024-04-25T19:37:50.265Z] info Token validated successfuly
+[2024-04-25T19:37:50.266Z] info enter the endpoint getpackages dropshipper
+[2024-04-25T19:37:50.271Z] info Getpackages Dropshipper successfuly
+[2024-04-25T19:37:57.287Z] info Token validated successfuly
+[2024-04-25T19:37:57.287Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T19:37:57.293Z] info detailPackage Dropshipper successfuly
+[2024-04-25T19:37:58.964Z] info Token validated successfuly
+[2024-04-25T19:37:58.964Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T19:37:58.965Z] info getEvidenceHistory successfuly
+[2024-04-25T19:38:03.371Z] info Token validated successfuly
+[2024-04-25T19:38:03.371Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-25T19:38:03.373Z] info getBankAccount Dropshipper successfuly
+[2024-04-25T19:38:07.207Z] info Token validated successfuly
+[2024-04-25T19:38:07.207Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-25T19:38:07.209Z] info getBankAccount Dropshipper successfuly
+[2024-04-25T19:38:07.212Z] info Token validated successfuly
+[2024-04-25T19:38:07.213Z] info Enter the endpoint get payments
+[2024-04-25T19:38:07.216Z] info Get payments request successfuly
+[2024-04-25T19:38:14.013Z] info Token validated successfuly
+[2024-04-25T19:38:14.014Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-25T19:38:14.019Z] info getPortfolio Dropshipper successfuly
+[2024-04-25T19:38:15.867Z] info Token validated successfuly
+[2024-04-25T19:38:15.868Z] info enter the endpoint getpackages dropshipper
+[2024-04-25T19:38:15.873Z] info Getpackages Dropshipper successfuly
+[2024-04-25T19:38:44.019Z] info enter the endpoint login manager
+[2024-04-25T19:38:44.023Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T19:38:44.189Z] info Token validated successfuly
+[2024-04-25T19:38:44.189Z] info enter the endpoint master manager
+[2024-04-25T19:38:44.213Z] info Master manager successfuly
+[2024-04-25T19:38:47.719Z] info Token validated successfuly
+[2024-04-25T19:38:47.720Z] info enter the endpoint get getCarriers
+[2024-04-25T19:38:47.734Z] info getCarriers successfuly
+[2024-04-25T19:38:48.420Z] info Token validated successfuly
+[2024-04-25T19:38:48.421Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:38:48.424Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:44:26.612Z] info Token validated successfuly
+[2024-04-25T19:44:26.612Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:44:26.619Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:45:30.178Z] info Token validated successfuly
+[2024-04-25T19:45:30.178Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:45:30.182Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:45:33.427Z] info Token validated successfuly
+[2024-04-25T19:45:33.427Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:45:33.432Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:45:35.176Z] info Token validated successfuly
+[2024-04-25T19:45:35.176Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:45:35.179Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:45:38.674Z] info Token validated successfuly
+[2024-04-25T19:45:38.675Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:45:38.677Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:45:41.979Z] info Token validated successfuly
+[2024-04-25T19:45:41.980Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:45:41.983Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:46:41.451Z] info Token validated successfuly
+[2024-04-25T19:46:41.452Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:46:41.457Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:46:56.792Z] info Token validated successfuly
+[2024-04-25T19:46:56.792Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:46:56.797Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:46:58.512Z] info Token validated successfuly
+[2024-04-25T19:46:58.512Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T19:46:58.516Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T19:49:51.692Z] info enter the endpoint login manager
+[2024-04-25T19:49:51.696Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T19:49:51.893Z] info Token validated successfuly
+[2024-04-25T19:49:51.894Z] info enter the endpoint master manager
+[2024-04-25T19:49:51.927Z] info Master manager successfuly
+[2024-04-25T19:51:39.300Z] info Token validated successfuly
+[2024-04-25T19:51:39.300Z] info enter the endpoint master manager
+[2024-04-25T19:51:39.325Z] info Master manager successfuly
+[2024-04-25T20:00:56.518Z] info Token validated successfuly
+[2024-04-25T20:00:56.518Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T20:00:56.526Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T20:00:57.017Z] info Token validated successfuly
+[2024-04-25T20:00:57.017Z] info enter the endpoint get getCarriers
+[2024-04-25T20:00:57.030Z] info getCarriers successfuly
+[2024-04-25T20:00:57.805Z] info Token validated successfuly
+[2024-04-25T20:00:57.805Z] info enter the endpoint get city packages
+[2024-04-25T20:00:57.809Z] info GetCitypackages successfuly
+[2024-04-25T20:00:58.065Z] info Token validated successfuly
+[2024-04-25T20:00:58.066Z] info enter the endpoint get city packages
+[2024-04-25T20:00:58.069Z] info GetCitypackages successfuly
+[2024-04-25T20:00:58.626Z] info Token validated successfuly
+[2024-04-25T20:00:58.626Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T20:00:58.629Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T20:00:59.527Z] info Token validated successfuly
+[2024-04-25T20:00:59.527Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T20:00:59.530Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T20:01:44.055Z] info server running on port 3000
+[2024-04-25T20:01:56.664Z] info enter the endpoint login user router
+[2024-04-25T20:01:56.702Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T20:02:30.935Z] info enter the endpoint login dropshipper
+[2024-04-25T20:02:30.940Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T20:02:31.103Z] info Token validated successfuly
+[2024-04-25T20:02:31.104Z] info enter the endpoint master dropshipper
+[2024-04-25T20:02:31.113Z] info Master Dropshipper successfuly
+[2024-04-25T20:02:32.537Z] info Token validated successfuly
+[2024-04-25T20:02:32.537Z] info enter the endpoint getpackages dropshipper
+[2024-04-25T20:02:32.548Z] info Getpackages Dropshipper successfuly
+[2024-04-25T20:02:33.094Z] info Token validated successfuly
+[2024-04-25T20:02:33.095Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-25T20:02:33.097Z] info getBankAccount Dropshipper successfuly
+[2024-04-25T20:02:33.539Z] info Token validated successfuly
+[2024-04-25T20:02:33.539Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-25T20:02:33.543Z] info getPortfolio Dropshipper successfuly
+[2024-04-25T20:03:11.570Z] info Token validated successfuly
+[2024-04-25T20:03:11.571Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-25T20:03:11.573Z] info Token validated successfuly
+[2024-04-25T20:03:11.574Z] info Enter the endpoint get payments
+[2024-04-25T20:03:11.579Z] info getBankAccount Dropshipper successfuly
+[2024-04-25T20:03:11.583Z] info Get payments request successfuly
+[2024-04-25T20:03:12.949Z] info Token validated successfuly
+[2024-04-25T20:03:12.950Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-25T20:03:12.955Z] info getPortfolio Dropshipper successfuly
+[2024-04-25T20:03:20.856Z] info Token validated successfuly
+[2024-04-25T20:03:20.857Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T20:03:20.862Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T20:04:56.788Z] info enter the endpoint login manager
+[2024-04-25T20:04:56.793Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T20:05:05.190Z] info Token validated successfuly
+[2024-04-25T20:05:05.190Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:05:05.197Z] info getPortfolio carrier successfuly
+[2024-04-25T20:07:03.558Z] info server running on port 3000
+[2024-04-25T20:07:13.609Z] info server running on port 3000
+[2024-04-25T20:07:18.411Z] info Token validated successfuly
+[2024-04-25T20:07:18.412Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:07:18.452Z] info getPortfolio carrier successfuly
+[2024-04-25T20:07:21.710Z] info Token validated successfuly
+[2024-04-25T20:07:21.710Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:07:21.715Z] info getPortfolio carrier successfuly
+[2024-04-25T20:11:20.077Z] info Token validated successfuly
+[2024-04-25T20:11:20.078Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-25T20:11:20.086Z] info getPortfolio Dropshipper successfuly
+[2024-04-25T20:12:52.701Z] info Token validated successfuly
+[2024-04-25T20:12:52.701Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:12:52.708Z] info getPortfolio carrier successfuly
+[2024-04-25T20:13:34.958Z] info Token validated successfuly
+[2024-04-25T20:13:34.958Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:13:34.964Z] info getPortfolio carrier successfuly
+[2024-04-25T20:13:37.736Z] info Token validated successfuly
+[2024-04-25T20:13:37.737Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:13:37.742Z] info getPortfolio carrier successfuly
+[2024-04-25T20:17:51.682Z] info Token validated successfuly
+[2024-04-25T20:17:51.682Z] info enter the endpoint downloadExcelPortfolio carrier
+[2024-04-25T20:17:51.729Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-25T20:19:00.919Z] info server running on port 3000
+[2024-04-25T20:19:53.952Z] info server running on port 3000
+[2024-04-25T20:19:55.503Z] info server running on port 3000
+[2024-04-25T20:20:00.600Z] info Token validated successfuly
+[2024-04-25T20:20:00.600Z] info enter the endpoint downloadExcelPortfolio carrier
+[2024-04-25T20:20:00.684Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-25T20:20:21.878Z] info Token validated successfuly
+[2024-04-25T20:20:21.879Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:20:21.885Z] info getPortfolio carrier successfuly
+[2024-04-25T20:20:27.075Z] info Token validated successfuly
+[2024-04-25T20:20:27.075Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:20:27.079Z] info getPortfolio carrier successfuly
+[2024-04-25T20:20:49.444Z] info Token validated successfuly
+[2024-04-25T20:20:49.444Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:20:49.449Z] info getPortfolio carrier successfuly
+[2024-04-25T20:20:55.105Z] info Token validated successfuly
+[2024-04-25T20:20:55.105Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:20:55.108Z] info getPortfolio carrier successfuly
+[2024-04-25T20:21:02.056Z] info Token validated successfuly
+[2024-04-25T20:21:02.056Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:21:02.059Z] info getPortfolio carrier successfuly
+[2024-04-25T20:21:10.097Z] info Token validated successfuly
+[2024-04-25T20:21:10.097Z] info enter the endpoint downloadExcelPortfolio carrier
+[2024-04-25T20:21:10.117Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-25T20:46:50.325Z] info server running on port 3000
+[2024-04-25T20:47:09.724Z] info enter the endpoint login manager
+[2024-04-25T20:47:09.787Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T20:47:09.889Z] info Token validated successfuly
+[2024-04-25T20:47:09.891Z] info enter the endpoint master manager
+[2024-04-25T20:47:09.971Z] info Master manager successfuly
+[2024-04-25T20:50:39.148Z] info Token validated successfuly
+[2024-04-25T20:50:39.149Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:50:39.160Z] info getPortfolio carrier successfuly
+[2024-04-25T20:50:43.325Z] info Token validated successfuly
+[2024-04-25T20:50:43.325Z] info enter the endpoint get city packages
+[2024-04-25T20:50:43.338Z] info GetCitypackages successfuly
+[2024-04-25T20:50:43.716Z] info Token validated successfuly
+[2024-04-25T20:50:43.716Z] info enter the endpoint get city packages
+[2024-04-25T20:50:43.720Z] info GetCitypackages successfuly
+[2024-04-25T20:50:44.129Z] info Token validated successfuly
+[2024-04-25T20:50:44.130Z] info enter the endpoint get city packages
+[2024-04-25T20:50:44.135Z] info getCarrierPeticions successfuly
+[2024-04-25T20:50:44.436Z] info Token validated successfuly
+[2024-04-25T20:50:44.437Z] info enter the endpoint get getCarriers
+[2024-04-25T20:50:44.460Z] info getCarriers successfuly
+[2024-04-25T20:50:44.827Z] info Token validated successfuly
+[2024-04-25T20:50:44.827Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T20:50:44.834Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T20:50:45.475Z] info Token validated successfuly
+[2024-04-25T20:50:45.475Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T20:50:45.478Z] info getPortfolio carrier successfuly
+[2024-04-25T20:50:46.248Z] info Token validated successfuly
+[2024-04-25T20:50:46.249Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T20:50:46.254Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T20:50:46.841Z] info Token validated successfuly
+[2024-04-25T20:50:46.841Z] info enter the endpoint get getCarriers
+[2024-04-25T20:50:46.851Z] info getCarriers successfuly
+[2024-04-25T20:52:40.650Z] info Token validated successfuly
+[2024-04-25T20:52:40.650Z] info enter the endpoint get getCarriers
+[2024-04-25T20:52:40.669Z] info getCarriers successfuly
+[2024-04-25T20:52:54.154Z] info enter the endpoint login manager
+[2024-04-25T20:52:54.158Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T20:53:04.267Z] info Token validated successfuly
+[2024-04-25T20:53:04.268Z] info enter the endpoint get Dropshippers
+[2024-04-25T20:53:04.272Z] info Get dropshippers successfuly
+[2024-04-25T20:53:21.300Z] info Token validated successfuly
+[2024-04-25T20:53:21.300Z] info enter the endpoint get Dropshippers
+[2024-04-25T20:53:21.303Z] info Get dropshippers successfuly
+[2024-04-25T20:57:33.151Z] info Token validated successfuly
+[2024-04-25T20:57:33.152Z] info enter the endpoint get Dropshippers
+[2024-04-25T20:57:33.156Z] info Get dropshippers successfuly
+[2024-04-25T20:57:54.346Z] info Token validated successfuly
+[2024-04-25T20:57:54.346Z] info enter the endpoint get Dropshippers
+[2024-04-25T20:57:54.349Z] info Get dropshippers successfuly
+[2024-04-25T20:59:42.889Z] info Token validated successfuly
+[2024-04-25T20:59:42.889Z] info enter the endpoint get Dropshippers
+[2024-04-25T20:59:42.892Z] info Get dropshippers successfuly
+[2024-04-25T20:59:42.986Z] info Token validated successfuly
+[2024-04-25T20:59:42.986Z] info enter the endpoint get Dropshippers
+[2024-04-25T20:59:42.988Z] info Get dropshippers successfuly
+[2024-04-25T20:59:54.570Z] info Token validated successfuly
+[2024-04-25T20:59:54.570Z] info enter the endpoint get Dropshippers
+[2024-04-25T20:59:54.573Z] info Get dropshippers successfuly
+[2024-04-25T21:00:16.782Z] info Token validated successfuly
+[2024-04-25T21:00:16.782Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:00:16.785Z] info Get dropshippers successfuly
+[2024-04-25T21:00:48.691Z] info server running on port 3000
+[2024-04-25T21:00:51.334Z] info Token validated successfuly
+[2024-04-25T21:00:51.334Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:00:51.376Z] info Get dropshippers successfuly
+[2024-04-25T21:04:21.269Z] info Token validated successfuly
+[2024-04-25T21:04:21.270Z] info enter the endpoint get city packages
+[2024-04-25T21:04:21.280Z] info getCarrierPeticions successfuly
+[2024-04-25T21:04:22.219Z] info Token validated successfuly
+[2024-04-25T21:04:22.219Z] info enter the endpoint get city packages
+[2024-04-25T21:04:22.229Z] info GetCitypackages successfuly
+[2024-04-25T21:04:23.144Z] info Token validated successfuly
+[2024-04-25T21:04:23.145Z] info enter the endpoint detailPackage manager
+[2024-04-25T21:04:23.156Z] info detailPackage manager successfuly
+[2024-04-25T21:04:24.959Z] info Token validated successfuly
+[2024-04-25T21:04:24.959Z] info enter the endpoint get city packages
+[2024-04-25T21:04:24.964Z] info GetCitypackages successfuly
+[2024-04-25T21:04:25.391Z] info Token validated successfuly
+[2024-04-25T21:04:25.391Z] info enter the endpoint get city packages
+[2024-04-25T21:04:25.394Z] info getCarrierPeticions successfuly
+[2024-04-25T21:04:27.205Z] info Token validated successfuly
+[2024-04-25T21:04:27.205Z] info enter the endpoint getDetailCarrier
+[2024-04-25T21:04:27.212Z] info getDetailCarrier successfuly
+[2024-04-25T21:04:37.254Z] info Token validated successfuly
+[2024-04-25T21:04:37.254Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T21:04:37.259Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T21:04:37.927Z] info Token validated successfuly
+[2024-04-25T21:04:37.927Z] info enter the endpoint get getCarriers
+[2024-04-25T21:04:37.944Z] info getCarriers successfuly
+[2024-04-25T21:04:38.810Z] info Token validated successfuly
+[2024-04-25T21:04:38.811Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T21:04:38.820Z] info getDetailCarrier successfuly
+[2024-04-25T21:04:43.577Z] info Token validated successfuly
+[2024-04-25T21:04:43.577Z] info enter the endpoint get city packages
+[2024-04-25T21:04:43.579Z] info getCarrierPeticions successfuly
+[2024-04-25T21:04:45.152Z] info Token validated successfuly
+[2024-04-25T21:04:45.152Z] info enter the endpoint getDetailCarrier
+[2024-04-25T21:04:45.157Z] info getDetailCarrier successfuly
+[2024-04-25T21:06:36.936Z] info Token validated successfuly
+[2024-04-25T21:06:36.937Z] info enter the endpoint getDetailCarrier
+[2024-04-25T21:06:36.945Z] info getDetailCarrier successfuly
+[2024-04-25T21:06:41.606Z] info Token validated successfuly
+[2024-04-25T21:06:41.606Z] info enter the endpoint getDetailCarrier
+[2024-04-25T21:06:41.610Z] info getDetailCarrier successfuly
+[2024-04-25T21:07:21.284Z] info Token validated successfuly
+[2024-04-25T21:07:21.284Z] info enter the endpoint getDetailCarrier
+[2024-04-25T21:07:21.292Z] info getDetailCarrier successfuly
+[2024-04-25T21:07:33.805Z] info Token validated successfuly
+[2024-04-25T21:07:33.805Z] info enter the endpoint getDetailCarrier
+[2024-04-25T21:07:33.811Z] info getDetailCarrier successfuly
+[2024-04-25T21:07:53.257Z] info Token validated successfuly
+[2024-04-25T21:07:53.257Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T21:07:53.262Z] info getPortfolio carrier successfuly
+[2024-04-25T21:07:54.456Z] info Token validated successfuly
+[2024-04-25T21:07:54.456Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T21:07:54.461Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T21:07:54.864Z] info Token validated successfuly
+[2024-04-25T21:07:54.864Z] info enter the endpoint get getCarriers
+[2024-04-25T21:07:54.877Z] info getCarriers successfuly
+[2024-04-25T21:07:55.213Z] info Token validated successfuly
+[2024-04-25T21:07:55.213Z] info enter the endpoint get city packages
+[2024-04-25T21:07:55.215Z] info getCarrierPeticions successfuly
+[2024-04-25T21:07:56.337Z] info Token validated successfuly
+[2024-04-25T21:07:56.337Z] info enter the endpoint get getCarriers
+[2024-04-25T21:07:56.347Z] info getCarriers successfuly
+[2024-04-25T21:07:56.855Z] info Token validated successfuly
+[2024-04-25T21:07:56.855Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T21:07:56.860Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T21:07:57.620Z] info Token validated successfuly
+[2024-04-25T21:07:57.621Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T21:07:57.623Z] info getPortfolio carrier successfuly
+[2024-04-25T21:07:58.518Z] info Token validated successfuly
+[2024-04-25T21:07:58.518Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:07:58.520Z] info Get dropshippers successfuly
+[2024-04-25T21:10:46.285Z] info Token validated successfuly
+[2024-04-25T21:10:46.285Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:10:46.289Z] info Get dropshippers successfuly
+[2024-04-25T21:10:50.575Z] info Token validated successfuly
+[2024-04-25T21:10:50.575Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:10:50.577Z] info Get dropshippers successfuly
+[2024-04-25T21:15:59.985Z] info Token validated successfuly
+[2024-04-25T21:15:59.985Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:15:59.988Z] info Get dropshippers successfuly
+[2024-04-25T21:16:00.901Z] info Token validated successfuly
+[2024-04-25T21:16:00.901Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:16:00.903Z] info Get dropshippers successfuly
+[2024-04-25T21:16:01.595Z] info Token validated successfuly
+[2024-04-25T21:16:01.596Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:16:01.598Z] info Get dropshippers successfuly
+[2024-04-25T21:18:14.178Z] info Token validated successfuly
+[2024-04-25T21:18:14.178Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:18:14.184Z] info Get dropshippers successfuly
+[2024-04-25T21:19:34.549Z] info Token validated successfuly
+[2024-04-25T21:19:34.549Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:19:34.552Z] info Get dropshippers successfuly
+[2024-04-25T21:19:35.693Z] info Token validated successfuly
+[2024-04-25T21:19:35.693Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:19:35.694Z] info Get dropshippers successfuly
+[2024-04-25T21:19:48.771Z] info Token validated successfuly
+[2024-04-25T21:19:48.771Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:19:48.775Z] info Get dropshippers successfuly
+[2024-04-25T21:19:52.481Z] info Token validated successfuly
+[2024-04-25T21:19:52.481Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:19:52.483Z] info Get dropshippers successfuly
+[2024-04-25T21:21:09.596Z] info Token validated successfuly
+[2024-04-25T21:21:09.596Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:21:09.600Z] info Get dropshippers successfuly
+[2024-04-25T21:21:22.346Z] info Token validated successfuly
+[2024-04-25T21:21:22.346Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:21:22.349Z] info Get dropshippers successfuly
+[2024-04-25T21:21:34.767Z] info Token validated successfuly
+[2024-04-25T21:21:34.767Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:21:34.771Z] info Get dropshippers successfuly
+[2024-04-25T21:21:44.810Z] info Token validated successfuly
+[2024-04-25T21:21:44.810Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:21:44.812Z] info Get dropshippers successfuly
+[2024-04-25T21:21:54.066Z] info Token validated successfuly
+[2024-04-25T21:21:54.066Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:21:54.067Z] info Get dropshippers successfuly
+[2024-04-25T21:35:16.954Z] info Token validated successfuly
+[2024-04-25T21:35:16.954Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T21:35:16.958Z] info getPortfolio carrier successfuly
+[2024-04-25T21:35:17.783Z] info Token validated successfuly
+[2024-04-25T21:35:17.784Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T21:35:17.788Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T21:35:19.709Z] info Token validated successfuly
+[2024-04-25T21:35:19.710Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T21:35:19.713Z] info getPortfolio carrier successfuly
+[2024-04-25T21:35:21.143Z] info Token validated successfuly
+[2024-04-25T21:35:21.144Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T21:35:21.148Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T21:35:21.579Z] info Token validated successfuly
+[2024-04-25T21:35:21.579Z] info enter the endpoint get getCarriers
+[2024-04-25T21:35:21.594Z] info getCarriers successfuly
+[2024-04-25T21:35:22.479Z] info Token validated successfuly
+[2024-04-25T21:35:22.479Z] info enter the endpoint get city packages
+[2024-04-25T21:35:22.482Z] info getCarrierPeticions successfuly
+[2024-04-25T21:35:23.546Z] info Token validated successfuly
+[2024-04-25T21:35:23.547Z] info enter the endpoint get city packages
+[2024-04-25T21:35:23.550Z] info GetCitypackages successfuly
+[2024-04-25T21:35:23.818Z] info Token validated successfuly
+[2024-04-25T21:35:23.818Z] info enter the endpoint get city packages
+[2024-04-25T21:35:23.821Z] info GetCitypackages successfuly
+[2024-04-25T21:35:24.654Z] info Token validated successfuly
+[2024-04-25T21:35:24.654Z] info enter the endpoint detailPackage manager
+[2024-04-25T21:35:24.664Z] info detailPackage manager successfuly
+[2024-04-25T21:35:25.693Z] info Token validated successfuly
+[2024-04-25T21:35:25.694Z] info enter the endpoint get city packages
+[2024-04-25T21:35:25.697Z] info GetCitypackages successfuly
+[2024-04-25T21:35:26.163Z] info Token validated successfuly
+[2024-04-25T21:35:26.163Z] info enter the endpoint get city packages
+[2024-04-25T21:35:26.165Z] info getCarrierPeticions successfuly
+[2024-04-25T21:35:26.441Z] info Token validated successfuly
+[2024-04-25T21:35:26.441Z] info enter the endpoint get city packages
+[2024-04-25T21:35:26.443Z] info getCarrierPeticions successfuly
+[2024-04-25T21:35:26.821Z] info Token validated successfuly
+[2024-04-25T21:35:26.821Z] info enter the endpoint get getCarriers
+[2024-04-25T21:35:26.829Z] info getCarriers successfuly
+[2024-04-25T21:35:27.247Z] info Token validated successfuly
+[2024-04-25T21:35:27.247Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T21:35:27.250Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T21:35:27.599Z] info Token validated successfuly
+[2024-04-25T21:35:27.600Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T21:35:27.602Z] info getPortfolio carrier successfuly
+[2024-04-25T21:35:28.399Z] info Token validated successfuly
+[2024-04-25T21:35:28.400Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T21:35:28.403Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T21:35:28.674Z] info Token validated successfuly
+[2024-04-25T21:35:28.674Z] info enter the endpoint get getCarriers
+[2024-04-25T21:35:28.682Z] info getCarriers successfuly
+[2024-04-25T21:35:29.156Z] info Token validated successfuly
+[2024-04-25T21:35:29.156Z] info enter the endpoint get city packages
+[2024-04-25T21:35:29.158Z] info getCarrierPeticions successfuly
+[2024-04-25T21:35:29.684Z] info Token validated successfuly
+[2024-04-25T21:35:29.684Z] info enter the endpoint get getCarriers
+[2024-04-25T21:35:29.692Z] info getCarriers successfuly
+[2024-04-25T21:35:30.719Z] info Token validated successfuly
+[2024-04-25T21:35:30.719Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T21:35:30.727Z] info getDetailCarrier successfuly
+[2024-04-25T21:35:30.736Z] info Token validated successfuly
+[2024-04-25T21:35:30.736Z] info enter the endpoint getTypeCarrier
+[2024-04-25T21:35:30.739Z] info Token validated successfuly
+[2024-04-25T21:35:30.740Z] info enter the endpoint getTypeDocumentsCarrier
+[2024-04-25T21:35:30.741Z] info getTypeCarrier successfuly
+[2024-04-25T21:35:30.742Z] info getTypeDocumentsCarrier successfuly
+[2024-04-25T21:35:35.109Z] info Token validated successfuly
+[2024-04-25T21:35:35.109Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:35:35.111Z] info Get dropshippers successfuly
+[2024-04-25T21:36:34.952Z] info Token validated successfuly
+[2024-04-25T21:36:34.952Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:36:34.955Z] info Get dropshippers successfuly
+[2024-04-25T21:37:42.890Z] info Token validated successfuly
+[2024-04-25T21:37:42.890Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:37:42.893Z] info Get dropshippers successfuly
+[2024-04-25T21:37:43.902Z] info Token validated successfuly
+[2024-04-25T21:37:43.903Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:37:43.904Z] info Get dropshippers successfuly
+[2024-04-25T21:38:00.751Z] info Token validated successfuly
+[2024-04-25T21:38:00.751Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:38:00.754Z] info Get dropshippers successfuly
+[2024-04-25T21:38:21.902Z] info Token validated successfuly
+[2024-04-25T21:38:21.902Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:38:21.905Z] info Get dropshippers successfuly
+[2024-04-25T21:38:47.226Z] info Token validated successfuly
+[2024-04-25T21:38:47.226Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:38:47.229Z] info Get dropshippers successfuly
+[2024-04-25T21:39:28.172Z] info Token validated successfuly
+[2024-04-25T21:39:28.172Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:39:28.175Z] info Get dropshippers successfuly
+[2024-04-25T21:39:30.104Z] info Token validated successfuly
+[2024-04-25T21:39:30.104Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:39:30.105Z] info Get dropshippers successfuly
+[2024-04-25T21:40:58.848Z] info Token validated successfuly
+[2024-04-25T21:40:58.848Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:40:58.851Z] info Get dropshippers successfuly
+[2024-04-25T21:41:27.241Z] info Token validated successfuly
+[2024-04-25T21:41:27.241Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:41:27.244Z] info Get dropshippers successfuly
+[2024-04-25T21:41:44.634Z] info Token validated successfuly
+[2024-04-25T21:41:44.635Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:41:44.637Z] info Get dropshippers successfuly
+[2024-04-25T21:41:47.569Z] info Token validated successfuly
+[2024-04-25T21:41:47.569Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:41:47.571Z] info Get dropshippers successfuly
+[2024-04-25T21:41:56.480Z] info Token validated successfuly
+[2024-04-25T21:41:56.480Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:41:56.482Z] info Get dropshippers successfuly
+[2024-04-25T21:41:59.003Z] info Token validated successfuly
+[2024-04-25T21:41:59.003Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:41:59.004Z] info Get dropshippers successfuly
+[2024-04-25T21:42:36.082Z] info Token validated successfuly
+[2024-04-25T21:42:36.082Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:42:36.087Z] info Get dropshippers successfuly
+[2024-04-25T21:42:41.713Z] info Token validated successfuly
+[2024-04-25T21:42:41.714Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:42:41.715Z] info Get dropshippers successfuly
+[2024-04-25T21:42:46.376Z] info Token validated successfuly
+[2024-04-25T21:42:46.376Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:42:46.377Z] info Get dropshippers successfuly
+[2024-04-25T21:42:47.569Z] info Token validated successfuly
+[2024-04-25T21:42:47.569Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:42:47.570Z] info Get dropshippers successfuly
+[2024-04-25T21:43:17.165Z] info Token validated successfuly
+[2024-04-25T21:43:17.165Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:43:17.168Z] info Get dropshippers successfuly
+[2024-04-25T21:43:21.635Z] info Token validated successfuly
+[2024-04-25T21:43:21.636Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:43:21.637Z] info Get dropshippers successfuly
+[2024-04-25T21:43:59.903Z] info Token validated successfuly
+[2024-04-25T21:43:59.903Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:43:59.907Z] info Get dropshippers successfuly
+[2024-04-25T21:44:15.879Z] info Token validated successfuly
+[2024-04-25T21:44:15.879Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:44:15.882Z] info Get dropshippers successfuly
+[2024-04-25T21:44:32.402Z] info Token validated successfuly
+[2024-04-25T21:44:32.402Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:44:32.407Z] info Get dropshippers successfuly
+[2024-04-25T21:44:38.331Z] info Token validated successfuly
+[2024-04-25T21:44:38.331Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:44:38.333Z] info Get dropshippers successfuly
+[2024-04-25T21:44:55.970Z] info Token validated successfuly
+[2024-04-25T21:44:55.971Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:44:55.973Z] info Get dropshippers successfuly
+[2024-04-25T21:46:38.660Z] info Token validated successfuly
+[2024-04-25T21:46:38.661Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:46:38.665Z] info Get dropshippers successfuly
+[2024-04-25T21:46:40.276Z] info Token validated successfuly
+[2024-04-25T21:46:40.276Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:46:40.278Z] info Get dropshippers successfuly
+[2024-04-25T21:46:40.864Z] info Token validated successfuly
+[2024-04-25T21:46:40.865Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:46:48.865Z] info Token validated successfuly
+[2024-04-25T21:46:48.865Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:47:03.336Z] info Token validated successfuly
+[2024-04-25T21:47:03.337Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:47:03.387Z] info Add dropshippers successfuly
+[2024-04-25T21:47:03.454Z] info Token validated successfuly
+[2024-04-25T21:47:03.454Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:47:03.456Z] info Get dropshippers successfuly
+[2024-04-25T21:47:42.916Z] info Token validated successfuly
+[2024-04-25T21:47:42.916Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:47:42.921Z] info Get dropshippers successfuly
+[2024-04-25T21:47:50.361Z] info Token validated successfuly
+[2024-04-25T21:47:50.361Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:47:50.363Z] info Get dropshippers successfuly
+[2024-04-25T21:47:51.864Z] info Token validated successfuly
+[2024-04-25T21:47:51.864Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:48:07.744Z] info Token validated successfuly
+[2024-04-25T21:48:07.744Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:48:07.751Z] info Add dropshippers successfuly
+[2024-04-25T21:48:07.812Z] info Token validated successfuly
+[2024-04-25T21:48:07.812Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:48:07.813Z] info Get dropshippers successfuly
+[2024-04-25T21:48:28.955Z] info Token validated successfuly
+[2024-04-25T21:48:28.955Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:48:28.958Z] info Get dropshippers successfuly
+[2024-04-25T21:49:14.976Z] info server running on port 3000
+[2024-04-25T21:49:18.112Z] info server running on port 3000
+[2024-04-25T21:49:18.889Z] info Token validated successfuly
+[2024-04-25T21:49:18.890Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:49:18.919Z] info Get dropshippers successfuly
+[2024-04-25T21:49:29.227Z] info Token validated successfuly
+[2024-04-25T21:49:29.228Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:49:29.233Z] info Get dropshippers successfuly
+[2024-04-25T21:49:41.218Z] info Token validated successfuly
+[2024-04-25T21:49:41.218Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:08.963Z] info Token validated successfuly
+[2024-04-25T21:50:08.963Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:50:08.968Z] info Get dropshippers successfuly
+[2024-04-25T21:50:10.653Z] info Token validated successfuly
+[2024-04-25T21:50:10.654Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:50:10.656Z] info Get dropshippers successfuly
+[2024-04-25T21:50:12.737Z] info Token validated successfuly
+[2024-04-25T21:50:12.737Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:15.439Z] info Token validated successfuly
+[2024-04-25T21:50:15.439Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:16.679Z] info Token validated successfuly
+[2024-04-25T21:50:16.680Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:19.330Z] info Token validated successfuly
+[2024-04-25T21:50:19.330Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:21.288Z] info Token validated successfuly
+[2024-04-25T21:50:21.289Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:26.314Z] info Token validated successfuly
+[2024-04-25T21:50:26.314Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:30.432Z] info Token validated successfuly
+[2024-04-25T21:50:30.433Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:34.209Z] info Token validated successfuly
+[2024-04-25T21:50:34.210Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:36.737Z] info Token validated successfuly
+[2024-04-25T21:50:36.737Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:40.537Z] info Token validated successfuly
+[2024-04-25T21:50:40.538Z] info enter the endpoint add Dropshippers
+[2024-04-25T21:50:40.549Z] info Add dropshippers successfuly
+[2024-04-25T21:50:40.603Z] info Token validated successfuly
+[2024-04-25T21:50:40.603Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:50:40.606Z] info Get dropshippers successfuly
+[2024-04-25T21:52:18.753Z] info Token validated successfuly
+[2024-04-25T21:52:18.754Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:52:18.758Z] info Get dropshippers successfuly
+[2024-04-25T21:54:44.600Z] info Token validated successfuly
+[2024-04-25T21:54:44.601Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:54:44.604Z] info Get dropshippers successfuly
+[2024-04-25T21:54:55.154Z] info Token validated successfuly
+[2024-04-25T21:54:55.154Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:54:55.161Z] info Get dropshippers successfuly
+[2024-04-25T21:55:02.706Z] info Token validated successfuly
+[2024-04-25T21:55:02.706Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:55:02.708Z] info Get dropshippers successfuly
+[2024-04-25T21:55:09.467Z] info Token validated successfuly
+[2024-04-25T21:55:09.468Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:55:09.469Z] info Get dropshippers successfuly
+[2024-04-25T21:55:30.916Z] info Token validated successfuly
+[2024-04-25T21:55:30.916Z] info enter the endpoint delete dropshipper
+[2024-04-25T21:55:30.925Z] info Delete dropshipper successfuly
+[2024-04-25T21:55:30.987Z] info Token validated successfuly
+[2024-04-25T21:55:30.987Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:55:30.989Z] info Get dropshippers successfuly
+[2024-04-25T21:55:39.459Z] info Token validated successfuly
+[2024-04-25T21:55:39.460Z] info enter the endpoint delete dropshipper
+[2024-04-25T21:55:39.464Z] info Delete dropshipper successfuly
+[2024-04-25T21:55:39.522Z] info Token validated successfuly
+[2024-04-25T21:55:39.522Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:55:39.524Z] info Get dropshippers successfuly
+[2024-04-25T21:56:05.724Z] info Token validated successfuly
+[2024-04-25T21:56:05.725Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T21:56:08.531Z] info Token validated successfuly
+[2024-04-25T21:56:08.532Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T21:56:12.709Z] info Token validated successfuly
+[2024-04-25T21:56:12.710Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T21:56:15.668Z] info Token validated successfuly
+[2024-04-25T21:56:15.668Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T21:57:35.041Z] info Token validated successfuly
+[2024-04-25T21:57:35.041Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:57:35.047Z] info Get dropshippers successfuly
+[2024-04-25T21:57:56.903Z] info Token validated successfuly
+[2024-04-25T21:57:56.903Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:57:56.907Z] info Get dropshippers successfuly
+[2024-04-25T21:58:02.897Z] info Token validated successfuly
+[2024-04-25T21:58:02.897Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:58:02.898Z] info Get dropshippers successfuly
+[2024-04-25T21:58:22.892Z] info Token validated successfuly
+[2024-04-25T21:58:22.893Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:58:22.896Z] info Get dropshippers successfuly
+[2024-04-25T21:58:23.953Z] info Token validated successfuly
+[2024-04-25T21:58:23.953Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:58:23.957Z] info Get dropshippers successfuly
+[2024-04-25T21:58:33.250Z] info Token validated successfuly
+[2024-04-25T21:58:33.251Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:58:33.252Z] info Get dropshippers successfuly
+[2024-04-25T21:58:36.567Z] info Token validated successfuly
+[2024-04-25T21:58:36.568Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:58:36.569Z] info Get dropshippers successfuly
+[2024-04-25T21:58:53.754Z] info Token validated successfuly
+[2024-04-25T21:58:53.754Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:58:53.757Z] info Get dropshippers successfuly
+[2024-04-25T21:59:09.076Z] info Token validated successfuly
+[2024-04-25T21:59:09.076Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:59:09.080Z] info Get dropshippers successfuly
+[2024-04-25T21:59:20.273Z] info Token validated successfuly
+[2024-04-25T21:59:20.273Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:59:20.277Z] info Get dropshippers successfuly
+[2024-04-25T21:59:25.680Z] info Token validated successfuly
+[2024-04-25T21:59:25.680Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:59:25.682Z] info Get dropshippers successfuly
+[2024-04-25T21:59:33.954Z] info Token validated successfuly
+[2024-04-25T21:59:33.954Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:59:33.956Z] info Get dropshippers successfuly
+[2024-04-25T21:59:37.038Z] info Token validated successfuly
+[2024-04-25T21:59:37.039Z] info enter the endpoint get Dropshippers
+[2024-04-25T21:59:37.040Z] info Get dropshippers successfuly
+[2024-04-25T21:59:38.985Z] info Token validated successfuly
+[2024-04-25T21:59:38.990Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:00:10.810Z] info Token validated successfuly
+[2024-04-25T22:00:10.810Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:00:10.813Z] info Get dropshippers successfuly
+[2024-04-25T22:00:12.080Z] info Token validated successfuly
+[2024-04-25T22:00:12.081Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:00:12.082Z] info Get dropshippers successfuly
+[2024-04-25T22:00:17.190Z] info Token validated successfuly
+[2024-04-25T22:00:17.190Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:00:17.192Z] info Get dropshippers successfuly
+[2024-04-25T22:00:30.356Z] info Token validated successfuly
+[2024-04-25T22:00:30.357Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:00:30.368Z] info Get dropshippers successfuly
+[2024-04-25T22:00:32.675Z] info Token validated successfuly
+[2024-04-25T22:00:32.675Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:00:32.677Z] info Get dropshippers successfuly
+[2024-04-25T22:00:33.385Z] info Token validated successfuly
+[2024-04-25T22:00:33.385Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:00:33.387Z] info Get dropshippers successfuly
+[2024-04-25T22:00:49.815Z] info Token validated successfuly
+[2024-04-25T22:00:49.815Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:00:49.819Z] info Get dropshippers successfuly
+[2024-04-25T22:01:45.091Z] info Token validated successfuly
+[2024-04-25T22:01:45.091Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:01:45.094Z] info Get dropshippers successfuly
+[2024-04-25T22:02:58.939Z] info Token validated successfuly
+[2024-04-25T22:02:58.939Z] info enter the endpoint getDetailCarrier
+[2024-04-25T22:02:58.954Z] info getDetailDropshipper successfuly
+[2024-04-25T22:07:08.551Z] info Token validated successfuly
+[2024-04-25T22:07:08.551Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T22:07:08.558Z] info getPortfolio carrier successfuly
+[2024-04-25T22:07:09.615Z] info Token validated successfuly
+[2024-04-25T22:07:09.615Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T22:07:09.619Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T22:07:11.214Z] info Token validated successfuly
+[2024-04-25T22:07:11.214Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T22:07:11.223Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T22:07:39.342Z] info Token validated successfuly
+[2024-04-25T22:07:39.342Z] info enter the endpoint get city packages
+[2024-04-25T22:07:39.349Z] info GetCitypackages successfuly
+[2024-04-25T22:07:41.205Z] info Token validated successfuly
+[2024-04-25T22:07:41.206Z] info enter the endpoint detailPackage manager
+[2024-04-25T22:07:41.219Z] info detailPackage manager successfuly
+[2024-04-25T22:07:42.800Z] info Token validated successfuly
+[2024-04-25T22:07:42.800Z] info enter the endpoint get city packages
+[2024-04-25T22:07:42.805Z] info GetCitypackages successfuly
+[2024-04-25T22:07:43.802Z] info Token validated successfuly
+[2024-04-25T22:07:43.802Z] info enter the endpoint detailPackage manager
+[2024-04-25T22:07:43.812Z] info detailPackage manager successfuly
+[2024-04-25T22:07:47.177Z] info Token validated successfuly
+[2024-04-25T22:07:47.177Z] info enter the endpoint get city packages
+[2024-04-25T22:07:47.179Z] info getCarrierPeticions successfuly
+[2024-04-25T22:07:47.788Z] info Token validated successfuly
+[2024-04-25T22:07:47.789Z] info enter the endpoint get city packages
+[2024-04-25T22:07:47.792Z] info GetCitypackages successfuly
+[2024-04-25T22:07:48.178Z] info Token validated successfuly
+[2024-04-25T22:07:48.178Z] info enter the endpoint get city packages
+[2024-04-25T22:07:48.180Z] info getCarrierPeticions successfuly
+[2024-04-25T22:07:48.850Z] info Token validated successfuly
+[2024-04-25T22:07:48.851Z] info enter the endpoint get getCarriers
+[2024-04-25T22:07:48.863Z] info getCarriers successfuly
+[2024-04-25T22:07:49.301Z] info Token validated successfuly
+[2024-04-25T22:07:49.302Z] info enter the endpoint get city packages
+[2024-04-25T22:07:49.305Z] info getCarrierPeticions successfuly
+[2024-04-25T22:07:50.725Z] info Token validated successfuly
+[2024-04-25T22:07:50.725Z] info enter the endpoint getDetailCarrier
+[2024-04-25T22:07:50.731Z] info getDetailCarrier successfuly
+[2024-04-25T22:07:51.891Z] info Token validated successfuly
+[2024-04-25T22:07:51.891Z] info enter the endpoint get getCarriers
+[2024-04-25T22:07:51.900Z] info getCarriers successfuly
+[2024-04-25T22:07:52.966Z] info Token validated successfuly
+[2024-04-25T22:07:52.967Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:07:52.986Z] info getDetailCarrier successfuly
+[2024-04-25T22:08:10.732Z] info Token validated successfuly
+[2024-04-25T22:08:10.732Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T22:08:10.737Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T22:08:12.615Z] info Token validated successfuly
+[2024-04-25T22:08:12.616Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T22:08:12.623Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T22:08:14.642Z] info Token validated successfuly
+[2024-04-25T22:08:14.642Z] info enter the endpoint getPortfolio carrier
+[2024-04-25T22:08:14.645Z] info getPortfolio carrier successfuly
+[2024-04-25T22:08:15.981Z] info Token validated successfuly
+[2024-04-25T22:08:15.982Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-25T22:08:15.986Z] info getPaymentsRequestCarrier successfuly
+[2024-04-25T22:08:16.241Z] info Token validated successfuly
+[2024-04-25T22:08:16.241Z] info enter the endpoint get getCarriers
+[2024-04-25T22:08:16.253Z] info getCarriers successfuly
+[2024-04-25T22:08:30.945Z] info enter the endpoint login dropshipper
+[2024-04-25T22:08:30.948Z] info User Disabled
+[2024-04-25T22:08:36.569Z] info enter the endpoint login dropshipper
+[2024-04-25T22:08:36.572Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T22:08:36.670Z] info Token validated successfuly
+[2024-04-25T22:08:36.671Z] info enter the endpoint master dropshipper
+[2024-04-25T22:08:36.674Z] info Non-existent dropshipper or not found packages
+[2024-04-25T22:08:44.609Z] info enter the endpoint login dropshipper
+[2024-04-25T22:08:44.610Z] info User Disabled
+[2024-04-25T22:08:59.569Z] info enter the endpoint login dropshipper
+[2024-04-25T22:08:59.572Z] info User Disabled
+[2024-04-25T22:09:12.649Z] info enter the endpoint login dropshipper
+[2024-04-25T22:09:12.653Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T22:09:12.721Z] info Token validated successfuly
+[2024-04-25T22:09:12.721Z] info enter the endpoint master dropshipper
+[2024-04-25T22:09:12.724Z] info Master Dropshipper successfuly
+[2024-04-25T22:09:27.126Z] info Token validated successfuly
+[2024-04-25T22:09:27.126Z] info enter the endpoint getpackages dropshipper
+[2024-04-25T22:09:27.134Z] info Getpackages Dropshipper successfuly
+[2024-04-25T22:09:28.648Z] info Token validated successfuly
+[2024-04-25T22:09:28.649Z] info enter the endpoint detailPackage dropshipper
+[2024-04-25T22:09:28.659Z] info detailPackage Dropshipper successfuly
+[2024-04-25T22:09:31.543Z] info Token validated successfuly
+[2024-04-25T22:09:31.543Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-25T22:09:31.545Z] info getBankAccount Dropshipper successfuly
+[2024-04-25T22:09:42.137Z] info enter the endpoint login manager
+[2024-04-25T22:09:42.140Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T22:09:42.216Z] info Token validated successfuly
+[2024-04-25T22:09:42.216Z] info enter the endpoint master manager
+[2024-04-25T22:09:42.248Z] info Master manager successfuly
+[2024-04-25T22:09:44.601Z] info Token validated successfuly
+[2024-04-25T22:09:44.601Z] info enter the endpoint get getCarriers
+[2024-04-25T22:09:44.615Z] info getCarriers successfuly
+[2024-04-25T22:09:46.671Z] info Token validated successfuly
+[2024-04-25T22:09:46.671Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:09:46.682Z] info getDetailCarrier successfuly
+[2024-04-25T22:12:20.116Z] info Token validated successfuly
+[2024-04-25T22:12:20.116Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:12:20.120Z] info Get dropshippers successfuly
+[2024-04-25T22:12:21.812Z] info Token validated successfuly
+[2024-04-25T22:12:21.812Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:12:21.814Z] info Get dropshippers successfuly
+[2024-04-25T22:12:25.865Z] info Token validated successfuly
+[2024-04-25T22:12:25.865Z] info enter the endpoint get Dropshippers
+[2024-04-25T22:12:25.867Z] info Get dropshippers successfuly
+[2024-04-25T22:15:14.055Z] info Token validated successfuly
+[2024-04-25T22:15:14.055Z] info enter the endpoint get city packages
+[2024-04-25T22:15:14.060Z] info getCarrierPeticions successfuly
+[2024-04-25T22:15:14.288Z] info Token validated successfuly
+[2024-04-25T22:15:14.288Z] info enter the endpoint get getCarriers
+[2024-04-25T22:15:14.300Z] info getCarriers successfuly
+[2024-04-25T22:15:15.851Z] info Token validated successfuly
+[2024-04-25T22:15:15.852Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:15:15.860Z] info getDetailCarrier successfuly
+[2024-04-25T22:15:54.818Z] info Token validated successfuly
+[2024-04-25T22:15:54.818Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:15:54.829Z] info getDetailCarrier successfuly
+[2024-04-25T22:16:02.202Z] info Token validated successfuly
+[2024-04-25T22:16:02.203Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:16:02.209Z] info getDetailCarrier successfuly
+[2024-04-25T22:16:07.271Z] info Token validated successfuly
+[2024-04-25T22:16:07.272Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:16:07.280Z] info getDetailCarrier successfuly
+[2024-04-25T22:20:20.313Z] info Token validated successfuly
+[2024-04-25T22:20:20.313Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:20:20.325Z] info getDetailCarrier successfuly
+[2024-04-25T22:22:02.052Z] info Token validated successfuly
+[2024-04-25T22:22:02.052Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:22:02.064Z] info getDetailCarrier successfuly
+[2024-04-25T22:24:09.614Z] info server running on port 3000
+[2024-04-25T22:24:16.229Z] info server running on port 3000
+[2024-04-25T22:24:25.782Z] info Token validated successfuly
+[2024-04-25T22:24:25.783Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:24:25.830Z] info getDetailCarrier successfuly
+[2024-04-25T22:24:38.807Z] info server running on port 3000
+[2024-04-25T22:24:44.076Z] info Token validated successfuly
+[2024-04-25T22:24:44.077Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:24:44.122Z] info getDetailCarrier successfuly
+[2024-04-25T22:25:04.641Z] info server running on port 3000
+[2024-04-25T22:25:04.933Z] info Token validated successfuly
+[2024-04-25T22:25:04.934Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:25:11.714Z] info server running on port 3000
+[2024-04-25T22:25:31.173Z] info server running on port 3000
+[2024-04-25T22:25:32.802Z] info Token validated successfuly
+[2024-04-25T22:25:32.803Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:25:32.850Z] info getDetailCarrier successfuly
+[2024-04-25T22:26:31.891Z] info server running on port 3000
+[2024-04-25T22:26:34.859Z] info Token validated successfuly
+[2024-04-25T22:26:34.860Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:26:34.908Z] info getDetailCarrier successfuly
+[2024-04-25T22:29:17.710Z] info Token validated successfuly
+[2024-04-25T22:29:17.710Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:29:17.725Z] info getDetailCarrier successfuly
+[2024-04-25T22:29:27.383Z] info Token validated successfuly
+[2024-04-25T22:29:27.384Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:29:27.395Z] info getDetailCarrier successfuly
+[2024-04-25T22:30:32.161Z] info Token validated successfuly
+[2024-04-25T22:30:32.162Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:30:32.175Z] info getDetailCarrier successfuly
+[2024-04-25T22:30:57.322Z] info Token validated successfuly
+[2024-04-25T22:30:57.323Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:30:57.335Z] info getDetailCarrier successfuly
+[2024-04-25T22:31:19.983Z] info Token validated successfuly
+[2024-04-25T22:31:19.984Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:31:20.000Z] info getDetailCarrier successfuly
+[2024-04-25T22:31:35.861Z] info Token validated successfuly
+[2024-04-25T22:31:35.861Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:31:35.872Z] info getDetailCarrier successfuly
+[2024-04-25T22:31:54.587Z] info Token validated successfuly
+[2024-04-25T22:31:54.587Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:31:54.599Z] info getDetailCarrier successfuly
+[2024-04-25T22:32:05.830Z] info Token validated successfuly
+[2024-04-25T22:32:05.830Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:32:05.841Z] info getDetailCarrier successfuly
+[2024-04-25T22:32:08.678Z] info Token validated successfuly
+[2024-04-25T22:32:08.678Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:32:08.685Z] info getDetailCarrier successfuly
+[2024-04-25T22:32:12.639Z] info Token validated successfuly
+[2024-04-25T22:32:12.640Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:32:12.647Z] info getDetailCarrier successfuly
+[2024-04-25T22:32:25.784Z] info Token validated successfuly
+[2024-04-25T22:32:25.785Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:32:25.799Z] info getDetailCarrier successfuly
+[2024-04-25T22:32:36.592Z] info Token validated successfuly
+[2024-04-25T22:32:36.593Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:32:36.604Z] info getDetailCarrier successfuly
+[2024-04-25T22:32:43.357Z] info Token validated successfuly
+[2024-04-25T22:32:43.357Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:32:43.365Z] info getDetailCarrier successfuly
+[2024-04-25T22:32:54.806Z] info Token validated successfuly
+[2024-04-25T22:32:54.807Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:32:54.818Z] info getDetailCarrier successfuly
+[2024-04-25T22:33:09.559Z] info Token validated successfuly
+[2024-04-25T22:33:09.559Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:33:09.569Z] info getDetailCarrier successfuly
+[2024-04-25T22:33:19.209Z] info Token validated successfuly
+[2024-04-25T22:33:19.209Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:33:19.218Z] info getDetailCarrier successfuly
+[2024-04-25T22:33:29.732Z] info Token validated successfuly
+[2024-04-25T22:33:29.733Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:33:29.740Z] info getDetailCarrier successfuly
+[2024-04-25T22:33:33.003Z] info Token validated successfuly
+[2024-04-25T22:33:33.004Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:33:33.010Z] info getDetailCarrier successfuly
+[2024-04-25T22:33:35.208Z] info Token validated successfuly
+[2024-04-25T22:33:35.208Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:33:35.221Z] info getDetailCarrier successfuly
+[2024-04-25T22:33:49.045Z] info Token validated successfuly
+[2024-04-25T22:33:49.046Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:33:49.055Z] info getDetailCarrier successfuly
+[2024-04-25T22:33:50.203Z] info Token validated successfuly
+[2024-04-25T22:33:50.203Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:33:50.210Z] info getDetailCarrier successfuly
+[2024-04-25T22:33:54.704Z] info Token validated successfuly
+[2024-04-25T22:33:54.705Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:33:54.710Z] info getDetailCarrier successfuly
+[2024-04-25T22:34:12.299Z] info Token validated successfuly
+[2024-04-25T22:34:12.299Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:34:12.309Z] info getDetailCarrier successfuly
+[2024-04-25T22:34:13.889Z] info Token validated successfuly
+[2024-04-25T22:34:13.890Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:34:13.896Z] info getDetailCarrier successfuly
+[2024-04-25T22:34:36.949Z] info Token validated successfuly
+[2024-04-25T22:34:36.950Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:34:36.960Z] info getDetailCarrier successfuly
+[2024-04-25T22:35:23.798Z] info Token validated successfuly
+[2024-04-25T22:35:23.799Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:35:23.812Z] info getDetailCarrier successfuly
+[2024-04-25T22:35:50.265Z] info Token validated successfuly
+[2024-04-25T22:35:50.265Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:35:50.274Z] info getDetailCarrier successfuly
+[2024-04-25T22:35:52.531Z] info Token validated successfuly
+[2024-04-25T22:35:52.531Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:35:52.539Z] info getDetailCarrier successfuly
+[2024-04-25T22:35:57.550Z] info Token validated successfuly
+[2024-04-25T22:35:57.551Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:35:57.558Z] info getDetailCarrier successfuly
+[2024-04-25T22:36:07.429Z] info Token validated successfuly
+[2024-04-25T22:36:07.429Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:36:07.437Z] info getDetailCarrier successfuly
+[2024-04-25T22:36:22.901Z] info Token validated successfuly
+[2024-04-25T22:36:22.902Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:36:22.910Z] info getDetailCarrier successfuly
+[2024-04-25T22:36:24.559Z] info Token validated successfuly
+[2024-04-25T22:36:24.559Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:36:24.567Z] info getDetailCarrier successfuly
+[2024-04-25T22:36:32.396Z] info Token validated successfuly
+[2024-04-25T22:36:32.397Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:36:32.404Z] info getDetailCarrier successfuly
+[2024-04-25T22:38:10.879Z] info Token validated successfuly
+[2024-04-25T22:38:10.880Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:38:10.893Z] info getDetailCarrier successfuly
+[2024-04-25T22:38:17.994Z] info Token validated successfuly
+[2024-04-25T22:38:17.994Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:38:18.002Z] info getDetailCarrier successfuly
+[2024-04-25T22:38:26.441Z] info Token validated successfuly
+[2024-04-25T22:38:26.441Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:38:26.449Z] info getDetailCarrier successfuly
+[2024-04-25T22:38:32.770Z] info Token validated successfuly
+[2024-04-25T22:38:32.770Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:38:32.778Z] info getDetailCarrier successfuly
+[2024-04-25T22:38:33.588Z] info Token validated successfuly
+[2024-04-25T22:38:33.588Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:38:33.594Z] info getDetailCarrier successfuly
+[2024-04-25T22:39:29.160Z] info Token validated successfuly
+[2024-04-25T22:39:29.161Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:39:29.171Z] info getDetailCarrier successfuly
+[2024-04-25T22:39:37.807Z] info Token validated successfuly
+[2024-04-25T22:39:37.807Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:39:37.813Z] info getDetailCarrier successfuly
+[2024-04-25T22:39:45.028Z] info Token validated successfuly
+[2024-04-25T22:39:45.028Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T22:39:45.034Z] info getDetailCarrier successfuly
+[2024-04-25T22:40:50.544Z] info server running on port 3000
+[2024-04-25T22:41:21.854Z] info server running on port 3000
+[2024-04-25T22:41:26.346Z] info server running on port 3000
+[2024-04-25T22:41:33.597Z] info server running on port 3000
+[2024-04-25T22:41:47.593Z] info server running on port 3000
+[2024-04-25T22:42:18.056Z] info server running on port 3000
+[2024-04-25T22:55:15.693Z] info server running on port 3000
+[2024-04-25T22:56:34.319Z] info server running on port 3000
+[2024-04-25T22:56:37.734Z] info Token validated successfuly
+[2024-04-25T22:56:37.734Z] info enter the endpoint getHistory
+[2024-04-25T22:56:37.770Z] info getHistory successfuly
+[2024-04-25T22:56:49.736Z] info server running on port 3000
+[2024-04-25T22:56:50.307Z] info Token validated successfuly
+[2024-04-25T22:56:50.307Z] info enter the endpoint getHistory
+[2024-04-25T22:56:50.344Z] info getHistory successfuly
+[2024-04-25T22:57:02.204Z] info server running on port 3000
+[2024-04-25T23:04:30.041Z] info Token validated successfuly
+[2024-04-25T23:04:30.042Z] info enter the endpoint getHistory
+[2024-04-25T23:04:30.079Z] info getHistory successfuly
+[2024-04-25T23:04:58.487Z] info Token validated successfuly
+[2024-04-25T23:04:58.488Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:04:58.492Z] info getEvidenceHistory successfuly
+[2024-04-25T23:05:56.554Z] info Token validated successfuly
+[2024-04-25T23:05:56.555Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:05:56.570Z] info getDetailCarrier successfuly
+[2024-04-25T23:06:22.487Z] info Token validated successfuly
+[2024-04-25T23:06:22.488Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:06:22.502Z] info getDetailCarrier successfuly
+[2024-04-25T23:06:30.436Z] info Token validated successfuly
+[2024-04-25T23:06:30.436Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:06:30.445Z] info getDetailCarrier successfuly
+[2024-04-25T23:06:42.170Z] info Token validated successfuly
+[2024-04-25T23:06:42.171Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:06:42.182Z] info getDetailCarrier successfuly
+[2024-04-25T23:07:18.798Z] info Token validated successfuly
+[2024-04-25T23:07:18.798Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:07:18.816Z] info getDetailCarrier successfuly
+[2024-04-25T23:09:30.083Z] info Token validated successfuly
+[2024-04-25T23:09:30.084Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:09:30.102Z] info getDetailCarrier successfuly
+[2024-04-25T23:09:40.930Z] info Token validated successfuly
+[2024-04-25T23:09:40.930Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:09:40.940Z] info getDetailCarrier successfuly
+[2024-04-25T23:09:54.258Z] info Token validated successfuly
+[2024-04-25T23:09:54.258Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:09:54.269Z] info getDetailCarrier successfuly
+[2024-04-25T23:09:57.886Z] info Token validated successfuly
+[2024-04-25T23:09:57.886Z] info enter the endpoint getHistory
+[2024-04-25T23:09:57.889Z] info getHistory successfuly
+[2024-04-25T23:09:59.492Z] info Token validated successfuly
+[2024-04-25T23:09:59.493Z] info enter the endpoint getHistory
+[2024-04-25T23:09:59.495Z] info getHistory successfuly
+[2024-04-25T23:10:50.029Z] info Token validated successfuly
+[2024-04-25T23:10:50.030Z] info enter the endpoint getHistory
+[2024-04-25T23:10:50.034Z] info getHistory successfuly
+[2024-04-25T23:10:51.534Z] info Token validated successfuly
+[2024-04-25T23:10:51.534Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:10:51.536Z] info getEvidenceHistory successfuly
+[2024-04-25T23:12:04.893Z] info Token validated successfuly
+[2024-04-25T23:12:04.894Z] info enter the endpoint getHistory
+[2024-04-25T23:12:04.898Z] info getHistory successfuly
+[2024-04-25T23:12:24.454Z] info Token validated successfuly
+[2024-04-25T23:12:24.455Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:12:24.463Z] info getDetailCarrier successfuly
+[2024-04-25T23:12:28.566Z] info Token validated successfuly
+[2024-04-25T23:12:28.566Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:12:28.574Z] info getDetailCarrier successfuly
+[2024-04-25T23:12:37.347Z] info Token validated successfuly
+[2024-04-25T23:12:37.348Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:12:37.353Z] info getDetailCarrier successfuly
+[2024-04-25T23:13:24.493Z] info Token validated successfuly
+[2024-04-25T23:13:24.493Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:13:24.502Z] info getDetailCarrier successfuly
+[2024-04-25T23:13:25.561Z] info Token validated successfuly
+[2024-04-25T23:13:25.561Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:13:25.569Z] info getDetailCarrier successfuly
+[2024-04-25T23:14:19.046Z] info Token validated successfuly
+[2024-04-25T23:14:19.046Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:14:19.056Z] info getDetailCarrier successfuly
+[2024-04-25T23:14:26.916Z] info Token validated successfuly
+[2024-04-25T23:14:26.916Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:14:26.924Z] info getDetailCarrier successfuly
+[2024-04-25T23:14:30.963Z] info Token validated successfuly
+[2024-04-25T23:14:30.963Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:14:30.969Z] info getDetailCarrier successfuly
+[2024-04-25T23:14:34.030Z] info Token validated successfuly
+[2024-04-25T23:14:34.030Z] info enter the endpoint getHistory
+[2024-04-25T23:14:34.033Z] info getHistory successfuly
+[2024-04-25T23:14:35.070Z] info Token validated successfuly
+[2024-04-25T23:14:35.071Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:14:35.072Z] info getEvidenceHistory successfuly
+[2024-04-25T23:15:11.671Z] info Token validated successfuly
+[2024-04-25T23:15:11.671Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:15:11.680Z] info getDetailCarrier successfuly
+[2024-04-25T23:15:25.897Z] info Token validated successfuly
+[2024-04-25T23:15:25.898Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:15:25.907Z] info getDetailCarrier successfuly
+[2024-04-25T23:15:35.842Z] info Token validated successfuly
+[2024-04-25T23:15:35.842Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:15:35.849Z] info getDetailCarrier successfuly
+[2024-04-25T23:16:23.784Z] info Token validated successfuly
+[2024-04-25T23:16:23.785Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:16:23.794Z] info getDetailCarrier successfuly
+[2024-04-25T23:16:24.411Z] info Token validated successfuly
+[2024-04-25T23:16:24.411Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:16:24.417Z] info getDetailCarrier successfuly
+[2024-04-25T23:16:26.550Z] info Token validated successfuly
+[2024-04-25T23:16:26.550Z] info enter the endpoint getHistory
+[2024-04-25T23:16:26.553Z] info getHistory successfuly
+[2024-04-25T23:16:27.270Z] info Token validated successfuly
+[2024-04-25T23:16:27.270Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:16:27.271Z] info getEvidenceHistory successfuly
+[2024-04-25T23:16:39.021Z] info Token validated successfuly
+[2024-04-25T23:16:39.021Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:16:39.029Z] info getDetailCarrier successfuly
+[2024-04-25T23:16:40.878Z] info Token validated successfuly
+[2024-04-25T23:16:40.878Z] info enter the endpoint getHistory
+[2024-04-25T23:16:40.881Z] info getHistory successfuly
+[2024-04-25T23:16:41.550Z] info Token validated successfuly
+[2024-04-25T23:16:41.550Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:16:41.551Z] info getEvidenceHistory successfuly
+[2024-04-25T23:16:43.213Z] info Token validated successfuly
+[2024-04-25T23:16:43.213Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:16:43.214Z] info getEvidenceHistory successfuly
+[2024-04-25T23:16:44.981Z] info Token validated successfuly
+[2024-04-25T23:16:44.981Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:16:44.982Z] info getEvidenceHistory successfuly
+[2024-04-25T23:16:48.118Z] info Token validated successfuly
+[2024-04-25T23:16:48.118Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:16:48.120Z] info getEvidenceHistory successfuly
+[2024-04-25T23:16:52.326Z] info Token validated successfuly
+[2024-04-25T23:16:52.326Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:16:52.327Z] info getEvidenceHistory successfuly
+[2024-04-25T23:17:02.694Z] info Token validated successfuly
+[2024-04-25T23:17:02.694Z] info enter the endpoint getHistory
+[2024-04-25T23:17:02.697Z] info getHistory successfuly
+[2024-04-25T23:17:04.685Z] info Token validated successfuly
+[2024-04-25T23:17:04.685Z] info enter the endpoint getHistory
+[2024-04-25T23:17:04.687Z] info getHistory successfuly
+[2024-04-25T23:17:05.414Z] info Token validated successfuly
+[2024-04-25T23:17:05.414Z] info enter the endpoint getEvidenceHistory
+[2024-04-25T23:17:05.415Z] info getEvidenceHistory successfuly
+[2024-04-25T23:17:30.787Z] info Token validated successfuly
+[2024-04-25T23:17:30.787Z] info enter the endpoint detailCarrierAndHistory
+[2024-04-25T23:17:30.797Z] info getDetailCarrier successfuly

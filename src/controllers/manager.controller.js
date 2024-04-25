@@ -1193,7 +1193,7 @@ export async function getPaymentsRequestCarrier(req, res) {
                         {
                             model: Carrier,
                             attributes: ['id_carrier', 'status_carrier', 'name_carrier', 'last_name_carrier', 'number_document_carrier'],
-                            include:[
+                            include: [
                                 {
                                     model: Type_carrier,
                                     attributes: ['id_tc', 'description_tc']
@@ -1343,9 +1343,98 @@ export async function toPayCarrier(req, res) {
                 });
                 getPaymentsRequestCarrier.save();
                 const postPortfolioCarrier = Portfolio_history_carrier.create({
-                    type_phc: "Pago al transportista",
+                    type_phc: "SALIDA",
                     Quantity_pay_phc: quantity_requested_cpr,
                     description_phc: "Pago al transportista",
+                    fk_id_carrier_phc: id_carrier
+                })
+                // logger control proccess
+                logger.info('To pay carrier successfuly');
+                // The credentials are incorrect
+                res.json({
+                    message: 'To pay carrier successfuly',
+                    result: 1
+                });
+            } else {
+                // logger control proccess
+                logger.info('Quantity requested invalidated');
+                // The credentials are incorrect
+                res.status(401).json({
+                    message: 'Quantity requested invalidated',
+                    result: 0
+                });
+            }
+        } else {
+            // logger control proccess
+            logger.info('Not found carrier');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found carrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error To pay package: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method to pay carrier
+export async function toPayRejectCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint to pay carrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_cpr } = req.body;
+        // I validate req correct json
+        if (!id_cpr) return res.sendStatus(400);
+        // I find if exist package by 
+        const getPaymentsRequestCarrier = await Carrier_payment_request.findOne({
+            where: {
+                id_cpr
+            },
+            attributes: ['id_cpr', 'quantity_requested_cpr', 'status_cpr', 'fk_id_cba_cpr'],
+            include: [
+                {
+                    model: Carrier_bank_account,
+                    attributes: ['fk_id_carrier_cba']
+                }
+            ]
+        });
+        // I validate exist getPaymentsRequestCarrier
+        if (getPaymentsRequestCarrier) {
+            // Capture id carrier
+            const id_carrier = getPaymentsRequestCarrier.carrier_bank_account.fk_id_carrier_cba;
+            const quantity_requested_cpr = getPaymentsRequestCarrier.quantity_requested_cpr;
+            // I find carrier
+            const getCarrier = await Carrier.findOne({
+                where: {
+                    id_carrier
+                },
+                attributes: ['id_carrier', 'revenue_carrier']
+            });
+            if (getCarrier.revenue_carrier >= quantity_requested_cpr) {
+                // Setting and save new revenue carrier
+                getCarrier.set({
+                    revenue_carrier: getCarrier.revenue_carrier + quantity_requested_cpr
+                });
+                getCarrier.save();
+                // Setting and save status cpr
+                // 1. payment made or Proceded 2. Pending
+                getPaymentsRequestCarrier.set({
+                    status_cpr: 1
+                });
+                getPaymentsRequestCarrier.save();
+                const postPortfolioCarrier = Portfolio_history_carrier.create({
+                    type_phc: "RECHAZADA",
+                    Quantity_pay_phc: quantity_requested_cpr,
+                    description_phc: "RECHAZADA",
                     fk_id_carrier_phc: id_carrier
                 })
                 // logger control proccess
@@ -1390,15 +1479,8 @@ export async function getPortfolioCarrier(req, res) {
     // logger control proccess
     logger.info('enter the endpoint getPortfolio carrier');
     try {
-        // capture the id that comes in the parameters of the req
-        const { id_carrier } = req.body;
-        // I validate req correct json
-        if (!id_carrier) return res.sendStatus(400);
         // I find if exist package by carrier
         const getPortfolio = await Portfolio_history_carrier.findAll({
-            where: {
-                fk_id_carrier_phc: id_carrier
-            },
             include: [
                 {
                     model: Carrier,
@@ -1432,13 +1514,12 @@ export async function downloadExcelPortfolioCarrier(req, res) {
     logger.info('enter the endpoint downloadExcelPortfolio carrier');
     try {
         // capture the id that comes in the parameters of the req
-        const { id_carrier, startDate, endDate } = req.body;
+        const { startDate, endDate } = req.body;
         // I validate req correct json
-        if (!id_carrier) return res.sendStatus(400);
+        if (!startDate || !endDate) return res.sendStatus(400);
         // I find if exist package by carrier
         const infoPortfolio = await Portfolio_history_carrier.findAll({
             where: {
-                fk_id_carrier_phc: id_carrier,
                 createdAt: {
                     [Op.between]: [startDate, endDate]
                 }
@@ -1525,10 +1606,7 @@ export async function getDropshippers(req, res) {
     try {
         // I find if exist package
         const getDropshippers = await Dropshipper.findAll({
-            where: {
-                status_dropshipper: 1,
-            },
-            attributes: ['id_dropshipper', 'tipo_documento', 'numero_documento', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'phone_number_dropshipper', 'email_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
+            attributes: ['id_dropshipper', 'tipo_documento', 'numero_documento', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'phone_number_dropshipper', 'email_dropshipper', 'password_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
         });
         // I validate exist getDropshippers
         if (getDropshippers.length > 0) {
@@ -2271,6 +2349,50 @@ export async function getEvidenceHistory(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error getEvidenceHistory: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get details carrier
+export async function getHistory(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getHistory');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_p } = req.body;
+        // I validate req correct json
+        if (!id_p) return res.sendStatus(400);
+         // I find carrier
+         const getHistory = await Status_history.findAll({
+            where: {
+                fk_id_p_sh : id_p
+            },
+            attributes: ['id_sh', 'status_sh', 'comentary_sh', 'evidence_sh', 'fk_id_carrier_asignated_sh', 'fk_id_p_sh', 'createdAt'],
+            include: [
+                {
+                    model: Package,
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p']
+                },
+            ],
+            order: [['createdAt', 'ASC']]
+        });
+        // logger control proccess
+        logger.info('getHistory successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'getHistory successfuly',
+            result: 1,
+            data: getDetailCarrier,
+            data_history: getHistory
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getHistory: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
