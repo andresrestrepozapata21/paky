@@ -15340,3 +15340,59 @@ sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_car
 [2024-04-24T21:47:11.249Z] info Token validated successfuly
 [2024-04-24T21:47:11.250Z] info enter the endpoint get city packages
 [2024-04-24T21:47:11.253Z] info GetCitypackages successfuly
+[2024-04-25T12:52:41.577Z] info server running on port 3000
+[2024-04-25T12:53:44.141Z] info enter the endpoint login
+[2024-04-25T12:53:44.228Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-25T12:54:05.448Z] info Token validated successfuly
+[2024-04-25T12:54:05.448Z] info enter the endpoint register carrier payments request
+[2024-04-25T12:55:14.491Z] info Token validated successfuly
+[2024-04-25T12:55:14.492Z] info enter the endpoint master
+[2024-04-25T12:55:14.509Z] info Master successfuly
+[2024-04-25T12:55:32.662Z] info Token validated successfuly
+[2024-04-25T12:55:32.663Z] info enter the endpoint master
+[2024-04-25T12:55:32.671Z] info Master successfuly
+[2024-04-25T12:55:56.671Z] info Token validated successfuly
+[2024-04-25T12:55:56.671Z] info enter the endpoint register carrier payments request
+[2024-04-25T12:55:56.681Z] info Carrier payments request registed successfully
+[2024-04-25T12:56:56.458Z] info server running on port 3000
+[2024-04-25T12:56:58.667Z] info Token validated successfuly
+[2024-04-25T12:56:58.667Z] info enter the endpoint register carrier payments request
+[2024-04-25T12:56:58.708Z] info Carrier payments request registed successfully
+[2024-04-25T12:57:12.858Z] info server running on port 3000
+[2024-04-25T12:57:16.162Z] info server running on port 3000
+[2024-04-25T12:57:17.264Z] info Token validated successfuly
+[2024-04-25T12:57:17.264Z] info enter the endpoint register carrier payments request
+[2024-04-25T12:57:17.307Z] info Carrier payments request registed successfully
+[2024-04-25T12:57:30.764Z] info server running on port 3000
+[2024-04-25T12:58:03.477Z] info server running on port 3000
+[2024-04-25T12:58:05.574Z] info server running on port 3000
+[2024-04-25T12:58:06.352Z] info Token validated successfuly
+[2024-04-25T12:58:06.352Z] info enter the endpoint register carrier payments request
+[2024-04-25T12:58:06.394Z] info Carrier payments request registed successfully
+[2024-04-25T12:59:14.600Z] info server running on port 3000
+[2024-04-25T12:59:15.622Z] info Token validated successfuly
+[2024-04-25T12:59:15.623Z] info enter the endpoint register carrier payments request
+[2024-04-25T12:59:15.663Z] info Carrier payments request registed successfully
+[2024-04-25T12:59:25.858Z] info server running on port 3000
+[2024-04-25T12:59:27.943Z] info Token validated successfuly
+[2024-04-25T12:59:27.944Z] info enter the endpoint register carrier payments request
+[2024-04-25T12:59:27.985Z] info Carrier payments request registed successfully
+[2024-04-25T13:00:57.904Z] info server running on port 3000
+[2024-04-25T13:01:21.387Z] info server running on port 3000
+[2024-04-25T13:01:41.040Z] info server running on port 3000
+[2024-04-25T13:02:52.884Z] info server running on port 3000
+[2024-04-25T13:03:47.417Z] info server running on port 3000
+[2024-04-25T13:04:01.536Z] info server running on port 3000
+[2024-04-25T13:04:10.193Z] info server running on port 3000
+[2024-04-25T13:04:16.934Z] info server running on port 3000
+[2024-04-25T13:04:27.620Z] info server running on port 3000
+[2024-04-25T13:04:34.045Z] info server running on port 3000
+[2024-04-25T13:04:37.286Z] info Token validated successfuly
+[2024-04-25T13:04:37.286Z] info enter the endpoint register carrier payments request
+[2024-04-25T13:04:37.344Z] info Carrier payments request registed successfully
+[2024-04-25T13:04:47.082Z] info Token validated successfuly
+[2024-04-25T13:04:47.082Z] info enter the endpoint master
+[2024-04-25T13:04:47.091Z] info Master successfuly
+[2024-04-25T13:06:54.180Z] info server running on port 3000
+[2024-04-25T13:07:14.182Z] info server running on port 3000
+[2024-04-25T13:07:15.863Z] info server running on port 3000

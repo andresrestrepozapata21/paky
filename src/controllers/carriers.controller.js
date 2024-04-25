@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
-import { Sequelize } from 'sequelize';
+import { Sequelize, where } from 'sequelize';
 // import personaly models
 import { Carrier } from '../models/carriers.model.js';
 import { Carrier_document } from '../models/carrier_documents.model.js';
@@ -1717,6 +1717,9 @@ export async function registerCarrierPaymentsRequest(req, res) {
         if (getCarrier.length > 0) {
             if (getCarrier[0].carrier.debt_carrier == 0) {
                 if (getCarrier[0].carrier.revenue_carrier >= quantity_requested_cpr && quantity_requested_cpr > 0) {
+                    //I capture variables relevants
+                    let newBalance = getCarrier[0].carrier.revenue_carrier - quantity_requested_cpr;
+                    let id_carrier = getCarrier[0].carrier.id_carrier;
                     // I declare the create method with its respective definition of the object and my Carrier model in a variable taking into account the await
                     // 1. Pagada 2. pendiente 3. rechazada
                     let newRequest = await Carrier_payment_request.create({
@@ -1731,13 +1734,30 @@ export async function registerCarrierPaymentsRequest(req, res) {
                         });
                     // valid if everything went well in the INSERT
                     if (newRequest) {
+                        // I find carrier and update revenue carrier
+                        let updateBalance = await Carrier.findOne({
+                            where: {
+                                id_carrier
+                            }
+                        });
+                        // Valid carrier found!
+                        if (updateBalance) {
+                            // Setting new balance
+                            updateBalance.set({
+                                revenue_carrier: newBalance
+                            });
+                            // Save the setting revenue
+                            updateBalance.save();
+                        }
                         // logger control proccess
                         logger.info('Carrier payments request registed successfully');
                         // I return the json with the message I want
                         return res.json({
                             message: 'Carrier payments request registed successfully',
                             result: 1,
-                            data: newRequest
+                            data: {
+                                newBalance
+                            }
                         });
                     }
                 } else {
