@@ -1635,49 +1635,57 @@ export async function reportProblemPackage(req, res) {
             },
             attributes: ['id_p', 'status_p', 'fk_id_tp_p', 'confirmation_carrier_p', 'fk_id_carrier_p']
         });
-        let data_p, data_e, newHistory; // Declare data_p at a higher scope
-        const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
-        const id_carrier_asignate = data_package.fk_id_carrier_p;
-        // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal 
-        // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega dropshipper a bodega central 0.cancelado
-        if (type_send == 1) {
-            data_e = loadEvidenceDataBase(req, id_p, type_evidence);
-            data_p = deliverPackageCarrierDataBase(id_p, 0);
-            // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
-            // same status package, added 0. canceled
-            newHistory = await Status_history.create({
-                status_sh: 0,
-                comentary_sh,
-                details_sh,
-                fk_id_carrier_asignated_sh: id_carrier_asignate,
-                fk_id_p_sh: id_p,
-            });
-            // logger control proccess
-            logger.info('History status registed successfully');
+        if (data_package) {
+            let data_p, data_e, newHistory; // Declare data_p at a higher scope
+            const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
+            const id_carrier_asignate = data_package.fk_id_carrier_p;
+            // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal 
+            // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega dropshipper a bodega central 0.cancelado
+            if (type_send == 1) {
+                data_e = loadEvidenceDataBase(req, id_p, type_evidence);
+                data_p = deliverPackageCarrierDataBase(id_p, 0);
+                // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
+                // same status package, added 0. canceled
+                newHistory = await Status_history.create({
+                    status_sh: 0,
+                    comentary_sh,
+                    details_sh,
+                    fk_id_carrier_asignated_sh: id_carrier_asignate,
+                    fk_id_p_sh: id_p,
+                });
+                // logger control proccess
+                logger.info('History status registed successfully');
 
-        } else if (type_send == 2) {
-            data_e = loadEvidenceDataBase(req, id_p, type_evidence)
-            data_p = deliverPackageCarrierDataBase(id_p, 0)
-            // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
-            newHistory = await Status_history.create({
-                status_sh: 0,
-                comentary_sh,
-                details_sh,
-                fk_id_carrier_asignated_sh: id_carrier_asignate,
-                fk_id_p_sh: id_p,
-            });
+            } else if (type_send == 2) {
+                data_e = loadEvidenceDataBase(req, id_p, type_evidence)
+                data_p = deliverPackageCarrierDataBase(id_p, 0)
+                // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
+                newHistory = await Status_history.create({
+                    status_sh: 0,
+                    comentary_sh,
+                    details_sh,
+                    fk_id_carrier_asignated_sh: id_carrier_asignate,
+                    fk_id_p_sh: id_p,
+                });
+                // logger control proccess
+                logger.info('History status registed successfully');
+            }
             // logger control proccess
-            logger.info('History status registed successfully');
+            logger.info('report problem registed successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'report problem registed successfuly',
+                result: 1,
+            });
+        } else {
+            // logger control proccess
+            logger.info('package not found');
+            // I return the status 500 and the message I want
+            res.status(404).json({
+                message: 'Not Found',
+                result: 404,
+            });
         }
-        // logger control proccess
-        logger.info('report problem registed successfuly');
-        // The credentials are incorrect
-        res.json({
-            message: 'report problem registed successfuly',
-            result: 1,
-            data_e,
-            data_p
-        });
     } catch (e) {
         // logger control proccess
         logger.info('Error report problem packages: ' + e);

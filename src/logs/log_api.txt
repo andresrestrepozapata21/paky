@@ -17205,3 +17205,32 @@ sql: SELECT `id_carrier`, `status_carrier`, `number_document_carrier`, `name_car
 [2024-04-25T23:17:30.787Z] info Token validated successfuly
 [2024-04-25T23:17:30.787Z] info enter the endpoint detailCarrierAndHistory
 [2024-04-25T23:17:30.797Z] info getDetailCarrier successfuly
+[2024-04-25T23:18:16.642Z] info server running on port 3000
+[2024-04-26T12:39:12.319Z] info server running on port 3000
+[2024-04-26T12:40:18.403Z] info enter the endpoint login
+[2024-04-26T12:40:18.439Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-26T12:40:24.411Z] info enter the endpoint login
+[2024-04-26T12:40:24.415Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-26T12:42:29.846Z] info Token validated successfuly
+[2024-04-26T12:42:38.062Z] info Token validated successfuly
+[2024-04-26T12:42:38.070Z] info Evidence problem load successfully
+[2024-04-26T12:42:38.071Z] info enter the endpoint report problem packages
+[2024-04-26T12:42:38.077Z] info Error report problem packages: TypeError: Cannot read properties of null (reading 'fk_id_tp_p')
+[2024-04-26T12:42:51.540Z] info Token validated successfuly
+[2024-04-26T12:42:51.545Z] info Evidence problem load successfully
+[2024-04-26T12:42:51.546Z] info enter the endpoint report problem packages
+[2024-04-26T12:42:51.572Z] info History status registed successfully
+[2024-04-26T12:42:51.573Z] info report problem registed successfuly
+[2024-04-26T12:44:58.671Z] info server running on port 3000
+[2024-04-26T12:45:02.813Z] info server running on port 3000
+[2024-04-26T12:45:08.096Z] info server running on port 3000
+[2024-04-26T12:45:10.883Z] info Token validated successfuly
+[2024-04-26T12:45:10.892Z] info Evidence problem load successfully
+[2024-04-26T12:45:10.893Z] info enter the endpoint report problem packages
+[2024-04-26T12:45:10.933Z] info Error report problem packages: ReferenceError: e is not defined
+[2024-04-26T12:45:14.866Z] info server running on port 3000
+[2024-04-26T12:45:37.161Z] info server running on port 3000
+[2024-04-26T12:45:37.736Z] info Token validated successfuly
+[2024-04-26T12:45:37.745Z] info Evidence problem load successfully
+[2024-04-26T12:45:37.745Z] info enter the endpoint report problem packages
+[2024-04-26T12:45:37.786Z] info package not found
