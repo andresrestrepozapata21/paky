@@ -4,7 +4,7 @@ import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
 import ExcelJS from 'exceljs';
-import { Sequelize, Op } from "sequelize";
+import { Sequelize, Op, where } from "sequelize";
 // import personaly models
 import { Manager } from '../models/managers.model.js';
 import { City } from '../models/cities.model.js';
@@ -1695,19 +1695,19 @@ export async function getDetailDropshipper(req, res) {
             where: {
                 id_dropshipper
             },
-            attributes: ['id_dropshipper', 'tipo_documento', 'numero_documento', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'phone_number_dropshipper', 'email_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper'],
+            attributes: ['id_dropshipper', 'tipo_documento', 'numero_documento', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'phone_number_dropshipper', 'email_dropshipper', 'password_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper'],
             include: [
                 {
                     model: Store,
                     attributes: ['id_store', 'direction_store', 'phone_number_store', 'capacity_store'],
                     include: [
                         {
-                            model: Package,
-                            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p'],
+                            model: City,
+                            attributes: ['id_city', 'name_city'],
                             include: [
                                 {
-                                    model: Evidence,
-                                    attributes: ['id_evidence', 'url_image_evidence']
+                                    model: Department,
+                                    attributes: ['id_d', 'name_d']
                                 }
                             ]
                         }
@@ -1729,14 +1729,83 @@ export async function getDetailDropshipper(req, res) {
             // logger control proccess
             logger.info('Not found getDetailDropshipper');
             // Json reponse setting non existing packages
-            res.status(401).json({
-                message: 'Not found getDetailDropshipper',
-                result: 1
+            res.status(404).json({
+                message: 'Not found getPackagesByStore',
+                result: 404
             });
         }
     } catch (e) {
         // logger control proccess
         logger.info('Error getDetailDropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method getDetailDropshipper
+export async function getPackagesByStore(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getPackagesByStore');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_store } = req.body;
+        // I validate req correct json
+        if (!id_store) return res.sendStatus(400);
+        // I find if exist package
+        const getStore = await Store.findOne({
+            where: {
+                id_store
+            },
+            attributes: ['id_store', 'direction_store', 'phone_number_store', 'capacity_store'],
+            include: [
+                {
+                    model: City,
+                    attributes: ['id_city', 'name_city'],
+                    include: [
+                        {
+                            model: Department,
+                            attributes: ['id_d', 'name_d']
+                        }
+                    ]
+                },
+                {
+                    model: Package,
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p'],
+                    include: [
+                        {
+                            model: Evidence,
+                            attributes: ['id_evidence', 'url_image_evidence']
+                        }
+                    ]
+                }
+            ]
+        });
+        // I validate exist getPackages
+        if (getStore) {
+            // logger control proccess
+            logger.info('getPackagesByStore successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getPackagesByStore successfuly',
+                result: 1,
+                data: getStore
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getPackagesByStore');
+            // Json reponse setting non existing packages
+            res.status(404).json({
+                message: 'Not found getPackagesByStore',
+                result: 404
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getPackagesByStore: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
@@ -1804,12 +1873,16 @@ export async function deleteDropshipper(req, res) {
         // I validate req correct json
         if (!id_dropshipper) return res.sendStatus(400);
         // I find if exist package
-        const deleteDropshipper = await Dropshipper.destroy({
+        const deleteDropshipper = await Dropshipper.findOne({
             where: {
                 id_dropshipper
             }
         });
         if (deleteDropshipper) {
+            deleteDropshipper.set({
+                status_dropshipper: 0
+            })
+            deleteDropshipper.save();
             // logger control proccess
             logger.info('Delete dropshipper successfuly');
             // The credentials are incorrect
@@ -1857,7 +1930,7 @@ export async function getPaymentsRequestDropshipper(req, res) {
                     include: [
                         {
                             model: Dropshipper,
-                            attributes: ['id_dropshipper', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
+                            attributes: ['id_dropshipper', 'tipo_documento', 'numero_documento', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
                         }
                     ]
                 }
@@ -1895,7 +1968,8 @@ export async function detailPaymentRequestDropshipper(req, res) {
         // I find if exist package
         const getPaymentsRequestDropshipper = await Dropshipper_payment_request.findAll({
             where: {
-                id_dpr
+                id_dpr,
+                status_dpr: 2
             },
             attributes: ['id_dpr', 'quantity_requested_dpr', 'status_dpr', 'createdAt'],
             include: [
@@ -1905,7 +1979,7 @@ export async function detailPaymentRequestDropshipper(req, res) {
                     include: [
                         {
                             model: Dropshipper,
-                            attributes: ['id_dropshipper', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper']
+                            attributes: ['id_dropshipper', 'tipo_documento', 'numero_documento', 'status_dropshipper', 'name_dropshipper', 'last_name_dropshipper', 'wallet_dropshipper', 'total_sales_dropshipper', 'phone_number_dropshipper']
                         }
                     ]
                 }
@@ -1996,6 +2070,95 @@ export async function toPayDropshipper(req, res) {
                 // The credentials are incorrect
                 res.status(401).json({
                     message: 'Quantity requested invalidated',
+                    result: 2
+                });
+            }
+        } else {
+            // logger control proccess
+            logger.info('Not found dropshipper');
+            // The credentials are incorrect
+            res.status(404).json({
+                message: 'Not found dropshipper',
+                result: 404
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error To pay dropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method to pay dropshipper
+export async function toPayRejectDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint to pay dropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dpr } = req.body;
+        // I validate req correct json
+        if (!id_dpr) return res.sendStatus(400);
+        // I find if exist package by 
+        const getPaymentsRequestDropshipper = await Dropshipper_payment_request.findOne({
+            where: {
+                id_dpr
+            },
+            attributes: ['id_dpr', 'quantity_requested_dpr', 'status_dpr', 'fk_id_dba_drp'],
+            include: [
+                {
+                    model: Dropshipper_bank_account,
+                    attributes: ['fk_id_dropshipper_dba']
+                }
+            ]
+        });
+        // I validate exist getPaymentsRequestDropshipper
+        if (getPaymentsRequestDropshipper) {
+            // Capture id dropshipper
+            const id_dropshipper = getPaymentsRequestDropshipper.dropshipper_bank_account.fk_id_dropshipper_dba;
+            const quantity_requested_dpr = getPaymentsRequestDropshipper.quantity_requested_dpr;
+            // I find dropshipper
+            const getDropshipper = await Dropshipper.findOne({
+                where: {
+                    id_dropshipper
+                },
+                attributes: ['id_dropshipper', 'wallet_dropshipper']
+            });
+            if (getDropshipper.wallet_dropshipper >= quantity_requested_dpr) {
+                // Setting and save new revenue dropshipper
+                getDropshipper.set({
+                    wallet_dropshipper: getDropshipper.wallet_dropshipper + quantity_requested_dpr
+                });
+                getDropshipper.save();
+                // Setting and save status cpr
+                // 1. payment made or Proceded 2. Pending
+                getPaymentsRequestDropshipper.set({
+                    status_dpr: 1
+                });
+                getPaymentsRequestDropshipper.save();
+                const postPortfolioDropshipper = Portfolios_history_dropshipper.create({
+                    type_phd: "RECHAZADA",
+                    monto_phd: quantity_requested_dpr,
+                    description_phd: "RECHAZADA",
+                    fk_id_dropshipper_phd : id_dropshipper
+                })
+                // logger control proccess
+                logger.info('To pay dropshipper successfuly');
+                // The credentials are incorrect
+                res.json({
+                    message: 'To pay dropshipper successfuly',
+                    result: 1
+                });
+            } else {
+                // logger control proccess
+                logger.info('Quantity requested invalidated');
+                // The credentials are incorrect
+                res.status(401).json({
+                    message: 'Quantity requested invalidated',
                     result: 0
                 });
             }
@@ -2010,7 +2173,7 @@ export async function toPayDropshipper(req, res) {
         }
     } catch (e) {
         // logger control proccess
-        logger.info('Error To pay dropshipper: ' + e);
+        logger.info('Error To pay package: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
@@ -2367,10 +2530,10 @@ export async function getHistory(req, res) {
         const { id_p } = req.body;
         // I validate req correct json
         if (!id_p) return res.sendStatus(400);
-         // I find carrier
-         const getHistory = await Status_history.findAll({
+        // I find carrier
+        const getHistory = await Status_history.findAll({
             where: {
-                fk_id_p_sh : id_p
+                fk_id_p_sh: id_p
             },
             attributes: ['id_sh', 'status_sh', 'comentary_sh', 'evidence_sh', 'fk_id_carrier_asignated_sh', 'fk_id_p_sh', 'createdAt'],
             include: [
@@ -2393,6 +2556,200 @@ export async function getHistory(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error getHistory: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get city packages
+export async function getDepartments(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getDepartments');
+    try {
+        // I find if exist package
+        const getDepartments = await Department.findAll({
+            attributes: ['id_d', 'name_d'],
+        });
+        // logger control proccess
+        logger.info('getDepartments successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'getDepartments successfuly',
+            result: 1,
+            data: getDepartments
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getDepartments: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get city packages
+export async function getCitiesByDepartment(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getCitiesByDepartment');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { fk_id_d_city } = req.body;
+        // I validate req correct json
+        if (!fk_id_d_city) return res.sendStatus(400);
+        // I find if exist package
+        const getCitiesByDepartment = await City.findAll({
+            where: {
+                fk_id_d_city
+            },
+            attributes: ['id_city', 'name_city'],
+        });
+        // logger control proccess
+        logger.info('getCitiesByDepartment successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'getCitiesByDepartment successfuly',
+            result: 1,
+            data: getCitiesByDepartment
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getCitiesByDepartment: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get Carriers
+export async function addStore(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint addStore');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { direction_store, phone_number_store, capacity_store, fk_id_city_store, fk_id_dropshipper_store } = req.body;
+        // I validate req correct json
+        if (!direction_store || !phone_number_store || !capacity_store || !fk_id_city_store || !fk_id_dropshipper_store) return res.sendStatus(400);
+        // I find if exist package
+        const newstore = await Store.create({
+            direction_store,
+            phone_number_store,
+            capacity_store,
+            fk_id_city_store,
+            fk_id_dropshipper_store
+        });
+        // logger control proccess
+        logger.info('Add store successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'Add store successfuly',
+            result: 1,
+            data: newstore
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error add Dropshippers: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method deleteCarrier
+export async function deleteStore(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint delete store');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_store } = req.body;
+        // I validate req correct json
+        if (!id_store) return res.sendStatus(400);
+        // I find if exist package
+        const deleteStore = await Store.destroy({
+            where: {
+                id_store
+            }
+        });
+        if (deleteStore) {
+            // logger control proccess
+            logger.info('Delete store successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'Delete store successfuly',
+                result: 1,
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found store');
+            // Json reponse setting non existing packages
+            res.status(401).json({
+                message: 'Not found store',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error delete store: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method edit store
+export async function editStore(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint edit store');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_store } = req.params;
+        // I validate req correct json
+        if (!id_store) return res.sendStatus(400);
+        // I find if exist package by 
+        const getstore = await Store.findOne({
+            where: {
+                id_store
+            }
+        });
+        // I validate exist info and infoStorePackage
+        if (getstore) {
+            getstore.set(req.body);
+            getstore.save()
+            // logger control proccess
+            logger.info('edit store successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'edit store successfuly',
+                result: 1,
+                getstore
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found store');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found store',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error edit store: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',

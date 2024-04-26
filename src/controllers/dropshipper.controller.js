@@ -970,30 +970,63 @@ export async function addPaymentRequest(req, res) {
         const { quantity_requested_dpr, fk_id_dba_drp } = req.body;
         // I validate req correct json
         if (!quantity_requested_dpr || !fk_id_dba_drp) return res.sendStatus(400);
-        // I find if exist package by dropshipper
-        const newPaymentRequest = await Dropshipper_payment_request.create(req.body);
-        // I generate number ramdom 
-        const min = 100000;
-        const max = 999999;
-        const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-        /* 
-            Here Code SMS or email that to send verification pin
-        */
-        // To update flag payment request verification pin request
-        // 0. rejected 1. accepted 2. pending 3. pin verification
-        newPaymentRequest.set({
-            status_dpr: 3,
-            verification_pin_request: randomNumber
-        })
-        newPaymentRequest.save();
-        // logger control proccess
-        logger.info('AddPaymentRequest dropshipper successfuly');
-        // The credentials are incorrect
-        res.json({
-            message: 'AddPaymentRequest dropshipper successfuly',
-            result: 1,
-            newPaymentRequest
+        // I call and save the result of the findAll method, which is d sequelize
+        const getDropshipper = await Dropshipper_bank_account.findAll({
+            where: {
+                id_dba: fk_id_dba_drp
+            },
+            include: [
+                {
+                    model: Dropshipper,
+                    attributes: ['id_dropshipper', 'wallet_dropshipper'],
+                }
+            ],
+            attributes: ['id_dba', 'fk_id_dropshipper_dba']
         });
+        // I validate login exist
+        if (getDropshipper.length > 0) {
+            if (getDropshipper[0].dropshipper.wallet_dropshipper >= quantity_requested_dpr && quantity_requested_dpr > 0) {
+                // I find if exist package by dropshipper
+                const newPaymentRequest = await Dropshipper_payment_request.create(req.body);
+                // I generate number ramdom 
+                const min = 100000;
+                const max = 999999;
+                const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+                /* 
+                    Here Code SMS or email that to send verification pin
+                */
+                // To update flag payment request verification pin request
+                // 0. rejected 1. accepted 2. pending 3. pin verification
+                newPaymentRequest.set({
+                    status_dpr: 3,
+                    verification_pin_request: randomNumber
+                })
+                newPaymentRequest.save();
+                // logger control proccess
+                logger.info('AddPaymentRequest dropshipper successfuly');
+                // The credentials are incorrect
+                res.json({
+                    message: 'AddPaymentRequest dropshipper successfuly',
+                    result: 1,
+                    newPaymentRequest
+                });
+            } else {
+                // logger control proccess
+                logger.info('Requesting a value greater than what it has or Requesting a value negative.');
+                // I return the status 500 and the message I want
+                res.status(200).json({
+                    message: 'Requesting a value greater than what it has or Requesting a value negative.',
+                    result: 5
+                });
+            }
+        } else {
+            // I return the status 500 and the message I want
+            res.status(404).json({
+                message: 'The dropshipper non-existing',
+                result: 404
+            });
+        }
+
     } catch (e) {
         // logger control proccess
         logger.info('Error AddPaymentRequest dropshipper: ' + e);
@@ -1006,7 +1039,7 @@ export async function addPaymentRequest(req, res) {
     }
 }
 
-// Method editPackage dropshipper
+// Method editPackage getDropshipper
 export async function validateVerificationPin(req, res) {
     // logger control proccess
     logger.info('enter the endpoint validateVerificationPin dropshipper');
@@ -1021,23 +1054,64 @@ export async function validateVerificationPin(req, res) {
             where: {
                 id_dpr
             },
-            attributes: ['id_dpr', 'status_dpr', 'verification_pin_request']
+            attributes: ['id_dpr', 'status_dpr', 'verification_pin_request', 'quantity_requested_dpr'],
+            include: [
+                {
+                    model: Dropshipper_bank_account,
+                    attributes: ['fk_id_dropshipper_dba'],
+                    include: [
+                        {
+                            model: Dropshipper,
+                            attributes: ['id_dropshipper', 'wallet_dropshipper'],
+                        }
+                    ],
+                }
+            ]
         });
         // I validate exist  infoDropshipper and infoStorePackage
         if (getPayment) {
-            if (getPayment.verification_pin_request === verification_pin_request) {
-                getPayment.set({
-                    status_dpr: 2
-                });
-                getPayment.save();
-                // logger control proccess
-                logger.info('ValidateVerificationPin Dropshipper successfuly');
-                // The credentials are incorrect
-                res.json({
-                    message: 'ValidateVerificationPin Dropshipper successfuly',
-                    result: 1,
-                    getPayment
-                });
+            let quantity_requested_dpr = getPayment.quantity_requested_dpr;
+            if (getPayment.dropshipper_bank_account.dropshipper.wallet_dropshipper >= quantity_requested_dpr && quantity_requested_dpr > 0) {
+                //I capture variables relevants
+                let newBalance = getPayment.dropshipper_bank_account.dropshipper.wallet_dropshipper - getPayment.quantity_requested_dpr;
+                let id_dropshipper = getPayment.dropshipper_bank_account.dropshipper.id_dropshipper;
+                if (getPayment.verification_pin_request === verification_pin_request) {
+                    getPayment.set({
+                        status_dpr: 2
+                    });
+                    getPayment.save();
+                    // I find carrier and update revenue carrier
+                    let updateBalance = await Dropshipper.findOne({
+                        where: {
+                            id_dropshipper
+                        }
+                    });
+                    // Valid carrier found!
+                    if (updateBalance) {
+                        // Setting new balance
+                        updateBalance.set({
+                            wallet_dropshipper: newBalance
+                        });
+                        // Save the setting revenue
+                        updateBalance.save();
+                    }
+                    // logger control proccess
+                    logger.info('ValidateVerificationPin Dropshipper successfuly');
+                    // The credentials are incorrect
+                    res.json({
+                        message: 'ValidateVerificationPin Dropshipper successfuly',
+                        result: 1,
+                        getPayment
+                    });
+                } else {
+                    // logger control proccess
+                    logger.info('Requesting a value greater than what it has or Requesting a value negative.');
+                    // I return the status 500 and the message I want
+                    res.status(200).json({
+                        message: 'Requesting a value greater than what it has or Requesting a value negative.',
+                        result: 5
+                    });
+                }
             } else {
                 // The credentials are incorrect
                 res.json({
@@ -1049,9 +1123,9 @@ export async function validateVerificationPin(req, res) {
             // logger control proccess
             logger.info('Not found payment resquest');
             // The credentials are incorrect
-            res.status(401).json({
+            res.status(404).json({
                 message: 'Not found payment resquest',
-                result: 1
+                result: 404
             });
         }
     } catch (e) {
@@ -1289,10 +1363,10 @@ export async function getPayments(req, res) {
         // I call and save the result of the findAll method, which is d sequelize
         const getPayments = await Dropshipper_payment_request.findAll({
             attributes: ['id_dpr', 'quantity_requested_dpr', 'status_dpr', 'verification_pin_request', 'createdAt'],
-            include:[
+            include: [
                 {
                     model: Dropshipper_bank_account,
-                    where:{
+                    where: {
                         fk_id_dropshipper_dba: id_dropshipper
                     }
                 }
@@ -1304,9 +1378,9 @@ export async function getPayments(req, res) {
             let statusReal;
             if (status == 1) {
                 statusReal = "PAGADA";
-            } else if(status == 2) {
+            } else if (status == 2) {
                 statusReal = "PENDIENTE";
-            } else if(status == 3){
+            } else if (status == 3) {
                 statusReal = "EN VERIFICACION DE PIN";
             }
             return {
