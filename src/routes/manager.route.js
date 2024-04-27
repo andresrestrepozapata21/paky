@@ -4,7 +4,7 @@ import multer from 'multer';
 import jwt from "jsonwebtoken";
 import logger from '../utils/logger.js';
 // I import my controller with the methods I need
-import { login, master, getCityPackages, getInterCityPackages, detailPackage, editPackage, deletePackage, getCarrierPeticions, getDetailCarrier, agreeCarrier, rejectCarrier, getCarriers, detailCarrierAndHistory, editCarrier, deleteCarrier, deleteHistory, getTypeCarrier, getTypePackage, getPaymentsRequestCarrier, detailPaymentRequestCarrier, toPayCarrier, getPortfolioCarrier, downloadExcelPortfolioCarrier, getDropshippers, addDropshipper, getDetailDropshipper, editDropshipper, deleteDropshipper, getPaymentsRequestDropshipper, detailPaymentRequestDropshipper, toPayDropshipper, getPortfolioDropshipper, downloadExcelPortfolioDropshipper, editProductPackage, getCarriersCity, getTypeDocumentsCarrier, editVehicle, getEvidenceHistory, toPayRejectCarrier, getHistory, getPackagesByStore, getDepartments, getCitiesByDepartment, addStore, deleteStore, editStore, toPayRejectDropshipper } from "../controllers/manager.controller.js";
+import { login, master, getCityPackages, getInterCityPackages, detailPackage, editPackage, deletePackage, getCarrierPeticions, getDetailCarrier, agreeCarrier, rejectCarrier, getCarriers, detailCarrierAndHistory, editCarrier, deleteCarrier, deleteHistory, getTypeCarrier, getTypePackage, getPaymentsRequestCarrier, detailPaymentRequestCarrier, toPayCarrier, getPortfolioCarrier, downloadExcelPortfolioCarrier, getDropshippers, addDropshipper, getDetailDropshipper, editDropshipper, deleteDropshipper, getPaymentsRequestDropshipper, detailPaymentRequestDropshipper, toPayDropshipper, getPortfolioDropshipper, downloadExcelPortfolioDropshipper, editProductPackage, getCarriersCity, getTypeDocumentsCarrier, editVehicle, getEvidenceHistory, toPayRejectCarrier, getHistory, getPackagesByStore, getDepartments, getCitiesByDepartment, addStore, deleteStore, editStore, toPayRejectDropshipper, getProductsByDropshipper } from "../controllers/manager.controller.js";
 // Firme private secret jwt
 const secret = process.env.SECRET;
 // I declare the constant that the Router() method returns and upload multer directory
@@ -1260,5 +1260,32 @@ router.put('/manager/editStore/:id_store', async (req, res, next) => {
         return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, editStore);
+/**
+ * @api {POST} /manager/getProductsByDropshipper
+ * @apiName paky
+ * @apiGroup getProductsByDropshipper
+ * @apiDescription manager getProductsByDropshipper
+ *
+ * @apiSuccess message and get data needed
+ */
+router.post('/manager/getProductsByDropshipper', async (req, res, next) => {
+    try {
+        //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        const token = req.headers.authorization.split(" ")[1];
+        const payload = jwt.verify(token, secret);
+        // Validate expiration token
+        if (Date.now() > payload.exp) {
+            return res.status(401).json({
+                error: "token expired",
+                result: 2
+            });
+        }
+        logger.info('Token validated successfuly');
+        next();
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
+    }
+}, getProductsByDropshipper);
 // I export the router
 export default router;

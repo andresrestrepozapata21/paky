@@ -2750,3 +2750,39 @@ export async function editStore(req, res) {
         });
     }
 }
+
+// Method get details carrier
+export async function getProductsByDropshipper(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getProductsByDropshipper');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_dropshipper } = req.body;
+        // I validate req correct json
+        if (!id_dropshipper) return res.sendStatus(400);
+        // I find carrier
+        const getProductsByDropshipper = await Product.findAll({
+            where: {
+                fk_id_dropshipper_product: id_dropshipper
+            },
+            attributes: ['id_product', 'name_product', 'description_product', 'price_sale_product', 'price_cost_product', 'size_product', 'createdAt']
+        });
+        // logger control proccess
+        logger.info('getProductsByDropshipper successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'getProductsByDropshipper successfuly',
+            result: 1,
+            data: getProductsByDropshipper
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getProductsByDropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
