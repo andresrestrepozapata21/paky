@@ -407,7 +407,7 @@ export async function master(req, res) {
             where: {
                 id_carrier
             },
-            attributes: ['id_carrier', 'name_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
+            attributes: ['id_carrier', 'name_carrier', 'email_carrier', 'revenue_carrier', 'debt_carrier', 'url_QR_carrier', 'bancolombia_number_account_carrier', 'nequi_carrier', 'daviplata_carrier'],
             include: [
                 {
                     model: Carrier_bank_account,
@@ -1871,6 +1871,28 @@ export async function getHistory(req, res) {
                 let statusText;
                 //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central 
                 switch (p.status_sh) {
+                    case 0:
+                        statusText = "CANCELADO";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.store.direction_store + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d,
+                            address_destiny: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
                     case 1:
                         statusText = "Bodega dropshipper";
                         // Convertir la fecha a una cadena ISO si es un objeto Date
@@ -1987,6 +2009,28 @@ export async function getHistory(req, res) {
                 let statusText;
                 //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central 
                 switch (p.status_sh) {
+                    case 0:
+                        statusText = "CANCELADO";
+                        // Convertir la fecha a una cadena ISO si es un objeto Date
+                        var fechaISO = p.package.createdAt instanceof Date ? p.package.createdAt.toISOString() : p.package.createdAt;
+                        // Ahora sí, formatear la cadena
+                        var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+                        // Definate response orden fine JSON
+                        return {
+                            id_sh: p.id_sh,
+                            status_sh: statusText,
+                            comentary_sh: p.comentary_sh,
+                            id_p: p.package.id_p,
+                            type_send,
+                            order_number: p.package.orden_p,
+                            date_created_p,
+                            profit_for_carrier: p.package.profit_carrier_p,
+                            total_price_p: p.package.total_price_p,
+                            with_collection_p: p.package.with_collection_p,
+                            address_origin: p.package.store.direction_store + " - " + p.package.store.city.name_city + " - " + p.package.store.city.department.name_d,
+                            address_destiny: p.package.city.central_warehouses[0].direction_cw + " - " + p.package.city.name_city + " - " + p.package.city.department.name_d
+                        };
+                        break;
                     case 1:
                         statusText = "En bodega dropshipper";
                         // Convertir la fecha a una cadena ISO si es un objeto Date

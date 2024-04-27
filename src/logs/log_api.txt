@@ -21489,3 +21489,31 @@ sql: SELECT `dropshipper_payment_requests`.`id_dpr`, `dropshipper_payment_reques
 [2024-04-26T23:14:45.450Z] info Token validated successfuly
 [2024-04-26T23:14:45.450Z] info enter the endpoint addPaymentRequest dropshipper
 [2024-04-26T23:14:45.452Z] info Requesting a value greater than what it has or Requesting a value negative.
+[2024-04-27T13:00:04.841Z] info server running on port 3000
+[2024-04-27T13:01:04.904Z] info enter the endpoint login
+[2024-04-27T13:01:04.986Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-27T13:01:37.656Z] info Token validated successfuly
+[2024-04-27T13:01:37.657Z] info enter the endpoint master
+[2024-04-27T13:01:37.726Z] info Master successfuly
+[2024-04-27T13:02:20.000Z] info server running on port 3000
+[2024-04-27T13:02:21.105Z] info Token validated successfuly
+[2024-04-27T13:02:21.106Z] info enter the endpoint master
+[2024-04-27T13:02:21.149Z] info Master successfuly
+[2024-04-27T13:02:53.083Z] info Token validated successfuly
+[2024-04-27T13:02:53.084Z] info enter the endpoint carrier history
+[2024-04-27T13:02:53.096Z] info Get carrier history successfuly
+[2024-04-27T13:02:59.378Z] info Token validated successfuly
+[2024-04-27T13:02:59.379Z] info enter the endpoint carrier history
+[2024-04-27T13:02:59.390Z] info Get carrier history successfuly
+[2024-04-27T13:03:10.151Z] info Token validated successfuly
+[2024-04-27T13:03:10.151Z] info enter the endpoint carrier history
+[2024-04-27T13:03:10.156Z] info Get carrier history successfuly
+[2024-04-27T13:03:13.386Z] info Token validated successfuly
+[2024-04-27T13:03:13.387Z] info enter the endpoint carrier history
+[2024-04-27T13:03:13.396Z] info Get carrier history successfuly
+[2024-04-27T13:04:59.954Z] info server running on port 3000
+[2024-04-27T13:05:12.458Z] info server running on port 3000
+[2024-04-27T13:05:16.906Z] info Token validated successfuly
+[2024-04-27T13:05:16.906Z] info enter the endpoint carrier history
+[2024-04-27T13:05:16.952Z] info Get carrier history successfuly
+[2024-04-27T13:05:26.157Z] info server running on port 3000
