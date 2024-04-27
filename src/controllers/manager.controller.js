@@ -2144,7 +2144,7 @@ export async function toPayRejectDropshipper(req, res) {
                     type_phd: "RECHAZADA",
                     monto_phd: quantity_requested_dpr,
                     description_phd: "RECHAZADA",
-                    fk_id_dropshipper_phd : id_dropshipper
+                    fk_id_dropshipper_phd: id_dropshipper
                 })
                 // logger control proccess
                 logger.info('To pay dropshipper successfuly');
@@ -2778,6 +2778,93 @@ export async function getProductsByDropshipper(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error getProductsByDropshipper: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get addPackage
+export async function addPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint add addPackage');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { orden_p, guide_number_p, with_collection_p, profit_carrier_p, profit_carrier_inter_city_p, profit_dropshipper_p, total_price_p, name_client_p, phone_number_client_p, direction_client_p, email_client_p, comments_p, fk_id_store_p, fk_id_destiny_city_p, fk_id_tp_p } = req.body;
+        // I validate req correct json
+        if (!orden_p || !guide_number_p || !with_collection_p || !profit_carrier_p || !profit_carrier_inter_city_p || !profit_dropshipper_p || !total_price_p || !name_client_p || !phone_number_client_p || !direction_client_p || !email_client_p || !comments_p || !fk_id_store_p || !fk_id_destiny_city_p || !fk_id_tp_p) return res.sendStatus(400);
+        // I find if exist package
+        const newPackage = await Package.create({
+            orden_p,
+            guide_number_p,
+            with_collection_p,
+            profit_carrier_p,
+            profit_carrier_inter_city_p,
+            profit_dropshipper_p,
+            total_price_p, name_client_p,
+            phone_number_client_p,
+            direction_client_p,
+            email_client_p,
+            comments_p,
+            fk_id_store_p,
+            fk_id_destiny_city_p,
+            fk_id_tp_p,
+            status_p: 1,
+            confirmation_carrier_p: 0,
+            confirmation_dropshipper_p: 0
+        });
+        // logger control proccess
+        logger.info('Add addPackage successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'Add addPackage successfuly',
+            result: 1,
+            data: newPackage
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error add addPackage: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get addPackage
+export async function addProductToPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint addProductToPackage');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { products, fk_id_p_pp } = req.body;
+        // I validate req correct json
+        if (!products || !fk_id_p_pp) return res.sendStatus(400);
+
+        // Run files array and update in database
+        products.forEach(async item => {
+            // I find if exist package
+            const addProductToPackage = await PackageProduct.create({
+                cuantity_pp: item.cuantity_pp,
+                fk_id_p_pp,
+                fk_id_product_pp: item.id_producto
+            });
+        });
+        // logger control proccess
+        logger.info('addProductToPackage successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'addProductToPackage successfuly',
+            result: 1
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error addProductToPackage: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
