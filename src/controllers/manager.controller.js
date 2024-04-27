@@ -1428,7 +1428,7 @@ export async function toPayRejectCarrier(req, res) {
                 // Setting and save status cpr
                 // 1. payment made or Proceded 2. Pending
                 getPaymentsRequestCarrier.set({
-                    status_cpr: 1
+                    status_cpr: 0
                 });
                 getPaymentsRequestCarrier.save();
                 const postPortfolioCarrier = Portfolio_history_carrier.create({
@@ -2137,7 +2137,7 @@ export async function toPayRejectDropshipper(req, res) {
                 // Setting and save status cpr
                 // 1. payment made or Proceded 2. Pending
                 getPaymentsRequestDropshipper.set({
-                    status_dpr: 1
+                    status_dpr: 0
                 });
                 getPaymentsRequestDropshipper.save();
                 const postPortfolioDropshipper = Portfolios_history_dropshipper.create({
@@ -2159,16 +2159,16 @@ export async function toPayRejectDropshipper(req, res) {
                 // The credentials are incorrect
                 res.status(401).json({
                     message: 'Quantity requested invalidated',
-                    result: 0
+                    result: 5
                 });
             }
         } else {
             // logger control proccess
             logger.info('Not found dropshipper');
             // The credentials are incorrect
-            res.status(401).json({
+            res.status(404).json({
                 message: 'Not found dropshipper',
-                result: 1
+                result: 404
             });
         }
     } catch (e) {
@@ -2188,15 +2188,8 @@ export async function getPortfolioDropshipper(req, res) {
     // logger control proccess
     logger.info('enter the endpoint getPortfolio dropshipper');
     try {
-        // capture the id that comes in the parameters of the req
-        const { id_dropshipper } = req.body;
-        // I validate req correct json
-        if (!id_dropshipper) return res.sendStatus(400);
         // I find if exist package by dropshipper
         const getPortfolio = await Portfolios_history_dropshipper.findAll({
-            where: {
-                fk_id_dropshipper_phd: id_dropshipper
-            },
             include: [
                 {
                     model: Dropshipper,
@@ -2230,13 +2223,12 @@ export async function downloadExcelPortfolioDropshipper(req, res) {
     logger.info('enter the endpoint downloadExcelPortfolio dropshipper');
     try {
         // capture the id that comes in the parameters of the req
-        const { id_dropshipper, startDate, endDate } = req.body;
+        const { startDate, endDate } = req.body;
         // I validate req correct json
-        if (!id_dropshipper) return res.sendStatus(400);
+        if (!startDate && !endDate) return res.sendStatus(400);
         // I find if exist package by dropshipper
         const infoPortfolio = await Portfolios_history_dropshipper.findAll({
             where: {
-                fk_id_dropshipper_phd: id_dropshipper,
                 createdAt: {
                     [Op.between]: [startDate, endDate]
                 }

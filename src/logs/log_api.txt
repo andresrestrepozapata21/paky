@@ -21517,3 +21517,469 @@ sql: SELECT `dropshipper_payment_requests`.`id_dpr`, `dropshipper_payment_reques
 [2024-04-27T13:05:16.906Z] info enter the endpoint carrier history
 [2024-04-27T13:05:16.952Z] info Get carrier history successfuly
 [2024-04-27T13:05:26.157Z] info server running on port 3000
+[2024-04-27T13:17:37.872Z] info server running on port 3000
+[2024-04-27T13:21:36.568Z] info enter the endpoint login dropshipper
+[2024-04-27T13:21:36.603Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-27T13:21:36.906Z] info Token validated successfuly
+[2024-04-27T13:21:36.907Z] info enter the endpoint master dropshipper
+[2024-04-27T13:21:36.917Z] info Master Dropshipper successfuly
+[2024-04-27T13:21:39.268Z] info Token validated successfuly
+[2024-04-27T13:21:39.268Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:21:39.272Z] info Token validated successfuly
+[2024-04-27T13:21:39.272Z] info Enter the endpoint get payments
+[2024-04-27T13:21:39.276Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:21:39.280Z] info Get payments request successfuly
+[2024-04-27T13:21:43.039Z] info Token validated successfuly
+[2024-04-27T13:21:43.040Z] info enter the endpoint addPaymentRequest dropshipper
+[2024-04-27T13:21:43.042Z] info Requesting a value greater than what it has or Requesting a value negative.
+[2024-04-27T13:22:13.807Z] info Token validated successfuly
+[2024-04-27T13:22:13.808Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:22:13.810Z] info Token validated successfuly
+[2024-04-27T13:22:13.810Z] info Enter the endpoint get payments
+[2024-04-27T13:22:13.815Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:22:13.817Z] info Get payments request successfuly
+[2024-04-27T13:22:15.938Z] info Token validated successfuly
+[2024-04-27T13:22:15.939Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:22:15.941Z] info Token validated successfuly
+[2024-04-27T13:22:15.941Z] info Enter the endpoint get payments
+[2024-04-27T13:22:15.943Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:22:15.945Z] info Get payments request successfuly
+[2024-04-27T13:22:19.359Z] info Token validated successfuly
+[2024-04-27T13:22:19.359Z] info enter the endpoint addPaymentRequest dropshipper
+[2024-04-27T13:22:19.361Z] info Requesting a value greater than what it has or Requesting a value negative.
+[2024-04-27T13:22:19.418Z] info Token validated successfuly
+[2024-04-27T13:22:19.418Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:22:19.421Z] info Token validated successfuly
+[2024-04-27T13:22:19.421Z] info Enter the endpoint get payments
+[2024-04-27T13:22:19.423Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:22:19.426Z] info Get payments request successfuly
+[2024-04-27T13:23:58.337Z] info Token validated successfuly
+[2024-04-27T13:23:58.338Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T13:23:58.343Z] info getPortfolio Dropshipper successfuly
+[2024-04-27T13:24:05.862Z] info enter the endpoint login dropshipper
+[2024-04-27T13:24:05.864Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-27T13:24:05.933Z] info Token validated successfuly
+[2024-04-27T13:24:05.933Z] info enter the endpoint master dropshipper
+[2024-04-27T13:24:05.938Z] info Master Dropshipper successfuly
+[2024-04-27T13:24:08.152Z] info Token validated successfuly
+[2024-04-27T13:24:08.152Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:24:08.154Z] info Token validated successfuly
+[2024-04-27T13:24:08.155Z] info Enter the endpoint get payments
+[2024-04-27T13:24:08.157Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:24:08.158Z] info Get payments request successfuly
+[2024-04-27T13:24:11.566Z] info Token validated successfuly
+[2024-04-27T13:24:11.566Z] info enter the endpoint addPaymentRequest dropshipper
+[2024-04-27T13:24:11.569Z] info Requesting a value greater than what it has or Requesting a value negative.
+[2024-04-27T13:24:11.625Z] info Token validated successfuly
+[2024-04-27T13:24:11.625Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:24:11.628Z] info Token validated successfuly
+[2024-04-27T13:24:11.628Z] info Enter the endpoint get payments
+[2024-04-27T13:24:11.630Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:24:11.632Z] info Get payments request successfuly
+[2024-04-27T13:24:44.501Z] info enter the endpoint login dropshipper
+[2024-04-27T13:24:44.505Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-27T13:24:44.593Z] info Token validated successfuly
+[2024-04-27T13:24:44.593Z] info enter the endpoint master dropshipper
+[2024-04-27T13:24:44.597Z] info Master Dropshipper successfuly
+[2024-04-27T13:24:46.955Z] info Token validated successfuly
+[2024-04-27T13:24:46.956Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:24:46.957Z] info Token validated successfuly
+[2024-04-27T13:24:46.958Z] info Enter the endpoint get payments
+[2024-04-27T13:24:46.960Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:24:46.961Z] info Get payments request successfuly
+[2024-04-27T13:25:09.543Z] info Token validated successfuly
+[2024-04-27T13:25:09.544Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T13:25:09.551Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T13:25:11.763Z] info Token validated successfuly
+[2024-04-27T13:25:11.763Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:25:11.765Z] info Token validated successfuly
+[2024-04-27T13:25:11.766Z] info Enter the endpoint get payments
+[2024-04-27T13:25:11.767Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:25:11.769Z] info Get payments request successfuly
+[2024-04-27T13:25:47.334Z] info enter the endpoint login manager
+[2024-04-27T13:25:47.338Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-27T13:25:47.441Z] info Token validated successfuly
+[2024-04-27T13:25:47.441Z] info enter the endpoint master manager
+[2024-04-27T13:25:47.475Z] info Master manager successfuly
+[2024-04-27T13:25:49.722Z] info Token validated successfuly
+[2024-04-27T13:25:49.722Z] info enter the endpoint getPortfolio carrier
+[2024-04-27T13:25:49.725Z] info getPortfolio carrier successfuly
+[2024-04-27T13:25:50.105Z] info Token validated successfuly
+[2024-04-27T13:25:50.105Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-27T13:25:50.111Z] info getPaymentsRequestCarrier successfuly
+[2024-04-27T13:25:53.206Z] info Token validated successfuly
+[2024-04-27T13:25:53.207Z] info enter the endpoint getPaymentsRequestCarrier
+[2024-04-27T13:25:53.214Z] info getPaymentsRequestCarrier successfuly
+[2024-04-27T13:25:55.654Z] info Token validated successfuly
+[2024-04-27T13:25:55.654Z] info enter the endpoint get Dropshippers
+[2024-04-27T13:25:55.656Z] info Get dropshippers successfuly
+[2024-04-27T13:25:56.033Z] info Token validated successfuly
+[2024-04-27T13:25:56.033Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:25:56.036Z] info Dropshipper_payment_request successfuly
+[2024-04-27T13:25:57.126Z] info Token validated successfuly
+[2024-04-27T13:25:57.126Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:25:57.129Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-27T13:26:28.395Z] info Token validated successfuly
+[2024-04-27T13:26:28.396Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:26:28.402Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-27T13:26:45.691Z] info Token validated successfuly
+[2024-04-27T13:26:45.692Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:26:45.697Z] info Dropshipper_payment_request successfuly
+[2024-04-27T13:26:47.745Z] info Token validated successfuly
+[2024-04-27T13:26:47.745Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:26:47.749Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-27T13:27:17.611Z] info server running on port 3000
+[2024-04-27T13:27:33.269Z] info server running on port 3000
+[2024-04-27T13:27:45.264Z] info Token validated successfuly
+[2024-04-27T13:27:45.265Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:27:45.303Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-27T13:27:48.866Z] info Token validated successfuly
+[2024-04-27T13:27:48.867Z] info enter the endpoint to pay dropshipper
+[2024-04-27T13:27:48.872Z] info To pay dropshipper successfuly
+[2024-04-27T13:27:48.967Z] info Token validated successfuly
+[2024-04-27T13:27:48.968Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:27:48.972Z] info Dropshipper_payment_request successfuly
+[2024-04-27T13:28:17.447Z] info server running on port 3000
+[2024-04-27T13:28:20.818Z] info Token validated successfuly
+[2024-04-27T13:28:20.819Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:28:20.868Z] info Dropshipper_payment_request successfuly
+[2024-04-27T13:28:22.040Z] info Token validated successfuly
+[2024-04-27T13:28:22.040Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:28:22.044Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-27T13:28:23.544Z] info Token validated successfuly
+[2024-04-27T13:28:23.544Z] info enter the endpoint to pay dropshipper
+[2024-04-27T13:28:23.550Z] info To pay dropshipper successfuly
+[2024-04-27T13:28:23.631Z] info Token validated successfuly
+[2024-04-27T13:28:23.631Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:28:23.637Z] info Dropshipper_payment_request successfuly
+[2024-04-27T13:28:39.611Z] info server running on port 3000
+[2024-04-27T13:28:56.438Z] info Token validated successfuly
+[2024-04-27T13:28:56.439Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:28:56.482Z] info Dropshipper_payment_request successfuly
+[2024-04-27T13:29:01.360Z] info Token validated successfuly
+[2024-04-27T13:29:01.360Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:29:01.365Z] info getPaymentsRequestDropshipper successfuly
+[2024-04-27T13:29:02.444Z] info Token validated successfuly
+[2024-04-27T13:29:02.444Z] info enter the endpoint getPaymentsRequestDropshipper
+[2024-04-27T13:29:02.450Z] info Dropshipper_payment_request successfuly
+[2024-04-27T13:35:40.760Z] info Token validated successfuly
+[2024-04-27T13:35:40.760Z] info enter the endpoint getPortfolio carrier
+[2024-04-27T13:35:40.766Z] info getPortfolio carrier successfuly
+[2024-04-27T13:39:21.365Z] info Token validated successfuly
+[2024-04-27T13:39:21.365Z] info enter the endpoint getPortfolio carrier
+[2024-04-27T13:39:21.371Z] info getPortfolio carrier successfuly
+[2024-04-27T13:39:22.331Z] info Token validated successfuly
+[2024-04-27T13:39:22.332Z] info enter the endpoint getPortfolio carrier
+[2024-04-27T13:39:22.335Z] info getPortfolio carrier successfuly
+[2024-04-27T13:39:29.639Z] info Token validated successfuly
+[2024-04-27T13:39:29.639Z] info enter the endpoint getPortfolio carrier
+[2024-04-27T13:39:29.642Z] info getPortfolio carrier successfuly
+[2024-04-27T13:39:42.943Z] info Token validated successfuly
+[2024-04-27T13:39:42.943Z] info enter the endpoint getPortfolio carrier
+[2024-04-27T13:39:42.948Z] info getPortfolio carrier successfuly
+[2024-04-27T13:39:46.622Z] info Token validated successfuly
+[2024-04-27T13:39:46.623Z] info enter the endpoint getPortfolio carrier
+[2024-04-27T13:39:46.626Z] info getPortfolio carrier successfuly
+[2024-04-27T13:41:03.310Z] info Token validated successfuly
+[2024-04-27T13:41:03.310Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T13:41:03.315Z] info getPortfolio dropshipper successfuly
+[2024-04-27T13:42:06.969Z] info server running on port 3000
+[2024-04-27T13:42:19.922Z] info server running on port 3000
+[2024-04-27T13:42:21.455Z] info Token validated successfuly
+[2024-04-27T13:42:21.456Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T13:42:21.497Z] info getPortfolio dropshipper successfuly
+[2024-04-27T13:42:27.135Z] info Token validated successfuly
+[2024-04-27T13:42:27.135Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T13:42:27.139Z] info getPortfolio dropshipper successfuly
+[2024-04-27T13:43:10.262Z] info Token validated successfuly
+[2024-04-27T13:43:10.262Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T13:43:10.269Z] info getPortfolio dropshipper successfuly
+[2024-04-27T13:44:12.573Z] info Token validated successfuly
+[2024-04-27T13:44:12.573Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T13:44:12.580Z] info getPortfolio dropshipper successfuly
+[2024-04-27T13:44:21.106Z] info Token validated successfuly
+[2024-04-27T13:44:21.107Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T13:44:21.110Z] info getPortfolio dropshipper successfuly
+[2024-04-27T13:44:44.849Z] info server running on port 3000
+[2024-04-27T13:45:01.970Z] info server running on port 3000
+[2024-04-27T13:45:05.806Z] info Token validated successfuly
+[2024-04-27T13:45:05.806Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-27T13:45:05.891Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-27T13:45:17.793Z] info Token validated successfuly
+[2024-04-27T13:45:17.793Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T13:45:17.800Z] info getPortfolio dropshipper successfuly
+[2024-04-27T13:45:21.750Z] info Token validated successfuly
+[2024-04-27T13:45:21.750Z] info enter the endpoint downloadExcelPortfolio dropshipper
+[2024-04-27T13:45:21.775Z] info downloadExcelPortfolio Dropshipper successfuly
+[2024-04-27T13:53:24.284Z] info enter the endpoint login dropshipper
+[2024-04-27T13:53:24.291Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-27T13:53:24.393Z] info Token validated successfuly
+[2024-04-27T13:53:24.393Z] info enter the endpoint master dropshipper
+[2024-04-27T13:53:24.401Z] info Master Dropshipper successfuly
+[2024-04-27T13:53:27.305Z] info Token validated successfuly
+[2024-04-27T13:53:27.306Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:53:27.308Z] info Token validated successfuly
+[2024-04-27T13:53:27.309Z] info Enter the endpoint get payments
+[2024-04-27T13:53:27.312Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:53:27.314Z] info Get payments request successfuly
+[2024-04-27T13:54:20.504Z] info Token validated successfuly
+[2024-04-27T13:54:20.505Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T13:54:20.509Z] info getPortfolio Dropshipper successfuly
+[2024-04-27T13:54:44.138Z] info Token validated successfuly
+[2024-04-27T13:54:44.139Z] info enter the endpoint master dropshipper
+[2024-04-27T13:54:44.147Z] info Master Dropshipper successfuly
+[2024-04-27T13:54:45.256Z] info Token validated successfuly
+[2024-04-27T13:54:45.256Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:54:45.258Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:54:47.451Z] info Token validated successfuly
+[2024-04-27T13:54:47.451Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:54:47.453Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:54:47.456Z] info Token validated successfuly
+[2024-04-27T13:54:47.456Z] info Enter the endpoint get payments
+[2024-04-27T13:54:47.459Z] info Get payments request successfuly
+[2024-04-27T13:55:46.977Z] info Token validated successfuly
+[2024-04-27T13:55:46.978Z] info Enter the endpoint get payments
+[2024-04-27T13:55:46.982Z] info Get payments request successfuly
+[2024-04-27T13:56:31.703Z] info Token validated successfuly
+[2024-04-27T13:56:31.704Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:56:31.707Z] info Token validated successfuly
+[2024-04-27T13:56:31.707Z] info Enter the endpoint get payments
+[2024-04-27T13:56:31.711Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:56:31.713Z] info Get payments request successfuly
+[2024-04-27T13:56:39.046Z] info Token validated successfuly
+[2024-04-27T13:56:39.046Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:56:39.048Z] info Token validated successfuly
+[2024-04-27T13:56:39.049Z] info Enter the endpoint get payments
+[2024-04-27T13:56:39.051Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:56:39.053Z] info Get payments request successfuly
+[2024-04-27T13:56:48.833Z] info Token validated successfuly
+[2024-04-27T13:56:48.834Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:56:48.836Z] info Token validated successfuly
+[2024-04-27T13:56:48.836Z] info Enter the endpoint get payments
+[2024-04-27T13:56:48.838Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:56:48.839Z] info Get payments request successfuly
+[2024-04-27T13:56:48.962Z] info Token validated successfuly
+[2024-04-27T13:56:48.963Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:56:48.965Z] info Token validated successfuly
+[2024-04-27T13:56:48.965Z] info Enter the endpoint get payments
+[2024-04-27T13:56:48.967Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:56:48.968Z] info Get payments request successfuly
+[2024-04-27T13:59:37.595Z] info server running on port 3000
+[2024-04-27T13:59:51.858Z] info Token validated successfuly
+[2024-04-27T13:59:51.858Z] info Enter the endpoint get payments
+[2024-04-27T13:59:51.896Z] info Get payments request successfuly
+[2024-04-27T13:59:58.313Z] info Token validated successfuly
+[2024-04-27T13:59:58.314Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T13:59:58.317Z] info Token validated successfuly
+[2024-04-27T13:59:58.318Z] info Enter the endpoint get payments
+[2024-04-27T13:59:58.320Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T13:59:58.323Z] info Get payments request successfuly
+[2024-04-27T14:00:02.019Z] info Token validated successfuly
+[2024-04-27T14:00:02.020Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:00:02.023Z] info Token validated successfuly
+[2024-04-27T14:00:02.023Z] info Enter the endpoint get payments
+[2024-04-27T14:00:02.026Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:00:02.028Z] info Get payments request successfuly
+[2024-04-27T14:00:02.955Z] info Token validated successfuly
+[2024-04-27T14:00:02.955Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:00:02.958Z] info Token validated successfuly
+[2024-04-27T14:00:02.958Z] info Enter the endpoint get payments
+[2024-04-27T14:00:02.959Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:00:02.961Z] info Get payments request successfuly
+[2024-04-27T14:00:09.309Z] info Token validated successfuly
+[2024-04-27T14:00:09.310Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:00:09.311Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:00:11.905Z] info Token validated successfuly
+[2024-04-27T14:00:11.906Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:00:11.909Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:00:11.912Z] info Token validated successfuly
+[2024-04-27T14:00:11.912Z] info Enter the endpoint get payments
+[2024-04-27T14:00:11.915Z] info Get payments request successfuly
+[2024-04-27T14:00:12.628Z] info Token validated successfuly
+[2024-04-27T14:00:12.628Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:00:12.630Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:00:13.476Z] info Token validated successfuly
+[2024-04-27T14:00:13.476Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:00:13.479Z] info Token validated successfuly
+[2024-04-27T14:00:13.479Z] info Enter the endpoint get payments
+[2024-04-27T14:00:13.482Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:00:13.483Z] info Get payments request successfuly
+[2024-04-27T14:00:37.605Z] info Token validated successfuly
+[2024-04-27T14:00:37.605Z] info enter the endpoint addPaymentRequest dropshipper
+[2024-04-27T14:00:37.616Z] info AddPaymentRequest dropshipper successfuly
+[2024-04-27T14:01:53.088Z] info Token validated successfuly
+[2024-04-27T14:01:53.089Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:01:53.097Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:02:59.421Z] info server running on port 3000
+[2024-04-27T14:03:08.013Z] info server running on port 3000
+[2024-04-27T14:03:11.524Z] info server running on port 3000
+[2024-04-27T14:03:32.616Z] info server running on port 3000
+[2024-04-27T14:03:42.560Z] info Token validated successfuly
+[2024-04-27T14:03:42.560Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:03:42.602Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:04:01.432Z] info server running on port 3000
+[2024-04-27T14:04:05.428Z] info server running on port 3000
+[2024-04-27T14:04:07.374Z] info Token validated successfuly
+[2024-04-27T14:04:07.375Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:04:07.416Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:07:30.335Z] info server running on port 3000
+[2024-04-27T14:07:34.792Z] info Token validated successfuly
+[2024-04-27T14:07:34.792Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:07:34.837Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:08:07.957Z] info server running on port 3000
+[2024-04-27T14:08:10.032Z] info Token validated successfuly
+[2024-04-27T14:08:10.033Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:08:10.079Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:08:45.486Z] info server running on port 3000
+[2024-04-27T14:08:47.039Z] info Token validated successfuly
+[2024-04-27T14:08:47.039Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:08:47.090Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:09:00.409Z] info server running on port 3000
+[2024-04-27T14:09:04.777Z] info Token validated successfuly
+[2024-04-27T14:09:04.778Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:09:04.828Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:09:08.820Z] info server running on port 3000
+[2024-04-27T14:09:09.271Z] info Token validated successfuly
+[2024-04-27T14:09:09.271Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:09:09.322Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:09:43.648Z] info server running on port 3000
+[2024-04-27T14:09:45.252Z] info server running on port 3000
+[2024-04-27T14:09:47.752Z] info Token validated successfuly
+[2024-04-27T14:09:47.753Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:09:47.793Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:10:35.374Z] info server running on port 3000
+[2024-04-27T14:10:36.876Z] info Token validated successfuly
+[2024-04-27T14:10:36.877Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:10:36.931Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:10:54.433Z] info server running on port 3000
+[2024-04-27T14:10:59.429Z] info enter the endpoint login dropshipper
+[2024-04-27T14:10:59.461Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-04-27T14:10:59.667Z] info Token validated successfuly
+[2024-04-27T14:10:59.668Z] info enter the endpoint master dropshipper
+[2024-04-27T14:10:59.683Z] info Master Dropshipper successfuly
+[2024-04-27T14:11:02.923Z] info Token validated successfuly
+[2024-04-27T14:11:02.924Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:11:02.926Z] info Token validated successfuly
+[2024-04-27T14:11:02.927Z] info Enter the endpoint get payments
+[2024-04-27T14:11:02.931Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:11:02.934Z] info Get payments request successfuly
+[2024-04-27T14:11:23.293Z] info Token validated successfuly
+[2024-04-27T14:11:23.293Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:11:23.296Z] info Token validated successfuly
+[2024-04-27T14:11:23.296Z] info Enter the endpoint get payments
+[2024-04-27T14:11:23.301Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:11:23.304Z] info Get payments request successfuly
+[2024-04-27T14:11:28.709Z] info Token validated successfuly
+[2024-04-27T14:11:28.709Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:11:28.715Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:11:34.648Z] info Token validated successfuly
+[2024-04-27T14:11:34.648Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:11:34.651Z] info Token validated successfuly
+[2024-04-27T14:11:34.651Z] info Enter the endpoint get payments
+[2024-04-27T14:11:34.653Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:11:34.654Z] info Get payments request successfuly
+[2024-04-27T14:11:36.485Z] info Token validated successfuly
+[2024-04-27T14:11:36.485Z] info enter the endpoint master dropshipper
+[2024-04-27T14:11:36.489Z] info Master Dropshipper successfuly
+[2024-04-27T14:11:38.196Z] info Token validated successfuly
+[2024-04-27T14:11:38.197Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:11:38.199Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:11:38.784Z] info Token validated successfuly
+[2024-04-27T14:11:38.785Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:11:38.787Z] info Token validated successfuly
+[2024-04-27T14:11:38.788Z] info Enter the endpoint get payments
+[2024-04-27T14:11:38.789Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:11:38.792Z] info Get payments request successfuly
+[2024-04-27T14:12:29.228Z] info Token validated successfuly
+[2024-04-27T14:12:29.228Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:12:29.230Z] info Token validated successfuly
+[2024-04-27T14:12:29.230Z] info Enter the endpoint get payments
+[2024-04-27T14:12:29.235Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:12:29.237Z] info Get payments request successfuly
+[2024-04-27T14:12:30.674Z] info Token validated successfuly
+[2024-04-27T14:12:30.674Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:12:30.677Z] info Token validated successfuly
+[2024-04-27T14:12:30.677Z] info Enter the endpoint get payments
+[2024-04-27T14:12:30.679Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:12:30.681Z] info Get payments request successfuly
+[2024-04-27T14:12:32.266Z] info Token validated successfuly
+[2024-04-27T14:12:32.266Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:12:32.269Z] info Token validated successfuly
+[2024-04-27T14:12:32.269Z] info Enter the endpoint get payments
+[2024-04-27T14:12:32.271Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:12:32.273Z] info Get payments request successfuly
+[2024-04-27T14:12:39.582Z] info Token validated successfuly
+[2024-04-27T14:12:39.582Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:12:39.584Z] info Token validated successfuly
+[2024-04-27T14:12:39.584Z] info Enter the endpoint get payments
+[2024-04-27T14:12:39.586Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:12:39.589Z] info Get payments request successfuly
+[2024-04-27T14:12:52.108Z] info Token validated successfuly
+[2024-04-27T14:12:52.108Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:12:52.115Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:12:56.518Z] info Token validated successfuly
+[2024-04-27T14:12:56.518Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:12:56.521Z] info Token validated successfuly
+[2024-04-27T14:12:56.521Z] info Enter the endpoint get payments
+[2024-04-27T14:12:56.523Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:12:56.525Z] info Get payments request successfuly
+[2024-04-27T14:12:58.464Z] info Token validated successfuly
+[2024-04-27T14:12:58.464Z] info enter the endpoint getpackages dropshipper
+[2024-04-27T14:12:58.471Z] info Getpackages Dropshipper successfuly
+[2024-04-27T14:12:59.165Z] info Token validated successfuly
+[2024-04-27T14:12:59.166Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:12:59.167Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:12:59.943Z] info Token validated successfuly
+[2024-04-27T14:12:59.943Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:12:59.945Z] info Token validated successfuly
+[2024-04-27T14:12:59.945Z] info Enter the endpoint get payments
+[2024-04-27T14:12:59.947Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:12:59.949Z] info Get payments request successfuly
+[2024-04-27T14:13:00.340Z] info Token validated successfuly
+[2024-04-27T14:13:00.340Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T14:13:00.344Z] info getPortfolio Dropshipper successfuly
+[2024-04-27T14:13:03.041Z] info Token validated successfuly
+[2024-04-27T14:13:03.042Z] info enter the endpoint master dropshipper
+[2024-04-27T14:13:03.046Z] info Master Dropshipper successfuly
+[2024-04-27T14:13:07.620Z] info Token validated successfuly
+[2024-04-27T14:13:07.620Z] info enter the endpoint getPortfolio dropshipper
+[2024-04-27T14:13:07.623Z] info getPortfolio Dropshipper successfuly
+[2024-04-27T14:13:07.992Z] info Token validated successfuly
+[2024-04-27T14:13:07.992Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:13:07.995Z] info Token validated successfuly
+[2024-04-27T14:13:07.995Z] info Enter the endpoint get payments
+[2024-04-27T14:13:07.996Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:13:07.998Z] info Get payments request successfuly
+[2024-04-27T14:13:26.456Z] info Token validated successfuly
+[2024-04-27T14:13:26.456Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:13:26.458Z] info Token validated successfuly
+[2024-04-27T14:13:26.459Z] info Enter the endpoint get payments
+[2024-04-27T14:13:26.463Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:13:26.465Z] info Get payments request successfuly
+[2024-04-27T14:13:33.301Z] info Token validated successfuly
+[2024-04-27T14:13:33.301Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:13:33.305Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:15:43.935Z] info Token validated successfuly
+[2024-04-27T14:15:43.936Z] info enter the endpoint master dropshipper
+[2024-04-27T14:15:43.943Z] info Master Dropshipper successfuly
+[2024-04-27T14:15:46.289Z] info Token validated successfuly
+[2024-04-27T14:15:46.289Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:15:46.291Z] info Token validated successfuly
+[2024-04-27T14:15:46.291Z] info Enter the endpoint get payments
+[2024-04-27T14:15:46.293Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:15:46.294Z] info Get payments request successfuly
+[2024-04-27T14:15:51.798Z] info Token validated successfuly
+[2024-04-27T14:15:51.798Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:15:51.800Z] info Token validated successfuly
+[2024-04-27T14:15:51.800Z] info Enter the endpoint get payments
+[2024-04-27T14:15:51.802Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:15:51.803Z] info Get payments request successfuly
+[2024-04-27T14:15:58.068Z] info Token validated successfuly
+[2024-04-27T14:15:58.068Z] info enter the endpoint validateVerificationPin dropshipper
+[2024-04-27T14:15:58.072Z] info ValidateVerificationPin Dropshipper successfuly
+[2024-04-27T14:16:00.981Z] info Token validated successfuly
+[2024-04-27T14:16:00.981Z] info enter the endpoint getBankAccount dropshipper
+[2024-04-27T14:16:00.985Z] info Token validated successfuly
+[2024-04-27T14:16:00.985Z] info Enter the endpoint get payments
+[2024-04-27T14:16:00.987Z] info getBankAccount Dropshipper successfuly
+[2024-04-27T14:16:00.988Z] info Get payments request successfuly

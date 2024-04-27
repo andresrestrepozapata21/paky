@@ -1101,7 +1101,7 @@ export async function validateVerificationPin(req, res) {
                     res.json({
                         message: 'ValidateVerificationPin Dropshipper successfuly',
                         result: 1,
-                        getPayment
+                        newWallet: updateBalance.wallet_dropshipper
                     });
                 } else {
                     // logger control proccess
@@ -1382,6 +1382,8 @@ export async function getPayments(req, res) {
                 statusReal = "PENDIENTE";
             } else if (status == 3) {
                 statusReal = "EN VERIFICACION DE PIN";
+            } else if(status == 0){
+                statusReal = "RECHAZADA";
             }
             return {
                 id_dpr: p.id_dpr,

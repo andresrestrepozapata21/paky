@@ -917,7 +917,7 @@ router.post('/manager/toPayRejectDropshipper', async (req, res, next) => {
  *
  * @apiSuccess message and get data needed
  */
-router.post('/manager/getPortfolioDropshipper', async (req, res, next) => {
+router.get('/manager/getPortfolioDropshipper', async (req, res, next) => {
     try {
         //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
         const token = req.headers.authorization.split(" ")[1];
