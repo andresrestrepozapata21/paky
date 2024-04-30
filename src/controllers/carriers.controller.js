@@ -827,6 +827,7 @@ export async function asignatedPackages(req, res) {
         "orden_p",
         "guide_number_p",
         "profit_carrier_p",
+        "profit_carrier_inter_city_p",
         "status_p",
         "direction_client_p",
         "createdAt",
@@ -966,7 +967,7 @@ export async function asignatedPackages(req, res) {
               status_p: statusText,
               order_number: p.orden_p,
               date_created_p,
-              profit_for_carrier: p.profit_carrier_p,
+              profit_for_carrier: p.profit_carrier_inter_city_p,
               total_price_p: p.total_price_p,
               with_collection_p: p.with_collection_p,
               address_origin:
@@ -1221,6 +1222,7 @@ export async function onTheWayPackages(req, res) {
         "orden_p",
         "guide_number_p",
         "profit_carrier_p",
+        "profit_carrier_inter_city_p",
         "status_p",
         "direction_client_p",
         "createdAt",
@@ -1360,7 +1362,7 @@ export async function onTheWayPackages(req, res) {
               status_p: statusText,
               order_number: p.orden_p,
               date_created_p,
-              profit_for_carrier: p.profit_carrier_p,
+              profit_for_carrier: p.profit_carrier_inter_city_p,
               total_price_p: p.total_price_p,
               with_collection_p: p.with_collection_p,
               address_origin:
