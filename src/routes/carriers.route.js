@@ -7,7 +7,7 @@ import multerUpload from "../middlewares/multer_carrier_documents.js";
 import multerUploadVehicle from "../middlewares/multer_vehicle_documents.js";
 import multerUploadEvidence from "../middlewares/multer_evidence_packages.js";
 // I import my controller with the methods I need
-import { asignatedPackages, confirmatePackage, deliverPackage, detailPackage, getHistory, loadDocumentsCarrier, loadDocumentsVehicle, login, master, onTheWayPackages, putAccounts, register, registerBankAccountCarrier, registerCarrierPaymentsRequest, registerVehicle, reportProblemPackage } from '../controllers/carriers.controller.js';
+import { asignatedPackages, confirmatePackage, deliverPackage, detailPackage, getHistory, loadDocumentsCarrier, loadDocumentsVehicle, login, master, onTheWayPackages, putAccounts, register, registerBankAccountCarrier, registerCarrierPaymentsRequest, registerVehicle, reportProblemPackage, getPassword } from '../controllers/carriers.controller.js';
 // Firme private secret jwt
 const secret = process.env.SECRET;
 // I declare the constant that the Router() method returns and upload multer directory
@@ -478,5 +478,14 @@ router.put('/carrier/accounts/:id_carrier', async (req, res, next) => {
         return res.status(401).json({ message: 'Non-existent invalid token', result: 0, data: error.message });
     }
 }, putAccounts);
+/**
+ * @api {POST} /carrier/getPassword
+ * @apiName paky
+ * @apiGroup carrier
+ * @apiDescription getPassword carrier
+ *
+ * @apiSuccess message and data getPassword
+ */
+router.post('/carrier/getPassword', getPassword);
 // I export the router
 export default router;

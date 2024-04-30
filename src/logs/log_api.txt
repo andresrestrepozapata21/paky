@@ -24756,3 +24756,27 @@ sql: INSERT INTO `package_products` (`id_pp`,`cuantity_pp`,`createdAt`,`updatedA
 [2024-04-27T21:33:26.144Z] info Token validated successfuly
 [2024-04-27T21:33:26.144Z] info enter the endpoint get city packages
 [2024-04-27T21:33:26.147Z] info GetCitypackages successfuly
+[2024-04-30T13:08:09.953Z] info server running on port 3000
+[2024-04-30T13:09:12.281Z] info enter the endpoint getPassword
+[2024-04-30T13:09:12.354Z] info Error Login: TypeError: Cannot read property 'length' of null
+[2024-04-30T13:09:44.907Z] info server running on port 3000
+[2024-04-30T13:09:45.970Z] info enter the endpoint getPassword
+[2024-04-30T13:09:46.039Z] info Error GetPassword: TypeError: Cannot read property 'length' of null
+[2024-04-30T13:10:14.807Z] info server running on port 3000
+[2024-04-30T13:10:16.646Z] info enter the endpoint getPassword
+[2024-04-30T13:10:16.709Z] info Non-existent credenciales
+[2024-04-30T13:10:57.315Z] info enter the endpoint getPassword
+[2024-04-30T13:10:57.327Z] info Email found, get password correct
+[2024-04-30T14:45:55.670Z] info server running on port 3000
+[2024-04-30T14:48:02.854Z] info server running on port 3000
+[2024-04-30T14:48:11.537Z] info enter the endpoint getPassword
+[2024-04-30T14:48:11.616Z] info Email found, get password correct
+[2024-04-30T14:49:38.987Z] info server running on port 3000
+[2024-04-30T14:50:28.263Z] info enter the endpoint getPassword
+[2024-04-30T14:50:28.323Z] info Email found, get password correct
+[2024-04-30T14:54:03.518Z] info server running on port 3000
+[2024-04-30T14:54:12.212Z] info server running on port 3000
+[2024-04-30T14:54:28.963Z] info server running on port 3000
+[2024-04-30T14:54:53.341Z] info server running on port 3000
+[2024-04-30T14:54:55.422Z] info enter the endpoint getPassword
+[2024-04-30T14:54:55.482Z] info Email found, get password correct
