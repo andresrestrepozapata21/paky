@@ -1331,17 +1331,6 @@ export async function toPayCarrier(req, res) {
                 attributes: ['id_carrier', 'revenue_carrier']
             });
             if (getCarrier.revenue_carrier >= quantity_requested_cpr) {
-                // Setting and save new revenue carrier
-                getCarrier.set({
-                    revenue_carrier: getCarrier.revenue_carrier - quantity_requested_cpr
-                });
-                getCarrier.save();
-                // Setting and save status cpr
-                // 1. payment made 2. Pending
-                getPaymentsRequestCarrier.set({
-                    status_cpr: 1
-                });
-                getPaymentsRequestCarrier.save();
                 const postPortfolioCarrier = Portfolio_history_carrier.create({
                     type_phc: "SALIDA",
                     Quantity_pay_phc: quantity_requested_cpr,
