@@ -1792,7 +1792,7 @@ export async function detailPackage(req, res) {
               status_p: statusText,
               order_number: p.orden_p,
               date_created_p,
-              profit_for_carrier: p.profit_carrier_p,
+              profit_for_carrier: p.profit_carrier_inter_city_p,
               total_price_p: p.total_price_p,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
