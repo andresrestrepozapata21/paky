@@ -263,6 +263,7 @@ export async function registerVehicle(req, res) {
       line_vehicle,
       model_vehicle,
       cylinder_capacity_vehicle,
+      capacity_vehicle
     } = req.body;
     let error = false;
     // I declare the create method with its respective definition of the object and my vehcile model in a variable taking into account the await
@@ -275,6 +276,7 @@ export async function registerVehicle(req, res) {
       line_vehicle,
       model_vehicle,
       cylinder_capacity_vehicle,
+      capacity_vehicle,
       url_image_vehicle: "documents_vehicle_carrier/" + req.files[0].filename,
       date_created_vehicle: formattedTime,
       fk_id_carrier_vehicle: id_carrier,

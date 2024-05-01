@@ -24780,3 +24780,331 @@ sql: INSERT INTO `package_products` (`id_pp`,`cuantity_pp`,`createdAt`,`updatedA
 [2024-04-30T14:54:53.341Z] info server running on port 3000
 [2024-04-30T14:54:55.422Z] info enter the endpoint getPassword
 [2024-04-30T14:54:55.482Z] info Email found, get password correct
+[2024-05-01T20:48:44.123Z] info server running on port 3000
+[2024-05-01T20:49:43.409Z] info enter the endpoint get departments
+[2024-05-01T20:49:43.441Z] info enter the endpoint get types Carrier
+[2024-05-01T20:49:43.446Z] info enter the endpoint get types document
+[2024-05-01T20:49:43.470Z] info Error getDepartments: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+[2024-05-01T20:49:43.479Z] info Error get typesCarrier: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+[2024-05-01T20:49:43.482Z] info Error get typeDocuments: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+[2024-05-01T20:51:33.761Z] info enter the endpoint get departments
+[2024-05-01T20:51:33.779Z] info enter the endpoint get types Carrier
+[2024-05-01T20:51:33.783Z] info enter the endpoint get types document
+[2024-05-01T20:51:34.306Z] info Get typesCarrier successfully
+[2024-05-01T20:51:34.319Z] info Get typeDocuments successfully
+[2024-05-01T20:51:34.327Z] info Get departments successfully
+[2024-05-01T20:53:35.816Z] info enter the endpoint get departments
+[2024-05-01T20:53:35.827Z] info enter the endpoint get types Carrier
+[2024-05-01T20:53:35.830Z] info enter the endpoint get types document
+[2024-05-01T20:53:35.848Z] info Get departments successfully
+[2024-05-01T20:53:35.860Z] info Get typesCarrier successfully
+[2024-05-01T20:53:35.865Z] info Get typeDocuments successfully
+[2024-05-01T20:56:45.494Z] info enter the endpoint get types Carrier
+[2024-05-01T20:56:45.500Z] info enter the endpoint get types document
+[2024-05-01T20:56:45.504Z] info enter the endpoint get departments
+[2024-05-01T20:56:45.522Z] info Get typesCarrier successfully
+[2024-05-01T20:56:45.537Z] info Get typeDocuments successfully
+[2024-05-01T20:56:45.587Z] info Get departments successfully
+[2024-05-01T20:57:37.137Z] info enter the endpoint get types Carrier
+[2024-05-01T20:57:37.141Z] info enter the endpoint get types document
+[2024-05-01T20:57:37.143Z] info enter the endpoint get departments
+[2024-05-01T20:57:37.155Z] info Get typesCarrier successfully
+[2024-05-01T20:57:37.160Z] info Get typeDocuments successfully
+[2024-05-01T20:57:37.165Z] info Get departments successfully
+[2024-05-01T20:57:39.851Z] info enter the endpoint get types Carrier
+[2024-05-01T20:57:39.854Z] info enter the endpoint get types document
+[2024-05-01T20:57:39.857Z] info Get typesCarrier successfully
+[2024-05-01T20:57:39.859Z] info Get typeDocuments successfully
+[2024-05-01T20:57:39.865Z] info enter the endpoint get departments
+[2024-05-01T20:57:39.872Z] info Get departments successfully
+[2024-05-01T20:58:02.806Z] info enter the endpoint get types Carrier
+[2024-05-01T20:58:02.810Z] info enter the endpoint get types document
+[2024-05-01T20:58:02.812Z] info enter the endpoint get departments
+[2024-05-01T20:58:02.824Z] info Get typesCarrier successfully
+[2024-05-01T20:58:02.827Z] info Get typeDocuments successfully
+[2024-05-01T20:58:02.832Z] info Get departments successfully
+[2024-05-01T20:58:40.688Z] info enter the endpoint get types Carrier
+[2024-05-01T20:58:40.691Z] info enter the endpoint get types document
+[2024-05-01T20:58:40.693Z] info enter the endpoint get departments
+[2024-05-01T20:58:40.705Z] info Get typesCarrier successfully
+[2024-05-01T20:58:40.711Z] info Get departments successfully
+[2024-05-01T20:58:40.718Z] info Get typeDocuments successfully
+[2024-05-01T20:58:42.603Z] info enter the endpoint get types Carrier
+[2024-05-01T20:58:42.611Z] info enter the endpoint get types document
+[2024-05-01T20:58:42.615Z] info Get typesCarrier successfully
+[2024-05-01T20:58:42.619Z] info enter the endpoint get departments
+[2024-05-01T20:58:42.625Z] info Get typeDocuments successfully
+[2024-05-01T20:58:42.631Z] info Get departments successfully
+[2024-05-01T20:58:52.394Z] info enter the endpoint get types Carrier
+[2024-05-01T20:58:52.397Z] info enter the endpoint get types document
+[2024-05-01T20:58:52.400Z] info enter the endpoint get departments
+[2024-05-01T20:58:52.403Z] info Get typesCarrier successfully
+[2024-05-01T20:58:52.408Z] info Get departments successfully
+[2024-05-01T20:58:52.412Z] info Get typeDocuments successfully
+[2024-05-01T20:59:10.312Z] info enter the endpoint get types Carrier
+[2024-05-01T20:59:10.316Z] info enter the endpoint get types document
+[2024-05-01T20:59:10.318Z] info enter the endpoint get departments
+[2024-05-01T20:59:10.330Z] info Get typesCarrier successfully
+[2024-05-01T20:59:10.335Z] info Get typeDocuments successfully
+[2024-05-01T20:59:10.346Z] info Get departments successfully
+[2024-05-01T20:59:17.626Z] info enter the endpoint get types Carrier
+[2024-05-01T20:59:17.628Z] info enter the endpoint get types document
+[2024-05-01T20:59:17.631Z] info Get typesCarrier successfully
+[2024-05-01T20:59:17.634Z] info Get typeDocuments successfully
+[2024-05-01T20:59:17.636Z] info enter the endpoint get departments
+[2024-05-01T20:59:17.640Z] info Get departments successfully
+[2024-05-01T20:59:30.043Z] info enter the endpoint get types Carrier
+[2024-05-01T20:59:30.046Z] info enter the endpoint get types document
+[2024-05-01T20:59:30.048Z] info enter the endpoint get departments
+[2024-05-01T20:59:30.059Z] info Get typesCarrier successfully
+[2024-05-01T20:59:30.063Z] info Get departments successfully
+[2024-05-01T20:59:30.066Z] info Get typeDocuments successfully
+[2024-05-01T20:59:58.154Z] info enter the endpoint get types Carrier
+[2024-05-01T20:59:58.157Z] info enter the endpoint get types document
+[2024-05-01T20:59:58.159Z] info enter the endpoint get departments
+[2024-05-01T20:59:58.169Z] info Get typesCarrier successfully
+[2024-05-01T20:59:58.173Z] info Get typeDocuments successfully
+[2024-05-01T20:59:58.179Z] info Get departments successfully
+[2024-05-01T21:02:02.977Z] info enter the endpoint get types Carrier
+[2024-05-01T21:02:03.000Z] info enter the endpoint get types document
+[2024-05-01T21:02:03.008Z] info enter the endpoint get departments
+[2024-05-01T21:02:03.026Z] info Get typesCarrier successfully
+[2024-05-01T21:02:03.034Z] info Get departments successfully
+[2024-05-01T21:02:03.049Z] info Get typeDocuments successfully
+[2024-05-01T21:02:08.594Z] info enter the endpoint get types Carrier
+[2024-05-01T21:02:08.597Z] info enter the endpoint get types document
+[2024-05-01T21:02:08.600Z] info enter the endpoint get departments
+[2024-05-01T21:02:08.602Z] info Get typesCarrier successfully
+[2024-05-01T21:02:08.605Z] info Get typeDocuments successfully
+[2024-05-01T21:02:08.612Z] info Get departments successfully
+[2024-05-01T21:03:17.076Z] info enter the endpoint get cities
+[2024-05-01T21:03:17.126Z] info Get cities successfully
+[2024-05-01T21:03:26.067Z] info enter the endpoint register carrier
+[2024-05-01T21:03:26.175Z] info Carrier registed successfully
+[2024-05-01T21:04:12.650Z] info enter the endpoint get types Carrier
+[2024-05-01T21:04:12.653Z] info enter the endpoint get types document
+[2024-05-01T21:04:12.655Z] info enter the endpoint get departments
+[2024-05-01T21:04:12.669Z] info Get typesCarrier successfully
+[2024-05-01T21:04:12.673Z] info Get typeDocuments successfully
+[2024-05-01T21:04:12.684Z] info Get departments successfully
+[2024-05-01T21:27:13.223Z] info enter the endpoint get types Carrier
+[2024-05-01T21:27:13.227Z] info enter the endpoint get types document
+[2024-05-01T21:27:13.229Z] info enter the endpoint get departments
+[2024-05-01T21:27:13.241Z] info Get typesCarrier successfully
+[2024-05-01T21:27:13.249Z] info Get typeDocuments successfully
+[2024-05-01T21:27:13.253Z] info Get departments successfully
+[2024-05-01T21:27:44.989Z] info enter the endpoint get types Carrier
+[2024-05-01T21:27:44.999Z] info enter the endpoint get types document
+[2024-05-01T21:27:45.002Z] info Get typesCarrier successfully
+[2024-05-01T21:27:45.006Z] info Get typeDocuments successfully
+[2024-05-01T21:27:45.010Z] info enter the endpoint get departments
+[2024-05-01T21:27:45.020Z] info Get departments successfully
+[2024-05-01T21:28:06.346Z] info enter the endpoint get types Carrier
+[2024-05-01T21:28:06.350Z] info enter the endpoint get types document
+[2024-05-01T21:28:06.353Z] info enter the endpoint get departments
+[2024-05-01T21:28:06.370Z] info Get typesCarrier successfully
+[2024-05-01T21:28:06.374Z] info Get departments successfully
+[2024-05-01T21:28:06.377Z] info Get typeDocuments successfully
+[2024-05-01T21:28:12.477Z] info enter the endpoint get types Carrier
+[2024-05-01T21:28:12.480Z] info enter the endpoint get types document
+[2024-05-01T21:28:12.483Z] info Get typesCarrier successfully
+[2024-05-01T21:28:12.486Z] info Get typeDocuments successfully
+[2024-05-01T21:28:12.488Z] info enter the endpoint get departments
+[2024-05-01T21:28:12.496Z] info Get departments successfully
+[2024-05-01T21:28:21.237Z] info enter the endpoint get types Carrier
+[2024-05-01T21:28:21.240Z] info Get typesCarrier successfully
+[2024-05-01T21:28:21.242Z] info enter the endpoint get types document
+[2024-05-01T21:28:21.244Z] info enter the endpoint get departments
+[2024-05-01T21:28:21.247Z] info Get typeDocuments successfully
+[2024-05-01T21:28:21.250Z] info Get departments successfully
+[2024-05-01T21:28:35.008Z] info enter the endpoint get types Carrier
+[2024-05-01T21:28:35.011Z] info enter the endpoint get types document
+[2024-05-01T21:28:35.014Z] info enter the endpoint get departments
+[2024-05-01T21:28:35.026Z] info Get typesCarrier successfully
+[2024-05-01T21:28:35.030Z] info Get departments successfully
+[2024-05-01T21:28:35.037Z] info Get typeDocuments successfully
+[2024-05-01T21:28:41.921Z] info enter the endpoint get types Carrier
+[2024-05-01T21:28:41.924Z] info enter the endpoint get types document
+[2024-05-01T21:28:41.928Z] info enter the endpoint get departments
+[2024-05-01T21:28:41.930Z] info Get typesCarrier successfully
+[2024-05-01T21:28:41.932Z] info Get typeDocuments successfully
+[2024-05-01T21:28:41.935Z] info Get departments successfully
+[2024-05-01T21:30:59.212Z] info enter the endpoint get types Carrier
+[2024-05-01T21:30:59.217Z] info enter the endpoint get types document
+[2024-05-01T21:30:59.221Z] info enter the endpoint get departments
+[2024-05-01T21:30:59.236Z] info Get typesCarrier successfully
+[2024-05-01T21:30:59.239Z] info Get typeDocuments successfully
+[2024-05-01T21:30:59.243Z] info Get departments successfully
+[2024-05-01T21:31:36.661Z] info enter the endpoint get types Carrier
+[2024-05-01T21:31:36.663Z] info enter the endpoint get types document
+[2024-05-01T21:31:36.666Z] info enter the endpoint get departments
+[2024-05-01T21:31:36.679Z] info Get typesCarrier successfully
+[2024-05-01T21:31:36.685Z] info Get departments successfully
+[2024-05-01T21:31:36.693Z] info Get typeDocuments successfully
+[2024-05-01T21:31:59.975Z] info enter the endpoint get types Carrier
+[2024-05-01T21:31:59.978Z] info enter the endpoint get types document
+[2024-05-01T21:31:59.980Z] info enter the endpoint get departments
+[2024-05-01T21:31:59.990Z] info Get typesCarrier successfully
+[2024-05-01T21:31:59.995Z] info Get typeDocuments successfully
+[2024-05-01T21:31:59.999Z] info Get departments successfully
+[2024-05-01T21:32:05.482Z] info enter the endpoint get types Carrier
+[2024-05-01T21:32:05.485Z] info enter the endpoint get types document
+[2024-05-01T21:32:05.490Z] info enter the endpoint get departments
+[2024-05-01T21:32:05.493Z] info Get typesCarrier successfully
+[2024-05-01T21:32:05.496Z] info Get typeDocuments successfully
+[2024-05-01T21:32:05.499Z] info Get departments successfully
+[2024-05-01T21:32:28.859Z] info enter the endpoint get types Carrier
+[2024-05-01T21:32:28.862Z] info enter the endpoint get types document
+[2024-05-01T21:32:28.864Z] info enter the endpoint get departments
+[2024-05-01T21:32:28.873Z] info Get typesCarrier successfully
+[2024-05-01T21:32:28.877Z] info Get typeDocuments successfully
+[2024-05-01T21:32:28.884Z] info Get departments successfully
+[2024-05-01T21:32:33.376Z] info enter the endpoint get types Carrier
+[2024-05-01T21:32:33.379Z] info enter the endpoint get types document
+[2024-05-01T21:32:33.381Z] info enter the endpoint get departments
+[2024-05-01T21:32:33.384Z] info Get typesCarrier successfully
+[2024-05-01T21:32:33.386Z] info Get typeDocuments successfully
+[2024-05-01T21:32:33.389Z] info Get departments successfully
+[2024-05-01T21:33:30.289Z] info enter the endpoint get types Carrier
+[2024-05-01T21:33:30.292Z] info enter the endpoint get types document
+[2024-05-01T21:33:30.294Z] info enter the endpoint get departments
+[2024-05-01T21:33:30.305Z] info Get typesCarrier successfully
+[2024-05-01T21:33:30.308Z] info Get typeDocuments successfully
+[2024-05-01T21:33:30.311Z] info Get departments successfully
+[2024-05-01T21:33:50.109Z] info enter the endpoint get types Carrier
+[2024-05-01T21:33:50.112Z] info enter the endpoint get types document
+[2024-05-01T21:33:50.113Z] info enter the endpoint get departments
+[2024-05-01T21:33:50.124Z] info Get typesCarrier successfully
+[2024-05-01T21:33:50.127Z] info Get typeDocuments successfully
+[2024-05-01T21:33:50.130Z] info Get departments successfully
+[2024-05-01T21:34:32.976Z] info enter the endpoint get types Carrier
+[2024-05-01T21:34:32.979Z] info enter the endpoint get types document
+[2024-05-01T21:34:32.982Z] info enter the endpoint get departments
+[2024-05-01T21:34:32.993Z] info Get typesCarrier successfully
+[2024-05-01T21:34:32.995Z] info Get typeDocuments successfully
+[2024-05-01T21:34:32.999Z] info Get departments successfully
+[2024-05-01T21:34:50.192Z] info enter the endpoint get types Carrier
+[2024-05-01T21:34:50.195Z] info enter the endpoint get types document
+[2024-05-01T21:34:50.197Z] info enter the endpoint get departments
+[2024-05-01T21:34:50.209Z] info Get typesCarrier successfully
+[2024-05-01T21:34:50.211Z] info Get typeDocuments successfully
+[2024-05-01T21:34:50.214Z] info Get departments successfully
+[2024-05-01T21:35:48.619Z] info enter the endpoint get types Carrier
+[2024-05-01T21:35:48.622Z] info enter the endpoint get types document
+[2024-05-01T21:35:48.624Z] info enter the endpoint get departments
+[2024-05-01T21:35:48.635Z] info Get typesCarrier successfully
+[2024-05-01T21:35:48.638Z] info Get typeDocuments successfully
+[2024-05-01T21:35:48.646Z] info Get departments successfully
+[2024-05-01T21:36:05.063Z] info enter the endpoint get types Carrier
+[2024-05-01T21:36:05.066Z] info enter the endpoint get types document
+[2024-05-01T21:36:05.069Z] info enter the endpoint get departments
+[2024-05-01T21:36:05.080Z] info Get typesCarrier successfully
+[2024-05-01T21:36:05.084Z] info Get typeDocuments successfully
+[2024-05-01T21:36:05.087Z] info Get departments successfully
+[2024-05-01T21:36:07.473Z] info enter the endpoint get types Carrier
+[2024-05-01T21:36:07.475Z] info enter the endpoint get types document
+[2024-05-01T21:36:07.477Z] info enter the endpoint get departments
+[2024-05-01T21:36:07.480Z] info Get typesCarrier successfully
+[2024-05-01T21:36:07.482Z] info Get typeDocuments successfully
+[2024-05-01T21:36:07.486Z] info Get departments successfully
+[2024-05-01T21:36:19.724Z] info enter the endpoint get types Carrier
+[2024-05-01T21:36:19.732Z] info enter the endpoint get types document
+[2024-05-01T21:36:19.736Z] info enter the endpoint get departments
+[2024-05-01T21:36:19.771Z] info Get typesCarrier successfully
+[2024-05-01T21:36:19.777Z] info Get typeDocuments successfully
+[2024-05-01T21:36:19.782Z] info Get departments successfully
+[2024-05-01T21:55:24.848Z] info Carrier documents load successfully
+[2024-05-01T21:55:24.848Z] info enter the endpoint registerDocuments carrier
+[2024-05-01T21:55:24.987Z] info Carrier documents registed successfully
+[2024-05-01T22:19:19.002Z] info enter the endpoint register carrier bank account
+[2024-05-01T22:19:19.244Z] info Carrier bank account registed successfully
+[2024-05-01T22:20:12.500Z] info enter the endpoint register carrier bank account
+[2024-05-01T22:20:12.622Z] info Carrier bank account registed successfully
+[2024-05-01T22:21:33.810Z] info enter the endpoint register carrier bank account
+[2024-05-01T22:21:33.951Z] info Carrier bank account registed successfully
+[2024-05-01T22:31:21.737Z] info vehicle photo load successfully
+[2024-05-01T22:31:21.739Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-05-01T22:31:21.920Z] info Vehicle registed and carrier asosiation successfully
+[2024-05-01T22:40:59.851Z] info vehicle documents load successfully
+[2024-05-01T22:40:59.852Z] info Enter the endpoint registerDocuments vehicle
+[2024-05-01T22:41:00.220Z] info vehicle documents registed successfully
+[2024-05-01T22:50:52.372Z] info enter the endpoint get types Carrier
+[2024-05-01T22:50:52.382Z] info enter the endpoint get types document
+[2024-05-01T22:50:52.385Z] info enter the endpoint get departments
+[2024-05-01T22:50:52.410Z] info Get typesCarrier successfully
+[2024-05-01T22:50:52.413Z] info Get typeDocuments successfully
+[2024-05-01T22:50:52.420Z] info Get departments successfully
+[2024-05-01T22:51:00.612Z] info enter the endpoint get types Carrier
+[2024-05-01T22:51:00.614Z] info enter the endpoint get types document
+[2024-05-01T22:51:00.617Z] info enter the endpoint get departments
+[2024-05-01T22:51:00.619Z] info Get typesCarrier successfully
+[2024-05-01T22:51:00.622Z] info Get typeDocuments successfully
+[2024-05-01T22:51:00.627Z] info Get departments successfully
+[2024-05-01T22:51:27.643Z] info enter the endpoint get types Carrier
+[2024-05-01T22:51:27.646Z] info enter the endpoint get types document
+[2024-05-01T22:51:27.650Z] info enter the endpoint get departments
+[2024-05-01T22:51:27.661Z] info Get typesCarrier successfully
+[2024-05-01T22:51:27.667Z] info Get typeDocuments successfully
+[2024-05-01T22:51:27.670Z] info Get departments successfully
+[2024-05-01T22:51:35.432Z] info enter the endpoint get types Carrier
+[2024-05-01T22:51:35.437Z] info enter the endpoint get types document
+[2024-05-01T22:51:35.443Z] info enter the endpoint get departments
+[2024-05-01T22:51:35.448Z] info Get typesCarrier successfully
+[2024-05-01T22:51:35.456Z] info Get typeDocuments successfully
+[2024-05-01T22:51:35.463Z] info Get departments successfully
+[2024-05-01T22:51:55.314Z] info enter the endpoint get types Carrier
+[2024-05-01T22:51:55.317Z] info enter the endpoint get types document
+[2024-05-01T22:51:55.320Z] info enter the endpoint get departments
+[2024-05-01T22:51:55.331Z] info Get typesCarrier successfully
+[2024-05-01T22:51:55.335Z] info Get departments successfully
+[2024-05-01T22:51:55.338Z] info Get typeDocuments successfully
+[2024-05-01T22:51:59.048Z] info enter the endpoint get types Carrier
+[2024-05-01T22:51:59.050Z] info enter the endpoint get types document
+[2024-05-01T22:51:59.052Z] info enter the endpoint get departments
+[2024-05-01T22:51:59.055Z] info Get typesCarrier successfully
+[2024-05-01T22:51:59.062Z] info Get typeDocuments successfully
+[2024-05-01T22:51:59.065Z] info Get departments successfully
+[2024-05-01T22:52:02.031Z] info enter the endpoint get types Carrier
+[2024-05-01T22:52:02.034Z] info enter the endpoint get types document
+[2024-05-01T22:52:02.037Z] info Get typesCarrier successfully
+[2024-05-01T22:52:02.039Z] info enter the endpoint get departments
+[2024-05-01T22:52:02.043Z] info Get typeDocuments successfully
+[2024-05-01T22:52:02.065Z] info Get departments successfully
+[2024-05-01T22:52:11.301Z] info enter the endpoint get types Carrier
+[2024-05-01T22:52:11.304Z] info enter the endpoint get types document
+[2024-05-01T22:52:11.307Z] info enter the endpoint get departments
+[2024-05-01T22:52:11.311Z] info Get typesCarrier successfully
+[2024-05-01T22:52:11.313Z] info Get typeDocuments successfully
+[2024-05-01T22:52:11.322Z] info Get departments successfully
+[2024-05-01T22:54:10.751Z] info enter the endpoint get types Carrier
+[2024-05-01T22:54:10.754Z] info enter the endpoint get types document
+[2024-05-01T22:54:10.759Z] info enter the endpoint get departments
+[2024-05-01T22:54:10.767Z] info Get typesCarrier successfully
+[2024-05-01T22:54:10.770Z] info Get typeDocuments successfully
+[2024-05-01T22:54:10.780Z] info Get departments successfully
+[2024-05-01T22:54:14.603Z] info enter the endpoint get types Carrier
+[2024-05-01T22:54:14.605Z] info Get typesCarrier successfully
+[2024-05-01T22:54:14.607Z] info enter the endpoint get types document
+[2024-05-01T22:54:14.610Z] info Get typeDocuments successfully
+[2024-05-01T22:54:14.615Z] info enter the endpoint get departments
+[2024-05-01T22:54:14.618Z] info Get departments successfully
+[2024-05-01T22:55:06.633Z] info enter the endpoint get cities
+[2024-05-01T22:55:06.641Z] info Get cities successfully
+[2024-05-01T22:55:15.756Z] info enter the endpoint register carrier
+[2024-05-01T22:55:15.881Z] info Carrier registed successfully
+[2024-05-01T22:56:02.637Z] info Carrier documents load successfully
+[2024-05-01T22:56:02.638Z] info enter the endpoint registerDocuments carrier
+[2024-05-01T22:56:02.767Z] info Carrier documents registed successfully
+[2024-05-01T22:56:28.080Z] info enter the endpoint register carrier bank account
+[2024-05-01T22:56:28.547Z] info Carrier bank account registed successfully
+[2024-05-01T22:57:18.545Z] info vehicle photo load successfully
+[2024-05-01T22:57:18.547Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-05-01T22:57:18.955Z] info Vehicle registed and carrier asosiation successfully
+[2024-05-01T22:59:11.044Z] info server running on port 3000
+[2024-05-01T22:59:16.937Z] info server running on port 3000
+[2024-05-01T23:00:07.233Z] info vehicle photo load successfully
+[2024-05-01T23:00:07.234Z] info Enter the endpoint registerVehicle carrier with photo
+[2024-05-01T23:00:07.849Z] info Vehicle registed and carrier asosiation successfully
+[2024-05-01T23:00:30.384Z] info vehicle documents load successfully
+[2024-05-01T23:00:30.386Z] info Enter the endpoint registerDocuments vehicle
+[2024-05-01T23:00:30.461Z] info vehicle documents registed successfully
