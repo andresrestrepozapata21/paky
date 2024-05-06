@@ -7,6 +7,9 @@ import ExcelJS from 'exceljs';
 import { Sequelize, Op } from "sequelize";
 // import personaly models
 import { StoreUser } from '../models/store_users.model.js';
+import { Carrier } from "../models/carriers.model.js";
+import { Store } from "../models/stores.model.js";
+import { Type_document } from "../models/type_document.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -30,7 +33,14 @@ export async function login(req, res) {
                 email_su,
                 password_su
             },
-            attributes: ['id_su', 'name_su', 'email_su', 'status_su', 'last_login_su']
+            attributes: ['id_su', 'name_su', 'email_su', 'status_su', 'last_login_su'],
+            include: [
+                {
+                    model: Store,
+                    attributes: ['fk_id_city_store']
+                }
+            ]
+
         });
         // I validate login exist
         if (loginSu.length > 0) {
@@ -74,7 +84,7 @@ export async function login(req, res) {
             // logger control proccess
             logger.info('Incorrect credentials or non-existent credenciales');
             // The credentials are incorrect
-            res.status(401).json({ message: 'Incorrect credentials or non-existent credenciales' });
+            res.status(404).json({ message: 'Incorrect credentials or non-existent credenciales', result: 404 });
         }
     } catch (e) {
         // logger control proccess
@@ -88,98 +98,107 @@ export async function login(req, res) {
     }
 }
 
-// Method getpackages dropshipper
-export async function getpackages(req, res) {
+// Method get carriers city
+export async function getCarriers(req, res) {
     // logger control proccess
-    logger.info('enter the endpoint getpackages dropshipper');
+    logger.info('Enter the endpoint get carriers');
     try {
         // capture the id that comes in the parameters of the req
-        const { id_su } = req.body;
+        const { city } = req.body;
         // I validate req correct json
-        if (!id_su) return res.sendStatus(400);
-        // I find if exist package by dropshipper
-        const infoStorePackage = await Store.findAll({
+        if (!city) return res.sendStatus(400);
+        // I call and save the result of the findAll method, which is d sequelize
+        const getCarriers = await Carrier.findAll({
+            attributes: ['id_carrier', 'status_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'fk_id_tc_carrier', 'fk_id_city_carrier', 'debt_carrier'],
             where: {
-                fk_id_su_store: id_su
+                status_carrier: 1,
+                debt_carrier: {
+                    [Sequelize.Op.ne]: 0, // La deuda debe ser diferente de cero
+                    [Sequelize.Op.gt]: 0  // Y la deuda debe ser mayor que cero
+                },
+                fk_id_city_carrier: city
             },
-            attributes: ['id_store'],
             include: [
                 {
-                    model: City,
-                    attributes: ['name_city'],
-                    include: [
-                        {
-                            model: Department,
-                            attributes: ['name_d']
-                        }
-                    ]
-                },
-                {
-                    model: Package,
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
-                    include: [
-                        {
-                            model: Type_package,
-                            attributes: ['id_tp', 'description_tp']
-                        },
-                        {
-                            model: Carrier,
-                            attributes: ['name_carrier', 'last_name_carrier']
-                        },
-                        {
-                            model: Store,
-                            attributes: ['direction_store'],
-                            include: [
-                                {
-                                    model: City,
-                                    attributes: ['name_city'],
-                                    include: [
-                                        {
-                                            model: Department,
-                                            attributes: ['name_d']
-                                        }
-                                    ]
-                                },
-                            ]
-                        }
-                    ]
+                    model: Type_document,
+                    attributes: ['description_td']
                 }
             ]
         });
-        // Process data for JSON response
-        const getPackages = infoStorePackage.flatMap(p => p.packages);
-        // I run packages for build my accept JSON
-        const packages = getPackages.map(p => {
-            let warehouse = p.store.direction_store + " - " + p.store.city.name_city + " - " + p.store.city.department.name_d;
-            let carrier;
-            if (p.carrier) {
-                carrier = p.carrier.name_carrier + " " + p.carrier.last_name_carrier;
-            } else {
-                carrier = 'N/A'
-            }
+        // Process data for JSON response and promise.all for await all promise it is executing
+        const formattedDataPackages = await Promise.all(getCarriers.map(async c => {
             return {
-                id_p: p.id_p,
-                orden_p: p.orden_p,
-                createdAt: p.createdAt,
-                client_p: p.name_client_p + " - " + p.direction_client_p,
-                warehouse,
-                type_send: p.types_package.description_tp,
-                status_p: p.status_p,
-                carrier,
-                confirmation_dropshipper_p: p.confirmation_dropshipper_p
+                id_carrier: c.id_carrier,
+                type_document: c.types_document.description_td,
+                number_document_carrier: c.number_document_carrier,
+                name_carrier: c.name_carrier,
+                last_name_carrier: c.last_name_carrier,
+                phone_number_carrier: c.phone_number_carrier,
+                email_carrier: c.email_carrier,
+                debt_carrier: c.debt_carrier
             }
-        })
+        }));
         // logger control proccess
-        logger.info('Getpackages Dropshipper successfuly');
-        // Json setting response
+        logger.info('Get carriers successfuly');
+        // The credentials are incorrect
         res.json({
-            message: 'Getpackages Dropshipper successfuly',
+            message: 'Get carriers successfuly',
             result: 1,
-            data: packages
+            data: formattedDataPackages
         });
     } catch (e) {
         // logger control proccess
-        logger.info('Error getPackages: ' + e);
+        logger.info('Error carriers: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0
+        });
+    }
+}
+
+export async function passCarrier(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint pass carrier');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_carrier } = req.params;
+        const { pass } = req.body;
+        // I validate req correct json
+        if (!id_carrier || !pass) return res.sendStatus(400);
+        // I find if exist package by 
+        const getCarrier = await Carrier.findOne({
+            where: {
+                id_carrier
+            }
+        });
+        // I validate exist info and infoStorePackage
+        if (getCarrier) {
+            let debt = getCarrier.debt_carrier;
+            let debt_result = debt - pass;
+            getCarrier.set({
+                debt_carrier: debt_result
+            });
+            getCarrier.save()
+            // logger control proccess
+            logger.info('Pass carrier successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'Pass carrier successfuly',
+                result: 1
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found carrier');
+            // The credentials are incorrect
+            res.status(401).json({
+                message: 'Not found carrier',
+                result: 1
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error pass package: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',

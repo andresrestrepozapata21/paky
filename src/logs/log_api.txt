@@ -25108,3 +25108,336 @@ sql: INSERT INTO `package_products` (`id_pp`,`cuantity_pp`,`createdAt`,`updatedA
 [2024-05-01T23:00:30.384Z] info vehicle documents load successfully
 [2024-05-01T23:00:30.386Z] info Enter the endpoint registerDocuments vehicle
 [2024-05-01T23:00:30.461Z] info vehicle documents registed successfully
+[2024-05-04T15:53:36.375Z] info server running on port 3000
+[2024-05-04T15:53:42.545Z] info server running on port 3000
+[2024-05-04T15:54:15.746Z] info server running on port 3000
+[2024-05-04T15:54:32.800Z] info server running on port 3000
+[2024-05-04T15:55:44.257Z] info server running on port 3000
+[2024-05-04T15:56:03.326Z] info server running on port 3000
+[2024-05-04T15:56:08.666Z] info server running on port 3000
+[2024-05-04T15:56:15.546Z] info server running on port 3000
+[2024-05-04T15:57:11.865Z] info server running on port 3000
+[2024-05-04T15:57:15.027Z] info enter the endpoint login dropshipper
+[2024-05-04T15:57:15.058Z] info Error Login: SequelizeDatabaseError: (conn:23, no: 1054, SQLState: 42S22) Unknown column 'status_su' in 'field list'
+sql: SELECT `id_su`, `name_su`, `email_su`, `status_su`, `last_login_su` FROM `store_users` AS `store_users` WHERE `store_users`.`email_su` = 'correo1@gmail.com' AND `store_users`.`password_su` = '12345'; - parameters:[]
+[2024-05-04T15:58:22.906Z] info enter the endpoint login dropshipper
+[2024-05-04T15:58:22.912Z] info Incorrect credentials or non-existent credenciales
+[2024-05-04T15:59:44.041Z] info enter the endpoint login dropshipper
+[2024-05-04T15:59:44.046Z] info User Disabled
+[2024-05-04T16:00:17.457Z] info enter the endpoint login dropshipper
+[2024-05-04T16:00:17.461Z] info User Disabled
+[2024-05-04T16:01:08.637Z] info server running on port 3000
+[2024-05-04T16:01:10.258Z] info enter the endpoint login dropshipper
+[2024-05-04T16:01:22.612Z] info server running on port 3000
+[2024-05-04T16:01:23.339Z] info enter the endpoint login dropshipper
+[2024-05-04T16:01:23.374Z] info User Disabled
+[2024-05-04T16:01:50.345Z] info server running on port 3000
+[2024-05-04T16:01:51.307Z] info enter the endpoint login dropshipper
+[2024-05-04T16:02:10.645Z] info server running on port 3000
+[2024-05-04T16:02:10.968Z] info enter the endpoint login dropshipper
+[2024-05-04T16:02:12.831Z] info enter the endpoint login dropshipper
+[2024-05-04T16:02:27.885Z] info server running on port 3000
+[2024-05-04T16:02:28.654Z] info enter the endpoint login dropshipper
+[2024-05-04T16:02:39.654Z] info server running on port 3000
+[2024-05-04T16:02:41.167Z] info enter the endpoint login dropshipper
+[2024-05-04T16:02:44.915Z] info enter the endpoint login dropshipper
+[2024-05-04T16:02:55.532Z] info server running on port 3000
+[2024-05-04T16:02:56.207Z] info enter the endpoint login dropshipper
+[2024-05-04T16:03:00.580Z] info server running on port 3000
+[2024-05-04T16:03:02.169Z] info enter the endpoint login dropshipper
+[2024-05-04T16:03:12.812Z] info server running on port 3000
+[2024-05-04T16:03:20.678Z] info enter the endpoint login dropshipper
+[2024-05-04T16:03:45.467Z] info server running on port 3000
+[2024-05-04T16:03:46.738Z] info enter the endpoint login dropshipper
+[2024-05-04T16:04:49.864Z] info server running on port 3000
+[2024-05-04T16:04:49.883Z] info enter the endpoint login dropshipper
+[2024-05-04T16:04:57.544Z] info server running on port 3000
+[2024-05-04T16:04:58.934Z] info enter the endpoint login dropshipper
+[2024-05-04T16:05:25.082Z] info server running on port 3000
+[2024-05-04T16:05:33.781Z] info server running on port 3000
+[2024-05-04T16:05:36.419Z] info enter the endpoint login dropshipper
+[2024-05-04T16:05:36.445Z] info User Disabled
+[2024-05-04T16:05:39.978Z] info enter the endpoint login dropshipper
+[2024-05-04T16:05:39.979Z] info Incorrect credentials or non-existent credenciales
+[2024-05-04T16:06:10.338Z] info server running on port 3000
+[2024-05-04T16:06:14.045Z] info enter the endpoint login dropshipper
+[2024-05-04T16:06:14.125Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-04T16:06:47.802Z] info server running on port 3000
+[2024-05-04T16:11:23.460Z] info server running on port 3000
+[2024-05-04T16:11:44.723Z] info server running on port 3000
+[2024-05-04T16:11:45.750Z] info enter the endpoint login dropshipper
+[2024-05-04T16:11:45.784Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-04T16:12:31.382Z] info server running on port 3000
+[2024-05-04T16:12:57.458Z] info Token validated successfuly
+[2024-05-04T16:12:57.458Z] info Enter the endpoint get carriers
+[2024-05-04T16:12:57.498Z] info Get carriers successfuly
+[2024-05-04T16:13:20.012Z] info Token validated successfuly
+[2024-05-04T16:13:20.013Z] info Enter the endpoint get carriers
+[2024-05-04T16:13:20.017Z] info Get carriers successfuly
+[2024-05-04T16:13:31.628Z] info Token validated successfuly
+[2024-05-04T16:13:31.628Z] info Enter the endpoint get carriers
+[2024-05-04T16:13:31.633Z] info Get carriers successfuly
+[2024-05-04T16:18:47.326Z] info server running on port 3000
+[2024-05-04T16:20:21.425Z] info server running on port 3000
+[2024-05-04T16:20:24.124Z] info server running on port 3000
+[2024-05-04T16:20:57.281Z] info server running on port 3000
+[2024-05-04T16:21:17.574Z] info server running on port 3000
+[2024-05-04T16:22:07.135Z] info server running on port 3000
+[2024-05-04T16:23:12.069Z] info server running on port 3000
+[2024-05-04T16:23:29.972Z] info server running on port 3000
+[2024-05-04T16:23:42.806Z] info Token validated successfuly
+[2024-05-04T16:23:42.807Z] info enter the endpoint pass carrier
+[2024-05-04T16:23:42.837Z] info Pass carrier successfuly
+[2024-05-04T16:23:55.369Z] info server running on port 3000
+[2024-05-04T16:23:59.078Z] info server running on port 3000
+[2024-05-04T16:28:14.449Z] info enter the endpoint login dropshipper
+[2024-05-04T16:28:14.480Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-04T16:28:23.027Z] info enter the endpoint login dropshipper
+[2024-05-04T16:28:23.029Z] info Incorrect credentials or non-existent credenciales
+[2024-05-04T16:28:41.913Z] info enter the endpoint login dropshipper
+[2024-05-04T16:28:41.918Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-04T16:29:14.129Z] info enter the endpoint login dropshipper
+[2024-05-04T16:29:14.134Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-04T16:31:16.665Z] info enter the endpoint login dropshipper
+[2024-05-04T16:31:16.670Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-04T16:36:21.298Z] info server running on port 3000
+[2024-05-04T16:36:31.664Z] info server running on port 3000
+[2024-05-04T16:36:58.891Z] info server running on port 3000
+[2024-05-04T16:37:08.036Z] info server running on port 3000
+[2024-05-04T16:38:00.400Z] info server running on port 3000
+[2024-05-04T16:38:02.582Z] info Token validated successfuly
+[2024-05-04T16:38:02.583Z] info Enter the endpoint get carriers
+[2024-05-04T16:38:02.583Z] info Error carriers: ReferenceError: Type_document is not defined
+[2024-05-04T16:38:17.549Z] info server running on port 3000
+[2024-05-04T16:38:17.975Z] info Token validated successfuly
+[2024-05-04T16:38:17.975Z] info Enter the endpoint get carriers
+[2024-05-04T16:38:18.012Z] info Get carriers successfuly
+[2024-05-04T16:40:13.795Z] info enter the endpoint login dropshipper
+[2024-05-04T16:40:13.803Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-04T16:40:16.163Z] info Token validated successfuly
+[2024-05-04T16:40:16.164Z] info Enter the endpoint get carriers
+[2024-05-04T16:40:16.168Z] info Get carriers successfuly
+[2024-05-04T16:40:32.707Z] info Token validated successfuly
+[2024-05-04T16:40:32.708Z] info Enter the endpoint get carriers
+[2024-05-04T16:40:32.713Z] info Get carriers successfuly
+[2024-05-04T16:40:35.958Z] info Token validated successfuly
+[2024-05-04T16:40:35.958Z] info Enter the endpoint get carriers
+[2024-05-04T16:40:35.962Z] info Get carriers successfuly
+[2024-05-06T16:02:03.311Z] info server running on port 3000
+[2024-05-06T16:02:14.678Z] info enter the endpoint login dropshipper
+[2024-05-06T16:02:14.711Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-06T16:02:25.303Z] info Token validated successfuly
+[2024-05-06T16:02:25.304Z] info enter the endpoint pass carrier
+[2024-05-06T16:02:25.309Z] info Pass carrier successfuly
+[2024-05-06T16:06:44.540Z] info enter the endpoint login dropshipper
+[2024-05-06T16:06:44.546Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-06T16:06:47.487Z] info Token validated successfuly
+[2024-05-06T16:06:47.487Z] info Enter the endpoint get carriers
+[2024-05-06T16:06:47.492Z] info Get carriers successfuly
+[2024-05-06T16:07:24.334Z] info Token validated successfuly
+[2024-05-06T16:07:24.334Z] info Enter the endpoint get carriers
+[2024-05-06T16:07:24.339Z] info Get carriers successfuly
+[2024-05-06T16:07:29.275Z] info Token validated successfuly
+[2024-05-06T16:07:29.275Z] info Enter the endpoint get carriers
+[2024-05-06T16:07:29.278Z] info Get carriers successfuly
+[2024-05-06T16:07:53.601Z] info Token validated successfuly
+[2024-05-06T16:07:53.601Z] info Enter the endpoint get carriers
+[2024-05-06T16:07:53.606Z] info Get carriers successfuly
+[2024-05-06T16:07:56.515Z] info Token validated successfuly
+[2024-05-06T16:07:56.516Z] info Enter the endpoint get carriers
+[2024-05-06T16:07:56.519Z] info Get carriers successfuly
+[2024-05-06T16:07:57.115Z] info Token validated successfuly
+[2024-05-06T16:07:57.116Z] info Enter the endpoint get packages carrier
+[2024-05-06T16:07:57.118Z] info Get packages carrier successfuly
+[2024-05-06T16:08:24.212Z] info Token validated successfuly
+[2024-05-06T16:08:24.212Z] info Enter the endpoint get packages carrier
+[2024-05-06T16:08:24.216Z] info Get packages carrier successfuly
+[2024-05-06T16:09:04.983Z] info Token validated successfuly
+[2024-05-06T16:09:04.983Z] info Enter the endpoint get carriers
+[2024-05-06T16:09:04.988Z] info Get carriers successfuly
+[2024-05-06T16:09:07.002Z] info Token validated successfuly
+[2024-05-06T16:09:07.002Z] info Enter the endpoint get carriers
+[2024-05-06T16:09:07.005Z] info Get carriers successfuly
+[2024-05-06T16:10:30.551Z] info Token validated successfuly
+[2024-05-06T16:10:30.551Z] info Enter the endpoint get carriers
+[2024-05-06T16:10:30.556Z] info Get carriers successfuly
+[2024-05-06T16:12:15.854Z] info Token validated successfuly
+[2024-05-06T16:12:15.854Z] info Enter the endpoint get carriers
+[2024-05-06T16:12:15.859Z] info Get carriers successfuly
+[2024-05-06T16:13:52.450Z] info Token validated successfuly
+[2024-05-06T16:13:52.450Z] info Enter the endpoint get carriers
+[2024-05-06T16:13:52.454Z] info Get carriers successfuly
+[2024-05-06T16:14:00.153Z] info Token validated successfuly
+[2024-05-06T16:14:00.153Z] info Enter the endpoint get carriers
+[2024-05-06T16:14:00.156Z] info Get carriers successfuly
+[2024-05-06T16:14:04.539Z] info Token validated successfuly
+[2024-05-06T16:14:04.539Z] info Enter the endpoint get carriers
+[2024-05-06T16:14:04.542Z] info Get carriers successfuly
+[2024-05-06T16:14:18.091Z] info Token validated successfuly
+[2024-05-06T16:14:18.091Z] info Enter the endpoint get carriers
+[2024-05-06T16:14:18.096Z] info Get carriers successfuly
+[2024-05-06T16:14:28.596Z] info Token validated successfuly
+[2024-05-06T16:14:28.596Z] info Enter the endpoint get carriers
+[2024-05-06T16:14:28.602Z] info Get carriers successfuly
+[2024-05-06T16:14:39.194Z] info Token validated successfuly
+[2024-05-06T16:14:39.194Z] info Enter the endpoint get carriers
+[2024-05-06T16:14:39.198Z] info Get carriers successfuly
+[2024-05-06T16:14:42.088Z] info Token validated successfuly
+[2024-05-06T16:14:42.088Z] info Enter the endpoint get carriers
+[2024-05-06T16:14:42.091Z] info Get carriers successfuly
+[2024-05-06T16:14:42.849Z] info Token validated successfuly
+[2024-05-06T16:14:42.850Z] info Enter the endpoint get carriers
+[2024-05-06T16:14:42.852Z] info Get carriers successfuly
+[2024-05-06T16:14:45.357Z] info Token validated successfuly
+[2024-05-06T16:14:45.357Z] info Enter the endpoint get carriers
+[2024-05-06T16:14:45.360Z] info Get carriers successfuly
+[2024-05-06T16:15:06.432Z] info Token validated successfuly
+[2024-05-06T16:15:06.433Z] info Enter the endpoint get carriers
+[2024-05-06T16:15:06.438Z] info Get carriers successfuly
+[2024-05-06T16:15:09.480Z] info Token validated successfuly
+[2024-05-06T16:15:09.481Z] info Enter the endpoint get carriers
+[2024-05-06T16:15:09.483Z] info Get carriers successfuly
+[2024-05-06T16:15:40.512Z] info Token validated successfuly
+[2024-05-06T16:15:40.512Z] info Enter the endpoint get carriers
+[2024-05-06T16:15:40.516Z] info Get carriers successfuly
+[2024-05-06T16:16:14.718Z] info Token validated successfuly
+[2024-05-06T16:16:14.718Z] info Enter the endpoint get carriers
+[2024-05-06T16:16:14.724Z] info Get carriers successfuly
+[2024-05-06T16:18:01.533Z] info Token validated successfuly
+[2024-05-06T16:18:01.534Z] info Enter the endpoint get carriers
+[2024-05-06T16:18:01.538Z] info Get carriers successfuly
+[2024-05-06T16:18:12.636Z] info Token validated successfuly
+[2024-05-06T16:18:12.636Z] info Enter the endpoint get carriers
+[2024-05-06T16:18:12.641Z] info Get carriers successfuly
+[2024-05-06T16:18:23.761Z] info Token validated successfuly
+[2024-05-06T16:18:23.761Z] info Enter the endpoint get carriers
+[2024-05-06T16:18:23.765Z] info Get carriers successfuly
+[2024-05-06T16:18:52.708Z] info Token validated successfuly
+[2024-05-06T16:18:52.709Z] info Enter the endpoint get carriers
+[2024-05-06T16:18:52.713Z] info Get carriers successfuly
+[2024-05-06T16:18:55.337Z] info Token validated successfuly
+[2024-05-06T16:18:55.337Z] info Enter the endpoint get carriers
+[2024-05-06T16:18:55.340Z] info Get carriers successfuly
+[2024-05-06T16:19:15.743Z] info Token validated successfuly
+[2024-05-06T16:19:15.743Z] info Enter the endpoint get carriers
+[2024-05-06T16:19:15.747Z] info Get carriers successfuly
+[2024-05-06T16:19:23.497Z] info Token validated successfuly
+[2024-05-06T16:19:23.498Z] info Enter the endpoint get carriers
+[2024-05-06T16:19:23.500Z] info Get carriers successfuly
+[2024-05-06T16:19:31.703Z] info Token validated successfuly
+[2024-05-06T16:19:31.703Z] info Enter the endpoint get carriers
+[2024-05-06T16:19:31.706Z] info Get carriers successfuly
+[2024-05-06T16:19:37.958Z] info Token validated successfuly
+[2024-05-06T16:19:37.958Z] info Enter the endpoint get carriers
+[2024-05-06T16:19:37.960Z] info Get carriers successfuly
+[2024-05-06T16:19:51.798Z] info Token validated successfuly
+[2024-05-06T16:19:51.798Z] info Enter the endpoint get carriers
+[2024-05-06T16:19:51.801Z] info Get carriers successfuly
+[2024-05-06T16:19:53.698Z] info Token validated successfuly
+[2024-05-06T16:19:53.698Z] info Enter the endpoint get carriers
+[2024-05-06T16:19:53.701Z] info Get carriers successfuly
+[2024-05-06T16:25:27.371Z] info Token validated successfuly
+[2024-05-06T16:25:27.371Z] info Enter the endpoint get carriers
+[2024-05-06T16:25:27.376Z] info Get carriers successfuly
+[2024-05-06T16:25:59.546Z] info Token validated successfuly
+[2024-05-06T16:25:59.546Z] info Enter the endpoint get carriers
+[2024-05-06T16:25:59.549Z] info Get carriers successfuly
+[2024-05-06T16:26:04.603Z] info Token validated successfuly
+[2024-05-06T16:26:04.603Z] info Enter the endpoint get carriers
+[2024-05-06T16:26:04.605Z] info Get carriers successfuly
+[2024-05-06T16:26:14.861Z] info Token validated successfuly
+[2024-05-06T16:26:14.861Z] info Enter the endpoint get carriers
+[2024-05-06T16:26:14.865Z] info Get carriers successfuly
+[2024-05-06T16:26:17.690Z] info Token validated successfuly
+[2024-05-06T16:26:17.691Z] info Enter the endpoint get carriers
+[2024-05-06T16:26:17.693Z] info Get carriers successfuly
+[2024-05-06T16:26:35.844Z] info Token validated successfuly
+[2024-05-06T16:26:35.844Z] info Enter the endpoint get carriers
+[2024-05-06T16:26:35.848Z] info Get carriers successfuly
+[2024-05-06T16:27:46.118Z] info Token validated successfuly
+[2024-05-06T16:27:46.118Z] info Enter the endpoint get carriers
+[2024-05-06T16:27:46.122Z] info Get carriers successfuly
+[2024-05-06T16:28:23.525Z] info Token validated successfuly
+[2024-05-06T16:28:23.525Z] info Enter the endpoint get carriers
+[2024-05-06T16:28:23.529Z] info Get carriers successfuly
+[2024-05-06T16:29:09.633Z] info Token validated successfuly
+[2024-05-06T16:29:09.634Z] info Enter the endpoint get carriers
+[2024-05-06T16:29:09.638Z] info Get carriers successfuly
+[2024-05-06T16:29:10.754Z] info Token validated successfuly
+[2024-05-06T16:29:10.754Z] info Enter the endpoint get carriers
+[2024-05-06T16:29:10.757Z] info Get carriers successfuly
+[2024-05-06T16:29:34.236Z] info Token validated successfuly
+[2024-05-06T16:29:34.236Z] info Enter the endpoint get carriers
+[2024-05-06T16:29:34.240Z] info Get carriers successfuly
+[2024-05-06T16:29:37.325Z] info Token validated successfuly
+[2024-05-06T16:29:37.325Z] info Enter the endpoint get carriers
+[2024-05-06T16:29:37.328Z] info Get carriers successfuly
+[2024-05-06T16:44:18.645Z] info Token validated successfuly
+[2024-05-06T16:44:18.645Z] info Enter the endpoint get carriers
+[2024-05-06T16:44:18.649Z] info Get carriers successfuly
+[2024-05-06T16:44:34.164Z] info Token validated successfuly
+[2024-05-06T16:44:34.164Z] info Enter the endpoint get carriers
+[2024-05-06T16:44:34.167Z] info Get carriers successfuly
+[2024-05-06T16:45:06.970Z] info Token validated successfuly
+[2024-05-06T16:45:06.970Z] info Enter the endpoint get carriers
+[2024-05-06T16:45:06.974Z] info Get carriers successfuly
+[2024-05-06T16:45:21.500Z] info Token validated successfuly
+[2024-05-06T16:45:21.500Z] info Enter the endpoint get carriers
+[2024-05-06T16:45:21.504Z] info Get carriers successfuly
+[2024-05-06T16:45:38.788Z] info Token validated successfuly
+[2024-05-06T16:45:38.788Z] info Enter the endpoint get carriers
+[2024-05-06T16:45:38.792Z] info Get carriers successfuly
+[2024-05-06T16:47:31.098Z] info Token validated successfuly
+[2024-05-06T16:47:31.099Z] info Enter the endpoint get carriers
+[2024-05-06T16:47:31.103Z] info Get carriers successfuly
+[2024-05-06T16:47:32.609Z] info Token validated successfuly
+[2024-05-06T16:47:32.610Z] info Enter the endpoint get carriers
+[2024-05-06T16:47:32.612Z] info Get carriers successfuly
+[2024-05-06T16:47:50.171Z] info Token validated successfuly
+[2024-05-06T16:47:50.172Z] info Enter the endpoint get carriers
+[2024-05-06T16:47:50.175Z] info Get carriers successfuly
+[2024-05-06T16:47:51.489Z] info Token validated successfuly
+[2024-05-06T16:47:51.489Z] info Enter the endpoint get carriers
+[2024-05-06T16:47:51.491Z] info Get carriers successfuly
+[2024-05-06T16:48:27.012Z] info Token validated successfuly
+[2024-05-06T16:48:27.012Z] info Enter the endpoint get carriers
+[2024-05-06T16:48:27.015Z] info Get carriers successfuly
+[2024-05-06T16:48:31.351Z] info Token validated successfuly
+[2024-05-06T16:48:31.351Z] info Enter the endpoint get carriers
+[2024-05-06T16:48:31.353Z] info Get carriers successfuly
+[2024-05-06T16:48:42.932Z] info Token validated successfuly
+[2024-05-06T16:48:42.933Z] info Enter the endpoint get carriers
+[2024-05-06T16:48:42.936Z] info Get carriers successfuly
+[2024-05-06T16:49:20.105Z] info Token validated successfuly
+[2024-05-06T16:49:20.105Z] info Enter the endpoint get carriers
+[2024-05-06T16:49:20.109Z] info Get carriers successfuly
+[2024-05-06T16:49:25.431Z] info Token validated successfuly
+[2024-05-06T16:49:25.431Z] info Enter the endpoint get carriers
+[2024-05-06T16:49:25.433Z] info Get carriers successfuly
+[2024-05-06T16:49:44.567Z] info Token validated successfuly
+[2024-05-06T16:49:44.568Z] info Enter the endpoint get carriers
+[2024-05-06T16:49:44.573Z] info Get carriers successfuly
+[2024-05-06T16:50:35.436Z] info Token validated successfuly
+[2024-05-06T16:50:35.436Z] info Enter the endpoint get carriers
+[2024-05-06T16:50:35.439Z] info Get carriers successfuly
+[2024-05-06T16:50:44.608Z] info Token validated successfuly
+[2024-05-06T16:50:44.609Z] info Enter the endpoint get carriers
+[2024-05-06T16:50:44.611Z] info Get carriers successfuly
+[2024-05-06T16:50:47.473Z] info Token validated successfuly
+[2024-05-06T16:50:47.473Z] info Enter the endpoint get carriers
+[2024-05-06T16:50:47.475Z] info Get carriers successfuly
+[2024-05-06T16:50:51.993Z] info Token validated successfuly
+[2024-05-06T16:50:51.993Z] info enter the endpoint pass carrier
+[2024-05-06T16:50:51.995Z] info Pass carrier successfuly
+[2024-05-06T16:50:52.053Z] info Token validated successfuly
+[2024-05-06T16:50:52.053Z] info Enter the endpoint get carriers
+[2024-05-06T16:50:52.055Z] info Get carriers successfuly
+[2024-05-06T16:51:12.312Z] info Token validated successfuly
+[2024-05-06T16:51:12.312Z] info enter the endpoint pass carrier
+[2024-05-06T16:51:12.316Z] info Pass carrier successfuly
+[2024-05-06T16:51:12.375Z] info Token validated successfuly
+[2024-05-06T16:51:12.375Z] info Enter the endpoint get carriers
+[2024-05-06T16:51:12.378Z] info Get carriers successfuly
+[2024-05-06T16:51:30.217Z] info Token validated successfuly
+[2024-05-06T16:51:30.218Z] info Enter the endpoint get carriers
+[2024-05-06T16:51:30.222Z] info Get carriers successfuly

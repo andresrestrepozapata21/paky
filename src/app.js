@@ -11,6 +11,7 @@ import router_user from "./routes/router_users.route.js";
 import dropshipper from "./routes/dropshipper.router.js";
 import manager from "./routes/manager.route.js";
 import client from "./routes/client.route.js";
+import store_user from "./routes/store_users.route.js";
 /**
  * 
  * @apiDescription inicialization around variables
@@ -51,5 +52,6 @@ app.use(router_user);
 app.use(dropshipper);
 app.use(manager);
 app.use(client);
+app.use(store_user);
 // I export my app variable
 export default app;

@@ -10,6 +10,9 @@ export const StoreUser = sequelize.define('store_users', {
         primaryKey: true,
         autoIncrement: true
     },
+    status_su: {
+        type: DataTypes.INTEGER
+    },
     name_su: {
         type: DataTypes.STRING
     },
