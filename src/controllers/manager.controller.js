@@ -1835,9 +1835,9 @@ export async function editDropshipper(req, res) {
             // logger control proccess
             logger.info('Not found dropshipper');
             // The credentials are incorrect
-            res.status(401).json({
+            res.status(404).json({
                 message: 'Not found dropshipper',
-                result: 1
+                result: 404
             });
         }
     } catch (e) {
@@ -2675,9 +2675,9 @@ export async function deleteStore(req, res) {
             // logger control proccess
             logger.info('Not found store');
             // Json reponse setting non existing packages
-            res.status(401).json({
+            res.status(404).json({
                 message: 'Not found store',
-                result: 1
+                result: 404
             });
         }
     } catch (e) {
@@ -2854,6 +2854,182 @@ export async function addProductToPackage(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error addProductToPackage: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get addProduct
+export async function addProduct(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint add addProduct');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { name_product, description_product, price_sale_product, price_cost_product, size_product, fk_id_dropshipper_product } = req.body;
+        // I validate req correct json
+        if (!name_product || !description_product || !price_sale_product || !price_cost_product || !size_product || !fk_id_dropshipper_product) return res.sendStatus(400);
+        // I find if exist package
+        const newProduct = await Product.create({
+            name_product, 
+            description_product, 
+            price_sale_product, 
+            price_cost_product, 
+            size_product, 
+            fk_id_dropshipper_product
+        });
+        // logger control proccess
+        logger.info('Add addProduct successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'Add addProduct successfuly',
+            result: 1,
+            data: newProduct
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error add addProduct: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method deleteCarrier
+export async function deleteProduct(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint delete product');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_product } = req.body;
+        // I validate req correct json
+        if (!id_product) return res.sendStatus(400);
+        // I find if exist package
+        const deleteProduct = await Product.destroy({
+            where: {
+                id_product
+            }
+        });
+        if (deleteProduct) {
+            // logger control proccess
+            logger.info('Delete product successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'Delete product successfuly',
+                result: 1,
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found product');
+            // Json reponse setting non existing packages
+            res.status(404).json({
+                message: 'Not found product',
+                result: 404
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error delete product: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method getDetailProduct
+export async function getDetailProduct(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getDetailProduct');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_product } = req.body;
+        // I validate req correct json
+        if (!id_product) return res.sendStatus(400);
+        // I find if exist package
+        const getDetailProduct = await Product.findOne({
+            where: {
+                id_product
+            }
+        });
+        // I validate exist getDetailProduct
+        if (getDetailProduct) {
+            // logger control proccess
+            logger.info('getDetailProduct successfuly');
+            // Json reponse setting
+            res.json({
+                message: 'getDetailProduct successfuly',
+                result: 1,
+                data: getDetailProduct
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found getDetailProduct');
+            // Json reponse setting non existing packages
+            res.status(404).json({
+                message: 'Not found getPackagesByStore',
+                result: 404
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getDetailProduct: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method edit product
+export async function editProduct(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint edit product');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_product } = req.params;
+        // I validate req correct json
+        if (!id_product) return res.sendStatus(400);
+        // I find if exist package by 
+        const updateProduct = await Product.findOne({
+            where: {
+                id_product
+            }
+        });
+        // I validate exist info and infoStorePackage
+        if (updateProduct) {
+            updateProduct.set(req.body);
+            updateProduct.save()
+            // logger control proccess
+            logger.info('Edit dropshipper successfuly');
+            // The credentials are incorrect
+            res.json({
+                message: 'Edit dropshipper successfuly',
+                result: 1,
+                updateProduct
+            });
+        } else {
+            // logger control proccess
+            logger.info('Not found product');
+            // The credentials are incorrect
+            res.status(404).json({
+                message: 'Not found product',
+                result: 404
+            });
+        }
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error edit product: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',

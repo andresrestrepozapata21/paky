@@ -25441,3 +25441,2833 @@ sql: SELECT `id_su`, `name_su`, `email_su`, `status_su`, `last_login_su` FROM `s
 [2024-05-06T16:51:30.217Z] info Token validated successfuly
 [2024-05-06T16:51:30.218Z] info Enter the endpoint get carriers
 [2024-05-06T16:51:30.222Z] info Get carriers successfuly
+[2024-05-06T20:11:58.951Z] info server running on port 3000
+[2024-05-07T13:08:53.540Z] info server running on port 3000
+[2024-05-07T13:14:56.964Z] info enter the endpoint login dropshipper
+[2024-05-07T13:14:56.989Z] info Incorrect credentials or non-existent credenciales
+[2024-05-07T13:15:00.258Z] info enter the endpoint login dropshipper
+[2024-05-07T13:15:00.264Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-07T13:15:00.510Z] info Token validated successfuly
+[2024-05-07T13:15:00.511Z] info enter the endpoint master dropshipper
+[2024-05-07T13:15:00.521Z] info Master Dropshipper successfuly
+[2024-05-07T13:15:03.905Z] info Token validated successfuly
+[2024-05-07T13:15:03.906Z] info enter the endpoint getDetailCarrier
+[2024-05-07T13:15:03.911Z] info Token validated successfuly
+[2024-05-07T13:15:03.912Z] info enter the endpoint getDepartments
+[2024-05-07T13:15:03.916Z] info getDetailDropshipper successfuly
+[2024-05-07T13:15:03.919Z] info getDepartments successfuly
+[2024-05-07T13:15:08.203Z] info Token validated successfuly
+[2024-05-07T13:15:08.204Z] info enter the endpoint getPackagesByStore
+[2024-05-07T13:15:08.211Z] info getPackagesByStore successfuly
+[2024-05-07T13:15:13.160Z] info Token validated successfuly
+[2024-05-07T13:15:13.161Z] info enter the endpoint getPackagesByStore
+[2024-05-07T13:15:13.167Z] info getPackagesByStore successfuly
+[2024-05-07T13:15:13.177Z] info Token validated successfuly
+[2024-05-07T13:15:13.177Z] info enter the endpoint getCitiesByDepartment
+[2024-05-07T13:15:13.180Z] info Token validated successfuly
+[2024-05-07T13:15:13.181Z] info enter the endpoint getDepartments
+[2024-05-07T13:15:13.182Z] info getCitiesByDepartment successfuly
+[2024-05-07T13:15:13.184Z] info getDepartments successfuly
+[2024-05-07T13:15:13.994Z] info Token validated successfuly
+[2024-05-07T13:15:13.995Z] info enter the endpoint getPackagesByStore
+[2024-05-07T13:15:14.001Z] info getPackagesByStore successfuly
+[2024-05-07T13:15:15.468Z] info Token validated successfuly
+[2024-05-07T13:15:15.468Z] info enter the endpoint getDepartments
+[2024-05-07T13:15:15.471Z] info Token validated successfuly
+[2024-05-07T13:15:15.471Z] info enter the endpoint getDetailCarrier
+[2024-05-07T13:15:15.474Z] info getDepartments successfuly
+[2024-05-07T13:15:15.477Z] info getDetailDropshipper successfuly
+[2024-05-07T13:15:17.597Z] info Token validated successfuly
+[2024-05-07T13:15:17.597Z] info enter the endpoint getPackagesByStore
+[2024-05-07T13:15:17.602Z] info getPackagesByStore successfuly
+[2024-05-07T13:15:17.609Z] info Token validated successfuly
+[2024-05-07T13:15:17.609Z] info enter the endpoint getCitiesByDepartment
+[2024-05-07T13:15:17.612Z] info Token validated successfuly
+[2024-05-07T13:15:17.612Z] info enter the endpoint getDepartments
+[2024-05-07T13:15:17.614Z] info getCitiesByDepartment successfuly
+[2024-05-07T13:15:17.616Z] info getDepartments successfuly
+[2024-05-07T13:15:18.972Z] info Token validated successfuly
+[2024-05-07T13:15:18.972Z] info enter the endpoint getPackagesByStore
+[2024-05-07T13:15:18.977Z] info getPackagesByStore successfuly
+[2024-05-07T13:15:21.013Z] info Token validated successfuly
+[2024-05-07T13:15:21.013Z] info enter the endpoint getDetailCarrier
+[2024-05-07T13:15:21.016Z] info Token validated successfuly
+[2024-05-07T13:15:21.016Z] info enter the endpoint getDepartments
+[2024-05-07T13:15:21.018Z] info getDetailDropshipper successfuly
+[2024-05-07T13:15:21.020Z] info getDepartments successfuly
+[2024-05-07T13:15:27.107Z] info Token validated successfuly
+[2024-05-07T13:15:27.107Z] info enter the endpoint delete store
+[2024-05-07T13:15:27.153Z] info Delete store successfuly
+[2024-05-07T13:15:27.198Z] info Token validated successfuly
+[2024-05-07T13:15:27.198Z] info enter the endpoint getDetailCarrier
+[2024-05-07T13:15:27.201Z] info Token validated successfuly
+[2024-05-07T13:15:27.201Z] info enter the endpoint getDepartments
+[2024-05-07T13:15:27.203Z] info getDetailDropshipper successfuly
+[2024-05-07T13:15:27.206Z] info getDepartments successfuly
+[2024-05-07T13:15:30.736Z] info Token validated successfuly
+[2024-05-07T13:15:30.736Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:15:30.738Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:16:06.858Z] info Token validated successfuly
+[2024-05-07T13:16:06.858Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:16:06.861Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:16:12.119Z] info Token validated successfuly
+[2024-05-07T13:16:12.120Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:16:12.121Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:17:04.138Z] info Token validated successfuly
+[2024-05-07T13:17:04.138Z] info enter the endpoint add addProduct
+[2024-05-07T13:17:32.078Z] info Token validated successfuly
+[2024-05-07T13:17:32.078Z] info enter the endpoint add addProduct
+[2024-05-07T13:17:56.557Z] info Token validated successfuly
+[2024-05-07T13:17:56.558Z] info enter the endpoint add addProduct
+[2024-05-07T13:17:56.566Z] info Add addProduct successfuly
+[2024-05-07T13:18:00.936Z] info Token validated successfuly
+[2024-05-07T13:18:00.937Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:18:00.938Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:18:37.320Z] info Token validated successfuly
+[2024-05-07T13:18:37.321Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:18:37.324Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:18:39.401Z] info Token validated successfuly
+[2024-05-07T13:18:39.401Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:18:39.402Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:18:46.897Z] info Token validated successfuly
+[2024-05-07T13:18:46.897Z] info enter the endpoint add addProduct
+[2024-05-07T13:20:12.636Z] info Token validated successfuly
+[2024-05-07T13:20:12.636Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:20:12.640Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:20:25.266Z] info Token validated successfuly
+[2024-05-07T13:20:25.266Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:20:25.270Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:20:26.696Z] info Token validated successfuly
+[2024-05-07T13:20:26.697Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:20:26.698Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:20:45.763Z] info Token validated successfuly
+[2024-05-07T13:20:45.763Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:20:45.767Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:20:56.565Z] info Token validated successfuly
+[2024-05-07T13:20:56.565Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:20:56.569Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:21:13.653Z] info Token validated successfuly
+[2024-05-07T13:21:13.653Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:21:13.656Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:21:38.501Z] info Token validated successfuly
+[2024-05-07T13:21:38.502Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:21:38.506Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:21:46.773Z] info Token validated successfuly
+[2024-05-07T13:21:46.774Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:21:46.775Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:21:47.434Z] info Token validated successfuly
+[2024-05-07T13:21:47.434Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:21:47.435Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:22:12.841Z] info Token validated successfuly
+[2024-05-07T13:22:12.841Z] info enter the endpoint add addProduct
+[2024-05-07T13:22:33.031Z] info Token validated successfuly
+[2024-05-07T13:22:33.031Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:22:33.034Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:22:33.893Z] info Token validated successfuly
+[2024-05-07T13:22:33.893Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:22:33.895Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:22:42.833Z] info Token validated successfuly
+[2024-05-07T13:22:42.834Z] info enter the endpoint add addProduct
+[2024-05-07T13:23:08.336Z] info Token validated successfuly
+[2024-05-07T13:23:08.336Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:23:08.339Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:23:12.132Z] info Token validated successfuly
+[2024-05-07T13:23:12.132Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:23:12.134Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:23:20.378Z] info Token validated successfuly
+[2024-05-07T13:23:20.378Z] info enter the endpoint add addProduct
+[2024-05-07T13:24:08.563Z] info Token validated successfuly
+[2024-05-07T13:24:08.564Z] info enter the endpoint add addProduct
+[2024-05-07T13:24:08.571Z] info Add addProduct successfuly
+[2024-05-07T13:24:44.297Z] info Token validated successfuly
+[2024-05-07T13:24:44.298Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:24:44.301Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:24:48.521Z] info Token validated successfuly
+[2024-05-07T13:24:48.521Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:24:48.522Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:24:49.853Z] info Token validated successfuly
+[2024-05-07T13:24:49.853Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:24:49.855Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:24:56.874Z] info Token validated successfuly
+[2024-05-07T13:24:56.874Z] info enter the endpoint add addProduct
+[2024-05-07T13:24:56.915Z] info Add addProduct successfuly
+[2024-05-07T13:24:56.978Z] info Token validated successfuly
+[2024-05-07T13:24:56.982Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:24:56.985Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:31:15.483Z] info Token validated successfuly
+[2024-05-07T13:31:15.484Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:31:15.487Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:31:56.834Z] info Token validated successfuly
+[2024-05-07T13:31:56.834Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:31:56.837Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:32:47.181Z] info Token validated successfuly
+[2024-05-07T13:32:47.181Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:32:47.184Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:32:58.624Z] info Token validated successfuly
+[2024-05-07T13:32:58.624Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:32:58.627Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:33:09.894Z] info Token validated successfuly
+[2024-05-07T13:33:09.894Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:33:09.898Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:33:17.899Z] info Token validated successfuly
+[2024-05-07T13:33:17.899Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:33:17.900Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:33:23.853Z] info Token validated successfuly
+[2024-05-07T13:33:23.853Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:33:23.855Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:33:32.009Z] info Token validated successfuly
+[2024-05-07T13:33:32.009Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:33:32.010Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:33:47.526Z] info Token validated successfuly
+[2024-05-07T13:33:47.526Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:33:47.528Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:33:50.591Z] info Token validated successfuly
+[2024-05-07T13:33:50.591Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:33:50.593Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:35:40.553Z] info server running on port 3000
+[2024-05-07T13:35:52.749Z] info server running on port 3000
+[2024-05-07T13:36:07.063Z] info server running on port 3000
+[2024-05-07T13:36:22.458Z] info server running on port 3000
+[2024-05-07T13:37:00.830Z] info server running on port 3000
+[2024-05-07T13:37:02.340Z] info Token validated successfuly
+[2024-05-07T13:37:02.340Z] info enter the endpoint delete product
+[2024-05-07T13:37:02.374Z] info Delete product successfuly
+[2024-05-07T13:37:05.185Z] info Token validated successfuly
+[2024-05-07T13:37:05.186Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:37:05.192Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:37:18.484Z] info server running on port 3000
+[2024-05-07T13:37:26.082Z] info Token validated successfuly
+[2024-05-07T13:37:26.082Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:37:26.112Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:37:27.239Z] info Token validated successfuly
+[2024-05-07T13:37:27.239Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:37:27.242Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:37:29.218Z] info Token validated successfuly
+[2024-05-07T13:37:29.218Z] info enter the endpoint delete product
+[2024-05-07T13:37:29.223Z] info Delete product successfuly
+[2024-05-07T13:37:29.282Z] info Token validated successfuly
+[2024-05-07T13:37:29.282Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:37:29.284Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:37:47.865Z] info Token validated successfuly
+[2024-05-07T13:37:47.866Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:37:47.870Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:37:52.453Z] info Token validated successfuly
+[2024-05-07T13:37:52.453Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:37:52.455Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:38:01.334Z] info Token validated successfuly
+[2024-05-07T13:38:01.335Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:38:01.336Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:38:19.008Z] info Token validated successfuly
+[2024-05-07T13:38:19.008Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:38:19.012Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:38:25.848Z] info Token validated successfuly
+[2024-05-07T13:38:25.848Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:38:25.850Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:38:36.734Z] info Token validated successfuly
+[2024-05-07T13:38:36.735Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:38:36.739Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:38:58.403Z] info Token validated successfuly
+[2024-05-07T13:38:58.403Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:38:58.407Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:38:59.435Z] info Token validated successfuly
+[2024-05-07T13:38:59.435Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:38:59.437Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:39:05.845Z] info Token validated successfuly
+[2024-05-07T13:39:05.846Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:39:05.847Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:39:14.693Z] info Token validated successfuly
+[2024-05-07T13:39:14.693Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:39:14.695Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:39:22.148Z] info Token validated successfuly
+[2024-05-07T13:39:22.148Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:39:22.150Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:40:22.550Z] info Token validated successfuly
+[2024-05-07T13:40:22.550Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:40:22.554Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:40:23.586Z] info Token validated successfuly
+[2024-05-07T13:40:23.586Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:40:23.588Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:40:42.285Z] info Token validated successfuly
+[2024-05-07T13:40:42.285Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:40:42.289Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:41:11.078Z] info Token validated successfuly
+[2024-05-07T13:41:11.078Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:41:11.084Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:41:19.018Z] info Token validated successfuly
+[2024-05-07T13:41:19.018Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:41:19.020Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:41:39.643Z] info Token validated successfuly
+[2024-05-07T13:41:39.643Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:41:39.648Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:44:31.889Z] info server running on port 3000
+[2024-05-07T13:44:42.738Z] info server running on port 3000
+[2024-05-07T13:44:53.880Z] info server running on port 3000
+[2024-05-07T13:45:10.916Z] info server running on port 3000
+[2024-05-07T13:45:19.862Z] info server running on port 3000
+[2024-05-07T13:45:29.203Z] info server running on port 3000
+[2024-05-07T13:45:41.621Z] info server running on port 3000
+[2024-05-07T13:46:03.001Z] info server running on port 3000
+[2024-05-07T13:46:04.873Z] info Token validated successfuly
+[2024-05-07T13:46:04.873Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:46:04.906Z] info getDetailProduct successfuly
+[2024-05-07T13:46:12.785Z] info server running on port 3000
+[2024-05-07T13:46:30.717Z] info Token validated successfuly
+[2024-05-07T13:46:30.717Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:46:37.400Z] info Token validated successfuly
+[2024-05-07T13:46:37.400Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:46:37.430Z] info getDetailProduct successfuly
+[2024-05-07T13:47:09.245Z] info Token validated successfuly
+[2024-05-07T13:47:09.246Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:47:09.250Z] info getDetailProduct successfuly
+[2024-05-07T13:47:20.209Z] info Token validated successfuly
+[2024-05-07T13:47:20.210Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:47:20.214Z] info getDetailProduct successfuly
+[2024-05-07T13:47:41.538Z] info Token validated successfuly
+[2024-05-07T13:47:41.538Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:47:41.542Z] info getDetailProduct successfuly
+[2024-05-07T13:48:10.313Z] info Token validated successfuly
+[2024-05-07T13:48:10.314Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:48:10.317Z] info getDetailProduct successfuly
+[2024-05-07T13:48:13.435Z] info Token validated successfuly
+[2024-05-07T13:48:13.436Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:48:13.438Z] info getDetailProduct successfuly
+[2024-05-07T13:48:15.240Z] info Token validated successfuly
+[2024-05-07T13:48:15.241Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:48:15.242Z] info getDetailProduct successfuly
+[2024-05-07T13:48:17.032Z] info Token validated successfuly
+[2024-05-07T13:48:17.032Z] info enter the endpoint add addProduct
+[2024-05-07T13:48:17.042Z] info Add addProduct successfuly
+[2024-05-07T13:48:17.100Z] info Token validated successfuly
+[2024-05-07T13:48:17.101Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:48:17.103Z] info getDetailProduct successfuly
+[2024-05-07T13:48:32.052Z] info Token validated successfuly
+[2024-05-07T13:48:32.053Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:48:32.056Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:48:38.907Z] info Token validated successfuly
+[2024-05-07T13:48:38.907Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:48:38.909Z] info getDetailProduct successfuly
+[2024-05-07T13:48:50.756Z] info Token validated successfuly
+[2024-05-07T13:48:50.756Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:48:50.759Z] info getDetailProduct successfuly
+[2024-05-07T13:48:54.029Z] info Token validated successfuly
+[2024-05-07T13:48:54.029Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:48:54.031Z] info getDetailProduct successfuly
+[2024-05-07T13:49:00.302Z] info Token validated successfuly
+[2024-05-07T13:49:00.302Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:49:00.304Z] info getDetailProduct successfuly
+[2024-05-07T13:49:08.579Z] info Token validated successfuly
+[2024-05-07T13:49:08.579Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:49:08.581Z] info getDetailProduct successfuly
+[2024-05-07T13:49:26.948Z] info Token validated successfuly
+[2024-05-07T13:49:26.948Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:49:26.951Z] info getDetailProduct successfuly
+[2024-05-07T13:49:42.044Z] info Token validated successfuly
+[2024-05-07T13:49:42.044Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:49:42.049Z] info getDetailProduct successfuly
+[2024-05-07T13:54:44.695Z] info Token validated successfuly
+[2024-05-07T13:54:44.695Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:54:44.698Z] info getDetailProduct successfuly
+[2024-05-07T13:55:06.148Z] info Token validated successfuly
+[2024-05-07T13:55:06.149Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:55:06.152Z] info getDetailProduct successfuly
+[2024-05-07T13:55:45.689Z] info Token validated successfuly
+[2024-05-07T13:55:45.690Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:55:45.693Z] info getDetailProduct successfuly
+[2024-05-07T13:56:13.033Z] info server running on port 3000
+[2024-05-07T13:58:02.662Z] info server running on port 3000
+[2024-05-07T13:58:14.640Z] info server running on port 3000
+[2024-05-07T13:58:25.425Z] info server running on port 3000
+[2024-05-07T13:58:35.189Z] info server running on port 3000
+[2024-05-07T13:58:47.727Z] info server running on port 3000
+[2024-05-07T13:59:03.731Z] info server running on port 3000
+[2024-05-07T13:59:15.553Z] info server running on port 3000
+[2024-05-07T13:59:17.587Z] info Token validated successfuly
+[2024-05-07T13:59:17.587Z] info enter the endpoint edit dropshipper
+[2024-05-07T13:59:17.612Z] info Not found dropshipper
+[2024-05-07T13:59:26.644Z] info Token validated successfuly
+[2024-05-07T13:59:26.644Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:59:26.648Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:59:26.809Z] info Token validated successfuly
+[2024-05-07T13:59:26.809Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T13:59:26.812Z] info getProductsByDropshipper successfuly
+[2024-05-07T13:59:29.994Z] info Token validated successfuly
+[2024-05-07T13:59:29.995Z] info enter the endpoint getDetailProduct
+[2024-05-07T13:59:29.997Z] info getDetailProduct successfuly
+[2024-05-07T13:59:43.942Z] info Token validated successfuly
+[2024-05-07T13:59:43.942Z] info enter the endpoint edit product
+[2024-05-07T13:59:43.947Z] info Edit dropshipper successfuly
+[2024-05-07T14:00:12.561Z] info Token validated successfuly
+[2024-05-07T14:00:12.561Z] info enter the endpoint getDetailProduct
+[2024-05-07T14:00:12.565Z] info getDetailProduct successfuly
+[2024-05-07T14:00:16.732Z] info Token validated successfuly
+[2024-05-07T14:00:16.733Z] info enter the endpoint getDetailProduct
+[2024-05-07T14:00:16.734Z] info getDetailProduct successfuly
+[2024-05-07T14:00:17.263Z] info Token validated successfuly
+[2024-05-07T14:00:17.263Z] info enter the endpoint edit product
+[2024-05-07T14:00:17.265Z] info Edit dropshipper successfuly
+[2024-05-07T14:00:20.259Z] info Token validated successfuly
+[2024-05-07T14:00:20.259Z] info enter the endpoint getDetailProduct
+[2024-05-07T14:00:20.261Z] info getDetailProduct successfuly
+[2024-05-07T14:00:21.838Z] info Token validated successfuly
+[2024-05-07T14:00:21.838Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:00:21.840Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:00:26.321Z] info Token validated successfuly
+[2024-05-07T14:00:26.321Z] info enter the endpoint getDetailProduct
+[2024-05-07T14:00:26.325Z] info getDetailProduct successfuly
+[2024-05-07T14:00:29.143Z] info Token validated successfuly
+[2024-05-07T14:00:29.143Z] info enter the endpoint getDetailProduct
+[2024-05-07T14:00:29.145Z] info getDetailProduct successfuly
+[2024-05-07T14:00:31.167Z] info Token validated successfuly
+[2024-05-07T14:00:31.167Z] info enter the endpoint edit product
+[2024-05-07T14:00:31.169Z] info Edit dropshipper successfuly
+[2024-05-07T14:00:31.239Z] info Token validated successfuly
+[2024-05-07T14:00:31.239Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:00:31.242Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:00:34.081Z] info Token validated successfuly
+[2024-05-07T14:00:34.081Z] info enter the endpoint getDetailProduct
+[2024-05-07T14:00:34.083Z] info getDetailProduct successfuly
+[2024-05-07T14:00:49.224Z] info Token validated successfuly
+[2024-05-07T14:00:49.224Z] info enter the endpoint edit product
+[2024-05-07T14:00:49.227Z] info Edit dropshipper successfuly
+[2024-05-07T14:00:49.330Z] info Token validated successfuly
+[2024-05-07T14:00:49.330Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:00:49.332Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:00:55.416Z] info Token validated successfuly
+[2024-05-07T14:00:55.417Z] info enter the endpoint delete product
+[2024-05-07T14:00:55.422Z] info Delete product successfuly
+[2024-05-07T14:00:55.481Z] info Token validated successfuly
+[2024-05-07T14:00:55.481Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:00:55.482Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:01:00.904Z] info Token validated successfuly
+[2024-05-07T14:01:00.904Z] info enter the endpoint delete product
+[2024-05-07T14:01:00.909Z] info Delete product successfuly
+[2024-05-07T14:01:00.967Z] info Token validated successfuly
+[2024-05-07T14:01:00.967Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:01:00.969Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:01:09.463Z] info Token validated successfuly
+[2024-05-07T14:01:09.463Z] info enter the endpoint add addProduct
+[2024-05-07T14:01:09.470Z] info Add addProduct successfuly
+[2024-05-07T14:01:09.529Z] info Token validated successfuly
+[2024-05-07T14:01:09.529Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:01:09.531Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:01:11.435Z] info Token validated successfuly
+[2024-05-07T14:01:11.435Z] info enter the endpoint getDetailCarrier
+[2024-05-07T14:01:11.442Z] info Token validated successfuly
+[2024-05-07T14:01:11.442Z] info enter the endpoint getDepartments
+[2024-05-07T14:01:11.446Z] info getDetailDropshipper successfuly
+[2024-05-07T14:01:11.449Z] info getDepartments successfuly
+[2024-05-07T14:01:14.971Z] info Token validated successfuly
+[2024-05-07T14:01:14.971Z] info enter the endpoint getPackagesByStore
+[2024-05-07T14:01:14.977Z] info getPackagesByStore successfuly
+[2024-05-07T14:01:16.964Z] info Token validated successfuly
+[2024-05-07T14:01:16.964Z] info enter the endpoint getDepartments
+[2024-05-07T14:01:16.966Z] info Token validated successfuly
+[2024-05-07T14:01:16.966Z] info enter the endpoint getTypePackage
+[2024-05-07T14:01:16.968Z] info Token validated successfuly
+[2024-05-07T14:01:16.968Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:01:16.970Z] info getDepartments successfuly
+[2024-05-07T14:01:16.971Z] info getTypePackage successfuly
+[2024-05-07T14:01:16.973Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:01:57.849Z] info Token validated successfuly
+[2024-05-07T14:01:57.849Z] info enter the endpoint getCitiesByDepartment
+[2024-05-07T14:01:57.852Z] info getCitiesByDepartment successfuly
+[2024-05-07T14:02:26.039Z] info Token validated successfuly
+[2024-05-07T14:02:26.039Z] info enter the endpoint add addPackage
+[2024-05-07T14:02:26.059Z] info Add addPackage successfuly
+[2024-05-07T14:02:26.064Z] info Token validated successfuly
+[2024-05-07T14:02:26.064Z] info enter the endpoint addProductToPackage
+[2024-05-07T14:02:26.065Z] info addProductToPackage successfuly
+[2024-05-07T14:02:26.334Z] info Token validated successfuly
+[2024-05-07T14:02:26.335Z] info enter the endpoint getPackagesByStore
+[2024-05-07T14:02:26.342Z] info getPackagesByStore successfuly
+[2024-05-07T14:02:32.735Z] info Token validated successfuly
+[2024-05-07T14:02:32.735Z] info Enter the endpoint get products package
+[2024-05-07T14:02:32.737Z] info Get products package successfuly
+[2024-05-07T14:02:36.757Z] info Token validated successfuly
+[2024-05-07T14:02:36.757Z] info enter the endpoint getDepartments
+[2024-05-07T14:02:36.760Z] info Token validated successfuly
+[2024-05-07T14:02:36.760Z] info enter the endpoint getTypePackage
+[2024-05-07T14:02:36.762Z] info Token validated successfuly
+[2024-05-07T14:02:36.762Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:02:36.764Z] info getDepartments successfuly
+[2024-05-07T14:02:36.767Z] info getTypePackage successfuly
+[2024-05-07T14:02:36.769Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:03:10.316Z] info Token validated successfuly
+[2024-05-07T14:03:10.317Z] info enter the endpoint getDepartments
+[2024-05-07T14:03:10.319Z] info Token validated successfuly
+[2024-05-07T14:03:10.319Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:03:10.321Z] info Token validated successfuly
+[2024-05-07T14:03:10.321Z] info enter the endpoint getTypePackage
+[2024-05-07T14:03:10.325Z] info getDepartments successfuly
+[2024-05-07T14:03:10.327Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:03:10.328Z] info getTypePackage successfuly
+[2024-05-07T14:03:12.730Z] info Token validated successfuly
+[2024-05-07T14:03:12.730Z] info enter the endpoint getDepartments
+[2024-05-07T14:03:12.732Z] info Token validated successfuly
+[2024-05-07T14:03:12.732Z] info enter the endpoint getDetailCarrier
+[2024-05-07T14:03:12.735Z] info getDepartments successfuly
+[2024-05-07T14:03:12.736Z] info getDetailDropshipper successfuly
+[2024-05-07T14:03:17.126Z] info Token validated successfuly
+[2024-05-07T14:03:17.126Z] info enter the endpoint getPackagesByStore
+[2024-05-07T14:03:17.131Z] info getPackagesByStore successfuly
+[2024-05-07T14:03:20.327Z] info Token validated successfuly
+[2024-05-07T14:03:20.327Z] info enter the endpoint getDepartments
+[2024-05-07T14:03:20.329Z] info Token validated successfuly
+[2024-05-07T14:03:20.329Z] info enter the endpoint getTypePackage
+[2024-05-07T14:03:20.331Z] info Token validated successfuly
+[2024-05-07T14:03:20.331Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:03:20.333Z] info getDepartments successfuly
+[2024-05-07T14:03:20.334Z] info getTypePackage successfuly
+[2024-05-07T14:03:20.335Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:07:38.325Z] info Token validated successfuly
+[2024-05-07T14:07:38.326Z] info enter the endpoint getDepartments
+[2024-05-07T14:07:38.328Z] info Token validated successfuly
+[2024-05-07T14:07:38.328Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:07:38.332Z] info Token validated successfuly
+[2024-05-07T14:07:38.332Z] info enter the endpoint getTypePackage
+[2024-05-07T14:07:38.339Z] info getDepartments successfuly
+[2024-05-07T14:07:38.340Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:07:38.342Z] info getTypePackage successfuly
+[2024-05-07T14:07:43.220Z] info Token validated successfuly
+[2024-05-07T14:07:43.221Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:07:43.222Z] info Token validated successfuly
+[2024-05-07T14:07:43.223Z] info enter the endpoint getDepartments
+[2024-05-07T14:07:43.224Z] info Token validated successfuly
+[2024-05-07T14:07:43.224Z] info enter the endpoint getTypePackage
+[2024-05-07T14:07:43.225Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:07:43.226Z] info getDepartments successfuly
+[2024-05-07T14:07:43.228Z] info getTypePackage successfuly
+[2024-05-07T14:07:44.974Z] info Token validated successfuly
+[2024-05-07T14:07:44.975Z] info enter the endpoint getDepartments
+[2024-05-07T14:07:44.977Z] info Token validated successfuly
+[2024-05-07T14:07:44.977Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:07:44.978Z] info Token validated successfuly
+[2024-05-07T14:07:44.978Z] info enter the endpoint getTypePackage
+[2024-05-07T14:07:44.979Z] info getDepartments successfuly
+[2024-05-07T14:07:44.980Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:07:44.982Z] info getTypePackage successfuly
+[2024-05-07T14:07:57.774Z] info Token validated successfuly
+[2024-05-07T14:07:57.774Z] info enter the endpoint getDepartments
+[2024-05-07T14:07:57.776Z] info Token validated successfuly
+[2024-05-07T14:07:57.776Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:07:57.778Z] info Token validated successfuly
+[2024-05-07T14:07:57.778Z] info enter the endpoint getTypePackage
+[2024-05-07T14:07:57.782Z] info getDepartments successfuly
+[2024-05-07T14:07:57.783Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:07:57.784Z] info getTypePackage successfuly
+[2024-05-07T14:09:09.966Z] info Token validated successfuly
+[2024-05-07T14:09:09.967Z] info enter the endpoint getDepartments
+[2024-05-07T14:09:09.970Z] info Token validated successfuly
+[2024-05-07T14:09:09.970Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:09:09.972Z] info Token validated successfuly
+[2024-05-07T14:09:09.972Z] info enter the endpoint getTypePackage
+[2024-05-07T14:09:09.977Z] info getDepartments successfuly
+[2024-05-07T14:09:09.978Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:09:09.979Z] info getTypePackage successfuly
+[2024-05-07T14:09:51.376Z] info Token validated successfuly
+[2024-05-07T14:09:51.376Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:09:51.378Z] info Token validated successfuly
+[2024-05-07T14:09:51.378Z] info enter the endpoint getDepartments
+[2024-05-07T14:09:51.380Z] info Token validated successfuly
+[2024-05-07T14:09:51.380Z] info enter the endpoint getTypePackage
+[2024-05-07T14:09:51.384Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:09:51.386Z] info getDepartments successfuly
+[2024-05-07T14:09:51.388Z] info getTypePackage successfuly
+[2024-05-07T14:09:54.051Z] info Token validated successfuly
+[2024-05-07T14:09:54.051Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:09:54.053Z] info Token validated successfuly
+[2024-05-07T14:09:54.053Z] info enter the endpoint getDepartments
+[2024-05-07T14:09:54.055Z] info Token validated successfuly
+[2024-05-07T14:09:54.055Z] info enter the endpoint getTypePackage
+[2024-05-07T14:09:54.056Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:09:54.058Z] info getDepartments successfuly
+[2024-05-07T14:09:54.060Z] info getTypePackage successfuly
+[2024-05-07T14:09:59.499Z] info Token validated successfuly
+[2024-05-07T14:09:59.500Z] info enter the endpoint getDepartments
+[2024-05-07T14:09:59.502Z] info Token validated successfuly
+[2024-05-07T14:09:59.502Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:09:59.503Z] info Token validated successfuly
+[2024-05-07T14:09:59.504Z] info enter the endpoint getTypePackage
+[2024-05-07T14:09:59.504Z] info getDepartments successfuly
+[2024-05-07T14:09:59.505Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:09:59.506Z] info getTypePackage successfuly
+[2024-05-07T14:11:11.375Z] info Token validated successfuly
+[2024-05-07T14:11:11.376Z] info enter the endpoint getDepartments
+[2024-05-07T14:11:11.378Z] info Token validated successfuly
+[2024-05-07T14:11:11.378Z] info enter the endpoint getTypePackage
+[2024-05-07T14:11:11.381Z] info Token validated successfuly
+[2024-05-07T14:11:11.381Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:11:11.385Z] info getDepartments successfuly
+[2024-05-07T14:11:11.387Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:11:11.388Z] info getTypePackage successfuly
+[2024-05-07T14:11:18.490Z] info Token validated successfuly
+[2024-05-07T14:11:18.491Z] info enter the endpoint getDepartments
+[2024-05-07T14:11:18.493Z] info Token validated successfuly
+[2024-05-07T14:11:18.493Z] info enter the endpoint getTypePackage
+[2024-05-07T14:11:18.494Z] info Token validated successfuly
+[2024-05-07T14:11:18.495Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:11:18.496Z] info getDepartments successfuly
+[2024-05-07T14:11:18.497Z] info getTypePackage successfuly
+[2024-05-07T14:11:18.498Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:11:24.716Z] info Token validated successfuly
+[2024-05-07T14:11:24.716Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:11:24.718Z] info Token validated successfuly
+[2024-05-07T14:11:24.718Z] info enter the endpoint getDepartments
+[2024-05-07T14:11:24.720Z] info Token validated successfuly
+[2024-05-07T14:11:24.720Z] info enter the endpoint getTypePackage
+[2024-05-07T14:11:24.721Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:11:24.722Z] info getDepartments successfuly
+[2024-05-07T14:11:24.723Z] info getTypePackage successfuly
+[2024-05-07T14:11:41.134Z] info Token validated successfuly
+[2024-05-07T14:11:41.134Z] info enter the endpoint getDepartments
+[2024-05-07T14:11:41.136Z] info Token validated successfuly
+[2024-05-07T14:11:41.136Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:11:41.138Z] info Token validated successfuly
+[2024-05-07T14:11:41.138Z] info enter the endpoint getTypePackage
+[2024-05-07T14:11:41.143Z] info getDepartments successfuly
+[2024-05-07T14:11:41.144Z] info getTypePackage successfuly
+[2024-05-07T14:11:41.145Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:11:41.690Z] info Token validated successfuly
+[2024-05-07T14:11:41.690Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:11:41.692Z] info Token validated successfuly
+[2024-05-07T14:11:41.692Z] info enter the endpoint getDepartments
+[2024-05-07T14:11:41.693Z] info Token validated successfuly
+[2024-05-07T14:11:41.693Z] info enter the endpoint getTypePackage
+[2024-05-07T14:11:41.694Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:11:41.696Z] info getDepartments successfuly
+[2024-05-07T14:11:41.697Z] info getTypePackage successfuly
+[2024-05-07T14:12:25.076Z] info Token validated successfuly
+[2024-05-07T14:12:25.076Z] info enter the endpoint getDepartments
+[2024-05-07T14:12:25.078Z] info Token validated successfuly
+[2024-05-07T14:12:25.078Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:12:25.080Z] info Token validated successfuly
+[2024-05-07T14:12:25.080Z] info enter the endpoint getTypePackage
+[2024-05-07T14:12:25.084Z] info getDepartments successfuly
+[2024-05-07T14:12:25.087Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:12:25.088Z] info getTypePackage successfuly
+[2024-05-07T14:12:32.689Z] info Token validated successfuly
+[2024-05-07T14:12:32.690Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:12:32.691Z] info Token validated successfuly
+[2024-05-07T14:12:32.692Z] info enter the endpoint getDepartments
+[2024-05-07T14:12:32.693Z] info Token validated successfuly
+[2024-05-07T14:12:32.693Z] info enter the endpoint getTypePackage
+[2024-05-07T14:12:32.694Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:12:32.695Z] info getDepartments successfuly
+[2024-05-07T14:12:32.696Z] info getTypePackage successfuly
+[2024-05-07T14:12:33.909Z] info Token validated successfuly
+[2024-05-07T14:12:33.909Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:12:33.911Z] info Token validated successfuly
+[2024-05-07T14:12:33.911Z] info enter the endpoint getDepartments
+[2024-05-07T14:12:33.912Z] info Token validated successfuly
+[2024-05-07T14:12:33.913Z] info enter the endpoint getTypePackage
+[2024-05-07T14:12:33.913Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:12:33.914Z] info getDepartments successfuly
+[2024-05-07T14:12:33.915Z] info getTypePackage successfuly
+[2024-05-07T14:12:36.074Z] info Token validated successfuly
+[2024-05-07T14:12:36.075Z] info enter the endpoint getDepartments
+[2024-05-07T14:12:36.076Z] info Token validated successfuly
+[2024-05-07T14:12:36.077Z] info enter the endpoint getTypePackage
+[2024-05-07T14:12:36.078Z] info Token validated successfuly
+[2024-05-07T14:12:36.079Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:12:36.080Z] info getDepartments successfuly
+[2024-05-07T14:12:36.081Z] info getTypePackage successfuly
+[2024-05-07T14:12:36.082Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:13:01.653Z] info Token validated successfuly
+[2024-05-07T14:13:01.653Z] info enter the endpoint getDepartments
+[2024-05-07T14:13:01.655Z] info Token validated successfuly
+[2024-05-07T14:13:01.655Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:13:01.657Z] info Token validated successfuly
+[2024-05-07T14:13:01.657Z] info enter the endpoint getTypePackage
+[2024-05-07T14:13:01.660Z] info getDepartments successfuly
+[2024-05-07T14:13:01.662Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:13:01.663Z] info getTypePackage successfuly
+[2024-05-07T14:13:07.766Z] info Token validated successfuly
+[2024-05-07T14:13:07.766Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:13:07.768Z] info Token validated successfuly
+[2024-05-07T14:13:07.768Z] info enter the endpoint getDepartments
+[2024-05-07T14:13:07.769Z] info Token validated successfuly
+[2024-05-07T14:13:07.769Z] info enter the endpoint getTypePackage
+[2024-05-07T14:13:07.770Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:13:07.771Z] info getDepartments successfuly
+[2024-05-07T14:13:07.772Z] info getTypePackage successfuly
+[2024-05-07T14:14:15.557Z] info Token validated successfuly
+[2024-05-07T14:14:15.557Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:14:15.560Z] info Token validated successfuly
+[2024-05-07T14:14:15.560Z] info enter the endpoint getDepartments
+[2024-05-07T14:14:15.563Z] info Token validated successfuly
+[2024-05-07T14:14:15.563Z] info enter the endpoint getTypePackage
+[2024-05-07T14:14:15.569Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:14:15.570Z] info getDepartments successfuly
+[2024-05-07T14:14:15.571Z] info getTypePackage successfuly
+[2024-05-07T14:14:36.486Z] info Token validated successfuly
+[2024-05-07T14:14:36.486Z] info enter the endpoint getDepartments
+[2024-05-07T14:14:36.488Z] info Token validated successfuly
+[2024-05-07T14:14:36.488Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:14:36.490Z] info Token validated successfuly
+[2024-05-07T14:14:36.490Z] info enter the endpoint getTypePackage
+[2024-05-07T14:14:36.494Z] info getDepartments successfuly
+[2024-05-07T14:14:36.495Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:14:36.496Z] info getTypePackage successfuly
+[2024-05-07T14:14:43.351Z] info Token validated successfuly
+[2024-05-07T14:14:43.351Z] info enter the endpoint getDepartments
+[2024-05-07T14:14:43.353Z] info Token validated successfuly
+[2024-05-07T14:14:43.353Z] info enter the endpoint getTypePackage
+[2024-05-07T14:14:43.355Z] info Token validated successfuly
+[2024-05-07T14:14:43.355Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:14:43.356Z] info getDepartments successfuly
+[2024-05-07T14:14:43.357Z] info getTypePackage successfuly
+[2024-05-07T14:14:43.358Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:14:45.211Z] info Token validated successfuly
+[2024-05-07T14:14:45.212Z] info enter the endpoint getDepartments
+[2024-05-07T14:14:45.215Z] info Token validated successfuly
+[2024-05-07T14:14:45.215Z] info enter the endpoint getTypePackage
+[2024-05-07T14:14:45.219Z] info Token validated successfuly
+[2024-05-07T14:14:45.219Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:14:45.222Z] info getDepartments successfuly
+[2024-05-07T14:14:45.223Z] info getTypePackage successfuly
+[2024-05-07T14:14:45.224Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:14:58.158Z] info Token validated successfuly
+[2024-05-07T14:14:58.158Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:14:58.160Z] info Token validated successfuly
+[2024-05-07T14:14:58.160Z] info enter the endpoint getDepartments
+[2024-05-07T14:14:58.161Z] info Token validated successfuly
+[2024-05-07T14:14:58.162Z] info enter the endpoint getTypePackage
+[2024-05-07T14:14:58.166Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:14:58.167Z] info getDepartments successfuly
+[2024-05-07T14:14:58.169Z] info getTypePackage successfuly
+[2024-05-07T14:14:59.918Z] info Token validated successfuly
+[2024-05-07T14:14:59.918Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:14:59.921Z] info Token validated successfuly
+[2024-05-07T14:14:59.922Z] info enter the endpoint getDepartments
+[2024-05-07T14:14:59.924Z] info Token validated successfuly
+[2024-05-07T14:14:59.924Z] info enter the endpoint getTypePackage
+[2024-05-07T14:14:59.925Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:14:59.927Z] info getDepartments successfuly
+[2024-05-07T14:14:59.928Z] info getTypePackage successfuly
+[2024-05-07T14:15:02.203Z] info Token validated successfuly
+[2024-05-07T14:15:02.204Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:15:02.206Z] info Token validated successfuly
+[2024-05-07T14:15:02.206Z] info enter the endpoint getDepartments
+[2024-05-07T14:15:02.208Z] info Token validated successfuly
+[2024-05-07T14:15:02.208Z] info enter the endpoint getTypePackage
+[2024-05-07T14:15:02.209Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:15:02.210Z] info getDepartments successfuly
+[2024-05-07T14:15:02.212Z] info getTypePackage successfuly
+[2024-05-07T14:15:07.377Z] info Token validated successfuly
+[2024-05-07T14:15:07.377Z] info enter the endpoint getDepartments
+[2024-05-07T14:15:07.379Z] info Token validated successfuly
+[2024-05-07T14:15:07.379Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:15:07.381Z] info Token validated successfuly
+[2024-05-07T14:15:07.381Z] info enter the endpoint getTypePackage
+[2024-05-07T14:15:07.382Z] info getDepartments successfuly
+[2024-05-07T14:15:07.383Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:15:07.384Z] info getTypePackage successfuly
+[2024-05-07T14:16:00.596Z] info Token validated successfuly
+[2024-05-07T14:16:00.597Z] info enter the endpoint getDepartments
+[2024-05-07T14:16:00.600Z] info Token validated successfuly
+[2024-05-07T14:16:00.600Z] info enter the endpoint getTypePackage
+[2024-05-07T14:16:00.602Z] info Token validated successfuly
+[2024-05-07T14:16:00.602Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:16:00.606Z] info getDepartments successfuly
+[2024-05-07T14:16:00.607Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:16:00.608Z] info getTypePackage successfuly
+[2024-05-07T14:16:03.517Z] info Token validated successfuly
+[2024-05-07T14:16:03.518Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:16:03.519Z] info Token validated successfuly
+[2024-05-07T14:16:03.520Z] info enter the endpoint getDepartments
+[2024-05-07T14:16:03.521Z] info Token validated successfuly
+[2024-05-07T14:16:03.521Z] info enter the endpoint getTypePackage
+[2024-05-07T14:16:03.522Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:16:03.524Z] info getDepartments successfuly
+[2024-05-07T14:16:03.525Z] info getTypePackage successfuly
+[2024-05-07T14:16:07.577Z] info Token validated successfuly
+[2024-05-07T14:16:07.577Z] info enter the endpoint getDepartments
+[2024-05-07T14:16:07.580Z] info Token validated successfuly
+[2024-05-07T14:16:07.580Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:16:07.583Z] info Token validated successfuly
+[2024-05-07T14:16:07.583Z] info enter the endpoint getTypePackage
+[2024-05-07T14:16:07.584Z] info getDepartments successfuly
+[2024-05-07T14:16:07.585Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:16:07.587Z] info getTypePackage successfuly
+[2024-05-07T14:16:18.349Z] info Token validated successfuly
+[2024-05-07T14:16:18.350Z] info enter the endpoint getDepartments
+[2024-05-07T14:16:18.352Z] info Token validated successfuly
+[2024-05-07T14:16:18.352Z] info enter the endpoint getTypePackage
+[2024-05-07T14:16:18.353Z] info Token validated successfuly
+[2024-05-07T14:16:18.353Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:16:18.358Z] info getDepartments successfuly
+[2024-05-07T14:16:18.359Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:16:18.360Z] info getTypePackage successfuly
+[2024-05-07T14:16:44.486Z] info Token validated successfuly
+[2024-05-07T14:16:44.486Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:16:44.488Z] info Token validated successfuly
+[2024-05-07T14:16:44.488Z] info enter the endpoint getDepartments
+[2024-05-07T14:16:44.490Z] info Token validated successfuly
+[2024-05-07T14:16:44.490Z] info enter the endpoint getTypePackage
+[2024-05-07T14:16:44.494Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:16:44.495Z] info getTypePackage successfuly
+[2024-05-07T14:16:44.496Z] info getDepartments successfuly
+[2024-05-07T14:17:15.473Z] info Token validated successfuly
+[2024-05-07T14:17:15.473Z] info enter the endpoint getDepartments
+[2024-05-07T14:17:15.474Z] info Token validated successfuly
+[2024-05-07T14:17:15.474Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:17:15.476Z] info Token validated successfuly
+[2024-05-07T14:17:15.476Z] info enter the endpoint getTypePackage
+[2024-05-07T14:17:15.481Z] info getDepartments successfuly
+[2024-05-07T14:17:15.482Z] info getTypePackage successfuly
+[2024-05-07T14:17:15.483Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:17:16.830Z] info Token validated successfuly
+[2024-05-07T14:17:16.831Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:17:16.833Z] info Token validated successfuly
+[2024-05-07T14:17:16.833Z] info enter the endpoint getDepartments
+[2024-05-07T14:17:16.835Z] info Token validated successfuly
+[2024-05-07T14:17:16.836Z] info enter the endpoint getTypePackage
+[2024-05-07T14:17:16.836Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:17:16.837Z] info getDepartments successfuly
+[2024-05-07T14:17:16.839Z] info getTypePackage successfuly
+[2024-05-07T14:17:45.164Z] info Token validated successfuly
+[2024-05-07T14:17:45.165Z] info enter the endpoint getDepartments
+[2024-05-07T14:17:45.166Z] info Token validated successfuly
+[2024-05-07T14:17:45.166Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:17:45.168Z] info Token validated successfuly
+[2024-05-07T14:17:45.168Z] info enter the endpoint getTypePackage
+[2024-05-07T14:17:45.172Z] info getDepartments successfuly
+[2024-05-07T14:17:45.173Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:17:45.174Z] info getTypePackage successfuly
+[2024-05-07T14:18:43.921Z] info Token validated successfuly
+[2024-05-07T14:18:43.922Z] info enter the endpoint getDepartments
+[2024-05-07T14:18:43.923Z] info Token validated successfuly
+[2024-05-07T14:18:43.923Z] info enter the endpoint getTypePackage
+[2024-05-07T14:18:43.925Z] info Token validated successfuly
+[2024-05-07T14:18:43.925Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:18:43.929Z] info getDepartments successfuly
+[2024-05-07T14:18:43.930Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:18:43.931Z] info getTypePackage successfuly
+[2024-05-07T14:18:44.722Z] info Token validated successfuly
+[2024-05-07T14:18:44.722Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:18:44.724Z] info Token validated successfuly
+[2024-05-07T14:18:44.724Z] info enter the endpoint getDepartments
+[2024-05-07T14:18:44.726Z] info Token validated successfuly
+[2024-05-07T14:18:44.726Z] info enter the endpoint getTypePackage
+[2024-05-07T14:18:44.726Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:18:44.727Z] info getDepartments successfuly
+[2024-05-07T14:18:44.729Z] info getTypePackage successfuly
+[2024-05-07T14:18:46.257Z] info Token validated successfuly
+[2024-05-07T14:18:46.257Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:18:46.259Z] info Token validated successfuly
+[2024-05-07T14:18:46.260Z] info enter the endpoint getDepartments
+[2024-05-07T14:18:46.261Z] info Token validated successfuly
+[2024-05-07T14:18:46.261Z] info enter the endpoint getTypePackage
+[2024-05-07T14:18:46.262Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:18:46.264Z] info getDepartments successfuly
+[2024-05-07T14:18:46.265Z] info getTypePackage successfuly
+[2024-05-07T14:19:45.336Z] info Token validated successfuly
+[2024-05-07T14:19:45.336Z] info enter the endpoint getDepartments
+[2024-05-07T14:19:45.338Z] info Token validated successfuly
+[2024-05-07T14:19:45.338Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:19:45.339Z] info Token validated successfuly
+[2024-05-07T14:19:45.340Z] info enter the endpoint getTypePackage
+[2024-05-07T14:19:45.344Z] info getDepartments successfuly
+[2024-05-07T14:19:45.345Z] info getTypePackage successfuly
+[2024-05-07T14:19:45.347Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:19:47.460Z] info Token validated successfuly
+[2024-05-07T14:19:47.460Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:19:47.463Z] info Token validated successfuly
+[2024-05-07T14:19:47.463Z] info enter the endpoint getDepartments
+[2024-05-07T14:19:47.464Z] info Token validated successfuly
+[2024-05-07T14:19:47.465Z] info enter the endpoint getTypePackage
+[2024-05-07T14:19:47.465Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:19:47.467Z] info getDepartments successfuly
+[2024-05-07T14:19:47.468Z] info getTypePackage successfuly
+[2024-05-07T14:19:53.547Z] info Token validated successfuly
+[2024-05-07T14:19:53.547Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:19:53.549Z] info Token validated successfuly
+[2024-05-07T14:19:53.549Z] info enter the endpoint getDepartments
+[2024-05-07T14:19:53.551Z] info Token validated successfuly
+[2024-05-07T14:19:53.551Z] info enter the endpoint getTypePackage
+[2024-05-07T14:19:53.552Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:19:53.553Z] info getDepartments successfuly
+[2024-05-07T14:19:53.554Z] info getTypePackage successfuly
+[2024-05-07T14:20:35.313Z] info Token validated successfuly
+[2024-05-07T14:20:35.313Z] info enter the endpoint getDepartments
+[2024-05-07T14:20:35.315Z] info Token validated successfuly
+[2024-05-07T14:20:35.315Z] info enter the endpoint getTypePackage
+[2024-05-07T14:20:35.317Z] info Token validated successfuly
+[2024-05-07T14:20:35.317Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:20:35.321Z] info getDepartments successfuly
+[2024-05-07T14:20:35.323Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:20:35.324Z] info getTypePackage successfuly
+[2024-05-07T14:20:39.232Z] info Token validated successfuly
+[2024-05-07T14:20:39.232Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:20:39.234Z] info Token validated successfuly
+[2024-05-07T14:20:39.234Z] info enter the endpoint getDepartments
+[2024-05-07T14:20:39.236Z] info Token validated successfuly
+[2024-05-07T14:20:39.236Z] info enter the endpoint getTypePackage
+[2024-05-07T14:20:39.237Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:20:39.237Z] info getDepartments successfuly
+[2024-05-07T14:20:39.238Z] info getTypePackage successfuly
+[2024-05-07T14:21:41.721Z] info Token validated successfuly
+[2024-05-07T14:21:41.721Z] info enter the endpoint getDepartments
+[2024-05-07T14:21:41.723Z] info Token validated successfuly
+[2024-05-07T14:21:41.723Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:21:41.725Z] info Token validated successfuly
+[2024-05-07T14:21:41.725Z] info enter the endpoint getTypePackage
+[2024-05-07T14:21:41.729Z] info getDepartments successfuly
+[2024-05-07T14:21:41.731Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:21:41.732Z] info getTypePackage successfuly
+[2024-05-07T14:21:44.706Z] info Token validated successfuly
+[2024-05-07T14:21:44.706Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:21:44.708Z] info Token validated successfuly
+[2024-05-07T14:21:44.708Z] info enter the endpoint getDepartments
+[2024-05-07T14:21:44.710Z] info Token validated successfuly
+[2024-05-07T14:21:44.710Z] info enter the endpoint getTypePackage
+[2024-05-07T14:21:44.711Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:21:44.712Z] info getDepartments successfuly
+[2024-05-07T14:21:44.712Z] info getTypePackage successfuly
+[2024-05-07T14:22:03.906Z] info Token validated successfuly
+[2024-05-07T14:22:03.907Z] info enter the endpoint getDepartments
+[2024-05-07T14:22:03.908Z] info Token validated successfuly
+[2024-05-07T14:22:03.908Z] info enter the endpoint getTypePackage
+[2024-05-07T14:22:03.910Z] info Token validated successfuly
+[2024-05-07T14:22:03.910Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:22:03.913Z] info getDepartments successfuly
+[2024-05-07T14:22:03.914Z] info getTypePackage successfuly
+[2024-05-07T14:22:03.915Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:22:23.920Z] info Token validated successfuly
+[2024-05-07T14:22:23.921Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:22:23.923Z] info Token validated successfuly
+[2024-05-07T14:22:23.923Z] info enter the endpoint getDepartments
+[2024-05-07T14:22:23.925Z] info Token validated successfuly
+[2024-05-07T14:22:23.925Z] info enter the endpoint getTypePackage
+[2024-05-07T14:22:23.931Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:22:23.932Z] info getDepartments successfuly
+[2024-05-07T14:22:23.933Z] info getTypePackage successfuly
+[2024-05-07T14:22:46.828Z] info Token validated successfuly
+[2024-05-07T14:22:46.828Z] info enter the endpoint getDepartments
+[2024-05-07T14:22:46.830Z] info Token validated successfuly
+[2024-05-07T14:22:46.830Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:22:46.832Z] info Token validated successfuly
+[2024-05-07T14:22:46.832Z] info enter the endpoint getTypePackage
+[2024-05-07T14:22:46.836Z] info getDepartments successfuly
+[2024-05-07T14:22:46.838Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:22:46.839Z] info getTypePackage successfuly
+[2024-05-07T14:22:48.333Z] info Token validated successfuly
+[2024-05-07T14:22:48.333Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:22:48.335Z] info Token validated successfuly
+[2024-05-07T14:22:48.335Z] info enter the endpoint getDepartments
+[2024-05-07T14:22:48.337Z] info Token validated successfuly
+[2024-05-07T14:22:48.337Z] info enter the endpoint getTypePackage
+[2024-05-07T14:22:48.338Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:22:48.338Z] info getDepartments successfuly
+[2024-05-07T14:22:48.339Z] info getTypePackage successfuly
+[2024-05-07T14:22:49.408Z] info Token validated successfuly
+[2024-05-07T14:22:49.408Z] info enter the endpoint getDepartments
+[2024-05-07T14:22:49.410Z] info Token validated successfuly
+[2024-05-07T14:22:49.410Z] info enter the endpoint getTypePackage
+[2024-05-07T14:22:49.412Z] info Token validated successfuly
+[2024-05-07T14:22:49.412Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:22:49.414Z] info getDepartments successfuly
+[2024-05-07T14:22:49.415Z] info getTypePackage successfuly
+[2024-05-07T14:22:49.416Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:23:12.620Z] info Token validated successfuly
+[2024-05-07T14:23:12.620Z] info enter the endpoint getDepartments
+[2024-05-07T14:23:12.622Z] info Token validated successfuly
+[2024-05-07T14:23:12.622Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:23:12.623Z] info Token validated successfuly
+[2024-05-07T14:23:12.624Z] info enter the endpoint getTypePackage
+[2024-05-07T14:23:12.628Z] info getDepartments successfuly
+[2024-05-07T14:23:12.629Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:23:12.630Z] info getTypePackage successfuly
+[2024-05-07T14:24:39.632Z] info Token validated successfuly
+[2024-05-07T14:24:39.632Z] info enter the endpoint getDepartments
+[2024-05-07T14:24:39.635Z] info Token validated successfuly
+[2024-05-07T14:24:39.635Z] info enter the endpoint getTypePackage
+[2024-05-07T14:24:39.637Z] info Token validated successfuly
+[2024-05-07T14:24:39.637Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:24:39.641Z] info getDepartments successfuly
+[2024-05-07T14:24:39.642Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:24:39.643Z] info getTypePackage successfuly
+[2024-05-07T14:24:50.738Z] info Token validated successfuly
+[2024-05-07T14:24:50.738Z] info enter the endpoint getDepartments
+[2024-05-07T14:24:50.740Z] info Token validated successfuly
+[2024-05-07T14:24:50.740Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:24:50.742Z] info Token validated successfuly
+[2024-05-07T14:24:50.742Z] info enter the endpoint getTypePackage
+[2024-05-07T14:24:50.747Z] info getDepartments successfuly
+[2024-05-07T14:24:50.748Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:24:50.749Z] info getTypePackage successfuly
+[2024-05-07T14:24:55.437Z] info Token validated successfuly
+[2024-05-07T14:24:55.437Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:24:55.439Z] info Token validated successfuly
+[2024-05-07T14:24:55.439Z] info enter the endpoint getDepartments
+[2024-05-07T14:24:55.441Z] info Token validated successfuly
+[2024-05-07T14:24:55.441Z] info enter the endpoint getTypePackage
+[2024-05-07T14:24:55.442Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:24:55.443Z] info getDepartments successfuly
+[2024-05-07T14:24:55.444Z] info getTypePackage successfuly
+[2024-05-07T14:24:56.056Z] info Token validated successfuly
+[2024-05-07T14:24:56.057Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:24:56.059Z] info Token validated successfuly
+[2024-05-07T14:24:56.059Z] info enter the endpoint getDepartments
+[2024-05-07T14:24:56.061Z] info Token validated successfuly
+[2024-05-07T14:24:56.061Z] info enter the endpoint getTypePackage
+[2024-05-07T14:24:56.061Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:24:56.062Z] info getDepartments successfuly
+[2024-05-07T14:24:56.063Z] info getTypePackage successfuly
+[2024-05-07T14:25:23.459Z] info Token validated successfuly
+[2024-05-07T14:25:23.459Z] info enter the endpoint getDepartments
+[2024-05-07T14:25:23.461Z] info Token validated successfuly
+[2024-05-07T14:25:23.461Z] info enter the endpoint getTypePackage
+[2024-05-07T14:25:23.463Z] info Token validated successfuly
+[2024-05-07T14:25:23.463Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:25:23.468Z] info getDepartments successfuly
+[2024-05-07T14:25:23.469Z] info getTypePackage successfuly
+[2024-05-07T14:25:23.470Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:25:25.664Z] info Token validated successfuly
+[2024-05-07T14:25:25.664Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:25:25.667Z] info Token validated successfuly
+[2024-05-07T14:25:25.667Z] info enter the endpoint getDepartments
+[2024-05-07T14:25:25.669Z] info Token validated successfuly
+[2024-05-07T14:25:25.669Z] info enter the endpoint getTypePackage
+[2024-05-07T14:25:25.670Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:25:25.672Z] info getDepartments successfuly
+[2024-05-07T14:25:25.673Z] info getTypePackage successfuly
+[2024-05-07T14:28:04.747Z] info Token validated successfuly
+[2024-05-07T14:28:04.747Z] info enter the endpoint getDepartments
+[2024-05-07T14:28:04.749Z] info Token validated successfuly
+[2024-05-07T14:28:04.749Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:28:04.751Z] info Token validated successfuly
+[2024-05-07T14:28:04.751Z] info enter the endpoint getTypePackage
+[2024-05-07T14:28:04.755Z] info getDepartments successfuly
+[2024-05-07T14:28:04.756Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:28:04.757Z] info getTypePackage successfuly
+[2024-05-07T14:28:10.881Z] info Token validated successfuly
+[2024-05-07T14:28:10.881Z] info enter the endpoint getDepartments
+[2024-05-07T14:28:10.883Z] info Token validated successfuly
+[2024-05-07T14:28:10.883Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:28:10.885Z] info Token validated successfuly
+[2024-05-07T14:28:10.885Z] info enter the endpoint getTypePackage
+[2024-05-07T14:28:10.885Z] info getDepartments successfuly
+[2024-05-07T14:28:10.886Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:28:10.887Z] info getTypePackage successfuly
+[2024-05-07T14:28:19.165Z] info Token validated successfuly
+[2024-05-07T14:28:19.166Z] info enter the endpoint getDepartments
+[2024-05-07T14:28:19.167Z] info Token validated successfuly
+[2024-05-07T14:28:19.168Z] info enter the endpoint getTypePackage
+[2024-05-07T14:28:19.170Z] info Token validated successfuly
+[2024-05-07T14:28:19.170Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:28:19.171Z] info getDepartments successfuly
+[2024-05-07T14:28:19.171Z] info getTypePackage successfuly
+[2024-05-07T14:28:19.172Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:28:20.045Z] info Token validated successfuly
+[2024-05-07T14:28:20.045Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:28:20.047Z] info Token validated successfuly
+[2024-05-07T14:28:20.047Z] info enter the endpoint getDepartments
+[2024-05-07T14:28:20.049Z] info Token validated successfuly
+[2024-05-07T14:28:20.049Z] info enter the endpoint getTypePackage
+[2024-05-07T14:28:20.050Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:28:20.052Z] info getDepartments successfuly
+[2024-05-07T14:28:20.053Z] info getTypePackage successfuly
+[2024-05-07T14:28:48.723Z] info Token validated successfuly
+[2024-05-07T14:28:48.724Z] info enter the endpoint getDepartments
+[2024-05-07T14:28:48.725Z] info Token validated successfuly
+[2024-05-07T14:28:48.725Z] info enter the endpoint getTypePackage
+[2024-05-07T14:28:48.727Z] info Token validated successfuly
+[2024-05-07T14:28:48.727Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:28:48.730Z] info getDepartments successfuly
+[2024-05-07T14:28:48.731Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:28:48.732Z] info getTypePackage successfuly
+[2024-05-07T14:29:34.191Z] info Token validated successfuly
+[2024-05-07T14:29:34.192Z] info enter the endpoint getDepartments
+[2024-05-07T14:29:34.194Z] info Token validated successfuly
+[2024-05-07T14:29:34.195Z] info enter the endpoint getTypePackage
+[2024-05-07T14:29:34.196Z] info Token validated successfuly
+[2024-05-07T14:29:34.196Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:29:34.200Z] info getDepartments successfuly
+[2024-05-07T14:29:34.201Z] info getTypePackage successfuly
+[2024-05-07T14:29:34.202Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:29:45.178Z] info Token validated successfuly
+[2024-05-07T14:29:45.178Z] info enter the endpoint getDepartments
+[2024-05-07T14:29:45.181Z] info Token validated successfuly
+[2024-05-07T14:29:45.181Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:29:45.182Z] info Token validated successfuly
+[2024-05-07T14:29:45.182Z] info enter the endpoint getTypePackage
+[2024-05-07T14:29:45.185Z] info getDepartments successfuly
+[2024-05-07T14:29:45.186Z] info getTypePackage successfuly
+[2024-05-07T14:29:45.188Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:30:02.570Z] info Token validated successfuly
+[2024-05-07T14:30:02.570Z] info enter the endpoint getDepartments
+[2024-05-07T14:30:02.572Z] info Token validated successfuly
+[2024-05-07T14:30:02.572Z] info enter the endpoint getTypePackage
+[2024-05-07T14:30:02.574Z] info Token validated successfuly
+[2024-05-07T14:30:02.574Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:30:02.577Z] info getDepartments successfuly
+[2024-05-07T14:30:02.578Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:30:02.579Z] info getTypePackage successfuly
+[2024-05-07T14:30:15.168Z] info Token validated successfuly
+[2024-05-07T14:30:15.168Z] info enter the endpoint getDepartments
+[2024-05-07T14:30:15.170Z] info Token validated successfuly
+[2024-05-07T14:30:15.170Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:30:15.171Z] info Token validated successfuly
+[2024-05-07T14:30:15.171Z] info enter the endpoint getTypePackage
+[2024-05-07T14:30:15.174Z] info getDepartments successfuly
+[2024-05-07T14:30:15.176Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:30:15.177Z] info getTypePackage successfuly
+[2024-05-07T14:30:26.069Z] info Token validated successfuly
+[2024-05-07T14:30:26.069Z] info enter the endpoint getDepartments
+[2024-05-07T14:30:26.071Z] info Token validated successfuly
+[2024-05-07T14:30:26.071Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:30:26.072Z] info Token validated successfuly
+[2024-05-07T14:30:26.072Z] info enter the endpoint getTypePackage
+[2024-05-07T14:30:26.076Z] info getDepartments successfuly
+[2024-05-07T14:30:26.077Z] info getTypePackage successfuly
+[2024-05-07T14:30:26.078Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:30:36.724Z] info Token validated successfuly
+[2024-05-07T14:30:36.724Z] info enter the endpoint getDepartments
+[2024-05-07T14:30:36.726Z] info Token validated successfuly
+[2024-05-07T14:30:36.726Z] info enter the endpoint getTypePackage
+[2024-05-07T14:30:36.728Z] info Token validated successfuly
+[2024-05-07T14:30:36.728Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:30:36.732Z] info getDepartments successfuly
+[2024-05-07T14:30:36.734Z] info getTypePackage successfuly
+[2024-05-07T14:30:36.734Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:30:37.480Z] info Token validated successfuly
+[2024-05-07T14:30:37.480Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:30:37.485Z] info Token validated successfuly
+[2024-05-07T14:30:37.485Z] info enter the endpoint getDepartments
+[2024-05-07T14:30:37.488Z] info Token validated successfuly
+[2024-05-07T14:30:37.489Z] info enter the endpoint getTypePackage
+[2024-05-07T14:30:37.494Z] info getDepartments successfuly
+[2024-05-07T14:30:37.496Z] info getTypePackage successfuly
+[2024-05-07T14:30:37.497Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:30:54.757Z] info Token validated successfuly
+[2024-05-07T14:30:54.757Z] info enter the endpoint getDepartments
+[2024-05-07T14:30:54.759Z] info Token validated successfuly
+[2024-05-07T14:30:54.759Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:30:54.760Z] info Token validated successfuly
+[2024-05-07T14:30:54.761Z] info enter the endpoint getTypePackage
+[2024-05-07T14:30:54.765Z] info getDepartments successfuly
+[2024-05-07T14:30:54.766Z] info getTypePackage successfuly
+[2024-05-07T14:30:54.767Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:30:59.584Z] info Token validated successfuly
+[2024-05-07T14:30:59.584Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:30:59.586Z] info Token validated successfuly
+[2024-05-07T14:30:59.586Z] info enter the endpoint getDepartments
+[2024-05-07T14:30:59.588Z] info Token validated successfuly
+[2024-05-07T14:30:59.588Z] info enter the endpoint getTypePackage
+[2024-05-07T14:30:59.589Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:30:59.590Z] info getDepartments successfuly
+[2024-05-07T14:30:59.591Z] info getTypePackage successfuly
+[2024-05-07T14:31:04.544Z] info Token validated successfuly
+[2024-05-07T14:31:04.544Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:31:04.546Z] info Token validated successfuly
+[2024-05-07T14:31:04.546Z] info enter the endpoint getDepartments
+[2024-05-07T14:31:04.547Z] info Token validated successfuly
+[2024-05-07T14:31:04.547Z] info enter the endpoint getTypePackage
+[2024-05-07T14:31:04.548Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:31:04.549Z] info getDepartments successfuly
+[2024-05-07T14:31:04.550Z] info getTypePackage successfuly
+[2024-05-07T14:31:05.447Z] info Token validated successfuly
+[2024-05-07T14:31:05.447Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:31:05.449Z] info Token validated successfuly
+[2024-05-07T14:31:05.450Z] info enter the endpoint getDepartments
+[2024-05-07T14:31:05.452Z] info Token validated successfuly
+[2024-05-07T14:31:05.452Z] info enter the endpoint getTypePackage
+[2024-05-07T14:31:05.453Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:31:05.454Z] info getDepartments successfuly
+[2024-05-07T14:31:05.455Z] info getTypePackage successfuly
+[2024-05-07T14:31:37.167Z] info Token validated successfuly
+[2024-05-07T14:31:37.167Z] info enter the endpoint getDepartments
+[2024-05-07T14:31:37.169Z] info Token validated successfuly
+[2024-05-07T14:31:37.169Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:31:37.170Z] info Token validated successfuly
+[2024-05-07T14:31:37.170Z] info enter the endpoint getTypePackage
+[2024-05-07T14:31:37.174Z] info getDepartments successfuly
+[2024-05-07T14:31:37.175Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:31:37.177Z] info getTypePackage successfuly
+[2024-05-07T14:31:37.734Z] info Token validated successfuly
+[2024-05-07T14:31:37.735Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:31:37.737Z] info Token validated successfuly
+[2024-05-07T14:31:37.738Z] info enter the endpoint getDepartments
+[2024-05-07T14:31:37.739Z] info Token validated successfuly
+[2024-05-07T14:31:37.740Z] info enter the endpoint getTypePackage
+[2024-05-07T14:31:37.741Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:31:37.743Z] info getDepartments successfuly
+[2024-05-07T14:31:37.744Z] info getTypePackage successfuly
+[2024-05-07T14:32:14.576Z] info Token validated successfuly
+[2024-05-07T14:32:14.577Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:32:14.578Z] info Token validated successfuly
+[2024-05-07T14:32:14.578Z] info enter the endpoint getDepartments
+[2024-05-07T14:32:14.580Z] info Token validated successfuly
+[2024-05-07T14:32:14.580Z] info enter the endpoint getTypePackage
+[2024-05-07T14:32:14.584Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:32:14.585Z] info getTypePackage successfuly
+[2024-05-07T14:32:14.586Z] info getDepartments successfuly
+[2024-05-07T14:34:27.584Z] info Token validated successfuly
+[2024-05-07T14:34:27.584Z] info enter the endpoint getDepartments
+[2024-05-07T14:34:27.587Z] info Token validated successfuly
+[2024-05-07T14:34:27.587Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:34:27.589Z] info Token validated successfuly
+[2024-05-07T14:34:27.589Z] info enter the endpoint getTypePackage
+[2024-05-07T14:34:27.593Z] info getDepartments successfuly
+[2024-05-07T14:34:27.595Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:34:27.596Z] info getTypePackage successfuly
+[2024-05-07T14:34:34.061Z] info Token validated successfuly
+[2024-05-07T14:34:34.061Z] info enter the endpoint getDepartments
+[2024-05-07T14:34:34.064Z] info Token validated successfuly
+[2024-05-07T14:34:34.064Z] info enter the endpoint getTypePackage
+[2024-05-07T14:34:34.066Z] info Token validated successfuly
+[2024-05-07T14:34:34.066Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:34:34.067Z] info getDepartments successfuly
+[2024-05-07T14:34:34.068Z] info getTypePackage successfuly
+[2024-05-07T14:34:34.069Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:34:59.733Z] info Token validated successfuly
+[2024-05-07T14:34:59.733Z] info enter the endpoint getDepartments
+[2024-05-07T14:34:59.735Z] info Token validated successfuly
+[2024-05-07T14:34:59.736Z] info enter the endpoint getTypePackage
+[2024-05-07T14:34:59.737Z] info Token validated successfuly
+[2024-05-07T14:34:59.738Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:34:59.741Z] info getDepartments successfuly
+[2024-05-07T14:34:59.742Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:34:59.743Z] info getTypePackage successfuly
+[2024-05-07T14:35:00.721Z] info Token validated successfuly
+[2024-05-07T14:35:00.721Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:35:00.723Z] info Token validated successfuly
+[2024-05-07T14:35:00.723Z] info enter the endpoint getDepartments
+[2024-05-07T14:35:00.725Z] info Token validated successfuly
+[2024-05-07T14:35:00.725Z] info enter the endpoint getTypePackage
+[2024-05-07T14:35:00.726Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:35:00.727Z] info getDepartments successfuly
+[2024-05-07T14:35:00.728Z] info getTypePackage successfuly
+[2024-05-07T14:35:39.715Z] info Token validated successfuly
+[2024-05-07T14:35:39.715Z] info enter the endpoint getDepartments
+[2024-05-07T14:35:39.717Z] info Token validated successfuly
+[2024-05-07T14:35:39.717Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:35:39.719Z] info Token validated successfuly
+[2024-05-07T14:35:39.719Z] info enter the endpoint getTypePackage
+[2024-05-07T14:35:39.723Z] info getDepartments successfuly
+[2024-05-07T14:35:39.725Z] info getTypePackage successfuly
+[2024-05-07T14:35:39.726Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:35:52.943Z] info Token validated successfuly
+[2024-05-07T14:35:52.943Z] info enter the endpoint getDepartments
+[2024-05-07T14:35:52.945Z] info Token validated successfuly
+[2024-05-07T14:35:52.945Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:35:52.946Z] info Token validated successfuly
+[2024-05-07T14:35:52.946Z] info enter the endpoint getTypePackage
+[2024-05-07T14:35:52.950Z] info getDepartments successfuly
+[2024-05-07T14:35:52.952Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:35:52.953Z] info getTypePackage successfuly
+[2024-05-07T14:35:55.629Z] info Token validated successfuly
+[2024-05-07T14:35:55.629Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:35:55.631Z] info Token validated successfuly
+[2024-05-07T14:35:55.631Z] info enter the endpoint getDepartments
+[2024-05-07T14:35:55.633Z] info Token validated successfuly
+[2024-05-07T14:35:55.633Z] info enter the endpoint getTypePackage
+[2024-05-07T14:35:55.634Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:35:55.635Z] info getDepartments successfuly
+[2024-05-07T14:35:55.636Z] info getTypePackage successfuly
+[2024-05-07T14:36:33.725Z] info Token validated successfuly
+[2024-05-07T14:36:33.725Z] info enter the endpoint getDepartments
+[2024-05-07T14:36:33.727Z] info Token validated successfuly
+[2024-05-07T14:36:33.727Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:36:33.729Z] info Token validated successfuly
+[2024-05-07T14:36:33.729Z] info enter the endpoint getTypePackage
+[2024-05-07T14:36:33.733Z] info getDepartments successfuly
+[2024-05-07T14:36:33.734Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:36:33.735Z] info getTypePackage successfuly
+[2024-05-07T14:36:46.179Z] info Token validated successfuly
+[2024-05-07T14:36:46.179Z] info enter the endpoint getDepartments
+[2024-05-07T14:36:46.180Z] info Token validated successfuly
+[2024-05-07T14:36:46.181Z] info enter the endpoint getTypePackage
+[2024-05-07T14:36:46.182Z] info Token validated successfuly
+[2024-05-07T14:36:46.182Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:36:46.186Z] info getDepartments successfuly
+[2024-05-07T14:36:46.187Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:36:46.188Z] info getTypePackage successfuly
+[2024-05-07T14:37:06.565Z] info Token validated successfuly
+[2024-05-07T14:37:06.565Z] info enter the endpoint getDepartments
+[2024-05-07T14:37:06.568Z] info Token validated successfuly
+[2024-05-07T14:37:06.568Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:37:06.570Z] info Token validated successfuly
+[2024-05-07T14:37:06.570Z] info enter the endpoint getTypePackage
+[2024-05-07T14:37:06.574Z] info getDepartments successfuly
+[2024-05-07T14:37:06.575Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:37:06.576Z] info getTypePackage successfuly
+[2024-05-07T14:37:07.310Z] info Token validated successfuly
+[2024-05-07T14:37:07.310Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:37:07.312Z] info Token validated successfuly
+[2024-05-07T14:37:07.312Z] info enter the endpoint getDepartments
+[2024-05-07T14:37:07.314Z] info Token validated successfuly
+[2024-05-07T14:37:07.314Z] info enter the endpoint getTypePackage
+[2024-05-07T14:37:07.315Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:37:07.316Z] info getDepartments successfuly
+[2024-05-07T14:37:07.317Z] info getTypePackage successfuly
+[2024-05-07T14:37:52.447Z] info Token validated successfuly
+[2024-05-07T14:37:52.447Z] info enter the endpoint getDepartments
+[2024-05-07T14:37:52.449Z] info Token validated successfuly
+[2024-05-07T14:37:52.450Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:37:52.452Z] info Token validated successfuly
+[2024-05-07T14:37:52.452Z] info enter the endpoint getTypePackage
+[2024-05-07T14:37:52.455Z] info getDepartments successfuly
+[2024-05-07T14:37:52.457Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:37:52.457Z] info getTypePackage successfuly
+[2024-05-07T14:38:13.370Z] info Token validated successfuly
+[2024-05-07T14:38:13.370Z] info enter the endpoint getDepartments
+[2024-05-07T14:38:13.373Z] info Token validated successfuly
+[2024-05-07T14:38:13.373Z] info enter the endpoint getTypePackage
+[2024-05-07T14:38:13.375Z] info Token validated successfuly
+[2024-05-07T14:38:13.375Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:38:13.379Z] info getDepartments successfuly
+[2024-05-07T14:38:13.380Z] info getTypePackage successfuly
+[2024-05-07T14:38:13.381Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:38:14.225Z] info Token validated successfuly
+[2024-05-07T14:38:14.225Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:38:14.228Z] info Token validated successfuly
+[2024-05-07T14:38:14.229Z] info enter the endpoint getDepartments
+[2024-05-07T14:38:14.230Z] info Token validated successfuly
+[2024-05-07T14:38:14.231Z] info enter the endpoint getTypePackage
+[2024-05-07T14:38:14.232Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:38:14.234Z] info getDepartments successfuly
+[2024-05-07T14:38:14.236Z] info getTypePackage successfuly
+[2024-05-07T14:38:28.799Z] info Token validated successfuly
+[2024-05-07T14:38:28.800Z] info enter the endpoint getDepartments
+[2024-05-07T14:38:28.802Z] info Token validated successfuly
+[2024-05-07T14:38:28.803Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:38:28.804Z] info Token validated successfuly
+[2024-05-07T14:38:28.804Z] info enter the endpoint getTypePackage
+[2024-05-07T14:38:28.808Z] info getDepartments successfuly
+[2024-05-07T14:38:28.809Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:38:28.810Z] info getTypePackage successfuly
+[2024-05-07T14:38:54.589Z] info Token validated successfuly
+[2024-05-07T14:38:54.589Z] info enter the endpoint getDepartments
+[2024-05-07T14:38:54.591Z] info Token validated successfuly
+[2024-05-07T14:38:54.591Z] info enter the endpoint getTypePackage
+[2024-05-07T14:38:54.593Z] info Token validated successfuly
+[2024-05-07T14:38:54.593Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:38:54.596Z] info getDepartments successfuly
+[2024-05-07T14:38:54.597Z] info getTypePackage successfuly
+[2024-05-07T14:38:54.598Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:39:34.851Z] info Token validated successfuly
+[2024-05-07T14:39:34.851Z] info enter the endpoint getDepartments
+[2024-05-07T14:39:34.855Z] info Token validated successfuly
+[2024-05-07T14:39:34.855Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:39:34.857Z] info Token validated successfuly
+[2024-05-07T14:39:34.857Z] info enter the endpoint getTypePackage
+[2024-05-07T14:39:34.862Z] info getDepartments successfuly
+[2024-05-07T14:39:34.863Z] info getTypePackage successfuly
+[2024-05-07T14:39:34.864Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:39:51.344Z] info Token validated successfuly
+[2024-05-07T14:39:51.344Z] info enter the endpoint getDepartments
+[2024-05-07T14:39:51.346Z] info Token validated successfuly
+[2024-05-07T14:39:51.347Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:39:51.349Z] info Token validated successfuly
+[2024-05-07T14:39:51.349Z] info enter the endpoint getTypePackage
+[2024-05-07T14:39:51.353Z] info getDepartments successfuly
+[2024-05-07T14:39:51.354Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:39:51.355Z] info getTypePackage successfuly
+[2024-05-07T14:39:55.375Z] info Token validated successfuly
+[2024-05-07T14:39:55.375Z] info enter the endpoint getDepartments
+[2024-05-07T14:39:55.377Z] info Token validated successfuly
+[2024-05-07T14:39:55.377Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:39:55.379Z] info Token validated successfuly
+[2024-05-07T14:39:55.379Z] info enter the endpoint getTypePackage
+[2024-05-07T14:39:55.381Z] info getDepartments successfuly
+[2024-05-07T14:39:55.382Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:39:55.382Z] info getTypePackage successfuly
+[2024-05-07T14:39:55.844Z] info Token validated successfuly
+[2024-05-07T14:39:55.844Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:39:55.847Z] info Token validated successfuly
+[2024-05-07T14:39:55.847Z] info enter the endpoint getDepartments
+[2024-05-07T14:39:55.849Z] info Token validated successfuly
+[2024-05-07T14:39:55.849Z] info enter the endpoint getTypePackage
+[2024-05-07T14:39:55.850Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:39:55.851Z] info getDepartments successfuly
+[2024-05-07T14:39:55.852Z] info getTypePackage successfuly
+[2024-05-07T14:41:56.764Z] info Token validated successfuly
+[2024-05-07T14:41:56.764Z] info enter the endpoint getDepartments
+[2024-05-07T14:41:56.766Z] info Token validated successfuly
+[2024-05-07T14:41:56.766Z] info enter the endpoint getTypePackage
+[2024-05-07T14:41:56.768Z] info Token validated successfuly
+[2024-05-07T14:41:56.768Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:41:56.771Z] info getDepartments successfuly
+[2024-05-07T14:41:56.772Z] info getTypePackage successfuly
+[2024-05-07T14:41:56.774Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:42:00.472Z] info Token validated successfuly
+[2024-05-07T14:42:00.472Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:42:00.474Z] info Token validated successfuly
+[2024-05-07T14:42:00.474Z] info enter the endpoint getDepartments
+[2024-05-07T14:42:00.476Z] info Token validated successfuly
+[2024-05-07T14:42:00.476Z] info enter the endpoint getTypePackage
+[2024-05-07T14:42:00.477Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:42:00.478Z] info getDepartments successfuly
+[2024-05-07T14:42:00.479Z] info getTypePackage successfuly
+[2024-05-07T14:42:17.437Z] info Token validated successfuly
+[2024-05-07T14:42:17.437Z] info enter the endpoint getDepartments
+[2024-05-07T14:42:17.442Z] info getDepartments successfuly
+[2024-05-07T14:42:17.445Z] info Token validated successfuly
+[2024-05-07T14:42:17.445Z] info enter the endpoint getTypePackage
+[2024-05-07T14:42:17.448Z] info Token validated successfuly
+[2024-05-07T14:42:17.448Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:42:17.449Z] info getTypePackage successfuly
+[2024-05-07T14:42:17.450Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:42:44.412Z] info Token validated successfuly
+[2024-05-07T14:42:44.413Z] info enter the endpoint getDepartments
+[2024-05-07T14:42:44.414Z] info Token validated successfuly
+[2024-05-07T14:42:44.414Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:42:44.416Z] info Token validated successfuly
+[2024-05-07T14:42:44.417Z] info enter the endpoint getTypePackage
+[2024-05-07T14:42:44.420Z] info getDepartments successfuly
+[2024-05-07T14:42:44.421Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:42:44.422Z] info getTypePackage successfuly
+[2024-05-07T14:42:45.008Z] info Token validated successfuly
+[2024-05-07T14:42:45.008Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:42:45.010Z] info Token validated successfuly
+[2024-05-07T14:42:45.010Z] info enter the endpoint getDepartments
+[2024-05-07T14:42:45.011Z] info Token validated successfuly
+[2024-05-07T14:42:45.012Z] info enter the endpoint getTypePackage
+[2024-05-07T14:42:45.012Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:42:45.014Z] info getDepartments successfuly
+[2024-05-07T14:42:45.015Z] info getTypePackage successfuly
+[2024-05-07T14:43:20.785Z] info Token validated successfuly
+[2024-05-07T14:43:20.786Z] info enter the endpoint getDepartments
+[2024-05-07T14:43:20.788Z] info Token validated successfuly
+[2024-05-07T14:43:20.788Z] info enter the endpoint getTypePackage
+[2024-05-07T14:43:20.790Z] info Token validated successfuly
+[2024-05-07T14:43:20.790Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:43:20.796Z] info getDepartments successfuly
+[2024-05-07T14:43:20.797Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:43:20.800Z] info getTypePackage successfuly
+[2024-05-07T14:43:21.225Z] info Token validated successfuly
+[2024-05-07T14:43:21.226Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:43:21.229Z] info Token validated successfuly
+[2024-05-07T14:43:21.229Z] info enter the endpoint getDepartments
+[2024-05-07T14:43:21.231Z] info Token validated successfuly
+[2024-05-07T14:43:21.231Z] info enter the endpoint getTypePackage
+[2024-05-07T14:43:21.232Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:43:21.233Z] info getDepartments successfuly
+[2024-05-07T14:43:21.234Z] info getTypePackage successfuly
+[2024-05-07T14:47:44.832Z] info Token validated successfuly
+[2024-05-07T14:47:44.832Z] info enter the endpoint getDepartments
+[2024-05-07T14:47:44.834Z] info Token validated successfuly
+[2024-05-07T14:47:44.834Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:47:44.836Z] info Token validated successfuly
+[2024-05-07T14:47:44.837Z] info enter the endpoint getTypePackage
+[2024-05-07T14:47:44.840Z] info getDepartments successfuly
+[2024-05-07T14:47:44.841Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:47:44.842Z] info getTypePackage successfuly
+[2024-05-07T14:47:46.586Z] info Token validated successfuly
+[2024-05-07T14:47:46.586Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:47:46.589Z] info Token validated successfuly
+[2024-05-07T14:47:46.589Z] info enter the endpoint getDepartments
+[2024-05-07T14:47:46.591Z] info Token validated successfuly
+[2024-05-07T14:47:46.591Z] info enter the endpoint getTypePackage
+[2024-05-07T14:47:46.592Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:47:46.593Z] info getDepartments successfuly
+[2024-05-07T14:47:46.595Z] info getTypePackage successfuly
+[2024-05-07T14:47:53.222Z] info Token validated successfuly
+[2024-05-07T14:47:53.222Z] info enter the endpoint getDepartments
+[2024-05-07T14:47:53.224Z] info Token validated successfuly
+[2024-05-07T14:47:53.225Z] info enter the endpoint getTypePackage
+[2024-05-07T14:47:53.226Z] info Token validated successfuly
+[2024-05-07T14:47:53.227Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:47:53.228Z] info getDepartments successfuly
+[2024-05-07T14:47:53.229Z] info getTypePackage successfuly
+[2024-05-07T14:47:53.230Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:48:01.955Z] info Token validated successfuly
+[2024-05-07T14:48:01.956Z] info enter the endpoint getDepartments
+[2024-05-07T14:48:01.958Z] info Token validated successfuly
+[2024-05-07T14:48:01.958Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:48:01.959Z] info Token validated successfuly
+[2024-05-07T14:48:01.959Z] info enter the endpoint getTypePackage
+[2024-05-07T14:48:01.960Z] info getDepartments successfuly
+[2024-05-07T14:48:01.961Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:48:01.962Z] info getTypePackage successfuly
+[2024-05-07T14:48:43.456Z] info Token validated successfuly
+[2024-05-07T14:48:43.456Z] info enter the endpoint getDepartments
+[2024-05-07T14:48:43.458Z] info Token validated successfuly
+[2024-05-07T14:48:43.458Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:48:43.459Z] info Token validated successfuly
+[2024-05-07T14:48:43.460Z] info enter the endpoint getTypePackage
+[2024-05-07T14:48:43.464Z] info getDepartments successfuly
+[2024-05-07T14:48:43.466Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:48:43.467Z] info getTypePackage successfuly
+[2024-05-07T14:48:44.628Z] info Token validated successfuly
+[2024-05-07T14:48:44.629Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:48:44.631Z] info Token validated successfuly
+[2024-05-07T14:48:44.631Z] info enter the endpoint getDepartments
+[2024-05-07T14:48:44.634Z] info Token validated successfuly
+[2024-05-07T14:48:44.634Z] info enter the endpoint getTypePackage
+[2024-05-07T14:48:44.635Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:48:44.636Z] info getDepartments successfuly
+[2024-05-07T14:48:44.638Z] info getTypePackage successfuly
+[2024-05-07T14:49:42.148Z] info Token validated successfuly
+[2024-05-07T14:49:42.148Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:49:42.151Z] info Token validated successfuly
+[2024-05-07T14:49:42.151Z] info enter the endpoint getDepartments
+[2024-05-07T14:49:42.152Z] info Token validated successfuly
+[2024-05-07T14:49:42.152Z] info enter the endpoint getTypePackage
+[2024-05-07T14:49:42.156Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:49:42.157Z] info getDepartments successfuly
+[2024-05-07T14:49:42.158Z] info getTypePackage successfuly
+[2024-05-07T14:49:58.063Z] info Token validated successfuly
+[2024-05-07T14:49:58.063Z] info enter the endpoint getDepartments
+[2024-05-07T14:49:58.065Z] info Token validated successfuly
+[2024-05-07T14:49:58.065Z] info enter the endpoint getTypePackage
+[2024-05-07T14:49:58.066Z] info Token validated successfuly
+[2024-05-07T14:49:58.066Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:49:58.070Z] info getDepartments successfuly
+[2024-05-07T14:49:58.072Z] info getTypePackage successfuly
+[2024-05-07T14:49:58.073Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:49:58.547Z] info Token validated successfuly
+[2024-05-07T14:49:58.547Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:49:58.549Z] info Token validated successfuly
+[2024-05-07T14:49:58.549Z] info enter the endpoint getDepartments
+[2024-05-07T14:49:58.552Z] info Token validated successfuly
+[2024-05-07T14:49:58.552Z] info enter the endpoint getTypePackage
+[2024-05-07T14:49:58.553Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:49:58.553Z] info getDepartments successfuly
+[2024-05-07T14:49:58.554Z] info getTypePackage successfuly
+[2024-05-07T14:50:09.393Z] info Token validated successfuly
+[2024-05-07T14:50:09.393Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:09.395Z] info Token validated successfuly
+[2024-05-07T14:50:09.395Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:09.396Z] info Token validated successfuly
+[2024-05-07T14:50:09.396Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:09.400Z] info getDepartments successfuly
+[2024-05-07T14:50:09.401Z] info getTypePackage successfuly
+[2024-05-07T14:50:09.402Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:10.247Z] info Token validated successfuly
+[2024-05-07T14:50:10.248Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:10.249Z] info Token validated successfuly
+[2024-05-07T14:50:10.249Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:10.251Z] info Token validated successfuly
+[2024-05-07T14:50:10.251Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:10.251Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:10.252Z] info getDepartments successfuly
+[2024-05-07T14:50:10.253Z] info getTypePackage successfuly
+[2024-05-07T14:50:12.109Z] info Token validated successfuly
+[2024-05-07T14:50:12.109Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:12.111Z] info Token validated successfuly
+[2024-05-07T14:50:12.111Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:12.112Z] info Token validated successfuly
+[2024-05-07T14:50:12.112Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:12.113Z] info getDepartments successfuly
+[2024-05-07T14:50:12.115Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:12.115Z] info getTypePackage successfuly
+[2024-05-07T14:50:16.801Z] info Token validated successfuly
+[2024-05-07T14:50:16.802Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:16.804Z] info Token validated successfuly
+[2024-05-07T14:50:16.804Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:16.805Z] info Token validated successfuly
+[2024-05-07T14:50:16.805Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:16.806Z] info getDepartments successfuly
+[2024-05-07T14:50:16.807Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:16.808Z] info getTypePackage successfuly
+[2024-05-07T14:50:17.163Z] info Token validated successfuly
+[2024-05-07T14:50:17.163Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:17.165Z] info Token validated successfuly
+[2024-05-07T14:50:17.165Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:17.166Z] info Token validated successfuly
+[2024-05-07T14:50:17.167Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:17.168Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:17.168Z] info getDepartments successfuly
+[2024-05-07T14:50:17.169Z] info getTypePackage successfuly
+[2024-05-07T14:50:23.466Z] info Token validated successfuly
+[2024-05-07T14:50:23.466Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:23.467Z] info Token validated successfuly
+[2024-05-07T14:50:23.467Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:23.469Z] info Token validated successfuly
+[2024-05-07T14:50:23.469Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:23.471Z] info getDepartments successfuly
+[2024-05-07T14:50:23.472Z] info getTypePackage successfuly
+[2024-05-07T14:50:23.473Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:24.181Z] info Token validated successfuly
+[2024-05-07T14:50:24.182Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:24.184Z] info Token validated successfuly
+[2024-05-07T14:50:24.184Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:24.187Z] info Token validated successfuly
+[2024-05-07T14:50:24.187Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:24.189Z] info getDepartments successfuly
+[2024-05-07T14:50:24.190Z] info getTypePackage successfuly
+[2024-05-07T14:50:24.191Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:35.995Z] info Token validated successfuly
+[2024-05-07T14:50:35.995Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:35.997Z] info Token validated successfuly
+[2024-05-07T14:50:35.997Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:35.999Z] info Token validated successfuly
+[2024-05-07T14:50:35.999Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:36.002Z] info getDepartments successfuly
+[2024-05-07T14:50:36.004Z] info getTypePackage successfuly
+[2024-05-07T14:50:36.005Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:37.949Z] info Token validated successfuly
+[2024-05-07T14:50:37.949Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:37.951Z] info Token validated successfuly
+[2024-05-07T14:50:37.951Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:37.952Z] info Token validated successfuly
+[2024-05-07T14:50:37.953Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:37.953Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:37.954Z] info getDepartments successfuly
+[2024-05-07T14:50:37.955Z] info getTypePackage successfuly
+[2024-05-07T14:50:39.145Z] info Token validated successfuly
+[2024-05-07T14:50:39.145Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:39.147Z] info Token validated successfuly
+[2024-05-07T14:50:39.148Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:39.149Z] info Token validated successfuly
+[2024-05-07T14:50:39.149Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:39.150Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:39.151Z] info getDepartments successfuly
+[2024-05-07T14:50:39.152Z] info getTypePackage successfuly
+[2024-05-07T14:50:51.295Z] info Token validated successfuly
+[2024-05-07T14:50:51.295Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:51.297Z] info Token validated successfuly
+[2024-05-07T14:50:51.297Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:51.299Z] info Token validated successfuly
+[2024-05-07T14:50:51.299Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:51.302Z] info getDepartments successfuly
+[2024-05-07T14:50:51.304Z] info getTypePackage successfuly
+[2024-05-07T14:50:51.305Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:51.597Z] info Token validated successfuly
+[2024-05-07T14:50:51.597Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:51.600Z] info Token validated successfuly
+[2024-05-07T14:50:51.600Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:51.602Z] info Token validated successfuly
+[2024-05-07T14:50:51.602Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:51.603Z] info getDepartments successfuly
+[2024-05-07T14:50:51.604Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:51.605Z] info getTypePackage successfuly
+[2024-05-07T14:50:59.090Z] info Token validated successfuly
+[2024-05-07T14:50:59.090Z] info enter the endpoint getDepartments
+[2024-05-07T14:50:59.092Z] info Token validated successfuly
+[2024-05-07T14:50:59.092Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:50:59.094Z] info Token validated successfuly
+[2024-05-07T14:50:59.094Z] info enter the endpoint getTypePackage
+[2024-05-07T14:50:59.095Z] info getDepartments successfuly
+[2024-05-07T14:50:59.096Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:50:59.097Z] info getTypePackage successfuly
+[2024-05-07T14:51:01.986Z] info Token validated successfuly
+[2024-05-07T14:51:01.986Z] info enter the endpoint getDepartments
+[2024-05-07T14:51:01.990Z] info Token validated successfuly
+[2024-05-07T14:51:01.990Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:51:01.994Z] info Token validated successfuly
+[2024-05-07T14:51:01.994Z] info enter the endpoint getTypePackage
+[2024-05-07T14:51:01.995Z] info getDepartments successfuly
+[2024-05-07T14:51:01.997Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:51:01.999Z] info getTypePackage successfuly
+[2024-05-07T14:51:02.762Z] info Token validated successfuly
+[2024-05-07T14:51:02.762Z] info enter the endpoint getDepartments
+[2024-05-07T14:51:02.765Z] info Token validated successfuly
+[2024-05-07T14:51:02.765Z] info enter the endpoint getTypePackage
+[2024-05-07T14:51:02.767Z] info Token validated successfuly
+[2024-05-07T14:51:02.767Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:51:02.768Z] info getDepartments successfuly
+[2024-05-07T14:51:02.769Z] info getTypePackage successfuly
+[2024-05-07T14:51:02.770Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:51:08.472Z] info Token validated successfuly
+[2024-05-07T14:51:08.473Z] info enter the endpoint getDepartments
+[2024-05-07T14:51:08.474Z] info Token validated successfuly
+[2024-05-07T14:51:08.474Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:51:08.476Z] info Token validated successfuly
+[2024-05-07T14:51:08.476Z] info enter the endpoint getTypePackage
+[2024-05-07T14:51:08.477Z] info getDepartments successfuly
+[2024-05-07T14:51:08.478Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:51:08.480Z] info getTypePackage successfuly
+[2024-05-07T14:51:42.528Z] info Token validated successfuly
+[2024-05-07T14:51:42.529Z] info enter the endpoint getDepartments
+[2024-05-07T14:51:42.530Z] info Token validated successfuly
+[2024-05-07T14:51:42.531Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:51:42.532Z] info Token validated successfuly
+[2024-05-07T14:51:42.532Z] info enter the endpoint getTypePackage
+[2024-05-07T14:51:42.536Z] info getDepartments successfuly
+[2024-05-07T14:51:42.537Z] info getTypePackage successfuly
+[2024-05-07T14:51:42.538Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:51:47.739Z] info Token validated successfuly
+[2024-05-07T14:51:47.739Z] info enter the endpoint getDepartments
+[2024-05-07T14:51:47.742Z] info Token validated successfuly
+[2024-05-07T14:51:47.742Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:51:47.743Z] info Token validated successfuly
+[2024-05-07T14:51:47.743Z] info enter the endpoint getTypePackage
+[2024-05-07T14:51:47.744Z] info getDepartments successfuly
+[2024-05-07T14:51:47.746Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:51:47.747Z] info getTypePackage successfuly
+[2024-05-07T14:51:48.074Z] info Token validated successfuly
+[2024-05-07T14:51:48.074Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:51:48.076Z] info Token validated successfuly
+[2024-05-07T14:51:48.076Z] info enter the endpoint getDepartments
+[2024-05-07T14:51:48.078Z] info Token validated successfuly
+[2024-05-07T14:51:48.078Z] info enter the endpoint getTypePackage
+[2024-05-07T14:51:48.079Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:51:48.079Z] info getDepartments successfuly
+[2024-05-07T14:51:48.081Z] info getTypePackage successfuly
+[2024-05-07T14:52:11.772Z] info Token validated successfuly
+[2024-05-07T14:52:11.772Z] info enter the endpoint getDepartments
+[2024-05-07T14:52:11.774Z] info Token validated successfuly
+[2024-05-07T14:52:11.774Z] info enter the endpoint getTypePackage
+[2024-05-07T14:52:11.776Z] info Token validated successfuly
+[2024-05-07T14:52:11.776Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:52:11.780Z] info getDepartments successfuly
+[2024-05-07T14:52:11.781Z] info getTypePackage successfuly
+[2024-05-07T14:52:11.782Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:52:24.789Z] info Token validated successfuly
+[2024-05-07T14:52:24.789Z] info enter the endpoint getDepartments
+[2024-05-07T14:52:24.792Z] info Token validated successfuly
+[2024-05-07T14:52:24.793Z] info enter the endpoint getTypePackage
+[2024-05-07T14:52:24.794Z] info Token validated successfuly
+[2024-05-07T14:52:24.794Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:52:24.798Z] info getDepartments successfuly
+[2024-05-07T14:52:24.799Z] info getTypePackage successfuly
+[2024-05-07T14:52:24.800Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:52:29.402Z] info Token validated successfuly
+[2024-05-07T14:52:29.402Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:52:29.405Z] info Token validated successfuly
+[2024-05-07T14:52:29.405Z] info enter the endpoint getDepartments
+[2024-05-07T14:52:29.407Z] info Token validated successfuly
+[2024-05-07T14:52:29.407Z] info enter the endpoint getTypePackage
+[2024-05-07T14:52:29.409Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:52:29.410Z] info getDepartments successfuly
+[2024-05-07T14:52:29.411Z] info getTypePackage successfuly
+[2024-05-07T14:52:49.811Z] info Token validated successfuly
+[2024-05-07T14:52:49.811Z] info enter the endpoint getDepartments
+[2024-05-07T14:52:49.813Z] info Token validated successfuly
+[2024-05-07T14:52:49.813Z] info enter the endpoint getTypePackage
+[2024-05-07T14:52:49.815Z] info Token validated successfuly
+[2024-05-07T14:52:49.815Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:52:49.819Z] info getDepartments successfuly
+[2024-05-07T14:52:49.820Z] info getTypePackage successfuly
+[2024-05-07T14:52:49.821Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:53:01.173Z] info Token validated successfuly
+[2024-05-07T14:53:01.173Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:53:01.174Z] info Token validated successfuly
+[2024-05-07T14:53:01.175Z] info enter the endpoint getDepartments
+[2024-05-07T14:53:01.176Z] info Token validated successfuly
+[2024-05-07T14:53:01.177Z] info enter the endpoint getTypePackage
+[2024-05-07T14:53:01.181Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:53:01.182Z] info getDepartments successfuly
+[2024-05-07T14:53:01.184Z] info getTypePackage successfuly
+[2024-05-07T14:53:02.863Z] info Token validated successfuly
+[2024-05-07T14:53:02.864Z] info enter the endpoint getDepartments
+[2024-05-07T14:53:02.866Z] info Token validated successfuly
+[2024-05-07T14:53:02.866Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:53:02.868Z] info Token validated successfuly
+[2024-05-07T14:53:02.868Z] info enter the endpoint getTypePackage
+[2024-05-07T14:53:02.869Z] info getDepartments successfuly
+[2024-05-07T14:53:02.870Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:53:02.871Z] info getTypePackage successfuly
+[2024-05-07T14:53:24.096Z] info Token validated successfuly
+[2024-05-07T14:53:24.096Z] info enter the endpoint getDepartments
+[2024-05-07T14:53:24.097Z] info Token validated successfuly
+[2024-05-07T14:53:24.098Z] info enter the endpoint getTypePackage
+[2024-05-07T14:53:24.099Z] info Token validated successfuly
+[2024-05-07T14:53:24.099Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:53:24.102Z] info getDepartments successfuly
+[2024-05-07T14:53:24.103Z] info getTypePackage successfuly
+[2024-05-07T14:53:24.104Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:53:24.391Z] info Token validated successfuly
+[2024-05-07T14:53:24.391Z] info enter the endpoint getDepartments
+[2024-05-07T14:53:24.393Z] info Token validated successfuly
+[2024-05-07T14:53:24.394Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:53:24.396Z] info Token validated successfuly
+[2024-05-07T14:53:24.396Z] info enter the endpoint getTypePackage
+[2024-05-07T14:53:24.397Z] info getDepartments successfuly
+[2024-05-07T14:53:24.398Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:53:24.399Z] info getTypePackage successfuly
+[2024-05-07T14:53:33.756Z] info Token validated successfuly
+[2024-05-07T14:53:33.756Z] info enter the endpoint getDepartments
+[2024-05-07T14:53:33.758Z] info Token validated successfuly
+[2024-05-07T14:53:33.758Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:53:33.759Z] info Token validated successfuly
+[2024-05-07T14:53:33.760Z] info enter the endpoint getTypePackage
+[2024-05-07T14:53:33.761Z] info getDepartments successfuly
+[2024-05-07T14:53:33.761Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:53:33.762Z] info getTypePackage successfuly
+[2024-05-07T14:53:34.071Z] info Token validated successfuly
+[2024-05-07T14:53:34.071Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:53:34.073Z] info Token validated successfuly
+[2024-05-07T14:53:34.073Z] info enter the endpoint getDepartments
+[2024-05-07T14:53:34.074Z] info Token validated successfuly
+[2024-05-07T14:53:34.074Z] info enter the endpoint getTypePackage
+[2024-05-07T14:53:34.075Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:53:34.076Z] info getDepartments successfuly
+[2024-05-07T14:53:34.077Z] info getTypePackage successfuly
+[2024-05-07T14:54:21.446Z] info Token validated successfuly
+[2024-05-07T14:54:21.447Z] info enter the endpoint getTypePackage
+[2024-05-07T14:54:21.448Z] info Token validated successfuly
+[2024-05-07T14:54:21.448Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:54:21.450Z] info Token validated successfuly
+[2024-05-07T14:54:21.450Z] info enter the endpoint getDepartments
+[2024-05-07T14:54:21.453Z] info getTypePackage successfuly
+[2024-05-07T14:54:21.454Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:54:21.455Z] info getDepartments successfuly
+[2024-05-07T14:54:54.116Z] info Token validated successfuly
+[2024-05-07T14:54:54.116Z] info enter the endpoint getDepartments
+[2024-05-07T14:54:54.118Z] info Token validated successfuly
+[2024-05-07T14:54:54.118Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:54:54.120Z] info Token validated successfuly
+[2024-05-07T14:54:54.120Z] info enter the endpoint getTypePackage
+[2024-05-07T14:54:54.124Z] info getDepartments successfuly
+[2024-05-07T14:54:54.124Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:54:54.125Z] info getTypePackage successfuly
+[2024-05-07T14:55:00.131Z] info Token validated successfuly
+[2024-05-07T14:55:00.131Z] info enter the endpoint getDepartments
+[2024-05-07T14:55:00.133Z] info Token validated successfuly
+[2024-05-07T14:55:00.133Z] info enter the endpoint getTypePackage
+[2024-05-07T14:55:00.135Z] info Token validated successfuly
+[2024-05-07T14:55:00.135Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:55:00.136Z] info getDepartments successfuly
+[2024-05-07T14:55:00.137Z] info getTypePackage successfuly
+[2024-05-07T14:55:00.138Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:55:27.305Z] info Token validated successfuly
+[2024-05-07T14:55:27.306Z] info enter the endpoint getDepartments
+[2024-05-07T14:55:27.307Z] info Token validated successfuly
+[2024-05-07T14:55:27.308Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:55:27.310Z] info Token validated successfuly
+[2024-05-07T14:55:27.310Z] info enter the endpoint getTypePackage
+[2024-05-07T14:55:27.316Z] info getDepartments successfuly
+[2024-05-07T14:55:27.317Z] info getTypePackage successfuly
+[2024-05-07T14:55:27.318Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:55:30.563Z] info Token validated successfuly
+[2024-05-07T14:55:30.563Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:55:30.566Z] info Token validated successfuly
+[2024-05-07T14:55:30.566Z] info enter the endpoint getDepartments
+[2024-05-07T14:55:30.567Z] info Token validated successfuly
+[2024-05-07T14:55:30.568Z] info enter the endpoint getTypePackage
+[2024-05-07T14:55:30.568Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:55:30.570Z] info getDepartments successfuly
+[2024-05-07T14:55:30.571Z] info getTypePackage successfuly
+[2024-05-07T14:55:54.649Z] info Token validated successfuly
+[2024-05-07T14:55:54.649Z] info enter the endpoint getDepartments
+[2024-05-07T14:55:54.650Z] info Token validated successfuly
+[2024-05-07T14:55:54.651Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:55:54.652Z] info Token validated successfuly
+[2024-05-07T14:55:54.652Z] info enter the endpoint getTypePackage
+[2024-05-07T14:55:54.655Z] info getDepartments successfuly
+[2024-05-07T14:55:54.656Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:55:54.657Z] info getTypePackage successfuly
+[2024-05-07T14:56:19.253Z] info Token validated successfuly
+[2024-05-07T14:56:19.253Z] info enter the endpoint getDepartments
+[2024-05-07T14:56:19.255Z] info Token validated successfuly
+[2024-05-07T14:56:19.255Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:56:19.257Z] info Token validated successfuly
+[2024-05-07T14:56:19.257Z] info enter the endpoint getTypePackage
+[2024-05-07T14:56:19.260Z] info getDepartments successfuly
+[2024-05-07T14:56:19.262Z] info getTypePackage successfuly
+[2024-05-07T14:56:19.263Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:56:26.132Z] info Token validated successfuly
+[2024-05-07T14:56:26.132Z] info enter the endpoint getDepartments
+[2024-05-07T14:56:26.134Z] info Token validated successfuly
+[2024-05-07T14:56:26.134Z] info enter the endpoint getTypePackage
+[2024-05-07T14:56:26.135Z] info Token validated successfuly
+[2024-05-07T14:56:26.136Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:56:26.136Z] info getDepartments successfuly
+[2024-05-07T14:56:26.137Z] info getTypePackage successfuly
+[2024-05-07T14:56:26.138Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:56:31.057Z] info Token validated successfuly
+[2024-05-07T14:56:31.058Z] info enter the endpoint getDepartments
+[2024-05-07T14:56:31.060Z] info Token validated successfuly
+[2024-05-07T14:56:31.060Z] info enter the endpoint getTypePackage
+[2024-05-07T14:56:31.061Z] info Token validated successfuly
+[2024-05-07T14:56:31.061Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:56:31.062Z] info getDepartments successfuly
+[2024-05-07T14:56:31.063Z] info getTypePackage successfuly
+[2024-05-07T14:56:31.064Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:56:38.752Z] info Token validated successfuly
+[2024-05-07T14:56:38.752Z] info enter the endpoint getDepartments
+[2024-05-07T14:56:38.754Z] info Token validated successfuly
+[2024-05-07T14:56:38.754Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:56:38.756Z] info Token validated successfuly
+[2024-05-07T14:56:38.756Z] info enter the endpoint getTypePackage
+[2024-05-07T14:56:38.756Z] info getDepartments successfuly
+[2024-05-07T14:56:38.757Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:56:38.758Z] info getTypePackage successfuly
+[2024-05-07T14:56:44.332Z] info Token validated successfuly
+[2024-05-07T14:56:44.332Z] info enter the endpoint getDepartments
+[2024-05-07T14:56:44.334Z] info Token validated successfuly
+[2024-05-07T14:56:44.334Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:56:44.336Z] info Token validated successfuly
+[2024-05-07T14:56:44.336Z] info enter the endpoint getTypePackage
+[2024-05-07T14:56:44.337Z] info getDepartments successfuly
+[2024-05-07T14:56:44.338Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:56:44.339Z] info getTypePackage successfuly
+[2024-05-07T14:57:23.774Z] info Token validated successfuly
+[2024-05-07T14:57:23.774Z] info enter the endpoint getDepartments
+[2024-05-07T14:57:23.777Z] info Token validated successfuly
+[2024-05-07T14:57:23.777Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:57:23.779Z] info Token validated successfuly
+[2024-05-07T14:57:23.779Z] info enter the endpoint getTypePackage
+[2024-05-07T14:57:23.782Z] info getDepartments successfuly
+[2024-05-07T14:57:23.783Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:57:23.784Z] info getTypePackage successfuly
+[2024-05-07T14:57:36.132Z] info Token validated successfuly
+[2024-05-07T14:57:36.133Z] info enter the endpoint getDepartments
+[2024-05-07T14:57:36.134Z] info Token validated successfuly
+[2024-05-07T14:57:36.134Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:57:36.136Z] info Token validated successfuly
+[2024-05-07T14:57:36.136Z] info enter the endpoint getTypePackage
+[2024-05-07T14:57:36.140Z] info getDepartments successfuly
+[2024-05-07T14:57:36.141Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:57:36.142Z] info getTypePackage successfuly
+[2024-05-07T14:57:45.496Z] info Token validated successfuly
+[2024-05-07T14:57:45.496Z] info enter the endpoint getDepartments
+[2024-05-07T14:57:45.497Z] info Token validated successfuly
+[2024-05-07T14:57:45.498Z] info enter the endpoint getTypePackage
+[2024-05-07T14:57:45.499Z] info Token validated successfuly
+[2024-05-07T14:57:45.499Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:57:45.500Z] info getDepartments successfuly
+[2024-05-07T14:57:45.501Z] info getTypePackage successfuly
+[2024-05-07T14:57:45.503Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:58:04.841Z] info Token validated successfuly
+[2024-05-07T14:58:04.841Z] info enter the endpoint getDepartments
+[2024-05-07T14:58:04.843Z] info Token validated successfuly
+[2024-05-07T14:58:04.843Z] info enter the endpoint getTypePackage
+[2024-05-07T14:58:04.845Z] info Token validated successfuly
+[2024-05-07T14:58:04.845Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:58:04.848Z] info getDepartments successfuly
+[2024-05-07T14:58:04.849Z] info getTypePackage successfuly
+[2024-05-07T14:58:04.850Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:58:10.140Z] info Token validated successfuly
+[2024-05-07T14:58:10.141Z] info enter the endpoint getDepartments
+[2024-05-07T14:58:10.142Z] info Token validated successfuly
+[2024-05-07T14:58:10.143Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:58:10.144Z] info Token validated successfuly
+[2024-05-07T14:58:10.145Z] info enter the endpoint getTypePackage
+[2024-05-07T14:58:10.145Z] info getDepartments successfuly
+[2024-05-07T14:58:10.146Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:58:10.147Z] info getTypePackage successfuly
+[2024-05-07T14:58:10.832Z] info Token validated successfuly
+[2024-05-07T14:58:10.832Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T14:58:10.834Z] info Token validated successfuly
+[2024-05-07T14:58:10.834Z] info enter the endpoint getDepartments
+[2024-05-07T14:58:10.837Z] info Token validated successfuly
+[2024-05-07T14:58:10.837Z] info enter the endpoint getTypePackage
+[2024-05-07T14:58:10.838Z] info getProductsByDropshipper successfuly
+[2024-05-07T14:58:10.839Z] info getDepartments successfuly
+[2024-05-07T14:58:10.840Z] info getTypePackage successfuly
+[2024-05-07T15:01:49.098Z] info Token validated successfuly
+[2024-05-07T15:01:49.098Z] info enter the endpoint getDepartments
+[2024-05-07T15:01:49.100Z] info Token validated successfuly
+[2024-05-07T15:01:49.100Z] info enter the endpoint getTypePackage
+[2024-05-07T15:01:49.102Z] info Token validated successfuly
+[2024-05-07T15:01:49.102Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:01:49.107Z] info getDepartments successfuly
+[2024-05-07T15:01:49.109Z] info getTypePackage successfuly
+[2024-05-07T15:01:49.110Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:02:02.764Z] info Token validated successfuly
+[2024-05-07T15:02:02.764Z] info enter the endpoint getDepartments
+[2024-05-07T15:02:02.765Z] info Token validated successfuly
+[2024-05-07T15:02:02.766Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:02:02.767Z] info Token validated successfuly
+[2024-05-07T15:02:02.767Z] info enter the endpoint getTypePackage
+[2024-05-07T15:02:02.770Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:02:02.771Z] info getTypePackage successfuly
+[2024-05-07T15:02:02.772Z] info getDepartments successfuly
+[2024-05-07T15:02:15.127Z] info Token validated successfuly
+[2024-05-07T15:02:15.128Z] info enter the endpoint getDepartments
+[2024-05-07T15:02:15.129Z] info Token validated successfuly
+[2024-05-07T15:02:15.129Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:02:15.131Z] info Token validated successfuly
+[2024-05-07T15:02:15.131Z] info enter the endpoint getTypePackage
+[2024-05-07T15:02:15.135Z] info getDepartments successfuly
+[2024-05-07T15:02:15.136Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:02:15.137Z] info getTypePackage successfuly
+[2024-05-07T15:02:18.168Z] info Token validated successfuly
+[2024-05-07T15:02:18.169Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:02:18.170Z] info Token validated successfuly
+[2024-05-07T15:02:18.170Z] info enter the endpoint getDepartments
+[2024-05-07T15:02:18.172Z] info Token validated successfuly
+[2024-05-07T15:02:18.172Z] info enter the endpoint getTypePackage
+[2024-05-07T15:02:18.172Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:02:18.173Z] info getDepartments successfuly
+[2024-05-07T15:02:18.174Z] info getTypePackage successfuly
+[2024-05-07T15:02:18.829Z] info Token validated successfuly
+[2024-05-07T15:02:18.830Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:02:18.831Z] info Token validated successfuly
+[2024-05-07T15:02:18.831Z] info enter the endpoint getDepartments
+[2024-05-07T15:02:18.833Z] info Token validated successfuly
+[2024-05-07T15:02:18.833Z] info enter the endpoint getTypePackage
+[2024-05-07T15:02:18.834Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:02:18.834Z] info getDepartments successfuly
+[2024-05-07T15:02:18.835Z] info getTypePackage successfuly
+[2024-05-07T15:02:37.253Z] info Token validated successfuly
+[2024-05-07T15:02:37.253Z] info enter the endpoint getDepartments
+[2024-05-07T15:02:37.256Z] info Token validated successfuly
+[2024-05-07T15:02:37.256Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:02:37.259Z] info Token validated successfuly
+[2024-05-07T15:02:37.259Z] info enter the endpoint getTypePackage
+[2024-05-07T15:02:37.264Z] info getDepartments successfuly
+[2024-05-07T15:02:37.265Z] info getTypePackage successfuly
+[2024-05-07T15:02:37.266Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:02:38.686Z] info Token validated successfuly
+[2024-05-07T15:02:38.686Z] info enter the endpoint getDepartments
+[2024-05-07T15:02:38.688Z] info Token validated successfuly
+[2024-05-07T15:02:38.688Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:02:38.689Z] info Token validated successfuly
+[2024-05-07T15:02:38.689Z] info enter the endpoint getTypePackage
+[2024-05-07T15:02:38.690Z] info getDepartments successfuly
+[2024-05-07T15:02:38.692Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:02:38.693Z] info getTypePackage successfuly
+[2024-05-07T15:02:58.607Z] info Token validated successfuly
+[2024-05-07T15:02:58.607Z] info enter the endpoint getDepartments
+[2024-05-07T15:02:58.609Z] info Token validated successfuly
+[2024-05-07T15:02:58.609Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:02:58.611Z] info Token validated successfuly
+[2024-05-07T15:02:58.611Z] info enter the endpoint getTypePackage
+[2024-05-07T15:02:58.614Z] info getDepartments successfuly
+[2024-05-07T15:02:58.615Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:02:58.616Z] info getTypePackage successfuly
+[2024-05-07T15:03:04.732Z] info Token validated successfuly
+[2024-05-07T15:03:04.733Z] info enter the endpoint getDepartments
+[2024-05-07T15:03:04.735Z] info Token validated successfuly
+[2024-05-07T15:03:04.735Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:03:04.736Z] info Token validated successfuly
+[2024-05-07T15:03:04.736Z] info enter the endpoint getTypePackage
+[2024-05-07T15:03:04.737Z] info getDepartments successfuly
+[2024-05-07T15:03:04.738Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:03:04.739Z] info getTypePackage successfuly
+[2024-05-07T15:03:05.058Z] info Token validated successfuly
+[2024-05-07T15:03:05.058Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:03:05.060Z] info Token validated successfuly
+[2024-05-07T15:03:05.060Z] info enter the endpoint getDepartments
+[2024-05-07T15:03:05.062Z] info Token validated successfuly
+[2024-05-07T15:03:05.062Z] info enter the endpoint getTypePackage
+[2024-05-07T15:03:05.063Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:03:05.064Z] info getDepartments successfuly
+[2024-05-07T15:03:05.065Z] info getTypePackage successfuly
+[2024-05-07T15:03:21.821Z] info Token validated successfuly
+[2024-05-07T15:03:21.821Z] info enter the endpoint getDepartments
+[2024-05-07T15:03:21.822Z] info Token validated successfuly
+[2024-05-07T15:03:21.823Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:03:21.824Z] info Token validated successfuly
+[2024-05-07T15:03:21.824Z] info enter the endpoint getTypePackage
+[2024-05-07T15:03:21.829Z] info getDepartments successfuly
+[2024-05-07T15:03:21.830Z] info getTypePackage successfuly
+[2024-05-07T15:03:21.831Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:03:30.748Z] info Token validated successfuly
+[2024-05-07T15:03:30.749Z] info enter the endpoint getDepartments
+[2024-05-07T15:03:30.751Z] info Token validated successfuly
+[2024-05-07T15:03:30.751Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:03:30.752Z] info Token validated successfuly
+[2024-05-07T15:03:30.752Z] info enter the endpoint getTypePackage
+[2024-05-07T15:03:30.753Z] info getDepartments successfuly
+[2024-05-07T15:03:30.754Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:03:30.754Z] info getTypePackage successfuly
+[2024-05-07T15:03:31.959Z] info Token validated successfuly
+[2024-05-07T15:03:31.959Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:03:31.961Z] info Token validated successfuly
+[2024-05-07T15:03:31.961Z] info enter the endpoint getDepartments
+[2024-05-07T15:03:31.962Z] info Token validated successfuly
+[2024-05-07T15:03:31.962Z] info enter the endpoint getTypePackage
+[2024-05-07T15:03:31.963Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:03:31.964Z] info getDepartments successfuly
+[2024-05-07T15:03:31.965Z] info getTypePackage successfuly
+[2024-05-07T15:03:37.987Z] info Token validated successfuly
+[2024-05-07T15:03:37.987Z] info enter the endpoint getDepartments
+[2024-05-07T15:03:37.988Z] info Token validated successfuly
+[2024-05-07T15:03:37.989Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:03:37.990Z] info Token validated successfuly
+[2024-05-07T15:03:37.990Z] info enter the endpoint getTypePackage
+[2024-05-07T15:03:37.991Z] info getDepartments successfuly
+[2024-05-07T15:03:37.992Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:03:37.993Z] info getTypePackage successfuly
+[2024-05-07T15:03:39.536Z] info Token validated successfuly
+[2024-05-07T15:03:39.536Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:03:39.538Z] info Token validated successfuly
+[2024-05-07T15:03:39.538Z] info enter the endpoint getDepartments
+[2024-05-07T15:03:39.539Z] info Token validated successfuly
+[2024-05-07T15:03:39.539Z] info enter the endpoint getTypePackage
+[2024-05-07T15:03:39.540Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:03:39.541Z] info getDepartments successfuly
+[2024-05-07T15:03:39.542Z] info getTypePackage successfuly
+[2024-05-07T15:03:43.906Z] info Token validated successfuly
+[2024-05-07T15:03:43.906Z] info enter the endpoint getDepartments
+[2024-05-07T15:03:43.908Z] info Token validated successfuly
+[2024-05-07T15:03:43.908Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:03:43.909Z] info Token validated successfuly
+[2024-05-07T15:03:43.909Z] info enter the endpoint getTypePackage
+[2024-05-07T15:03:43.910Z] info getDepartments successfuly
+[2024-05-07T15:03:43.911Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:03:43.912Z] info getTypePackage successfuly
+[2024-05-07T15:03:59.451Z] info Token validated successfuly
+[2024-05-07T15:03:59.451Z] info enter the endpoint getDepartments
+[2024-05-07T15:03:59.453Z] info Token validated successfuly
+[2024-05-07T15:03:59.453Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:03:59.455Z] info Token validated successfuly
+[2024-05-07T15:03:59.455Z] info enter the endpoint getTypePackage
+[2024-05-07T15:03:59.458Z] info getDepartments successfuly
+[2024-05-07T15:03:59.460Z] info getTypePackage successfuly
+[2024-05-07T15:03:59.461Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:04:30.958Z] info Token validated successfuly
+[2024-05-07T15:04:30.959Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:04:30.960Z] info Token validated successfuly
+[2024-05-07T15:04:30.960Z] info enter the endpoint getDepartments
+[2024-05-07T15:04:30.962Z] info Token validated successfuly
+[2024-05-07T15:04:30.962Z] info enter the endpoint getTypePackage
+[2024-05-07T15:04:30.965Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:04:30.967Z] info getDepartments successfuly
+[2024-05-07T15:04:30.968Z] info getTypePackage successfuly
+[2024-05-07T15:04:33.524Z] info Token validated successfuly
+[2024-05-07T15:04:33.525Z] info enter the endpoint getDepartments
+[2024-05-07T15:04:33.527Z] info Token validated successfuly
+[2024-05-07T15:04:33.527Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:04:33.528Z] info Token validated successfuly
+[2024-05-07T15:04:33.529Z] info enter the endpoint getTypePackage
+[2024-05-07T15:04:33.529Z] info getDepartments successfuly
+[2024-05-07T15:04:33.531Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:04:33.532Z] info getTypePackage successfuly
+[2024-05-07T15:04:33.943Z] info Token validated successfuly
+[2024-05-07T15:04:33.943Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:04:33.944Z] info Token validated successfuly
+[2024-05-07T15:04:33.945Z] info enter the endpoint getDepartments
+[2024-05-07T15:04:33.946Z] info Token validated successfuly
+[2024-05-07T15:04:33.946Z] info enter the endpoint getTypePackage
+[2024-05-07T15:04:33.947Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:04:33.948Z] info getDepartments successfuly
+[2024-05-07T15:04:33.949Z] info getTypePackage successfuly
+[2024-05-07T15:05:05.360Z] info Token validated successfuly
+[2024-05-07T15:05:05.360Z] info enter the endpoint getDepartments
+[2024-05-07T15:05:05.362Z] info Token validated successfuly
+[2024-05-07T15:05:05.363Z] info enter the endpoint getTypePackage
+[2024-05-07T15:05:05.364Z] info Token validated successfuly
+[2024-05-07T15:05:05.364Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:05:05.368Z] info getDepartments successfuly
+[2024-05-07T15:05:05.369Z] info getTypePackage successfuly
+[2024-05-07T15:05:05.370Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:05:20.310Z] info Token validated successfuly
+[2024-05-07T15:05:20.310Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:05:20.311Z] info Token validated successfuly
+[2024-05-07T15:05:20.311Z] info enter the endpoint getDepartments
+[2024-05-07T15:05:20.313Z] info Token validated successfuly
+[2024-05-07T15:05:20.313Z] info enter the endpoint getTypePackage
+[2024-05-07T15:05:20.316Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:05:20.317Z] info getDepartments successfuly
+[2024-05-07T15:05:20.318Z] info getTypePackage successfuly
+[2024-05-07T15:05:43.367Z] info Token validated successfuly
+[2024-05-07T15:05:43.367Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:05:43.369Z] info Token validated successfuly
+[2024-05-07T15:05:43.369Z] info enter the endpoint getDepartments
+[2024-05-07T15:05:43.371Z] info Token validated successfuly
+[2024-05-07T15:05:43.371Z] info enter the endpoint getTypePackage
+[2024-05-07T15:05:43.374Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:05:43.376Z] info getDepartments successfuly
+[2024-05-07T15:05:43.377Z] info getTypePackage successfuly
+[2024-05-07T15:05:44.251Z] info Token validated successfuly
+[2024-05-07T15:05:44.251Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:05:44.253Z] info Token validated successfuly
+[2024-05-07T15:05:44.253Z] info enter the endpoint getDepartments
+[2024-05-07T15:05:44.254Z] info Token validated successfuly
+[2024-05-07T15:05:44.254Z] info enter the endpoint getTypePackage
+[2024-05-07T15:05:44.255Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:05:44.256Z] info getDepartments successfuly
+[2024-05-07T15:05:44.258Z] info getTypePackage successfuly
+[2024-05-07T15:05:58.613Z] info Token validated successfuly
+[2024-05-07T15:05:58.613Z] info enter the endpoint getDepartments
+[2024-05-07T15:05:58.615Z] info Token validated successfuly
+[2024-05-07T15:05:58.615Z] info enter the endpoint getTypePackage
+[2024-05-07T15:05:58.616Z] info Token validated successfuly
+[2024-05-07T15:05:58.616Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:05:58.620Z] info getDepartments successfuly
+[2024-05-07T15:05:58.621Z] info getTypePackage successfuly
+[2024-05-07T15:05:58.622Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:06:04.850Z] info Token validated successfuly
+[2024-05-07T15:06:04.850Z] info enter the endpoint getDepartments
+[2024-05-07T15:06:04.852Z] info Token validated successfuly
+[2024-05-07T15:06:04.852Z] info enter the endpoint getTypePackage
+[2024-05-07T15:06:04.853Z] info Token validated successfuly
+[2024-05-07T15:06:04.853Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:06:04.854Z] info getDepartments successfuly
+[2024-05-07T15:06:04.855Z] info getTypePackage successfuly
+[2024-05-07T15:06:04.855Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:06:15.652Z] info Token validated successfuly
+[2024-05-07T15:06:15.652Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:06:15.654Z] info Token validated successfuly
+[2024-05-07T15:06:15.654Z] info enter the endpoint getDepartments
+[2024-05-07T15:06:15.656Z] info Token validated successfuly
+[2024-05-07T15:06:15.656Z] info enter the endpoint getTypePackage
+[2024-05-07T15:06:15.657Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:06:15.658Z] info getDepartments successfuly
+[2024-05-07T15:06:15.659Z] info getTypePackage successfuly
+[2024-05-07T15:06:16.259Z] info Token validated successfuly
+[2024-05-07T15:06:16.260Z] info enter the endpoint getDepartments
+[2024-05-07T15:06:16.262Z] info Token validated successfuly
+[2024-05-07T15:06:16.262Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:06:16.263Z] info Token validated successfuly
+[2024-05-07T15:06:16.264Z] info enter the endpoint getTypePackage
+[2024-05-07T15:06:16.264Z] info getDepartments successfuly
+[2024-05-07T15:06:16.265Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:06:16.266Z] info getTypePackage successfuly
+[2024-05-07T15:06:17.035Z] info Token validated successfuly
+[2024-05-07T15:06:17.035Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:06:17.039Z] info Token validated successfuly
+[2024-05-07T15:06:17.039Z] info enter the endpoint getDepartments
+[2024-05-07T15:06:17.041Z] info Token validated successfuly
+[2024-05-07T15:06:17.041Z] info enter the endpoint getTypePackage
+[2024-05-07T15:06:17.042Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:06:17.044Z] info getDepartments successfuly
+[2024-05-07T15:06:17.045Z] info getTypePackage successfuly
+[2024-05-07T15:07:12.759Z] info Token validated successfuly
+[2024-05-07T15:07:12.759Z] info enter the endpoint getDepartments
+[2024-05-07T15:07:12.762Z] info Token validated successfuly
+[2024-05-07T15:07:12.762Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:07:12.764Z] info Token validated successfuly
+[2024-05-07T15:07:12.764Z] info enter the endpoint getTypePackage
+[2024-05-07T15:07:12.768Z] info getDepartments successfuly
+[2024-05-07T15:07:12.769Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:07:12.770Z] info getTypePackage successfuly
+[2024-05-07T15:07:41.294Z] info Token validated successfuly
+[2024-05-07T15:07:41.294Z] info enter the endpoint getDepartments
+[2024-05-07T15:07:41.296Z] info Token validated successfuly
+[2024-05-07T15:07:41.296Z] info enter the endpoint getTypePackage
+[2024-05-07T15:07:41.297Z] info Token validated successfuly
+[2024-05-07T15:07:41.298Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:07:41.301Z] info getDepartments successfuly
+[2024-05-07T15:07:41.303Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:07:41.304Z] info getTypePackage successfuly
+[2024-05-07T15:07:41.736Z] info Token validated successfuly
+[2024-05-07T15:07:41.737Z] info enter the endpoint getDepartments
+[2024-05-07T15:07:41.739Z] info Token validated successfuly
+[2024-05-07T15:07:41.739Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:07:41.741Z] info Token validated successfuly
+[2024-05-07T15:07:41.742Z] info enter the endpoint getTypePackage
+[2024-05-07T15:07:41.742Z] info getDepartments successfuly
+[2024-05-07T15:07:41.743Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:07:41.745Z] info getTypePackage successfuly
+[2024-05-07T15:08:11.792Z] info Token validated successfuly
+[2024-05-07T15:08:11.793Z] info enter the endpoint getDepartments
+[2024-05-07T15:08:11.794Z] info Token validated successfuly
+[2024-05-07T15:08:11.794Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:08:11.796Z] info Token validated successfuly
+[2024-05-07T15:08:11.796Z] info enter the endpoint getTypePackage
+[2024-05-07T15:08:11.799Z] info getDepartments successfuly
+[2024-05-07T15:08:11.800Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:08:11.801Z] info getTypePackage successfuly
+[2024-05-07T15:08:12.341Z] info Token validated successfuly
+[2024-05-07T15:08:12.341Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:08:12.343Z] info Token validated successfuly
+[2024-05-07T15:08:12.343Z] info enter the endpoint getDepartments
+[2024-05-07T15:08:12.345Z] info Token validated successfuly
+[2024-05-07T15:08:12.345Z] info enter the endpoint getTypePackage
+[2024-05-07T15:08:12.346Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:08:12.346Z] info getDepartments successfuly
+[2024-05-07T15:08:12.347Z] info getTypePackage successfuly
+[2024-05-07T15:08:41.700Z] info Token validated successfuly
+[2024-05-07T15:08:41.700Z] info enter the endpoint getCitiesByDepartment
+[2024-05-07T15:08:41.703Z] info getCitiesByDepartment successfuly
+[2024-05-07T15:08:56.322Z] info Token validated successfuly
+[2024-05-07T15:08:56.322Z] info enter the endpoint add addPackage
+[2024-05-07T15:08:56.366Z] info Add addPackage successfuly
+[2024-05-07T15:08:56.370Z] info Token validated successfuly
+[2024-05-07T15:08:56.371Z] info enter the endpoint addProductToPackage
+[2024-05-07T15:08:56.371Z] info addProductToPackage successfuly
+[2024-05-07T15:08:56.467Z] info Token validated successfuly
+[2024-05-07T15:08:56.467Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:08:56.474Z] info getPackagesByStore successfuly
+[2024-05-07T15:09:00.953Z] info Token validated successfuly
+[2024-05-07T15:09:00.953Z] info Enter the endpoint get products package
+[2024-05-07T15:09:00.956Z] info Get products package successfuly
+[2024-05-07T15:11:59.600Z] info Token validated successfuly
+[2024-05-07T15:11:59.601Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:11:59.607Z] info getPackagesByStore successfuly
+[2024-05-07T15:12:04.331Z] info Token validated successfuly
+[2024-05-07T15:12:04.331Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:12:04.336Z] info getPackagesByStore successfuly
+[2024-05-07T15:12:10.812Z] info Token validated successfuly
+[2024-05-07T15:12:10.812Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:12:10.816Z] info getPackagesByStore successfuly
+[2024-05-07T15:12:16.306Z] info Token validated successfuly
+[2024-05-07T15:12:16.306Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:12:16.309Z] info getPackagesByStore successfuly
+[2024-05-07T15:12:18.192Z] info Token validated successfuly
+[2024-05-07T15:12:18.192Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:12:18.197Z] info getPackagesByStore successfuly
+[2024-05-07T15:13:45.948Z] info Token validated successfuly
+[2024-05-07T15:13:45.948Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:13:45.954Z] info getPackagesByStore successfuly
+[2024-05-07T15:13:48.991Z] info Token validated successfuly
+[2024-05-07T15:13:48.992Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:13:48.996Z] info getPackagesByStore successfuly
+[2024-05-07T15:13:49.771Z] info Token validated successfuly
+[2024-05-07T15:13:49.771Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:13:49.775Z] info getPackagesByStore successfuly
+[2024-05-07T15:14:28.728Z] info Token validated successfuly
+[2024-05-07T15:14:28.729Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:14:28.733Z] info getPackagesByStore successfuly
+[2024-05-07T15:14:29.671Z] info Token validated successfuly
+[2024-05-07T15:14:29.671Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:14:29.674Z] info getPackagesByStore successfuly
+[2024-05-07T15:15:15.900Z] info Token validated successfuly
+[2024-05-07T15:15:15.900Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:15:15.905Z] info getPackagesByStore successfuly
+[2024-05-07T15:15:19.866Z] info Token validated successfuly
+[2024-05-07T15:15:19.866Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:15:19.870Z] info getPackagesByStore successfuly
+[2024-05-07T15:15:42.213Z] info Token validated successfuly
+[2024-05-07T15:15:42.214Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:15:42.218Z] info getPackagesByStore successfuly
+[2024-05-07T15:15:51.571Z] info Token validated successfuly
+[2024-05-07T15:15:51.572Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:15:51.575Z] info getPackagesByStore successfuly
+[2024-05-07T15:15:52.406Z] info Token validated successfuly
+[2024-05-07T15:15:52.406Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:15:52.410Z] info getPackagesByStore successfuly
+[2024-05-07T15:15:57.296Z] info Token validated successfuly
+[2024-05-07T15:15:57.297Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:15:57.300Z] info getPackagesByStore successfuly
+[2024-05-07T15:16:15.202Z] info Token validated successfuly
+[2024-05-07T15:16:15.202Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:16:15.207Z] info getPackagesByStore successfuly
+[2024-05-07T15:16:25.452Z] info Token validated successfuly
+[2024-05-07T15:16:25.453Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:16:25.457Z] info getPackagesByStore successfuly
+[2024-05-07T15:16:35.164Z] info Token validated successfuly
+[2024-05-07T15:16:35.165Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:16:35.168Z] info getPackagesByStore successfuly
+[2024-05-07T15:16:40.385Z] info Token validated successfuly
+[2024-05-07T15:16:40.385Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:16:40.388Z] info getPackagesByStore successfuly
+[2024-05-07T15:16:42.595Z] info Token validated successfuly
+[2024-05-07T15:16:42.596Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:16:42.600Z] info getPackagesByStore successfuly
+[2024-05-07T15:16:49.585Z] info Token validated successfuly
+[2024-05-07T15:16:49.585Z] info enter the endpoint edit package dropshipper
+[2024-05-07T15:16:49.587Z] info edit package Dropshipper successfuly
+[2024-05-07T15:16:49.647Z] info Token validated successfuly
+[2024-05-07T15:16:49.647Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:16:49.651Z] info getPackagesByStore successfuly
+[2024-05-07T15:16:57.285Z] info Token validated successfuly
+[2024-05-07T15:16:57.285Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:16:57.287Z] info Token validated successfuly
+[2024-05-07T15:16:57.288Z] info enter the endpoint getDepartments
+[2024-05-07T15:16:57.289Z] info Token validated successfuly
+[2024-05-07T15:16:57.289Z] info enter the endpoint getTypePackage
+[2024-05-07T15:16:57.291Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:16:57.292Z] info getDepartments successfuly
+[2024-05-07T15:16:57.294Z] info getTypePackage successfuly
+[2024-05-07T15:17:05.395Z] info Token validated successfuly
+[2024-05-07T15:17:05.395Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:17:05.398Z] info Token validated successfuly
+[2024-05-07T15:17:05.398Z] info enter the endpoint getDepartments
+[2024-05-07T15:17:05.399Z] info getDetailDropshipper successfuly
+[2024-05-07T15:17:05.400Z] info getDepartments successfuly
+[2024-05-07T15:17:18.977Z] info Token validated successfuly
+[2024-05-07T15:17:18.977Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:17:18.984Z] info getPackagesByStore successfuly
+[2024-05-07T15:17:58.961Z] info Token validated successfuly
+[2024-05-07T15:17:58.961Z] info enter the endpoint getHistory
+[2024-05-07T15:17:58.967Z] info getHistory successfuly
+[2024-05-07T15:18:04.000Z] info Token validated successfuly
+[2024-05-07T15:18:04.001Z] info enter the endpoint getHistory
+[2024-05-07T15:18:04.003Z] info getHistory successfuly
+[2024-05-07T15:18:05.911Z] info Token validated successfuly
+[2024-05-07T15:18:05.911Z] info enter the endpoint getHistory
+[2024-05-07T15:18:05.913Z] info getHistory successfuly
+[2024-05-07T15:18:08.383Z] info Token validated successfuly
+[2024-05-07T15:18:08.383Z] info enter the endpoint getHistory
+[2024-05-07T15:18:08.386Z] info getHistory successfuly
+[2024-05-07T15:18:09.456Z] info Token validated successfuly
+[2024-05-07T15:18:09.456Z] info enter the endpoint getEvidenceHistory
+[2024-05-07T15:18:09.457Z] info getEvidenceHistory successfuly
+[2024-05-07T15:18:25.026Z] info Token validated successfuly
+[2024-05-07T15:18:25.026Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:18:25.032Z] info getPackagesByStore successfuly
+[2024-05-07T15:19:04.986Z] info Token validated successfuly
+[2024-05-07T15:19:04.986Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:19:04.992Z] info getPackagesByStore successfuly
+[2024-05-07T15:19:05.062Z] info Token validated successfuly
+[2024-05-07T15:19:05.062Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:19:05.066Z] info getPackagesByStore successfuly
+[2024-05-07T15:19:08.728Z] info Token validated successfuly
+[2024-05-07T15:19:08.728Z] info enter the endpoint getHistory
+[2024-05-07T15:19:08.730Z] info getHistory successfuly
+[2024-05-07T15:19:10.199Z] info Token validated successfuly
+[2024-05-07T15:19:10.199Z] info enter the endpoint getHistory
+[2024-05-07T15:19:10.201Z] info getHistory successfuly
+[2024-05-07T15:19:11.855Z] info Token validated successfuly
+[2024-05-07T15:19:11.855Z] info enter the endpoint getHistory
+[2024-05-07T15:19:11.857Z] info getHistory successfuly
+[2024-05-07T15:19:37.406Z] info Token validated successfuly
+[2024-05-07T15:19:37.406Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:19:37.412Z] info getPackagesByStore successfuly
+[2024-05-07T15:19:39.048Z] info Token validated successfuly
+[2024-05-07T15:19:39.048Z] info enter the endpoint getHistory
+[2024-05-07T15:19:39.051Z] info getHistory successfuly
+[2024-05-07T15:19:43.272Z] info Token validated successfuly
+[2024-05-07T15:19:43.272Z] info Enter the endpoint get products package
+[2024-05-07T15:19:43.274Z] info Get products package successfuly
+[2024-05-07T15:19:46.823Z] info Token validated successfuly
+[2024-05-07T15:19:46.823Z] info Enter the endpoint get products package
+[2024-05-07T15:19:46.825Z] info Get products package successfuly
+[2024-05-07T15:19:52.184Z] info Token validated successfuly
+[2024-05-07T15:19:52.185Z] info enter the endpoint getHistory
+[2024-05-07T15:19:52.186Z] info getHistory successfuly
+[2024-05-07T15:19:53.664Z] info Token validated successfuly
+[2024-05-07T15:19:53.665Z] info enter the endpoint edit package dropshipper
+[2024-05-07T15:19:53.666Z] info edit package Dropshipper successfuly
+[2024-05-07T15:19:53.728Z] info Token validated successfuly
+[2024-05-07T15:19:53.728Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:19:53.732Z] info getPackagesByStore successfuly
+[2024-05-07T15:19:58.183Z] info Token validated successfuly
+[2024-05-07T15:19:58.183Z] info enter the endpoint edit package dropshipper
+[2024-05-07T15:19:58.184Z] info edit package Dropshipper successfuly
+[2024-05-07T15:19:58.239Z] info Token validated successfuly
+[2024-05-07T15:19:58.239Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:19:58.243Z] info getPackagesByStore successfuly
+[2024-05-07T15:20:04.896Z] info Token validated successfuly
+[2024-05-07T15:20:04.896Z] info enter the endpoint getDepartments
+[2024-05-07T15:20:04.898Z] info Token validated successfuly
+[2024-05-07T15:20:04.898Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:20:04.900Z] info Token validated successfuly
+[2024-05-07T15:20:04.900Z] info enter the endpoint getTypePackage
+[2024-05-07T15:20:04.901Z] info getDepartments successfuly
+[2024-05-07T15:20:04.903Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:20:04.904Z] info getTypePackage successfuly
+[2024-05-07T15:21:15.562Z] info Token validated successfuly
+[2024-05-07T15:21:15.562Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:21:15.565Z] info Token validated successfuly
+[2024-05-07T15:21:15.565Z] info enter the endpoint getDepartments
+[2024-05-07T15:21:15.569Z] info getDetailDropshipper successfuly
+[2024-05-07T15:21:15.570Z] info getDepartments successfuly
+[2024-05-07T15:21:17.330Z] info Token validated successfuly
+[2024-05-07T15:21:17.331Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:21:17.339Z] info getPackagesByStore successfuly
+[2024-05-07T15:21:25.722Z] info Token validated successfuly
+[2024-05-07T15:21:25.722Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:21:25.725Z] info getPackagesByStore successfuly
+[2024-05-07T15:21:26.235Z] info Token validated successfuly
+[2024-05-07T15:21:26.236Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:21:26.239Z] info getPackagesByStore successfuly
+[2024-05-07T15:21:29.679Z] info Token validated successfuly
+[2024-05-07T15:21:29.679Z] info enter the endpoint getDepartments
+[2024-05-07T15:21:29.682Z] info Token validated successfuly
+[2024-05-07T15:21:29.682Z] info enter the endpoint getTypePackage
+[2024-05-07T15:21:29.684Z] info Token validated successfuly
+[2024-05-07T15:21:29.684Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:21:29.685Z] info getDepartments successfuly
+[2024-05-07T15:21:29.687Z] info getTypePackage successfuly
+[2024-05-07T15:21:29.688Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:21:30.883Z] info Token validated successfuly
+[2024-05-07T15:21:30.884Z] info enter the endpoint getDepartments
+[2024-05-07T15:21:30.886Z] info Token validated successfuly
+[2024-05-07T15:21:30.886Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:21:30.889Z] info getDepartments successfuly
+[2024-05-07T15:21:30.890Z] info getDetailDropshipper successfuly
+[2024-05-07T15:21:34.063Z] info Token validated successfuly
+[2024-05-07T15:21:34.063Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:21:34.068Z] info getPackagesByStore successfuly
+[2024-05-07T15:21:37.264Z] info Token validated successfuly
+[2024-05-07T15:21:37.265Z] info enter the endpoint getDepartments
+[2024-05-07T15:21:37.266Z] info Token validated successfuly
+[2024-05-07T15:21:37.266Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:21:37.268Z] info Token validated successfuly
+[2024-05-07T15:21:37.268Z] info enter the endpoint getTypePackage
+[2024-05-07T15:21:37.269Z] info getDepartments successfuly
+[2024-05-07T15:21:37.270Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:21:37.271Z] info getTypePackage successfuly
+[2024-05-07T15:21:59.518Z] info Token validated successfuly
+[2024-05-07T15:21:59.519Z] info enter the endpoint getDepartments
+[2024-05-07T15:21:59.521Z] info Token validated successfuly
+[2024-05-07T15:21:59.521Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:21:59.522Z] info Token validated successfuly
+[2024-05-07T15:21:59.523Z] info enter the endpoint getTypePackage
+[2024-05-07T15:21:59.526Z] info getDepartments successfuly
+[2024-05-07T15:21:59.527Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:21:59.528Z] info getTypePackage successfuly
+[2024-05-07T15:22:11.880Z] info Token validated successfuly
+[2024-05-07T15:22:11.880Z] info enter the endpoint getDepartments
+[2024-05-07T15:22:11.882Z] info Token validated successfuly
+[2024-05-07T15:22:11.883Z] info enter the endpoint getTypePackage
+[2024-05-07T15:22:11.886Z] info Token validated successfuly
+[2024-05-07T15:22:11.886Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:22:11.891Z] info getDepartments successfuly
+[2024-05-07T15:22:11.892Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:22:11.893Z] info getTypePackage successfuly
+[2024-05-07T15:22:14.333Z] info Token validated successfuly
+[2024-05-07T15:22:14.333Z] info enter the endpoint getDepartments
+[2024-05-07T15:22:14.335Z] info Token validated successfuly
+[2024-05-07T15:22:14.335Z] info enter the endpoint getTypePackage
+[2024-05-07T15:22:14.337Z] info Token validated successfuly
+[2024-05-07T15:22:14.337Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:22:14.338Z] info getDepartments successfuly
+[2024-05-07T15:22:14.339Z] info getTypePackage successfuly
+[2024-05-07T15:22:14.341Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:22:26.504Z] info Token validated successfuly
+[2024-05-07T15:22:26.504Z] info enter the endpoint getDepartments
+[2024-05-07T15:22:26.507Z] info Token validated successfuly
+[2024-05-07T15:22:26.507Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:22:26.509Z] info Token validated successfuly
+[2024-05-07T15:22:26.510Z] info enter the endpoint getTypePackage
+[2024-05-07T15:22:26.514Z] info getDepartments successfuly
+[2024-05-07T15:22:26.515Z] info getTypePackage successfuly
+[2024-05-07T15:22:26.516Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:22:49.972Z] info Token validated successfuly
+[2024-05-07T15:22:49.973Z] info enter the endpoint getDepartments
+[2024-05-07T15:22:49.974Z] info Token validated successfuly
+[2024-05-07T15:22:49.975Z] info enter the endpoint getTypePackage
+[2024-05-07T15:22:49.976Z] info Token validated successfuly
+[2024-05-07T15:22:49.976Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:22:49.980Z] info getDepartments successfuly
+[2024-05-07T15:22:49.981Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:22:49.982Z] info getTypePackage successfuly
+[2024-05-07T15:22:58.633Z] info Token validated successfuly
+[2024-05-07T15:22:58.634Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:22:58.637Z] info Token validated successfuly
+[2024-05-07T15:22:58.637Z] info enter the endpoint getDepartments
+[2024-05-07T15:22:58.639Z] info Token validated successfuly
+[2024-05-07T15:22:58.639Z] info enter the endpoint getTypePackage
+[2024-05-07T15:22:58.640Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:22:58.641Z] info getDepartments successfuly
+[2024-05-07T15:22:58.641Z] info getTypePackage successfuly
+[2024-05-07T15:23:01.477Z] info Token validated successfuly
+[2024-05-07T15:23:01.477Z] info enter the endpoint getDepartments
+[2024-05-07T15:23:01.479Z] info Token validated successfuly
+[2024-05-07T15:23:01.480Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:23:01.481Z] info Token validated successfuly
+[2024-05-07T15:23:01.481Z] info enter the endpoint getTypePackage
+[2024-05-07T15:23:01.482Z] info getDepartments successfuly
+[2024-05-07T15:23:01.483Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:23:01.484Z] info getTypePackage successfuly
+[2024-05-07T15:23:04.467Z] info Token validated successfuly
+[2024-05-07T15:23:04.467Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:23:04.471Z] info Token validated successfuly
+[2024-05-07T15:23:04.472Z] info enter the endpoint getDepartments
+[2024-05-07T15:23:04.473Z] info getDetailDropshipper successfuly
+[2024-05-07T15:23:04.475Z] info getDepartments successfuly
+[2024-05-07T15:23:10.514Z] info Token validated successfuly
+[2024-05-07T15:23:10.514Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:23:10.524Z] info getPackagesByStore successfuly
+[2024-05-07T15:24:10.089Z] info Token validated successfuly
+[2024-05-07T15:24:10.089Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:24:10.095Z] info getPackagesByStore successfuly
+[2024-05-07T15:24:11.088Z] info Token validated successfuly
+[2024-05-07T15:24:11.088Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:24:11.092Z] info getPackagesByStore successfuly
+[2024-05-07T15:24:12.256Z] info Token validated successfuly
+[2024-05-07T15:24:12.256Z] info enter the endpoint getDepartments
+[2024-05-07T15:24:12.258Z] info Token validated successfuly
+[2024-05-07T15:24:12.258Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:24:12.260Z] info Token validated successfuly
+[2024-05-07T15:24:12.260Z] info enter the endpoint getTypePackage
+[2024-05-07T15:24:12.261Z] info getDepartments successfuly
+[2024-05-07T15:24:12.263Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:24:12.264Z] info getTypePackage successfuly
+[2024-05-07T15:24:16.591Z] info Token validated successfuly
+[2024-05-07T15:24:16.591Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:24:16.593Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:24:22.602Z] info Token validated successfuly
+[2024-05-07T15:24:22.603Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:24:22.604Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:24:28.139Z] info Token validated successfuly
+[2024-05-07T15:24:28.139Z] info enter the endpoint getDepartments
+[2024-05-07T15:24:28.141Z] info Token validated successfuly
+[2024-05-07T15:24:28.141Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:24:28.143Z] info Token validated successfuly
+[2024-05-07T15:24:28.143Z] info enter the endpoint getTypePackage
+[2024-05-07T15:24:28.144Z] info getDepartments successfuly
+[2024-05-07T15:24:28.146Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:24:28.147Z] info getTypePackage successfuly
+[2024-05-07T15:24:28.520Z] info Token validated successfuly
+[2024-05-07T15:24:28.520Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:24:28.522Z] info Token validated successfuly
+[2024-05-07T15:24:28.522Z] info enter the endpoint getDepartments
+[2024-05-07T15:24:28.523Z] info Token validated successfuly
+[2024-05-07T15:24:28.523Z] info enter the endpoint getTypePackage
+[2024-05-07T15:24:28.524Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:24:28.525Z] info getDepartments successfuly
+[2024-05-07T15:24:28.526Z] info getTypePackage successfuly
+[2024-05-07T15:24:29.278Z] info Token validated successfuly
+[2024-05-07T15:24:29.278Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:24:29.282Z] info getPackagesByStore successfuly
+[2024-05-07T15:24:31.722Z] info Token validated successfuly
+[2024-05-07T15:24:31.722Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:24:31.724Z] info Token validated successfuly
+[2024-05-07T15:24:31.724Z] info enter the endpoint getDepartments
+[2024-05-07T15:24:31.726Z] info Token validated successfuly
+[2024-05-07T15:24:31.727Z] info enter the endpoint getTypePackage
+[2024-05-07T15:24:31.728Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:24:31.729Z] info getDepartments successfuly
+[2024-05-07T15:24:31.730Z] info getTypePackage successfuly
+[2024-05-07T15:24:32.457Z] info Token validated successfuly
+[2024-05-07T15:24:32.458Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:24:32.462Z] info getPackagesByStore successfuly
+[2024-05-07T15:24:37.207Z] info Token validated successfuly
+[2024-05-07T15:24:37.207Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:24:37.210Z] info Token validated successfuly
+[2024-05-07T15:24:37.210Z] info enter the endpoint getDepartments
+[2024-05-07T15:24:37.211Z] info getDetailDropshipper successfuly
+[2024-05-07T15:24:37.212Z] info getDepartments successfuly
+[2024-05-07T15:24:42.829Z] info Token validated successfuly
+[2024-05-07T15:24:42.829Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:24:42.833Z] info getPackagesByStore successfuly
+[2024-05-07T15:25:14.842Z] info Token validated successfuly
+[2024-05-07T15:25:14.843Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:25:14.847Z] info getPackagesByStore successfuly
+[2024-05-07T15:25:17.498Z] info Token validated successfuly
+[2024-05-07T15:25:17.498Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:25:17.501Z] info Token validated successfuly
+[2024-05-07T15:25:17.501Z] info enter the endpoint getDepartments
+[2024-05-07T15:25:17.502Z] info getDetailDropshipper successfuly
+[2024-05-07T15:25:17.503Z] info getDepartments successfuly
+[2024-05-07T15:25:18.585Z] info Token validated successfuly
+[2024-05-07T15:25:18.585Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:25:18.589Z] info getPackagesByStore successfuly
+[2024-05-07T15:25:22.392Z] info Token validated successfuly
+[2024-05-07T15:25:22.392Z] info enter the endpoint getHistory
+[2024-05-07T15:25:22.394Z] info getHistory successfuly
+[2024-05-07T15:26:01.399Z] info Token validated successfuly
+[2024-05-07T15:26:01.399Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:01.406Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:08.978Z] info Token validated successfuly
+[2024-05-07T15:26:08.979Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:08.982Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:12.239Z] info Token validated successfuly
+[2024-05-07T15:26:12.240Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:12.244Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:12.914Z] info Token validated successfuly
+[2024-05-07T15:26:12.914Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:12.918Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:14.569Z] info Token validated successfuly
+[2024-05-07T15:26:14.570Z] info enter the endpoint getDepartments
+[2024-05-07T15:26:14.572Z] info Token validated successfuly
+[2024-05-07T15:26:14.572Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:26:14.574Z] info Token validated successfuly
+[2024-05-07T15:26:14.574Z] info enter the endpoint getTypePackage
+[2024-05-07T15:26:14.576Z] info getDepartments successfuly
+[2024-05-07T15:26:14.577Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:26:14.578Z] info getTypePackage successfuly
+[2024-05-07T15:26:15.391Z] info Token validated successfuly
+[2024-05-07T15:26:15.391Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:15.395Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:16.516Z] info Token validated successfuly
+[2024-05-07T15:26:16.516Z] info enter the endpoint getDepartments
+[2024-05-07T15:26:16.518Z] info Token validated successfuly
+[2024-05-07T15:26:16.519Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:26:16.521Z] info Token validated successfuly
+[2024-05-07T15:26:16.521Z] info enter the endpoint getTypePackage
+[2024-05-07T15:26:16.522Z] info getDepartments successfuly
+[2024-05-07T15:26:16.523Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:26:16.524Z] info getTypePackage successfuly
+[2024-05-07T15:26:17.676Z] info Token validated successfuly
+[2024-05-07T15:26:17.676Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:17.679Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:19.312Z] info Token validated successfuly
+[2024-05-07T15:26:19.312Z] info enter the endpoint getHistory
+[2024-05-07T15:26:19.314Z] info getHistory successfuly
+[2024-05-07T15:26:20.934Z] info Token validated successfuly
+[2024-05-07T15:26:20.935Z] info enter the endpoint getHistory
+[2024-05-07T15:26:20.936Z] info getHistory successfuly
+[2024-05-07T15:26:22.519Z] info Token validated successfuly
+[2024-05-07T15:26:22.519Z] info enter the endpoint getHistory
+[2024-05-07T15:26:22.520Z] info getHistory successfuly
+[2024-05-07T15:26:23.895Z] info Token validated successfuly
+[2024-05-07T15:26:23.895Z] info enter the endpoint getHistory
+[2024-05-07T15:26:23.897Z] info getHistory successfuly
+[2024-05-07T15:26:25.040Z] info Token validated successfuly
+[2024-05-07T15:26:25.040Z] info enter the endpoint getHistory
+[2024-05-07T15:26:25.042Z] info getHistory successfuly
+[2024-05-07T15:26:25.736Z] info Token validated successfuly
+[2024-05-07T15:26:25.736Z] info enter the endpoint getEvidenceHistory
+[2024-05-07T15:26:25.737Z] info getEvidenceHistory successfuly
+[2024-05-07T15:26:31.041Z] info Token validated successfuly
+[2024-05-07T15:26:31.042Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:26:31.044Z] info Token validated successfuly
+[2024-05-07T15:26:31.044Z] info enter the endpoint getDepartments
+[2024-05-07T15:26:31.045Z] info Token validated successfuly
+[2024-05-07T15:26:31.045Z] info enter the endpoint getTypePackage
+[2024-05-07T15:26:31.046Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:26:31.048Z] info getDepartments successfuly
+[2024-05-07T15:26:31.049Z] info getTypePackage successfuly
+[2024-05-07T15:26:33.068Z] info Token validated successfuly
+[2024-05-07T15:26:33.068Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:33.071Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:34.537Z] info Token validated successfuly
+[2024-05-07T15:26:34.537Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:26:34.539Z] info Token validated successfuly
+[2024-05-07T15:26:34.539Z] info enter the endpoint getDepartments
+[2024-05-07T15:26:34.541Z] info Token validated successfuly
+[2024-05-07T15:26:34.542Z] info enter the endpoint getTypePackage
+[2024-05-07T15:26:34.543Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:26:34.544Z] info getDepartments successfuly
+[2024-05-07T15:26:34.544Z] info getTypePackage successfuly
+[2024-05-07T15:26:35.487Z] info Token validated successfuly
+[2024-05-07T15:26:35.487Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:35.492Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:37.069Z] info Token validated successfuly
+[2024-05-07T15:26:37.069Z] info enter the endpoint getDepartments
+[2024-05-07T15:26:37.071Z] info Token validated successfuly
+[2024-05-07T15:26:37.072Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:26:37.073Z] info Token validated successfuly
+[2024-05-07T15:26:37.073Z] info enter the endpoint getTypePackage
+[2024-05-07T15:26:37.074Z] info getDepartments successfuly
+[2024-05-07T15:26:37.075Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:26:37.076Z] info getTypePackage successfuly
+[2024-05-07T15:26:37.692Z] info Token validated successfuly
+[2024-05-07T15:26:37.692Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:37.696Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:39.608Z] info Token validated successfuly
+[2024-05-07T15:26:39.608Z] info enter the endpoint getDepartments
+[2024-05-07T15:26:39.611Z] info Token validated successfuly
+[2024-05-07T15:26:39.611Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:26:39.614Z] info Token validated successfuly
+[2024-05-07T15:26:39.614Z] info enter the endpoint getTypePackage
+[2024-05-07T15:26:39.615Z] info getDepartments successfuly
+[2024-05-07T15:26:39.616Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:26:39.617Z] info getTypePackage successfuly
+[2024-05-07T15:26:40.297Z] info Token validated successfuly
+[2024-05-07T15:26:40.297Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:40.300Z] info getPackagesByStore successfuly
+[2024-05-07T15:26:40.978Z] info Token validated successfuly
+[2024-05-07T15:26:40.978Z] info enter the endpoint getDepartments
+[2024-05-07T15:26:40.980Z] info Token validated successfuly
+[2024-05-07T15:26:40.980Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:26:40.982Z] info Token validated successfuly
+[2024-05-07T15:26:40.983Z] info enter the endpoint getTypePackage
+[2024-05-07T15:26:40.984Z] info getDepartments successfuly
+[2024-05-07T15:26:40.985Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:26:40.986Z] info getTypePackage successfuly
+[2024-05-07T15:26:43.581Z] info Token validated successfuly
+[2024-05-07T15:26:43.581Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:26:43.585Z] info getPackagesByStore successfuly
+[2024-05-07T15:29:03.939Z] info Token validated successfuly
+[2024-05-07T15:29:03.939Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:29:03.945Z] info getPackagesByStore successfuly
+[2024-05-07T15:29:07.247Z] info Token validated successfuly
+[2024-05-07T15:29:07.247Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:29:07.250Z] info getPackagesByStore successfuly
+[2024-05-07T15:29:07.644Z] info Token validated successfuly
+[2024-05-07T15:29:07.644Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:29:07.647Z] info getPackagesByStore successfuly
+[2024-05-07T15:29:11.570Z] info Token validated successfuly
+[2024-05-07T15:29:11.570Z] info enter the endpoint getDepartments
+[2024-05-07T15:29:11.572Z] info Token validated successfuly
+[2024-05-07T15:29:11.572Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:29:11.574Z] info Token validated successfuly
+[2024-05-07T15:29:11.574Z] info enter the endpoint getTypePackage
+[2024-05-07T15:29:11.575Z] info getDepartments successfuly
+[2024-05-07T15:29:11.576Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:29:11.578Z] info getTypePackage successfuly
+[2024-05-07T15:29:30.991Z] info Token validated successfuly
+[2024-05-07T15:29:30.992Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:29:30.996Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:29:31.746Z] info Token validated successfuly
+[2024-05-07T15:29:31.746Z] info enter the endpoint getpackages dropshipper
+[2024-05-07T15:29:31.753Z] info Getpackages Dropshipper successfuly
+[2024-05-07T15:29:32.812Z] info Token validated successfuly
+[2024-05-07T15:29:32.813Z] info enter the endpoint detailPackage dropshipper
+[2024-05-07T15:29:32.823Z] info detailPackage Dropshipper successfuly
+[2024-05-07T15:29:32.831Z] info Token validated successfuly
+[2024-05-07T15:29:32.831Z] info Enter the endpoint get carriers
+[2024-05-07T15:29:32.833Z] info Get carriers successfuly
+[2024-05-07T15:29:47.981Z] info Token validated successfuly
+[2024-05-07T15:29:47.982Z] info enter the endpoint getpackages dropshipper
+[2024-05-07T15:29:47.988Z] info Getpackages Dropshipper successfuly
+[2024-05-07T15:29:50.038Z] info Token validated successfuly
+[2024-05-07T15:29:50.039Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:29:50.040Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:29:50.423Z] info Token validated successfuly
+[2024-05-07T15:29:50.423Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:29:50.427Z] info Token validated successfuly
+[2024-05-07T15:29:50.428Z] info enter the endpoint getDepartments
+[2024-05-07T15:29:50.430Z] info getDetailDropshipper successfuly
+[2024-05-07T15:29:50.430Z] info getDepartments successfuly
+[2024-05-07T15:29:52.653Z] info Token validated successfuly
+[2024-05-07T15:29:52.653Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:29:52.654Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:29:54.180Z] info Token validated successfuly
+[2024-05-07T15:29:54.180Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:29:54.181Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:29:54.533Z] info Token validated successfuly
+[2024-05-07T15:29:54.533Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:29:54.536Z] info Token validated successfuly
+[2024-05-07T15:29:54.536Z] info enter the endpoint getDepartments
+[2024-05-07T15:29:54.537Z] info getDetailDropshipper successfuly
+[2024-05-07T15:29:54.538Z] info getDepartments successfuly
+[2024-05-07T15:29:55.414Z] info Token validated successfuly
+[2024-05-07T15:29:55.414Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:29:55.418Z] info getPackagesByStore successfuly
+[2024-05-07T15:29:57.976Z] info Token validated successfuly
+[2024-05-07T15:29:57.977Z] info enter the endpoint getDepartments
+[2024-05-07T15:29:57.979Z] info Token validated successfuly
+[2024-05-07T15:29:57.979Z] info enter the endpoint getTypePackage
+[2024-05-07T15:29:57.981Z] info Token validated successfuly
+[2024-05-07T15:29:57.981Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:29:57.983Z] info getDepartments successfuly
+[2024-05-07T15:29:57.983Z] info getTypePackage successfuly
+[2024-05-07T15:29:57.984Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:30:01.588Z] info Token validated successfuly
+[2024-05-07T15:30:01.588Z] info enter the endpoint getDepartments
+[2024-05-07T15:30:01.591Z] info Token validated successfuly
+[2024-05-07T15:30:01.591Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:30:01.593Z] info getDepartments successfuly
+[2024-05-07T15:30:01.595Z] info getDetailDropshipper successfuly
+[2024-05-07T15:30:03.403Z] info Token validated successfuly
+[2024-05-07T15:30:03.403Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:30:03.407Z] info getPackagesByStore successfuly
+[2024-05-07T15:30:09.574Z] info Token validated successfuly
+[2024-05-07T15:30:09.574Z] info enter the endpoint getDepartments
+[2024-05-07T15:30:09.576Z] info Token validated successfuly
+[2024-05-07T15:30:09.576Z] info enter the endpoint getTypePackage
+[2024-05-07T15:30:09.578Z] info Token validated successfuly
+[2024-05-07T15:30:09.578Z] info enter the endpoint getProductsByDropshipper
+[2024-05-07T15:30:09.579Z] info getDepartments successfuly
+[2024-05-07T15:30:09.580Z] info getTypePackage successfuly
+[2024-05-07T15:30:09.581Z] info getProductsByDropshipper successfuly
+[2024-05-07T15:31:00.077Z] info Token validated successfuly
+[2024-05-07T15:31:00.078Z] info enter the endpoint getpackages dropshipper
+[2024-05-07T15:31:00.083Z] info Getpackages Dropshipper successfuly
+[2024-05-07T15:31:01.057Z] info Token validated successfuly
+[2024-05-07T15:31:01.057Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:31:01.061Z] info Token validated successfuly
+[2024-05-07T15:31:01.061Z] info enter the endpoint getDepartments
+[2024-05-07T15:31:01.062Z] info getDetailDropshipper successfuly
+[2024-05-07T15:31:01.063Z] info getDepartments successfuly
+[2024-05-07T15:31:02.122Z] info Token validated successfuly
+[2024-05-07T15:31:02.122Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:31:02.126Z] info getPackagesByStore successfuly
+[2024-05-07T15:31:05.049Z] info Token validated successfuly
+[2024-05-07T15:31:05.049Z] info enter the endpoint getpackages dropshipper
+[2024-05-07T15:31:05.056Z] info Getpackages Dropshipper successfuly
+[2024-05-07T15:31:10.192Z] info Token validated successfuly
+[2024-05-07T15:31:10.193Z] info enter the endpoint detailPackage dropshipper
+[2024-05-07T15:31:10.199Z] info detailPackage Dropshipper successfuly
+[2024-05-07T15:31:10.214Z] info Token validated successfuly
+[2024-05-07T15:31:10.215Z] info Enter the endpoint get carriers
+[2024-05-07T15:31:10.217Z] info Get carriers successfuly
+[2024-05-07T15:31:18.912Z] info Token validated successfuly
+[2024-05-07T15:31:18.912Z] info enter the endpoint edit product package cuantity dropshipper
+[2024-05-07T15:31:18.914Z] info Token validated successfuly
+[2024-05-07T15:31:18.914Z] info enter the endpoint edit product package cuantity dropshipper
+[2024-05-07T15:31:18.915Z] info edit product package cuantity dropshipper successfuly
+[2024-05-07T15:31:18.917Z] info edit product package cuantity dropshipper successfuly
+[2024-05-07T15:31:19.044Z] info Token validated successfuly
+[2024-05-07T15:31:19.044Z] info enter the endpoint detailPackage dropshipper
+[2024-05-07T15:31:19.050Z] info detailPackage Dropshipper successfuly
+[2024-05-07T15:31:22.824Z] info Token validated successfuly
+[2024-05-07T15:31:22.825Z] info enter the endpoint detailPackage dropshipper
+[2024-05-07T15:31:22.830Z] info detailPackage Dropshipper successfuly
+[2024-05-07T15:31:22.841Z] info Token validated successfuly
+[2024-05-07T15:31:22.842Z] info Enter the endpoint get carriers
+[2024-05-07T15:31:22.844Z] info Get carriers successfuly
+[2024-05-07T15:31:24.920Z] info Token validated successfuly
+[2024-05-07T15:31:24.920Z] info enter the endpoint edit package dropshipper
+[2024-05-07T15:31:24.921Z] info edit package Dropshipper successfuly
+[2024-05-07T15:31:25.002Z] info Token validated successfuly
+[2024-05-07T15:31:25.002Z] info enter the endpoint detailPackage dropshipper
+[2024-05-07T15:31:25.010Z] info detailPackage Dropshipper successfuly
+[2024-05-07T15:31:28.740Z] info Token validated successfuly
+[2024-05-07T15:31:28.740Z] info enter the endpoint getpackages dropshipper
+[2024-05-07T15:31:28.746Z] info Getpackages Dropshipper successfuly
+[2024-05-07T15:31:33.753Z] info Token validated successfuly
+[2024-05-07T15:31:33.753Z] info enter the endpoint getDetailCarrier
+[2024-05-07T15:31:33.756Z] info Token validated successfuly
+[2024-05-07T15:31:33.756Z] info enter the endpoint getDepartments
+[2024-05-07T15:31:33.757Z] info getDetailDropshipper successfuly
+[2024-05-07T15:31:33.758Z] info getDepartments successfuly
+[2024-05-07T15:31:34.876Z] info Token validated successfuly
+[2024-05-07T15:31:34.876Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:31:34.880Z] info getPackagesByStore successfuly
+[2024-05-07T15:31:58.778Z] info Token validated successfuly
+[2024-05-07T15:31:58.779Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:31:58.784Z] info getPackagesByStore successfuly
+[2024-05-07T15:32:00.463Z] info Token validated successfuly
+[2024-05-07T15:32:00.463Z] info enter the endpoint getPackagesByStore
+[2024-05-07T15:32:00.467Z] info getPackagesByStore successfuly
+[2024-05-07T15:32:05.182Z] info Token validated successfuly
+[2024-05-07T15:32:05.182Z] info enter the endpoint getpackages dropshipper
+[2024-05-07T15:32:05.187Z] info Getpackages Dropshipper successfuly
