@@ -566,10 +566,10 @@ export async function master(req, res) {
         if (p.fk_id_tp_p == 1) {
           let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
           let statusText;
-          //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+          //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
           switch (p.status_p) {
             case 1:
-              statusText = "Bodega dropshipper";
+              statusText = "Bodega Comercio";
               // Convertir la fecha a una cadena ISO si es un objeto Date
               var fechaISO =
                 p.createdAt instanceof Date
@@ -638,10 +638,10 @@ export async function master(req, res) {
         } else if (p.fk_id_tp_p == 2) {
           let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
           let statusText;
-          //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+          //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
           switch (p.status_p) {
             case 1:
-              statusText = "En bodega dropshipper";
+              statusText = "En bodega Comercio";
               // Convertir la fecha a una cadena ISO si es un objeto Date
               var fechaISO =
                 p.createdAt instanceof Date
@@ -846,10 +846,10 @@ export async function asignatedPackages(req, res) {
       if (p.fk_id_tp_p == 1) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
         let statusText;
-        //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+        //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
         switch (p.status_p) {
           case 1:
-            statusText = "Bodega dropshipper";
+            statusText = "Bodega Comercio";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.createdAt instanceof Date
@@ -918,10 +918,10 @@ export async function asignatedPackages(req, res) {
       } else if (p.fk_id_tp_p == 2) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
         let statusText;
-        //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+        //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
         switch (p.status_p) {
           case 1:
-            statusText = "En bodega dropshipper";
+            statusText = "En bodega Comercio";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.createdAt instanceof Date
@@ -1068,7 +1068,7 @@ export async function confirmatePackage(req, res) {
     const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
     const id_carrier_asignate = data_package.fk_id_carrier_p;
     // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal
-    //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+    //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
     if (type_send == 1) {
       switch (data_package.status_p) {
         case 1:
@@ -1076,7 +1076,7 @@ export async function confirmatePackage(req, res) {
           // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
           newHistory = await Status_history.create({
             status_sh: 7,
-            comentary_sh: "En camino de bodega dropshipper a bodega central",
+            comentary_sh: "En camino de bodega Comercio a bodega central",
             fk_id_carrier_asignated_sh: id_carrier_asignate,
             fk_id_p_sh: id_p,
           });
@@ -1106,7 +1106,7 @@ export async function confirmatePackage(req, res) {
           data_p = confirmAndStatus(id_p, 7);
           newHistory = await Status_history.create({
             status_sh: 7,
-            comentary_sh: "En camino de bodega dropshipper a central de origen",
+            comentary_sh: "En camino de bodega Comercio a central de origen",
             fk_id_carrier_asignated_sh: id_carrier_asignate,
             fk_id_p_sh: id_p,
           });
@@ -1173,7 +1173,7 @@ export async function onTheWayPackages(req, res) {
     // I validate req correct json
     if (!id_carrier) return res.sendStatus(400);
     // I call and save the result of the findAll method, which is d sequelize
-    // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega dropshipper a bodega central
+    // 1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega Comercio a bodega central
     const onTheWayPackage = await Package.findAll({
       where: {
         fk_id_carrier_p: id_carrier,
@@ -1241,10 +1241,10 @@ export async function onTheWayPackages(req, res) {
       if (p.fk_id_tp_p == 1) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
         let statusText;
-        //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+        //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
         switch (p.status_p) {
           case 7:
-            statusText = "En camino de bodega dropshipper a central";
+            statusText = "En camino de bodega Comercio a central";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.createdAt instanceof Date
@@ -1313,10 +1313,10 @@ export async function onTheWayPackages(req, res) {
       } else if (p.fk_id_tp_p == 2) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
         let statusText;
-        //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+        //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
         switch (p.status_p) {
           case 7:
-            statusText = "En camino de bodega dropshipper a central";
+            statusText = "En camino de bodega Comercio a central";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.createdAt instanceof Date
@@ -1511,10 +1511,10 @@ export async function detailPackage(req, res) {
       if (p.fk_id_tp_p == 1) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
         let statusText;
-        //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+        //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
         switch (p.status_p) {
           case 1:
-            statusText = "Bodega dropshipper";
+            statusText = "Bodega Comercio";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.createdAt instanceof Date
@@ -1551,7 +1551,7 @@ export async function detailPackage(req, res) {
             };
             break;
           case 7:
-            statusText = "En camino de bodega dropshipper a central";
+            statusText = "En camino de bodega Comercio a central";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.createdAt instanceof Date
@@ -1665,10 +1665,10 @@ export async function detailPackage(req, res) {
       } else if (p.fk_id_tp_p == 2) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
         let statusText;
-        //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+        //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
         switch (p.status_p) {
           case 1:
-            statusText = "En bodega dropshipper";
+            statusText = "En bodega Comercio";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.createdAt instanceof Date
@@ -1705,7 +1705,7 @@ export async function detailPackage(req, res) {
             };
             break;
           case 7:
-            statusText = "En camino de bodega dropshipper a central";
+            statusText = "En camino de bodega Comercio a central";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.createdAt instanceof Date
@@ -1966,7 +1966,7 @@ export async function deliverPackage(req, res) {
     let total_price_p = data_package.total_price_p;
     let id_dropshipper = data_package.store.dropshipper.id_dropshipper;
     // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal
-    // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a bodega central
+    // 1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a bodega central
     if (type_send == 1) {
       switch (data_package.status_p) {
         case 7:
@@ -2169,7 +2169,7 @@ export async function reportProblemPackage(req, res) {
       const type_send = data_package.fk_id_tp_p; // Declare type_send at a higher scoper and simple writing in validations
       const id_carrier_asignate = data_package.fk_id_carrier_p;
       // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal
-      // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega dropshipper a bodega central 0.cancelado
+      // 1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega 6. Entregado 7. En camino de bodega Comercio a bodega central 0.cancelado
       if (type_send == 1) {
         data_e = loadEvidenceDataBase(req, id_p, type_evidence);
         data_p = deliverPackageCarrierDataBase(id_p, 0);
@@ -2426,7 +2426,7 @@ export async function getHistory(req, res) {
       if (p.package.fk_id_tp_p == 1) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
         let statusText;
-        //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+        //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
         switch (p.status_sh) {
           case 0:
             statusText = "CANCELADO";
@@ -2464,7 +2464,7 @@ export async function getHistory(req, res) {
             };
             break;
           case 1:
-            statusText = "Bodega dropshipper";
+            statusText = "Bodega Comercio";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.package.createdAt instanceof Date
@@ -2642,7 +2642,7 @@ export async function getHistory(req, res) {
       } else if (p.package.fk_id_tp_p == 2) {
         let type_send = p.package.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
         let statusText;
-        //1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a central
+        //1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino  5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a central
         switch (p.status_sh) {
           case 0:
             statusText = "CANCELADO";
@@ -2680,7 +2680,7 @@ export async function getHistory(req, res) {
             };
             break;
           case 1:
-            statusText = "En bodega dropshipper";
+            statusText = "En bodega Comercio";
             // Convertir la fecha a una cadena ISO si es un objeto Date
             var fechaISO =
               p.package.createdAt instanceof Date

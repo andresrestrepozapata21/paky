@@ -162,7 +162,7 @@ export async function master(req, res) {
                         // Add variable i need
                         total_cuantity_cityPackages++;
                         // Condition structure status packages
-                        // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a bodega central
+                        // 1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a bodega central
                         if (pkg.status_p === 1) {
                             cityPackage_inStoreDrop++;
                         } else if (pkg.status_p == 4) {
@@ -178,7 +178,7 @@ export async function master(req, res) {
                         // Add variable i need
                         total_cuantity_intercityPackages++;
                         // Condition structure status packages
-                        // 1.Bodega dropshipper 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega dropshipper a bodega central
+                        // 1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a bodega central
                         if (pkg.status_p === 1) {
                             intercityPackage_inStoreDrop++;
                         } else if (pkg.status_p == 2) {
@@ -504,7 +504,7 @@ export async function downloadExcelpackagesDate(req, res) {
                     let statusText;
                     switch (e.status_p) {
                         case 1:
-                            statusText = "Bodega dropshipper";
+                            statusText = "Bodega Comercio";
                             break;
                         case 2:
                             statusText = "Bodega central origen";
@@ -522,7 +522,7 @@ export async function downloadExcelpackagesDate(req, res) {
                             statusText = "Entregado";
                             break;
                         case 7:
-                            statusText = "En camino de bodega dropshipper a bodega central";
+                            statusText = "En camino de bodega Comercio a bodega central";
                             break;
                     }
                     dataForExcel.push({ id_p: e.id_p, orden_p: e.orden_p, name_client_p: e.name_client_p, phone_number_client_p: e.phone_number_client_p, email_client_p: e.email_client_p, direction_client_p: e.direction_client_p, guide_number_p: e.guide_number_p, status_p: statusText, profit_dropshipper_p: e.profit_dropshipper_p, with_collection_p: e.with_collection_p, total_price_p: e.total_price_p, confirmation_dropshipper_p: e.confirmation_dropshipper_p, createdAt: e.createdAt, fk_id_tp_p: e.fk_id_tp_p, fk_id_carrier_p: e.fk_id_carrier_p });
