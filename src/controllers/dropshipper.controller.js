@@ -1382,7 +1382,7 @@ export async function getPayments(req, res) {
                 statusReal = "PENDIENTE";
             } else if (status == 3) {
                 statusReal = "EN VERIFICACION DE PIN";
-            } else if(status == 0){
+            } else if (status == 0) {
                 statusReal = "RECHAZADA";
             }
             return {
@@ -1436,6 +1436,49 @@ export async function deletePaymentRequest(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error Delete deletePaymentRequest: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method get addPackage
+export async function editProductToPackage(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint addProductToPackage');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { products, fk_id_p_pp } = req.body;
+        // I validate req correct json
+        if (!products || !fk_id_p_pp) return res.sendStatus(400);
+        // I find if exist package
+        const findDestroy = await PackageProduct.destroy({
+            where: {
+                fk_id_p_pp
+            }
+        });
+        // Run files array and update in database
+        products.forEach(async item => {
+            // I find if exist package
+            const addProductToPackage = await PackageProduct.create({
+                cuantity_pp: item.cuantity_pp,
+                fk_id_p_pp,
+                fk_id_product_pp: item.id_producto
+            });
+        });
+        // logger control proccess
+        logger.info('addProductToPackage successfuly');
+        // Json reponse setting
+        res.json({
+            message: 'addProductToPackage successfuly',
+            result: 1
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error addProductToPackage: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
