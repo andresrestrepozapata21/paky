@@ -31855,3 +31855,20 @@ sql: SELECT `id_su`, `name_su`, `email_su`, `status_su`, `last_login_su` FROM `s
 [2024-05-08T20:47:37.121Z] info Token validated successfuly
 [2024-05-08T20:47:37.121Z] info enter the endpoint detailPackage manager
 [2024-05-08T20:47:37.129Z] info detailPackage manager successfuly
+[2024-05-09T15:36:57.791Z] info server running on port 3000
+[2024-05-09T15:37:20.353Z] info server running on port 3000
+[2024-05-09T15:37:25.212Z] info server running on port 3000
+[2024-05-09T15:37:47.849Z] info enter the endpoint login
+[2024-05-09T15:37:47.928Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-05-09T15:38:20.559Z] info Token validated successfuly
+[2024-05-09T15:38:20.571Z] info Evidence problem load successfully
+[2024-05-09T15:38:20.572Z] info enter the endpoint report problem packages
+[2024-05-09T15:38:20.596Z] info History status registed successfully
+[2024-05-09T15:38:20.597Z] info report problem registed successfuly
+[2024-05-09T15:39:51.755Z] info server running on port 3000
+[2024-05-09T15:41:27.330Z] info Token validated successfuly
+[2024-05-09T15:41:27.340Z] info Evidence load successfully
+[2024-05-09T15:41:27.341Z] info Enter the endpoint deliver packages
+[2024-05-09T15:41:27.406Z] info Entregado al cliente
+[2024-05-09T15:41:27.406Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-05-09T15:41:27.410Z] info Carrier transports package to Client, all accounting ok.

@@ -2179,6 +2179,7 @@ export async function reportProblemPackage(req, res) {
           status_sh: 0,
           comentary_sh,
           details_sh,
+          evidence_sh: "evidences_packages/" + req.files[0].filename,
           fk_id_carrier_asignated_sh: id_carrier_asignate,
           fk_id_p_sh: id_p,
         });
@@ -2192,6 +2193,7 @@ export async function reportProblemPackage(req, res) {
           status_sh: 0,
           comentary_sh,
           details_sh,
+          evidence_sh: "evidences_packages/" + req.files[0].filename,
           fk_id_carrier_asignated_sh: id_carrier_asignate,
           fk_id_p_sh: id_p,
         });
