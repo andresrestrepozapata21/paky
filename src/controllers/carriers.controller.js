@@ -3222,7 +3222,7 @@ async function accounting(
       });
       let wallet = getDropshipper.wallet_dropshipper;
       let total_sales = getDropshipper.total_sales_dropshipper;
-      let result_wallet = wallet + profit_dropshipper_p;
+      let result_wallet = wallet + total_price_p;
       let result_total_sales = total_sales + total_price_p;
       // Setting and update Dropshipper
       getDropshipper.set({

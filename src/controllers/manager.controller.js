@@ -1331,6 +1331,12 @@ export async function toPayCarrier(req, res) {
                 attributes: ['id_carrier', 'revenue_carrier']
             });
             if (getCarrier.revenue_carrier >= quantity_requested_cpr) {
+                // 1. payment made or Proceded 2. Pending
+                getPaymentsRequestCarrier.set({
+                    status_cpr: 1
+                });
+                getPaymentsRequestCarrier.save();
+                // To resgister portfolio carrier history
                 const postPortfolioCarrier = Portfolio_history_carrier.create({
                     type_phc: "SALIDA",
                     Quantity_pay_phc: quantity_requested_cpr,
@@ -2874,11 +2880,11 @@ export async function addProduct(req, res) {
         if (!name_product || !description_product || !price_sale_product || !price_cost_product || !size_product || !fk_id_dropshipper_product) return res.sendStatus(400);
         // I find if exist package
         const newProduct = await Product.create({
-            name_product, 
-            description_product, 
-            price_sale_product, 
-            price_cost_product, 
-            size_product, 
+            name_product,
+            description_product,
+            price_sale_product,
+            price_cost_product,
+            size_product,
             fk_id_dropshipper_product
         });
         // logger control proccess
