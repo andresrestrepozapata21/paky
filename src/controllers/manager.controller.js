@@ -421,7 +421,7 @@ export async function detailPackage(req, res) {
                 where: {
                     fk_id_p_sh: id_p
                 },
-                attributes: ['id_sh', 'status_sh', 'comentary_sh', 'details_sh' ,'evidence_sh', 'createdAt'],
+                attributes: ['id_sh', 'status_sh', 'comentary_sh', 'details_sh', 'evidence_sh', 'createdAt'],
                 include: [
                     {
                         model: Carrier,
