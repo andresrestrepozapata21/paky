@@ -32218,3 +32218,36 @@ sql: INSERT INTO `attempt_logs` (`id_al`,`comentary_al`,`details_al`,`createdAt`
 [2024-05-16T19:54:30.231Z] info Token validated successfuly
 [2024-05-16T19:54:30.232Z] info enter the endpoint recordAttempts
 [2024-05-16T19:54:30.245Z] info Record Attempts successfuly
+[2024-05-16T20:06:01.603Z] info server running on port 3000
+[2024-05-16T20:06:03.476Z] info Token validated successfuly
+[2024-05-16T20:06:03.477Z] info enter the endpoint details packages
+[2024-05-16T20:06:03.566Z] info Details package successfuly
+[2024-05-16T20:13:11.873Z] info server running on port 3000
+[2024-05-16T20:13:21.992Z] info server running on port 3000
+[2024-05-16T20:13:23.690Z] info Token validated successfuly
+[2024-05-16T20:13:23.692Z] info enter the endpoint details packages
+[2024-05-16T20:13:23.737Z] info Details package successfuly
+[2024-05-16T20:18:45.598Z] info server running on port 3000
+[2024-05-16T20:19:38.857Z] info server running on port 3000
+[2024-05-16T20:23:56.722Z] info server running on port 3000
+[2024-05-16T20:24:20.884Z] info server running on port 3000
+[2024-05-16T20:24:32.534Z] info server running on port 3000
+[2024-05-16T20:24:34.384Z] info server running on port 3000
+[2024-05-16T20:25:03.510Z] info server running on port 3000
+[2024-05-16T20:25:11.345Z] info server running on port 3000
+[2024-05-16T20:25:18.391Z] info server running on port 3000
+[2024-05-16T20:25:22.643Z] info server running on port 3000
+[2024-05-16T20:25:52.435Z] info server running on port 3000
+[2024-05-16T20:25:59.259Z] info server running on port 3000
+[2024-05-16T20:26:01.586Z] info server running on port 3000
+[2024-05-16T20:26:01.926Z] info Token validated successfuly
+[2024-05-16T20:26:01.926Z] info enter the endpoint details packages
+[2024-05-16T20:26:01.964Z] info Error details package: ReferenceError: product is not defined
+[2024-05-16T20:26:33.074Z] info server running on port 3000
+[2024-05-16T20:26:35.516Z] info server running on port 3000
+[2024-05-16T20:26:38.088Z] info Token validated successfuly
+[2024-05-16T20:26:38.089Z] info enter the endpoint details packages
+[2024-05-16T20:26:38.127Z] info Details package successfuly
+[2024-05-16T20:27:04.982Z] info Token validated successfuly
+[2024-05-16T20:27:04.982Z] info enter the endpoint details packages
+[2024-05-16T20:27:04.996Z] info Details package successfuly

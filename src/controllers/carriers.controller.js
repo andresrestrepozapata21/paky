@@ -13,6 +13,8 @@ import { Vehicle } from "../models/vehicles.model.js";
 import { Vehicle_document } from "../models/vehicle_documents.model.js";
 import { Evidence } from "../models/evidences.model.js";
 import { Package } from "../models/packages.model.js";
+import { PackageProduct } from "../models/packages_products.model.js";
+import { Product } from "../models/products.model.js";
 import { Store } from "../models/stores.model.js";
 import { City } from "../models/cities.model.js";
 import { Central_warehouse } from "../models/central_warehouses.model.js";
@@ -1487,6 +1489,14 @@ export async function detailPackage(req, res) {
             },
           ],
         },
+        {
+          model: PackageProduct,
+          include: [
+            {
+              model: Product
+            }
+          ]
+        }
       ],
       attributes: [
         "id_p",
@@ -1508,6 +1518,15 @@ export async function detailPackage(req, res) {
     });
     // Process data for JSON response
     const formattedDataPackages = detailPackage.map((p) => {
+      let products = [];
+      p.package_products.forEach(element => {
+        products.push({
+          quantity: element.cuantity_pp,
+          name_product: element.product.name_product,
+          description_product: element.product.description_product,
+          size_product: element.product.size_product
+        })
+      });
       // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
       if (p.fk_id_tp_p == 1) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
@@ -1549,6 +1568,7 @@ export async function detailPackage(req, res) {
                 p.city.name_city +
                 " - " +
                 p.city.department.name_d,
+              products
             };
             break;
           case 7:
@@ -1586,6 +1606,7 @@ export async function detailPackage(req, res) {
                 p.city.name_city +
                 " - " +
                 p.city.department.name_d,
+              products
             };
             break;
           case 4:
@@ -1623,6 +1644,7 @@ export async function detailPackage(req, res) {
                 p.city.name_city +
                 " - " +
                 p.city.department.name_d,
+              products
             };
             break;
           case 5:
@@ -1660,6 +1682,7 @@ export async function detailPackage(req, res) {
                 p.city.name_city +
                 " - " +
                 p.city.department.name_d,
+              products
             };
             break;
         }
@@ -1703,6 +1726,7 @@ export async function detailPackage(req, res) {
                 p.store.city.name_city +
                 " - " +
                 p.store.city.department.name_d,
+              products
             };
             break;
           case 7:
@@ -1740,6 +1764,7 @@ export async function detailPackage(req, res) {
                 p.store.city.name_city +
                 " - " +
                 p.store.city.department.name_d,
+              products
             };
             break;
           case 2:
@@ -1777,6 +1802,7 @@ export async function detailPackage(req, res) {
                 p.city.name_city +
                 " - " +
                 p.city.department.name_d,
+              products
             };
             break;
           case 3:
@@ -1814,6 +1840,7 @@ export async function detailPackage(req, res) {
                 p.city.name_city +
                 " - " +
                 p.city.department.name_d,
+              products
             };
             break;
           case 4:
@@ -1851,6 +1878,7 @@ export async function detailPackage(req, res) {
                 p.city.name_city +
                 " - " +
                 p.city.department.name_d,
+              products
             };
             break;
           case 5:
@@ -1888,6 +1916,7 @@ export async function detailPackage(req, res) {
                 p.city.name_city +
                 " - " +
                 p.city.department.name_d,
+              products
             };
             break;
         }
