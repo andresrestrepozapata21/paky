@@ -32122,3 +32122,99 @@ sql: SELECT `id_su`, `name_su`, `email_su`, `status_su`, `last_login_su` FROM `s
 [2024-05-14T20:49:08.405Z] info Token validated successfuly
 [2024-05-14T20:49:08.406Z] info enter the endpoint get city packages
 [2024-05-14T20:49:08.410Z] info GetCitypackages successfuly
+[2024-05-16T13:37:58.372Z] info server running on port 3000
+[2024-05-16T13:40:05.109Z] info server running on port 3000
+[2024-05-16T14:02:20.244Z] info server running on port 3000
+[2024-05-16T14:04:19.733Z] info server running on port 3000
+[2024-05-16T14:04:42.376Z] info server running on port 3000
+[2024-05-16T14:04:51.749Z] info server running on port 3000
+[2024-05-16T14:04:58.983Z] info server running on port 3000
+[2024-05-16T14:05:04.466Z] info server running on port 3000
+[2024-05-16T14:05:13.316Z] info server running on port 3000
+[2024-05-16T14:06:15.399Z] info server running on port 3000
+[2024-05-16T14:06:31.305Z] info server running on port 3000
+[2024-05-16T14:07:11.830Z] info server running on port 3000
+[2024-05-16T14:07:39.119Z] info server running on port 3000
+[2024-05-16T14:08:07.734Z] info server running on port 3000
+[2024-05-16T14:08:12.057Z] info server running on port 3000
+[2024-05-16T14:09:03.170Z] info server running on port 3000
+[2024-05-16T14:09:22.363Z] info server running on port 3000
+[2024-05-16T14:09:33.500Z] info server running on port 3000
+[2024-05-16T14:09:44.793Z] info server running on port 3000
+[2024-05-16T14:09:51.770Z] info server running on port 3000
+[2024-05-16T14:17:22.288Z] info server running on port 3000
+[2024-05-16T14:17:50.735Z] info Token validated successfuly
+[2024-05-16T14:17:50.735Z] info enter the endpoint register deliveryAtempt
+[2024-05-16T14:17:50.771Z] info Error deliveryAtempt: ReferenceError: newHistory is not defined
+[2024-05-16T14:18:14.095Z] info server running on port 3000
+[2024-05-16T14:18:20.699Z] info server running on port 3000
+[2024-05-16T14:18:23.192Z] info server running on port 3000
+[2024-05-16T14:19:12.468Z] info Token validated successfuly
+[2024-05-16T14:19:12.468Z] info enter the endpoint register deliveryAtempt
+[2024-05-16T14:19:25.920Z] info server running on port 3000
+[2024-05-16T14:19:49.610Z] info server running on port 3000
+[2024-05-16T14:19:54.471Z] info server running on port 3000
+[2024-05-16T14:20:13.296Z] info server running on port 3000
+[2024-05-16T14:20:16.178Z] info Token validated successfuly
+[2024-05-16T14:20:16.178Z] info enter the endpoint register deliveryAtempt
+[2024-05-16T14:21:15.196Z] info server running on port 3000
+[2024-05-16T14:21:32.717Z] info server running on port 3000
+[2024-05-16T14:21:35.508Z] info Token validated successfuly
+[2024-05-16T14:21:35.509Z] info enter the endpoint register deliveryAtempt
+[2024-05-16T14:22:21.759Z] info Token validated successfuly
+[2024-05-16T14:22:21.759Z] info enter the endpoint register deliveryAtempt
+[2024-05-16T14:22:30.533Z] info server running on port 3000
+[2024-05-16T14:22:33.045Z] info Token validated successfuly
+[2024-05-16T14:22:33.046Z] info enter the endpoint register deliveryAtempt
+[2024-05-16T14:24:01.489Z] info server running on port 3000
+[2024-05-16T14:24:17.996Z] info server running on port 3000
+[2024-05-16T14:24:22.890Z] info server running on port 3000
+[2024-05-16T14:24:27.406Z] info server running on port 3000
+[2024-05-16T14:24:29.206Z] info server running on port 3000
+[2024-05-16T14:24:31.884Z] info server running on port 3000
+[2024-05-16T14:24:41.541Z] info Token validated successfuly
+[2024-05-16T14:24:41.541Z] info enter the endpoint register deliveryAtempt
+[2024-05-16T14:24:41.578Z] info Delivery Atempt successfuly
+[2024-05-16T19:19:14.041Z] info server running on port 3000
+[2024-05-16T19:30:03.024Z] info server running on port 3000
+[2024-05-16T19:30:17.067Z] info server running on port 3000
+[2024-05-16T19:30:30.161Z] info server running on port 3000
+[2024-05-16T19:30:37.996Z] info server running on port 3000
+[2024-05-16T19:32:53.974Z] info server running on port 3000
+[2024-05-16T19:33:09.011Z] info server running on port 3000
+[2024-05-16T19:33:29.055Z] info server running on port 3000
+[2024-05-16T19:33:33.746Z] info server running on port 3000
+[2024-05-16T19:33:57.896Z] info server running on port 3000
+[2024-05-16T19:34:19.706Z] info server running on port 3000
+[2024-05-16T19:35:43.162Z] info server running on port 3000
+[2024-05-16T19:38:12.092Z] info server running on port 3000
+[2024-05-16T19:43:12.759Z] info server running on port 3000
+[2024-05-16T19:43:38.630Z] info server running on port 3000
+[2024-05-16T19:43:52.456Z] info server running on port 3000
+[2024-05-16T19:44:01.339Z] info server running on port 3000
+[2024-05-16T19:44:11.457Z] info server running on port 3000
+[2024-05-16T19:46:23.574Z] info server running on port 3000
+[2024-05-16T19:46:47.814Z] info server running on port 3000
+[2024-05-16T19:47:59.408Z] info server running on port 3000
+[2024-05-16T19:48:30.343Z] info server running on port 3000
+[2024-05-16T19:48:37.838Z] info server running on port 3000
+[2024-05-16T19:49:07.337Z] info Token validated successfuly
+[2024-05-16T19:49:07.337Z] info enter the endpoint recordAttempts
+[2024-05-16T19:49:07.371Z] info Error recordAttempts: SequelizeDatabaseError: (conn:79, no: 1146, SQLState: 42S02) Table 'paky.attempt_logs' doesn't exist
+sql: INSERT INTO `attempt_logs` (`id_al`,`comentary_al`,`details_al`,`createdAt`,`updatedAt`,`fk_id_carrier_al`) VALUES (DEFAULT,?,?,?,?,?); - parameters:['Llamada','Se intenta llamar al usuario','2024-05-16 19:49:07.367','2024-05-16 19:49:07.367',1]
+[2024-05-16T19:52:19.873Z] info server running on port 3000
+[2024-05-16T19:52:27.746Z] info Token validated successfuly
+[2024-05-16T19:52:27.747Z] info enter the endpoint recordAttempts
+[2024-05-16T19:52:27.784Z] info Error recordAttempts: ReferenceError: comentary_sh is not defined
+[2024-05-16T19:52:56.580Z] info server running on port 3000
+[2024-05-16T19:53:05.143Z] info Token validated successfuly
+[2024-05-16T19:53:05.143Z] info enter the endpoint recordAttempts
+[2024-05-16T19:53:05.224Z] info Record Attempts successfuly
+[2024-05-16T19:53:50.134Z] info server running on port 3000
+[2024-05-16T19:53:57.640Z] info server running on port 3000
+[2024-05-16T19:54:02.579Z] info Token validated successfuly
+[2024-05-16T19:54:02.579Z] info enter the endpoint recordAttempts
+[2024-05-16T19:54:02.662Z] info Record Attempts successfuly
+[2024-05-16T19:54:30.231Z] info Token validated successfuly
+[2024-05-16T19:54:30.232Z] info enter the endpoint recordAttempts
+[2024-05-16T19:54:30.245Z] info Record Attempts successfuly

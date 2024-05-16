@@ -18,6 +18,7 @@ import { City } from "../models/cities.model.js";
 import { Central_warehouse } from "../models/central_warehouses.model.js";
 import { Department } from "../models/departments.model.js";
 import { Status_history } from "../models/status_history.model.js";
+import { Attempt_log } from "../models/attempt_log.model.js";
 import { Carrier_payment_request } from "../models/carrier_payment_requests.model.js";
 import { Dropshipper } from "../models/dropshippers.model.js";
 import { Portfolios_history_dropshipper } from "../models/portfolio_history_dropshipper.model.js";
@@ -3085,6 +3086,117 @@ export async function getPassword(req, res) {
   }
 }
 
+// method to deliveryAtempt
+export async function deliveryAtempt(req, res) {
+  // logger control proccess
+  logger.info("enter the endpoint register deliveryAtempt");
+  // I save the variables that come to me in the request in variables.
+  const { id_p, comentary_sh, details_sh } = req.body;
+  // I validate req correct json
+  if (!id_p || !comentary_sh || !details_sh) return res.sendStatus(400);
+  // I enclose everything in a try catch to control errors
+  try {
+    // I call and save the result of the findAll method, which is d sequelize
+    const getPackage = await Package.findOne({
+      where: {
+        id_p
+      },
+      attributes: ["id_p", "status_p", "fk_id_carrier_p"],
+    });
+    // I validate login exist
+    if (getPackage) {
+      // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
+      const newHistory = await Status_history.create({
+        status_sh: getPackage.status_p,
+        comentary_sh,
+        details_sh,
+        fk_id_carrier_asignated_sh: getPackage.fk_id_carrier_p,
+        fk_id_p_sh: id_p,
+      });
+      // logger control proccess
+      logger.info("Delivery Atempt successfuly");
+      // The credentials are incorrect
+      res.json({
+        message: "Delivery Atempt successfuly",
+        result: 1
+      });
+    } else {
+      // I return the status 500 and the message I want
+      res.status(404).json({
+        message: "The package non-existing",
+        result: 404,
+      });
+    }
+  } catch (e) {
+    // logger control proccess
+    logger.info("Error deliveryAtempt: " + e);
+    // I return the status 500 and the message I want
+    res.status(500).json({
+      message: "Something goes wrong",
+      result: 0,
+    });
+  }
+}
+
+// method to recordAttempts
+export async function recordAttempts(req, res) {
+  // logger control proccess
+  logger.info("enter the endpoint recordAttempts");
+  // I save the variables that come to me in the request in variables.
+  const { id_p, comentary_al, details_al } = req.body;
+  // I validate req correct json
+  if (!id_p || !comentary_al || !details_al) return res.sendStatus(400);
+  // I enclose everything in a try catch to control errors
+  try {
+    // I call and save the result of the findAll method, which is d sequelize
+    const getPackage = await Package.findOne({
+      where: {
+        id_p
+      },
+      attributes: ["id_p", "status_p", "fk_id_carrier_p"],
+    });
+    // I validate login exist
+    if (getPackage) {
+      // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
+      const newAttempLog = await Attempt_log.create({
+        comentary_al,
+        details_al,
+        fk_id_carrier_al: getPackage.fk_id_carrier_p,
+        fk_id_p_al: id_p,
+      });
+      // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
+      const newHistory = await Status_history.create({
+        status_sh: getPackage.status_p,
+        comentary_sh: comentary_al,
+        details_sh: details_al,
+        fk_id_carrier_asignated_sh: getPackage.fk_id_carrier_p,
+        fk_id_p_sh: id_p,
+      });
+      // logger control proccess
+      logger.info("Record Attempts successfuly");
+      // The credentials are incorrect
+      res.json({
+        message: "Record Attempts successfuly",
+        result: 1
+      });
+    } else {
+      // I return the status 500 and the message I want
+      res.status(404).json({
+        message: "The package non-existing",
+        result: 404,
+      });
+    }
+  } catch (e) {
+    // logger control proccess
+    logger.info("Error recordAttempts: " + e);
+    // I return the status 500 and the message I want
+    res.status(500).json({
+      message: "Something goes wrong",
+      result: 0,
+    });
+  }
+}
+
 /*===========================================================================================
                                     Assistent Methods
 ===========================================================================================*/
@@ -3194,7 +3306,7 @@ async function accounting(
       let revenue = getCarrier.revenue_carrier;
       let debt = getCarrier.debt_carrier;
       let result_renueve = revenue + profit_carrier_p;
-      let result_debt = debt + total_price_p;
+      let result_debt = debt + total_price_p + profit_carrier_p;
       // Setting and update Carrier
       getCarrier.set({
         revenue_carrier: result_renueve,
