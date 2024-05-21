@@ -8,8 +8,10 @@ import { Sequelize, Op } from "sequelize";
 // import personaly models
 import { StoreUser } from '../models/store_users.model.js';
 import { Carrier } from "../models/carriers.model.js";
+import { Package } from "../models/packages.model.js";
 import { Store } from "../models/stores.model.js";
 import { Type_document } from "../models/type_document.model.js";
+import { Type_package } from "../models/types_package.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -37,7 +39,7 @@ export async function login(req, res) {
             include: [
                 {
                     model: Store,
-                    attributes: ['fk_id_city_store']
+                    attributes: ['id_store', 'fk_id_city_store']
                 }
             ]
 
@@ -157,6 +159,7 @@ export async function getCarriers(req, res) {
     }
 }
 
+// Pass carrier
 export async function passCarrier(req, res) {
     // logger control proccess
     logger.info('enter the endpoint pass carrier');
@@ -199,6 +202,52 @@ export async function passCarrier(req, res) {
     } catch (e) {
         // logger control proccess
         logger.info('Error pass package: ' + e);
+        // I return the status 500 and the message I want
+        res.status(500).json({
+            message: 'Something goes wrong',
+            result: 0,
+            data: {}
+        });
+    }
+}
+
+// Method getpackages store
+export async function packages(req, res) {
+    // logger control proccess
+    logger.info('enter the endpoint getpackages store');
+    try {
+        // capture the id that comes in the parameters of the req
+        const { id_store } = req.body;
+        // I validate req correct json
+        if (!id_store) return res.sendStatus(400);
+        // I find if exist package by store
+        const getPackages = await Package.findAll({
+            where: {
+                fk_id_store_p: id_store
+            },
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
+            include: [
+                {
+                    model: Type_package,
+                    attributes: ['id_tp', 'description_tp']
+                },
+                {
+                    model: Carrier,
+                    attributes: ['name_carrier', 'last_name_carrier']
+                }
+            ]
+        });
+        // logger control proccess
+        logger.info('Getpackages store successfuly');
+        // Json setting response
+        res.json({
+            message: 'Getpackages store successfuly',
+            result: 1,
+            data: getPackages
+        });
+    } catch (e) {
+        // logger control proccess
+        logger.info('Error getPackages: ' + e);
         // I return the status 500 and the message I want
         res.status(500).json({
             message: 'Something goes wrong',
