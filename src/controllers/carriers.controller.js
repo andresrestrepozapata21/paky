@@ -3189,7 +3189,7 @@ export async function callRequest(req, res) {
       // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
       const newAttempLog = await Attempt_log.create({
         comentary_al: "LLamada Registrada",
-        details_al: "El transportista hizo llamda al cliente",
+        details_al: "El transportista hizo llamada al cliente",
         fk_id_carrier_al: getPackage.fk_id_carrier_p,
         fk_id_p_al: id_p,
       });
