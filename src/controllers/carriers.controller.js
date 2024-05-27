@@ -3168,13 +3168,13 @@ export async function deliveryAtempt(req, res) {
 }
 
 // method to recordAttempts
-export async function recordAttempts(req, res) {
+export async function callRequest(req, res) {
   // logger control proccess
   logger.info("enter the endpoint recordAttempts");
   // I save the variables that come to me in the request in variables.
-  const { id_p, comentary_al, details_al } = req.body;
+  const { id_p } = req.body;
   // I validate req correct json
-  if (!id_p || !comentary_al || !details_al) return res.sendStatus(400);
+  if (!id_p) return res.sendStatus(400);
   // I enclose everything in a try catch to control errors
   try {
     // I call and save the result of the findAll method, which is d sequelize
@@ -3188,24 +3188,16 @@ export async function recordAttempts(req, res) {
     if (getPackage) {
       // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
       const newAttempLog = await Attempt_log.create({
-        comentary_al,
-        details_al,
+        comentary_al: "LLamada Registrada",
+        details_al: "El transportista hizo llamda al cliente",
         fk_id_carrier_al: getPackage.fk_id_carrier_p,
         fk_id_p_al: id_p,
       });
-      // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
-      const newHistory = await Status_history.create({
-        status_sh: getPackage.status_p,
-        comentary_sh: comentary_al,
-        details_sh: details_al,
-        fk_id_carrier_asignated_sh: getPackage.fk_id_carrier_p,
-        fk_id_p_sh: id_p,
-      });
       // logger control proccess
-      logger.info("Record Attempts successfuly");
+      logger.info("Call attempt registered");
       // The credentials are incorrect
       res.json({
-        message: "Record Attempts successfuly",
+        message: "Call attempt registered",
         result: 1
       });
     } else {
