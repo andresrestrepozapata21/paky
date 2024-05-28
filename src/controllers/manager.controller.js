@@ -610,7 +610,7 @@ export async function getDetailCarrier(req, res) {
             where: {
                 id_carrier
             },
-            attributes: ['id_carrier', 'status_carrier', 'rejected_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier'],
+            attributes: ['id_carrier', 'status_carrier', 'rejected_carrier', 'number_document_carrier', 'name_carrier', 'last_name_carrier', 'phone_number_carrier', 'email_carrier', 'url_hv_carrier'],
             include: [
                 {
                     model: Type_document,

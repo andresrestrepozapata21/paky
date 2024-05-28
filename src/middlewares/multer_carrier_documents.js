@@ -13,7 +13,7 @@ import { fileURLToPath } from 'url';
 // Capture meta folder
 const CURRENT_DIR = dirname(fileURLToPath(import.meta.url));
 // Define extensions allowed
-const MIMETYPES = ['image/jpeg', 'image/png', 'image/jpg'];
+const MIMETYPES = ['image/jpeg', 'image/png', 'image/jpg', 'application/pdf'];
 // Define object multer in variable and setting configurations
 const multerUpload = multer({
     storage: multer.diskStorage({

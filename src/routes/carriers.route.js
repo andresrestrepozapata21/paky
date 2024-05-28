@@ -20,7 +20,33 @@ const router = Router();
  *
  * @apiSuccess message and data register
  */
-router.post('/carrier/register', register);
+router.post('/carrier/register', async (req, res, next) => {
+    try {
+        // I call the method of my multer middleware
+        multerUpload.array('url_hv_carrier', 1)(req, res, (err) => {
+            // check empty documents
+            if (!req.files || req.files.length === 0) {
+                return res.status(400).json({ message: 'No document provided', result: 0 });
+            } else {
+                // Validate errors multer personalized
+                if (err instanceof multer.MulterError) {
+                    // Multer error (e.g. file size exceeds limit)
+                    return res.status(400).json({ message: 'Multer Error: Invalide number of files, invalide file size or extension type of any file', result: 0 });
+                } else if (err) {
+                    // Capture any unexpected errors and return a JSON with the error message
+                    return res.status(500).json({ message: 'Something went wrong', result: 0 });
+                }
+            }
+            // logger control proccess
+            logger.info('Carrier HV load successfully');
+            // If there is no error, move to the next middleware or controller
+            next();
+        });
+    } catch (error) {
+        // Capture any unexpected errors and return a JSON with the error message
+        return res.status(500).json({ message: 'Something went wrong', result: 0 });
+    }
+}, register);
 /**
  * @api {POST} /carrier/loadDocuments
  * @apiName paky

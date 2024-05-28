@@ -68,7 +68,10 @@ export const Carrier = sequelize.define('carriers', {
     },
     recovery_code_carrier: {
         type: DataTypes.INTEGER
-    }
+    },
+    url_hv_carrier: {
+        type: DataTypes.STRING
+    },
 },{
     TimesTamps: true
 });

@@ -48,13 +48,17 @@ export async function register(req, res) {
     fk_id_tc_carrier,
     fk_id_td_carrier,
   } = req.body;
+  // I validate error file empty
+  if (!req.files) return res.status(400).json({ error: "No file provided" });
+  let url_hv_carrier = "documents_carrier/" + req.files[0].filename;
   // I validate req correct json
   if (
     !name_carrier ||
     !last_name_carrier ||
     !phone_number_carrier ||
     !email_carrier ||
-    !password_carrier
+    !password_carrier ||
+    !number_document_carrier
   )
     return res.sendStatus(400);
   // I enclose everything in a try catch to control errors
@@ -71,6 +75,7 @@ export async function register(req, res) {
         status_carrier: 6,
         revenue_carrier: 0,
         debt_carrier: 0,
+        url_hv_carrier,
         fk_id_td_carrier,
         fk_id_city_carrier,
         fk_id_tc_carrier,
@@ -87,6 +92,7 @@ export async function register(req, res) {
           "status_carrier",
           "revenue_carrier",
           "debt_carrier",
+          "url_hv_carrier",
           "fk_id_city_carrier",
           "fk_id_tc_carrier",
           "fk_id_td_carrier",
