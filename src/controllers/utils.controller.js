@@ -151,9 +151,11 @@ export async function getTypeCarrier(req, res) {
 export async function CronJobPackages(req, res) {
     // I save the variables that come to me in the request in variables.
     const { data } = req.body;
-    return res.json(data)
     // logger control proccess
     logger.info('enter the endpoint get cron job package');
+    return res.json({
+        result: 1
+    })
     // I enclose everything in a try catch to control errors
     try {
         const formatResponse = await Promise.all(data.orders.map(async element => {
