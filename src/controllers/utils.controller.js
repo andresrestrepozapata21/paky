@@ -12,6 +12,7 @@ import { Type_carrier } from "../models/types_carrier.model.js";
 dotenv.config();
 // Firme private secret jwt
 const secret = process.env.SECRET;
+//prueba
 // capture the exact time in my time zone using the moment-timezone module, I do this capture outside the methods to reuse this variable
 const bogotaTime = moment.tz('America/Bogota');
 const formattedTime = bogotaTime.format('YYYY-MM-DD HH:mm:ss');
