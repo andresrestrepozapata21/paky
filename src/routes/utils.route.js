@@ -62,7 +62,7 @@ export default router;
  *
  * @apiSuccess message and data
  */
-router.get('/utils/cronJobPackages', async (req, res, next) => {
+router.post('/utils/cronJobPackages', async (req, res, next) => {
     try {
         //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
         const token = req.headers.authorization.split(" ")[1];
