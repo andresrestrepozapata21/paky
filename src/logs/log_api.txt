@@ -32951,3 +32951,7 @@ sql: SELECT `packages`.`id_p`, `packages`.`orden_p`, `packages`.`name_client_p`,
 [2024-05-28T15:45:33.436Z] info Token validated successfuly
 [2024-05-28T15:45:33.436Z] info enter the endpoint getDetailCarrier
 [2024-05-28T15:45:33.442Z] info getDetailCarrier successfuly
+[2024-06-18T20:51:48.239Z] info server running on port 3000
+[2024-06-18T20:52:12.482Z] info server running on port 3000
+[2024-06-18T20:52:13.409Z] info Token validated successfuly
+[2024-06-18T20:52:18.893Z] info server running on port 3000

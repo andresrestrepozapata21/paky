@@ -12,6 +12,9 @@ export const Package = sequelize.define('packages', {
         primaryKey: true,
         autoIncrement: true
     },
+    id_shopify: {
+        type: DataTypes.BIGINT,
+    },
     orden_p: {
         type: DataTypes.STRING
     },
