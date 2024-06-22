@@ -9,6 +9,9 @@ export const Product = sequelize.define('products', {
         primaryKey: true,
         autoIncrement: true
     },
+    id_product_shopify: {
+        type: DataTypes.BIGINT,
+    },
     name_product: {
         type: DataTypes.STRING
     },

@@ -8,6 +8,9 @@ import { Department } from "../models/departments.model.js";
 import { City } from "../models/cities.model.js";
 import { Type_document } from "../models/type_document.model.js";
 import { Type_carrier } from "../models/types_carrier.model.js";
+import { Package } from "../models/packages.model.js";
+import { Product } from "../models/products.model.js";
+import { PackageProduct } from "../models/packages_products.model.js";
 // config dot env secret
 dotenv.config();
 // Firme private secret jwt
@@ -85,7 +88,7 @@ export async function getCities(req, res) {
     // I enclose everything in a try catch to control errors
     try {
         const cities = await City.findAll({
-            where:{
+            where: {
                 fk_id_d_city
             }
         });
@@ -152,120 +155,143 @@ export async function CronJobPackages(req, res) {
     // I save the variables that come to me in the request in variables.
     const { data } = req.body;
     // logger control proccess
-    logger.info('enter the endpoint get cron job package');
+    logger.info('enter the endpoint get cron job package:');
     return res.json({
-        result: 1
+        result: 1,
+        data
     })
     // I enclose everything in a try catch to control errors
     try {
-        const formatResponse = await Promise.all(data.orders.map(async element => {
-            // I capture id order
-            let id_shopify = element.id;
-
+        // I capture id order
+        let id_shopify = data.id;
+        // I find the city with validation departament
+        const getPackage = await Package.findOne({
+            where: {
+                id_shopify,
+            }
+        });
+        //
+        if (!getPackage) {
+            // variables for to create package paky
+            let orden_p = data.order_number;
+            let name_client_p = `${data.customer.first_name} ${data.customer.last_name}`;
+            let phone_number_client_p = data.billing_address.phone;
+            let email_client_p = data.customer.email;
+            let direction_client_p = `${data.billing_address.address1} ${data.billing_address.address2}`;
+            let comments_p = data.note;
+            let guide_number_p = data.fulfillments.tracking_number;
+            let status_p = 1;
+            let profit_carrier_p = data.current_total_tax;
+            let profit_carrier_inter_city_p = 10000;
+            let profit_dropshipper_p = 0;
+            let with_collection_p = 1;
+            let total_price_p = data.current_total_price;
+            let createdAt = data.created_at;
+            let confirmation_carrier_p = 0;
+            let confirmation_dropshipper_p = 0;
+            let fk_id_store_p = 2; // falta implementar debo saber que cliente es.
+            let fk_id_tp_p = 1;
+            let fk_id_destiny_city_p = 0;
+            let department = data.billing_address.province;
+            let city = data.billing_address.city;
             // I find the city with validation departament
-            const getPackage = await Package.findOne({
+            const getCity = await City.findOne({
                 where: {
-                    id_shopify,
+                    name_city: city,
+                },
+                include: {
+                    model: Department,
+                    where: {
+                        name_d: department
+                    }
                 }
             });
-            if (!getPackage) {
-                // variables for to create package paky
-                let orden_p = element.order_number;
-                let name_client_p = `${element.customer.first_name} ${element.customer.last_name}`;
-                let phone_number_client_p = element.billing_address.phone;
-                let email_client_p = element.customer.email;
-                let direction_client_p = `${element.billing_address.address1} ${element.billing_address.address2}`;
-                let comments_p = element.note;
-                let guide_number_p = element.fulfillments.tracking_number;
-                let status_p = 1;
-                let profit_carrier_p = element.current_total_tax;
-                let profit_carrier_inter_city_p = 10000;
-                let profit_dropshipper_p = 0;
-                let with_collection_p = 1;
-                let total_price_p = element.current_total_price;
-                let createdAt = element.created_at;
-                let confirmation_carrier_p = 0;
-                let confirmation_dropshipper_p = 0;
-                let fk_id_store_p = 2; // dalta implementar
-                let fk_id_tp_p = 1;
-                let fk_id_destiny_city_p = 0;
-                let department = element.billing_address.province;
-                let city = element.billing_address.city;
-                // Variables products package.
-
-                // I find the city with validation departament
-                const getCity = await City.findOne({
-                    where: {
-                        name_city: city,
-                    },
-                    include: {
-                        model: Department,
-                        where: {
-                            name_d: department
-                        }
-                    }
-                });
-                // valid if everything went well in the Select
-                if (getCity) {
-                    fk_id_destiny_city_p = getCity.id_city;
-                }
-
-                console.log(id_shopify + " linea 220")
-
-
-                // I create package
-                const newPackage = await Package.create({
-                    id_shopify,
-                    orden_p,
-                    guide_number_p,
-                    with_collection_p,
-                    profit_carrier_p,
-                    profit_carrier_inter_city_p,
-                    profit_dropshipper_p,
-                    total_price_p,
-                    name_client_p,
-                    phone_number_client_p,
-                    direction_client_p,
-                    email_client_p,
-                    comments_p,
-                    createdAt,
-                    fk_id_store_p,
-                    fk_id_destiny_city_p,
-                    fk_id_tp_p,
-                    status_p,
-                    confirmation_carrier_p,
-                    confirmation_dropshipper_p
-                });
-                // valid if everything went well in the INSERT
-                if (newPackage) {
-                    // I capture the ID new package
-                    //const newPackageId = newPackage.id_p;
-                }
-
-                //return {
-                //    id_p,
-                //    order_number,
-                //    name_client_p,
-                //    phone_number_client_p,
-                //    email_client,
-                //    direction_client_p,
-                //    comments_p,
-                //    guide_number_p,
-                //    status_p,
-                //    profit_carrier_p,
-                //    profit_carrier_inter_city_p,
-                //    profit_dropshipper_p,
-                //    with_collection_p,
-                //    total_price_p,
-                //    created_at,
-                //    confirmation_carrier_p,
-                //    confirmation_dropshipper_p,
-                //    fk_id_store_p,
-                //    fk_id_destiny_city_p,
-                //    fk_id_tp_p,
-                //}
+            // valid if everything went well in the Select
+            if (getCity) {
+                fk_id_destiny_city_p = getCity.id_city;
             }
-        }));
+            // I create package
+            const newPackage = await Package.create({
+                id_shopify,
+                orden_p,
+                guide_number_p,
+                with_collection_p,
+                profit_carrier_p,
+                profit_carrier_inter_city_p,
+                profit_dropshipper_p,
+                total_price_p,
+                name_client_p,
+                phone_number_client_p,
+                direction_client_p,
+                email_client_p,
+                comments_p,
+                createdAt,
+                fk_id_store_p,
+                fk_id_destiny_city_p,
+                fk_id_tp_p,
+                status_p,
+                confirmation_carrier_p,
+                confirmation_dropshipper_p
+            });
+            // valid if everything went well in the INSERT
+            if (newPackage) {
+                // I capture the ID new package
+                const newPackageId = newPackage.id_p;
+                console.log("id package: " + newPackageId)
+                // 
+                const line_items = data.line_items;
+                //
+                for (const line_item of line_items) {
+                    //
+                    const quantity = line_item.quantity;
+                    //
+                    const id_product_shopify = line_item.product_id;
+                    // I find the city with validation departament
+                    const getProduct = await Product.findOne({
+                        where: {
+                            id_product_shopify,
+                        }
+                    });
+                    //
+                    if (!getProduct) {
+                        //
+                        const name_product = line_item.name
+                        const description_product = "Producto registrado por Shopify";
+                        const price_sale_product = line_item.price;
+                        const size_product = "Mediano";
+                        // I create product
+                        const newProduct = await Product.create({
+                            id_product_shopify,
+                            name_product,
+                            description_product,
+                            price_sale_product,
+                            size_product
+                        });
+                        //
+                        if (newProduct) {
+                            // I capture the ID new package
+                            const newProductId = newProduct.id_product;
+                            console.log("id product: " + newProductId)
+                            // I create product
+                            const newPackageProduct = await PackageProduct.create({
+                                cuantity_pp: quantity,
+                                fk_id_p_pp: newPackageId,
+                                fk_id_product_pp: newProductId
+                            });
+                        }
+                    } else {
+                        //
+                        const id_product = getProduct.id_product;
+                        // I create product
+                        const newPackageProduct = await PackageProduct.create({
+                            cuantity_pp: quantity,
+                            fk_id_p_pp: newPackageId,
+                            fk_id_product_pp: newPackageProduct
+                        });
+                    }
+                }
+            }
+        }
         // logger control proccess
         logger.info('Cronjob new ordes shopify successfully');
         // I return the json with the message I want
