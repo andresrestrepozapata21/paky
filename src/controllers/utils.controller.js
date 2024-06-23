@@ -4,6 +4,7 @@ import moment from 'moment-timezone';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
 // import personaly models
+import { Op } from 'sequelize';
 import { Department } from "../models/departments.model.js";
 import { City } from "../models/cities.model.js";
 import { Type_document } from "../models/type_document.model.js";
@@ -177,7 +178,7 @@ export async function CronJobPackages(req, res) {
             let comments_p = data.note;
             let guide_number_p = data.fulfillments.tracking_number;
             let status_p = 1;
-            let profit_carrier_p = data.current_total_tax;
+            let profit_carrier_p = 9000;
             let profit_carrier_inter_city_p = 10000;
             let profit_dropshipper_p = 0;
             let with_collection_p = 1;
@@ -193,12 +194,16 @@ export async function CronJobPackages(req, res) {
             // I find the city with validation departament
             const getCity = await City.findOne({
                 where: {
-                    name_city: city,
+                    name_city: {
+                        [Op.like]: `%${city}%`
+                    }
                 },
                 include: {
                     model: Department,
                     where: {
-                        name_d: department
+                        name_d: {
+                            [Op.like]: `%${department}%`
+                        }
                     }
                 }
             });
@@ -283,7 +288,7 @@ export async function CronJobPackages(req, res) {
                         const newPackageProduct = await PackageProduct.create({
                             cuantity_pp: quantity,
                             fk_id_p_pp: newPackageId,
-                            fk_id_product_pp: newPackageProduct
+                            fk_id_product_pp: id_product
                         });
                     }
                 }

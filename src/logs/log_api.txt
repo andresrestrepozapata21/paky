@@ -92,3 +92,18 @@
 [2024-06-23T20:53:10.832Z] info Token validated successfuly
 [2024-06-23T20:53:10.833Z] info enter the endpoint get cron job package:
 [2024-06-23T20:53:10.892Z] info Cronjob new ordes shopify successfully
+[2024-06-23T21:17:43.532Z] info server running on port 3000
+[2024-06-23T21:18:30.665Z] info Token validated successfuly
+[2024-06-23T21:18:30.666Z] info enter the endpoint get cron job package:
+[2024-06-23T21:18:30.710Z] info Error Cronjob new ordes shopify: SequelizeForeignKeyConstraintError: (conn:189, no: 1452, SQLState: 23000) Cannot add or update a child row: a foreign key constraint fails (`paky`.`packages`, CONSTRAINT `packages_ibfk_4` FOREIGN KEY (`fk_id_destiny_city_p`) REFERENCES `cities` (`id_city`) ON DELETE SET NULL ON UPDATE CASCADE)
+sql: INSERT INTO `packages` (`id_p`,`id_shopify`,`orden_p`,`name_client_p`,`phone_number_client_p`,`email_client_p`,`direction_client_p`,`comments_p`,`status_p`,`profit_carrier_inter_city_p`,`profit_carrier_p`,`profit_dropshipper_p`,`with_collection_p`,`total_p...
+[2024-06-23T21:19:52.231Z] info Token validated successfuly
+[2024-06-23T21:19:52.232Z] info enter the endpoint get cron job package:
+[2024-06-23T21:19:52.259Z] info Error Cronjob new ordes shopify: ReferenceError: Cannot access 'newPackageProduct' before initialization
+[2024-06-23T21:20:50.138Z] info server running on port 3000
+[2024-06-23T21:20:56.471Z] info server running on port 3000
+[2024-06-23T21:21:12.672Z] info server running on port 3000
+[2024-06-23T21:21:14.592Z] info Token validated successfuly
+[2024-06-23T21:21:14.593Z] info enter the endpoint get cron job package:
+[2024-06-23T21:21:14.622Z] info Cronjob new ordes shopify successfully
+[2024-06-23T21:23:20.073Z] info server running on port 3000
