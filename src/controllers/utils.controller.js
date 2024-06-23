@@ -178,8 +178,8 @@ export async function CronJobPackages(req, res) {
             let comments_p = data.note;
             let guide_number_p = data.fulfillments.tracking_number;
             let status_p = 1;
-            let profit_carrier_p = 9000;
-            let profit_carrier_inter_city_p = 10000;
+            let profit_carrier_p = 9000; // Ganancia Transportistas Locales
+            let profit_carrier_inter_city_p = 10000; // Ganancia Transportistas Nacionales
             let profit_dropshipper_p = 0;
             let with_collection_p = 1;
             let total_price_p = data.current_total_price;
