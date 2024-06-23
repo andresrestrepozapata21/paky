@@ -156,10 +156,7 @@ export async function CronJobPackages(req, res) {
     const { data } = req.body;
     // logger control proccess
     logger.info('enter the endpoint get cron job package:');
-    return res.json({
-        result: 1,
-        data
-    })
+    console.log(data)
     // I enclose everything in a try catch to control errors
     try {
         // I capture id order
