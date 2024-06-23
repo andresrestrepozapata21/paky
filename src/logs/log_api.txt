@@ -85,3 +85,10 @@
 [2024-06-22T15:14:53.291Z] info Token validated successfuly
 [2024-06-22T15:14:53.292Z] info enter the endpoint get cron job package:
 [2024-06-22T15:14:53.320Z] info Cronjob new ordes shopify successfully
+[2024-06-23T20:51:54.603Z] info server running on port 3000
+[2024-06-23T20:52:08.870Z] info server running on port 3000
+[2024-06-23T20:52:28.716Z] info server running on port 3000
+[2024-06-23T20:52:32.529Z] info server running on port 3000
+[2024-06-23T20:53:10.832Z] info Token validated successfuly
+[2024-06-23T20:53:10.833Z] info enter the endpoint get cron job package:
+[2024-06-23T20:53:10.892Z] info Cronjob new ordes shopify successfully

@@ -153,7 +153,7 @@ export async function getTypeCarrier(req, res) {
 // method to get cities by department
 export async function CronJobPackages(req, res) {
     // I save the variables that come to me in the request in variables.
-    const { data } = req.body;
+    const { id_dropshipper, id_store, data } = req.body;
     // logger control proccess
     logger.info('enter the endpoint get cron job package:');
     // I enclose everything in a try catch to control errors
@@ -185,7 +185,7 @@ export async function CronJobPackages(req, res) {
             let createdAt = data.created_at;
             let confirmation_carrier_p = 0;
             let confirmation_dropshipper_p = 0;
-            let fk_id_store_p = 2; // falta implementar debo saber que cliente es.
+            let fk_id_store_p = id_store;
             let fk_id_tp_p = 1;
             let fk_id_destiny_city_p = 0;
             let department = data.billing_address.province;
@@ -261,7 +261,8 @@ export async function CronJobPackages(req, res) {
                             name_product,
                             description_product,
                             price_sale_product,
-                            size_product
+                            size_product,
+                            fk_id_dropshipper_product: id_dropshipper
                         });
                         //
                         if (newProduct) {
