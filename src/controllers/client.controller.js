@@ -88,7 +88,7 @@ export async function getPackageGuide(req, res) {
                     ]
                 }
             ],
-            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt', 'phone_number_client_p', 'name_client_p'],
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'total_price_shopify_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt', 'phone_number_client_p', 'name_client_p'],
             order: [
                 ['createdAt', 'ASC'] // Sort by column 'column_name' in ascending order
             ]

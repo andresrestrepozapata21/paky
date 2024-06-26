@@ -112,7 +112,7 @@ export async function getCityPackages(req, res) {
                 fk_id_tp_p: 1,
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'total_price_shopify_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
             include: [
                 {
                     model: Store,
@@ -286,7 +286,7 @@ export async function getPackagesCarrier(req, res) {
             where: {
                 fk_id_carrier_p: id_carrier
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p']
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p']
         });
         // logger control proccess
         logger.info('Get packages carrier successfuly');
@@ -339,7 +339,7 @@ export async function getDetailAsignate(req, res) {
                     [Sequelize.Op.notIn]: [0, 6]
                 }
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'createdAt'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'total_price_shopify_p', 'createdAt'],
         });
         // I call and save the result of the findAll method, which is d sequelize
         const getPackage = await Package.findAll({
@@ -350,7 +350,7 @@ export async function getDetailAsignate(req, res) {
                 },
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'fk_id_destiny_city_p', 'fk_id_tp_p'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'fk_id_destiny_city_p', 'fk_id_tp_p'],
             include: [
                 {
                     model: Store,
@@ -375,6 +375,7 @@ export async function getDetailAsignate(req, res) {
                     status_p: p.status_p,
                     with_collection_p: p.with_collection_p,
                     total_price_p: p.total_price_p,
+                    total_price_shopify_p: p.total_price_shopify_p,
                     store: p.store
                 }
             } else if (type_package == 2) {
@@ -388,6 +389,7 @@ export async function getDetailAsignate(req, res) {
                         status_p: p.status_p,
                         with_collection_p: p.with_collection_p,
                         total_price_p: p.total_price_p,
+                        total_price_shopify_p: p.total_price_shopify_p,
                         store: p.store
                     }
                 }
@@ -483,7 +485,7 @@ export async function getInterCityPackages(req, res) {
                 fk_id_tp_p: 2,
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p', 'total_price_shopify_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
             include: [
                 {
                     model: Store,
@@ -637,7 +639,7 @@ export async function getDetailAsignateInter(req, res) {
                 },
                 fk_id_tp_p: 2
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p']
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p']
         });
         // I call and save the result of the findAll method, which is d sequelize
         const getPackage = await Package.findAll({
@@ -649,7 +651,7 @@ export async function getDetailAsignateInter(req, res) {
                 fk_id_tp_p: 2,
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p'],
             include: [
                 {
                     model: Store,

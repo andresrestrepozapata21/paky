@@ -287,7 +287,7 @@ export async function getpackages(req, res) {
                 },
                 {
                     model: Package,
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
                     include: [
                         {
                             model: Type_package,
@@ -383,7 +383,7 @@ export async function filterByDate(req, res) {
                             [Sequelize.Op.between]: [startDate, endDate]
                         }
                     },
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p', 'fk_id_carrier_p'],
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p', 'fk_id_carrier_p'],
                     include: [
                         {
                             model: Type_package,
@@ -490,7 +490,7 @@ export async function downloadExcelpackagesDate(req, res) {
                             [Sequelize.Op.between]: [startDate, endDate]
                         }
                     },
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p', 'fk_id_carrier_p'],
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p', 'fk_id_carrier_p'],
                 }
             ]
         });
@@ -525,7 +525,7 @@ export async function downloadExcelpackagesDate(req, res) {
                             statusText = "En camino de bodega Comercio a bodega central";
                             break;
                     }
-                    dataForExcel.push({ id_p: e.id_p, orden_p: e.orden_p, name_client_p: e.name_client_p, phone_number_client_p: e.phone_number_client_p, email_client_p: e.email_client_p, direction_client_p: e.direction_client_p, guide_number_p: e.guide_number_p, status_p: statusText, profit_dropshipper_p: e.profit_dropshipper_p, with_collection_p: e.with_collection_p, total_price_p: e.total_price_p, confirmation_dropshipper_p: e.confirmation_dropshipper_p, createdAt: e.createdAt, fk_id_tp_p: e.fk_id_tp_p, fk_id_carrier_p: e.fk_id_carrier_p });
+                    dataForExcel.push({ id_p: e.id_p, orden_p: e.orden_p, name_client_p: e.name_client_p, phone_number_client_p: e.phone_number_client_p, email_client_p: e.email_client_p, direction_client_p: e.direction_client_p, guide_number_p: e.guide_number_p, status_p: statusText, profit_dropshipper_p: e.profit_dropshipper_p, with_collection_p: e.with_collection_p, total_price_p: e.total_price_p, total_price_shopify_p: e.total_price_shopify_p, confirmation_dropshipper_p: e.confirmation_dropshipper_p, createdAt: e.createdAt, fk_id_tp_p: e.fk_id_tp_p, fk_id_carrier_p: e.fk_id_carrier_p });
                 })
             });
             // Creación de un libro y una hoja de Excel
@@ -659,7 +659,7 @@ export async function detailPackage(req, res) {
             where: {
                 id_p
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'profit_carrier_inter_city_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'profit_carrier_inter_city_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p'],
             include: [
                 {
                     model: Carrier,

@@ -196,7 +196,7 @@ export async function getCityPackages(req, res) {
             where: {
                 fk_id_tp_p: 1
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
             include: [
                 {
                     model: Type_package,
@@ -275,7 +275,7 @@ export async function getInterCityPackages(req, res) {
             where: {
                 fk_id_tp_p: 2
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p', 'createdAt'],
             include: [
                 {
                     model: Type_package,
@@ -358,7 +358,7 @@ export async function detailPackage(req, res) {
             where: {
                 id_p
             },
-            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'profit_carrier_inter_city_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p'],
+            attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_carrier_p', 'profit_carrier_inter_city_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'createdAt', 'fk_id_tp_p'],
             include: [
                 {
                     model: Carrier,
@@ -919,7 +919,7 @@ export async function detailCarrierAndHistory(req, res) {
                 include: [
                     {
                         model: Package,
-                        attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p']
+                        attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p']
                     },
                 ]
             });
@@ -1271,7 +1271,7 @@ export async function detailPaymentRequestCarrier(req, res) {
             include: [
                 {
                     model: Package,
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p']
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p']
                 },
             ]
         });
@@ -1769,7 +1769,7 @@ export async function getPackagesByStore(req, res) {
                 },
                 {
                     model: Package,
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p'],
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p'],
                     include: [
                         {
                             model: Evidence,
@@ -2526,7 +2526,7 @@ export async function getHistory(req, res) {
             include: [
                 {
                     model: Package,
-                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p']
+                    attributes: ['id_p', 'orden_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'direction_client_p', 'guide_number_p', 'status_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'total_price_shopify_p', 'confirmation_dropshipper_p', 'fk_id_tp_p', 'fk_id_carrier_p']
                 },
             ],
             order: [['createdAt', 'ASC']]
@@ -2800,6 +2800,7 @@ export async function addPackage(req, res) {
             profit_carrier_inter_city_p,
             profit_dropshipper_p,
             total_price_p, name_client_p,
+            total_price_shopify_p: 0,
             phone_number_client_p,
             direction_client_p,
             email_client_p,
