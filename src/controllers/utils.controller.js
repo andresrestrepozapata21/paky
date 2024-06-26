@@ -183,7 +183,7 @@ export async function CronJobPackages(req, res) {
             let profit_dropshipper_p = 0;
             let with_collection_p = 1;
             let total_price_p = data.current_total_price;
-            let total_price_shopify_p = 1;
+            let does_shopify_p = 1;
             let createdAt = data.created_at;
             let confirmation_carrier_p = 0;
             let confirmation_dropshipper_p = 0;
@@ -222,7 +222,7 @@ export async function CronJobPackages(req, res) {
                 profit_carrier_inter_city_p,
                 profit_dropshipper_p,
                 total_price_p,
-                total_price_shopify_p,
+                does_shopify_p,
                 name_client_p,
                 phone_number_client_p,
                 direction_client_p,
