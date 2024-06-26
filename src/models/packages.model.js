@@ -54,6 +54,12 @@ export const Package = sequelize.define('packages', {
     total_price_p:{
         type: DataTypes.INTEGER
     },
+    does_shopify_p:{
+        type: DataTypes.INTEGER
+    },
+    total_price_shopify_p:{
+        type: DataTypes.INTEGER
+    },
     confirmation_carrier_p:{
         type: DataTypes.INTEGER
     },
