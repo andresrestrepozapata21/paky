@@ -259,6 +259,7 @@ export async function CronJobPackages(req, res) {
                         const name_product = line_item.name
                         const description_product = "Producto registrado por Shopify";
                         const price_sale_product = line_item.price;
+                        const price_cost_product = 0;
                         const size_product = "Mediano";
                         // I create product
                         const newProduct = await Product.create({
@@ -266,6 +267,7 @@ export async function CronJobPackages(req, res) {
                             name_product,
                             description_product,
                             price_sale_product,
+                            price_cost_product,
                             size_product,
                             fk_id_dropshipper_product: id_dropshipper
                         });
