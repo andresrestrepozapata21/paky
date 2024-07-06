@@ -560,6 +560,10 @@ export async function master(req, res) {
           "guide_number_p",
           "profit_carrier_p",
           "total_price_p",
+          "does_shopify_p",
+          "send_cost_shopify_p",
+          "send_priority_shopify_p",
+          "total_price_shopify_p",
           "with_collection_p",
           "status_p",
           "direction_client_p",
@@ -571,6 +575,8 @@ export async function master(req, res) {
       });
       // Process data for JSON response
       const formattedDataPackages = carrier_packages.map((p) => {
+        // Variable total price
+        let total;
         // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
         if (p.fk_id_tp_p == 1) {
           let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
@@ -586,6 +592,12 @@ export async function master(req, res) {
                   : p.createdAt;
               // Ahora sí, formatear la cadena
               var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+              // validate if the package is shopify
+              if (p.does_shopify_p == 1) {
+                total = p.total_price_shopify_p;
+              } else {
+                total = p.total_price_p + p.profit_carrier_p;
+              }
               // Definate response orden fine JSON
               return {
                 id_p: p.id_p,
@@ -594,7 +606,7 @@ export async function master(req, res) {
                 order_number: p.orden_p,
                 date_created_p,
                 profit_for_carrier: p.profit_carrier_p,
-                total_price_p: p.total_price_p,
+                total_price_p: total,
                 with_collection_p: p.with_collection_p,
                 address_origin:
                   p.store.direction_store +
@@ -619,6 +631,12 @@ export async function master(req, res) {
                   : p.createdAt;
               // Ahora sí, formatear la cadena
               var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+              // validate if the package is shopify
+              if (p.does_shopify_p == 1) {
+                total = p.total_price_shopify_p;
+              } else {
+                total = p.total_price_p + p.profit_carrier_p;
+              }
               // Definate response orden fine JSON
               return {
                 id_p: p.id_p,
@@ -627,7 +645,7 @@ export async function master(req, res) {
                 order_number: p.orden_p,
                 date_created_p,
                 profit_for_carrier: p.profit_carrier_p,
-                total_price_p: p.total_price_p,
+                total_price_p: total,
                 with_collection_p: p.with_collection_p,
                 address_origin:
                   p.city.central_warehouses[0].direction_cw +
@@ -658,6 +676,12 @@ export async function master(req, res) {
                   : p.createdAt;
               // Ahora sí, formatear la cadena
               var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+              // validate if the package is shopify
+              if (p.does_shopify_p == 1) {
+                total = p.total_price_shopify_p;
+              } else {
+                total = p.total_price_p + p.profit_carrier_p;
+              }
               // Definate response orden fine JSON
               return {
                 id_p: p.id_p,
@@ -666,7 +690,7 @@ export async function master(req, res) {
                 order_number: p.orden_p,
                 date_created_p,
                 profit_for_carrier: p.profit_carrier_p,
-                total_price_p: p.total_price_p,
+                total_price_p: total,
                 with_collection_p: p.with_collection_p,
                 address_origin:
                   p.store.direction_store +
@@ -691,6 +715,12 @@ export async function master(req, res) {
                   : p.createdAt;
               // Ahora sí, formatear la cadena
               var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+              // validate if the package is shopify
+              if (p.does_shopify_p == 1) {
+                total = p.total_price_shopify_p;
+              } else {
+                total = p.total_price_p + p.profit_carrier_p;
+              }
               // Definate response orden fine JSON
               return {
                 id_p: p.id_p,
@@ -699,7 +729,7 @@ export async function master(req, res) {
                 order_number: p.orden_p,
                 date_created_p,
                 profit_for_carrier: p.profit_carrier_p,
-                total_price_p: p.total_price_p,
+                total_price_p: total,
                 with_collection_p: p.with_collection_p,
                 address_origin:
                   p.store.city.central_warehouses[0].direction_cw +
@@ -724,6 +754,12 @@ export async function master(req, res) {
                   : p.createdAt;
               // Ahora sí, formatear la cadena
               var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+              // validate if the package is shopify
+              if (p.does_shopify_p == 1) {
+                total = p.total_price_shopify_p;
+              } else {
+                total = p.total_price_p + p.profit_carrier_p;
+              }
               // Definate response orden fine JSON
               return {
                 id_p: p.id_p,
@@ -732,7 +768,7 @@ export async function master(req, res) {
                 order_number: p.orden_p,
                 date_created_p,
                 profit_for_carrier: p.profit_carrier_p,
-                total_price_p: p.total_price_p,
+                total_price_p: total,
                 with_collection_p: p.with_collection_p,
                 address_origin:
                   p.city.central_warehouses[0].direction_cw +
@@ -843,6 +879,10 @@ export async function asignatedPackages(req, res) {
         "direction_client_p",
         "createdAt",
         "total_price_p",
+        "does_shopify_p",
+        "send_cost_shopify_p",
+        "send_priority_shopify_p",
+        "total_price_shopify_p",
         "with_collection_p",
       ],
       order: [
@@ -851,6 +891,8 @@ export async function asignatedPackages(req, res) {
     });
     // Process data for JSON response
     const formattedDataPackages = carrier_packages.map((p) => {
+      // Variable total price
+      let total;
       // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
       if (p.fk_id_tp_p == 1) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
@@ -866,6 +908,12 @@ export async function asignatedPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -874,7 +922,7 @@ export async function asignatedPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.store.direction_store +
@@ -899,6 +947,12 @@ export async function asignatedPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -907,7 +961,7 @@ export async function asignatedPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.city.central_warehouses[0].direction_cw +
@@ -938,6 +992,12 @@ export async function asignatedPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -946,7 +1006,7 @@ export async function asignatedPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.store.direction_store +
@@ -971,6 +1031,12 @@ export async function asignatedPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -979,7 +1045,7 @@ export async function asignatedPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_inter_city_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.store.city.central_warehouses[0].direction_cw +
@@ -1004,6 +1070,12 @@ export async function asignatedPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1012,7 +1084,7 @@ export async function asignatedPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.city.central_warehouses[0].direction_cw +
@@ -1238,6 +1310,10 @@ export async function onTheWayPackages(req, res) {
         "direction_client_p",
         "createdAt",
         "total_price_p",
+        "does_shopify_p",
+        "send_cost_shopify_p",
+        "send_priority_shopify_p",
+        "total_price_shopify_p",
         "with_collection_p",
       ],
       order: [
@@ -1246,6 +1322,8 @@ export async function onTheWayPackages(req, res) {
     });
     // Process data for JSON response
     const formattedDataPackages = onTheWayPackage.map((p) => {
+      // Variable total price
+      let total
       // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
       if (p.fk_id_tp_p == 1) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
@@ -1261,6 +1339,12 @@ export async function onTheWayPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1269,7 +1353,7 @@ export async function onTheWayPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.store.direction_store +
@@ -1294,6 +1378,12 @@ export async function onTheWayPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1302,7 +1392,7 @@ export async function onTheWayPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.city.central_warehouses[0].direction_cw +
@@ -1333,6 +1423,12 @@ export async function onTheWayPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1341,7 +1437,7 @@ export async function onTheWayPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.store.direction_store +
@@ -1366,6 +1462,12 @@ export async function onTheWayPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1374,7 +1476,7 @@ export async function onTheWayPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_inter_city_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.store.city.central_warehouses[0].direction_cw +
@@ -1399,6 +1501,12 @@ export async function onTheWayPackages(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1407,7 +1515,7 @@ export async function onTheWayPackages(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               address_origin:
                 p.city.central_warehouses[0].direction_cw +
@@ -1518,12 +1626,19 @@ export async function detailPackage(req, res) {
         "direction_client_p",
         "createdAt",
         "total_price_p",
+        "does_shopify_p",
+        "send_cost_shopify_p",
+        "send_priority_shopify_p",
+        "total_price_shopify_p",
         "with_collection_p",
         "comments_p",
       ],
     });
     // Process data for JSON response
     const formattedDataPackages = detailPackage.map((p) => {
+      // Variable total price
+      let total = 0;
+      // Variable products
       let products = [];
       p.package_products.forEach(element => {
         products.push({
@@ -1548,6 +1663,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1556,7 +1677,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
@@ -1586,6 +1707,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1594,7 +1721,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
@@ -1624,6 +1751,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1632,7 +1765,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
@@ -1662,6 +1795,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1670,7 +1809,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
@@ -1706,6 +1845,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1714,7 +1859,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
@@ -1744,6 +1889,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1752,7 +1903,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
               email_client_p: p.email_client_p,
@@ -1782,6 +1933,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1790,7 +1947,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_inter_city_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
@@ -1820,6 +1977,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1828,7 +1991,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_inter_city_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
@@ -1858,6 +2021,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1866,7 +2035,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
@@ -1896,6 +2065,12 @@ export async function detailPackage(req, res) {
                 : p.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.does_shopify_p == 1) {
+              total = p.total_price_shopify_p;
+            } else {
+              total = p.total_price_p + p.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_p: p.id_p,
@@ -1904,7 +2079,7 @@ export async function detailPackage(req, res) {
               order_number: p.orden_p,
               date_created_p,
               profit_for_carrier: p.profit_carrier_p,
-              total_price_p: p.total_price_p,
+              total_price_p: total,
               with_collection_p: p.with_collection_p,
               name_client_p: p.name_client_p,
               phone_number_client_p: p.phone_number_client_p,
@@ -1976,6 +2151,10 @@ export async function deliverPackage(req, res) {
         "with_collection_p",
         "fk_id_store_p",
         "total_price_p",
+        "does_shopify_p",
+        "send_cost_shopify_p",
+        "send_priority_shopify_p",
+        "total_price_shopify_p"
       ],
       include: [
         {
@@ -2000,6 +2179,8 @@ export async function deliverPackage(req, res) {
     let with_collection_p = data_package.with_collection_p;
     let fk_id_store_p = data_package.fk_id_store_p;
     let total_price_p = data_package.total_price_p;
+    let does_shopify_p = data_package.does_shopify_p;
+    let total_price_shopify_p = data_package.total_price_shopify_p;
     let id_dropshipper = data_package.store.dropshipper.id_dropshipper;
     // Structure condition statys package and to change status baseded 1. type send municipal, 2- type send inter-municipal
     // 1.Bodega Comercio 2.Bodega central origen 3. En camino entre bodegas centrales 4. En bodega central destino 5.En camino a entrega final 6. Entregado 7. En camino de bodega Comercio a bodega central
@@ -2015,7 +2196,9 @@ export async function deliverPackage(req, res) {
             profit_dropshipper_p,
             with_collection_p,
             fk_id_store_p,
-            total_price_p
+            total_price_p,
+            does_shopify_p,
+            total_price_shopify_p
           );
           // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
           newHistory = await Status_history.create({
@@ -2040,7 +2223,9 @@ export async function deliverPackage(req, res) {
             profit_dropshipper_p,
             with_collection_p,
             fk_id_store_p,
-            total_price_p
+            total_price_p,
+            does_shopify_p,
+            total_price_shopify_p
           );
           // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
           newHistory = await Status_history.create({
@@ -2079,7 +2264,9 @@ export async function deliverPackage(req, res) {
             profit_dropshipper_p,
             with_collection_p,
             fk_id_store_p,
-            total_price_p
+            total_price_p,
+            does_shopify_p,
+            total_price_shopify_p
           );
           // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
           newHistory = await Status_history.create({
@@ -2104,7 +2291,9 @@ export async function deliverPackage(req, res) {
             profit_dropshipper_p,
             with_collection_p,
             fk_id_store_p,
-            total_price_p
+            total_price_p,
+            does_shopify_p,
+            total_price_shopify_p
           );
           // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
           newHistory = await Status_history.create({
@@ -2129,7 +2318,9 @@ export async function deliverPackage(req, res) {
             profit_dropshipper_p,
             with_collection_p,
             fk_id_store_p,
-            total_price_p
+            total_price_p,
+            does_shopify_p,
+            total_price_shopify_p
           );
           // I declare the create method with its respective definition of the object and my history model in a variable taking into account the await
           newHistory = await Status_history.create({
@@ -2413,6 +2604,10 @@ export async function getHistory(req, res) {
             "profit_carrier_inter_city_p",
             "with_collection_p",
             "total_price_p",
+            "does_shopify_p",
+            "send_cost_shopify_p",
+            "send_priority_shopify_p",
+            "total_price_shopify_p",
             "createdAt",
             "fk_id_tp_p",
           ],
@@ -2460,6 +2655,8 @@ export async function getHistory(req, res) {
     });
     // Process data for JSON response
     const formattedData = getHistory.map((p) => {
+      // Varaible total price return
+      let total = 0;
       // I validate type send package and decidate 1. Municipal send, 2. Inter-municipal send
       if (p.package.fk_id_tp_p == 1) {
         let type_send = p.fk_id_tp_p == 1 ? "Municipal" : "Nacional";
@@ -2475,6 +2672,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2485,7 +2688,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.store.direction_store +
@@ -2510,6 +2713,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2520,7 +2729,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.store.direction_store +
@@ -2545,6 +2754,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2555,7 +2770,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.store.direction_store +
@@ -2580,6 +2795,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2590,7 +2811,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.city.central_warehouses[0].direction_cw +
@@ -2615,6 +2836,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2625,7 +2852,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.city.central_warehouses[0].direction_cw +
@@ -2650,6 +2877,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2660,7 +2893,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.city.central_warehouses[0].direction_cw +
@@ -2691,6 +2924,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2701,7 +2940,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.store.direction_store +
@@ -2726,6 +2965,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2736,7 +2981,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.store.direction_store +
@@ -2761,6 +3006,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2771,7 +3022,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.store.direction_store +
@@ -2796,6 +3047,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2806,7 +3063,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_inter_city_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.store.city.central_warehouses[0].direction_cw +
@@ -2831,6 +3088,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2841,7 +3104,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_inter_city_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.store.city.central_warehouses[0].direction_cw +
@@ -2866,6 +3129,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2876,7 +3145,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.city.central_warehouses[0].direction_cw +
@@ -2901,6 +3170,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2911,7 +3186,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.city.central_warehouses[0].direction_cw +
@@ -2936,6 +3211,12 @@ export async function getHistory(req, res) {
                 : p.package.createdAt;
             // Ahora sí, formatear la cadena
             var date_created_p = fechaISO.slice(0, 19).replace("T", " ");
+            // validate if the package is shopify
+            if (p.package.does_shopify_p == 1) {
+              total = p.package.total_price_shopify_p;
+            } else {
+              total = p.package.total_price_p + p.package.profit_carrier_p;
+            }
             // Definate response orden fine JSON
             return {
               id_sh: p.id_sh,
@@ -2946,7 +3227,7 @@ export async function getHistory(req, res) {
               order_number: p.package.orden_p,
               date_created_p,
               profit_for_carrier: p.package.profit_carrier_p,
-              total_price_p: p.package.total_price_p,
+              total_price_p: total,
               with_collection_p: p.package.with_collection_p,
               address_origin:
                 p.package.city.central_warehouses[0].direction_cw +
@@ -3316,7 +3597,9 @@ async function accounting(
   profit_dropshipper_p,
   with_collection_p,
   fk_id_store_p,
-  total_price_p
+  total_price_p,
+  does_shopify_p,
+  total_price_shopify_p
 ) {
   // I validate status = 6, it is mean the package delivered to the client
   if (status == 6) {
@@ -3330,10 +3613,17 @@ async function accounting(
         },
         attributes: ["id_carrier", "revenue_carrier", "debt_carrier"],
       });
+      // I capture variables needed
       let revenue = getCarrier.revenue_carrier;
       let debt = getCarrier.debt_carrier;
       let result_renueve = revenue + profit_carrier_p;
-      let result_debt = debt + total_price_p + profit_carrier_p;
+      let result_debt = 0;
+      // I validate if the package is from shopify
+      if (does_shopify_p == 1) {
+        result_debt = debt + total_price_shopify_p;
+      } else {
+        result_debt = debt + total_price_p + profit_carrier_p;
+      }
       // Setting and update Carrier
       getCarrier.set({
         revenue_carrier: result_renueve,
@@ -3361,6 +3651,7 @@ async function accounting(
           "total_sales_dropshipper",
         ],
       });
+      // I capture the variables needed
       let wallet = getDropshipper.wallet_dropshipper;
       let total_sales = getDropshipper.total_sales_dropshipper;
       let result_wallet = wallet + total_price_p;
@@ -3401,6 +3692,7 @@ async function accounting(
       },
       attributes: ["id_carrier", "revenue_carrier"],
     });
+    // I capture the revenue_carrier
     let revenue = getCarrier.revenue_carrier;
     let result_renueve = revenue + profit_carrier_p;
     // Setting and update Carrier

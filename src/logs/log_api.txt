@@ -1350,3 +1350,218 @@ sql: INSERT INTO `packages` (`id_p`,`id_shopify`,`orden_p`,`name_client_p`,`phon
 [2024-06-28T22:28:44.266Z] info Token validated successfuly
 [2024-06-28T22:28:44.267Z] info Enter the endpoint get carriers Inter_city
 [2024-06-28T22:28:44.272Z] info Get carriers Inter_city successfuly
+[2024-06-29T15:52:16.161Z] info server running on port 3000
+[2024-06-29T15:52:53.312Z] info enter the endpoint login
+[2024-06-29T15:52:53.343Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-06-29T15:53:21.200Z] info Token validated successfuly
+[2024-06-29T15:53:21.201Z] info enter the endpoint master
+[2024-06-29T15:53:21.221Z] info Master successfuly
+[2024-06-29T15:59:07.582Z] info Token validated successfuly
+[2024-06-29T15:59:07.582Z] info enter the endpoint master
+[2024-06-29T15:59:07.594Z] info Master successfuly
+[2024-06-29T16:07:19.665Z] info server running on port 3000
+[2024-06-29T16:07:23.607Z] info Token validated successfuly
+[2024-06-29T16:07:23.608Z] info enter the endpoint master
+[2024-06-29T16:07:23.647Z] info Master successfuly
+[2024-06-29T16:10:25.840Z] info server running on port 3000
+[2024-06-29T16:10:30.877Z] info Token validated successfuly
+[2024-06-29T16:10:30.878Z] info enter the endpoint master
+[2024-06-29T16:10:30.917Z] info Master successfuly
+[2024-06-29T16:10:43.864Z] info server running on port 3000
+[2024-06-29T16:11:00.409Z] info Token validated successfuly
+[2024-06-29T16:11:00.410Z] info enter the endpoint master
+[2024-06-29T16:11:00.454Z] info Master successfuly
+[2024-06-29T16:25:22.253Z] info server running on port 3000
+[2024-06-29T16:47:34.178Z] info Token validated successfuly
+[2024-06-29T16:47:34.179Z] info enter the endpoint asignated packages
+[2024-06-29T16:47:34.217Z] info Asignated packages successfuly
+[2024-06-29T18:51:09.175Z] info server running on port 3000
+[2024-06-29T18:51:59.405Z] info server running on port 3000
+[2024-06-29T18:52:11.828Z] info server running on port 3000
+[2024-06-29T18:52:39.345Z] info server running on port 3000
+[2024-06-29T18:52:45.887Z] info Token validated successfuly
+[2024-06-29T18:52:45.887Z] info enter the endpoint asignated packages
+[2024-06-29T18:52:45.925Z] info Asignated packages successfuly
+[2024-06-29T18:55:02.674Z] info Token validated successfuly
+[2024-06-29T18:55:02.675Z] info enter the endpoint on the way packages
+[2024-06-29T18:55:02.683Z] info On the way packages successfuly
+[2024-06-29T18:56:28.747Z] info server running on port 3000
+[2024-06-29T18:57:04.016Z] info server running on port 3000
+[2024-06-29T18:57:15.265Z] info server running on port 3000
+[2024-06-29T18:57:58.012Z] info Token validated successfuly
+[2024-06-29T18:57:58.013Z] info enter the endpoint on the way packages
+[2024-06-29T18:57:58.049Z] info On the way packages successfuly
+[2024-06-29T18:58:09.749Z] info Token validated successfuly
+[2024-06-29T18:58:09.750Z] info enter the endpoint on the way packages
+[2024-06-29T18:58:09.759Z] info On the way packages successfuly
+[2024-06-29T18:58:31.548Z] info Token validated successfuly
+[2024-06-29T18:58:31.549Z] info enter the endpoint confirmate packages
+[2024-06-29T18:58:31.564Z] info History status registed successfully
+[2024-06-29T18:58:31.564Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-06-29T18:58:37.091Z] info Token validated successfuly
+[2024-06-29T18:58:37.091Z] info enter the endpoint on the way packages
+[2024-06-29T18:58:37.098Z] info On the way packages successfuly
+[2024-06-29T18:58:52.301Z] info Token validated successfuly
+[2024-06-29T18:58:52.301Z] info enter the endpoint confirmate packages
+[2024-06-29T18:58:52.367Z] info History status registed successfully
+[2024-06-29T18:58:52.367Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-06-29T18:58:55.897Z] info Token validated successfuly
+[2024-06-29T18:58:55.897Z] info enter the endpoint on the way packages
+[2024-06-29T18:58:55.906Z] info On the way packages successfuly
+[2024-06-29T19:14:17.624Z] info server running on port 3000
+[2024-06-29T19:14:45.348Z] info server running on port 3000
+[2024-06-29T19:15:03.699Z] info Token validated successfuly
+[2024-06-29T19:15:03.700Z] info enter the endpoint details packages
+[2024-06-29T19:15:03.771Z] info Details package successfuly
+[2024-06-29T19:50:50.501Z] info server running on port 3000
+[2024-06-29T19:52:11.295Z] info server running on port 3000
+[2024-06-29T19:52:12.128Z] info Token validated successfuly
+[2024-06-29T19:52:12.128Z] info enter the endpoint details packages
+[2024-06-29T19:52:12.172Z] info Details package successfuly
+[2024-06-29T19:52:21.192Z] info Token validated successfuly
+[2024-06-29T19:52:21.192Z] info enter the endpoint details packages
+[2024-06-29T19:52:21.203Z] info Details package successfuly
+[2024-06-29T20:10:29.309Z] info server running on port 3000
+[2024-06-29T20:10:45.557Z] info server running on port 3000
+[2024-06-29T20:22:13.105Z] info server running on port 3000
+[2024-06-29T20:22:20.821Z] info server running on port 3000
+[2024-06-29T20:22:34.905Z] info server running on port 3000
+[2024-06-29T20:22:58.866Z] info server running on port 3000
+[2024-06-29T20:23:32.456Z] info server running on port 3000
+[2024-06-29T20:24:31.784Z] info enter the endpoint login
+[2024-06-29T20:24:31.813Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-06-29T20:24:42.288Z] info Token validated successfuly
+[2024-06-29T20:24:42.300Z] info Evidence load successfully
+[2024-06-29T20:24:42.301Z] info Enter the endpoint deliver packages
+[2024-06-29T20:24:42.341Z] info Entregado a bodega central ciudad destino
+[2024-06-29T20:24:42.342Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-06-29T20:24:42.344Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
+[2024-06-29T20:26:02.803Z] info Token validated successfuly
+[2024-06-29T20:26:02.804Z] info enter the endpoint asignated packages
+[2024-06-29T20:26:02.812Z] info Asignated packages successfuly
+[2024-06-29T20:26:10.820Z] info Token validated successfuly
+[2024-06-29T20:26:10.820Z] info enter the endpoint on the way packages
+[2024-06-29T20:26:10.828Z] info On the way packages successfuly
+[2024-06-29T20:26:24.059Z] info Token validated successfuly
+[2024-06-29T20:26:24.060Z] info enter the endpoint details packages
+[2024-06-29T20:26:24.072Z] info Details package successfuly
+[2024-06-29T20:26:49.045Z] info Token validated successfuly
+[2024-06-29T20:26:49.046Z] info enter the endpoint asignated packages
+[2024-06-29T20:26:49.053Z] info Asignated packages successfuly
+[2024-06-29T20:27:20.449Z] info Token validated successfuly
+[2024-06-29T20:27:20.449Z] info enter the endpoint confirmate packages
+[2024-06-29T20:27:20.459Z] info History status registed successfully
+[2024-06-29T20:27:20.459Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-06-29T20:27:26.764Z] info Token validated successfuly
+[2024-06-29T20:27:26.764Z] info enter the endpoint on the way packages
+[2024-06-29T20:27:26.770Z] info On the way packages successfuly
+[2024-06-29T20:27:49.800Z] info Token validated successfuly
+[2024-06-29T20:27:49.800Z] info enter the endpoint details packages
+[2024-06-29T20:27:49.809Z] info Details package successfuly
+[2024-06-29T20:27:57.018Z] info Token validated successfuly
+[2024-06-29T20:27:57.022Z] info Evidence load successfully
+[2024-06-29T20:27:57.022Z] info Enter the endpoint deliver packages
+[2024-06-29T20:27:57.050Z] info Entregado al cliente
+[2024-06-29T20:27:57.050Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-06-29T20:27:57.053Z] info Carrier transports package to Client, all accounting ok.
+[2024-06-29T20:31:52.334Z] info server running on port 3000
+[2024-06-29T20:32:38.385Z] info Token validated successfuly
+[2024-06-29T20:32:38.385Z] info enter the endpoint on the way packages
+[2024-06-29T20:32:38.426Z] info On the way packages successfuly
+[2024-06-29T20:32:41.248Z] info Token validated successfuly
+[2024-06-29T20:32:41.297Z] info Evidence load successfully
+[2024-06-29T20:32:41.298Z] info Enter the endpoint deliver packages
+[2024-06-29T20:32:41.335Z] info Entregado al cliente
+[2024-06-29T20:32:41.335Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-06-29T20:32:41.348Z] info Carrier transports package to Client, all accounting ok.
+[2024-06-29T20:33:00.640Z] info Token validated successfuly
+[2024-06-29T20:33:00.645Z] info Evidence load successfully
+[2024-06-29T20:33:00.645Z] info Enter the endpoint deliver packages
+[2024-06-29T20:33:00.666Z] info Entregado a bodega central ciudad destino
+[2024-06-29T20:33:00.666Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-06-29T20:33:00.671Z] info Carrier transports package to central warehouse of origin or destination, all accounting ok
+[2024-06-29T20:34:43.498Z] info server running on port 3000
+[2024-06-29T20:35:00.223Z] info server running on port 3000
+[2024-06-29T20:35:54.252Z] info server running on port 3000
+[2024-06-29T20:35:56.636Z] info server running on port 3000
+[2024-06-29T20:36:44.767Z] info Token validated successfuly
+[2024-06-29T20:36:44.768Z] info enter the endpoint on the way packages
+[2024-06-29T20:36:44.810Z] info On the way packages successfuly
+[2024-06-29T20:36:51.063Z] info Token validated successfuly
+[2024-06-29T20:36:51.075Z] info Evidence load successfully
+[2024-06-29T20:36:51.076Z] info Enter the endpoint deliver packages
+[2024-06-29T20:36:51.120Z] info Entregado al cliente
+[2024-06-29T20:36:51.120Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-06-29T20:36:51.123Z] info Carrier transports package to Client, all accounting ok.
+[2024-06-29T20:38:24.891Z] info server running on port 3000
+[2024-06-29T20:38:29.252Z] info server running on port 3000
+[2024-06-29T20:38:33.437Z] info Token validated successfuly
+[2024-06-29T20:38:33.446Z] info Evidence load successfully
+[2024-06-29T20:38:33.447Z] info Enter the endpoint deliver packages
+[2024-06-29T20:38:33.508Z] info Entregado al cliente
+[2024-06-29T20:38:33.509Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-06-29T20:38:33.519Z] info Carrier transports package to Client, all accounting ok.
+[2024-06-29T20:40:57.980Z] info Token validated successfuly
+[2024-06-29T20:40:57.981Z] info enter the endpoint on the way packages
+[2024-06-29T20:40:57.994Z] info On the way packages successfuly
+[2024-06-29T20:41:06.229Z] info Token validated successfuly
+[2024-06-29T20:41:06.233Z] info Evidence load successfully
+[2024-06-29T20:41:06.233Z] info Enter the endpoint deliver packages
+[2024-06-29T20:41:06.266Z] info Entregado al cliente
+[2024-06-29T20:41:06.266Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-06-29T20:41:06.269Z] info Carrier transports package to Client, all accounting ok.
+[2024-07-06T16:37:52.122Z] info server running on port 3000
+[2024-07-06T16:38:35.349Z] info enter the endpoint login
+[2024-07-06T16:38:35.430Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-07-06T16:39:27.156Z] info server running on port 3000
+[2024-07-06T16:41:58.649Z] info server running on port 3000
+[2024-07-06T16:42:08.780Z] info server running on port 3000
+[2024-07-06T16:43:14.292Z] info server running on port 3000
+[2024-07-06T16:43:29.597Z] info server running on port 3000
+[2024-07-06T16:43:37.323Z] info server running on port 3000
+[2024-07-06T16:43:48.382Z] info server running on port 3000
+[2024-07-06T16:44:37.990Z] info server running on port 3000
+[2024-07-06T16:45:05.031Z] info server running on port 3000
+[2024-07-06T16:48:24.598Z] info server running on port 3000
+[2024-07-06T16:48:53.561Z] info Token validated successfuly
+[2024-07-06T16:48:53.562Z] info enter the endpoint carrier history
+[2024-07-06T16:48:53.629Z] info Error Get carrier history: TypeError: Cannot read properties of null (reading 'fk_id_tp_p')
+[2024-07-06T16:49:07.763Z] info Token validated successfuly
+[2024-07-06T16:49:07.763Z] info enter the endpoint carrier history
+[2024-07-06T16:49:07.778Z] info Error Get carrier history: TypeError: Cannot read properties of null (reading 'fk_id_tp_p')
+[2024-07-06T16:49:20.375Z] info Token validated successfuly
+[2024-07-06T16:49:20.375Z] info enter the endpoint carrier history
+[2024-07-06T16:49:20.389Z] info Error Get carrier history: TypeError: Cannot read properties of null (reading 'fk_id_tp_p')
+[2024-07-06T16:51:50.666Z] info Token validated successfuly
+[2024-07-06T16:51:50.666Z] info enter the endpoint carrier history
+[2024-07-06T16:51:50.681Z] info Get carrier history successfuly
+[2024-07-06T16:53:11.654Z] info server running on port 3000
+[2024-07-06T16:53:12.472Z] info Token validated successfuly
+[2024-07-06T16:53:12.473Z] info enter the endpoint carrier history
+[2024-07-06T16:54:29.905Z] info server running on port 3000
+[2024-07-06T16:54:33.403Z] info Token validated successfuly
+[2024-07-06T16:54:33.404Z] info enter the endpoint carrier history
+[2024-07-06T16:54:33.444Z] info Get carrier history successfuly
+[2024-07-06T16:55:35.500Z] info server running on port 3000
+[2024-07-06T16:55:37.347Z] info Token validated successfuly
+[2024-07-06T16:55:37.347Z] info enter the endpoint carrier history
+[2024-07-06T16:55:37.388Z] info Get carrier history successfuly
+[2024-07-06T16:58:07.646Z] info Token validated successfuly
+[2024-07-06T16:58:07.646Z] info enter the endpoint carrier history
+[2024-07-06T16:58:07.660Z] info Get carrier history successfuly
+[2024-07-06T16:58:10.473Z] info server running on port 3000
+[2024-07-06T16:58:11.145Z] info Token validated successfuly
+[2024-07-06T16:58:11.145Z] info enter the endpoint carrier history
+[2024-07-06T16:59:25.448Z] info server running on port 3000
+[2024-07-06T16:59:34.086Z] info server running on port 3000
+[2024-07-06T16:59:35.150Z] info Token validated successfuly
+[2024-07-06T16:59:35.151Z] info enter the endpoint carrier history
+[2024-07-06T16:59:35.192Z] info Get carrier history successfuly
+[2024-07-06T17:00:12.822Z] info server running on port 3000
+[2024-07-06T17:00:14.437Z] info Token validated successfuly
+[2024-07-06T17:00:14.438Z] info enter the endpoint carrier history
+[2024-07-06T17:00:14.477Z] info Get carrier history successfuly
+[2024-07-06T17:01:30.733Z] info server running on port 3000
+[2024-07-06T17:01:30.856Z] info Token validated successfuly
+[2024-07-06T17:01:30.857Z] info enter the endpoint carrier history
+[2024-07-06T17:01:30.897Z] info Get carrier history successfuly
