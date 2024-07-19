@@ -196,8 +196,8 @@ export async function CronJobPackages(req, res) {
             let department = data.billing_address.province;
             let city = data.billing_address.city;
 
-            if (city === "CALI") {
-                console.log("entro a cali")
+            if (city.toLowerCase() === "cali") {
+                city = "cali";
                 // I find the city with validation departament
                 const getCity = await City.findOne({
                     where: {
@@ -338,7 +338,14 @@ export async function CronJobPackages(req, res) {
                     await newPackage.save();
                 }
             } else {
-                console.log('no entro a cali')
+                // logger control proccess
+                logger.info('Cronjob new ordes shopify successfully');
+                // I return the json with the message I want
+                return res.json({
+                    message: 'City different from Cali',
+                    result: 1,
+                    //data: formatResponse
+                });
             }
         }
         // logger control proccess
