@@ -1565,3 +1565,25 @@ sql: INSERT INTO `packages` (`id_p`,`id_shopify`,`orden_p`,`name_client_p`,`phon
 [2024-07-06T17:01:30.856Z] info Token validated successfuly
 [2024-07-06T17:01:30.857Z] info enter the endpoint carrier history
 [2024-07-06T17:01:30.897Z] info Get carrier history successfuly
+[2024-07-19T20:42:41.793Z] info server running on port 3000
+[2024-07-19T20:42:56.115Z] info server running on port 3000
+[2024-07-19T20:46:16.218Z] info enter the endpoint login manager
+[2024-07-19T20:46:16.235Z] info Error Login: SequelizeConnectionRefusedError
+[2024-07-19T20:46:29.537Z] info enter the endpoint login manager
+[2024-07-19T20:46:29.539Z] info Error Login: SequelizeConnectionRefusedError
+[2024-07-19T20:46:58.518Z] info server running on port 3000
+[2024-07-19T20:47:06.200Z] info enter the endpoint login manager
+[2024-07-19T20:47:06.215Z] info Error Login: SequelizeConnectionRefusedError
+[2024-07-19T20:47:18.366Z] info enter the endpoint login
+[2024-07-19T20:47:18.370Z] info Error Login: SequelizeConnectionRefusedError
+[2024-07-19T20:48:15.454Z] info enter the endpoint login manager
+[2024-07-19T20:48:15.551Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-07-19T20:48:32.377Z] info Token validated successfuly
+[2024-07-19T20:48:32.377Z] info enter the endpoint get cron job package:
+[2024-07-19T20:48:32.395Z] info Cronjob new ordes shopify successfully
+[2024-07-19T20:50:18.838Z] info Token validated successfuly
+[2024-07-19T20:50:18.838Z] info enter the endpoint get cron job package:
+[2024-07-19T20:50:18.843Z] info Cronjob new ordes shopify successfully
+[2024-07-19T20:51:10.502Z] info Token validated successfuly
+[2024-07-19T20:51:10.503Z] info enter the endpoint get cron job package:
+[2024-07-19T20:51:10.545Z] info Cronjob new ordes shopify successfully
