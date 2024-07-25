@@ -1629,3 +1629,127 @@ sql: INSERT INTO `packages` (`id_p`,`id_shopify`,`orden_p`,`name_client_p`,`phon
 [2024-07-19T22:53:56.654Z] info Token validated successfuly
 [2024-07-19T22:53:56.654Z] info enter the endpoint get cron job package:
 [2024-07-19T22:53:56.727Z] info Cronjob new ordes shopify successfully
+[2024-07-24T22:18:30.635Z] info server running on port 3000
+[2024-07-24T22:19:30.351Z] info enter the endpoint login
+[2024-07-24T22:19:30.382Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-07-24T22:19:47.365Z] info Token validated successfuly
+[2024-07-24T22:19:47.366Z] info enter the endpoint asignated packages
+[2024-07-24T22:19:47.381Z] info Asignated packages successfuly
+[2024-07-24T22:20:16.641Z] info Token validated successfuly
+[2024-07-24T22:20:16.641Z] info enter the endpoint asignated packages
+[2024-07-24T22:20:16.649Z] info Asignated packages successfuly
+[2024-07-24T22:29:34.314Z] info server running on port 3000
+[2024-07-24T22:30:31.774Z] info server running on port 3000
+[2024-07-24T22:30:50.270Z] info server running on port 3000
+[2024-07-24T22:31:10.668Z] info server running on port 3000
+[2024-07-24T22:31:13.082Z] info Token validated successfuly
+[2024-07-24T22:31:13.082Z] info enter the endpoint asignated packages
+[2024-07-24T22:31:13.120Z] info Asignated packages successfuly
+[2024-07-25T19:31:05.471Z] info server running on port 3000
+[2024-07-25T19:31:40.324Z] info enter the endpoint login
+[2024-07-25T19:31:40.355Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-07-25T19:31:50.427Z] info Token validated successfuly
+[2024-07-25T19:31:50.427Z] info enter the endpoint asignated packages
+[2024-07-25T19:31:50.441Z] info Asignated packages successfuly
+[2024-07-25T19:32:30.391Z] info Token validated successfuly
+[2024-07-25T19:32:30.391Z] info enter the endpoint asignated packages
+[2024-07-25T19:32:30.399Z] info Asignated packages successfuly
+[2024-07-25T19:35:51.826Z] info server running on port 3000
+[2024-07-25T19:36:18.339Z] info Token validated successfuly
+[2024-07-25T19:36:18.339Z] info enter the endpoint confirmate packages
+[2024-07-25T19:36:18.378Z] info History status registed successfully
+[2024-07-25T19:36:18.379Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-07-25T19:36:46.873Z] info Token validated successfuly
+[2024-07-25T19:36:46.874Z] info enter the endpoint confirmate packages
+[2024-07-25T19:36:46.883Z] info History status registed successfully
+[2024-07-25T19:36:46.883Z] info Confirmate packages successfuly, results> [object Promise]
+[2024-07-25T19:36:58.369Z] info Token validated successfuly
+[2024-07-25T19:36:58.369Z] info enter the endpoint on the way packages
+[2024-07-25T19:36:58.383Z] info On the way packages successfuly
+[2024-07-25T19:37:00.458Z] info Token validated successfuly
+[2024-07-25T19:37:00.458Z] info enter the endpoint asignated packages
+[2024-07-25T19:37:00.463Z] info Asignated packages successfuly
+[2024-07-25T19:37:03.048Z] info Token validated successfuly
+[2024-07-25T19:37:03.048Z] info enter the endpoint on the way packages
+[2024-07-25T19:37:03.054Z] info On the way packages successfuly
+[2024-07-25T20:02:32.752Z] info Token validated successfuly
+[2024-07-25T20:02:32.753Z] info enter the endpoint details packages
+[2024-07-25T20:02:32.763Z] info Details package successfuly
+[2024-07-25T20:02:43.366Z] info Token validated successfuly
+[2024-07-25T20:02:43.366Z] info enter the endpoint details packages
+[2024-07-25T20:02:43.374Z] info Details package successfuly
+[2024-07-25T20:03:15.723Z] info Token validated successfuly
+[2024-07-25T20:03:15.728Z] info Evidence load successfully
+[2024-07-25T20:03:15.728Z] info Enter the endpoint deliver packages
+[2024-07-25T20:03:15.760Z] info Entregado al cliente
+[2024-07-25T20:03:15.761Z] info Deliver packages successfuly, Results: [object Promise], [object Promise], [object Promise]
+[2024-07-25T20:03:15.769Z] info Carrier transports package to Client, all accounting ok.
+[2024-07-25T20:04:25.796Z] info server running on port 3000
+[2024-07-25T20:05:06.724Z] info enter the endpoint login dropshipper
+[2024-07-25T20:05:06.754Z] info correct credentials, Started Sesion, token returned in response body data.
+[2024-07-25T20:05:06.835Z] info Token validated successfuly
+[2024-07-25T20:05:06.836Z] info enter the endpoint master dropshipper
+[2024-07-25T20:05:06.845Z] info Master Dropshipper successfuly
+[2024-07-25T20:05:09.715Z] info Token validated successfuly
+[2024-07-25T20:05:09.715Z] info enter the endpoint getpackages dropshipper
+[2024-07-25T20:05:09.723Z] info Token validated successfuly
+[2024-07-25T20:05:09.723Z] info enter the endpoint getDetailCarrier
+[2024-07-25T20:05:09.732Z] info Getpackages Dropshipper successfuly
+[2024-07-25T20:05:09.735Z] info getDetailDropshipper successfuly
+[2024-07-25T20:05:18.593Z] info Token validated successfuly
+[2024-07-25T20:05:18.594Z] info enter the endpoint detailPackage dropshipper
+[2024-07-25T20:05:18.607Z] info detailPackage Dropshipper successfuly
+[2024-07-25T20:05:20.861Z] info Token validated successfuly
+[2024-07-25T20:05:20.862Z] info enter the endpoint getpackages dropshipper
+[2024-07-25T20:05:20.869Z] info Getpackages Dropshipper successfuly
+[2024-07-25T20:05:20.873Z] info Token validated successfuly
+[2024-07-25T20:05:20.873Z] info enter the endpoint getDetailCarrier
+[2024-07-25T20:05:20.878Z] info getDetailDropshipper successfuly
+[2024-07-25T20:05:22.308Z] info Token validated successfuly
+[2024-07-25T20:05:22.309Z] info enter the endpoint detailPackage dropshipper
+[2024-07-25T20:05:22.319Z] info detailPackage Dropshipper successfuly
+[2024-07-25T20:06:05.680Z] info Token validated successfuly
+[2024-07-25T20:06:05.681Z] info enter the endpoint getEvidenceHistory
+[2024-07-25T20:06:05.683Z] info getEvidenceHistory successfuly
+[2024-07-25T20:06:08.847Z] info Token validated successfuly
+[2024-07-25T20:06:08.847Z] info enter the endpoint getEvidenceHistory
+[2024-07-25T20:06:08.849Z] info getEvidenceHistory successfuly
+[2024-07-25T20:06:11.388Z] info Token validated successfuly
+[2024-07-25T20:06:11.388Z] info enter the endpoint getEvidenceHistory
+[2024-07-25T20:06:11.390Z] info getEvidenceHistory successfuly
+[2024-07-25T20:06:13.830Z] info Token validated successfuly
+[2024-07-25T20:06:13.830Z] info enter the endpoint getEvidenceHistory
+[2024-07-25T20:06:13.832Z] info getEvidenceHistory successfuly
+[2024-07-25T20:06:16.287Z] info Token validated successfuly
+[2024-07-25T20:06:16.287Z] info enter the endpoint getEvidenceHistory
+[2024-07-25T20:06:16.288Z] info getEvidenceHistory successfuly
+[2024-07-25T20:06:51.256Z] info Token validated successfuly
+[2024-07-25T20:06:51.256Z] info enter the endpoint getpackages dropshipper
+[2024-07-25T20:06:51.259Z] info Token validated successfuly
+[2024-07-25T20:06:51.260Z] info enter the endpoint getDetailCarrier
+[2024-07-25T20:06:51.269Z] info Getpackages Dropshipper successfuly
+[2024-07-25T20:06:51.271Z] info getDetailDropshipper successfuly
+[2024-07-25T20:06:53.115Z] info Token validated successfuly
+[2024-07-25T20:06:53.116Z] info enter the endpoint detailPackage dropshipper
+[2024-07-25T20:06:53.126Z] info detailPackage Dropshipper successfuly
+[2024-07-25T20:06:54.515Z] info Token validated successfuly
+[2024-07-25T20:06:54.515Z] info enter the endpoint getpackages dropshipper
+[2024-07-25T20:06:54.520Z] info Token validated successfuly
+[2024-07-25T20:06:54.520Z] info enter the endpoint getDetailCarrier
+[2024-07-25T20:06:54.525Z] info Getpackages Dropshipper successfuly
+[2024-07-25T20:06:54.528Z] info getDetailDropshipper successfuly
+[2024-07-25T20:06:57.509Z] info Token validated successfuly
+[2024-07-25T20:06:57.510Z] info enter the endpoint getProductsByDropshipper
+[2024-07-25T20:06:57.511Z] info getProductsByDropshipper successfuly
+[2024-07-25T20:06:57.984Z] info Token validated successfuly
+[2024-07-25T20:06:57.984Z] info enter the endpoint getDetailCarrier
+[2024-07-25T20:06:57.988Z] info Token validated successfuly
+[2024-07-25T20:06:57.988Z] info enter the endpoint getDepartments
+[2024-07-25T20:06:57.990Z] info getDetailDropshipper successfuly
+[2024-07-25T20:06:57.991Z] info getDepartments successfuly
+[2024-07-25T20:06:58.380Z] info Token validated successfuly
+[2024-07-25T20:06:58.381Z] info enter the endpoint getDetailCarrier
+[2024-07-25T20:06:58.384Z] info Token validated successfuly
+[2024-07-25T20:06:58.385Z] info enter the endpoint getpackages dropshipper
+[2024-07-25T20:06:58.389Z] info getDetailDropshipper successfuly
+[2024-07-25T20:06:58.391Z] info Getpackages Dropshipper successfuly
