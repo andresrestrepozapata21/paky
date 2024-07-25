@@ -112,7 +112,7 @@ export async function getCityPackages(req, res) {
                 fk_id_tp_p: 1,
                 confirmation_dropshipper_p: 1
             },
-            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p','does_shopify_p', 'send_cost_shopify_p', 'send_priority_shopify_p', 'total_price_shopify_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt'],
+            attributes: ['id_p', 'fk_id_tp_p', 'orden_p', 'guide_number_p', 'profit_carrier_p', 'total_price_p','does_shopify_p', 'send_cost_shopify_p', 'send_priority_shopify_p', 'total_price_shopify_p', 'with_collection_p', 'status_p', 'direction_client_p', 'createdAt', 'name_client_p'],
             include: [
                 {
                     model: Store,
