@@ -1,5 +1,7 @@
 node_modules
-src/databse
+src/database
+src/logs/**
+!.gitkeep
 src/database/**
 !.gitkeep
 documents_carrier/**
