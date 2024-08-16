@@ -1,7 +1,5 @@
 node_modules
 src/database
-src/logs/**
-!.gitkeep
 src/database/**
 !.gitkeep
 documents_carrier/**
@@ -9,4 +7,7 @@ documents_carrier/**
 documents_vehicle_carrier/**
 !.gitkeep
 evidences_packages/**
+!.gitkeep
+src/logs
+src/logs/**
 !.gitkeep
