@@ -172,7 +172,7 @@ export async function CronJobPackages(req, res) {
         if (!getPackage) {
             // variables for to create package paky
             let orden_p = data.order_number;
-            let name_client_p = `${data.customer.first_name} ${data.customer.last_name}`;
+            let name_client_p = `${data.customer.first_name} ${data.customer.last_name}`.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
             let phone_number_client_p = data.billing_address.phone;
             let email_client_p = data.customer.email;
             let direction_client_p = `${data.billing_address.address1} ${data.billing_address.address2}`;
