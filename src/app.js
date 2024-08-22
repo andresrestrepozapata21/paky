@@ -33,7 +33,7 @@ const corsOptions = {
  */
 app.use(cors(corsOptions));
 app.use(morgan('dev'));
-app.use(express.json({ limit: '50mb' }));
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/documents_carrier', express.static(join(CURRENT_DIR, '../documents_carrier')));
 app.use('/documents_vehicle_carrier', express.static(join(CURRENT_DIR, '../documents_vehicle_carrier')));
