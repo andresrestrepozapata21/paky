@@ -34,7 +34,7 @@ const multerUpload = multer({
         }
     },
     limits: {
-        fieldSize: 10000000
+        fileSize: 10 * 1024 * 1024 // Límite de tamaño de archivo de 10 MB
     }
 });
 // Export my variable multer
