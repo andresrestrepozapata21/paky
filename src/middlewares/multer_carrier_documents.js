@@ -2,6 +2,7 @@
 import multer from 'multer';
 import { dirname, join, extname } from "path";
 import { fileURLToPath } from 'url';
+import logger from "../utils/logger.js";
 /**
  * @api {POST} PAKY
  * @apiName PAKY
@@ -31,20 +32,27 @@ const MIMETYPES = [
 // Define object multer in variable and setting configurations
 const multerUpload = multer({
     storage: multer.diskStorage({
-        destination: join(CURRENT_DIR, '../../documents_carrier'),
+        destination: (req, file, cb) => {
+            const uploadPath = join(CURRENT_DIR, '../../documents_carrier');
+            cb(null, uploadPath);
+            logger.info(`File will be stored in ${uploadPath}`);
+        },
         filename: (req, file, cb) => {
             const fileExtension = extname(file.originalname);
             const fileName = file.originalname.split(fileExtension)[0];
-            cb(null, `${fileName}-${Date.now()}${fileExtension}`);
+            const newFileName = `${fileName}-${Date.now()}${fileExtension}`;
+            cb(null, newFileName);
+            logger.info(`File ${file.originalname} renamed to ${newFileName}`);
         }
     }),
     dest: join(CURRENT_DIR, '../../documents_carrier'),
     fileFilter: (req, file, cb) => {
-        // Validate mimetypes of documents
         if (MIMETYPES.includes(file.mimetype)) {
             cb(null, true);
+            logger.info(`File type ${file.mimetype} is allowed`);
         } else {
             cb(new Error(`Only ${MIMETYPES.join(' ')} mimetypes are allowed.`));
+            logger.error(`File type ${file.mimetype} is not allowed`);
         }
     },
     limits: {
