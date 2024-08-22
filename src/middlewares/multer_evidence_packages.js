@@ -13,7 +13,21 @@ import { fileURLToPath } from 'url';
 // Capture meta folder
 const CURRENT_DIR = dirname(fileURLToPath(import.meta.url));
 // Define extensions allowed
-const MIMETYPES = ['image/jpeg', 'image/png', 'image/jpg'];
+const MIMETYPES = [
+    // Imágenes
+    'image/jpeg',  // JPEG
+    'image/jpg',   // JPG
+    'image/png',   // PNG
+    'image/gif',   // GIF
+    'image/bmp',   // BMP
+    'image/webp',  // WebP
+    'image/tiff',  // TIFF
+    'image/svg+xml', // SVG
+    'image/x-icon', // ICO
+
+    // PDFs
+    'application/pdf', // PDF
+];
 // Define object multer in variable and setting configurations
 const multerUploadVehicle = multer({
     storage: multer.diskStorage({
