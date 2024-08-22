@@ -2252,3 +2252,20 @@ sql: INSERT INTO `packages` (`id_p`,`id_shopify`,`orden_p`,`name_client_p`,`phon
 [2024-08-14T22:06:32.048Z] info Token validated successfuly
 [2024-08-14T22:06:32.049Z] info enter the endpoint getDetailCarrier
 [2024-08-14T22:06:32.057Z] info getDetailDropshipper successfuly
+[2024-08-21T23:18:18.157Z] info server running on port 3000
+[2024-08-21T23:18:26.006Z] info Carrier HV load successfully
+[2024-08-21T23:18:26.006Z] info enter the endpoint register carrier
+[2024-08-21T23:18:26.022Z] info Error registerCarrier: SequelizeConnectionRefusedError
+[2024-08-21T23:20:31.572Z] info Carrier HV load successfully
+[2024-08-21T23:20:31.572Z] info enter the endpoint register carrier
+[2024-08-21T23:20:31.589Z] info Error registerCarrier: SequelizeDatabaseError: (conn:35, no: 1054, SQLState: 42S22) Unknown column 'url_hv_carrier' in 'field list'
+sql: INSERT INTO `carriers` (`number_document_carrier`,`name_carrier`,`last_name_carrier`,`phone_number_carrier`,`email_carrier`,`password_carrier`,`status_carrier`,`revenue_carrier`,`debt_carrier`,`url_hv_carrier`,`fk_id_city_carrier`,`fk_id_tc_carrier`,`fk_id...
+[2024-08-21T23:21:56.451Z] info Carrier HV load successfully
+[2024-08-21T23:21:56.452Z] info enter the endpoint register carrier
+[2024-08-21T23:21:56.462Z] info Carrier registed successfully
+[2024-08-21T23:42:23.567Z] info server running on port 3000
+[2024-08-22T00:11:12.723Z] info server running on port 3000
+[2024-08-22T12:23:04.002Z] info server running on port 3000
+[2024-08-22T12:23:55.783Z] info Carrier HV load successfully
+[2024-08-22T12:23:55.784Z] info enter the endpoint register carrier
+[2024-08-22T12:23:55.868Z] info Carrier registed successfully
