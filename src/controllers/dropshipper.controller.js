@@ -125,8 +125,18 @@ export async function master(req, res) {
             attributes: ['id_store', 'direction_store', 'phone_number_store', 'capacity_store', 'fk_id_city_store', 'fk_id_dropshipper_store'],
             include: [
                 {
+                    model: City,
+                    attributes: ['id_city', 'name_city'],
+                    include: [
+                        {
+                            model: Department,
+                            attributes: ['id_d', 'name_d']
+                        }
+                    ]
+                },
+                {
                     model: Package,
-                    attributes: ['id_p', 'orden_p', 'status_p', 'fk_id_tp_p'],
+                    attributes: ['id_p', 'orden_p', 'status_p', 'fk_id_tp_p', 'name_client_p', 'phone_number_client_p', 'email_client_p', 'phone_number_client_p', 'direction_client_p', 'guide_number_p', 'profit_dropshipper_p', 'with_collection_p', 'total_price_p', 'createdAt'],
                 }
             ]
         });
@@ -134,6 +144,8 @@ export async function master(req, res) {
         if (infoDropshipper.length > 0 && infoStorePackage.length > 0) {
             const total_stores_drop = infoStorePackage.length;
             let total_packages_drop = 0;
+            let total_city_package = 0;
+            let total_intercity_package = 0;
             // Process data for JSON response
             const masterPackages = infoStorePackage.map(p => {
                 // I declarate variables i need, stadystics packages
@@ -159,6 +171,7 @@ export async function master(req, res) {
                     total_packages_drop++;
                     // Condition city package or inter city package
                     if (pkg.fk_id_tp_p === 1) {
+                        total_city_package++;
                         // Add variable i need
                         total_cuantity_cityPackages++;
                         // Condition structure status packages
@@ -174,7 +187,8 @@ export async function master(req, res) {
                         } else if (pkg.status_p == 7) {
                             cityPackage_inWayCentralStore++;
                         }
-                    } else if (pkg.status_p === 2) {
+                    } else if (pkg.fk_id_tp_p === 2) {
+                        total_intercity_package++;
                         // Add variable i need
                         total_cuantity_intercityPackages++;
                         // Condition structure status packages
@@ -200,6 +214,8 @@ export async function master(req, res) {
                 return {
                     id_store: p.id_store,
                     direction_store: p.direction_store,
+                    city_store: p.city.name_city,
+                    department_store: p.city.department.name_d,
                     total_cuantity_packages,
                     total_cuantity_cityPackages,
                     cityPackage_inStoreDrop,
@@ -214,7 +230,8 @@ export async function master(req, res) {
                     intercityPackage_inCentralStoreDestine,
                     intercityPackage_inWayClient,
                     intercityPackage_delived,
-                    intercityPackage_inWayCentralStoreOrigin
+                    intercityPackage_inWayCentralStoreOrigin,
+                    pkg: p.packages
                 };
             });
             // Declarate objet info dropshipper
@@ -228,6 +245,8 @@ export async function master(req, res) {
                 last_login_dropshipper: infoDropshipper[0].last_login_dropshipper,
                 total_stores_drop,
                 total_packages_drop,
+                total_city_package,
+                total_intercity_package,
             }
             // logger control proccess
             logger.info('Master Dropshipper successfuly');
